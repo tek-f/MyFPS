@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
-    public 
     void Shoot()
     {
         if (muzzleFlash != null)
@@ -31,7 +30,7 @@ public class Gun : MonoBehaviour
 
             if(impactEffect != null)
             {
-                GameObject Impact = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal), hit.transform);
+                GameObject Impact = Instantiate(impactEffect, hit.point + new Vector3(0, 0.01f, 0), Quaternion.LookRotation(hit.normal), hit.transform);
                 Destroy(Impact, 10f);
             }
         }
