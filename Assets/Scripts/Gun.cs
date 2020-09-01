@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    public float damage = 10f, range = 100f;
+    public float damage = 10f, range = 100f, gunForce = 50f;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
@@ -32,6 +32,11 @@ public class Gun : MonoBehaviour
             {
                 GameObject Impact = Instantiate(impactEffect, hit.point + new Vector3(0, 0.01f, 0), Quaternion.LookRotation(hit.normal), hit.transform);
                 Destroy(Impact, 10f);
+            }
+
+            if(hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * gunForce, ForceMode.Impulse);
             }
         }
     }
