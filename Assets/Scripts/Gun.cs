@@ -33,6 +33,12 @@ public class Gun : MonoBehaviour
                 GameObject Impact = Instantiate(impactEffect, hit.point + new Vector3(0, 0.01f, 0), Quaternion.LookRotation(hit.normal), hit.transform);
                 Destroy(Impact, 10f);
             }
+            RagdollController ragdoll;
+            if(hit.transform.gameObject.TryGetComponent<RagdollController>(out ragdoll))
+            {
+                Debug.Log("Ragdoll fouond");
+                ragdoll.Death();
+            }
 
             if(hit.rigidbody != null)
             {

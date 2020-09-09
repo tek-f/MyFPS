@@ -4800,6 +4800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 100
+  gunForce: 50
   fpsCamera: {fileID: 5226571340236589457}
   muzzleFlash: {fileID: 5226571339893010355}
   impactEffect: {fileID: 42504386971007376, guid: 4674f17f1f62cc14ca42445a888a248b,
@@ -4999,7 +5000,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
