@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
         {
             return;
         }
-
         lastWeapon = currentWeapon;
         currentWeapon = weaponID;
 
@@ -54,7 +53,6 @@ public class Player : MonoBehaviour
             SwitchWeapon(lastWeapon, true);
         }
     }
-
     public void ReturnWeapon(int weaponID)
     {
         if(weapons[weaponID].isWeaponDropable)

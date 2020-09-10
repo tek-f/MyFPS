@@ -6,15 +6,17 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-    int remainingAmmo, maxAmmo;
-
+    [SerializeField]
+    int remainingAmmo, maxAmmo, clipCount;
     public float damage = 10f, range = 100f, gunForce = 50f;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     [Header("HUD")]
     [SerializeField]
-    Text ammoText;
+    Text ammoText, clipText;
+    [Header("Animation")]
+    public Animator anim;
     void Shoot()
     {
         if (remainingAmmo > 0)
@@ -55,15 +57,14 @@ public class Gun : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            Reload();
-        }
     }
     void Reload()
     {
+        clipCount--;
         remainingAmmo = maxAmmo;
         ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
+        clipText.text = "Clips: " + clipCount.ToString();
+        anim.SetTrigger("reload");
     }
     private void Start()
     {
@@ -75,12 +76,23 @@ public class Gun : MonoBehaviour
         {
             fpsCamera = Camera.main;
         }
+        remainingAmmo = maxAmmo;
+        clipCount = 3;
+        ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
+        clipText.text = "Clips: " + clipCount.ToString();
     }
     private void Update()
     {
         if(Input.GetButtonDown("Fire1"))
         {
             Shoot();
+        }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            if(clipCount > 0)
+            {
+                Reload();
+            }
         }
     }
 }

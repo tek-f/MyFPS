@@ -21,6 +21,8 @@ public class FirstPersonController : MonoBehaviour
     [Header("Shooting")]
     float shotTS;
     float fireDelay = 1.0f;
+
+    public Animator anim;
     void MouseLook()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
@@ -46,6 +48,7 @@ public class FirstPersonController : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
 
         Vector3 move = (transform.right * x) + (transform.forward * z);
         charControl.Move(move * speed * Time.deltaTime);
