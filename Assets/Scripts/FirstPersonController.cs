@@ -49,6 +49,15 @@ public class FirstPersonController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
+        if((z + x) > 0)
+        {
+            anim.SetBool("moving", true);
+        }
+        else
+        {
+            anim.SetBool("moving", false);
+        }
+
 
         Vector3 move = (transform.right * x) + (transform.forward * z);
         charControl.Move(move * speed * Time.deltaTime);
