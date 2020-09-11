@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Gun : MonoBehaviour
 {
     [SerializeField]
-    int remainingAmmo, maxAmmo, clipCount;
+    int remainingAmmo, maxAmmo, totalAmmo;
     public float damage = 10f, range = 100f, gunForce = 50f;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
@@ -60,10 +60,10 @@ public class Gun : MonoBehaviour
     }
     void Reload()
     {
-        clipCount--;
+        totalAmmo -= (maxAmmo - remainingAmmo);
         remainingAmmo = maxAmmo;
         ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
-        clipText.text = "Clips: " + clipCount.ToString();
+        clipText.text = totalAmmo.ToString();
         anim.SetTrigger("reload");
     }
     private void Start()
@@ -77,9 +77,9 @@ public class Gun : MonoBehaviour
             fpsCamera = Camera.main;
         }
         remainingAmmo = maxAmmo;
-        clipCount = 3;
+        totalAmmo = maxAmmo * 3;
         ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
-        clipText.text = "Clips: " + clipCount.ToString();
+        clipText.text = totalAmmo.ToString();
     }
     private void Update()
     {
@@ -87,9 +87,9 @@ public class Gun : MonoBehaviour
         {
             Shoot();
         }
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetButtonDown("Reload"))
         {
-            if(clipCount > 0)
+            if(totalAmmo > 0 && remainingAmmo < maxAmmo)
             {
                 Reload();
             }

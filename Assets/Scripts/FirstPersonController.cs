@@ -10,18 +10,13 @@ public class FirstPersonController : MonoBehaviour
     public float gravity = -10f;
     public float jumpSpeed = 50f;
     bool grounded;
-    bool firing;
     float xRotation;
     public Vector3 velocity;
-    Camera playerCamera;
+    //Camera playerCamera;
     Transform cameraTransform;
     CharacterController charControl;
     float groundedMOE = 1.1f;
     public LayerMask groundLayerMask;
-    [Header("Shooting")]
-    float shotTS;
-    float fireDelay = 1.0f;
-
     public Animator anim;
     void MouseLook()
     {
@@ -31,7 +26,6 @@ public class FirstPersonController : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-
         transform.Rotate(Vector3.up * mouseX);
     }
     void PlayerMovement()
@@ -49,7 +43,7 @@ public class FirstPersonController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        if((z + x) > 0)
+        if(z != 0 || x != 0)
         {
             anim.SetBool("moving", true);
         }
@@ -71,22 +65,11 @@ public class FirstPersonController : MonoBehaviour
             velocity.y += Mathf.Sqrt(jumpSpeed * -1 * gravity);
         }
     }
-    public void Shooting()
-    {
-        if(Time.time - shotTS > fireDelay)
-        {
-            shotTS = Time.time;
-            //Send out raycast/bullet
-            //if raycast//bullet hits player/enemy
-            //Play firing annimation
-            //  { do damage to player }
-        }
-    }
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        playerCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
-        cameraTransform = playerCamera.transform;
+        //playerCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        cameraTransform = GameObject.FindWithTag("MainCamera").GetComponent<Camera>().transform;
         charControl = gameObject.GetComponent<CharacterController>();
     }
     private void Update()

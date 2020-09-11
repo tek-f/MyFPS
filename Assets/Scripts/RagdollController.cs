@@ -5,11 +5,7 @@ using UnityEngine;
 public class RagdollController : MonoBehaviour
 {
     GameObject ragdoll;
-    GameObject AI;
-
     List<Rigidbody> bodies;
-
-    public bool test;
 
     private void Start()
     {
@@ -33,15 +29,6 @@ public class RagdollController : MonoBehaviour
         if(TryGetComponent<Animator>(out anim))
         {
             anim.enabled = false;
-        }
-    }
-
-    private void Update()
-    {
-        if(test)
-        {
-            Death();
-            test = false;
         }
     }
 }

@@ -7,7 +7,6 @@ public class Weapon : MonoBehaviour
     public int teamID;
     public bool isWeaponLocked = false;
     public bool isWeaponDropable = false;
-
     public GameObject worldWeaponGameObject;
     public Vector3 originalLocation;
 
@@ -67,9 +66,5 @@ public class Weapon : MonoBehaviour
         {
             weaponRgBdy.velocity = player.velocity;
         }
-    }
-    private void Start()
-    {
-
     }
 }

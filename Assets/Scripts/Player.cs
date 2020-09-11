@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
     #region Game Mode
     [SerializeField] int playersTeamID;
     public int teamID { get { return playersTeamID; } }
-
-    Rigidbody playerRB; //players rigid body component
-    CharacterController playerChar;
+    CharacterController charConrtol;
     #endregion
 
     #region Weapons
@@ -47,7 +45,7 @@ public class Player : MonoBehaviour
 
             Vector3 dropLocation = transform.position + forward;
 
-            weapons[weaponID].DropWeapon(playerChar, forward);
+            weapons[weaponID].DropWeapon(charConrtol, forward);
             weapons[weaponID].worldWeaponGameObject.SetActive(true);
 
             SwitchWeapon(lastWeapon, true);

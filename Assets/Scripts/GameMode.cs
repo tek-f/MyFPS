@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameMode : MonoBehaviour
 {
     public int teamAmount = 2;
-
     public List<Team> teams;
 
     protected void Start()
