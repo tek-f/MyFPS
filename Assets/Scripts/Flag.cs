@@ -8,7 +8,6 @@ public class Flag : MonoBehaviour
     public Vector3 originalLocation;
 
     const int weaponID = 1;
-
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.GetComponent<Player>();
@@ -19,6 +18,7 @@ public class Flag : MonoBehaviour
             {
                 return;
             }
+
             Debug.Log("Flag captured");
 
             player.PickUpWeapon(gameObject, originalLocation, teamID, weaponID);
