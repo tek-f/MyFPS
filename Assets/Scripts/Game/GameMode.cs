@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class GameMode : MonoBehaviour
 {
-    public int teamAmount = 2;
-    public List<Team> teams;
+    public int teamAmount = 2;//the number of teams in a game
+    public List<Team> teams;//a list of Team classes that hold info for each time in the game
+    public int gameScoreLimit;//the score that a team must reach to win the game
 
-    protected void Start()
-    {
-        Debug.Log("Setting up game...");
-        SetUpGame();
-    }
     public void SetUpGame()
     {
         for (int teamID = 1; teamID < teamAmount; teamID++)
@@ -30,6 +26,15 @@ public class GameMode : MonoBehaviour
                 return;
             }
         }
+    }
+    public void EndGame()
+    {
+
+    }
+    protected void Start()
+    {
+        Debug.Log("Setting up game...");
+        SetUpGame();
     }
 }
 

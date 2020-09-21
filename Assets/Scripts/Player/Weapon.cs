@@ -9,8 +9,6 @@ public class Weapon : MonoBehaviour
     public bool isWeaponDropable = false;
     public GameObject worldWeaponGameObject;
     public Vector3 originalLocation;
-
-
     public void SetUp(int teamID, GameObject worldGameObject, Vector3 originalLocation)
     {
         this.teamID = teamID;
@@ -18,7 +16,6 @@ public class Weapon : MonoBehaviour
         {
             worldWeaponGameObject = worldGameObject;
         }
-
         this.originalLocation = originalLocation;
     }
     public void DropWeapon(CharacterController player, Vector3 dropLocation)
@@ -28,15 +25,19 @@ public class Weapon : MonoBehaviour
         Ray rayToDropLocation = new Ray(Camera.main.transform.position, dropDirection);
         RaycastHit hit;
 
-        if(Physics.Raycast(rayToDropLocation, out hit, dropDirection.magnitude))
+        if(Physics.Raycast(rayToDropLocation, out hit/*, dropDirection.magnitude*/))
         {
+            Debug.Log(hit.transform.name);
             dropLocation = hit.point;
         }
+        GameObject droppedObject = GameObject.Instantiate(worldWeaponGameObject);
+        droppedObject.transform.position = dropLocation;
 
+        /*
         if(worldWeaponGameObject != null)
         {
             worldWeaponGameObject.transform.position = dropLocation;
-        }
+        }*/
 
         Renderer rend = worldWeaponGameObject.GetComponent<Renderer>();
         if(rend != null)

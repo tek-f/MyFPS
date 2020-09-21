@@ -8,7 +8,8 @@ public class Gun : MonoBehaviour
 {
     [SerializeField]
     int remainingAmmo, maxAmmo, totalAmmo;
-    public float damage = 10f, range = 100f, gunForce = 50f;
+    public float range = 100f, gunForce = 50f;
+    public int damage = 2;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
@@ -31,26 +32,35 @@ public class Gun : MonoBehaviour
             if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, range))
             {
                 Debug.Log(hit.transform.name);
-
-                Target target = hit.transform.GetComponent<Target>();
-
-                if (target != null)
+                if (hit.transform.GetComponent<Player>())
                 {
-                    target.TakeDamage(Random.Range(damage / 2, damage));
-                }
+                    Player hitPlayer = hit.transform.GetComponent<Player>();
+                    hitPlayer.TakeDamage(damage);
 
-                if (impactEffect != null)
-                {
-                    GameObject Impact = Instantiate(impactEffect, hit.point + new Vector3(0, 0.01f, 0), Quaternion.LookRotation(hit.normal), hit.transform);
-                    Destroy(Impact, 10f);
+                    /*Has been replaced by Takedamage() and Death() functions in Player class
+                     * 
+                    RagdollController ragdoll;
+                    if (hit.transform.gameObject.TryGetComponent<RagdollController>(out ragdoll))
+                    {
+                        Debug.Log("Ragdoll fouond");
+                        ragdoll.Death();
+                    }*/
                 }
-                RagdollController ragdoll;
-                if (hit.transform.gameObject.TryGetComponent<RagdollController>(out ragdoll))
+                else
                 {
-                    Debug.Log("Ragdoll fouond");
-                    ragdoll.Death();
-                }
+                    if (hit.transform.GetComponent<Target>())
+                    {
+                        Target target = hit.transform.GetComponent<Target>();
+                        target.TakeDamage(Random.Range(damage / 2, damage));
+                    }
 
+                    if (impactEffect != null)
+                    {
+                        GameObject Impact = Instantiate(impactEffect, hit.point + new Vector3(0, 0.01f, 0), Quaternion.LookRotation(hit.normal), hit.transform);
+                        Destroy(Impact, 10f);
+                    }
+
+                }
                 if (hit.rigidbody != null)
                 {
                     hit.rigidbody.AddForce(-hit.normal * gunForce, ForceMode.Impulse);
@@ -58,12 +68,15 @@ public class Gun : MonoBehaviour
             }
         }
     }
-    void Reload()
+    public void Reload()
     {
         totalAmmo -= (maxAmmo - remainingAmmo);
         remainingAmmo = maxAmmo;
         ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
         clipText.text = totalAmmo.ToString();
+    }
+    void StartReload()
+    {
         anim.SetTrigger("reload");
     }
     private void Start()
@@ -91,7 +104,7 @@ public class Gun : MonoBehaviour
         {
             if(totalAmmo > 0 && remainingAmmo < maxAmmo)
             {
-                Reload();
+                StartReload();
             }
         }
     }
