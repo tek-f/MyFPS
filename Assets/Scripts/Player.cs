@@ -87,12 +87,14 @@ public class Player : MonoBehaviour
         {
             weapon.gameObject.SetActive(false);
         }*/
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         SwitchWeapon(currentWeapon);
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        if(Input.GetKeyDown(KeyCode.E))
         {
             DropWeapon(1);
             Debug.Log("weapon dropped");

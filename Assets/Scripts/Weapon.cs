@@ -33,7 +33,10 @@ public class Weapon : MonoBehaviour
             dropLocation = hit.point;
         }
 
-        worldWeaponGameObject.transform.position = dropLocation;
+        if(worldWeaponGameObject != null)
+        {
+            worldWeaponGameObject.transform.position = dropLocation;
+        }
 
         Renderer rend = worldWeaponGameObject.GetComponent<Renderer>();
         if(rend != null)
