@@ -3,17 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class MirrorPlayerHandler : NetworkBehaviour
+namespace MyFPS.Mirror
 {
-    [SerializeField] private Vector3 movement = new Vector3();
-
-
-
-    private void Update()
+    public class MirrorPlayerHandler : NetworkBehaviour
     {
-        if(Input.GetAxis("Horizontal") != 0)
+        [SerializeField] private Vector3 movement = new Vector3();
+        [Client]
+        private void Update()
         {
-            transform.Translate(movement * Input.GetAxis("Horizontal"));
+            if (!hasAuthority)
+            {
+                return;
+            }
+            if (Input.GetButtonDown("Jump"))
+            {
+                CmdMove();
+            }
         }
+        [Command]
+        private void CmdMove()
+        {
+            RpcMove();
+        }
+        [ClientRpc]
+        private void RpcMove() => transform.Translate(movement);
     }
 }
