@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyFPS.Player;
 
 public class Flag : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Flag : MonoBehaviour
     const int weaponID = 1;
     private void OnTriggerEnter(Collider other)
     {
-        Player player = other.GetComponent<Player>();
+        PlayerHandler player = other.GetComponent<PlayerHandler>();
 
         if(player != null)
         {

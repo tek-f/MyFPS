@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameModeCTF : GameMode
+namespace MyFPS.GameAdmin
 {
+    public class GameModeCTF : GameMode
+    {
 
+    }
 }

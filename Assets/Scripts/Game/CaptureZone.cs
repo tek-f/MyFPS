@@ -1,38 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyFPS.Player;
 
-public class CaptureZone : MonoBehaviour
+namespace MyFPS.GameAdmin
 {
-    [SerializeField] int teamID;
-
-    GameModeCTF gameModeCTF;
-
-    private void Start()
+    public class CaptureZone : MonoBehaviour
     {
-        gameModeCTF = FindObjectOfType<GameModeCTF>();
+        [SerializeField] int teamID;
 
-        if(gameModeCTF == null)
+        GameModeCTF gameModeCTF;
+
+        private void Start()
         {
-            Debug.LogError("Could not fund GameModeCTF");
-        }
-    }
+            gameModeCTF = FindObjectOfType<GameModeCTF>();
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Player player = other.GetComponent<Player>();
-
-        if(player != null && gameModeCTF != null)
-        {
-            if(player.GetWeaponTeamID() != teamID)
+            if (gameModeCTF == null)
             {
-                return;
+                Debug.LogError("Could not fund GameModeCTF");
             }
+        }
 
-            if(player.IsHolding(1))
+        private void OnTriggerEnter(Collider other)
+        {
+            PlayerHandler player = other.GetComponent<PlayerHandler>();
+
+            if (player != null && gameModeCTF != null)
             {
-                gameModeCTF.AddScore(player.teamID, 1);
-                player.ReturnWeapon(1);
+                if (player.GetWeaponTeamID() != teamID)
+                {
+                    return;
+                }
+
+                if (player.IsHolding(1))
+                {
+                    gameModeCTF.AddScore(player.teamID, 1);
+                    player.ReturnWeapon(1);
+                }
             }
         }
     }
