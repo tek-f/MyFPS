@@ -3,35 +3,86 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
-using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 namespace MyFPS.Mirror
 {
-    public class NetworkRoomPlayerLobby : NetworkManager
+    public class NetworkRoomPlayerLobby : NetworkBehaviour
     {
-        [Scene] [SerializeField] private string MenuScene = string.Empty;
-        List<List<GameObject>> testlist = new List<List<GameObject>>();
+        [Header("UI")]
+        [SerializeField] private GameObject lobbyUI;
+        [SerializeField] private TMP_Text[] playerNameTexts = new TMP_Text[4];
+        [SerializeField] private TMP_Text[] playerReadyTexts = new TMP_Text[4];
+        [SerializeField] private Button startGameButton;
 
-        [Header("Room")]
-        [SerializeField] private NetworkRoomPlayerLobby roomPlayerPrefab = null;
+        [SyncVar(hook = nameof(HandleDisplayNameChanged))]
+        public string displayName = "Loading...";
+        [SyncVar(hook = nameof(HandleDisplayNameChanged))]
+        public bool isReady = false;
 
-        public static event Action OnClientConnected;
-        public static event Action OnClientDisconnected;
-
-        public override void OnStartServer()
+        private bool isLeader;
+        public bool IsLeader
         {
-            spawnPrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs").ToList();
+            set
+            {
+                value = isLeader;
+                startGameButton.gameObject.SetActive(value);
+            }
         }
 
+        private NetworkManagerLobby room;
+        private NetworkManagerLobby Room
+        {
+            get
+            {
+                if(room != null)
+                {
+                    return room;
+                }
+
+                return room = NetworkManager.singleton as NetworkManagerLobby;
+            }
+        }
+
+        public override void OnStartAuthority()
+        {
+            CMDSetDisplayName(PlayerNameInput.DisplayName);
+
+            lobbyUI.SetActive(true);
+        }
         public override void OnStartClient()
         {
-            //base.OnStartClient();
+            Room.roomPlayers.Add(this);
+            UpdateDisplay();
+        }
 
-            var spawnablePrefabs = Resources.LoadAll<GameObject>("SpawnablePrefabs");
+        public override void OnStopClient()
+        {
+            Room.roomPlayers.Remove(this);
+            UpdateDisplay();
+        }
+        public void HandleReadyStatusChange(bool oldValue, bool newValue) => UpdateDisplay();
+        public void HandleDisplayNameChange(bool oldValue, bool newValue) => UpdateDisplay();
 
-            foreach (var prefab in spawnablePrefabs)
+        private void UpdateDisplay()
+        {
+            if(!isLocalPlayer)
             {
-
+                foreach (var player in Room.roomPlayers)
+                {
+                    if(player.isLocalPlayer)
+                    {
+                        player.UpdateDisplay();
+                        break;
+                    }
+                }
+                return;
+            }
+            for (int i = 0; i < playerNameTexts.Length; i++)
+            {
+                playerNameTexts[i].text = "Waiting for player...";
+                playerReadyTexts[i].text = string.Empty;
             }
         }
     }

@@ -9,6 +9,7 @@ namespace MyFPS.Mirror
 {
     public class NetworkManagerLobby : NetworkManager
     {
+        [SerializeField] private int minPlayers = 2;//-------------
         [Scene] [SerializeField] private string MenuScene = string.Empty;
         List<List<GameObject>> testlist = new List<List<GameObject>>();
 
@@ -17,6 +18,8 @@ namespace MyFPS.Mirror
 
         public static event Action OnClientConnected;
         public static event Action OnClientDisconnected;
+
+        public List<NetworkRoomPlayerLobby> roomPlayers { get; } = new List<NetworkRoomPlayerLobby>();//-------------
 
         public override void OnStartServer()
         {
@@ -47,18 +50,60 @@ namespace MyFPS.Mirror
                 networkConnection.Disconnect();
                 return;
             }
-            if(SceneManager.GetActiveScene().name != MenuScene)
+            if(SceneManager.GetActiveScene().path != MenuScene)
             {
                 NetworkRoomPlayerLobby roomPlayerLobby = Instantiate(roomPlayerPrefab);
             }
         }
+        public override void OnServerDisconnect(NetworkConnection conn)
+        {
+            if(conn.identity)
+            {
+                var player = conn.identity.GetComponent<NetworkRoomPlayerLobby>();
+
+                roomPlayers.Remove(player);
+
+                NotifyPlayersOfReadyState();
+            }
+
+            base.OnServerDisconnect(conn);
+        }
         public override void OnServerAddPlayer(NetworkConnection networkConnection)
         {
-            if (SceneManager.GetActiveScene().name == MenuScene)
+            if (SceneManager.GetActiveScene().path == MenuScene)
             {
+                bool isLeader = roomPlayers.Count == 0;
+
                 NetworkRoomPlayerLobby roomPlayerInstance = Instantiate(roomPlayerPrefab);
 
+                roomPlayerInstance.IsLeader = isLeader;
+
                 NetworkServer.AddPlayerForConnection(networkConnection, roomPlayerInstance.gameObject);
+            }
+        }
+        public override void OnStopServer()
+        {
+            roomPlayers.Clear();
+        }
+        public void NotifyPlayersOfReadyState()
+        {
+            foreach (var player in roomPlayers)
+            {
+                player.HandleReadyToStart(IsReadyToStart);
+            }
+        }
+        public bool IsReadyToStart()
+        {
+            if(numPlayers < minPlayers)
+            {
+                return;
+            }
+            foreach (var player in roomPlayers)
+            {
+                if(!player.isReady)
+                {
+                    return false;
+                }
             }
         }
     }
