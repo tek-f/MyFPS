@@ -14,7 +14,7 @@ namespace MyFPS.Mirror
         public static string DisplayName { get; private set; }
         private const string PlayerPrefsNameKey = "PlayerName";
 
-        private void SetPlayerName(string name)
+        public void SetPlayerName(string name)
         {
             continueButton.interactable = !string.IsNullOrEmpty(name);
         }

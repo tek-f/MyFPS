@@ -12,7 +12,37 @@ namespace MyFPS.Mirror
 
         [Header("UI")]
         [SerializeField] private GameObject landingPagePanel;
-        [SerializeField] private TMP_InputField isAddressInputField;
+        [SerializeField] private TMP_InputField ipAddressInputField;
         [SerializeField] private Button joinButton;
+
+        private void OnEnable()
+        {
+            NetworkManagerLobby.OnClientConnected += HandleClientConnected;
+            NetworkManagerLobby.OnClientDisconnected += HandleClientDisconnected;
+        }
+        private void OnDisable()
+        {
+            NetworkManagerLobby.OnClientConnected += HandleClientConnected;
+            NetworkManagerLobby.OnClientDisconnected += HandleClientDisconnected;
+        }
+
+        public void JoinLobby()
+        {
+            networkManager.networkAddress = ipAddressInputField.text;
+            networkManager.StartClient();
+
+            joinButton.interactable = false;
+        }
+        private void HandleClientConnected()
+        {
+            joinButton.interactable = true;
+
+            landingPagePanel.SetActive(false);
+            gameObject.SetActive(false);
+        }
+        private void HandleClientDisconnected()
+        {
+            joinButton.interactable = true;
+        }
     }
 }
