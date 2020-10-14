@@ -89,14 +89,14 @@ namespace MyFPS.Mirror
         {
             foreach (var player in roomPlayers)
             {
-                player.HandleReadyToStart(IsReadyToStart);
+                //player.HandleReadyToStart(IsReadyToStart);
             }
         }
         public bool IsReadyToStart()
         {
             if(numPlayers < minPlayers)
             {
-                return;
+                return true;
             }
             foreach (var player in roomPlayers)
             {
@@ -105,6 +105,8 @@ namespace MyFPS.Mirror
                     return false;
                 }
             }
+            Debug.LogWarning("IsReadyTooStart not returned");
+            return true;
         }
     }
 }

@@ -16,9 +16,9 @@ namespace MyFPS.Mirror
         [SerializeField] private TMP_Text[] playerReadyTexts = new TMP_Text[4];
         [SerializeField] private Button startGameButton;
 
-        [SyncVar(hook = nameof(HandleDisplayNameChanged))]
+        [SyncVar(hook = nameof(HandleDisplayNameChange))]
         public string displayName = "Loading...";
-        [SyncVar(hook = nameof(HandleDisplayNameChanged))]
+        [SyncVar(hook = nameof(HandleReadyStatusChange))]
         public bool isReady = false;
 
         private bool isLeader;
@@ -47,7 +47,7 @@ namespace MyFPS.Mirror
 
         public override void OnStartAuthority()
         {
-            CMDSetDisplayName(PlayerNameInput.DisplayName);
+            //CMDSetDisplayName(PlayerNameInput.DisplayName);
 
             lobbyUI.SetActive(true);
         }
@@ -63,7 +63,7 @@ namespace MyFPS.Mirror
             UpdateDisplay();
         }
         public void HandleReadyStatusChange(bool oldValue, bool newValue) => UpdateDisplay();
-        public void HandleDisplayNameChange(bool oldValue, bool newValue) => UpdateDisplay();
+        public void HandleDisplayNameChange(string oldValue, string newValue) => UpdateDisplay();
 
         private void UpdateDisplay()
         {
