@@ -10,6 +10,7 @@ namespace MyFPS.GameAdmin
         [SerializeField] int teamID;
 
         GameModeCTF gameModeCTF;
+        GameObject flagPrefab;
 
         private void Start()
         {
@@ -32,7 +33,7 @@ namespace MyFPS.GameAdmin
                     return;
                 }
 
-                if (player.IsHolding(1))
+                if (player.IsHoldingFlag)
                 {
                     gameModeCTF.AddScore(player.teamID, 1);
                     player.ReturnWeapon(1);

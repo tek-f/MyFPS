@@ -10,7 +10,7 @@ namespace MyFPS.Player
         public bool isWeaponLocked = false;
         public bool isWeaponDropable = false;
         public GameObject worldWeaponGameObject;
-        public Vector3 originalLocation;
+        public Vector3 originalLocation, equipedByPlayerPosition;
         public void SetUp(int teamID, GameObject worldGameObject, Vector3 originalLocation)
         {
             this.teamID = teamID;

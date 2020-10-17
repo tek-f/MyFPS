@@ -22,7 +22,7 @@ public class Flag : MonoBehaviour
 
             Debug.Log("Flag captured");
 
-            player.PickUpWeapon(gameObject, originalLocation, teamID, weaponID);
+            player.PickUpFlag();
 
             gameObject.SetActive(false);
         }

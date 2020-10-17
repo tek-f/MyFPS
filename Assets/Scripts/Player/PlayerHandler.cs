@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MyFPS.Player
 {
@@ -18,9 +19,22 @@ namespace MyFPS.Player
 
         #region Weapons
         public List<Weapon> weapons;
+        [SerializeField] GameObject flagObject;
         int currentWeapon = 0, lastWeapon = 0;
         Gun currentGun;
-        public Vector3 dropOffset;
+        public Vector3 dropOffset, equippedWeaponPosition;
+        public bool IsHoldingFlag
+        {
+            get
+            {
+                return flagObject.activeSelf;
+            }
+        }
+
+        #endregion
+        #region HUD
+        [SerializeField] GameObject infoPanel;
+        [SerializeField] Text infoPanelText;
 
         #endregion
         private void SwitchWeapon(int weaponID, bool overrideLock = false)
@@ -41,26 +55,33 @@ namespace MyFPS.Player
             currentGun.OnWeaponSwap();
         }
 
-        public void PickUpWeapon(GameObject weaponObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock = false)
+        public void PickUpWeapon(GameObject weaponToPickUpObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock = false)
         {
-            if(weapons[currentWeapon] != null)
+            //Move Weapon That's being picked up into place
+            weaponToPickUpObject.transform.position = equippedWeaponPosition;
+            weaponToPickUpObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            weaponToPickUpObject.transform.SetParent(Camera.main.transform);
+
+            if(weapons[currentWeapon] != null) //If a weapon is equiped in current slot
             {  
-                
+                DropWeapon(currentWeapon);//drop current weapon
             }
 
-            SwitchWeapon(weaponID, overrideLock);
+            //Set current weapon to weapon that was just picked up
+            weapons[currentWeapon] = weaponToPickUpObject.GetComponent<Weapon>();
 
-            weapons[weaponID].SetUp(teamID, weaponObject, originalLocation);
+            //Set up weapon
+            weapons[weaponID].SetUp(teamID, weaponToPickUpObject, originalLocation);
         }
         public void DropWeapon(int weaponID)
         {
             if (weapons[weaponID].isWeaponDropable)
             {
-                Vector3 forward = transform.forward;
+                /* Vector3 forward = transform.forward;
                 forward *= dropOffset.x;
                 forward *= dropOffset.y;
 
-                Vector3 dropLocation = transform.position + forward;
+                Vector3 dropLocation = transform.position + forward; */
 
                 weapons[weaponID].DropWeapon(charConrtol);
                 
@@ -76,9 +97,15 @@ namespace MyFPS.Player
 
                 weapons[weaponID].worldWeaponGameObject.transform.position = returnLocation;
                 weapons[weaponID].worldWeaponGameObject.SetActive(true);
-
-                SwitchWeapon(lastWeapon, true);
             }
+        }
+        public void PickUpFlag()
+        {
+            foreach(var weapon in weapons)
+            {
+                weapon.gameObject.SetActive(false);
+            }
+            flagObject.SetActive(true);
         }
 
         public int GetWeaponTeamID()
@@ -127,23 +154,51 @@ namespace MyFPS.Player
             Cursor.visible = false;
 
             charConrtol = gameObject.GetComponent<CharacterController>();
-            SwitchWeapon(currentWeapon);
-            lastWeapon = 1;
+            
+
+            //TESTING
+            Debug.LogError("NOTE ERROR <DELETE AFTER READING>: added a weapon dropping system that works by dropping the actual object that the player has as a weapon" +
+            ", however, the issue comes in when picking up the weapon and adding back to the player. Weapon needs a vector 3 that is it's position when attached/equiped"
+            + " by the player. Or the vector 3 could be on the player, with all weapons going to the same location. Might not look great, but is definatley easier and more efficent");
         }
         private void Update()
         {
             //Testing
-            if (Input.GetKeyDown(KeyCode.E))
+            if(!IsHoldingFlag)
             {
-                DropWeapon(currentWeapon);
-            }
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                TakeDamage(1);
-            }
-            if(Input.GetKeyDown(KeyCode.C) && !currentGun.reloading)
-            {
-                SwitchWeapon(lastWeapon);
+                Ray ray = Camera.main.ViewportPointToRay(new Vector3(0,0,0));
+                RaycastHit hit;
+                Transform rayHit = null;
+                if(Physics.Raycast(ray, out hit))
+                {
+                    rayHit = hit.transform;
+                    if(rayHit.GetComponent<Weapon>())
+                    {
+                        infoPanelText.text = hit.transform.name;
+                        infoPanel.SetActive(true);
+                    }
+                    else
+                    {
+                        infoPanel.SetActive(false);
+                    }
+                }
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    DropWeapon(currentWeapon);
+                    SwitchWeapon(lastWeapon, true);
+                }
+                if (Input.GetKeyDown(KeyCode.T))
+                {
+                    TakeDamage(1);
+                }
+                if(Input.GetKeyDown(KeyCode.C) && !currentGun.reloading)
+                {
+                    SwitchWeapon(lastWeapon);
+                }
+                if(Input.GetKeyDown(KeyCode.G) && rayHit != null)
+                {
+
+                }
             }
         }
     }
