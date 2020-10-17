@@ -20,28 +20,27 @@ namespace MyFPS.Player
             }
             this.originalLocation = originalLocation;
         }
-        public void DropWeapon(CharacterController player, Vector3 dropLocation)
+        public void DropWeapon(CharacterController player)
         {
-            Vector3 dropDirection = dropLocation - Camera.main.transform.position;
-
-            Ray rayToDropLocation = new Ray(Camera.main.transform.position, dropDirection);
+            //Get Location and Direction for drop
+            Vector3 dropLocation = Vector3.zero;
+            Ray rayToDropLocation = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
-            if (Physics.Raycast(rayToDropLocation, out hit/*, dropDirection.magnitude*/))
+            if (Physics.Raycast(rayToDropLocation, out hit))
             {
                 Debug.Log(hit.transform.name);
                 dropLocation = hit.point;
             }
-            GameObject droppedObject = GameObject.Instantiate(worldWeaponGameObject);
-            droppedObject.transform.position = dropLocation;
 
-            /*
-            if(worldWeaponGameObject != null)
-            {
-                worldWeaponGameObject.transform.position = dropLocation;
-            }*/
 
-            Renderer rend = worldWeaponGameObject.GetComponent<Renderer>();
+            //Drop Weapon
+            worldWeaponGameObject.GetComponent<Animator>().enabled = false;//disable animator
+            worldWeaponGameObject.transform.SetParent(null);//detach parent (player)
+            worldWeaponGameObject.transform.rotation = Quaternion.Euler(0 ,0, 0);//reset rotation
+            worldWeaponGameObject.transform.position = dropLocation;//move weapon to drop location
+
+            //Use Renderer to ensure gun is not within the bounds of another object
+            Renderer rend = worldWeaponGameObject.GetComponentInChildren<Renderer>();
             if (rend != null)
             {
                 Debug.Log("Dropping using renderer: " + rend.name);
@@ -58,19 +57,12 @@ namespace MyFPS.Player
                     dropLocation = rayDownHit.point;
                     dropLocation.y += (rend.bounds.extents.y * 1.1f);
                 }
-
+                worldWeaponGameObject.GetComponentInChildren<BoxCollider>().enabled = true;
                 worldWeaponGameObject.transform.position = dropLocation;
             }
             else
             {
-                Debug.LogError("Renderer for not found for drop weapon");
-            }
-
-            Rigidbody weaponRgBdy = worldWeaponGameObject.GetComponent<Rigidbody>();
-
-            if (weaponRgBdy != null && player != null)
-            {
-                weaponRgBdy.velocity = player.velocity;
+                Debug.LogWarning("Renderer for not found for drop weapon");
             }
         }
     }

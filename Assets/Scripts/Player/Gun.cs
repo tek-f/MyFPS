@@ -8,12 +8,14 @@ namespace MyFPS.Player
     public class Gun : MonoBehaviour
     {
         [SerializeField]
+        [Header("Gun Metrics")]
         int remainingAmmo, maxAmmo, totalAmmo;
         public float range = 100f, gunForce = 50f;
         public int damage = 2;
         public Camera fpsCamera;
         public ParticleSystem muzzleFlash;
         public GameObject impactEffect;
+        public bool reloading;
         [Header("HUD")]
         [SerializeField]
         Text ammoText, clipText;
@@ -32,7 +34,6 @@ namespace MyFPS.Player
                 RaycastHit hit;
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, range))
                 {
-                    Debug.Log(hit.transform.name);
                     if (hit.transform.GetComponent<PlayerHandler>())
                     {
                         PlayerHandler hitPlayer = hit.transform.GetComponent<PlayerHandler>();
@@ -75,10 +76,17 @@ namespace MyFPS.Player
             remainingAmmo = maxAmmo;
             ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
             clipText.text = totalAmmo.ToString();
+            reloading = false;
         }
         void StartReload()
         {
             anim.SetTrigger("reload");
+            reloading = true;
+        }
+        public void OnWeaponSwap()
+        {
+            ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
+            clipText.text = totalAmmo.ToString();
         }
         private void Start()
         {

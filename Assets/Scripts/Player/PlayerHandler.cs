@@ -19,24 +19,35 @@ namespace MyFPS.Player
         #region Weapons
         public List<Weapon> weapons;
         int currentWeapon = 0, lastWeapon = 0;
+        Gun currentGun;
         public Vector3 dropOffset;
 
         #endregion
         private void SwitchWeapon(int weaponID, bool overrideLock = false)
         {
-            if (!overrideLock && weapons[currentWeapon].isWeaponLocked == true)
+            if (weapons[weaponID] != null && !overrideLock && weapons[currentWeapon].isWeaponLocked == true)
             {
                 return;
             }
             lastWeapon = currentWeapon;
             currentWeapon = weaponID;
 
-            weapons[lastWeapon].gameObject.SetActive(false);
+            if(weapons[lastWeapon] != null)
+            {
+                weapons[lastWeapon].gameObject.SetActive(false);
+            }
             weapons[currentWeapon].gameObject.SetActive(true);
+            currentGun = weapons[currentWeapon].GetComponent<Gun>();
+            currentGun.OnWeaponSwap();
         }
 
         public void PickUpWeapon(GameObject weaponObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock = false)
         {
+            if(weapons[currentWeapon] != null)
+            {  
+                
+            }
+
             SwitchWeapon(weaponID, overrideLock);
 
             weapons[weaponID].SetUp(teamID, weaponObject, originalLocation);
@@ -51,9 +62,9 @@ namespace MyFPS.Player
 
                 Vector3 dropLocation = transform.position + forward;
 
-                weapons[weaponID].DropWeapon(charConrtol, dropLocation);
-                weapons[weaponID].worldWeaponGameObject.SetActive(true);
-
+                weapons[weaponID].DropWeapon(charConrtol);
+                
+                weapons[currentWeapon] = null;
                 SwitchWeapon(lastWeapon, true);
             }
         }
@@ -105,15 +116,19 @@ namespace MyFPS.Player
 
         private void Start()
         {
-            /*foreach (Weapon weapon in weapons)
+            //Initial Weapon Set Up
+            foreach (Weapon weapon in weapons)
             {
+                weapon.SetUp(teamID, weapon.gameObject, Vector3.zero);
                 weapon.gameObject.SetActive(false);
-            }*/
+            }
+
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
             charConrtol = gameObject.GetComponent<CharacterController>();
             SwitchWeapon(currentWeapon);
+            lastWeapon = 1;
         }
         private void Update()
         {
@@ -125,6 +140,10 @@ namespace MyFPS.Player
             if (Input.GetKeyDown(KeyCode.T))
             {
                 TakeDamage(1);
+            }
+            if(Input.GetKeyDown(KeyCode.C) && !currentGun.reloading)
+            {
+                SwitchWeapon(lastWeapon);
             }
         }
     }
