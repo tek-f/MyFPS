@@ -26,7 +26,7 @@ namespace MyFPS.Mirror
         {
             set
             {
-                value = isLeader;
+                isLeader = value;
                 startGameButton.gameObject.SetActive(value);
             }
         }
@@ -47,8 +47,7 @@ namespace MyFPS.Mirror
 
         public override void OnStartAuthority()
         {
-            //CMDSetDisplayName(PlayerNameInput.DisplayName);
-
+            CMDSetDisplayName(PlayerNameInput.DisplayName);
             lobbyUI.SetActive(true);
         }
         public override void OnStartClient()
@@ -84,6 +83,42 @@ namespace MyFPS.Mirror
                 playerNameTexts[i].text = "Waiting for player...";
                 playerReadyTexts[i].text = string.Empty;
             }
+
+            for(int i = 0; i < Room.roomPlayers.Count; i++)
+            {
+                playerNameTexts[i].text = Room.roomPlayers[i].displayName;
+                playerReadyTexts[i].text = Room.roomPlayers[i].isReady ? "<color=green>Ready</color>" : "<color=red>Not Ready</color>";
+            }
+        }
+        public void HandleReadyToStart(bool readyToStart)
+        {
+            if(!isLeader) {return;}
+
+            startGameButton.interactable = readyToStart;
+        }
+
+        [Command]
+        private void CMDSetDisplayName(string display)
+        {
+            this.displayName = display;
+        }
+        [Command]
+        public void CMDReadyUp()
+        {
+            isReady = !isReady;
+
+            Room.NotifyPlayersOfReadyState();
+        }
+
+        [Command]
+        public void CMDStartGame()
+        {
+            if(Room.roomPlayers[0].connectionToClient != connectionToClient)
+            {
+                return;
+            }
+            
+            Room.StartGame();
         }
     }
 }

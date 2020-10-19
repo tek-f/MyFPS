@@ -10,16 +10,20 @@ namespace MyFPS.Mirror
     public class NetworkManagerLobby : NetworkManager
     {
         [SerializeField] private int minPlayers = 2;//-------------
-        [Scene] [SerializeField] private string MenuScene = string.Empty;
+        [Scene] [SerializeField] private string menuScene = string.Empty;
         List<List<GameObject>> testlist = new List<List<GameObject>>();
 
         [Header("Room")]
         [SerializeField] private NetworkRoomPlayerLobby roomPlayerPrefab = null;
 
+        [Header("Game")]
+        [SerializeField] private NetworkGamePlayerLobby gamePlayerPrefab = null;
+
         public static event Action OnClientConnected;
         public static event Action OnClientDisconnected;
 
         public List<NetworkRoomPlayerLobby> roomPlayers { get; } = new List<NetworkRoomPlayerLobby>();//-------------
+        public List<NetworkGamePlayerLobby> gamePlayers { get; } = new List<NetworkGamePlayerLobby>();
 
         public override void OnStartServer()
         {
@@ -50,7 +54,7 @@ namespace MyFPS.Mirror
                 networkConnection.Disconnect();
                 return;
             }
-            if(SceneManager.GetActiveScene().path != MenuScene)
+            if(SceneManager.GetActiveScene().path != menuScene)
             {
                 NetworkRoomPlayerLobby roomPlayerLobby = Instantiate(roomPlayerPrefab);
             }
@@ -70,7 +74,7 @@ namespace MyFPS.Mirror
         }
         public override void OnServerAddPlayer(NetworkConnection networkConnection)
         {
-            if (SceneManager.GetActiveScene().path == MenuScene)
+            if (SceneManager.GetActiveScene().path == menuScene)
             {
                 bool isLeader = roomPlayers.Count == 0;
 
@@ -89,7 +93,7 @@ namespace MyFPS.Mirror
         {
             foreach (var player in roomPlayers)
             {
-                //player.HandleReadyToStart(IsReadyToStart);
+                player.HandleReadyToStart(IsReadyToStart());
             }
         }
         public bool IsReadyToStart()
@@ -107,6 +111,34 @@ namespace MyFPS.Mirror
             }
             Debug.LogWarning("IsReadyTooStart not returned");
             return true;
+        }
+        public void StartGame()
+        {
+            if(SceneManager.GetActiveScene().path == menuScene)
+            {
+                if(!IsReadyToStart())
+                {
+                    return;
+                }
+                ServerChangeScene("Scene_Map_01");
+            }
+        }
+        public override void ServerChangeScene(string newSceneName)
+        {
+            if(SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
+            {
+                for(int i = roomPlayers.Count - 1; i >= 0; i--)
+                {
+                    var conn = roomPlayers[i].connectionToClient;
+                    var gamePlayersInstance = Instantiate(gamePlayerPrefab);
+                    gamePlayersInstance.SetDisplayName(roomPlayers[i].displayName);
+
+                    NetworkServer.Destroy(conn.identity.gameObject);
+                    NetworkServer.ReplacePlayerForConnection(conn, gamePlayersInstance.gameObject, true);
+                }
+            }
+
+            base.ServerChangeScene(newSceneName);
         }
     }
 }

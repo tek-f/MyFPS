@@ -2690,14 +2690,16 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 4366556898658349827, guid: 3e2818bc7f2a2364a866bfc727fd698d,
+  playerPrefab: {fileID: 8581889007722767782, guid: acbbcbef2bd6b51438aaf3de1a670276,
     type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
   minPlayers: 2
-  MenuScene: Assets/Scenes/MultiplayerTestScene.unity
+  menuScene: 
   roomPlayerPrefab: {fileID: 5473893352313413723, guid: 3e2818bc7f2a2364a866bfc727fd698d,
+    type: 3}
+  gamePlayerPrefab: {fileID: 8866222157680644088, guid: 043f73800467a6f44ba0ac9617df01e2,
     type: 3}
 --- !u!4 &1602197531
 Transform:

@@ -149,6 +149,9 @@ namespace MyFPS.Player
                 weapon.SetUp(teamID, weapon.gameObject, Vector3.zero);
                 weapon.gameObject.SetActive(false);
             }
+            weapons[0].gameObject.SetActive(true);
+            currentGun = weapons[0].GetComponent<Gun>();
+            lastWeapon = 1;
 
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
