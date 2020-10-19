@@ -47,6 +47,7 @@ namespace MyFPS.Mirror
 
         public override void OnStartAuthority()
         {
+            Debug.Log("is it running?");
             CMDSetDisplayName(PlayerNameInput.DisplayName);
             lobbyUI.SetActive(true);
         }

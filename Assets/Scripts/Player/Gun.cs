@@ -72,8 +72,22 @@ namespace MyFPS.Player
         }
         public void Reload()
         {
-            totalAmmo -= (maxAmmo - remainingAmmo);
-            remainingAmmo = maxAmmo;
+            if(totalAmmo < (maxAmmo - remainingAmmo))            
+            {
+                remainingAmmo += totalAmmo;
+                totalAmmo = 0;
+            }
+            else if(totalAmmo - (maxAmmo - remainingAmmo) < 0)
+            {
+                remainingAmmo = totalAmmo;
+                totalAmmo = 0;
+            }
+            else
+            {
+                totalAmmo -= (maxAmmo - remainingAmmo);
+                remainingAmmo = maxAmmo;
+            }
+            
             ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
             clipText.text = totalAmmo.ToString();
             reloading = false;

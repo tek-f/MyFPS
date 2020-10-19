@@ -169,7 +169,7 @@ namespace MyFPS.Player
             //Testing
             if(!IsHoldingFlag)
             {
-                Ray ray = Camera.main.ViewportPointToRay(new Vector3(0,0,0));
+                Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
                 RaycastHit hit;
                 Transform rayHit = null;
                 if(Physics.Raycast(ray, out hit))
@@ -200,7 +200,7 @@ namespace MyFPS.Player
                 }
                 if(Input.GetKeyDown(KeyCode.G) && rayHit != null)
                 {
-
+                       
                 }
             }
         }
