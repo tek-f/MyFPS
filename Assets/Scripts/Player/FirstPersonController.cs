@@ -12,7 +12,6 @@ public class FirstPersonController : MonoBehaviour
     bool grounded;
     float xRotation;
     public Vector3 velocity;
-    //Camera playerCamera;
     Transform cameraTransform;
     CharacterController charControl;
     float groundedMOE = 1.1f;
