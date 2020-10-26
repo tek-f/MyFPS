@@ -21,9 +21,9 @@ namespace MyFPS.Player
         Text ammoText, clipText;
         [Header("Animation")]
         public Animator anim;
-        void Shoot()
+        public void Shoot()
         {
-            if (remainingAmmo > 0)
+            if (remainingAmmo > 0 && !reloading)
             {
                 remainingAmmo--;
                 ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
@@ -92,10 +92,13 @@ namespace MyFPS.Player
             clipText.text = totalAmmo.ToString();
             reloading = false;
         }
-        void StartReload()
+        public void StartReload()
         {
-            anim.SetTrigger("reload");
-            reloading = true;
+            if (totalAmmo > 0 && remainingAmmo < maxAmmo)
+            {
+                anim.SetTrigger("reload");
+                reloading = true;
+            }
         }
         public void OnWeaponSwap()
         {
@@ -117,19 +120,19 @@ namespace MyFPS.Player
             ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
             clipText.text = totalAmmo.ToString();
         }
-        private void Update()
-        {
-            if (Input.GetButtonDown("Fire1") && !reloading)
-            {
-                Shoot();
-            }
-            if (Input.GetButtonDown("Reload"))
-            {
-                if (totalAmmo > 0 && remainingAmmo < maxAmmo)
-                {
-                    StartReload();
-                }
-            }
-        }
+        //private void Update()
+        //{
+        //    if (Input.GetButtonDown("Fire1") && !reloading)
+        //    {
+        //        Shoot();
+        //    }
+        //    if (Input.GetButtonDown("Reload"))
+        //    {
+        //        if (totalAmmo > 0 && remainingAmmo < maxAmmo)
+        //        {
+        //            StartReload();
+        //        }
+        //    }
+        //}
     }
 }

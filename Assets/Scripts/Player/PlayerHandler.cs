@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace MyFPS.Player
 {
@@ -16,7 +17,11 @@ namespace MyFPS.Player
         public int teamID { get { return playersTeamID; } }
         CharacterController charConrtol;
         #endregion
-
+        #region Input
+        [SerializeField] PlayerInput playerInput;
+        InputAction reloadAction;
+        InputAction fireAction;
+        #endregion
         #region Weapons
         public List<Weapon> weapons;
         [SerializeField] GameObject flagObject;
@@ -141,6 +146,15 @@ namespace MyFPS.Player
             //gameObject.GetComponentInChildren<RagdollController>().Death();
         }
 
+        private void OnFirePerformed(InputAction.CallbackContext _context)
+        {
+            currentGun.Shoot();
+        }
+        private void OnFireCanceled(InputAction.CallbackContext _context)
+        {
+
+        }
+
         private void Start()
         {
             //Initial Weapon Set Up
@@ -153,11 +167,24 @@ namespace MyFPS.Player
             currentGun = weapons[0].GetComponent<Gun>();
             lastWeapon = 1;
 
+            //Cursor Set Up
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
+            //Player Input Set Up
             charConrtol = gameObject.GetComponent<CharacterController>();
-            
+
+            playerInput = gameObject.GetComponent<PlayerInput>();
+
+            reloadAction = playerInput.actions.FindAction("Reload");
+            reloadAction.Enable();
+
+            fireAction = playerInput.actions.FindAction("Fire");
+            fireAction.Enable();
+            fireAction.performed += OnFirePerformed;
+            fireAction.performed += OnFireCanceled;
+
+
 
             //TESTING
             Debug.LogError("NOTE ERROR <DELETE AFTER READING>: added a weapon dropping system that works by dropping the actual object that the player has as a weapon" +
@@ -185,23 +212,31 @@ namespace MyFPS.Player
                         infoPanel.SetActive(false);
                     }
                 }
-                if (Input.GetKeyDown(KeyCode.E))
+                if(reloadAction.ReadValue<float>() > 0)
                 {
-                    DropWeapon(currentWeapon);
-                    SwitchWeapon(lastWeapon, true);
+                    currentGun.StartReload();
                 }
-                if (Input.GetKeyDown(KeyCode.T))
+                if (fireAction.ReadValue<float>() > 0)
                 {
-                    TakeDamage(1);
+                    currentGun.Shoot();
                 }
-                if(Input.GetKeyDown(KeyCode.C) && !currentGun.reloading)
-                {
-                    SwitchWeapon(lastWeapon);
-                }
-                if(Input.GetKeyDown(KeyCode.G) && rayHit != null)
-                {
-                       
-                }
+                //if (Input.GetKeyDown(KeyCode.E))
+                //{
+                //    DropWeapon(currentWeapon);
+                //    SwitchWeapon(lastWeapon, true);
+                //}
+                //if (Input.GetKeyDown(KeyCode.T))
+                //{
+                //    TakeDamage(1);
+                //}
+                //if(Input.GetKeyDown(KeyCode.C) && !currentGun.reloading)
+                //{
+                //    SwitchWeapon(lastWeapon);
+                //}
+                //if(Input.GetKeyDown(KeyCode.G) && rayHit != null)
+                //{
+
+                //}
             }
         }
     }

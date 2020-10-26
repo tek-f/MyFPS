@@ -32,7 +32,7 @@ namespace MyFPS.Mirror
         {
             Transform spawnPoint = spawnPoints.ElementAtOrDefault(nextIndex);
 
-            if(spawnPoint = null)
+            if(spawnPoint == null)
             {
                 Debug.LogError("Spawn point transform not found");
                 return;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : MonoBehaviour
@@ -16,18 +17,25 @@ public class FirstPersonController : MonoBehaviour
     CharacterController charControl;
     float groundedMOE = 1.1f;
     public LayerMask groundLayerMask;
+    [SerializeField] PlayerInput playerInput;
+    InputAction lookAction;
+    InputAction moveAction;
+    InputAction jumpAction;
     public Animator anim;
-    void MouseLook()
+    void MouseLook(Vector2 inputVector)
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        //    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        //    float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+
+        float mouseX = inputVector.x;
+        float mouseY = inputVector.y;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
     }
-    void PlayerMovement()
+    void PlayerMovement(Vector2 inputVector)
     {
         /*if(charControl.isGrounded && velocity.y < -2)
         {
@@ -39,10 +47,12 @@ public class FirstPersonController : MonoBehaviour
             velocity.y = 0f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        //float x = Input.GetAxis("Horizontal");
+        //float z = Input.GetAxis("Vertical");
+        float x = inputVector.x;
+        float z = inputVector.y;
 
-        if(z != 0 || x != 0)
+        if (z != 0 || x != 0)
         {
             anim.SetBool("moving", true);
         }
@@ -58,7 +68,7 @@ public class FirstPersonController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         charControl.Move(velocity * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && grounded)
+        if(jumpAction.ReadValue<float>() > 0 && grounded)
         {
             Debug.Log("jump");
             velocity.y += Mathf.Sqrt(jumpSpeed * -1 * gravity);
@@ -71,9 +81,22 @@ public class FirstPersonController : MonoBehaviour
         cameraTransform = GameObject.FindWithTag("MainCamera").GetComponent<Camera>().transform;
         charControl = gameObject.GetComponent<CharacterController>();
     }
+    private void Start()
+    {
+        playerInput = gameObject.GetComponent<PlayerInput>();
+
+        moveAction = playerInput.actions.FindAction("Move");
+        moveAction.Enable();
+
+        lookAction = playerInput.actions.FindAction("Look");
+        lookAction.Enable();
+
+        jumpAction = playerInput.actions.FindAction("Jump");
+        jumpAction.Enable();
+    }
     private void Update()
     {
-        MouseLook();
-        PlayerMovement();
+        MouseLook(lookAction.ReadValue<Vector2>());
+        PlayerMovement(moveAction.ReadValue<Vector2>());
     }
 }
