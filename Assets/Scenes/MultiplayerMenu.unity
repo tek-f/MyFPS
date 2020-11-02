@@ -2683,7 +2683,7 @@ MonoBehaviour:
   showDebugMessages: 0
   serverTickRate: 30
   offlineScene: 
-  onlineScene: Assets/Scenes/MultiplayerTestScene.unity
+  onlineScene: Assets/Scenes/MultiplayerMenu.unity
   transport: {fileID: 1602197529}
   networkAddress: localhost
   maxConnections: 4
@@ -2695,9 +2695,9 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
-  minPlayers: 2
-  menuScene: Assets/Scenes/MultiplayerTestScene.unity
-  levelScene: Assets/Scenes/Scene_Map_CTF.unity
+  minPlayers: 0
+  menuScene: Assets/Scenes/MultiplayerMenu.unity
+  levelScene: Assets/Scenes/Scene_Map_Deathmatch.unity
   roomPlayerPrefab: {fileID: 5473893352313413723, guid: 3e2818bc7f2a2364a866bfc727fd698d,
     type: 3}
   gamePlayerPrefab: {fileID: 8866222157680644088, guid: 043f73800467a6f44ba0ac9617df01e2,
