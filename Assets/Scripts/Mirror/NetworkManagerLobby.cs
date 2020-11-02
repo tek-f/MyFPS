@@ -11,6 +11,7 @@ namespace MyFPS.Mirror
     {
         [SerializeField] private int minPlayers = 2;//-------------
         [Scene] [SerializeField] private string menuScene = string.Empty;
+        [Scene] [SerializeField] public string levelScene = string.Empty;
         List<List<GameObject>> testlist = new List<List<GameObject>>();
 
         [Header("Room")]
@@ -122,12 +123,15 @@ namespace MyFPS.Mirror
                 {
                     return;
                 }
-                ServerChangeScene("Scene_Map_Deathmatch");
+                if (levelScene != null)
+                {
+                    ServerChangeScene(levelScene);
+                }
             }
         }
         public override void ServerChangeScene(string newSceneName)
         {
-            if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
+            if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Assets/Scenes/Scene_Map"))
             {
                 for (int i = roomPlayers.Count - 1; i >= 0; i--)
                 {
@@ -144,7 +148,7 @@ namespace MyFPS.Mirror
 
         public override void OnServerSceneChanged(string sceneName)
         {
-            if(sceneName.StartsWith("Scene_Map"))
+            if(sceneName.StartsWith("Assets/Scenes/Scene_Map"))
             {
 
                 GameObject playerSpawnSystemInstance = Instantiate(playerSpawnSystem);

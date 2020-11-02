@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3406954425042026078}
   - component: {fileID: 5981191750754056137}
   - component: {fileID: 7224122392097646598}
+  - component: {fileID: 7055781324103556505}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -104,7 +105,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   mouseSensitivity: 100
-  speed: 2
+  speed: 10
   gravity: -10
   jumpSpeed: 10
   velocity: {x: 0, y: 0, z: 0}
@@ -145,6 +146,28 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7055781324103556505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894953642186114273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9c1693b80adfd47a830e6d8d52d277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  alive: 0
+  playersTeamID: 0
+  playerInput: {fileID: 7224122392097646598}
+  weapons: []
+  flagObject: {fileID: 0}
+  dropOffset: {x: 0, y: 0, z: 0}
+  equippedWeaponPosition: {x: 0, y: 0, z: 0}
+  infoPanel: {fileID: 0}
+  infoPanelText: {fileID: 0}
 --- !u!1 &2304602240003782325
 GameObject:
   m_ObjectHideFlags: 0

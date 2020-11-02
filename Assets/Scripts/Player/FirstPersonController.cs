@@ -12,7 +12,7 @@ namespace MyFPS.Player
         public float mouseSensitivity = 100f;
         public float speed = 2f;
         public float gravity = -10f;
-        public float jumpSpeed = 50f;
+        public float jumpSpeed = 10f;
         bool grounded;
         float xRotation;
         public Vector3 velocity;
@@ -67,7 +67,7 @@ namespace MyFPS.Player
             if (jumpAction.ReadValue<float>() > 0 && grounded)
             {
                 Debug.Log("jump");
-                velocity.y += Mathf.Sqrt(jumpSpeed * -1 * gravity);
+                velocity.y += jumpSpeed;
             }
         }
         [ClientCallback]

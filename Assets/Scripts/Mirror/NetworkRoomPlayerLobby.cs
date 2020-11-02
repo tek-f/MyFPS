@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using Mirror;
 using TMPro;
@@ -15,6 +16,7 @@ namespace MyFPS.Mirror
         [SerializeField] private TMP_Text[] playerNameTexts = new TMP_Text[4];
         [SerializeField] private TMP_Text[] playerReadyTexts = new TMP_Text[4];
         [SerializeField] private Button startGameButton;
+        [SerializeField] private Button levelSelectButton;
 
         [SyncVar(hook = nameof(HandleDisplayNameChange))]
         public string displayName = "Loading...";
@@ -28,6 +30,7 @@ namespace MyFPS.Mirror
             {
                 isLeader = value;
                 startGameButton.gameObject.SetActive(value);
+                levelSelectButton.gameObject.SetActive(value);
             }
         }
 
@@ -64,6 +67,12 @@ namespace MyFPS.Mirror
         }
         public void HandleReadyStatusChange(bool oldValue, bool newValue) => UpdateDisplay();
         public void HandleDisplayNameChange(string oldValue, string newValue) => UpdateDisplay();
+
+        public void SetLevelScene(int sceneID)
+        {
+            room.levelScene = SceneUtility.GetScenePathByBuildIndex(sceneID);
+            print(room.levelScene);
+        }
 
         private void UpdateDisplay()
         {

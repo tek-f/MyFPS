@@ -2697,6 +2697,7 @@ MonoBehaviour:
   spawnPrefabs: []
   minPlayers: 2
   menuScene: Assets/Scenes/MultiplayerTestScene.unity
+  levelScene: Assets/Scenes/Scene_Map_CTF.unity
   roomPlayerPrefab: {fileID: 5473893352313413723, guid: 3e2818bc7f2a2364a866bfc727fd698d,
     type: 3}
   gamePlayerPrefab: {fileID: 8866222157680644088, guid: 043f73800467a6f44ba0ac9617df01e2,
