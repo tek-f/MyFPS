@@ -32,7 +32,7 @@ namespace MyFPS.Mirror
         {
             Transform spawnPoint = spawnPoints.ElementAtOrDefault(nextIndex);
 
-            if(spawnPoint == null)
+            if (spawnPoint == null)
             {
                 Debug.LogError("Spawn point transform not found");
                 return;
@@ -40,6 +40,11 @@ namespace MyFPS.Mirror
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
             NetworkServer.Spawn(playerInstance, conn);
+            nextIndex++;
+            if(nextIndex >= spawnPoints.Count)
+            {
+                nextIndex = 0;
+            }
         }
     }
 }

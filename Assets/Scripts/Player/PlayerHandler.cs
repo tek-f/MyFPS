@@ -150,9 +150,9 @@ namespace MyFPS.Player
         {
             currentGun.Shoot();
         }
-        private void OnFireCanceled(InputAction.CallbackContext _context)
+        private void OnReloadPerformed(InputAction.CallbackContext _context)
         {
-
+            currentGun.StartReload();
         }
 
         private void Start()
@@ -178,11 +178,11 @@ namespace MyFPS.Player
 
             reloadAction = playerInput.actions.FindAction("Reload");
             reloadAction.Enable();
+            reloadAction.performed += OnReloadPerformed;
 
             fireAction = playerInput.actions.FindAction("Fire");
             fireAction.Enable();
             fireAction.performed += OnFirePerformed;
-            fireAction.performed += OnFireCanceled;
 
 
 
@@ -212,14 +212,14 @@ namespace MyFPS.Player
                         infoPanel.SetActive(false);
                     }
                 }
-                if(reloadAction.ReadValue<float>() > 0)
-                {
-                    currentGun.StartReload();
-                }
-                if (fireAction.ReadValue<float>() > 0)
-                {
-                    currentGun.Shoot();
-                }
+                //if(reloadAction.ReadValue<float>() > 0)
+                //{
+                //    currentGun.StartReload();
+                //}
+                //if (fireAction.ReadValue<float>() > 0)
+                //{
+                //    currentGun.Shoot();
+                //}
                 //if (Input.GetKeyDown(KeyCode.E))
                 //{
                 //    DropWeapon(currentWeapon);

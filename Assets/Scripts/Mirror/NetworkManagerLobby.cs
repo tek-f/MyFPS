@@ -127,9 +127,9 @@ namespace MyFPS.Mirror
         }
         //public override void ServerChangeScene(string newSceneName)
         //{
-        //    if(SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
+        //    if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
         //    {
-        //        for(int i = roomPlayers.Count - 1; i >= 0; i--)
+        //        for (int i = roomPlayers.Count - 1; i >= 0; i--)
         //        {
         //            var conn = roomPlayers[i].connectionToClient;
         //            var gamePlayersInstance = Instantiate(gamePlayerPrefab);
@@ -139,7 +139,6 @@ namespace MyFPS.Mirror
         //            NetworkServer.ReplacePlayerForConnection(conn, gamePlayersInstance.gameObject, true);
         //        }
         //    }
-
         //    base.ServerChangeScene(newSceneName);
         //}
 
@@ -147,6 +146,7 @@ namespace MyFPS.Mirror
         {
             if(sceneName.StartsWith("Scene_Map"))
             {
+
                 GameObject playerSpawnSystemInstance = Instantiate(playerSpawnSystem);
                 NetworkServer.Spawn(playerSpawnSystemInstance);
             }

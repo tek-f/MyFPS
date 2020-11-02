@@ -31,6 +31,8 @@ namespace MyFPS
             enabled = true;
 
             Controls.Player.Look.performed += ctx => MouseLook(ctx.ReadValue<Vector2>());
+
+            Controls.Player.Fire.started += ctx => Shoot();
         }
 
         [ClientCallback]
@@ -49,6 +51,27 @@ namespace MyFPS
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
             cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             transform.Rotate(Vector3.up * mouseX);
+        }
+        void Shoot() => CMDShoot(cameraTransform.position, cameraTransform.forward);
+        [Command]
+        void CMDShoot(Vector3 cameraForward, Vector3 cameraPosition)
+        {
+            Ray ray = new Ray(cameraPosition, cameraForward * 500);
+            RaycastHit hit;
+            Debug.DrawRay(cameraPosition, cameraForward * 500, Color.red, 2f);
+            if(Physics.Raycast(ray, out hit))
+            {
+                if(hit.collider.CompareTag("Player"))
+                {
+                    Debug.Log("player hit: " + hit.collider.GetComponent<NetworkIdentity>().netId);
+                    RpcPlayerFiredEntity(GetComponent<NetworkIdentity>().netId, hit.collider.GetComponent<NetworkIdentity>().netId, hit.point, hit.normal);
+                }
+            }
+        }
+        [ClientRpc]
+        void RpcPlayerFiredEntity(uint shootID, uint targetID, Vector3 impactPos, Vector3 impactRot)
+        {
+
         }
     }
 }
