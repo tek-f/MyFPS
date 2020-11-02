@@ -122,25 +122,25 @@ namespace MyFPS.Mirror
                 {
                     return;
                 }
-                ServerChangeScene("Scene_Map_01");
+                ServerChangeScene("Scene_Map_Deathmatch");
             }
         }
-        //public override void ServerChangeScene(string newSceneName)
-        //{
-        //    if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
-        //    {
-        //        for (int i = roomPlayers.Count - 1; i >= 0; i--)
-        //        {
-        //            var conn = roomPlayers[i].connectionToClient;
-        //            var gamePlayersInstance = Instantiate(gamePlayerPrefab);
-        //            gamePlayersInstance.SetDisplayName(roomPlayers[i].displayName);
+        public override void ServerChangeScene(string newSceneName)
+        {
+            if (SceneManager.GetActiveScene().path == menuScene && newSceneName.StartsWith("Scene_Map"))
+            {
+                for (int i = roomPlayers.Count - 1; i >= 0; i--)
+                {
+                    var conn = roomPlayers[i].connectionToClient;
+                    var gamePlayersInstance = Instantiate(gamePlayerPrefab);
+                    gamePlayersInstance.SetDisplayName(roomPlayers[i].displayName);
 
-        //            NetworkServer.Destroy(conn.identity.gameObject);
-        //            NetworkServer.ReplacePlayerForConnection(conn, gamePlayersInstance.gameObject, true);
-        //        }
-        //    }
-        //    base.ServerChangeScene(newSceneName);
-        //}
+                    NetworkServer.Destroy(conn.identity.gameObject);
+                    NetworkServer.ReplacePlayerForConnection(conn, gamePlayersInstance.gameObject, true);
+                }
+            }
+            base.ServerChangeScene(newSceneName);
+        }
 
         public override void OnServerSceneChanged(string sceneName)
         {

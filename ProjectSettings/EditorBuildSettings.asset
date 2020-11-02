@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CTF.unity
     guid: a905fc84b78ed08438b51f0b9473519a
-  - enabled: 0
-    path: Assets/Scenes/Deathmatch.unity
+  - enabled: 1
+    path: Assets/Scenes/Scene_Map_Deathmatch.unity
     guid: 903e6f97e8d908b4aa750b994a071a76
   - enabled: 0
     path: Assets/Scenes/TestScene.unity

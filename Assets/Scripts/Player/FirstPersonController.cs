@@ -27,9 +27,6 @@ namespace MyFPS.Player
         public Animator anim;
         void MouseLook(Vector2 inputVector)
         {
-            //    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            //    float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
-
             float mouseX = inputVector.x;
             float mouseY = inputVector.y;
 
@@ -40,30 +37,26 @@ namespace MyFPS.Player
         }
         void PlayerMovement(Vector2 inputVector)
         {
-            /*if(charControl.isGrounded && velocity.y < -2)
-            {
-                velocity.y = 0f;
-            }*/
             grounded = Physics.Raycast(gameObject.transform.position, Vector3.down, groundedMOE, groundLayerMask);
             if (grounded && velocity.y < -2)
             {
                 velocity.y = 0f;
             }
 
-            //float x = Input.GetAxis("Horizontal");
-            //float z = Input.GetAxis("Vertical");
             float x = inputVector.x;
             float z = inputVector.y;
 
-            if (anim != null && (z != 0 || x != 0))
+            if (anim != null)
             {
-                anim.SetBool("moving", true);
+                if (z != 0 || x != 0)
+                {
+                    anim.SetBool("moving", true);
+                }
+                else if(anim.GetBool("moving"))
+                {
+                    anim.SetBool("moving", false);
+                }
             }
-            else if (anim != null)
-            {
-                anim.SetBool("moving", false);
-            }
-
 
             Vector3 move = (transform.right * x) + (transform.forward * z);
             charControl.Move(move * speed * Time.deltaTime);
