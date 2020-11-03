@@ -6,7 +6,6 @@ namespace MyFPS.Mirror
 {
     public class MainMenu : MonoBehaviour
     {
-
         [SerializeField] private NetworkManagerLobby networkManager;
 
         [Header("IU")]

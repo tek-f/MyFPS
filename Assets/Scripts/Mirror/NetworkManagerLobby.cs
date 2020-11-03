@@ -12,7 +12,6 @@ namespace MyFPS.Mirror
         [SerializeField] private int minPlayers = 2;//-------------
         [Scene] [SerializeField] private string menuScene = string.Empty;
         [Scene] [SerializeField] public string levelScene = string.Empty;
-        List<List<GameObject>> testlist = new List<List<GameObject>>();
 
         [Header("Room")]
         [SerializeField] private NetworkRoomPlayerLobby roomPlayerPrefab = null;
