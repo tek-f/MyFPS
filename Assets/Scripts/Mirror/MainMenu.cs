@@ -8,7 +8,7 @@ namespace MyFPS.Mirror
     {
         [SerializeField] private NetworkManagerLobby networkManager;
 
-        [Header("IU")]
+        [Header("UI")]
         [SerializeField] private GameObject landingPagePanel;
         public void HostLobby()
         {
