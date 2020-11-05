@@ -2695,7 +2695,7 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
-  minPlayers: 0
+  minPlayers: 1
   menuScene: Assets/Scenes/MultiplayerMenu.unity
   levelScene: Assets/Scenes/Scene_Map_Deathmatch.unity
   roomPlayerPrefab: {fileID: 5473893352313413723, guid: 3e2818bc7f2a2364a866bfc727fd698d,
