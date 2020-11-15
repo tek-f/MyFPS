@@ -6,11 +6,7 @@ public class RagdollController : MonoBehaviour
 {
     GameObject ragdoll;
     List<Rigidbody> bodies;
-
-    private void Start()
-    {
-        SetKinematic(true);
-    }
+    [SerializeField] int health = 10;
 
     void SetKinematic(bool valueToSet)
     {
@@ -21,7 +17,6 @@ public class RagdollController : MonoBehaviour
             body.isKinematic = valueToSet;
         }
     }
-
     public void Death()
     {
         SetKinematic(false);
@@ -30,5 +25,19 @@ public class RagdollController : MonoBehaviour
         {
             anim.enabled = false;
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("damage taken = " + damage);
+        if(health <= 0)
+        {
+            Death();
+            print("ded");
+        }
+    }
+    private void Start()
+    {
+        SetKinematic(true);
     }
 }

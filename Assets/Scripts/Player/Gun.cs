@@ -50,6 +50,10 @@ namespace MyFPS.Player
                     }
                     else
                     {
+                        if(hit.transform.GetComponent<RagdollController>())
+                        {
+                            hit.transform.GetComponent<RagdollController>().TakeDamage(damage);
+                        }
                         if (hit.transform.GetComponent<Target>())
                         {
                             Target target = hit.transform.GetComponent<Target>();

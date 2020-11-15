@@ -40,6 +40,7 @@ namespace MyFPS.Mirror
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
             NetworkServer.Spawn(playerInstance, conn);
+
             nextIndex++;
             if(nextIndex >= spawnPoints.Count)
             {

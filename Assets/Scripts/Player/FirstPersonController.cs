@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 namespace MyFPS.Player
 {
     [RequireComponent(typeof(CharacterController))]
-    public class FirstPersonController : NetworkBehaviour
+    public class FirstPersonController : MonoBehaviour
     {
         public float mouseSensitivity = 100f;
         public float speed = 2f;
@@ -70,11 +70,9 @@ namespace MyFPS.Player
                 velocity.y += jumpSpeed;
             }
         }
-        [ClientCallback]
         private void OnEnable() => playerInput.enabled = true;
-        [ClientCallback]
         private void OnDisable() => playerInput.enabled = false;
-        public override void OnStartAuthority()
+        private void Start()
         {
             enabled = true;
 
@@ -107,7 +105,6 @@ namespace MyFPS.Player
         //    jumpAction = playerInput.actions.FindAction("Jump");
         //    jumpAction.Enable();
         //}
-        [ClientCallback]
         private void Update()
         {
             MouseLook(lookAction.ReadValue<Vector2>());
