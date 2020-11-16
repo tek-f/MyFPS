@@ -7,23 +7,36 @@ namespace MyFPS.Player
 {
     public class Gun : MonoBehaviour
     {
-        [SerializeField]
+        [SerializeField] PlayerHandler player;
         [Header("Gun Metrics")]
+        [SerializeField]
         int remainingAmmo, maxAmmo, totalAmmo;
         public float range = 100f, gunForce = 50f;
         public int damage = 2;
         public Camera fpsCamera;
         public ParticleSystem muzzleFlash;
         public GameObject impactEffect;
-        public bool reloading;
+        public bool reloading = false, changing = false;
         [Header("HUD")]
         [SerializeField]
         Text ammoText, clipText;
         [Header("Animation")]
         public Animator anim;
+        public void SetUp()
+        {
+            if (fpsCamera == null)
+            {
+                fpsCamera = Camera.main;
+            }
+            //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHandler>();
+            remainingAmmo = maxAmmo;
+            totalAmmo = maxAmmo * 3;
+            ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
+            clipText.text = totalAmmo.ToString();
+        }
         public void Shoot()
         {
-            if (remainingAmmo > 0 && !reloading)
+            if (remainingAmmo > 0 && !reloading && !changing)
             {
                 remainingAmmo--;
                 ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
@@ -98,11 +111,32 @@ namespace MyFPS.Player
         }
         public void StartReload()
         {
-            if (totalAmmo > 0 && remainingAmmo < maxAmmo)
+            if(!reloading && !changing)
             {
-                anim.SetTrigger("reload");
-                reloading = true;
+                if (totalAmmo > 0 && remainingAmmo == 0)
+                {
+                    anim.SetTrigger("reloadEmpty");
+                    reloading = true;
+                }
+                else if (totalAmmo > 0 && remainingAmmo < maxAmmo)
+                {
+                    anim.SetTrigger("reload");
+                    reloading = true;
+                }
             }
+        }
+        public void StartWeaponSwap()
+        {
+            if(!reloading && !changing)
+            {
+                anim.SetTrigger("swapWeapon");
+                changing = true;
+            }
+        }
+        public void TriggerWeaponSwap()
+        {
+            changing = false;
+            player.SwitchWeapon(player.LastWeapon);
         }
         public void OnWeaponSwap()
         {
@@ -111,18 +145,7 @@ namespace MyFPS.Player
         }
         private void Start()
         {
-            if (fpsCamera == null)
-            {
-                fpsCamera = GetComponent<Camera>();
-            }
-            if (fpsCamera == null)
-            {
-                fpsCamera = Camera.main;
-            }
-            remainingAmmo = maxAmmo;
-            totalAmmo = maxAmmo * 3;
-            ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
-            clipText.text = totalAmmo.ToString();
+            SetUp();
         }
         //private void Update()
         //{

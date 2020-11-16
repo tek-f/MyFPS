@@ -11,10 +11,6 @@ namespace MyFPS.GameAdmin
         [Header("Resolution")]
         public Resolution[] resolutions;//Array of resolution options for the player
         public Dropdown resolutionDropdown;//The UI drop down object for resoltion settings
-        [Header("Key Binding")]
-        public Dictionary<string, KeyCode> keyBindings = new Dictionary<string, KeyCode>();//Dictionary for keybindings
-        public Text up, left, down, right, attack;//Text for keybinding buttons
-        private GameObject currentKey;//Button that has been pressed to be changed key binding
         #endregion
         #region Functions
         public bool IntToBool(int integer)
@@ -59,10 +55,6 @@ namespace MyFPS.GameAdmin
         {
             QualitySettings.SetQualityLevel(qualityIndex);//quality is set to option selected on the dropdown
         }
-        public void ChangeKey(GameObject clicked)
-        {
-            currentKey = clicked;
-        }
         public void SaveChanges()
         {
             PlayerPrefs.SetInt("fullScreen", BoolToInt(Screen.fullScreen));
@@ -86,32 +78,6 @@ namespace MyFPS.GameAdmin
             resolutionDropdown.AddOptions(options);//adds resolutions to dropdown options
             resolutionDropdown.value = currentResolutionIndex;//sets dropdowns current value to equal the current resolution
             resolutionDropdown.RefreshShownValue();
-            //Below sets text on key binding buttons to equal current key bindings
-            /*
-            keyBindings.Add("Up", KeyCode.W);
-            keyBindings.Add("Down", KeyCode.S);
-            keyBindings.Add("Left", KeyCode.A);
-            keyBindings.Add("Right", KeyCode.D);
-            keyBindings.Add("Attack", KeyCode.Space);
-            up.text = keyBindings["Up"].ToString();
-            down.text = keyBindings["Down"].ToString();
-            left.text = keyBindings["Left"].ToString();
-            right.text = keyBindings["Right"].ToString();
-            attack.text = keyBindings["Attack"].ToString();
-            */
-        }
-        private void OnGUI()
-        {
-            if (currentKey != null)
-            {
-                Event e = Event.current;
-                if (e.isKey)
-                {
-                    keyBindings[currentKey.name] = e.keyCode;
-                    currentKey.transform.GetChild(0).GetComponent<Text>().text = e.keyCode.ToString();
-                    currentKey = null;
-                }
-            }
         }
         #endregion
     }

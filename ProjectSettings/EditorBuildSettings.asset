@@ -8,21 +8,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 5897e443b14167744a0b6ba8db586f7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MultiplayerMenu.unity
     guid: 4c3c423b6cb0a234b8fe07422c7600a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Map_CTF.unity
     guid: a905fc84b78ed08438b51f0b9473519a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Map_Deathmatch.unity
     guid: 903e6f97e8d908b4aa750b994a071a76
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Map_01.unity
     guid: ce88c24ad7075114799a2de412a52355
+  - enabled: 1
+    path: Assets/Scenes/Scene_Assignment1_CreateAFPSController.unity
+    guid: 8172dbf2fe4f7744a9bf7df61cfe9616
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: bfe2ae57875341a4389d185746bcc999,
       type: 2}

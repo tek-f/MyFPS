@@ -8,6 +8,9 @@ namespace MyFPS.Player
 {
     public class PlayerHandler : MonoBehaviour
     {
+        [SerializeField] GameObject pausePanel;
+        [SerializeField] FirstPersonController fpsController;
+        bool paused;
         #region Player Metrics
         public int health = 3;
         public bool alive;
@@ -21,11 +24,21 @@ namespace MyFPS.Player
         [SerializeField] PlayerInput playerInput;
         InputAction reloadAction;
         InputAction fireAction;
+        InputAction swapWeaponAction;
+        InputAction escapeAction;
         #endregion
         #region Weapons
         public List<Weapon> weapons;
         [SerializeField] GameObject flagObject;
-        int currentWeapon = 0, lastWeapon = 0;
+        [SerializeField] int currentWeapon = 0, lastWeapon = 0;
+        #region 
+        public int LastWeapon
+        {
+            get
+            {
+                return lastWeapon;
+            }
+        }
         Gun currentGun;
         public Vector3 dropOffset, equippedWeaponPosition;
         public bool IsHoldingFlag
@@ -42,7 +55,7 @@ namespace MyFPS.Player
         [SerializeField] Text infoPanelText;
 
         #endregion
-        private void SwitchWeapon(int weaponID, bool overrideLock = false)
+        public void SwitchWeapon(int weaponID, bool overrideLock = false)
         {
             if (weapons[weaponID] != null && !overrideLock && weapons[currentWeapon].isWeaponLocked == true)
             {
@@ -104,6 +117,11 @@ namespace MyFPS.Player
                 weapons[weaponID].worldWeaponGameObject.SetActive(true);
             }
         }
+        public void ReturnFlag()
+        {
+            flagObject.SetActive(false);
+            weapons[currentWeapon].gameObject.SetActive(true);
+        }
         public void PickUpFlag()
         {
             foreach(var weapon in weapons)
@@ -129,7 +147,6 @@ namespace MyFPS.Player
                 return false;
             }
         }
-
         public void TakeDamage(int damage)
         {
             health -= damage;
@@ -145,7 +162,27 @@ namespace MyFPS.Player
             //To be used when rigid bodies on players has been set up. Is not usable for now. 21/09/2020
             //gameObject.GetComponentInChildren<RagdollController>().Death();
         }
-
+        public void Pause()
+        {
+            if(paused)
+            {
+                Time.timeScale = 1;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                pausePanel.SetActive(false);
+                fpsController.enabled = true;
+                paused = false;
+            }
+            else
+            {
+                Time.timeScale = 0;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                pausePanel.SetActive(true);
+                fpsController.enabled = false;
+                paused = true;
+            }
+        }
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
             currentGun.Shoot();
@@ -154,9 +191,20 @@ namespace MyFPS.Player
         {
             currentGun.StartReload();
         }
+        private void OnSwapWeaponPerformed(InputAction.CallbackContext _context)
+        {
+            currentGun.StartWeaponSwap();
+        }
+        private void OnEscapePerformed(InputAction.CallbackContext _context)
+        {
+            Pause();
+        }
 
         private void Start()
         {
+            //Variable/Refence SetUp
+            fpsController = GetComponent<FirstPersonController>();
+
             //Initial Weapon Set Up
             foreach (Weapon weapon in weapons)
             {
@@ -166,6 +214,8 @@ namespace MyFPS.Player
             weapons[0].gameObject.SetActive(true);
             currentGun = weapons[0].GetComponent<Gun>();
             lastWeapon = 1;
+
+            //Temp Gun Setup
 
             //Cursor Set Up
             Cursor.lockState = CursorLockMode.Locked;
@@ -184,12 +234,17 @@ namespace MyFPS.Player
             fireAction.Enable();
             fireAction.performed += OnFirePerformed;
 
+            swapWeaponAction = playerInput.actions.FindAction("SwapWeapon");
+            swapWeaponAction.Enable();
+            swapWeaponAction.performed += OnSwapWeaponPerformed;
+
+            escapeAction = playerInput.actions.FindAction("Escape");
+            escapeAction.Enable();
+            escapeAction.performed += OnEscapePerformed;
+
 
 
             //TESTING
-            Debug.LogError("NOTE ERROR <DELETE AFTER READING>: added a weapon dropping system that works by dropping the actual object that the player has as a weapon" +
-            ", however, the issue comes in when picking up the weapon and adding back to the player. Weapon needs a vector 3 that is it's position when attached/equiped"
-            + " by the player. Or the vector 3 could be on the player, with all weapons going to the same location. Might not look great, but is definatley easier and more efficent");
         }
         private void Update()
         {
@@ -239,5 +294,6 @@ namespace MyFPS.Player
                 //}
             }
         }
+        #endregion
     }
 }

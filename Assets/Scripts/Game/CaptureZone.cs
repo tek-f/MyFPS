@@ -10,7 +10,7 @@ namespace MyFPS.GameAdmin
         [SerializeField] int teamID;
 
         GameModeCTF gameModeCTF;
-        GameObject flagPrefab;
+        [SerializeField] GameObject worldSpaceFlag;
 
         private void Start()
         {
@@ -21,7 +21,11 @@ namespace MyFPS.GameAdmin
                 Debug.LogError("Could not fund GameModeCTF");
             }
         }
-
+        private void ResetFlag()
+        {
+            worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
+            worldSpaceFlag.SetActive(true);
+        }
         private void OnTriggerEnter(Collider other)
         {
             PlayerHandler player = other.GetComponent<PlayerHandler>();
@@ -36,7 +40,8 @@ namespace MyFPS.GameAdmin
                 if (player.IsHoldingFlag)
                 {
                     gameModeCTF.AddScore(player.teamID, 1);
-                    player.ReturnWeapon(1);
+                    player.ReturnFlag();
+                    ResetFlag();
                 }
             }
         }

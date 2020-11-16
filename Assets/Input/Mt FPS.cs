@@ -59,6 +59,22 @@ namespace MyFPS
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""SwapWeapon"",
+                    ""type"": ""Button"",
+                    ""id"": ""92d2ac4e-5ce4-4ac2-a3e3-7ea801bb06f3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Escape"",
+                    ""type"": ""Button"",
+                    ""id"": ""91892cba-c71f-4bf4-8744-9b66a5dbee0b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -323,6 +339,50 @@ namespace MyFPS
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d7e7fbb-9157-46bd-95b7-4d8d6e87e672"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""SwapWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1778ac63-de41-4b63-83b9-57fab6149504"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""SwapWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c0d0c5a-04a4-458d-a6ea-d46f94028c2f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse;Touch"",
+                    ""action"": ""Escape"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ffbd4e82-97d7-461d-ba6a-30d6abd8e8c1"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Escape"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -905,6 +965,8 @@ namespace MyFPS
             m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
             m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
             m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+            m_Player_SwapWeapon = m_Player.FindAction("SwapWeapon", throwIfNotFound: true);
+            m_Player_Escape = m_Player.FindAction("Escape", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -971,6 +1033,8 @@ namespace MyFPS
         private readonly InputAction m_Player_Fire;
         private readonly InputAction m_Player_Reload;
         private readonly InputAction m_Player_Jump;
+        private readonly InputAction m_Player_SwapWeapon;
+        private readonly InputAction m_Player_Escape;
         public struct PlayerActions
         {
             private @Controls m_Wrapper;
@@ -980,6 +1044,8 @@ namespace MyFPS
             public InputAction @Fire => m_Wrapper.m_Player_Fire;
             public InputAction @Reload => m_Wrapper.m_Player_Reload;
             public InputAction @Jump => m_Wrapper.m_Player_Jump;
+            public InputAction @SwapWeapon => m_Wrapper.m_Player_SwapWeapon;
+            public InputAction @Escape => m_Wrapper.m_Player_Escape;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1004,6 +1070,12 @@ namespace MyFPS
                     @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                     @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                     @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                    @SwapWeapon.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapWeapon;
+                    @SwapWeapon.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapWeapon;
+                    @SwapWeapon.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapWeapon;
+                    @Escape.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
+                    @Escape.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
+                    @Escape.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEscape;
                 }
                 m_Wrapper.m_PlayerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1023,6 +1095,12 @@ namespace MyFPS
                     @Jump.started += instance.OnJump;
                     @Jump.performed += instance.OnJump;
                     @Jump.canceled += instance.OnJump;
+                    @SwapWeapon.started += instance.OnSwapWeapon;
+                    @SwapWeapon.performed += instance.OnSwapWeapon;
+                    @SwapWeapon.canceled += instance.OnSwapWeapon;
+                    @Escape.started += instance.OnEscape;
+                    @Escape.performed += instance.OnEscape;
+                    @Escape.canceled += instance.OnEscape;
                 }
             }
         }
@@ -1184,6 +1262,8 @@ namespace MyFPS
             void OnFire(InputAction.CallbackContext context);
             void OnReload(InputAction.CallbackContext context);
             void OnJump(InputAction.CallbackContext context);
+            void OnSwapWeapon(InputAction.CallbackContext context);
+            void OnEscape(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {
