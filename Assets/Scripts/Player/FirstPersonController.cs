@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using MyFPS.GameAdmin;
 
 namespace MyFPS.Player
 {
@@ -72,7 +73,7 @@ namespace MyFPS.Player
         }
         private void OnEnable() => playerInput.enabled = true;
         private void OnDisable() => playerInput.enabled = false;
-        private void Start()
+        private void Awake()
         {
             enabled = true;
 
@@ -110,5 +111,6 @@ namespace MyFPS.Player
             MouseLook(lookAction.ReadValue<Vector2>());
             PlayerMovement(moveAction.ReadValue<Vector2>());
         }
+
     }
 }

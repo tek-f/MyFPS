@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using MyFPS.GameAdmin;
 
 namespace MyFPS.Player
 {
@@ -147,6 +148,10 @@ namespace MyFPS.Player
                 return false;
             }
         }
+        void Teleport(Vector3 _position)
+        {
+            gameObject.transform.position = _position;
+        }
         public void TakeDamage(int damage)
         {
             health -= damage;
@@ -167,8 +172,8 @@ namespace MyFPS.Player
             if(paused)
             {
                 Time.timeScale = 1;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 pausePanel.SetActive(false);
                 fpsController.enabled = true;
                 paused = false;
@@ -176,8 +181,8 @@ namespace MyFPS.Player
             else
             {
                 Time.timeScale = 0;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 pausePanel.SetActive(true);
                 fpsController.enabled = false;
                 paused = true;
@@ -241,14 +246,9 @@ namespace MyFPS.Player
             escapeAction = playerInput.actions.FindAction("Escape");
             escapeAction.Enable();
             escapeAction.performed += OnEscapePerformed;
-
-
-
-            //TESTING
         }
         private void Update()
         {
-            //Testing
             if(!IsHoldingFlag)
             {
                 Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));

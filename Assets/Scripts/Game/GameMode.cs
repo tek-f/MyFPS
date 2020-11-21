@@ -39,6 +39,8 @@ namespace MyFPS.GameAdmin
         public virtual void EndGame()
         {
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             endGamePanel.SetActive(true);
         }
         protected void Start()
