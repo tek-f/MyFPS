@@ -1,0 +1,977 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_handgun_script_l_p_f_p" kind="class" language="C#" prot="public">
+    <compoundname>HandgunScriptLPFP</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="class_handgun_script_l_p_f_p_1_1prefabs" prot="public">HandgunScriptLPFP::prefabs</innerclass>
+    <innerclass refid="class_handgun_script_l_p_f_p_1_1sound_clips" prot="public">HandgunScriptLPFP::soundClips</innerclass>
+    <innerclass refid="class_handgun_script_l_p_f_p_1_1spawnpoints" prot="public">HandgunScriptLPFP::spawnpoints</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ae7947028b01e74038383e8476f1c12be" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator HandgunScriptLPFP.anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="9" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aef4ead6ced489f1537739a1084f9eb8e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string HandgunScriptLPFP.storedWeaponName</definition>
+        <argsstring></argsstring>
+        <name>storedWeaponName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="28" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1af271b34f8bc042a186b42e152354df58" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 HandgunScriptLPFP.initialSwayPosition</definition>
+        <argsstring></argsstring>
+        <name>initialSwayPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="39" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a31f0fb349094244f24276dbc430cc05e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.hasStartedSliderBack</definition>
+        <argsstring></argsstring>
+        <name>hasStartedSliderBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="44" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aea6960c8fcb0befad340ac1e66823513" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.isReloading</definition>
+        <argsstring></argsstring>
+        <name>isReloading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="52" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ab56edcf632bc120695900473379cbc1e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.hasBeenHolstered</definition>
+        <argsstring></argsstring>
+        <name>hasBeenHolstered</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="55" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aec3ed9ac734dbfcd586659b7d3fab8aa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.holstered</definition>
+        <argsstring></argsstring>
+        <name>holstered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="57" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a4c5f1a6bf05279eb2bf61dbeaf1b6fc4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.isRunning</definition>
+        <argsstring></argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="59" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a368aa4a67b9c1c48d4905f7cd81c7cf3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.isAiming</definition>
+        <argsstring></argsstring>
+        <name>isAiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="61" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a376f93d8ef5f758476ae0ccfc0cda37b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.isWalking</definition>
+        <argsstring></argsstring>
+        <name>isWalking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="63" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a5b7893dc7627b1325be212b152bb0944" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.isInspecting</definition>
+        <argsstring></argsstring>
+        <name>isInspecting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="65" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a8e6720a4042661a2d6bb694242d7fddc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.currentAmmo</definition>
+        <argsstring></argsstring>
+        <name>currentAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="68" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a44a07cd3406aea95233a8b2fa4e9ab90" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.outOfAmmo</definition>
+        <argsstring></argsstring>
+        <name>outOfAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="73" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ad6d6f51ce9e5511c81a57f488ee9e669" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.minRandomValue</definition>
+        <argsstring></argsstring>
+        <name>minRandomValue</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="91" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a64ba9b682138cd89c3ee7935d42d80ba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.randomMuzzleflashValue</definition>
+        <argsstring></argsstring>
+        <name>randomMuzzleflashValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="96" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a82682349b1c6117236610958fa22ca88" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.soundHasPlayed</definition>
+        <argsstring></argsstring>
+        <name>soundHasPlayed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="157" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a2837ca803dc9e3c2eb7a7484f3712020" prot="public" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera HandgunScriptLPFP.gunCamera</definition>
+        <argsstring></argsstring>
+        <name>gunCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="13" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ae63c305981332a564c78a63b818f1673" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.fovSpeed</definition>
+        <argsstring></argsstring>
+        <name>fovSpeed</name>
+        <initializer>= 15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="18" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a856767ac0cd6a7e6c0c93a83da146ee2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.defaultFov</definition>
+        <argsstring></argsstring>
+        <name>defaultFov</name>
+        <initializer>= 40.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="21" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a263e91470419baf418726f9d26f15f79" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.aimFov</definition>
+        <argsstring></argsstring>
+        <name>aimFov</name>
+        <initializer>= 15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="23" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a3dfeffd85fca0ee0a51e703a792b6cc5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string HandgunScriptLPFP.weaponName</definition>
+        <argsstring></argsstring>
+        <name>weaponName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="27" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a21fad6466f997466377b434bb1210c3a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.weaponSway</definition>
+        <argsstring></argsstring>
+        <name>weaponSway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="33" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a1b8775d928b3bab9373a5ad831a17f61" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.swayAmount</definition>
+        <argsstring></argsstring>
+        <name>swayAmount</name>
+        <initializer>= 0.02f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="35" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ac7e72e3ecfd92522c4ddec74b7fdd261" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.maxSwayAmount</definition>
+        <argsstring></argsstring>
+        <name>maxSwayAmount</name>
+        <initializer>= 0.06f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="36" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a015f26311b4e2377dcc2d1bd8a1a60a7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.swaySmoothValue</definition>
+        <argsstring></argsstring>
+        <name>swaySmoothValue</name>
+        <initializer>= 4.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="37" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1adad9558c451ab16a878b2c1d74e43944" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.sliderBackTimer</definition>
+        <argsstring></argsstring>
+        <name>sliderBackTimer</name>
+        <initializer>= 1.58f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="43" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a1b1aa46cfcfe971bf1df974c98a328b8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.autoReload</definition>
+        <argsstring></argsstring>
+        <name>autoReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="48" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a9434fe62957e159100cc42cedc4e4d5a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.autoReloadDelay</definition>
+        <argsstring></argsstring>
+        <name>autoReloadDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="50" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1adf0a21c24931773739c35738345d604c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.ammo</definition>
+        <argsstring></argsstring>
+        <name>ammo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="71" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a491532737984889479cfa610a800b8b0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.bulletForce</definition>
+        <argsstring></argsstring>
+        <name>bulletForce</name>
+        <initializer>= 400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="78" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aa95fa8ffee30d73c45c7182e7d701645" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.showBulletInMagDelay</definition>
+        <argsstring></argsstring>
+        <name>showBulletInMagDelay</name>
+        <initializer>= 0.6f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="81" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1afffde59ef3dc063f773a9c71f11744fa" prot="public" static="no" mutable="no">
+        <type>SkinnedMeshRenderer</type>
+        <definition>SkinnedMeshRenderer HandgunScriptLPFP.bulletInMagRenderer</definition>
+        <argsstring></argsstring>
+        <name>bulletInMagRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="83" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aaed3f41579a2743d731d6a6427974da8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.grenadeSpawnDelay</definition>
+        <argsstring></argsstring>
+        <name>grenadeSpawnDelay</name>
+        <initializer>= 0.35f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="86" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1aeeede7c216f85e062636a0293bb7bed1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.randomMuzzleflash</definition>
+        <argsstring></argsstring>
+        <name>randomMuzzleflash</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="89" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a283b24e7010a8db5f1eddf940126cf77" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.maxRandomValue</definition>
+        <argsstring></argsstring>
+        <name>maxRandomValue</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="94" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1af73a2c59746bb6bed7fd0ef20fc06115" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.enableMuzzleflash</definition>
+        <argsstring></argsstring>
+        <name>enableMuzzleflash</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="98" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ab4a91b6ae29ade238cdc1e67da1fd959" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem HandgunScriptLPFP.muzzleParticles</definition>
+        <argsstring></argsstring>
+        <name>muzzleParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="99" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a045916a4dc718c8b34368fbaa026ec45" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HandgunScriptLPFP.enableSparks</definition>
+        <argsstring></argsstring>
+        <name>enableSparks</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="100" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1af991256c27459ff86f2a7b8047c86a90" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem HandgunScriptLPFP.sparkParticles</definition>
+        <argsstring></argsstring>
+        <name>sparkParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="101" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a986dca1ba002ca6727af505bd05bf7b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.minSparkEmission</definition>
+        <argsstring></argsstring>
+        <name>minSparkEmission</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="102" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a054f84dda3ed02cb507cb00e6071d2fa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HandgunScriptLPFP.maxSparkEmission</definition>
+        <argsstring></argsstring>
+        <name>maxSparkEmission</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="103" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a9f11ad7f273e2a92abed7c7a8ca0b065" prot="public" static="no" mutable="no">
+        <type>Light</type>
+        <definition>Light HandgunScriptLPFP.muzzleflashLight</definition>
+        <argsstring></argsstring>
+        <name>muzzleflashLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="106" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a53bc1acfeb7d8bb736b7b16731af7947" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float HandgunScriptLPFP.lightDuration</definition>
+        <argsstring></argsstring>
+        <name>lightDuration</name>
+        <initializer>= 0.02f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="107" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ab4e78d22d42b7f74ac4cc7fda0a88320" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource HandgunScriptLPFP.mainAudioSource</definition>
+        <argsstring></argsstring>
+        <name>mainAudioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="111" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ad9419778380ec01f647c3e78ee2a34cd" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource HandgunScriptLPFP.shootAudioSource</definition>
+        <argsstring></argsstring>
+        <name>shootAudioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="113" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a86b75c5c13ef976902cd662ff415a476" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HandgunScriptLPFP.timescaleText</definition>
+        <argsstring></argsstring>
+        <name>timescaleText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="116" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a770254c7cea8466b8d85f3b2f92295bd" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HandgunScriptLPFP.currentWeaponText</definition>
+        <argsstring></argsstring>
+        <name>currentWeaponText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="117" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a4dbbf88622d49f3f2f1a84fe2c9625d2" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HandgunScriptLPFP.currentAmmoText</definition>
+        <argsstring></argsstring>
+        <name>currentAmmoText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="118" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1ab6bc93858cb6ccf4c0337a5810f3ddf5" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HandgunScriptLPFP.totalAmmoText</definition>
+        <argsstring></argsstring>
+        <name>totalAmmoText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="119" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a9facf124ba7f83e9bc598963fd049053" prot="public" static="no" mutable="no">
+        <type><ref refid="class_handgun_script_l_p_f_p_1_1prefabs" kindref="compound">prefabs</ref></type>
+        <definition>prefabs HandgunScriptLPFP.Prefabs</definition>
+        <argsstring></argsstring>
+        <name>Prefabs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="129" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a5815d6bf230bbf193df8eba15f32a7be" prot="public" static="no" mutable="no">
+        <type><ref refid="class_handgun_script_l_p_f_p_1_1spawnpoints" kindref="compound">spawnpoints</ref></type>
+        <definition>spawnpoints HandgunScriptLPFP.Spawnpoints</definition>
+        <argsstring></argsstring>
+        <name>Spawnpoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="143" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_handgun_script_l_p_f_p_1a9fd82cb004cbe192ee76b5b94e7bc576" prot="public" static="no" mutable="no">
+        <type><ref refid="class_handgun_script_l_p_f_p_1_1sound_clips" kindref="compound">soundClips</ref></type>
+        <definition>soundClips HandgunScriptLPFP.SoundClips</definition>
+        <argsstring></argsstring>
+        <name>SoundClips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="155" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a45b37bd991a4a7893e04439a9e54f530" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="159" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="159" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a6a62cef45fae373da92fc710efcd2bc0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="169" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="169" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a9ca61555f081a3e0b292bb86e8d2a418" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="184" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="184" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a376e0f9b84dc3b849c7c1029c8e028e5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="203" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="203" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1acad2eab9b298eddcb3be6ed8a04e35cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator HandgunScriptLPFP.HandgunSliderBackDelay</definition>
+        <argsstring>()</argsstring>
+        <name>HandgunSliderBackDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="477" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="477" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a1354077f01e96a09c718ea789daed6ef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator HandgunScriptLPFP.GrenadeSpawnDelay</definition>
+        <argsstring>()</argsstring>
+        <name>GrenadeSpawnDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="488" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="488" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a610ac6a8c597a5dfa7e5170ef7dd325e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator HandgunScriptLPFP.AutoReload</definition>
+        <argsstring>()</argsstring>
+        <name>AutoReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="497" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="497" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a98d8ae5bcc999cbadb834741a0a77f4c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.Reload</definition>
+        <argsstring>()</argsstring>
+        <name>Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="531" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="531" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a80d4e2bbba647b02690b01907657dbbd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator HandgunScriptLPFP.ShowBulletInMag</definition>
+        <argsstring>()</argsstring>
+        <name>ShowBulletInMag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="573" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="573" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1aa92ae2d46e404b85a1e6ff3b41fccbba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator HandgunScriptLPFP.MuzzleFlashLight</definition>
+        <argsstring>()</argsstring>
+        <name>MuzzleFlashLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="580" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="580" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="class_handgun_script_l_p_f_p_1a89ffbdc72107717c67f7f5920809b027" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HandgunScriptLPFP.AnimationCheck</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="588" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="588" bodyend="611"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>HandgunScriptLPFP</label>
+        <link refid="class_handgun_script_l_p_f_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>HandgunScriptLPFP.prefabs</label>
+        <link refid="class_handgun_script_l_p_f_p_1_1prefabs"/>
+      </node>
+      <node id="5">
+        <label>HandgunScriptLPFP.soundClips</label>
+        <link refid="class_handgun_script_l_p_f_p_1_1sound_clips"/>
+      </node>
+      <node id="1">
+        <label>HandgunScriptLPFP</label>
+        <link refid="class_handgun_script_l_p_f_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>currentAmmoText</edgelabel>
+          <edgelabel>currentWeaponText</edgelabel>
+          <edgelabel>timescaleText</edgelabel>
+          <edgelabel>totalAmmoText</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Spawnpoints</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>SoundClips</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Prefabs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>HandgunScriptLPFP.spawnpoints</label>
+        <link refid="class_handgun_script_l_p_f_p_1_1spawnpoints"/>
+      </node>
+      <node id="3">
+        <label>Text</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" line="6" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/HandgunScriptLPFP.cs" bodystart="6" bodyend="612"/>
+    <listofallmembers>
+      <member refid="class_handgun_script_l_p_f_p_1a263e91470419baf418726f9d26f15f79" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>aimFov</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1adf0a21c24931773739c35738345d604c" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>ammo</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ae7947028b01e74038383e8476f1c12be" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>anim</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a89ffbdc72107717c67f7f5920809b027" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>AnimationCheck</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a1b1aa46cfcfe971bf1df974c98a328b8" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>autoReload</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a610ac6a8c597a5dfa7e5170ef7dd325e" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>AutoReload</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a9434fe62957e159100cc42cedc4e4d5a" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>autoReloadDelay</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a45b37bd991a4a7893e04439a9e54f530" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Awake</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a491532737984889479cfa610a800b8b0" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>bulletForce</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1afffde59ef3dc063f773a9c71f11744fa" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>bulletInMagRenderer</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a8e6720a4042661a2d6bb694242d7fddc" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>currentAmmo</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a4dbbf88622d49f3f2f1a84fe2c9625d2" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>currentAmmoText</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a770254c7cea8466b8d85f3b2f92295bd" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>currentWeaponText</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a856767ac0cd6a7e6c0c93a83da146ee2" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>defaultFov</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1af73a2c59746bb6bed7fd0ef20fc06115" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>enableMuzzleflash</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a045916a4dc718c8b34368fbaa026ec45" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>enableSparks</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ae63c305981332a564c78a63b818f1673" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>fovSpeed</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aaed3f41579a2743d731d6a6427974da8" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>grenadeSpawnDelay</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a1354077f01e96a09c718ea789daed6ef" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>GrenadeSpawnDelay</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a2837ca803dc9e3c2eb7a7484f3712020" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>gunCamera</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1acad2eab9b298eddcb3be6ed8a04e35cf" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>HandgunSliderBackDelay</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ab56edcf632bc120695900473379cbc1e" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>hasBeenHolstered</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a31f0fb349094244f24276dbc430cc05e" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>hasStartedSliderBack</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aec3ed9ac734dbfcd586659b7d3fab8aa" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>holstered</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1af271b34f8bc042a186b42e152354df58" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>initialSwayPosition</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a368aa4a67b9c1c48d4905f7cd81c7cf3" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>isAiming</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a5b7893dc7627b1325be212b152bb0944" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>isInspecting</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aea6960c8fcb0befad340ac1e66823513" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>isReloading</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a4c5f1a6bf05279eb2bf61dbeaf1b6fc4" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>isRunning</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a376f93d8ef5f758476ae0ccfc0cda37b" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>isWalking</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a9ca61555f081a3e0b292bb86e8d2a418" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>LateUpdate</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a53bc1acfeb7d8bb736b7b16731af7947" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>lightDuration</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ab4e78d22d42b7f74ac4cc7fda0a88320" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>mainAudioSource</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a283b24e7010a8db5f1eddf940126cf77" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>maxRandomValue</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a054f84dda3ed02cb507cb00e6071d2fa" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>maxSparkEmission</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ac7e72e3ecfd92522c4ddec74b7fdd261" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>maxSwayAmount</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ad6d6f51ce9e5511c81a57f488ee9e669" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>minRandomValue</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a986dca1ba002ca6727af505bd05bf7b0" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>minSparkEmission</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a9f11ad7f273e2a92abed7c7a8ca0b065" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>muzzleflashLight</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aa92ae2d46e404b85a1e6ff3b41fccbba" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>MuzzleFlashLight</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ab4a91b6ae29ade238cdc1e67da1fd959" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>muzzleParticles</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a44a07cd3406aea95233a8b2fa4e9ab90" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>outOfAmmo</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a9facf124ba7f83e9bc598963fd049053" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Prefabs</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aeeede7c216f85e062636a0293bb7bed1" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>randomMuzzleflash</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a64ba9b682138cd89c3ee7935d42d80ba" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>randomMuzzleflashValue</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a98d8ae5bcc999cbadb834741a0a77f4c" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Reload</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ad9419778380ec01f647c3e78ee2a34cd" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>shootAudioSource</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a80d4e2bbba647b02690b01907657dbbd" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>ShowBulletInMag</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aa95fa8ffee30d73c45c7182e7d701645" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>showBulletInMagDelay</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1adad9558c451ab16a878b2c1d74e43944" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>sliderBackTimer</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a9fd82cb004cbe192ee76b5b94e7bc576" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>SoundClips</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a82682349b1c6117236610958fa22ca88" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>soundHasPlayed</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1af991256c27459ff86f2a7b8047c86a90" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>sparkParticles</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a5815d6bf230bbf193df8eba15f32a7be" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Spawnpoints</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a6a62cef45fae373da92fc710efcd2bc0" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Start</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1aef4ead6ced489f1537739a1084f9eb8e" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>storedWeaponName</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a1b8775d928b3bab9373a5ad831a17f61" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>swayAmount</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a015f26311b4e2377dcc2d1bd8a1a60a7" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>swaySmoothValue</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a86b75c5c13ef976902cd662ff415a476" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>timescaleText</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1ab6bc93858cb6ccf4c0337a5810f3ddf5" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>totalAmmoText</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a376e0f9b84dc3b849c7c1029c8e028e5" prot="private" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>Update</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a3dfeffd85fca0ee0a51e703a792b6cc5" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>weaponName</name></member>
+      <member refid="class_handgun_script_l_p_f_p_1a21fad6466f997466377b434bb1210c3a" prot="public" virt="non-virtual"><scope>HandgunScriptLPFP</scope><name>weaponSway</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

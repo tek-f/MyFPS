@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_2cdc7deee0af155ecd71d90f61a1506f" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples</compoundname>
+    <innerdir refid="dir_2c6e8ede7c1d12f432040e2b30309303">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/AdditiveScenes</innerdir>
+    <innerdir refid="dir_10643d080cd0afbe24b5d93b9ccea200">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Basic</innerdir>
+    <innerdir refid="dir_c2d5b2d48aa1c6e89de3ad08cca8c65e">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Benchmark</innerdir>
+    <innerdir refid="dir_2d42c1c83f7f454dca43a542f238ed8a">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat</innerdir>
+    <innerdir refid="dir_a886c3ec29efc64c2d42435d6640a8d7">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud</innerdir>
+    <innerdir refid="dir_1d01ca04d08a44392696f4219fa8d1d4">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/MultipleAdditiveScenes</innerdir>
+    <innerdir refid="dir_eda802844f838fd614fa8817501447b4">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Pong</innerdir>
+    <innerdir refid="dir_66003e5dece5facbd2bb6b548b933267">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/RigidbodyPhysics</innerdir>
+    <innerdir refid="dir_a77dcfd1d4f9526b39109a1781446c21">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room</innerdir>
+    <innerdir refid="dir_4bddc5f608a8e99d60971d9ac21e1413">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/"/>
+  </compounddef>
+</doxygen>

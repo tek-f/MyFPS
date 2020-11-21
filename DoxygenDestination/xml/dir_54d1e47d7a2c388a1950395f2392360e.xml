@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_54d1e47d7a2c388a1950395f2392360e" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts</compoundname>
+    <innerfile refid="_network_room_manager_ext_8cs">NetworkRoomManagerExt.cs</innerfile>
+    <innerfile refid="_network_room_player_ext_8cs">NetworkRoomPlayerExt.cs</innerfile>
+    <innerfile refid="_room_2_scripts_2_player_controller_8cs">PlayerController.cs</innerfile>
+    <innerfile refid="_room_2_scripts_2_player_score_8cs">PlayerScore.cs</innerfile>
+    <innerfile refid="_room_2_scripts_2_random_color_8cs">RandomColor.cs</innerfile>
+    <innerfile refid="_room_2_scripts_2_reward_8cs">Reward.cs</innerfile>
+    <innerfile refid="_room_2_scripts_2_spawner_8cs">Spawner.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/"/>
+  </compounddef>
+</doxygen>

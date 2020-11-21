@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_sync_hash_set" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::SyncHashSet</compoundname>
+    <basecompoundref refid="class_mirror_1_1_sync_set" prot="public" virt="non-virtual">Mirror::SyncSet&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_hash_set_1aa255af2790d25a9f7429ded7f7ca11f4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.SyncHashSet&lt; T &gt;.SyncHashSet</definition>
+        <argsstring>(IEqualityComparer&lt; T &gt; comparer=null)</argsstring>
+        <name>SyncHashSet</name>
+        <param>
+          <type>IEqualityComparer&lt; T &gt;</type>
+          <declname>comparer</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="328" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="328" bodyend="328"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_hash_set_1a16eb2d61c42cf6c99c6eb2dcc38b810a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>new HashSet&lt; T &gt;.Enumerator</type>
+        <definition>new HashSet&lt;T&gt;.Enumerator Mirror.SyncHashSet&lt; T &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="331" column="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.SyncHashSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_hash_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="2">
+        <label>SyncSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_set"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ISet&lt; T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.SyncHashSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_hash_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="2">
+        <label>SyncSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_set"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ISet&lt; T &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="326" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="327" bodyend="332"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_sync_set_1aeecd3184bfa8d28b77156a0c588dfb8f" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Add</name></member>
+      <member refid="class_mirror_1_1_sync_set_1adef73f5d1fe1aaab9a59a04ece3567a9" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Callback</name></member>
+      <member refid="class_mirror_1_1_sync_set_1aa80f69d37b552f9d6d951634b643c64b" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Clear</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a1651b7901fd6bb7b1f4a21dfd58dd348" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Contains</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a35a25970c015ff5781da04636c7066f0" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>CopyTo</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ad080c6fc130616b4e059949dbdcd9c32" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Count</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ac24c585267d8db926eaa865cea42ec2f" prot="protected" virt="virtual"><scope>Mirror::SyncHashSet</scope><name>DeserializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a4ffb4a8da5eddf923e140a1cd349c2e9" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>ExceptWith</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7fdaea588a80a031ad92775d503e9aad" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Flush</name></member>
+      <member refid="class_mirror_1_1_sync_hash_set_1a16eb2d61c42cf6c99c6eb2dcc38b810a" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>GetEnumerator</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ae70e4bad8375d246b5be091f3e564edd" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IntersectWith</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a6ed52f0a6912d1e1d76ff17448c1b463" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ad06599a50382a5136734375f6c7aff89" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsProperSubsetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1af378078419b326ec5e7c80fb099550a8" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsProperSupersetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0f7d98a30b58def0dc3ee60887b1e622" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsReadOnly</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7f7677b599c155ed97725ef272c75cd4" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsSubsetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a4cca387686587839cf0a2028c3b07864" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>IsSupersetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2244f575435f82d71dbca6cf38db3033" prot="protected" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>objects</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a075867f37b810f8d210fdc83ae9ea7cb" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>OnDeserializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_set_1af584f6682c42d099b76a7c9d6fe3a230" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>OnDeserializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2f13a9423a6edb8878f20f991f273133" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>OnSerializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7d9c57b5a9d7cf67488ff38932b85c16" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>OnSerializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a1f41ff129c7c1cefcf9b2415e6012b30" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Overlaps</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a3118c5bc63bcf829640c83e531f7ff0f" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Remove</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0595d18c27ffbe88bed0d926bfc0ec9c" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ab91d10a9975528adec18fcb656476c71" prot="protected" virt="virtual"><scope>Mirror::SyncHashSet</scope><name>SerializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2a24871d64fc3c5052e592341fa706a8" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>SetEquals</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0c72162bf85de6f8ea84be23d2e62712" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>SymmetricExceptWith</name></member>
+      <member refid="class_mirror_1_1_sync_hash_set_1aa255af2790d25a9f7429ded7f7ca11f4" prot="protected" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>SyncHashSet</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a62900cd2938cce5148c09f86848092bb" prot="protected" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>SyncSet</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7b57519e175a9e9ef496a98b22d0748b" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>SyncSetChanged</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a60007e72ae2d378aafc334a12ba67daf" prot="public" virt="non-virtual"><scope>Mirror::SyncHashSet</scope><name>UnionWith</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

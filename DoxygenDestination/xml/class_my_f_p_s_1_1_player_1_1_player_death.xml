@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_player_1_1_player_death" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Player::PlayerDeath</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1abfd32a28b192604f2674f6863c7526bb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_player_handler" kindref="compound">PlayerHandler</ref></type>
+        <definition>PlayerHandler MyFPS.Player.PlayerDeath.playerHandler</definition>
+        <argsstring></argsstring>
+        <name>playerHandler</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_player_handler" kindref="compound">PlayerHandler</ref> class on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="13" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1a3433d3eba308609f7e13d8ecf73e84ff" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_first_person_controller" kindref="compound">FirstPersonController</ref></type>
+        <definition>FirstPersonController MyFPS.Player.PlayerDeath.fpsController</definition>
+        <argsstring></argsstring>
+        <name>fpsController</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_first_person_controller" kindref="compound">FirstPersonController</ref> class on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="17" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1a792ad7b57683fdff13f2cc086efa777c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyFPS.Player.PlayerDeath.deathTimeStamp</definition>
+        <argsstring></argsstring>
+        <name>deathTimeStamp</name>
+        <briefdescription>
+<para>Time stamp of the players most recent death. Used in Update(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="29" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1a84ee9ee9a56f63b3fdd76789a2b5c0f0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float MyFPS.Player.PlayerDeath.respawnDelay</definition>
+        <argsstring></argsstring>
+        <name>respawnDelay</name>
+        <initializer>= 8f</initializer>
+        <briefdescription>
+<para>The delay after players death until the respawn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="33" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1aa8653eb0f156134560eeda62489eabbc" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MyFPS.Player.PlayerDeath.deathPanel</definition>
+        <argsstring></argsstring>
+        <name>deathPanel</name>
+        <briefdescription>
+<para>Reference to the UI panel displayed on the players death. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="21" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_death_1a81352f91986f875f2bec741a32f6e930" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text MyFPS.Player.PlayerDeath.respawnCounterText</definition>
+        <argsstring></argsstring>
+        <name>respawnCounterText</name>
+        <briefdescription>
+<para>Reference to the UI Text that counts down the player respawn. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="25" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_death_1ae115968bbb36fc2d4a565f9c1c184092" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerDeath.Respawn</definition>
+        <argsstring>()</argsstring>
+        <name>Respawn</name>
+        <briefdescription>
+<para>Respawns the player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="37" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_death_1a7d1e48ec19c6ce44261ac948875d65d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerDeath.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="47" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_death_1a6987bbc5b85892dc539d3816c1a6d188" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerDeath.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="52" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_death_1ab2ce70a16c1c636055d1cda0fd615bfb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerDeath.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="62" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="62" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyFPS.Player.PlayerDeath</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_death"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyFPS.Player.PlayerDeath</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_death"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>respawnCounterText</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Text</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" line="8" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerDeath.cs" bodystart="9" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a7d1e48ec19c6ce44261ac948875d65d8" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>Awake</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1aa8653eb0f156134560eeda62489eabbc" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>deathPanel</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a792ad7b57683fdff13f2cc086efa777c" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>deathTimeStamp</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a3433d3eba308609f7e13d8ecf73e84ff" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>fpsController</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a6987bbc5b85892dc539d3816c1a6d188" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>OnEnable</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1abfd32a28b192604f2674f6863c7526bb" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>playerHandler</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1ae115968bbb36fc2d4a565f9c1c184092" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>Respawn</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a81352f91986f875f2bec741a32f6e930" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>respawnCounterText</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1a84ee9ee9a56f63b3fdd76789a2b5c0f0" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>respawnDelay</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_death_1ab2ce70a16c1c636055d1cda0fd615bfb" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerDeath</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

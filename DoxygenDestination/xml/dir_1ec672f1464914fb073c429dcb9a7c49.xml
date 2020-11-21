@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_1ec672f1464914fb073c429dcb9a7c49" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts</compoundname>
+    <innerfile refid="_explosion_script_8cs">ExplosionScript.cs</innerfile>
+    <innerfile refid="_impact_script_8cs">ImpactScript.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/"/>
+  </compounddef>
+</doxygen>

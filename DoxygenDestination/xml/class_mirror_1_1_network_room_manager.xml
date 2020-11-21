@@ -1,0 +1,1493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_room_manager" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkRoomManager</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_manager" prot="public" virt="non-virtual">Mirror.NetworkManager</basecompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext" prot="public" virt="non-virtual">Mirror.Examples.NetworkRoom.NetworkRoomManagerExt</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_network_lobby_manager" prot="public" virt="non-virtual">Mirror.NetworkLobbyManager</derivedcompoundref>
+    <innerclass refid="struct_mirror_1_1_network_room_manager_1_1_pending_player" prot="public">Mirror::NetworkRoomManager::PendingPlayer</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a20d8780325a29100f6d30aabe6958dcd" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.NetworkRoomManager.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger(typeof(<ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="23" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a7873eab63d6430d30a1e3533778a4674" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkRoomManager.showRoomGUI</definition>
+        <argsstring></argsstring>
+        <name>showRoomGUI</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="36" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a167cb83b483535a3084d161a33f16576" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.NetworkRoomManager.minPlayers</definition>
+        <argsstring></argsstring>
+        <name>minPlayers</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="41" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1aab2d2a94c1b317a1a8a87ab89eca1e20" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_room_player" kindref="compound">NetworkRoomPlayer</ref></type>
+        <definition>NetworkRoomPlayer Mirror.NetworkRoomManager.roomPlayerPrefab</definition>
+        <argsstring></argsstring>
+        <name>roomPlayerPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="46" column="37" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a998f09664331ad69ba3095b3e8fe6988" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.NetworkRoomManager.RoomScene</definition>
+        <argsstring></argsstring>
+        <name>RoomScene</name>
+        <briefdescription>
+<para>The scene to use for the room. This is similar to the offlineScene of the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="52" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1ab00e3791c555a1b06121a7b2abcabbd4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.NetworkRoomManager.GameplayScene</definition>
+        <argsstring></argsstring>
+        <name>GameplayScene</name>
+        <briefdescription>
+<para>The scene to use for the playing the game from the room. This is similar to the onlineScene of the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="58" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a205ba6fde1487cb142d5ce5d35c848e0" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_mirror_1_1_network_room_manager_1_1_pending_player" kindref="compound">PendingPlayer</ref> &gt;</type>
+        <definition>List&lt;PendingPlayer&gt; Mirror.NetworkRoomManager.pendingPlayers</definition>
+        <argsstring></argsstring>
+        <name>pendingPlayers</name>
+        <initializer>= new List&lt;<ref refid="struct_mirror_1_1_network_room_manager_1_1_pending_player" kindref="compound">PendingPlayer</ref>&gt;()</initializer>
+        <briefdescription>
+<para>List of players that are in the Room </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="64" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a28a644a2350cb014129a58bd6d320084" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_mirror_1_1_network_room_player" kindref="compound">NetworkRoomPlayer</ref> &gt;</type>
+        <definition>List&lt;NetworkRoomPlayer&gt; Mirror.NetworkRoomManager.roomSlots</definition>
+        <argsstring></argsstring>
+        <name>roomSlots</name>
+        <initializer>= new List&lt;<ref refid="class_mirror_1_1_network_room_player" kindref="compound">NetworkRoomPlayer</ref>&gt;()</initializer>
+        <briefdescription>
+<para>These slots track players that enter the room. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The slotId on players is global to the game - across all players.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="80" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_room_manager_1a97ea7a0e2dc4b56effa558dfa33ce7fc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkRoomManager._allPlayersReady</definition>
+        <argsstring></argsstring>
+        <name>_allPlayersReady</name>
+        <briefdescription>
+<para>True when all players have submitted a Ready message </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="73" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_network_room_manager_1a054be9655e1cea08e6b9855790deb438" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkRoomManager.allPlayersReady</definition>
+        <argsstring></argsstring>
+        <name>allPlayersReady</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="82" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="83" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a8b2b92daab28eec6294680f58612a807" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnValidate</definition>
+        <argsstring>()</argsstring>
+        <name>OnValidate</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a7d659b2c87f79a99e7faaf3d015e49e7">OnValidate</reimplements>
+        <briefdescription>
+<para>virtual so that inheriting classes&apos; <ref refid="class_mirror_1_1_network_room_manager_1a8b2b92daab28eec6294680f58612a807" kindref="member">OnValidate()</ref> can call base.OnValidate() too </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="106" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="106" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a7992ca07c4a74b3dd3600a66fdb0ca2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnServerReady</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerReady</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a7ebf77a6a7d8ef3d92bf06a51fe1583b">OnServerReady</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on the server when a client is ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation of this function calls NetworkServer.SetClientReady() to continue the network setup process.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection from client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="156" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="156" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ab7ddebde53720b24f17414c7daeed974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.CheckReadyToBegin</definition>
+        <argsstring>()</argsstring>
+        <name>CheckReadyToBegin</name>
+        <briefdescription>
+<para>CheckReadyToBegin checks all of the players in the room to see if their readyToBegin flag is set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If all of the players are ready, then the server switches from the RoomScene to the PlayScene, essentially starting the game. This is called automatically in response to NetworkRoomPlayer.CmdChangeReadyState.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="206" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="206" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a45f94c08d8367c6e3e049b0ae5bce469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnServerConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerConnect</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1aefdbb69d64b19bbf4c78aaed41e08fe4">OnServerConnect</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on the server when a new client connects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Unity calls this on the Server when a Client connects to the Server. Use an override to tell the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> what to do when a client connects to the server.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection from client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="251" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="251" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ae3fad7bd0843a316d97d48ed21c4430b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnServerDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerDisconnect</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a54d039ac0bb7d8504b3424a73e53b328">OnServerDisconnect</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on the server when a client disconnects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called on the Server when a Client disconnects from the Server. Use an override to decide what should happen when a disconnection is detected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection from client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="275" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="275" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1aefcd26095dffd6e2578b3f8dfd589394" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnServerAddPlayer</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerAddPlayer</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a05f963336a3309b53ad415ed55333f75">OnServerAddPlayer</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on the server when a client adds a new player with ClientScene.AddPlayer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation for this function creates a new player object from the playerPrefab.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection from client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="312" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="312" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a850dd37438790d1417f23795d915014d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.RecalculateRoomPlayerIndices</definition>
+        <argsstring>()</argsstring>
+        <name>RecalculateRoomPlayerIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="333" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="333" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.ServerChangeScene</definition>
+        <argsstring>(string newSceneName)</argsstring>
+        <name>ServerChangeScene</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1ae428a9f79881585ef5fef880f6c923ad">ServerChangeScene</reimplements>
+        <param>
+          <type>string</type>
+          <declname>newSceneName</declname>
+        </param>
+        <briefdescription>
+<para>This causes the server to switch scenes and sets the networkSceneName. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clients that connect to this server will automatically switch to this scene. This is called autmatically if onlineScene or offlineScene are set, but it can be called from user code to switch scenes again while the game is in progress. This automatically sets clients to be not-ready. The clients must call NetworkClient.Ready() again to participate in the new scene.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newSceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="349" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="349" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a02b0bdcb470188c5f18e2c79d9c8c74f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnServerSceneChanged</definition>
+        <argsstring>(string sceneName)</argsstring>
+        <name>OnServerSceneChanged</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a93ae8a9ca02afa60598d464779e1bca5">OnServerSceneChanged</reimplements>
+        <param>
+          <type>string</type>
+          <declname>sceneName</declname>
+        </param>
+        <briefdescription>
+<para>Called on the server when a scene is completed loaded, when the scene load was initiated by the server with <ref refid="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" kindref="member">ServerChangeScene()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the new scene.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="379" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="379" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ae5b33ca30e66bece6c5cf5958da83e69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartServer</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a0226295e867fd77ad9aef32d32d6ca88">OnStartServer</reimplements>
+        <briefdescription>
+<para>This is invoked when a server is started - including when a host is started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>StartServer has multiple signatures, but they all cause this hook to be called.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="397" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="397" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ad39cc34ac81a645d2b3f17c0a04751dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStartHost</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartHost</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a29b5da074510538134ac587a05b30180">OnStartHost</reimplements>
+        <briefdescription>
+<para>This is invoked when a host is started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>StartHost has multiple signatures, but they all cause this hook to be called.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="418" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="418" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a0d2259beb5014a9a1199464b9bb9b89e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStopServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopServer</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a60970702dbcd39e7c1e64a1417cc73af">OnStopServer</reimplements>
+        <briefdescription>
+<para>This is called when a server is stopped - including when a host is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="426" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="426" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a07272238268faa6282562ec2b9f14235" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStopHost</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopHost</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a09a36f56cc95fcb5b0f4b7fdcde7fc69">OnStopHost</reimplements>
+        <briefdescription>
+<para>This is called when a host is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="435" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="435" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ad6c9e38e891d0f763acd8a83a2a63845" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartClient</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a989b4a0365dd627ac963656a786ae69d">OnStartClient</reimplements>
+        <briefdescription>
+<para>This is invoked when the client is started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="447" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="447" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a004e492b30cb7f0df4d3b715ae4762d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnClientConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientConnect</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1ad662b34e311929d102bde4c533eb5aa8">OnClientConnect</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on the client when connected to a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation of this function sets the client as ready and adds a player. Override the function to dictate what happens when the client connects.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection to the server.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="465" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="465" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a04fa37943cfca9d8c7ab33f84df95ace" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnClientDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientDisconnect</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1acc265c9e54edc5ed66db64a7abcd3a61">OnClientDisconnect</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on clients when disconnected from a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is called on the client when it disconnects from the server. Override this function to decide what happens when the client disconnects.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection to the server.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="476" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="476" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a5fb9dc1ba0842c6dc2582ffeefa55a66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnStopClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopClient</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a4289f8e4a460b810a29fea59cc738f71">OnStopClient</reimplements>
+        <briefdescription>
+<para>This is called when a client is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="485" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="485" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1abe8e1e5a63516fc778b71eb2c4974fda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.NetworkRoomManager.OnClientSceneChanged</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientSceneChanged</name>
+        <reimplements refid="class_mirror_1_1_network_manager_1a27a76d42f692cd8e14312edf1e566bb7">OnClientSceneChanged</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on clients when a scene has completed loaded, when the scene load was initiated by the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Scene changes can cause player objects to be destroyed. The default implementation of OnClientSceneChanged in the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> is to add a player object for the connection if no player object exists.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection of the client</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="497" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="497" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ae0d123d7a31272d635f87bdc34cb44b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStartHost</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStartHost</name>
+        <briefdescription>
+<para>This is called on the host when a host is started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="518" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="518" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a27078ad09d307f8d4de5e7b5387c5115" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStopHost</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStopHost</name>
+        <briefdescription>
+<para>This is called on the host when the host is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="523" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="523" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a4b8dffe1ecfb25dffd8f4050511cd504" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStartServer</name>
+        <briefdescription>
+<para>This is called on the server when the server is started - including when a host is started. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="528" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="528" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a4d4d44ac47608fdd42f3c5a6fbdd6c31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStopServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStopServer</name>
+        <reimplementedby refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1af40b09b7f90545c03d27cbb0b32a9bca">OnRoomStopServer</reimplementedby>
+        <briefdescription>
+<para>This is called on the server when the server is started - including when a host is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="533" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="533" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ac606c79e065fe50465af96cdcd5f24db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomServerConnect</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the server when a new client connects to the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new connection.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="539" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="539" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1afeb16eb3d1abec0c4406a7da0045f035" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomServerDisconnect</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the server when a client disconnects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that disconnected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="545" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="545" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ac613690151e613cc4320e7540170d45f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerSceneChanged</definition>
+        <argsstring>(string sceneName)</argsstring>
+        <name>OnRoomServerSceneChanged</name>
+        <param>
+          <type>string</type>
+          <declname>sceneName</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the server when a networked scene finishes loading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sceneName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the new scene.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="551" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="551" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ae4d11892e9cceaf010dfa89eff5d2595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>GameObject</type>
+        <definition>virtual GameObject Mirror.NetworkRoomManager.OnRoomServerCreateRoomPlayer</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomServerCreateRoomPlayer</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This allows customization of the creation of the room-player object on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the roomPlayerPrefab is used to create the room-player, but this function allows that behaviour to be customized.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection the player object is for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new room-player object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="559" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a4ddb7ae5de6236831fd4edfef044f186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>GameObject</type>
+        <definition>virtual GameObject Mirror.NetworkRoomManager.OnRoomServerCreateGamePlayer</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomServerCreateGamePlayer</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Obsolete: Use <ref refid="class_mirror_1_1_network_room_manager_1a3ef35eb2bca5e74a9109cbbc765a61e8" kindref="member">OnRoomServerCreateGamePlayer(NetworkConnection, GameObject)</ref> instead. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection the player object is for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new GamePlayer object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="571" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="571" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a3ef35eb2bca5e74a9109cbbc765a61e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>GameObject</type>
+        <definition>virtual GameObject Mirror.NetworkRoomManager.OnRoomServerCreateGamePlayer</definition>
+        <argsstring>(NetworkConnection conn, GameObject roomPlayer)</argsstring>
+        <name>OnRoomServerCreateGamePlayer</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>roomPlayer</declname>
+        </param>
+        <briefdescription>
+<para>This allows customization of the creation of the GamePlayer object on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the gamePlayerPrefab is used to create the game-player, but this function allows that behaviour to be customized. The object returned from the function will be used to replace the room-player on the connection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection the player object is for.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>roomPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The room player object for this connection.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new GamePlayer object.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="583" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="583" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a5b384f6ef970ddd5f2b917fcf39236b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerAddPlayer</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomServerAddPlayer</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This allows customization of the creation of the GamePlayer object on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is only called for subsequent GamePlay scenes after the first one.</para>
+<para>See <ref refid="class_mirror_1_1_network_room_manager_1a3ef35eb2bca5e74a9109cbbc765a61e8" kindref="member">OnRoomServerCreateGamePlayer(NetworkConnection, GameObject)</ref> to customize the player object for the initial GamePlay scene.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection the player object is for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="594" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="594" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a4416752fc4c3eb2f7877dfbba1f96139" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Mirror.NetworkRoomManager.OnRoomServerSceneLoadedForPlayer</definition>
+        <argsstring>(GameObject roomPlayer, GameObject gamePlayer)</argsstring>
+        <name>OnRoomServerSceneLoadedForPlayer</name>
+        <param>
+          <type>GameObject</type>
+          <declname>roomPlayer</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>gamePlayer</declname>
+        </param>
+        <briefdescription>
+<para>Obsolete: Use <ref refid="class_mirror_1_1_network_room_manager_1acd402645c827a453462013ae93c6f38e" kindref="member">OnRoomServerSceneLoadedForPlayer(NetworkConnection, GameObject, GameObject)</ref> instead. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="604" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="604" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1acd402645c827a453462013ae93c6f38e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Mirror.NetworkRoomManager.OnRoomServerSceneLoadedForPlayer</definition>
+        <argsstring>(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)</argsstring>
+        <name>OnRoomServerSceneLoadedForPlayer</name>
+        <reimplementedby refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a6299c83225d06117921d726c890117b4">OnRoomServerSceneLoadedForPlayer</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>roomPlayer</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>gamePlayer</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the server when it is told that a client has finished switching from the room scene to a game player scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When switching from the room, the room-player is replaced with a game-player object. This callback function gives an opportunity to apply state from the room-player to the game-player object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection of the player</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>roomPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The room player object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamePlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game player object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>False to not allow this player to replace the room player.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="618" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="618" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a8cbdb3c6b66958d3dc5c42f9f87020b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerPlayersReady</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomServerPlayersReady</name>
+        <reimplementedby refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1ace29e4fa8bd84ccf3164ca332ac1e164">OnRoomServerPlayersReady</reimplementedby>
+        <briefdescription>
+<para>This is called on the server when all the players in the room are ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation of this function uses <ref refid="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" kindref="member">ServerChangeScene()</ref> to switch to the game player scene. By implementing this callback you can customize what happens when all the players in the room are ready, such as adding a countdown or a confirmation for a group leader.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="627" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="627" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ad64c2a7ace0f1dc7dd0d3129369e5212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomServerPlayersNotReady</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomServerPlayersNotReady</name>
+        <briefdescription>
+<para>This is called on the server when CheckReadyToBegin finds that players are not ready </para>
+        </briefdescription>
+        <detaileddescription>
+<para>May be called multiple times while not ready players are joining</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="637" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="637" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a38b9e2344efd6bed58c955c1494cfaf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientEnter</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomClientEnter</name>
+        <briefdescription>
+<para>This is a hook to allow custom behaviour when the game client enters the room. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="646" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="646" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a8047156d4c69e2a42f7a133d91c55602" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientExit</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomClientExit</name>
+        <briefdescription>
+<para>This is a hook to allow custom behaviour when the game client exits the room. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="651" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="651" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a2d38724de6ee346c10c831cb569efea5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientConnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomClientConnect</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the client when it connects to server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that connected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="657" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="657" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1af85a1bb47be6ef68b1e41f7831fd9bc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientDisconnect</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomClientDisconnect</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the client when disconnected from a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that disconnected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="663" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="663" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ad6a55679140c31dd9e804728895471ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStartClient</name>
+        <briefdescription>
+<para>This is called on the client when a client is started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roomClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection for the room.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="669" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="669" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1add05a9e1926f170933148adc6c336302" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomStopClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStopClient</name>
+        <reimplementedby refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a943597dfd89428eff8a8be8066b3ece8">OnRoomStopClient</reimplementedby>
+        <briefdescription>
+<para>This is called on the client when the client stops. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="674" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="674" bodyend="674"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a3b74e07af1612e249e87f97f3e61f9f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientSceneChanged</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnRoomClientSceneChanged</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This is called on the client when the client is finished loading a new networked scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that finished loading a new networked scene.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="680" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="680" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1adea31789982d2b907f801589cc038992" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnRoomClientAddPlayerFailed</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomClientAddPlayerFailed</name>
+        <briefdescription>
+<para>Called on the client when adding a player to the room fails. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This could be because the room is full, or the connection is not allowed to have more players.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="686" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="686" bodyend="686"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a65d2182230bc132ee94771a562837594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.NetworkRoomManager.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <reimplementedby refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a111802b6654f169cc85effbece4a3d06">OnGUI</reimplementedby>
+        <briefdescription>
+<para>virtual so inheriting classes can roll their own </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="695" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="695" bodyend="710"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1a344e20558fb36d322c2a91af172ee91f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.ReadyStatusChanged</definition>
+        <argsstring>()</argsstring>
+        <name>ReadyStatusChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="130" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="130" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1acd332fe95a745c984ab7fc318a5dddda" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.CallOnClientEnterRoom</definition>
+        <argsstring>()</argsstring>
+        <name>CallOnClientEnterRoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="224" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="224" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1aa191643c533b6f623b47b9db08d961c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.SceneLoadedForPlayer</definition>
+        <argsstring>(NetworkConnection conn, GameObject roomPlayer)</argsstring>
+        <name>SceneLoadedForPlayer</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>roomPlayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="171" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="171" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_room_manager_1ace6ce575fe7150469e343c4e71ffbc71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkRoomManager.CallOnClientExitRoom</definition>
+        <argsstring>()</argsstring>
+        <name>CallOnClientExitRoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="234" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="234" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is a specialized <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> that includes a networked room. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The room has slots that track the joined players, and a maximum player count that is enforced. It requires that the <ref refid="class_mirror_1_1_network_room_player" kindref="compound">NetworkRoomPlayer</ref> component be on the room player objects.</para>
+<para><ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref> is derived from <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref>, and so it implements many of the virtual functions provided by the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> class. To avoid accidentally replacing functionality of the <ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref>, there are new virtual functions on the <ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref> that begin with &quot;OnRoom&quot;. These should be used on classes derived from <ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref> instead of the virtual functions on <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref>.</para>
+<para>The OnRoom*() functions have empty implementations on the <ref refid="class_mirror_1_1_network_room_manager" kindref="compound">NetworkRoomManager</ref> base class, so the base class functions do not have to be called.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Mirror.NetworkLobbyManager</label>
+        <link refid="class_mirror_1_1_network_lobby_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.NetworkRoomManager</label>
+        <link refid="class_mirror_1_1_network_room_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.Examples.NetworkRoom.NetworkRoomManagerExt</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkManager</label>
+        <link refid="class_mirror_1_1_network_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Mirror.UnityEventException</label>
+        <link refid="class_mirror_1_1_unity_event_exception"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>UnityEvent&lt; Exception &gt;</label>
+      </node>
+      <node id="13">
+        <label>Mirror.UnityEventIntException</label>
+        <link refid="class_mirror_1_1_unity_event_int_exception"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UnityEngine</label>
+      </node>
+      <node id="6">
+        <label>Mirror.UnityEventNetworkConnection</label>
+        <link refid="class_mirror_1_1_unity_event_network_connection"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UnityEvent&lt; NetworkConnection &gt;</label>
+      </node>
+      <node id="16">
+        <label>UnityEvent&lt; ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="15">
+        <label>Mirror.ClientDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_client_data_received_event"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Mirror.Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>OnServerConnected</edgelabel>
+          <edgelabel>OnServerDisconnected</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>OnClientError</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>activeTransport</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>OnServerError</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>OnClientDataReceived</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>OnServerDataReceived</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>IDisposable</label>
+      </node>
+      <node id="19">
+        <label>Mirror.NetworkRoomPlayer</label>
+        <link refid="class_mirror_1_1_network_room_player"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Mirror.UnityEventInt</label>
+        <link refid="class_mirror_1_1_unity_event_int"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>UnityEvent&lt; int, Exception &gt;</label>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>Mirror.NetworkAuthenticator</label>
+        <link refid="class_mirror_1_1_network_authenticator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OnClientAuthenticated</edgelabel>
+          <edgelabel>OnServerAuthenticated</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Mirror.ServerDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_server_data_received_event"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UnityEvent&lt; int &gt;</label>
+      </node>
+      <node id="18">
+        <label>UnityEvent&lt; int, ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="1">
+        <label>Mirror.NetworkRoomManager</label>
+        <link refid="class_mirror_1_1_network_room_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>roomPlayerPrefab</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkManager</label>
+        <link refid="class_mirror_1_1_network_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>loadingSceneAsync</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>authenticator</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" line="21" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/NetworkRoomManager.cs" bodystart="22" bodyend="713"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_room_manager_1a97ea7a0e2dc4b56effa558dfa33ce7fc" prot="private" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>_allPlayersReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a054be9655e1cea08e6b9855790deb438" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>allPlayersReady</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac994cd3aa4b4d7a5265db22225b813f2" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>authenticator</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5feedb04fce427328f8b0b2fdc4aaecf" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>autoCreatePlayer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6c3233bb576b12f916bb1c3644141ddc" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>autoStartServerBuild</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6ae0ef1c6575b8658ea975a7fc60ef72" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1acd332fe95a745c984ab7fc318a5dddda" prot="package" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>CallOnClientEnterRoom</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ace6ce575fe7150469e343c4e71ffbc71" prot="private" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>CallOnClientExitRoom</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ab7ddebde53720b24f17414c7daeed974" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>CheckReadyToBegin</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a4c3003608fcfc49eab71d0fa6f8c5bff" prot="package" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>ClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a7079cb91ab3aca157345929081f7bd63" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>clientLoadedScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a17e8fba92cdcaa144e0f5eecc46d7bf4" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>ConfigureServerFrameRate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6a3e05a7d69da725d5096c259e8588d9" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>disconnectInactiveConnections</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a20aa81bd18677e958645bfd2af78455e" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>disconnectInactiveTimeout</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9a27bfac207d46188c6940155800c4ba" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>dontDestroyOnLoad</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ab00e3791c555a1b06121a7b2abcabbd4" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>GameplayScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a555e63cea31781669d25d5c361ec0320" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>GetStartPosition</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a58c2713041aa184aac87410126f5822b" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>isHeadless</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a1f569b676d7a9cc3b05e3e1d37039ff1" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>isNetworkActive</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a39f446bff0bd085d3514a0b98cf19693" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>IsSceneActive</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9afe15bd60cdc9e1a1bd266ccbfe1fe9" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>LateUpdate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1afff2d0e81fa2f64655a8ca63102980e2" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>loadingSceneAsync</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a20d8780325a29100f6d30aabe6958dcd" prot="private" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a647cb7a86c0cd91fea090a047b914793" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>maxConnections</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a167cb83b483535a3084d161a33f16576" prot="protected" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>minPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0dc0e754c367029d89e54af0f6af5c15" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>mode</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5bf39246bf796ae839815eb799431e0a" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>networkAddress</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a901aa08efc421a658176d407147272ab" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>networkSceneName</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae8ea1665e8b5401a65f23e9a168b6a89" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>numPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1afbf241fc215908b6705f9e9792bde2d4" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>offlineScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1abf44b9cdc538229e5a900060673ac281" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnApplicationQuit</name></member>
+      <member refid="class_mirror_1_1_network_manager_1aa259420c00cfdeb49f52303fd48f885e" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a114a2174636b05f12f69de6499fcce89" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a004e492b30cb7f0df4d3b715ae4762d9" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a04fa37943cfca9d8c7ab33f84df95ace" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a2017b8846ba9e3603bcbac03dcde953d" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientError</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a8d130eb3ea78f6789ff4bbf8dfcea5cf" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientNotReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1abe8e1e5a63516fc778b71eb2c4974fda" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnClientSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a8358ad89e84ccb31cc96598b4e03d709" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnDestroy</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a65d2182230bc132ee94771a562837594" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnGUI</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a94a71162ac38d4c83fc528c27bbd934f" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>onlineScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1adea31789982d2b907f801589cc038992" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientAddPlayerFailed</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a2d38724de6ee346c10c831cb569efea5" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1af85a1bb47be6ef68b1e41f7831fd9bc3" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a38b9e2344efd6bed58c955c1494cfaf7" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientEnter</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a8047156d4c69e2a42f7a133d91c55602" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientExit</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a3b74e07af1612e249e87f97f3e61f9f9" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomClientSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a5b384f6ef970ddd5f2b917fcf39236b4" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerAddPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ac606c79e065fe50465af96cdcd5f24db" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4ddb7ae5de6236831fd4edfef044f186" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerCreateGamePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a3ef35eb2bca5e74a9109cbbc765a61e8" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerCreateGamePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae4d11892e9cceaf010dfa89eff5d2595" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerCreateRoomPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1afeb16eb3d1abec0c4406a7da0045f035" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad64c2a7ace0f1dc7dd0d3129369e5212" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerPlayersNotReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a8cbdb3c6b66958d3dc5c42f9f87020b2" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerPlayersReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ac613690151e613cc4320e7540170d45f" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4416752fc4c3eb2f7877dfbba1f96139" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerSceneLoadedForPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1acd402645c827a453462013ae93c6f38e" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomServerSceneLoadedForPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad6a55679140c31dd9e804728895471ee" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStartClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae0d123d7a31272d635f87bdc34cb44b0" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStartHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4b8dffe1ecfb25dffd8f4050511cd504" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStartServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1add05a9e1926f170933148adc6c336302" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStopClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a27078ad09d307f8d4de5e7b5387c5115" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStopHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4d4d44ac47608fdd42f3c5a6fbdd6c31" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnRoomStopServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1aefcd26095dffd6e2578b3f8dfd589394" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerAddPlayer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a328c8da98050688b524106c828bafdb8" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a45f94c08d8367c6e3e049b0ae5bce469" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae3fad7bd0843a316d97d48ed21c4430b" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_manager_1adfa3d8999a4f7072b22c90d2b3eb00f9" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerError</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a7992ca07c4a74b3dd3600a66fdb0ca2f" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerReady</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a98e7f41697393f11f91886ee0a871b49" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerRemovePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a02b0bdcb470188c5f18e2c79d9c8c74f" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnServerSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad6c9e38e891d0f763acd8a83a2a63845" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad39cc34ac81a645d2b3f17c0a04751dd" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStartHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae5b33ca30e66bece6c5cf5958da83e69" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a5fb9dc1ba0842c6dc2582ffeefa55a66" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a07272238268faa6282562ec2b9f14235" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStopHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a0d2259beb5014a9a1199464b9bb9b89e" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a8b2b92daab28eec6294680f58612a807" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>OnValidate</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a205ba6fde1487cb142d5ce5d35c848e0" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>pendingPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a81bcbc73d62c047faf0e9c73fb6ffd63" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>playerPrefab</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae6167e3960b1a34e09ea97868d1cc60e" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>playerSpawnMethod</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a344e20558fb36d322c2a91af172ee91f" prot="package" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>ReadyStatusChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a850dd37438790d1417f23795d915014d" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>RecalculateRoomPlayerIndices</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a44753113feef2e4f0bec30dde393f966" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>RegisterStartPosition</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1aab2d2a94c1b317a1a8a87ab89eca1e20" prot="protected" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>roomPlayerPrefab</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a998f09664331ad69ba3095b3e8fe6988" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>RoomScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a28a644a2350cb014129a58bd6d320084" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>roomSlots</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac3bbfc101e99f8a857f6dfa584f6156f" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>runInBackground</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1aa191643c533b6f623b47b9db08d961c5" prot="private" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>SceneLoadedForPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>ServerChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae58faa1c85fe26e7be872021692a59ad" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>serverTickRate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1acfc3b37834c4145dcbe6d0c1069ce221" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>showDebugMessages</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a7873eab63d6430d30a1e3533778a4674" prot="package" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>showRoomGUI</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ab775ddc1bc057d9eeb6135fc1c3038bc" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0fda8121f67f6c13e153c7391bbad2bd" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>singleton</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0a8603e11759317ca078ef8afabc08e3" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>spawnPrefabs</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5823aa0ee6c9711f8000ab4988a19a19" prot="public" virt="virtual"><scope>Mirror::NetworkRoomManager</scope><name>Start</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a21755bebf114e5fb026b1834de6b4c73" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StartClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ada9f6a63e9816755bb437b29c4bbfa1d" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StartClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a41ab4aece51e9c6b905a5f72b3a7eb3c" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StartHost</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a372fff70fabcc2ede9d4d2fb012be324" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>startOnHeadless</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a1a28ec0b06891f2b0907958df67ee42b" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>startPositionIndex</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9ea7ee41ec27cfb8a8ec06938b0ef63c" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>startPositions</name></member>
+      <member refid="class_mirror_1_1_network_manager_1acf951becaaa4d612814d92676eb241a8" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StartServer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6e127fabdafd35b09e9e58698a27b244" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StopClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a38cf1737bb408c021c0c2dcb56c837ba" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StopHost</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a3a40b9ca73b07e223bdd57e1e89a3e82" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>StopServer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a7007bd753d6da4fd8b9ad945b8ab6c86" prot="protected" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>transport</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac2295dcd5454f7dd2f30c9648abd5abe" prot="public" virt="non-virtual"><scope>Mirror::NetworkRoomManager</scope><name>UnRegisterStartPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

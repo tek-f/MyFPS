@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_74c73bc1be379a802cb2101b3510ecf4" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Scripts</compoundname>
+    <innerfile refid="_projectile_8cs">Projectile.cs</innerfile>
+    <innerfile refid="_tank_8cs">Tank.cs</innerfile>
+    <innerfile refid="_tank_game_manager_8cs">TankGameManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Scripts/"/>
+  </compounddef>
+</doxygen>

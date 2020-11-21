@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_sync_event_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::SyncEventProcessor</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_event_processor_1a685ace0da96a23b28bfeaa46f9c70621" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncEventProcessor.ProcessEventInvoke</definition>
+        <argsstring>(TypeDefinition td, EventDefinition ed)</argsstring>
+        <name>ProcessEventInvoke</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>EventDefinition</type>
+          <declname>ed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" line="12" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" bodystart="12" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_event_processor_1a865013439867a41fd7d9308ec4b6b18c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncEventProcessor.ProcessEventCall</definition>
+        <argsstring>(TypeDefinition td, EventDefinition ed, CustomAttribute syncEventAttr)</argsstring>
+        <name>ProcessEventCall</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>EventDefinition</type>
+          <declname>ed</declname>
+        </param>
+        <param>
+          <type>CustomAttribute</type>
+          <declname>syncEventAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" line="68" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" bodystart="68" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_event_processor_1a053d04a52211785c9cc8e959100f0385" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncEventProcessor.ProcessEvents</definition>
+        <argsstring>(TypeDefinition td, List&lt; EventDefinition &gt; events, List&lt; MethodDefinition &gt; eventInvocationFuncs)</argsstring>
+        <name>ProcessEvents</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>List&lt; EventDefinition &gt;</type>
+          <declname>events</declname>
+        </param>
+        <param>
+          <type>List&lt; MethodDefinition &gt;</type>
+          <declname>eventInvocationFuncs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" line="112" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" bodystart="112" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_event_processor_1a14731baf15c8a76bc8808b5727a93b46" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncEventProcessor.ProcessEvent</definition>
+        <argsstring>(TypeDefinition td, List&lt; EventDefinition &gt; events, List&lt; MethodDefinition &gt; eventInvocationFuncs, EventDefinition ed, CustomAttribute syncEventAttr)</argsstring>
+        <name>ProcessEvent</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>List&lt; EventDefinition &gt;</type>
+          <declname>events</declname>
+        </param>
+        <param>
+          <type>List&lt; MethodDefinition &gt;</type>
+          <declname>eventInvocationFuncs</declname>
+        </param>
+        <param>
+          <type>EventDefinition</type>
+          <declname>ed</declname>
+        </param>
+        <param>
+          <type>CustomAttribute</type>
+          <declname>syncEventAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" line="126" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" bodystart="126" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Processes SyncEvents in <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" line="10" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncEventProcessor.cs" bodystart="11" bodyend="154"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_event_processor_1a14731baf15c8a76bc8808b5727a93b46" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncEventProcessor</scope><name>ProcessEvent</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_event_processor_1a865013439867a41fd7d9308ec4b6b18c" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncEventProcessor</scope><name>ProcessEventCall</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_event_processor_1a685ace0da96a23b28bfeaa46f9c70621" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncEventProcessor</scope><name>ProcessEventInvoke</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_event_processor_1a053d04a52211785c9cc8e959100f0385" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncEventProcessor</scope><name>ProcessEvents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

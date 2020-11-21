@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
-    public void LoadScene(int scene)
+    /// <summary>
+    /// Loads scene according to _scene.
+    /// </summary>
+    /// <param name="_scene">Scene ID in the Build Settings to be loaded in.</param>
+    public void LoadScene(int _scene)
     {
-        SceneManager.LoadScene(scene);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(_scene);
     }
+    /// <summary>
+    /// Exits game in both build and editor play window.
+    /// </summary>
     public void ExitGame()
     {
 #if UNITY_EDITOR

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_ff1b0ec070cc36878c3fef4f1a811546" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core</compoundname>
+    <innerfile refid="_base_api_8cs">BaseApi.cs</innerfile>
+    <innerfile refid="_cloud_2_core_2_events_8cs">Events.cs</innerfile>
+    <innerfile refid="_cloud_2_core_2_extensions_8cs">Extensions.cs</innerfile>
+    <innerfile refid="_i_coroutine_runner_8cs">ICoroutineRunner.cs</innerfile>
+    <innerfile refid="_i_request_creator_8cs">IRequestCreator.cs</innerfile>
+    <innerfile refid="_i_unity_equal_check_8cs">IUnityEqualCheck.cs</innerfile>
+    <innerfile refid="_json_structs_8cs">JsonStructs.cs</innerfile>
+    <innerfile refid="_cloud_2_core_2_logger_8cs">Logger.cs</innerfile>
+    <innerfile refid="_request_creator_8cs">RequestCreator.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,803 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_websocket_1_1_websocket_transport" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Websocket::WebsocketTransport</compoundname>
+    <basecompoundref refid="class_mirror_1_1_transport" prot="public" virt="non-virtual">Mirror.Transport</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a531d397a162bd699a9d504f3b594e11c" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Mirror.Websocket.WebsocketTransport.Scheme</definition>
+        <argsstring></argsstring>
+        <name>Scheme</name>
+        <initializer>= &quot;ws&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="12" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a0dc6319325d8dbf6920765acc2a2b859" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Mirror.Websocket.WebsocketTransport.SecureScheme</definition>
+        <argsstring></argsstring>
+        <name>SecureScheme</name>
+        <initializer>= &quot;wss&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="13" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a8b2866c3df08da6d90a3735c3d0692be" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_websocket_1_1_client" kindref="compound">Client</ref></type>
+        <definition>Client Mirror.Websocket.WebsocketTransport.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <initializer>= new <ref refid="class_mirror_1_1_websocket_1_1_client" kindref="compound">Client</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="15" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a7949a1d17a471ff844fa57e957b94ad1" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_websocket_1_1_server" kindref="compound">Server</ref></type>
+        <definition>Server Mirror.Websocket.WebsocketTransport.server</definition>
+        <argsstring></argsstring>
+        <name>server</name>
+        <initializer>= new <ref refid="class_mirror_1_1_websocket_1_1_server" kindref="compound">Server</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="16" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ad3204374c8ddc79775284018236d6435" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.Websocket.WebsocketTransport.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <initializer>= 7778</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="21" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a43ea1d614de45d8845dc0b2c4f6eb4f5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Websocket.WebsocketTransport.NoDelay</definition>
+        <argsstring></argsstring>
+        <name>NoDelay</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="24" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a23026db33c3ceb9047660c36bb8374bd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Websocket.WebsocketTransport.Secure</definition>
+        <argsstring></argsstring>
+        <name>Secure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="29" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1adf86fda1ed7e5524c753c229e39f09d1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Websocket.WebsocketTransport.CertificatePath</definition>
+        <argsstring></argsstring>
+        <name>CertificatePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="32" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ade177c7b5039c978707aeb194cd5da13" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Websocket.WebsocketTransport.CertificatePassword</definition>
+        <argsstring></argsstring>
+        <name>CertificatePassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="35" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a08e7d5f7989002e1f9ea8c0173939e0c" prot="public" static="no" mutable="no">
+        <type>SslProtocols</type>
+        <definition>SslProtocols Mirror.Websocket.WebsocketTransport.EnabledSslProtocols</definition>
+        <argsstring></argsstring>
+        <name>EnabledSslProtocols</name>
+        <initializer>= SslProtocols.Default</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="38" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a61e5de5ca87ed59fd2b3db2cf51a8955" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.Websocket.WebsocketTransport.WebsocketTransport</definition>
+        <argsstring>()</argsstring>
+        <name>WebsocketTransport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="40" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="40" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ab74bec853ab24e529b435538571a4d50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.Available</definition>
+        <argsstring>()</argsstring>
+        <name>Available</name>
+        <reimplements refid="class_mirror_1_1_transport_1a7c662214f058b24b4dec5913d09122e1">Available</reimplements>
+        <briefdescription>
+<para>Is this transport available in the current platform? </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some transports might only be available in mobile</para>
+<para>Many will not work in webgl</para>
+<para>Example usage: return Application.platform == RuntimePlatform.WebGLPlayer</para>
+<para><simplesect kind="return"><para>True if this transport works in the current platform</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="61" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a9b6a63616576de2c03cd7c4ca9d44dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.ClientConnected</definition>
+        <argsstring>()</argsstring>
+        <name>ClientConnected</name>
+        <reimplements refid="class_mirror_1_1_transport_1a1d37768d58bce8ccfeafb254ff6961b5">ClientConnected</reimplements>
+        <briefdescription>
+<para>Determines if we are currently connected to the server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a connection has been established to the server</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="107" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1abd6aec6986974768260010766a409aa5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.ClientConnect</definition>
+        <argsstring>(string host)</argsstring>
+        <name>ClientConnect</name>
+        <reimplements refid="class_mirror_1_1_transport_1aa8e301deea483e11bc3a77241bebd6c8">ClientConnect</reimplements>
+        <param>
+          <type>string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Establish a connection to a server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IP address or FQDN of the server we are trying to connect to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="109" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a6a3f275097cf34346a82f15857acb808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.ClientConnect</definition>
+        <argsstring>(Uri uri)</argsstring>
+        <name>ClientConnect</name>
+        <reimplements refid="class_mirror_1_1_transport_1ac5e84a6ef26c090e2075a513d5724cd4">ClientConnect</reimplements>
+        <param>
+          <type>Uri</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+<para>Establish a connection to a server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the server we are trying to connect to</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="121" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="121" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a2944f67990c8f81b24afedacc25b92fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.ClientSend</definition>
+        <argsstring>(int channelId, ArraySegment&lt; byte &gt; segment)</argsstring>
+        <name>ClientSend</name>
+        <reimplements refid="class_mirror_1_1_transport_1a72f04bfce4b5cc2e6e706b069a8a4c35">ClientSend</reimplements>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Send data to the server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The channel to use. 0 is the default channel, but some transports might want to provide unreliable, encrypted, compressed, or any other feature as new channels</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to send to the server. Will be recycled after returning, so either use it directly or copy it internally. This allows for allocation-free sends!</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the send was successful</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="136" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="136" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a066dea137bd83477bdc1001beb7e7ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.ClientDisconnect</definition>
+        <argsstring>()</argsstring>
+        <name>ClientDisconnect</name>
+        <reimplements refid="class_mirror_1_1_transport_1adf81d49444738fb55ec8962535c5ed05">ClientDisconnect</reimplements>
+        <briefdescription>
+<para>Disconnect this client from the server </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="142" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a97a2c68880e296d3c42b7fd72e75e113" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override Uri</type>
+        <definition>override Uri Mirror.Websocket.WebsocketTransport.ServerUri</definition>
+        <argsstring>()</argsstring>
+        <name>ServerUri</name>
+        <reimplements refid="class_mirror_1_1_transport_1a4c03319f92bc9bccd60666aa8640b914">ServerUri</reimplements>
+        <briefdescription>
+<para>Retrieves the address of this server. Useful for network discovery </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the url at which this server can be reached</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="144" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="144" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a9e500951a83c3397f0d64cefc7aa7c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.ServerActive</definition>
+        <argsstring>()</argsstring>
+        <name>ServerActive</name>
+        <reimplements refid="class_mirror_1_1_transport_1aecd7291bd0108abab27e2188bc3204b0">ServerActive</reimplements>
+        <briefdescription>
+<para>Determines if the server is up and running </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the transport is ready for connections from clients</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="155" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a39bbcbbedbc8521c4378e71791867c22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.ServerStart</definition>
+        <argsstring>()</argsstring>
+        <name>ServerStart</name>
+        <reimplements refid="class_mirror_1_1_transport_1a104abe48a87936fbe5d31a289d83a36d">ServerStart</reimplements>
+        <briefdescription>
+<para>Start listening for clients </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="157" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="157" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ac7850eaf0e4d1a9cd52db7efa6797669" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.ServerSend</definition>
+        <argsstring>(List&lt; int &gt; connectionIds, int channelId, ArraySegment&lt; byte &gt; segment)</argsstring>
+        <name>ServerSend</name>
+        <reimplements refid="class_mirror_1_1_transport_1a9b7725d91b696845add4defdce3c37ab">ServerSend</reimplements>
+        <param>
+          <type>List&lt; int &gt;</type>
+          <declname>connectionIds</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+<para>Send data to one or multiple clients. We provide a list, so that transports can make use of multicasting, and avoid allocations where possible. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>We don&apos;t provide a single ServerSend function to reduce complexity. Simply overwrite this one in your <ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connectionIds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of client connection ids to send the data to</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The channel to be used. Transports can use channels to implement other features such as unreliable, encryption, compression, etc...</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the data was sent to all clients</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="174" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="174" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1af9085f6e48ef2d51425d47efa7e37e35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Websocket.WebsocketTransport.ServerDisconnect</definition>
+        <argsstring>(int connectionId)</argsstring>
+        <name>ServerDisconnect</name>
+        <reimplements refid="class_mirror_1_1_transport_1a733852b2e5bc2922129700e1e3128d8b">ServerDisconnect</reimplements>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <briefdescription>
+<para>Disconnect a client from this server. Useful to kick people out. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connectionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the id of the client to disconnect</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the client was kicked</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="182" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a802540d4ea725e6a9e8ba97b99bae482" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override string</type>
+        <definition>override string Mirror.Websocket.WebsocketTransport.ServerGetClientAddress</definition>
+        <argsstring>(int connectionId)</argsstring>
+        <name>ServerGetClientAddress</name>
+        <reimplements refid="class_mirror_1_1_transport_1a776ddfb60f41fa6645df0c74833c46f6">ServerGetClientAddress</reimplements>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <briefdescription>
+<para>Get the client address </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connectionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of the client</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>address of the client</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="187" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a7e8a145c0c80a14173f8a08a25ced149" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.ServerStop</definition>
+        <argsstring>()</argsstring>
+        <name>ServerStop</name>
+        <reimplements refid="class_mirror_1_1_transport_1a6e99933a82108c0dcb358ce4e60a3acb">ServerStop</reimplements>
+        <briefdescription>
+<para>Stop listening for clients and disconnect all existing clients </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="191" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a7cfa6744bc91c58d2775794e91e23b47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Websocket.WebsocketTransport.Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <reimplements refid="class_mirror_1_1_transport_1a79346ab9427f1cf37ff8154856040449">Shutdown</reimplements>
+        <briefdescription>
+<para>Shut down the transport, both as client and server </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="194" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="194" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1afe783af2ecfcd7faca1583a969f78d49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override int</type>
+        <definition>override int Mirror.Websocket.WebsocketTransport.GetMaxPacketSize</definition>
+        <argsstring>(int channelId)</argsstring>
+        <name>GetMaxPacketSize</name>
+        <reimplements refid="class_mirror_1_1_transport_1a6340d7bcfced9674d8c4f59b0d0746cf">GetMaxPacketSize</reimplements>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+        </param>
+        <briefdescription>
+<para>The maximum packet size for a given channel. Unreliable transports usually can only deliver small packets. Reliable fragmented channels can usually deliver large ones. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetMaxPacketSize needs to return a value at all times. Even if the <ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref> isn&apos;t running, or isn&apos;t <ref refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ab74bec853ab24e529b435538571a4d50" kindref="member">Available()</ref>. This is because Fallback and Multiplex transports need to find the smallest possible packet size at runtime.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size in bytes that can be sent via the provided channel</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="200" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ad250d29fb692a619aaf614ec5a5b48d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mirror.Websocket.WebsocketTransport.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="206" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="206" bodyend="217"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1abce11fb23d7b2b0fc0e00d032301b327" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Websocket.WebsocketTransport.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="67" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1ab51dbc17cbcd8299f45255dbba9ece51" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Websocket.WebsocketTransport.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="73" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_websocket_1_1_websocket_transport_1a684d349027cd94a8f9271d7349581757" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Websocket.WebsocketTransport.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="79" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="79" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.Websocket.WebsocketTransport</label>
+        <link refid="class_mirror_1_1_websocket_1_1_websocket_transport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Mirror.UnityEventException</label>
+        <link refid="class_mirror_1_1_unity_event_exception"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Mirror.Websocket.Server.SslConfiguration</label>
+        <link refid="class_mirror_1_1_websocket_1_1_server_1_1_ssl_configuration"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>Certificate</edgelabel>
+          <edgelabel>EnabledSslProtocols</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>UnityEvent&lt; Exception &gt;</label>
+      </node>
+      <node id="9">
+        <label>Mirror.UnityEventIntException</label>
+        <link refid="class_mirror_1_1_unity_event_int_exception"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>UnityEvent&lt; ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="11">
+        <label>Mirror.ClientDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_client_data_received_event"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Mirror.Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>OnServerConnected</edgelabel>
+          <edgelabel>OnServerDisconnected</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OnClientError</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>activeTransport</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>OnServerError</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>OnClientDataReceived</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>OnServerDataReceived</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Websocket.WebsocketTransport</label>
+        <link refid="class_mirror_1_1_websocket_1_1_websocket_transport"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>server</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.UnityEventInt</label>
+        <link refid="class_mirror_1_1_unity_event_int"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Mirror.Websocket.Server</label>
+        <link refid="class_mirror_1_1_websocket_1_1_server"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>_sslConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UnityEvent&lt; int, Exception &gt;</label>
+      </node>
+      <node id="17">
+        <label>System</label>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>OnServerConnected</edgelabel>
+          <edgelabel>OnServerDisconnected</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>OnClientError</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>activeTransport</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>OnServerError</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>OnClientDataReceived</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>OnServerDataReceived</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Mirror.Websocket.Client</label>
+        <link refid="class_mirror_1_1_websocket_1_1_client"/>
+      </node>
+      <node id="13">
+        <label>Mirror.ServerDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_server_data_received_event"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityEvent&lt; int &gt;</label>
+      </node>
+      <node id="14">
+        <label>UnityEvent&lt; int, ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" line="10" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/WebsocketTransport.cs" bodystart="11" bodyend="218"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_transport_1a4e187471cf106ef6068e4347b1d2fdee" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>activeTransport</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ab74bec853ab24e529b435538571a4d50" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>Available</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ade177c7b5039c978707aeb194cd5da13" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>CertificatePassword</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1adf86fda1ed7e5524c753c229e39f09d1" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>CertificatePath</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a8b2866c3df08da6d90a3735c3d0692be" prot="protected" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>client</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1abd6aec6986974768260010766a409aa5" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ClientConnect</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a6a3f275097cf34346a82f15857acb808" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ClientConnect</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a9b6a63616576de2c03cd7c4ca9d44dce" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ClientConnected</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a066dea137bd83477bdc1001beb7e7ce6" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ClientDisconnect</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a2944f67990c8f81b24afedacc25b92fc" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ClientSend</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a08e7d5f7989002e1f9ea8c0173939e0c" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>EnabledSslProtocols</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1afe783af2ecfcd7faca1583a969f78d49" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>GetMaxPacketSize</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a684d349027cd94a8f9271d7349581757" prot="private" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>LateUpdate</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a43ea1d614de45d8845dc0b2c4f6eb4f5" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>NoDelay</name></member>
+      <member refid="class_mirror_1_1_transport_1a60da8b19a9fcc0e4e5b732887ed750dd" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnApplicationQuit</name></member>
+      <member refid="class_mirror_1_1_transport_1acafeb3fc7051eb2456961a4aab66bd67" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnClientConnected</name></member>
+      <member refid="class_mirror_1_1_transport_1a73f5e6da15756d7bf2bcfd12429be058" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnClientDataReceived</name></member>
+      <member refid="class_mirror_1_1_transport_1a32abf6e68728cdb49cd31a9208a7eb55" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnClientDisconnected</name></member>
+      <member refid="class_mirror_1_1_transport_1a288982823f99bfd439277ee2a174173b" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnClientError</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ab51dbc17cbcd8299f45255dbba9ece51" prot="private" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnDisable</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1abce11fb23d7b2b0fc0e00d032301b327" prot="private" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnEnable</name></member>
+      <member refid="class_mirror_1_1_transport_1a4e8ff19ebeb434fec9b7262fa1b9638c" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnServerConnected</name></member>
+      <member refid="class_mirror_1_1_transport_1ac5d03436d77ffe03d3391629a1a85c16" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnServerDataReceived</name></member>
+      <member refid="class_mirror_1_1_transport_1a14b8d3ba13b5f98924aeec45af184d45" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnServerDisconnected</name></member>
+      <member refid="class_mirror_1_1_transport_1a656d1f29dc7a753a6c63e6c9cfdc73cc" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>OnServerError</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ad3204374c8ddc79775284018236d6435" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>port</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a531d397a162bd699a9d504f3b594e11c" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>Scheme</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a23026db33c3ceb9047660c36bb8374bd" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>Secure</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a0dc6319325d8dbf6920765acc2a2b859" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>SecureScheme</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a7949a1d17a471ff844fa57e957b94ad1" prot="protected" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>server</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a9e500951a83c3397f0d64cefc7aa7c9a" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerActive</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1af9085f6e48ef2d51425d47efa7e37e35" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerDisconnect</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a802540d4ea725e6a9e8ba97b99bae482" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerGetClientAddress</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ac7850eaf0e4d1a9cd52db7efa6797669" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerSend</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a39bbcbbedbc8521c4378e71791867c22" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerStart</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a7e8a145c0c80a14173f8a08a25ced149" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerStop</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a97a2c68880e296d3c42b7fd72e75e113" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ServerUri</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a7cfa6744bc91c58d2775794e91e23b47" prot="public" virt="virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1ad250d29fb692a619aaf614ec5a5b48d4" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>ToString</name></member>
+      <member refid="class_mirror_1_1_transport_1ad1a6da8f541579f53d7a2c61cbc820c6" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>Update</name></member>
+      <member refid="class_mirror_1_1_websocket_1_1_websocket_transport_1a61e5de5ca87ed59fd2b3db2cf51a8955" prot="public" virt="non-virtual"><scope>Mirror::Websocket::WebsocketTransport</scope><name>WebsocketTransport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

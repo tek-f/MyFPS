@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_pong_event_args_8cs" kind="file" language="C#">
+    <compoundname>PongEventArgs.cs</compoundname>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" prot="public">Ninja::WebSockets::PongEventArgs</innerclass>
+    <innernamespace refid="namespace_ninja">Ninja</innernamespace>
+    <innernamespace refid="namespace_ninja_1_1_web_sockets">Ninja::WebSockets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ninja_1_1_web_sockets" kindref="compound">Ninja.WebSockets</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" kindref="compound">PongEventArgs</ref><sp/>:<sp/>EventArgs</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ArraySegment&lt;byte&gt;<sp/><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args_1ad15985e110a2fcde2fa4500ff3f29f69" kindref="member">Payload</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args_1a67df7eaaac2003884425574689420dc5" kindref="member">PongEventArgs</ref>(ArraySegment&lt;byte&gt;<sp/>payload)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args_1ad15985e110a2fcde2fa4500ff3f29f69" kindref="member">Payload</ref><sp/>=<sp/>payload;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PongEventArgs.cs"/>
+  </compounddef>
+</doxygen>

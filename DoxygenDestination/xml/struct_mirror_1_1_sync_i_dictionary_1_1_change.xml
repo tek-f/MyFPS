@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_sync_i_dictionary_1_1_change" kind="struct" language="C#" prot="private">
+    <compoundname>Mirror::SyncIDictionary::Change</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_i_dictionary_1_1_change_1ac363278a72a60f8b378a968ce6a7019d" prot="package" static="no" mutable="no">
+        <type>Operation</type>
+        <definition>Operation Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Change.operation</definition>
+        <argsstring></argsstring>
+        <name>operation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="29" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_i_dictionary_1_1_change_1a869861802ff3299964a44d002a694068" prot="package" static="no" mutable="no">
+        <type>TKey</type>
+        <definition>TKey Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Change.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="30" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_i_dictionary_1_1_change_1ac337aa992ae35774b7634df233d77d7b" prot="package" static="no" mutable="no">
+        <type>TValue</type>
+        <definition>TValue Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Change.item</definition>
+        <argsstring></argsstring>
+        <name>item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="31" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="27" column="9" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="28" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_sync_i_dictionary_1_1_change_1ac337aa992ae35774b7634df233d77d7b" prot="package" virt="non-virtual"><scope>Mirror::SyncIDictionary::Change</scope><name>item</name></member>
+      <member refid="struct_mirror_1_1_sync_i_dictionary_1_1_change_1a869861802ff3299964a44d002a694068" prot="package" virt="non-virtual"><scope>Mirror::SyncIDictionary::Change</scope><name>key</name></member>
+      <member refid="struct_mirror_1_1_sync_i_dictionary_1_1_change_1ac363278a72a60f8b378a968ce6a7019d" prot="package" virt="non-virtual"><scope>Mirror::SyncIDictionary::Change</scope><name>operation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

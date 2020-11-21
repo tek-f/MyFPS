@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_14e02250f370b28be3245609c1947966" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Casings_&amp;_Projectiles</compoundname>
+    <innerfile refid="_casing_script_8cs">CasingScript.cs</innerfile>
+    <innerfile refid="_grenade_script_8cs">GrenadeScript.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Casings_&amp;_Projectiles/"/>
+  </compounddef>
+</doxygen>

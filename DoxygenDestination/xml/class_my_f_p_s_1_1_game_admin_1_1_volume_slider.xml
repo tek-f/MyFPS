@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_game_admin_1_1_volume_slider" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::GameAdmin::VolumeSlider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a02ebc310774aa3daa566a4617db0c265" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource MyFPS.GameAdmin.VolumeSlider.audio</definition>
+        <argsstring></argsstring>
+        <name>audio</name>
+        <briefdescription>
+<para>Reference to the main audio source in the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" line="14" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a65747d13f8f33aa458914dee7d637e00" prot="public" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider MyFPS.GameAdmin.VolumeSlider.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <briefdescription>
+<para>Refefence to the Slider UI element in the settings menu. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" line="18" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1af93485d12990c7fce878964b0be70eab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.GameAdmin.VolumeSlider.SetVolume</definition>
+        <argsstring>(float _value)</argsstring>
+        <name>SetVolume</name>
+        <param>
+          <type>float</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the volume of audio to _value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value the volume is set to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" line="23" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a3a77235cd79739a7644f22345819e9dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.GameAdmin.VolumeSlider.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" line="28" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyFPS.GameAdmin.VolumeSlider</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyFPS.GameAdmin.VolumeSlider</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/VolumeSlider.cs" bodystart="10" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a02ebc310774aa3daa566a4617db0c265" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::VolumeSlider</scope><name>audio</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a3a77235cd79739a7644f22345819e9dd" prot="private" virt="non-virtual"><scope>MyFPS::GameAdmin::VolumeSlider</scope><name>Awake</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1af93485d12990c7fce878964b0be70eab" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::VolumeSlider</scope><name>SetVolume</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_volume_slider_1a65747d13f8f33aa458914dee7d637e00" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::VolumeSlider</scope><name>slider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

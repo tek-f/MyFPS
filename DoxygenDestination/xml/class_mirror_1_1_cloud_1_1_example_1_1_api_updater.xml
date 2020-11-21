@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::Example::ApiUpdater</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a5760dca1b928f2b843b4b2869dea050b" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.Cloud.Example.ApiUpdater.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger&lt;<ref refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater" kindref="compound">ApiUpdater</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="12" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a89b7eb792c41f193e009196baf70b853" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server" kindref="compound">NetworkManagerListServer</ref></type>
+        <definition>NetworkManagerListServer Mirror.Cloud.Example.ApiUpdater.manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="14" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a7b26aa9c9979e37ac35ed2ea8e73853d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_cloud_1_1_api_connector" kindref="compound">ApiConnector</ref></type>
+        <definition>ApiConnector Mirror.Cloud.Example.ApiUpdater.connector</definition>
+        <argsstring></argsstring>
+        <name>connector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="15" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1af6bdfff512fb3b749203c4af542136c8" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.Example.ApiUpdater.gameName</definition>
+        <argsstring></argsstring>
+        <name>gameName</name>
+        <initializer>= &quot;Game&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="16" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1afe294e2e1f9698dd4e1b8cb65c88a1ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="18" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1af45a09cd09c1af696d7c39d14c06fb07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="29" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a3ad69ae755aa31ae8a7b0e986f7aa8d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.onPlayerListChanged</definition>
+        <argsstring>(int playerCount)</argsstring>
+        <name>onPlayerListChanged</name>
+        <param>
+          <type>int</type>
+          <declname>playerCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="36" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="36" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1ac96282baee0bdb711eeeecb08da9971d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.ServerStartedHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ServerStartedHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="64" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a44a8ceb32afb33d41e1056d15eded924" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.AddServer</definition>
+        <argsstring>(int playerCount)</argsstring>
+        <name>AddServer</name>
+        <param>
+          <type>int</type>
+          <declname>playerCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="69" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="69" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a78bdfb16e50f82c61dbfbc10c558dedd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.Example.ApiUpdater.ServerStoppedHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ServerStoppedHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="87" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="87" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This component should be put on the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> object </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.Example.ApiUpdater</label>
+        <link refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.Example.ApiUpdater</label>
+        <link refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" line="10" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/ApiUpdater.cs" bodystart="11" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a44a8ceb32afb33d41e1056d15eded924" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>AddServer</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a7b26aa9c9979e37ac35ed2ea8e73853d" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>connector</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1af6bdfff512fb3b749203c4af542136c8" prot="public" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>gameName</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a5760dca1b928f2b843b4b2869dea050b" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a89b7eb792c41f193e009196baf70b853" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>manager</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1af45a09cd09c1af696d7c39d14c06fb07" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>OnDestroy</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a3ad69ae755aa31ae8a7b0e986f7aa8d4" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>onPlayerListChanged</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1ac96282baee0bdb711eeeecb08da9971d" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>ServerStartedHandler</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1a78bdfb16e50f82c61dbfbc10c558dedd" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>ServerStoppedHandler</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_example_1_1_api_updater_1afe294e2e1f9698dd4e1b8cb65c88a1ae" prot="private" virt="non-virtual"><scope>Mirror::Cloud::Example::ApiUpdater</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

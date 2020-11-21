@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Mirror::PlayerSpawnPoint</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1ac9e53a29f59d5cb0d410515ae5e72089" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerSpawnPoint.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" line="9" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1a558776707be075a9c65ff908f5772354" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerSpawnPoint.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" line="13" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1a6ab818dd96b3f82df1a287650445ccd6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerSpawnPoint.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" line="17" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyFPS.Mirror.PlayerSpawnPoint</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyFPS.Mirror.PlayerSpawnPoint</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerSpawnPoint.cs" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1ac9e53a29f59d5cb0d410515ae5e72089" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerSpawnPoint</scope><name>Awake</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1a558776707be075a9c65ff908f5772354" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerSpawnPoint</scope><name>OnDestroy</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_spawn_point_1a6ab818dd96b3f82df1a287650445ccd6" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerSpawnPoint</scope><name>OnDrawGizmos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

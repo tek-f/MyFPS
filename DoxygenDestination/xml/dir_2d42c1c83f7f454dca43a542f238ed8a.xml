@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_2d42c1c83f7f454dca43a542f238ed8a" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat</compoundname>
+    <innerdir refid="dir_894d69d97a754641c193d05f9163d5d3">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/"/>
+  </compounddef>
+</doxygen>

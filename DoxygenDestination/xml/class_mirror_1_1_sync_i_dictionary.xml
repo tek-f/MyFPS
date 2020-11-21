@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_sync_i_dictionary" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::SyncIDictionary</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IDictionary&lt; TKey, TValue &gt;</basecompoundref>
+    <basecompoundref refid="interface_mirror_1_1_sync_object" prot="public" virt="non-virtual">Mirror.SyncObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IReadOnlyDictionary&lt; TKey, TValue &gt;</basecompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_sync_dictionary" prot="public" virt="non-virtual">Mirror.SyncDictionary&lt; TKey, TValue &gt;</derivedcompoundref>
+    <innerclass refid="struct_mirror_1_1_sync_i_dictionary_1_1_change" prot="private">Mirror::SyncIDictionary::Change</innerclass>
+    <templateparamlist>
+      <param>
+        <type>TKey</type>
+      </param>
+      <param>
+        <type>TValue</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1a2b881b8f629cb29c85e58f5a9da23534" prot="protected" static="no" mutable="no">
+        <type>readonly IDictionary&lt; TKey, TValue &gt;</type>
+        <definition>readonly IDictionary&lt;TKey, TValue&gt; Mirror.SyncIDictionary&lt; TKey, TValue &gt;.objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="13" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1ae50317ac6da2311c700c56a824287781" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <initializer>=&gt; objects.Count</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="15" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1ac8742e4f464b6f06f3850dda33775bca" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.IsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsDirty</name>
+        <initializer>=&gt; changes.Count &gt; 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="54" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1a011caaf5296eeb8079c9b63c92ba1ec0" prot="public" static="no" mutable="no">
+        <type>ICollection&lt; TKey &gt;</type>
+        <definition>ICollection&lt;TKey&gt; Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Keys</definition>
+        <argsstring></argsstring>
+        <name>Keys</name>
+        <initializer>=&gt; objects.Keys</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="56" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1a2cb2e649d36b8dac2b2b4b8a4db09cc6" prot="public" static="no" mutable="no">
+        <type>ICollection&lt; TValue &gt;</type>
+        <definition>ICollection&lt;TValue&gt; Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Values</definition>
+        <argsstring></argsstring>
+        <name>Values</name>
+        <initializer>=&gt; objects.Values</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="58" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_sync_i_dictionary_1a638820e10b3e96d44c76a2c1fc877dfa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.IsReadOnly</definition>
+        <argsstring></argsstring>
+        <name>IsReadOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="16" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_sync_i_dictionary_1a2d7835301ebb33e55a6f0c39272e38d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>TValue</type>
+        <definition>TValue Mirror.SyncIDictionary&lt; TKey, TValue &gt;.this[TKey i]</definition>
+        <argsstring></argsstring>
+        <name>this[TKey i]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="234" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="235" bodyend="250"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_mirror_1_1_sync_i_dictionary_1a79aa4a3c9637592f03c774acb9c3cee5" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>SyncDictionaryChanged</type>
+        <definition>SyncDictionaryChanged Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Callback</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="17" column="44" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1ad3b44b797462902f76d45be04899ff8a" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; Change &gt;</type>
+        <definition>readonly List&lt;Change&gt; Mirror.SyncIDictionary&lt; TKey, TValue &gt;.changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <initializer>= new List&lt;Change&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="34" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1a85f551667d30fb8326b72070e6931012" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncIDictionary&lt; TKey, TValue &gt;.changesAhead</definition>
+        <argsstring></argsstring>
+        <name>changesAhead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="39" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1add6ab83b41d3012f98c44944e404b706" prot="private" static="no" mutable="no">
+        <type>IEnumerable&lt; TKey &gt; IReadOnlyDictionary&lt; TKey, TValue &gt;.</type>
+        <definition>IEnumerable&lt;TKey&gt; IReadOnlyDictionary&lt;TKey, TValue&gt;. Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Keys</definition>
+        <argsstring></argsstring>
+        <name>Keys</name>
+        <initializer>=&gt; objects.Keys</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="60" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_i_dictionary_1a562295dd6bf3a2d3c7fe56df81eae6cf" prot="private" static="no" mutable="no">
+        <type>IEnumerable&lt; TValue &gt; IReadOnlyDictionary&lt; TKey, TValue &gt;.</type>
+        <definition>IEnumerable&lt;TValue&gt; IReadOnlyDictionary&lt;TKey, TValue&gt;. Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Values</definition>
+        <argsstring></argsstring>
+        <name>Values</name>
+        <initializer>=&gt; objects.Values</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="62" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a7466f9293b87b24d9342c436b21e198d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.SyncDictionaryChanged</definition>
+        <argsstring>(Operation op, TKey key, TValue item)</argsstring>
+        <name>SyncDictionaryChanged</name>
+        <param>
+          <type>Operation</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TValue</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="11" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1ac5973a20bdb2c4ecd41e07b84cea1be2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a803cfba7f394ac8520d148c398fa438a">Reset</reimplements>
+        <briefdescription>
+<para>Resets the <ref refid="interface_mirror_1_1_sync_object" kindref="compound">SyncObject</ref> so that it can be re-used </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="41" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1ab44322d59fbb0ff48ebf72fb4b3d72a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a3a13f043e733d312152a7fadd1bdf4b2">Flush</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="66" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a7b253cf53377679bbf697ffe780a0c84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.OnSerializeAll</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeAll</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a15c37f16b38c44c23294a8359ea4e2d0">OnSerializeAll</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="92" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="92" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a0d9028a2f8a8f8396393d8324b502767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.OnSerializeDelta</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeDelta</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1aebaaef8ba60bb926015c7359508bccb3">OnSerializeDelta</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="110" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="110" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a654be7ac6a05695814cf6e69f173b77e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.OnDeserializeAll</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeAll</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1ac33f9af9e2caab20e00fee5dc9b74165">OnDeserializeAll</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="134" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="134" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a57eb8969858f530f111aa45dbd216272" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.OnDeserializeDelta</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeDelta</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1aa6d44e3d7d2a631bd402504c95143a12">OnDeserializeDelta</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="158" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="158" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a7600c5d5c009c3aa157d375765b1c2c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="216" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a287aa107785ac3635e196daa7d431b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.ContainsKey</definition>
+        <argsstring>(TKey key)</argsstring>
+        <name>ContainsKey</name>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="222" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a00b08d0a2f34ec8791a3dac3c59cb8fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Remove</definition>
+        <argsstring>(TKey key)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="224" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="224" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a99ef0bdd96254d7efeb193794bfe47f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.TryGetValue</definition>
+        <argsstring>(TKey key, out TValue value)</argsstring>
+        <name>TryGetValue</name>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>out TValue</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="252" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1ad65a90dcc20cca06c8fa075b637b7737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Add</definition>
+        <argsstring>(TKey key, TValue value)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TValue</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="254" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a8c1fa782ee81b329ef19841ef00fc767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Add</definition>
+        <argsstring>(KeyValuePair&lt; TKey, TValue &gt; item)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>KeyValuePair&lt; TKey, TValue &gt;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="260" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a1d8f364d3506fe509599ac330b479a24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Contains</definition>
+        <argsstring>(KeyValuePair&lt; TKey, TValue &gt; item)</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>KeyValuePair&lt; TKey, TValue &gt;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="262" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="262" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a3ec54188826ef6748da23b6f223e796f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.CopyTo</definition>
+        <argsstring>([NotNull] KeyValuePair&lt; TKey, TValue &gt;[] array, int arrayIndex)</argsstring>
+        <name>CopyTo</name>
+        <param>
+          <attributes>[NotNull]</attributes>
+          <type>KeyValuePair&lt; TKey, TValue &gt;[]</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arrayIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="267" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="267" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a91fd848cc36faeee463f1b689e5dd440" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncIDictionary&lt; TKey, TValue &gt;.Remove</definition>
+        <argsstring>(KeyValuePair&lt; TKey, TValue &gt; item)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>KeyValuePair&lt; TKey, TValue &gt;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="286" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="286" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a9d20512899723c057aac4b2faaafd3b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerator&lt; KeyValuePair&lt; TKey, TValue &gt; &gt;</type>
+        <definition>IEnumerator&lt;KeyValuePair&lt;TKey, TValue&gt; &gt; Mirror.SyncIDictionary&lt; TKey, TValue &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="296" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a9edd3d131719debb5f0795fd0749dd6b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.SerializeKey</definition>
+        <argsstring>(NetworkWriter writer, TKey item)</argsstring>
+        <name>SerializeKey</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>TKey</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="49" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1ac2c99ed65bc0561b47f9267120c0bd20" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.SerializeItem</definition>
+        <argsstring>(NetworkWriter writer, TValue item)</argsstring>
+        <name>SerializeItem</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>TValue</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="50" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a1b5fe870ca42ce53a5d90795849cf4be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TKey</type>
+        <definition>virtual TKey Mirror.SyncIDictionary&lt; TKey, TValue &gt;.DeserializeKey</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>DeserializeKey</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="51" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a6e0127305d3e767d3a05c748ca0c782c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>TValue</type>
+        <definition>virtual TValue Mirror.SyncIDictionary&lt; TKey, TValue &gt;.DeserializeItem</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>DeserializeItem</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="52" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a3704582561aa09d576a9d95797a814c2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.SyncIDictionary&lt; TKey, TValue &gt;.SyncIDictionary</definition>
+        <argsstring>(IDictionary&lt; TKey, TValue &gt; objects)</argsstring>
+        <name>SyncIDictionary</name>
+        <param>
+          <type>IDictionary&lt; TKey, TValue &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="68" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a11b4afd0dde143f732aa68b59eabe8ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncIDictionary&lt; TKey, TValue &gt;.AddOperation</definition>
+        <argsstring>(Operation op, TKey key, TValue item)</argsstring>
+        <name>AddOperation</name>
+        <param>
+          <type>Operation</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>TKey</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TValue</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="73" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="73" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_i_dictionary_1a950076238687abecb408971561470a47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerator IEnumerable.</type>
+        <definition>IEnumerator IEnumerable. Mirror.SyncIDictionary&lt; TKey, TValue &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="298" column="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IDictionary&lt; TKey, TValue &gt;</label>
+      </node>
+      <node id="4">
+        <label>IReadOnlyDictionary&lt; TKey, TValue &gt;</label>
+      </node>
+      <node id="3">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="5">
+        <label>Mirror::SyncDictionary&lt; TKey, TValue &gt;</label>
+        <link refid="class_mirror_1_1_sync_dictionary"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.SyncIDictionary&lt; TKey, TValue &gt;</label>
+        <link refid="class_mirror_1_1_sync_i_dictionary"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IDictionary&lt; TKey, TValue &gt;</label>
+      </node>
+      <node id="4">
+        <label>IReadOnlyDictionary&lt; TKey, TValue &gt;</label>
+      </node>
+      <node id="3">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="1">
+        <label>Mirror.SyncIDictionary&lt; TKey, TValue &gt;</label>
+        <link refid="class_mirror_1_1_sync_i_dictionary"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" line="9" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncDictionary.cs" bodystart="10" bodyend="299"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ad65a90dcc20cca06c8fa075b637b7737" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Add</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a8c1fa782ee81b329ef19841ef00fc767" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Add</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a11b4afd0dde143f732aa68b59eabe8ee" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>AddOperation</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a79aa4a3c9637592f03c774acb9c3cee5" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Callback</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ad3b44b797462902f76d45be04899ff8a" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>changes</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a85f551667d30fb8326b72070e6931012" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>changesAhead</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a7600c5d5c009c3aa157d375765b1c2c1" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Clear</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a1d8f364d3506fe509599ac330b479a24" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Contains</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a287aa107785ac3635e196daa7d431b6a" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>ContainsKey</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a3ec54188826ef6748da23b6f223e796f" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>CopyTo</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ae50317ac6da2311c700c56a824287781" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Count</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a6e0127305d3e767d3a05c748ca0c782c" prot="protected" virt="virtual"><scope>Mirror::SyncIDictionary</scope><name>DeserializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a1b5fe870ca42ce53a5d90795849cf4be" prot="protected" virt="virtual"><scope>Mirror::SyncIDictionary</scope><name>DeserializeKey</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ab44322d59fbb0ff48ebf72fb4b3d72a6" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Flush</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a9d20512899723c057aac4b2faaafd3b9" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>GetEnumerator</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a950076238687abecb408971561470a47" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>GetEnumerator</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ac8742e4f464b6f06f3850dda33775bca" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a638820e10b3e96d44c76a2c1fc877dfa" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>IsReadOnly</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a011caaf5296eeb8079c9b63c92ba1ec0" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Keys</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1add6ab83b41d3012f98c44944e404b706" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Keys</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a2b881b8f629cb29c85e58f5a9da23534" prot="protected" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>objects</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a654be7ac6a05695814cf6e69f173b77e" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>OnDeserializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a57eb8969858f530f111aa45dbd216272" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>OnDeserializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a7b253cf53377679bbf697ffe780a0c84" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>OnSerializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a0d9028a2f8a8f8396393d8324b502767" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>OnSerializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a00b08d0a2f34ec8791a3dac3c59cb8fe" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Remove</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a91fd848cc36faeee463f1b689e5dd440" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Remove</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ac5973a20bdb2c4ecd41e07b84cea1be2" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1ac2c99ed65bc0561b47f9267120c0bd20" prot="protected" virt="virtual"><scope>Mirror::SyncIDictionary</scope><name>SerializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a9edd3d131719debb5f0795fd0749dd6b" prot="protected" virt="virtual"><scope>Mirror::SyncIDictionary</scope><name>SerializeKey</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a7466f9293b87b24d9342c436b21e198d" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>SyncDictionaryChanged</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a3704582561aa09d576a9d95797a814c2" prot="protected" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>SyncIDictionary</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a2d7835301ebb33e55a6f0c39272e38d4" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>this[TKey i]</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a99ef0bdd96254d7efeb193794bfe47f4" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>TryGetValue</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a2cb2e649d36b8dac2b2b4b8a4db09cc6" prot="public" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Values</name></member>
+      <member refid="class_mirror_1_1_sync_i_dictionary_1a562295dd6bf3a2d3c7fe56df81eae6cf" prot="private" virt="non-virtual"><scope>Mirror::SyncIDictionary</scope><name>Values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

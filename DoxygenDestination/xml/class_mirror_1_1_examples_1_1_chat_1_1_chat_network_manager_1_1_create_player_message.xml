@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Examples::Chat::ChatNetworkManager::CreatePlayerMessage</compoundname>
+    <basecompoundref refid="class_mirror_1_1_message_base" prot="public" virt="non-virtual">Mirror.MessageBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message_1a5560a9ffbf7e74c1dd89d84e776cab6d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/Scripts/ChatNetworkManager.cs" line="19" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/Scripts/ChatNetworkManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage</label>
+        <link refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage</label>
+        <link refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/Scripts/ChatNetworkManager.cs" line="17" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Chat/Scripts/ChatNetworkManager.cs" bodystart="18" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_message_base_1acb075a573b4fee69f864a08e80c3cd60" prot="public" virt="virtual"><scope>Mirror::Examples::Chat::ChatNetworkManager::CreatePlayerMessage</scope><name>Deserialize</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message_1a5560a9ffbf7e74c1dd89d84e776cab6d" prot="public" virt="non-virtual"><scope>Mirror::Examples::Chat::ChatNetworkManager::CreatePlayerMessage</scope><name>name</name></member>
+      <member refid="class_mirror_1_1_message_base_1aec929d08cb81a15f6bdaaf8a0cc4449a" prot="public" virt="virtual"><scope>Mirror::Examples::Chat::ChatNetworkManager::CreatePlayerMessage</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

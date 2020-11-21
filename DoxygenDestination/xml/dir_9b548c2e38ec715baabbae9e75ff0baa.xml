@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_9b548c2e38ec715baabbae9e75ff0baa" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket</compoundname>
+    <innerdir refid="dir_1add1339b5c83632bb547500a2a16be6">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets</innerdir>
+    <innerfile refid="_websocket_2_client_8cs">Client.cs</innerfile>
+    <innerfile refid="_client_js_8cs">ClientJs.cs</innerfile>
+    <innerfile refid="_websocket_2_server_8cs">Server.cs</innerfile>
+    <innerfile refid="_websocket_transport_8cs">WebsocketTransport.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/"/>
+  </compounddef>
+</doxygen>

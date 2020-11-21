@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_look_at_camera" kind="class" language="C#" prot="public">
+    <compoundname>LookAtCamera</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_look_at_camera_1a798c2ba8161486e1c1a03fb0d17c48e2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LookAtCamera.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" line="8" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" bodystart="8" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_look_at_camera_1a27f3d7f5fd6fdf6d2c5e06593df87a1f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LookAtCamera.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" line="15" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LookAtCamera</label>
+        <link refid="class_look_at_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LookAtCamera</label>
+        <link refid="class_look_at_camera"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" line="6" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc/LookAtCamera.cs" bodystart="6" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_look_at_camera_1a798c2ba8161486e1c1a03fb0d17c48e2" prot="private" virt="non-virtual"><scope>LookAtCamera</scope><name>Start</name></member>
+      <member refid="class_look_at_camera_1a27f3d7f5fd6fdf6d2c5e06593df87a1f" prot="private" virt="non-virtual"><scope>LookAtCamera</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

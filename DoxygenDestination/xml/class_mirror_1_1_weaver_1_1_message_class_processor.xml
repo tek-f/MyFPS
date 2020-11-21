@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_message_class_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::MessageClassProcessor</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a6e9fea32265ca4c41dbcd00fac679d38" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.MessageClassProcessor.IsEmptyDefault</definition>
+        <argsstring>(this MethodBody body)</argsstring>
+        <name>IsEmptyDefault</name>
+        <param>
+          <type>this MethodBody</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="13" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a64c4575b84c5beacae569df60a868814" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.GenerateSerialization</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>GenerateSerialization</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="32" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="32" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a3e956cca45c9a05930fcfaa65ff04681" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.CallWriter</definition>
+        <argsstring>(ILProcessor worker, FieldDefinition field)</argsstring>
+        <name>CallWriter</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="96" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="96" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a81da48d69e20d5286ef66e67c5631d6a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.CallBase</definition>
+        <argsstring>(TypeDefinition td, ILProcessor worker, string name)</argsstring>
+        <name>CallBase</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="112" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="112" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a31e0abb216c295aadd7cf85949362e95" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.GenerateDeSerialization</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>GenerateDeSerialization</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="129" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="129" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1afc81d1967c1b1c630ff5644bd333a045" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.CallReader</definition>
+        <argsstring>(ILProcessor worker, FieldDefinition field)</argsstring>
+        <name>CallReader</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="183" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="183" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_message_class_processor_1a709a61deb2370a9ed7523b93b7ecebf8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.MessageClassProcessor.Process</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>Process</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="18" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="18" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>generates OnSerialize/OnDeserialize when inheriting from <ref refid="class_mirror_1_1_message_base" kindref="compound">MessageBase</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" line="10" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/MessageClassProcessor.cs" bodystart="11" bodyend="198"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a81da48d69e20d5286ef66e67c5631d6a" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>CallBase</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1afc81d1967c1b1c630ff5644bd333a045" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>CallReader</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a3e956cca45c9a05930fcfaa65ff04681" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>CallWriter</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a31e0abb216c295aadd7cf85949362e95" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>GenerateDeSerialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a64c4575b84c5beacae569df60a868814" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>GenerateSerialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a6e9fea32265ca4c41dbcd00fac679d38" prot="private" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>IsEmptyDefault</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_message_class_processor_1a709a61deb2370a9ed7523b93b7ecebf8" prot="public" virt="non-virtual"><scope>Mirror::Weaver::MessageClassProcessor</scope><name>Process</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

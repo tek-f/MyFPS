@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_http_helper" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::HttpHelper</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a3dd3cce6df7384e8df5ea2d1146c9914" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Ninja.WebSockets.HttpHelper.HTTP_GET_HEADER_REGEX</definition>
+        <argsstring></argsstring>
+        <name>HTTP_GET_HEADER_REGEX</name>
+        <initializer>= @&quot;^GET(.*)HTTP\/1\.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="38" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a9a1c071bdb54e417ac4dbc499c3fed64" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ninja.WebSockets.HttpHelper.CalculateWebSocketKey</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateWebSocketKey</name>
+        <briefdescription>
+<para>Calculates a random WebSocket key that can be used to initiate a WebSocket handshake </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A random websocket key</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="44" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a0b7295814b47b2de77c578dffb09c235" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ninja.WebSockets.HttpHelper.ComputeSocketAcceptString</definition>
+        <argsstring>(string secWebSocketKey)</argsstring>
+        <name>ComputeSocketAcceptString</name>
+        <param>
+          <type>string</type>
+          <declname>secWebSocketKey</declname>
+        </param>
+        <briefdescription>
+<para>Computes a WebSocket accept string from a given key </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>secWebSocketKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The web socket key to base the accept string on</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A web socket accept string</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="58" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="58" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a2c349fac1e08b9bec610b478e59ac7d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>static async Task&lt;string&gt; Ninja.WebSockets.HttpHelper.ReadHttpHeaderAsync</definition>
+        <argsstring>(Stream stream, CancellationToken token)</argsstring>
+        <name>ReadHttpHeaderAsync</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Reads an http header as per the HTTP spec </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream to read UTF8 text from</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The HTTP header</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="77" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="77" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a63c77fdf36625ad295fd6d73de1516d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Ninja.WebSockets.HttpHelper.IsWebSocketUpgradeRequest</definition>
+        <argsstring>(String header)</argsstring>
+        <name>IsWebSocketUpgradeRequest</name>
+        <param>
+          <type>String</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+<para>Decodes the header to detect is this is a web socket upgrade response </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>header</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP header</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if this is an http WebSocket upgrade response</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="112" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="112" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1af4413de94c7c20bb46ad3d995c438283" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ninja.WebSockets.HttpHelper.GetPathFromHeader</definition>
+        <argsstring>(string httpHeader)</argsstring>
+        <name>GetPathFromHeader</name>
+        <param>
+          <type>string</type>
+          <declname>httpHeader</declname>
+        </param>
+        <briefdescription>
+<para>Gets the path from the HTTP header </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>httpHeader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTTP header to read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="133" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="133" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1a5384e904bec28e72d1b665689598f1f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IList&lt; string &gt;</type>
+        <definition>static IList&lt;string&gt; Ninja.WebSockets.HttpHelper.GetSubProtocols</definition>
+        <argsstring>(string httpHeader)</argsstring>
+        <name>GetSubProtocols</name>
+        <param>
+          <type>string</type>
+          <declname>httpHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="147" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="147" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1ad48c82226687027411abea3d24ce572a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Ninja.WebSockets.HttpHelper.ReadHttpResponseCode</definition>
+        <argsstring>(string response)</argsstring>
+        <name>ReadHttpResponseCode</name>
+        <param>
+          <type>string</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+<para>Reads the HTTP response code from the http response string </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response string</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the response code</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="175" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="175" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_http_helper_1ab608f8faf994f96b447f1d6f52161b9f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ninja.WebSockets.HttpHelper.WriteHttpHeaderAsync</definition>
+        <argsstring>(string response, Stream stream, CancellationToken token)</argsstring>
+        <name>WriteHttpHeaderAsync</name>
+        <param>
+          <type>string</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+<para>Writes an HTTP response string to the stream </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response (without the new line characters)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream to write to</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>token</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="195" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="195" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" line="36" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/HttpHelper.cs" bodystart="37" bodyend="201"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a9a1c071bdb54e417ac4dbc499c3fed64" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>CalculateWebSocketKey</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a0b7295814b47b2de77c578dffb09c235" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>ComputeSocketAcceptString</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1af4413de94c7c20bb46ad3d995c438283" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>GetPathFromHeader</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a5384e904bec28e72d1b665689598f1f9" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>GetSubProtocols</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a3dd3cce6df7384e8df5ea2d1146c9914" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>HTTP_GET_HEADER_REGEX</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a63c77fdf36625ad295fd6d73de1516d2" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>IsWebSocketUpgradeRequest</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1a2c349fac1e08b9bec610b478e59ac7d9" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>ReadHttpHeaderAsync</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1ad48c82226687027411abea3d24ce572a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>ReadHttpResponseCode</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_http_helper_1ab608f8faf994f96b447f1d6f52161b9f" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::HttpHelper</scope><name>WriteHttpHeaderAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

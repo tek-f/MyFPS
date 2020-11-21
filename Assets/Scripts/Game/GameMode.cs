@@ -2,48 +2,83 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using MyFPS.Player;
 
 namespace MyFPS.GameAdmin
 {
     public class GameMode : MonoBehaviour
     {
-        public int teamAmount = 2;//the number of teams in a game
-        public List<Team> teams;//a list of Team classes that hold info for each time in the game
-        public int gameScoreLimit;//the score that a team must reach to win the game
-        [SerializeField] protected GameObject endGamePanel;
-
-        [SerializeField] Text team1ScoreText, team2ScoreText;
+        /// <summary>
+        /// Number of teams in the game.
+        /// </summary>
+        public int teamAmount = 2;
+        /// <summary>
+        /// Used in AddScore() checks to determine game type, i.e. CTF (Capture the flag)
+        /// </summary>
+        public string gameType;
+        /// <summary>
+        /// List of Team classes that hold info for each time in the game
+        /// </summary>
+        public List<Team> teams;
+        /// <summary>
+        /// List of PlayerHandlers within the game scene.
+        /// </summary>
+        public List<PlayerHandler> playersList = new List<PlayerHandler>();
+        /// <summary>
+        /// the score that a team must reach to trigger EndGame() to run.
+        /// </summary>
+        public int gameScoreLimit;
+        /// <summary>
+        /// Reference to a UI Text that displays team 1's score.
+        /// </summary>
+        [SerializeField] Text team1ScoreText;
+        /// <summary>
+        /// Reference to a UI Text that displays team 2's score.
+        /// </summary>
+        [SerializeField] Text team2ScoreText;
+        /// <summary>
+        /// Set Up function for the GameMode.
+        /// </summary>
         public void SetUpGame()
         {
-            for (int teamID = 1; teamID < teamAmount; teamID++)
+            for (int teamID = 0; teamID < teamAmount; teamID++)
             {
                 teams.Add(new Team(teamID));
             }
         }
-        public virtual void AddScore(int teamID, int value)
+        /// <summary>
+        /// Increases a Teams score, depending on _teamID, by _value.
+        /// </summary>
+        /// <param name="_teamID">The teamID of the team that has scored.</param>
+        /// <param name="_value">The value that the teams score is being increased by.</param>
+        public virtual void AddScore(int _teamID, int _value)
         {
-            teams[teamID - 1].score += value;
-            if (teamID == 1)
+            teams[_teamID].score += _value;
+            foreach (PlayerHandler player in playersList)
             {
-                team1ScoreText.text = teams[0].score.ToString();
+                player.UpdateTeamScores(teams[0].score, teams[1].score);
             }
-            else
-            {
-                team2ScoreText.text = teams[1].score.ToString();
-            }
-            if (teams[teamID - 1].score >= gameScoreLimit)
+            if (teams[_teamID].score >= gameScoreLimit)
             {
                 EndGame();
             }
         }
+        /// <summary>
+        /// Is called by AddScore() when gameScoreLimit is reached by one of the teams scores.
+        /// </summary>
         public virtual void EndGame()
         {
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            endGamePanel.SetActive(true);
+            foreach (PlayerHandler player in playersList)
+            {
+                player.GetComponent<FirstPersonController>().enabled = false;
+                player.GetComponent<PlayerHandler>().endGamePanel.SetActive(true);
+
+            }
         }
-        protected void Start()
+        protected virtual void Start()
         {
             Debug.Log("Setting up game...");
             SetUpGame();
@@ -53,9 +88,14 @@ namespace MyFPS.GameAdmin
     [System.Serializable]
     public class Team
     {
+        /// <summary>
+        /// Represents the teams score.
+        /// </summary>
         public int score;
+        /// <summary>
+        /// ID of the team, starting from 0.
+        /// </summary>
         public int teamID;
-
         public Team(int teamID)
         {
             this.teamID = teamID;

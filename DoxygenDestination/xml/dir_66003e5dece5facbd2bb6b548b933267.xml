@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_66003e5dece5facbd2bb6b548b933267" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/RigidbodyPhysics</compoundname>
+    <innerdir refid="dir_8db1cf5a5c7c19c8b469da5660c2c99a">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/RigidbodyPhysics/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/RigidbodyPhysics/"/>
+  </compounddef>
+</doxygen>

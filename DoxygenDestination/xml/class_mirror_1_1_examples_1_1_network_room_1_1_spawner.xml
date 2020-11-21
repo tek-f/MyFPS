@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_examples_1_1_network_room_1_1_spawner" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Examples::NetworkRoom::Spawner</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_behaviour" prot="public" virt="non-virtual">Mirror.NetworkBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1a593d50b8fbbe932318b7f9a637768158" prot="public" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+        <definition>NetworkIdentity Mirror.Examples.NetworkRoom.Spawner.prizePrefab</definition>
+        <argsstring></argsstring>
+        <name>prizePrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" line="7" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1ac0c94adbf0f75eb315affc6b1cc2f645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.Spawner.OnStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartServer</name>
+        <reimplements refid="class_mirror_1_1_network_behaviour_1a7849fd960925fc37005a1b8f2aa065b3">OnStartServer</reimplements>
+        <briefdescription>
+<para>This is invoked for <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> objects when they become active on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</para>
+<para>This will be called for objects on a &quot;host&quot; as well as for object on a dedicated server.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" line="9" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1a98576f6b7aee18918e5f8147365ef5b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.Spawner.SpawnPrize</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnPrize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" line="15" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" bodystart="15" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.Spawner</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IDisposable</label>
+      </node>
+      <node id="6">
+        <label>Mirror.NetworkIdentity</label>
+        <link refid="class_mirror_1_1_network_identity"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.Spawner</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_spawner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>prizePrefab</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" line="5" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/Spawner.cs" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_behaviour_1a0915f57f9b3f057d544235740e920a2f" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>ClearAllDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b01d534f1b7fb5ab270423a108ba277" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>ComponentIndex</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae0365575095f9988d6ae2bfef337573a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>connectionToClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aa490124a374f6e82a780926b2d11fc23" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>connectionToServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7151d225ada4d6ffc1bbc094cc803f26" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>DeSerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a0d125d48839a57c368c039e6476b521f" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>DeSerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a79ce2238da87ce060a835113911f3bea" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>DeserializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abb5fb1c5753b32375a85841174ea8013" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>DirtyObjectBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab794f957ea97db9dec659cbbfe9208f4" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>GetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a48124410c758c6e85f2d5bdb0872e9a6" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>getSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46b6f2edcee89cede23050a2177098df" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>GetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abd651058bdaeaf65f691fad5bc366836" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>hasAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a3c5d9ef0f604ec39acc7f03269d80656" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>InitSyncObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea84bcfc5a512ecb2b7a601bf1598d24" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>InvokeCommand</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a52778428d8b4058c6db0db9e87f88394" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>InvokeRPC</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a5b931086714c4cfb3dde3118dbfdc7a9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>InvokeSyncEvent</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab30e4e9deea5ea728bbf8910ba4aa0fc" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>isClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abe78215943243c0ee91c2bd9a0057915" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>isClientOnly</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a76bf9eb3b49700f653620bbf5b7aa826" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a09f7e5bb2181018bc28fa2c29ed09e8c" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>isLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a6a65dec5ade34544074c2f997932e17a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>isServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8ace9ae035053dab9538482ff74d62ec" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>isServerOnly</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a353ad279617c03ab349433f1f38c73bd" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>lastSyncTime</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae90a46be8160b84d1256c397718f7ff8" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>netId</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2561021cd1fc5a4fe504a9822c281d11" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>netIdentity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a26853c614ebc9c116a7d4f045d723be1" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnDeserialize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea16efb5a763d21dbaa89a6ed88d2bfd" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnNetworkDestroy</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1af8b7933f4a95d31db460935cd7906c0c" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnSerialize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a1e36e4640f967426ffc113e26e649345" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStartAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a699d2fda0c0c8843d8964ffed01d016c" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8506dcb5c3cbc297a667e795cc9eafd0" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStartLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1ac0c94adbf0f75eb315affc6b1cc2f645" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1afe494cde0781a38644c80ec14e177f59" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStopAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1adabae0597e1228ad256cb35d1616c1ca" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a27dc77be5d2117b34157b3836f333690" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1a593d50b8fbbe932318b7f9a637768158" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>prizePrefab</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a08c0ff954baaab3c19ddab7bbd80d09a" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>ResetSyncObjects</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac1568659d9c736766b14696efbb4dcb1" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SendCommandInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8896e37754d4e3a6a2ed2102aebeee9e" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SendEventInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea3fef3f468d7fdb63c3d550f238e84a" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SendRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8bab38b2cbc1df4cba42abf401635a42" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SendTargetRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ad49cab5e0ac5e4dace701541c105d371" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4ba0673f1259fbf07a169aa6ef95dd45" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ace23cde46937b5fe490499d983a7e6e3" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SerializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1addda8533ab954db571bda550862034f7" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SetDirtyBit</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4087b2993b045a197b9b653176411f05" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SetSyncVar&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac3e14f45a522cec35780c9afc367e985" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a23b3e60e1abdf4468beb6924bace3ce4" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>setSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b4fc9f99fffd61bf67b4e7995d1d4bb" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_spawner_1a98576f6b7aee18918e5f8147365ef5b5" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SpawnPrize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a94dbe38f0930d3bbde326d0eed7b6f83" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>syncInterval</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1acf0616ac2f967bdd47bf0f579cefe8a7" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>syncMode</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac9c5caa586acee344c189db183e95efe" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>syncObjects</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4bb1e7724acf59e001659f0fe0b90c8f" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>syncVarDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46c40d5ff8bc8bea02e3c0b3886e768a" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SyncVarEqual&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7a4e336c889c531a69ec0f51900d0657" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SyncVarGameObjectEqual</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abdba57d6c8ff0ac89767ca07acd4ffa9" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::Spawner</scope><name>SyncVarNetworkIdentityEqual</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

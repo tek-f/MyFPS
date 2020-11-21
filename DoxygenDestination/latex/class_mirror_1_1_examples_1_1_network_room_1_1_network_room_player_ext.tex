@@ -1,0 +1,91 @@
+\hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext}{}\doxysection{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext Class Reference}
+\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext}\index{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}}
+Inheritance diagram for Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a6d12a7649e3fc4afbcdb47f55836799f}{On\+Start\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Called on every \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} when it is activated on a client. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_afb1d001cb21958f71cef87068f2f7a76}{On\+Client\+Enter\+Room}} ()
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients for all room player objects when entering the room. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_aba6c516c5d9925195454c6fa080cfd36}{On\+Client\+Exit\+Room}} ()
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients for all room player objects when exiting the room. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a0b8c2d42367cafb2255b04731d375bfc}{Ready\+State\+Changed}} (bool \+\_\+, bool new\+Ready\+State)
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients when a Room\+Player switches between ready or not ready. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_afb1d001cb21958f71cef87068f2f7a76}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_afb1d001cb21958f71cef87068f2f7a76}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}!OnClientEnterRoom@{OnClientEnterRoom}}
+\index{OnClientEnterRoom@{OnClientEnterRoom}!Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}}
+\doxysubsubsection{\texorpdfstring{OnClientEnterRoom()}{OnClientEnterRoom()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext.\+On\+Client\+Enter\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients for all room player objects when entering the room. 
+
+Note\+: is\+Local\+Player is not guaranteed to be set until On\+Start\+Local\+Player is called.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_player_a6f008d188be0f6d3767f2cd812ae3ba9}{Mirror.\+Network\+Room\+Player}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_aba6c516c5d9925195454c6fa080cfd36}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_aba6c516c5d9925195454c6fa080cfd36}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}!OnClientExitRoom@{OnClientExitRoom}}
+\index{OnClientExitRoom@{OnClientExitRoom}!Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}}
+\doxysubsubsection{\texorpdfstring{OnClientExitRoom()}{OnClientExitRoom()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext.\+On\+Client\+Exit\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients for all room player objects when exiting the room. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_player_a0ce509d2cca6cc7f62c722775db6a130}{Mirror.\+Network\+Room\+Player}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a6d12a7649e3fc4afbcdb47f55836799f}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a6d12a7649e3fc4afbcdb47f55836799f}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on every \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} when it is activated on a client. 
+
+Objects on the host have this function called, as there is a local client on the host. The values of Sync\+Vars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}{Mirror.\+Network\+Behaviour}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a0b8c2d42367cafb2255b04731d375bfc}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a0b8c2d42367cafb2255b04731d375bfc}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}!ReadyStateChanged@{ReadyStateChanged}}
+\index{ReadyStateChanged@{ReadyStateChanged}!Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt@{Mirror.Examples.NetworkRoom.NetworkRoomPlayerExt}}
+\doxysubsubsection{\texorpdfstring{ReadyStateChanged()}{ReadyStateChanged()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext.\+Ready\+State\+Changed (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+,  }\item[{bool}]{new\+Ready\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients when a Room\+Player switches between ready or not ready. 
+
+This function is called when the a client player calls Cmd\+Change\+Ready\+State.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ready\+State} & New Ready State\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}{Mirror.\+Network\+Room\+Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Examples/\+Room/\+Scripts/Network\+Room\+Player\+Ext.\+cs\end{DoxyCompactItemize}

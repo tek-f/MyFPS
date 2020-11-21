@@ -1,0 +1,388 @@
+\hypertarget{class_mirror_1_1_telepathy_transport}{}\doxysection{Mirror.\+Telepathy\+Transport Class Reference}
+\label{class_mirror_1_1_telepathy_transport}\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+Inheritance diagram for Mirror.\+Telepathy\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mirror_1_1_telepathy_transport}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_abcdb0e93b24235e9109c6846f1f1c1b6}{Available}} ()
+\begin{DoxyCompactList}\small\item\em Is this transport available in the current platform? \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a5331c3cab8955c9307f84522ca91b125}{Client\+Connected}} ()
+\begin{DoxyCompactList}\small\item\em Determines if we are currently connected to the server \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_adadb28cf6672e015d58c5565f491ad71}{Client\+Connect}} (string address)
+\begin{DoxyCompactList}\small\item\em Establish a connection to a server \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a4a4122caf208b894ec69f04cbe3918a3}{Client\+Connect}} (Uri uri)
+\begin{DoxyCompactList}\small\item\em Establish a connection to a server \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a11f31cd59a918a59274507bec70f5e26}{Client\+Send}} (int channel\+Id, Array\+Segment$<$ byte $>$ segment)
+\begin{DoxyCompactList}\small\item\em Send data to the server \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a08c4ab88612c182eb7c3dd6678e33435}{Client\+Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnect this client from the server \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a783a38f635deda855fdf28a145b3d3b5}\label{class_mirror_1_1_telepathy_transport_a783a38f635deda855fdf28a145b3d3b5}} 
+void {\bfseries Late\+Update} ()
+\item 
+override Uri \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_ac6e0eff4f1fd72746416a3fa76385009}{Server\+Uri}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the address of this server. Useful for network discovery \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a97c1df1f38e023cb2a37c57b51987066}{Server\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the server is up and running \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a5a944f452d2869443d8441c1e6dffa4e}{Server\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Start listening for clients \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_af7352db49c2558ba4d94306b68ee5691}{Server\+Send}} (List$<$ int $>$ connection\+Ids, int channel\+Id, Array\+Segment$<$ byte $>$ segment)
+\begin{DoxyCompactList}\small\item\em Send data to one or multiple clients. We provide a list, so that transports can make use of multicasting, and avoid allocations where possible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a2f0724df95d343201208d31e35f1335b}\label{class_mirror_1_1_telepathy_transport_a2f0724df95d343201208d31e35f1335b}} 
+bool {\bfseries Process\+Server\+Message} ()
+\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a5e78c63b32917d798730d49a651e3da4}{Server\+Disconnect}} (int connection\+Id)
+\begin{DoxyCompactList}\small\item\em Disconnect a client from this server. Useful to kick people out. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_ad2a54c4fa5d6c327b2ce5ed9cf060a52}{Server\+Get\+Client\+Address}} (int connection\+Id)
+\begin{DoxyCompactList}\small\item\em Get the client address \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a2c09721619ef9e9f0676dbe4bfb9a202}{Server\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop listening for clients and disconnect all existing clients \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_a884bca48dacd2fe0f1a7bd2ae947bdf9}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Shut down the transport, both as client and server \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_aed16f9818435d5f26f0a796818a51c39}{Get\+Max\+Packet\+Size}} (int channel\+Id)
+\begin{DoxyCompactList}\small\item\em The maximum packet size for a given channel. Unreliable transports usually can only deliver small packets. Reliable fragmented channels can usually deliver large ones. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a2983d00a66d8415f79683ff0f19b1e88}\label{class_mirror_1_1_telepathy_transport_a2983d00a66d8415f79683ff0f19b1e88}} 
+override string {\bfseries To\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a70a9a54307fed1bb56df72002b361e19}\label{class_mirror_1_1_telepathy_transport_a70a9a54307fed1bb56df72002b361e19}} 
+ushort {\bfseries port} = 7777
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_aeeb45aff206763044266619527bd8a6a}\label{class_mirror_1_1_telepathy_transport_aeeb45aff206763044266619527bd8a6a}} 
+bool {\bfseries No\+Delay} = true
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a1977240537e16fb459db371867d0e25f}\label{class_mirror_1_1_telepathy_transport_a1977240537e16fb459db371867d0e25f}} 
+int {\bfseries server\+Max\+Message\+Size} = 16 $\ast$ 1024
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_ace4cc8b61fe41ac866ad6a2a3ed13f54}\label{class_mirror_1_1_telepathy_transport_ace4cc8b61fe41ac866ad6a2a3ed13f54}} 
+int {\bfseries server\+Max\+Receives\+Per\+Tick} = 10000
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a5296efb7fcf9525e840c626ecfe80d04}\label{class_mirror_1_1_telepathy_transport_a5296efb7fcf9525e840c626ecfe80d04}} 
+int {\bfseries client\+Max\+Message\+Size} = 16 $\ast$ 1024
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_af862776645609b71d6cdc99758ae387e}\label{class_mirror_1_1_telepathy_transport_af862776645609b71d6cdc99758ae387e}} 
+int {\bfseries client\+Max\+Receives\+Per\+Tick} = 1000
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a4c3b0b7f38c960b7fd43dfd585b48bc9}\label{class_mirror_1_1_telepathy_transport_a4c3b0b7f38c960b7fd43dfd585b48bc9}} 
+const string {\bfseries Scheme} = \char`\"{}tcp4\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a256d34f7aa984555b28b95b2453e5449}\label{class_mirror_1_1_telepathy_transport_a256d34f7aa984555b28b95b2453e5449}} 
+\mbox{\hyperlink{class_telepathy_1_1_client}{Telepathy.\+Client}} {\bfseries client} = new \mbox{\hyperlink{class_telepathy_1_1_client}{Telepathy.\+Client}}()
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a75b87ab3f61f3852e0113bf6aac02724}\label{class_mirror_1_1_telepathy_transport_a75b87ab3f61f3852e0113bf6aac02724}} 
+\mbox{\hyperlink{class_telepathy_1_1_server}{Telepathy.\+Server}} {\bfseries server} = new \mbox{\hyperlink{class_telepathy_1_1_server}{Telepathy.\+Server}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a830629f280466f22686855594c183c2d}\label{class_mirror_1_1_telepathy_transport_a830629f280466f22686855594c183c2d}} 
+int {\bfseries Max\+Message\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_abcdb0e93b24235e9109c6846f1f1c1b6}\label{class_mirror_1_1_telepathy_transport_abcdb0e93b24235e9109c6846f1f1c1b6}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!Available@{Available}}
+\index{Available@{Available}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{Available()}{Available()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Is this transport available in the current platform? 
+
+Some transports might only be available in mobile
+
+Many will not work in webgl
+
+Example usage\+: return Application.\+platform == Runtime\+Platform.\+Web\+G\+L\+Player
+
+\begin{DoxyReturn}{Returns}
+True if this transport works in the current platform
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a7c662214f058b24b4dec5913d09122e1}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_adadb28cf6672e015d58c5565f491ad71}\label{class_mirror_1_1_telepathy_transport_adadb28cf6672e015d58c5565f491ad71}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ClientConnect@{ClientConnect}}
+\index{ClientConnect@{ClientConnect}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ClientConnect()}{ClientConnect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Client\+Connect (\begin{DoxyParamCaption}\item[{string}]{address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Establish a connection to a server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & The IP address or F\+Q\+DN of the server we are trying to connect to\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_aa8e301deea483e11bc3a77241bebd6c8}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a4a4122caf208b894ec69f04cbe3918a3}\label{class_mirror_1_1_telepathy_transport_a4a4122caf208b894ec69f04cbe3918a3}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ClientConnect@{ClientConnect}}
+\index{ClientConnect@{ClientConnect}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ClientConnect()}{ClientConnect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Client\+Connect (\begin{DoxyParamCaption}\item[{Uri}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Establish a connection to a server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The address of the server we are trying to connect to\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_transport_ac5e84a6ef26c090e2075a513d5724cd4}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a5331c3cab8955c9307f84522ca91b125}\label{class_mirror_1_1_telepathy_transport_a5331c3cab8955c9307f84522ca91b125}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ClientConnected@{ClientConnected}}
+\index{ClientConnected@{ClientConnected}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ClientConnected()}{ClientConnected()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Client\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines if we are currently connected to the server 
+
+\begin{DoxyReturn}{Returns}
+True if a connection has been established to the server
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a1d37768d58bce8ccfeafb254ff6961b5}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a08c4ab88612c182eb7c3dd6678e33435}\label{class_mirror_1_1_telepathy_transport_a08c4ab88612c182eb7c3dd6678e33435}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ClientDisconnect@{ClientDisconnect}}
+\index{ClientDisconnect@{ClientDisconnect}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ClientDisconnect()}{ClientDisconnect()}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Client\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Disconnect this client from the server 
+
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_adf81d49444738fb55ec8962535c5ed05}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a11f31cd59a918a59274507bec70f5e26}\label{class_mirror_1_1_telepathy_transport_a11f31cd59a918a59274507bec70f5e26}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ClientSend@{ClientSend}}
+\index{ClientSend@{ClientSend}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ClientSend()}{ClientSend()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Client\+Send (\begin{DoxyParamCaption}\item[{int}]{channel\+Id,  }\item[{Array\+Segment$<$ byte $>$}]{segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Send data to the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & The channel to use. 0 is the default channel, but some transports might want to provide unreliable, encrypted, compressed, or any other feature as new channels\\
+\hline
+{\em segment} & The data to send to the server. Will be recycled after returning, so either use it directly or copy it internally. This allows for allocation-\/free sends!\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the send was successful
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a72f04bfce4b5cc2e6e706b069a8a4c35}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_aed16f9818435d5f26f0a796818a51c39}\label{class_mirror_1_1_telepathy_transport_aed16f9818435d5f26f0a796818a51c39}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!GetMaxPacketSize@{GetMaxPacketSize}}
+\index{GetMaxPacketSize@{GetMaxPacketSize}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{GetMaxPacketSize()}{GetMaxPacketSize()}}
+{\footnotesize\ttfamily override int Mirror.\+Telepathy\+Transport.\+Get\+Max\+Packet\+Size (\begin{DoxyParamCaption}\item[{int}]{channel\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The maximum packet size for a given channel. Unreliable transports usually can only deliver small packets. Reliable fragmented channels can usually deliver large ones. 
+
+Get\+Max\+Packet\+Size needs to return a value at all times. Even if the \mbox{\hyperlink{class_mirror_1_1_transport}{Transport}} isn\textquotesingle{}t running, or isn\textquotesingle{}t \mbox{\hyperlink{class_mirror_1_1_telepathy_transport_abcdb0e93b24235e9109c6846f1f1c1b6}{Available()}}. This is because Fallback and Multiplex transports need to find the smallest possible packet size at runtime.
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel\+Id} & channel id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size in bytes that can be sent via the provided channel
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a6340d7bcfced9674d8c4f59b0d0746cf}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a97c1df1f38e023cb2a37c57b51987066}\label{class_mirror_1_1_telepathy_transport_a97c1df1f38e023cb2a37c57b51987066}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerActive@{ServerActive}}
+\index{ServerActive@{ServerActive}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerActive()}{ServerActive()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Server\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines if the server is up and running 
+
+\begin{DoxyReturn}{Returns}
+true if the transport is ready for connections from clients
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_aecd7291bd0108abab27e2188bc3204b0}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a5e78c63b32917d798730d49a651e3da4}\label{class_mirror_1_1_telepathy_transport_a5e78c63b32917d798730d49a651e3da4}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerDisconnect@{ServerDisconnect}}
+\index{ServerDisconnect@{ServerDisconnect}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerDisconnect()}{ServerDisconnect()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Server\+Disconnect (\begin{DoxyParamCaption}\item[{int}]{connection\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Disconnect a client from this server. Useful to kick people out. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Id} & the id of the client to disconnect\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the client was kicked
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a733852b2e5bc2922129700e1e3128d8b}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_ad2a54c4fa5d6c327b2ce5ed9cf060a52}\label{class_mirror_1_1_telepathy_transport_ad2a54c4fa5d6c327b2ce5ed9cf060a52}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerGetClientAddress@{ServerGetClientAddress}}
+\index{ServerGetClientAddress@{ServerGetClientAddress}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerGetClientAddress()}{ServerGetClientAddress()}}
+{\footnotesize\ttfamily override string Mirror.\+Telepathy\+Transport.\+Server\+Get\+Client\+Address (\begin{DoxyParamCaption}\item[{int}]{connection\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the client address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Id} & id of the client\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+address of the client
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a776ddfb60f41fa6645df0c74833c46f6}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_af7352db49c2558ba4d94306b68ee5691}\label{class_mirror_1_1_telepathy_transport_af7352db49c2558ba4d94306b68ee5691}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerSend@{ServerSend}}
+\index{ServerSend@{ServerSend}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerSend()}{ServerSend()}}
+{\footnotesize\ttfamily override bool Mirror.\+Telepathy\+Transport.\+Server\+Send (\begin{DoxyParamCaption}\item[{List$<$ int $>$}]{connection\+Ids,  }\item[{int}]{channel\+Id,  }\item[{Array\+Segment$<$ byte $>$}]{segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Send data to one or multiple clients. We provide a list, so that transports can make use of multicasting, and avoid allocations where possible. 
+
+We don\textquotesingle{}t provide a single Server\+Send function to reduce complexity. Simply overwrite this one in your \mbox{\hyperlink{class_mirror_1_1_transport}{Transport}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+Ids} & The list of client connection ids to send the data to\\
+\hline
+{\em channel\+Id} & The channel to be used. Transports can use channels to implement other features such as unreliable, encryption, compression, etc...\\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the data was sent to all clients
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a9b7725d91b696845add4defdce3c37ab}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a5a944f452d2869443d8441c1e6dffa4e}\label{class_mirror_1_1_telepathy_transport_a5a944f452d2869443d8441c1e6dffa4e}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerStart@{ServerStart}}
+\index{ServerStart@{ServerStart}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerStart()}{ServerStart()}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Server\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Start listening for clients 
+
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a104abe48a87936fbe5d31a289d83a36d}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a2c09721619ef9e9f0676dbe4bfb9a202}\label{class_mirror_1_1_telepathy_transport_a2c09721619ef9e9f0676dbe4bfb9a202}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerStop@{ServerStop}}
+\index{ServerStop@{ServerStop}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerStop()}{ServerStop()}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Server\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Stop listening for clients and disconnect all existing clients 
+
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a6e99933a82108c0dcb358ce4e60a3acb}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_ac6e0eff4f1fd72746416a3fa76385009}\label{class_mirror_1_1_telepathy_transport_ac6e0eff4f1fd72746416a3fa76385009}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!ServerUri@{ServerUri}}
+\index{ServerUri@{ServerUri}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{ServerUri()}{ServerUri()}}
+{\footnotesize\ttfamily override Uri Mirror.\+Telepathy\+Transport.\+Server\+Uri (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the address of this server. Useful for network discovery 
+
+\begin{DoxyReturn}{Returns}
+the url at which this server can be reached
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a4c03319f92bc9bccd60666aa8640b914}{Mirror.\+Transport}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_telepathy_transport_a884bca48dacd2fe0f1a7bd2ae947bdf9}\label{class_mirror_1_1_telepathy_transport_a884bca48dacd2fe0f1a7bd2ae947bdf9}} 
+\index{Mirror.TelepathyTransport@{Mirror.TelepathyTransport}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Mirror.TelepathyTransport@{Mirror.TelepathyTransport}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily override void Mirror.\+Telepathy\+Transport.\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Shut down the transport, both as client and server 
+
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_transport_a79346ab9427f1cf37ff8154856040449}{Mirror.\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/Telepathy\+Transport.\+cs\end{DoxyCompactItemize}

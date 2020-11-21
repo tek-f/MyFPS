@@ -1,0 +1,1743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_scene_script" kind="class" language="C#" prot="public">
+    <compoundname>SceneScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_scene_script_1a8613455c4f07ea9a52598531c15b2df5" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.animTest</definition>
+        <argsstring></argsstring>
+        <name>animTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="18" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ae83024709dabc9d10c75134589d9c4aa" prot="public" static="no" mutable="no">
+        <type>GUISkin</type>
+        <definition>GUISkin SceneScript.guiSkin</definition>
+        <argsstring></argsstring>
+        <name>guiSkin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="20" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a738c4d98f8e2506d3a118b30d0caaf5f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_view_script" kindref="compound">ViewScript</ref></type>
+        <definition>ViewScript SceneScript.viewCam</definition>
+        <argsstring></argsstring>
+        <name>viewCam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="21" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a9ff1141e330f170393c2b6b275899920" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.boneName</definition>
+        <argsstring></argsstring>
+        <name>boneName</name>
+        <initializer>= &quot;Hips&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="22" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a2fc74fa0b0ea429b4da7ea8678218278" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.camGuiRootRect</definition>
+        <argsstring></argsstring>
+        <name>camGuiRootRect</name>
+        <initializer>= new Rect(870, 25, 93, 420)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="23" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a60f5b35b0e3230d59e2f29729079ebf3" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.camGuiBodyRect</definition>
+        <argsstring></argsstring>
+        <name>camGuiBodyRect</name>
+        <initializer>= new Rect(870, 25, 93, 420)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="24" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a0e3b410519db874487c6b93c1d60e675" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.guiOnBodyRect</definition>
+        <argsstring></argsstring>
+        <name>guiOnBodyRect</name>
+        <initializer>= new Rect(50, 75, 300, 70)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="25" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a69dd9cbde1783393b6e41d34c085560e" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.sliderTextBodyRect</definition>
+        <argsstring></argsstring>
+        <name>sliderTextBodyRect</name>
+        <initializer>= new Rect(0, 0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="26" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a12d3630b3f14be3364160edb69585fbc" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.sliderGuiBodyRect</definition>
+        <argsstring></argsstring>
+        <name>sliderGuiBodyRect</name>
+        <initializer>= new Rect(0, 0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="27" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a62bb4130be57c8da14db972d4153339d" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.textGuiBodyRect</definition>
+        <argsstring></argsstring>
+        <name>textGuiBodyRect</name>
+        <initializer>= new Rect(20, 510, 300, 70)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="29" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1abf336c4663b98bf1e333a883a968aa9b" prot="public" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect SceneScript.modelBodyRect</definition>
+        <argsstring></argsstring>
+        <name>modelBodyRect</name>
+        <initializer>= new Rect(20, 40, 300, 500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="30" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a2e33bb66a135f0f64ccef3ae89d18348" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.FBXListFile</definition>
+        <argsstring></argsstring>
+        <name>FBXListFile</name>
+        <initializer>= &quot;fbx_list_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="31" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aff0aab1d81122f0ebfe99f2beb0dedaf" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.AnimationListFile</definition>
+        <argsstring></argsstring>
+        <name>AnimationListFile</name>
+        <initializer>= &quot;animation_list_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="32" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1afa2a4f179dae30984e1691ef252b4ee0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.TitleTextFile</definition>
+        <argsstring></argsstring>
+        <name>TitleTextFile</name>
+        <initializer>= &quot;title_text_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="34" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a3f6d0a2f612a07c828d5fd0bda708a86" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.guiOn</definition>
+        <argsstring></argsstring>
+        <name>guiOn</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="35" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aca25287aaa31713ed03904c16cc5f6c4" prot="public" static="no" mutable="no">
+        <type>Material</type>
+        <definition>Material SceneScript.facialMaterial_M_org</definition>
+        <argsstring></argsstring>
+        <name>facialMaterial_M_org</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="37" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a595f3b8ab0307b1f6bd3429d83a1927b" prot="public" static="no" mutable="no">
+        <type>Material</type>
+        <definition>Material SceneScript.facialMaterial_L_org</definition>
+        <argsstring></argsstring>
+        <name>facialMaterial_L_org</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="38" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad502a2b3415f43eb897de23c1bcbd47a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.FacialTexListFile</definition>
+        <argsstring></argsstring>
+        <name>FacialTexListFile</name>
+        <initializer>= &quot;facial_texture_list_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="40" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a6d623301ba3bdbd65d00f4d6f0d1b2a1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.ParticleListFile</definition>
+        <argsstring></argsstring>
+        <name>ParticleListFile</name>
+        <initializer>= &quot;particle_list_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="41" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a2c68a27d88c0e80a43e04de76640a808" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.ParticleAnimationListFile</definition>
+        <argsstring></argsstring>
+        <name>ParticleAnimationListFile</name>
+        <initializer>= &quot;particle_animation_list_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="42" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad09eb05b065b52944f55f3a8b879d71a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.facialMatName</definition>
+        <argsstring></argsstring>
+        <name>facialMatName</name>
+        <initializer>= &quot;f01_face_00&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="44" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_scene_script_1a5620f60ba331058064d9d2fb77c15946" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.guiShowFlg</definition>
+        <argsstring></argsstring>
+        <name>guiShowFlg</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="46" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a14cf88580462518af1cdcab3987fd466" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.viewerSettingPath</definition>
+        <argsstring></argsstring>
+        <name>viewerSettingPath</name>
+        <initializer>= viewerResourcesPath + &quot;/Viewer Settings&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="48" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a8280a38d4808de02d160c398e366ba09" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.viewerMaterialPath</definition>
+        <argsstring></argsstring>
+        <name>viewerMaterialPath</name>
+        <initializer>= viewerResourcesPath + &quot;/Viewer Materials&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="49" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a80c6084b65d0a49c3081b283a780dc09" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.viewerBackGroundPath</definition>
+        <argsstring></argsstring>
+        <name>viewerBackGroundPath</name>
+        <initializer>= viewerResourcesPath + &quot;/Viewer BackGrounds&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="50" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a71e6d47dffd497da5322b90224d80d78" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.texturePath</definition>
+        <argsstring></argsstring>
+        <name>texturePath</name>
+        <initializer>= viewerResourcesPath + &quot;/Textures&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="51" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1acab277a79044bcce3d605f071bbf7bb0" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, bool &gt;</type>
+        <definition>Dictionary&lt;string, bool&gt; SceneScript.functionList</definition>
+        <argsstring></argsstring>
+        <name>functionList</name>
+        <initializer>= new Dictionary&lt;string, bool&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="53" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aa3ab7b49b559d99cba8888a93104dc80" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curBG</definition>
+        <argsstring></argsstring>
+        <name>curBG</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="55" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aa83355e68b7781cf57d2dd5c0ded2bc9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curAnim</definition>
+        <argsstring></argsstring>
+        <name>curAnim</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="56" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1af5018ceb95d5b8e85d5cfb9ee4fbb297" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curModel</definition>
+        <argsstring></argsstring>
+        <name>curModel</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="57" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a13e0781e280dcc02e74a3a90b6a55d40" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curFacial</definition>
+        <argsstring></argsstring>
+        <name>curFacial</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="58" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a8e81206fb7a30f91db13de61c006698e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curMode</definition>
+        <argsstring></argsstring>
+        <name>curMode</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="59" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a1cbaf10619e42a28eb86b870288c31ef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curLOD</definition>
+        <argsstring></argsstring>
+        <name>curLOD</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="60" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aefb192c25b50cdc0c17a417dc94a66f2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.curParticle</definition>
+        <argsstring></argsstring>
+        <name>curParticle</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="61" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a11762e7c825292da2f23ffa54cec0bc6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SceneScript.animSpeed</definition>
+        <argsstring></argsstring>
+        <name>animSpeed</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="62" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a63c474bcde58bcaf42e0f897ceee6ca9" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curModelName</definition>
+        <argsstring></argsstring>
+        <name>curModelName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="64" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1af491fe3f1e7c61af36c1a3a5d4d8d46f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curAnimName</definition>
+        <argsstring></argsstring>
+        <name>curAnimName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="65" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ac19256c31e41906efa414c4c8fe876a1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curModeName</definition>
+        <argsstring></argsstring>
+        <name>curModeName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="66" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a847a590eb238824e0dd6e79284c50e0a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curBgName</definition>
+        <argsstring></argsstring>
+        <name>curBgName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="67" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a4c77e851230640d75e95ccfa3c1e0af5" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curFacialName</definition>
+        <argsstring></argsstring>
+        <name>curFacialName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="68" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a7f98bc9934c38573c4cd22f142eba544" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.curParticleName</definition>
+        <argsstring></argsstring>
+        <name>curParticleName</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="69" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a80ea205a0a669551cfc1f87f6f31846d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.facialCount</definition>
+        <argsstring></argsstring>
+        <name>facialCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="71" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad5ebaaf14619a8bd6559da71be67d2ba" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SceneScript.positionY</definition>
+        <argsstring></argsstring>
+        <name>positionY</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="72" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a52a9572bd018c7fbbb86d96f8e156760" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.animationList</definition>
+        <argsstring></argsstring>
+        <name>animationList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="74" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ac29b4643b6ed8b2df66e35035a34871b" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.animationCommonList</definition>
+        <argsstring></argsstring>
+        <name>animationCommonList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="75" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a37e743fcf2bb52250bbb193d1aac67e8" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.facialTexList</definition>
+        <argsstring></argsstring>
+        <name>facialTexList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="76" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a6153d8f5d8fd4b3d64c623434e0c6363" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.particleAnimationList</definition>
+        <argsstring></argsstring>
+        <name>particleAnimationList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="77" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ae4cc9cbd99ff6ee27fc0083a0f3a1d0b" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.particleList</definition>
+        <argsstring></argsstring>
+        <name>particleList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="78" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a6cf575e30e7acd8f08823a6f1c2dc5c2" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.modelList</definition>
+        <argsstring></argsstring>
+        <name>modelList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="80" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a305ad80cf153cc98b4208a587c965ed5" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.backGroundList</definition>
+        <argsstring></argsstring>
+        <name>backGroundList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="82" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a8984b2b895669a6c3fc989fd12cea501" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.stageTexList</definition>
+        <argsstring></argsstring>
+        <name>stageTexList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="83" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a4759babdc41258bd618838a245741fc7" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.lodList</definition>
+        <argsstring></argsstring>
+        <name>lodList</name>
+        <initializer>= { &quot;_h&quot;, &quot;_m&quot;, &quot;_l&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="84" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad1162d99e785eeaf735d29b50b98541d" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.lodTextList</definition>
+        <argsstring></argsstring>
+        <name>lodTextList</name>
+        <initializer>= { &quot;Hi&quot;, &quot;Mid&quot;, &quot;Low&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="85" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1affb018708e7d80f55992d3dee2f24ff7" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] SceneScript.modeTextList</definition>
+        <argsstring></argsstring>
+        <name>modeTextList</name>
+        <initializer>= { &quot;AddPerticle&quot;, &quot;Original&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="86" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad1829dfddf2d8244cb02605bcf19b8a0" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="88" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a90bd15acf418f888e584ac64570de695" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.loaded</definition>
+        <argsstring></argsstring>
+        <name>loaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="89" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a7c68089042e08ee843cbecf8de3b7936" prot="private" static="no" mutable="no">
+        <type>SkinnedMeshRenderer</type>
+        <definition>SkinnedMeshRenderer SceneScript.SM</definition>
+        <argsstring></argsstring>
+        <name>SM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="90" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a9a763c6fed2d8e70b216510b2279bc61" prot="private" static="no" mutable="no">
+        <type>SkinnedMeshRenderer</type>
+        <definition>SkinnedMeshRenderer SceneScript.faceSM</definition>
+        <argsstring></argsstring>
+        <name>faceSM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="91" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a3982cecff44dc143e990b1f74fc8f5cb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.faceObjName</definition>
+        <argsstring></argsstring>
+        <name>faceObjName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="92" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a4b3ea5989741e9eec513fd11be98e274" prot="private" static="no" mutable="no">
+        <type>TextAsset</type>
+        <definition>TextAsset SceneScript.txt</definition>
+        <argsstring></argsstring>
+        <name>txt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="94" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a0b3f9f8bdaad685198f4ec69c608ffae" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.CamModeRote</definition>
+        <argsstring></argsstring>
+        <name>CamModeRote</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="96" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a8beee144bedceee6a971820f40e05888" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.CamModeMove</definition>
+        <argsstring></argsstring>
+        <name>CamModeMove</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="97" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ab53a89c5c324a40c5da224d295f172f2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.CamModeZoom</definition>
+        <argsstring></argsstring>
+        <name>CamModeZoom</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="98" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a268e712988b65504c936861dd2cdf7a8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.CamModeFix</definition>
+        <argsstring></argsstring>
+        <name>CamModeFix</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="99" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aa4874d261e10b7a9f4326778e01a6693" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.CamMode</definition>
+        <argsstring></argsstring>
+        <name>CamMode</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="101" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a70ec28543ef2b429deb9bd7fa39bdb36" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SceneScript.titleText</definition>
+        <argsstring></argsstring>
+        <name>titleText</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="102" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a0f0def1c06f8bfe5983b8280970ba43a" prot="private" static="no" mutable="no">
+        <type>XmlDocument</type>
+        <definition>XmlDocument SceneScript.xDoc</definition>
+        <argsstring></argsstring>
+        <name>xDoc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="103" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ad684bcceae8d4fe21052708ca4efc6cc" prot="private" static="no" mutable="no">
+        <type>XmlNodeList</type>
+        <definition>XmlNodeList SceneScript.xNodeList</definition>
+        <argsstring></argsstring>
+        <name>xNodeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="104" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a538779adbe13a5b89b8a0019214f631a" prot="private" static="no" mutable="no">
+        <type>Material</type>
+        <definition>Material SceneScript.faceMat_L</definition>
+        <argsstring></argsstring>
+        <name>faceMat_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="106" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1abbdd7b8209befd4af073166b88c6b549" prot="private" static="no" mutable="no">
+        <type>Material</type>
+        <definition>Material SceneScript.faceMat_M</definition>
+        <argsstring></argsstring>
+        <name>faceMat_M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="107" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a20c27ee286f31905131c18ceb3663c19" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.BGObject</definition>
+        <argsstring></argsstring>
+        <name>BGObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="109" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aec5ab40d6ab0c7c4d085978f7e492a68" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.BGEff</definition>
+        <argsstring></argsstring>
+        <name>BGEff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="110" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1abf0800d343837bde51d6f933384123dd" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.BGPlane</definition>
+        <argsstring></argsstring>
+        <name>BGPlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="111" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ac3f578df795b2bf7d42f0dfb0f6f2354" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SceneScript.planeObj</definition>
+        <argsstring></argsstring>
+        <name>planeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="112" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1ac69805143a2a2a01a53b67878ebff62a" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SceneScript.oldMousePosition</definition>
+        <argsstring></argsstring>
+        <name>oldMousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="115" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a25b363e7e6c5f8f495316b6760e89eb4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SceneScript.popupWaitingTime</definition>
+        <argsstring></argsstring>
+        <name>popupWaitingTime</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="116" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a79253d0310e9eec91be164a5e2f90c68" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SceneScript.popupWaitingTimeNow</definition>
+        <argsstring></argsstring>
+        <name>popupWaitingTimeNow</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="117" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a21bcb9d4dee38a69695e279a44bb5645" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SceneScript.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="241" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1af9ac912b9b97f0a56129b570214e9ad5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="242" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1a1ae04bcfd9e97903a28ff1f7482096c7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SceneScript.ParticleMode</definition>
+        <argsstring></argsstring>
+        <name>ParticleMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="243" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_scene_script_1aa6997f47ac311b86bae9d4cf8599a3fa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SceneScript.onSliderFlg</definition>
+        <argsstring></argsstring>
+        <name>onSliderFlg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1096" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_scene_script_1a5d456e7bcdf78af405938a176e352ad4" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string SceneScript.viewerResourcesPath</definition>
+        <argsstring></argsstring>
+        <name>viewerResourcesPath</name>
+        <initializer>= &quot;Taichi&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="47" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_scene_script_1a1b68904bac7a07f4fe24e8a74a411e86" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SceneScript.SetGuiColorAlpha</definition>
+        <argsstring>(float alpha)</argsstring>
+        <name>SetGuiColorAlpha</name>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="11" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="11" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scene_script_1ac84706ae0855ef5fa48bbed746de9938" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="119" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="119" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1abb64b064a3a1269f26095207656111ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="225" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="225" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1acef7757770b00dc7b0e39ca81cfa4c70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="244" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="244" bodyend="857"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1aa381fae730533a8309337f49f7795268" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.popUp</definition>
+        <argsstring>()</argsstring>
+        <name>popUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="859" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="859" bodyend="1094"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a4530282d4d0a965417aa7b5911b5daf6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.scrollBarPos</definition>
+        <argsstring>()</argsstring>
+        <name>scrollBarPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1097" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1097" bodyend="1138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a463e2e454b6b6fbb089f55df3cfc7c0f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextMode</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextMode</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1140" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1140" bodyend="1176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a857d5f5b5ac83e461e3c81fd73a6c8e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetInitParticle</definition>
+        <argsstring>()</argsstring>
+        <name>SetInitParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1178" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1178" bodyend="1184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1af8b498c2a6c86203a345a809589ef100" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextParticle</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextParticle</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1186" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1186" bodyend="1204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ad27133a64084604bb220c569b3eafda1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.particleExec</definition>
+        <argsstring>()</argsstring>
+        <name>particleExec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1206" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1206" bodyend="1208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a1b697ecf2f04e315669ae04991ccdeea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetParticle</definition>
+        <argsstring>()</argsstring>
+        <name>SetParticle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1210" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1210" bodyend="1213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a802183c2c3d5bdcbd133b3a12d37cabc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetInitModel</definition>
+        <argsstring>()</argsstring>
+        <name>SetInitModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1215" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1215" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a81f6f00085eeac690f6507eaacd03d34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextModel</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextModel</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1221" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1221" bodyend="1234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a7114cae394e8bfdbe3da0327539b9d0f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextLOD</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextLOD</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1236" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1236" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ad587fc616acf4452aceb4b393f629a32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.ModelChange</definition>
+        <argsstring>(string _name)</argsstring>
+        <name>ModelChange</name>
+        <param>
+          <type>string</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1264" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1264" bodyend="1303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a9bda687e80c7cf7e6050bf3a04960fa8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetAnimationSpeed</definition>
+        <argsstring>(float _speed)</argsstring>
+        <name>SetAnimationSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>_speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1306" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1306" bodyend="1312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1aaef49c981073ad52b3575678f866e6ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetInitMotion</definition>
+        <argsstring>()</argsstring>
+        <name>SetInitMotion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1314" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1314" bodyend="1319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a60e00b06ae0284b4f57d4173edfa4e5e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetInitFacial</definition>
+        <argsstring>()</argsstring>
+        <name>SetInitFacial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1321" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1321" bodyend="1328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ad63cc28e21ee614089b3aeea4ff86a4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetFacialBlendShape</definition>
+        <argsstring>(int _i)</argsstring>
+        <name>SetFacialBlendShape</name>
+        <param>
+          <type>int</type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1330" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1330" bodyend="1353"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1af54137ee4aeed497c94a4b4581f0d847" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.facialMaterialSet</definition>
+        <argsstring>()</argsstring>
+        <name>facialMaterialSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1355" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1355" bodyend="1379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a5e3c0fc3cf8b238d6bf2ff7cd3111083" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextFacial</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextFacial</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1380" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1380" bodyend="1402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ad87c5488e77174ec7c9c14d60cfdac40" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetFacialTex</definition>
+        <argsstring>(int _i)</argsstring>
+        <name>SetFacialTex</name>
+        <param>
+          <type>int</type>
+          <declname>_i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1403" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1403" bodyend="1423"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a6b600efa3a1042c1dc9a1560805dd332" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextMotion</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextMotion</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1425" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1425" bodyend="1438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ae35637836e9baf3ce145c3257803b9e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetAnimation</definition>
+        <argsstring>(string _name)</argsstring>
+        <name>SetAnimation</name>
+        <param>
+          <type>string</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1440" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1440" bodyend="1450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a7c5ec0d3e6913d65afefcfe644eaa8b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetInitBackGround</definition>
+        <argsstring>()</argsstring>
+        <name>SetInitBackGround</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1452" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1452" bodyend="1460"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1a2b719e5c0fb1eaa04a15af435b19e575" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetNextBackGround</definition>
+        <argsstring>(int _add)</argsstring>
+        <name>SetNextBackGround</name>
+        <param>
+          <type>int</type>
+          <declname>_add</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1462" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1462" bodyend="1474"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ac39ec47dcb6f26e4425a8a37c9f3f62d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetBackGround</definition>
+        <argsstring>(string _name)</argsstring>
+        <name>SetBackGround</name>
+        <param>
+          <type>string</type>
+          <declname>_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1476" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1476" bodyend="1517"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1ac388d122dbe377ae01cb14f73b7e823a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Transform</type>
+        <definition>Transform SceneScript.GetBone</definition>
+        <argsstring>(GameObject _obj, string _bone)</argsstring>
+        <name>GetBone</name>
+        <param>
+          <type>GameObject</type>
+          <declname>_obj</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_bone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1519" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1519" bodyend="1534"/>
+      </memberdef>
+      <memberdef kind="function" id="class_scene_script_1aa65eafb21dddd017456dc5a74dc490cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SceneScript.SetFixedFbx</definition>
+        <argsstring>(XmlDocument _xDoc, GameObject _obj, string _model, string _anim, int _lod)</argsstring>
+        <name>SetFixedFbx</name>
+        <param>
+          <type>XmlDocument</type>
+          <declname>_xDoc</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>_obj</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_model</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>_anim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_lod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="1536" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="1536" bodyend="1618"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SceneScript</label>
+        <link refid="class_scene_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ViewScript</label>
+        <link refid="class_view_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SceneScript</label>
+        <link refid="class_scene_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>viewCam</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" line="9" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Scripts/SceneScript.cs" bodystart="10" bodyend="1619"/>
+    <listofallmembers>
+      <member refid="class_scene_script_1ac29b4643b6ed8b2df66e35035a34871b" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>animationCommonList</name></member>
+      <member refid="class_scene_script_1a52a9572bd018c7fbbb86d96f8e156760" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>animationList</name></member>
+      <member refid="class_scene_script_1aff0aab1d81122f0ebfe99f2beb0dedaf" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>AnimationListFile</name></member>
+      <member refid="class_scene_script_1a11762e7c825292da2f23ffa54cec0bc6" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>animSpeed</name></member>
+      <member refid="class_scene_script_1a8613455c4f07ea9a52598531c15b2df5" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>animTest</name></member>
+      <member refid="class_scene_script_1a305ad80cf153cc98b4208a587c965ed5" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>backGroundList</name></member>
+      <member refid="class_scene_script_1aec5ab40d6ab0c7c4d085978f7e492a68" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>BGEff</name></member>
+      <member refid="class_scene_script_1a20c27ee286f31905131c18ceb3663c19" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>BGObject</name></member>
+      <member refid="class_scene_script_1abf0800d343837bde51d6f933384123dd" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>BGPlane</name></member>
+      <member refid="class_scene_script_1a9ff1141e330f170393c2b6b275899920" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>boneName</name></member>
+      <member refid="class_scene_script_1a60f5b35b0e3230d59e2f29729079ebf3" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>camGuiBodyRect</name></member>
+      <member refid="class_scene_script_1a2fc74fa0b0ea429b4da7ea8678218278" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>camGuiRootRect</name></member>
+      <member refid="class_scene_script_1aa4874d261e10b7a9f4326778e01a6693" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>CamMode</name></member>
+      <member refid="class_scene_script_1a268e712988b65504c936861dd2cdf7a8" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>CamModeFix</name></member>
+      <member refid="class_scene_script_1a8beee144bedceee6a971820f40e05888" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>CamModeMove</name></member>
+      <member refid="class_scene_script_1a0b3f9f8bdaad685198f4ec69c608ffae" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>CamModeRote</name></member>
+      <member refid="class_scene_script_1ab53a89c5c324a40c5da224d295f172f2" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>CamModeZoom</name></member>
+      <member refid="class_scene_script_1aa83355e68b7781cf57d2dd5c0ded2bc9" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curAnim</name></member>
+      <member refid="class_scene_script_1af491fe3f1e7c61af36c1a3a5d4d8d46f" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curAnimName</name></member>
+      <member refid="class_scene_script_1aa3ab7b49b559d99cba8888a93104dc80" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curBG</name></member>
+      <member refid="class_scene_script_1a847a590eb238824e0dd6e79284c50e0a" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curBgName</name></member>
+      <member refid="class_scene_script_1a13e0781e280dcc02e74a3a90b6a55d40" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curFacial</name></member>
+      <member refid="class_scene_script_1a4c77e851230640d75e95ccfa3c1e0af5" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curFacialName</name></member>
+      <member refid="class_scene_script_1a1cbaf10619e42a28eb86b870288c31ef" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curLOD</name></member>
+      <member refid="class_scene_script_1a8e81206fb7a30f91db13de61c006698e" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curMode</name></member>
+      <member refid="class_scene_script_1af5018ceb95d5b8e85d5cfb9ee4fbb297" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curModel</name></member>
+      <member refid="class_scene_script_1a63c474bcde58bcaf42e0f897ceee6ca9" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curModelName</name></member>
+      <member refid="class_scene_script_1ac19256c31e41906efa414c4c8fe876a1" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curModeName</name></member>
+      <member refid="class_scene_script_1aefb192c25b50cdc0c17a417dc94a66f2" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curParticle</name></member>
+      <member refid="class_scene_script_1a7f98bc9934c38573c4cd22f142eba544" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>curParticleName</name></member>
+      <member refid="class_scene_script_1a538779adbe13a5b89b8a0019214f631a" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>faceMat_L</name></member>
+      <member refid="class_scene_script_1abbdd7b8209befd4af073166b88c6b549" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>faceMat_M</name></member>
+      <member refid="class_scene_script_1a3982cecff44dc143e990b1f74fc8f5cb" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>faceObjName</name></member>
+      <member refid="class_scene_script_1a9a763c6fed2d8e70b216510b2279bc61" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>faceSM</name></member>
+      <member refid="class_scene_script_1a80ea205a0a669551cfc1f87f6f31846d" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>facialCount</name></member>
+      <member refid="class_scene_script_1a595f3b8ab0307b1f6bd3429d83a1927b" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>facialMaterial_L_org</name></member>
+      <member refid="class_scene_script_1aca25287aaa31713ed03904c16cc5f6c4" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>facialMaterial_M_org</name></member>
+      <member refid="class_scene_script_1af54137ee4aeed497c94a4b4581f0d847" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>facialMaterialSet</name></member>
+      <member refid="class_scene_script_1ad09eb05b065b52944f55f3a8b879d71a" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>facialMatName</name></member>
+      <member refid="class_scene_script_1a37e743fcf2bb52250bbb193d1aac67e8" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>facialTexList</name></member>
+      <member refid="class_scene_script_1ad502a2b3415f43eb897de23c1bcbd47a" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>FacialTexListFile</name></member>
+      <member refid="class_scene_script_1a2e33bb66a135f0f64ccef3ae89d18348" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>FBXListFile</name></member>
+      <member refid="class_scene_script_1acab277a79044bcce3d605f071bbf7bb0" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>functionList</name></member>
+      <member refid="class_scene_script_1ac388d122dbe377ae01cb14f73b7e823a" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>GetBone</name></member>
+      <member refid="class_scene_script_1a3f6d0a2f612a07c828d5fd0bda708a86" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>guiOn</name></member>
+      <member refid="class_scene_script_1a0e3b410519db874487c6b93c1d60e675" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>guiOnBodyRect</name></member>
+      <member refid="class_scene_script_1a5620f60ba331058064d9d2fb77c15946" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>guiShowFlg</name></member>
+      <member refid="class_scene_script_1ae83024709dabc9d10c75134589d9c4aa" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>guiSkin</name></member>
+      <member refid="class_scene_script_1a90bd15acf418f888e584ac64570de695" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>loaded</name></member>
+      <member refid="class_scene_script_1a4759babdc41258bd618838a245741fc7" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>lodList</name></member>
+      <member refid="class_scene_script_1ad1162d99e785eeaf735d29b50b98541d" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>lodTextList</name></member>
+      <member refid="class_scene_script_1abf336c4663b98bf1e333a883a968aa9b" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>modelBodyRect</name></member>
+      <member refid="class_scene_script_1ad587fc616acf4452aceb4b393f629a32" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>ModelChange</name></member>
+      <member refid="class_scene_script_1a6cf575e30e7acd8f08823a6f1c2dc5c2" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>modelList</name></member>
+      <member refid="class_scene_script_1affb018708e7d80f55992d3dee2f24ff7" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>modeTextList</name></member>
+      <member refid="class_scene_script_1ad1829dfddf2d8244cb02605bcf19b8a0" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>obj</name></member>
+      <member refid="class_scene_script_1ac69805143a2a2a01a53b67878ebff62a" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>oldMousePosition</name></member>
+      <member refid="class_scene_script_1acef7757770b00dc7b0e39ca81cfa4c70" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>OnGUI</name></member>
+      <member refid="class_scene_script_1aa6997f47ac311b86bae9d4cf8599a3fa" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>onSliderFlg</name></member>
+      <member refid="class_scene_script_1a6153d8f5d8fd4b3d64c623434e0c6363" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>particleAnimationList</name></member>
+      <member refid="class_scene_script_1a2c68a27d88c0e80a43e04de76640a808" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>ParticleAnimationListFile</name></member>
+      <member refid="class_scene_script_1ad27133a64084604bb220c569b3eafda1" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>particleExec</name></member>
+      <member refid="class_scene_script_1ae4cc9cbd99ff6ee27fc0083a0f3a1d0b" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>particleList</name></member>
+      <member refid="class_scene_script_1a6d623301ba3bdbd65d00f4d6f0d1b2a1" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>ParticleListFile</name></member>
+      <member refid="class_scene_script_1a1ae04bcfd9e97903a28ff1f7482096c7" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>ParticleMode</name></member>
+      <member refid="class_scene_script_1ac3f578df795b2bf7d42f0dfb0f6f2354" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>planeObj</name></member>
+      <member refid="class_scene_script_1aa381fae730533a8309337f49f7795268" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>popUp</name></member>
+      <member refid="class_scene_script_1a25b363e7e6c5f8f495316b6760e89eb4" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>popupWaitingTime</name></member>
+      <member refid="class_scene_script_1a79253d0310e9eec91be164a5e2f90c68" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>popupWaitingTimeNow</name></member>
+      <member refid="class_scene_script_1ad5ebaaf14619a8bd6559da71be67d2ba" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>positionY</name></member>
+      <member refid="class_scene_script_1a21bcb9d4dee38a69695e279a44bb5645" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>scale</name></member>
+      <member refid="class_scene_script_1a4530282d4d0a965417aa7b5911b5daf6" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>scrollBarPos</name></member>
+      <member refid="class_scene_script_1ae35637836e9baf3ce145c3257803b9e4" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetAnimation</name></member>
+      <member refid="class_scene_script_1a9bda687e80c7cf7e6050bf3a04960fa8" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetAnimationSpeed</name></member>
+      <member refid="class_scene_script_1ac39ec47dcb6f26e4425a8a37c9f3f62d" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetBackGround</name></member>
+      <member refid="class_scene_script_1ad63cc28e21ee614089b3aeea4ff86a4b" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetFacialBlendShape</name></member>
+      <member refid="class_scene_script_1ad87c5488e77174ec7c9c14d60cfdac40" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetFacialTex</name></member>
+      <member refid="class_scene_script_1aa65eafb21dddd017456dc5a74dc490cd" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetFixedFbx</name></member>
+      <member refid="class_scene_script_1a1b68904bac7a07f4fe24e8a74a411e86" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetGuiColorAlpha</name></member>
+      <member refid="class_scene_script_1a7c5ec0d3e6913d65afefcfe644eaa8b6" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetInitBackGround</name></member>
+      <member refid="class_scene_script_1a60e00b06ae0284b4f57d4173edfa4e5e" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetInitFacial</name></member>
+      <member refid="class_scene_script_1a802183c2c3d5bdcbd133b3a12d37cabc" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetInitModel</name></member>
+      <member refid="class_scene_script_1aaef49c981073ad52b3575678f866e6ee" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetInitMotion</name></member>
+      <member refid="class_scene_script_1a857d5f5b5ac83e461e3c81fd73a6c8e8" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetInitParticle</name></member>
+      <member refid="class_scene_script_1a2b719e5c0fb1eaa04a15af435b19e575" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextBackGround</name></member>
+      <member refid="class_scene_script_1a5e3c0fc3cf8b238d6bf2ff7cd3111083" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextFacial</name></member>
+      <member refid="class_scene_script_1a7114cae394e8bfdbe3da0327539b9d0f" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextLOD</name></member>
+      <member refid="class_scene_script_1a463e2e454b6b6fbb089f55df3cfc7c0f" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextMode</name></member>
+      <member refid="class_scene_script_1a81f6f00085eeac690f6507eaacd03d34" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextModel</name></member>
+      <member refid="class_scene_script_1a6b600efa3a1042c1dc9a1560805dd332" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextMotion</name></member>
+      <member refid="class_scene_script_1af8b498c2a6c86203a345a809589ef100" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetNextParticle</name></member>
+      <member refid="class_scene_script_1a1b697ecf2f04e315669ae04991ccdeea" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SetParticle</name></member>
+      <member refid="class_scene_script_1a12d3630b3f14be3364160edb69585fbc" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>sliderGuiBodyRect</name></member>
+      <member refid="class_scene_script_1a69dd9cbde1783393b6e41d34c085560e" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>sliderTextBodyRect</name></member>
+      <member refid="class_scene_script_1a7c68089042e08ee843cbecf8de3b7936" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>SM</name></member>
+      <member refid="class_scene_script_1a8984b2b895669a6c3fc989fd12cea501" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>stageTexList</name></member>
+      <member refid="class_scene_script_1ac84706ae0855ef5fa48bbed746de9938" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>Start</name></member>
+      <member refid="class_scene_script_1af9ac912b9b97f0a56129b570214e9ad5" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>test</name></member>
+      <member refid="class_scene_script_1a62bb4130be57c8da14db972d4153339d" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>textGuiBodyRect</name></member>
+      <member refid="class_scene_script_1a71e6d47dffd497da5322b90224d80d78" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>texturePath</name></member>
+      <member refid="class_scene_script_1a70ec28543ef2b429deb9bd7fa39bdb36" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>titleText</name></member>
+      <member refid="class_scene_script_1afa2a4f179dae30984e1691ef252b4ee0" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>TitleTextFile</name></member>
+      <member refid="class_scene_script_1a4b3ea5989741e9eec513fd11be98e274" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>txt</name></member>
+      <member refid="class_scene_script_1abb64b064a3a1269f26095207656111ca" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>Update</name></member>
+      <member refid="class_scene_script_1a738c4d98f8e2506d3a118b30d0caaf5f" prot="public" virt="non-virtual"><scope>SceneScript</scope><name>viewCam</name></member>
+      <member refid="class_scene_script_1a80c6084b65d0a49c3081b283a780dc09" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>viewerBackGroundPath</name></member>
+      <member refid="class_scene_script_1a8280a38d4808de02d160c398e366ba09" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>viewerMaterialPath</name></member>
+      <member refid="class_scene_script_1a5d456e7bcdf78af405938a176e352ad4" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>viewerResourcesPath</name></member>
+      <member refid="class_scene_script_1a14cf88580462518af1cdcab3987fd466" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>viewerSettingPath</name></member>
+      <member refid="class_scene_script_1a0f0def1c06f8bfe5983b8280970ba43a" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>xDoc</name></member>
+      <member refid="class_scene_script_1ad684bcceae8d4fe21052708ca4efc6cc" prot="private" virt="non-virtual"><scope>SceneScript</scope><name>xNodeList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager" kind="interface" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::IPingPongManager</compoundname>
+    <derivedcompoundref refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager" prot="public" virt="non-virtual">Ninja.WebSockets.PingPongManager</derivedcompoundref>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1a5cd27979f29fe4f9d520975d06d5f468" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>EventHandler&lt; <ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" kindref="compound">PongEventArgs</ref> &gt;</type>
+        <definition>EventHandler&lt;PongEventArgs&gt; Ninja.WebSockets.IPingPongManager.Pong</definition>
+        <argsstring></argsstring>
+        <name>Pong</name>
+        <briefdescription>
+<para>Raised when a Pong frame is received </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs" line="15" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1aa9f55f2c558a9c1e39ba5680f6c1148a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Ninja.WebSockets.IPingPongManager.SendPing</definition>
+        <argsstring>(ArraySegment&lt; byte &gt; payload, CancellationToken cancellation)</argsstring>
+        <name>SendPing</name>
+        <reimplementedby refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a947b5cb1adbf6713078d910384bc3f12">SendPing</reimplementedby>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellation</declname>
+        </param>
+        <briefdescription>
+<para>Sends a ping frame </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload (must be 125 bytes of less)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs" line="22" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ping Pong Manager used to facilitate ping pong WebSocket messages </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Ninja.WebSockets.PingPongManager</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Ninja.WebSockets.IPingPongManager</label>
+        <link refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs" line="10" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs" bodystart="11" bodyend="23"/>
+    <listofallmembers>
+      <member refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1a5cd27979f29fe4f9d520975d06d5f468" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::IPingPongManager</scope><name>Pong</name></member>
+      <member refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1aa9f55f2c558a9c1e39ba5680f6c1148a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::IPingPongManager</scope><name>SendPing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

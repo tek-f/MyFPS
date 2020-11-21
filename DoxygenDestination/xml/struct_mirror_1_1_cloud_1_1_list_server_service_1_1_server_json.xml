@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::ListServerService::ServerJson</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_cloud_1_1_i_can_be_json" prot="public" virt="non-virtual">Mirror.Cloud.ICanBeJson</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a61640b2f032dd6cff7cd8247e0e5470c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ListServerService.ServerJson.protocol</definition>
+        <argsstring></argsstring>
+        <name>protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="16" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a0e3b4c38e7fb9fe1166cfac6fb677612" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.Cloud.ListServerService.ServerJson.port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="17" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1aebc19cacd89091d33639fda0f962e45e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.Cloud.ListServerService.ServerJson.playerCount</definition>
+        <argsstring></argsstring>
+        <name>playerCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="18" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1ab556b8b38a75857c1e9ce2f0f4199fd2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.Cloud.ListServerService.ServerJson.maxPlayerCount</definition>
+        <argsstring></argsstring>
+        <name>maxPlayerCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="19" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a5f44b96e913278be51e850690a980b83" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ListServerService.ServerJson.displayName</definition>
+        <argsstring></argsstring>
+        <name>displayName</name>
+        <briefdescription>
+<para>optional </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="24" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1aae7889f07153ce324bba21be2bed6218" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ListServerService.ServerJson.address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+<para>Uri string of the ip and port of the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The ip is calculated by the request to the API</para>
+<para>This is returns from the api, any incoming address fields will be ignored</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="31" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1ac882ef2f3e4b10458ae16be2cb7b44f4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ListServerService.ServerJson.customAddress</definition>
+        <argsstring></argsstring>
+        <name>customAddress</name>
+        <briefdescription>
+<para>Can be used to set custom uri </para>
+        </briefdescription>
+        <detaileddescription>
+<para>optional</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="37" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a574719d866c38e5c4befe1460080bb77" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_key_value" kindref="compound">KeyValue</ref>[]</type>
+        <definition>KeyValue [] Mirror.Cloud.ListServerService.ServerJson.customData</definition>
+        <argsstring></argsstring>
+        <name>customData</name>
+        <briefdescription>
+<para>Array of custom data, use SetCustomData to set values </para>
+        </briefdescription>
+        <detaileddescription>
+<para>optional</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="43" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1abeef0fc2cd69c294ace9a56cd92eea77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Uri</type>
+        <definition>Uri Mirror.Cloud.ListServerService.ServerJson.GetServerUri</definition>
+        <argsstring>()</argsstring>
+        <name>GetServerUri</name>
+        <briefdescription>
+<para>Uri from address field </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="49" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a949b41e3c8d645b2cea616c5f021f0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Uri</type>
+        <definition>Uri Mirror.Cloud.ListServerService.ServerJson.GetCustomUri</definition>
+        <argsstring>()</argsstring>
+        <name>GetCustomUri</name>
+        <briefdescription>
+<para>Uri from customAddress field </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="55" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1acf3fbfcf3b815d43bac79ea0cd46c7c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ListServerService.ServerJson.SetCustomData</definition>
+        <argsstring>(Dictionary&lt; string, string &gt; data)</argsstring>
+        <name>SetCustomData</name>
+        <param>
+          <type>Dictionary&lt; string, string &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Updates the customData array </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="61" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="61" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a9fae97093e0b03af22bded072bf12232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.Cloud.ListServerService.ServerJson.Validate</definition>
+        <argsstring>()</argsstring>
+        <name>Validate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="74" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="74" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICanBeJson</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_can_be_json"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ListServerService.ServerJson</label>
+        <link refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICanBeJson</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_can_be_json"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ListServerService.ServerJson</label>
+        <link refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>customData</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mirror.Cloud.ListServerService.KeyValue</label>
+        <link refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_key_value"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" line="14" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerJson.cs" bodystart="15" bodyend="98"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1aae7889f07153ce324bba21be2bed6218" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>address</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1ac882ef2f3e4b10458ae16be2cb7b44f4" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>customAddress</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a574719d866c38e5c4befe1460080bb77" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>customData</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a5f44b96e913278be51e850690a980b83" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>displayName</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a949b41e3c8d645b2cea616c5f021f0d0" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>GetCustomUri</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1abeef0fc2cd69c294ace9a56cd92eea77" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>GetServerUri</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1ab556b8b38a75857c1e9ce2f0f4199fd2" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>maxPlayerCount</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1aebc19cacd89091d33639fda0f962e45e" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>playerCount</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a0e3b4c38e7fb9fe1166cfac6fb677612" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>port</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a61640b2f032dd6cff7cd8247e0e5470c" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>protocol</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1acf3fbfcf3b815d43bac79ea0cd46c7c5" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>SetCustomData</name></member>
+      <member refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json_1a9fae97093e0b03af22bded072bf12232" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ServerJson</scope><name>Validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

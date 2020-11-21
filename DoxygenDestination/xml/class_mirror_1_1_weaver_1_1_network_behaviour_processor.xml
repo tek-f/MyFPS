@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_network_behaviour_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::NetworkBehaviourProcessor</compoundname>
+    <innerclass refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result" prot="public">Mirror::Weaver::NetworkBehaviourProcessor::ClientRpcResult</innerclass>
+    <innerclass refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result" prot="public">Mirror::Weaver::NetworkBehaviourProcessor::CmdResult</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a598609706b9cf68647e0066d319dc7be" prot="private" static="no" mutable="no">
+        <type>List&lt; FieldDefinition &gt;</type>
+        <definition>List&lt;FieldDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.syncVars</definition>
+        <argsstring></argsstring>
+        <name>syncVars</name>
+        <initializer>= new List&lt;FieldDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="21" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a6b23551a2d1600ebfaf6b1d3cbf6c502" prot="private" static="no" mutable="no">
+        <type>List&lt; FieldDefinition &gt;</type>
+        <definition>List&lt;FieldDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.syncObjects</definition>
+        <argsstring></argsstring>
+        <name>syncObjects</name>
+        <initializer>= new List&lt;FieldDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="22" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a71f8685b27b72276e2666b7ad06c175f" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; FieldDefinition, FieldDefinition &gt;</type>
+        <definition>Dictionary&lt;FieldDefinition, FieldDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.syncVarNetIds</definition>
+        <argsstring></argsstring>
+        <name>syncVarNetIds</name>
+        <initializer>= new Dictionary&lt;FieldDefinition, FieldDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="24" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aebd03aa684423b2c9c019366daa346ed" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result" kindref="compound">CmdResult</ref> &gt;</type>
+        <definition>readonly List&lt;CmdResult&gt; Mirror.Weaver.NetworkBehaviourProcessor.commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <initializer>= new List&lt;<ref refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result" kindref="compound">CmdResult</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="25" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a465ae46377a34feb2b562cfcc5a26258" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result" kindref="compound">ClientRpcResult</ref> &gt;</type>
+        <definition>readonly List&lt;ClientRpcResult&gt; Mirror.Weaver.NetworkBehaviourProcessor.clientRpcs</definition>
+        <argsstring></argsstring>
+        <name>clientRpcs</name>
+        <initializer>= new List&lt;<ref refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result" kindref="compound">ClientRpcResult</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="26" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a365d63b75f70a2c50a386ad3fc80575c" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; MethodDefinition &gt;</type>
+        <definition>readonly List&lt;MethodDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.targetRpcs</definition>
+        <argsstring></argsstring>
+        <name>targetRpcs</name>
+        <initializer>= new List&lt;MethodDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="27" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a1598ece8e8e0dc0015f311076ac21a09" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; EventDefinition &gt;</type>
+        <definition>readonly List&lt;EventDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.eventRpcs</definition>
+        <argsstring></argsstring>
+        <name>eventRpcs</name>
+        <initializer>= new List&lt;EventDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="28" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a2b06427a12f895d75b0747d43180a311" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; MethodDefinition &gt;</type>
+        <definition>readonly List&lt;MethodDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.commandInvocationFuncs</definition>
+        <argsstring></argsstring>
+        <name>commandInvocationFuncs</name>
+        <initializer>= new List&lt;MethodDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="29" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af999aaba4196a493a152e9e5bbe33d96" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; MethodDefinition &gt;</type>
+        <definition>readonly List&lt;MethodDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.clientRpcInvocationFuncs</definition>
+        <argsstring></argsstring>
+        <name>clientRpcInvocationFuncs</name>
+        <initializer>= new List&lt;MethodDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="30" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a49ab15097f7e08f7a05a6e9457c136ac" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; MethodDefinition &gt;</type>
+        <definition>readonly List&lt;MethodDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.targetRpcInvocationFuncs</definition>
+        <argsstring></argsstring>
+        <name>targetRpcInvocationFuncs</name>
+        <initializer>= new List&lt;MethodDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="31" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a6b261b02fafdd43c2a91cf6ab3c599e1" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; MethodDefinition &gt;</type>
+        <definition>readonly List&lt;MethodDefinition&gt; Mirror.Weaver.NetworkBehaviourProcessor.eventRpcInvocationFuncs</definition>
+        <argsstring></argsstring>
+        <name>eventRpcInvocationFuncs</name>
+        <initializer>= new List&lt;MethodDefinition&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="32" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a3d905d8fc4be1d66f63f6519d9eda116" prot="private" static="no" mutable="no">
+        <type>readonly TypeDefinition</type>
+        <definition>readonly TypeDefinition Mirror.Weaver.NetworkBehaviourProcessor.netBehaviourSubclass</definition>
+        <argsstring></argsstring>
+        <name>netBehaviourSubclass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="34" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4da42650c2d3c3885f7487286affbb56" prot="public" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string Mirror.Weaver.NetworkBehaviourProcessor.ProcessedFunctionName</definition>
+        <argsstring></argsstring>
+        <name>ProcessedFunctionName</name>
+        <initializer>= &quot;MirrorProcessed&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="208" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a9981e8b5409f95e1a224821a22993a6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.Weaver.NetworkBehaviourProcessor.NetworkBehaviourProcessor</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>NetworkBehaviourProcessor</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="48" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a13a3ea4c5ad3d2a585a856c3fe4d4789" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.Weaver.NetworkBehaviourProcessor.Process</definition>
+        <argsstring>()</argsstring>
+        <name>Process</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="55" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="55" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a45b628099ea3bab479f3d17432925513" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.WriteClientActiveCheck</definition>
+        <argsstring>(ILProcessor worker, string mdName, Instruction label, string errString)</argsstring>
+        <name>WriteClientActiveCheck</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mdName</declname>
+        </param>
+        <param>
+          <type>Instruction</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>errString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="110" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="110" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1acd11518d37ca93efd9efc6d9e7085d29" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.WriteServerActiveCheck</definition>
+        <argsstring>(ILProcessor worker, string mdName, Instruction label, string errString)</argsstring>
+        <name>WriteServerActiveCheck</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mdName</declname>
+        </param>
+        <param>
+          <type>Instruction</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>errString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="126" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="126" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a541201dbffad7519aba170815401cbdd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.WriteSetupLocals</definition>
+        <argsstring>(ILProcessor worker)</argsstring>
+        <name>WriteSetupLocals</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="138" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ac0c65a390221d82e8ad0a8f78fc3f433" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.WriteCreateWriter</definition>
+        <argsstring>(ILProcessor worker)</argsstring>
+        <name>WriteCreateWriter</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="144" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="144" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af4b4d071c168c2cb78353e4d8f1563b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.WriteRecycleWriter</definition>
+        <argsstring>(ILProcessor worker)</argsstring>
+        <name>WriteRecycleWriter</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="151" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="151" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a83273c99ea72f663f27b8684979b1563" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.WriteArguments</definition>
+        <argsstring>(ILProcessor worker, MethodDefinition method, RemoteCallType callType)</argsstring>
+        <name>WriteArguments</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="158" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="158" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4d5adab832049528050fadff93433cf4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.WasProcessed</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>WasProcessed</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="211" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1acd704a7e196663da7145f5b8876c994a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.MarkAsProcessed</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>MarkAsProcessed</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="216" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="216" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a9bf8d8bc4c6bcb48bd252afcb703ed58" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.ReadArguments</definition>
+        <argsstring>(MethodDefinition method, ILProcessor worker, RemoteCallType callType)</argsstring>
+        <name>ReadArguments</name>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="815" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="815" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a610ba3462bd7b07fbbd985460cc8f18f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.NetworkBehaviourProcessor.AddInvokeParameters</definition>
+        <argsstring>(ICollection&lt; ParameterDefinition &gt; collection)</argsstring>
+        <name>AddInvokeParameters</name>
+        <param>
+          <type>ICollection&lt; ParameterDefinition &gt;</type>
+          <declname>collection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="869" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="869" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a161a8940ce91d68aca425cc0c5344d83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.ValidateRemoteCallAndParameters</definition>
+        <argsstring>(MethodDefinition method, RemoteCallType callType)</argsstring>
+        <name>ValidateRemoteCallAndParameters</name>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="878" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="878" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aa4a1660b19d2ab32850cfc8a42a78e1a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.IsSenderConnection</definition>
+        <argsstring>(ParameterDefinition param, RemoteCallType callType)</argsstring>
+        <name>IsSenderConnection</name>
+        <param>
+          <type>ParameterDefinition</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="962" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="962" bodyend="975"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ab8b85f91f7c660c3d40d4d3675421ddc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.GenerateConstants</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateConstants</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="228" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="228" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ae7781063f2ea11de8a1cf0d6d43807ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.GenerateRegisterRemoteDelegate</definition>
+        <argsstring>(ILProcessor worker, MethodReference registerMethod, MethodDefinition func, string cmdName)</argsstring>
+        <name>GenerateRegisterRemoteDelegate</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodReference</type>
+          <declname>registerMethod</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cmdName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="334" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="334" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4be9663f1ebf091595f41dbd2a7be7a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.GenerateRegisterCommandDelegate</definition>
+        <argsstring>(ILProcessor worker, MethodReference registerMethod, MethodDefinition func, CmdResult cmdResult)</argsstring>
+        <name>GenerateRegisterCommandDelegate</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodReference</type>
+          <declname>registerMethod</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result" kindref="compound">CmdResult</ref></type>
+          <declname>cmdResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="347" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="347" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a635047a05314d2f4107fc7c9acebe87b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.GenerateSerialization</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateSerialization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="365" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="365" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a8ade98f7a2df44efa8edc9b12df479e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.DeserializeField</definition>
+        <argsstring>(FieldDefinition syncVar, ILProcessor worker, MethodDefinition deserialize)</argsstring>
+        <name>DeserializeField</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>deserialize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="508" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="508" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a44ec1ce3b3e04cd775c79c6ec649b9fc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.DeserializeNetworkIdentityField</definition>
+        <argsstring>(FieldDefinition syncVar, ILProcessor worker, MethodDefinition deserialize, MethodDefinition hookMethod)</argsstring>
+        <name>DeserializeNetworkIdentityField</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>deserialize</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>hookMethod</declname>
+        </param>
+        <briefdescription>
+<para>[SyncVar] GameObject/NetworkIdentity? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>syncVar</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>worker</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserialize</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialState</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hookResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="542" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="542" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a84dabe6c1f38c5b609f0ce972ffe608b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.DeserializeNormalField</definition>
+        <argsstring>(FieldDefinition syncVar, ILProcessor serWorker, MethodDefinition deserialize, MethodDefinition hookMethod)</argsstring>
+        <name>DeserializeNormalField</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <param>
+          <type>ILProcessor</type>
+          <declname>serWorker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>deserialize</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>hookMethod</declname>
+        </param>
+        <briefdescription>
+<para>[SyncVar] int/float/struct/etc.? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>syncVar</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serWorker</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserialize</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialState</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hookResult</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="649" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="649" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a1a0f16008908c02367d6525b56247bbe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.GenerateDeSerialization</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateDeSerialization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="727" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="727" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aff0a41f38ab1b1c720cfd7047a35c219" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.ProcessMethods</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessMethods</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="977" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="977" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ab192355e4075c9b6be632a96ebc894d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.ProcessClientRpc</definition>
+        <argsstring>(HashSet&lt; string &gt; names, MethodDefinition md, CustomAttribute clientRpcAttr)</argsstring>
+        <name>ProcessClientRpc</name>
+        <param>
+          <type>HashSet&lt; string &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>md</declname>
+        </param>
+        <param>
+          <type>CustomAttribute</type>
+          <declname>clientRpcAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="1009" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="1009" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aa815b8d6de1890dda30343603025c5c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.ProcessTargetRpc</definition>
+        <argsstring>(HashSet&lt; string &gt; names, MethodDefinition md, CustomAttribute targetRpcAttr)</argsstring>
+        <name>ProcessTargetRpc</name>
+        <param>
+          <type>HashSet&lt; string &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>md</declname>
+        </param>
+        <param>
+          <type>CustomAttribute</type>
+          <declname>targetRpcAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="1048" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="1048" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a037c408a47aa0a97045efc3b93d9a28f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Weaver.NetworkBehaviourProcessor.ProcessCommand</definition>
+        <argsstring>(HashSet&lt; string &gt; names, MethodDefinition md, CustomAttribute commandAttr)</argsstring>
+        <name>ProcessCommand</name>
+        <param>
+          <type>HashSet&lt; string &gt;</type>
+          <declname>names</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>md</declname>
+        </param>
+        <param>
+          <type>CustomAttribute</type>
+          <declname>commandAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="1076" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="1076" bodyend="1109"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af3c53726b0ff441edc20b2d802ac47be" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.IsNetworkIdentityField</definition>
+        <argsstring>(FieldDefinition syncVar)</argsstring>
+        <name>IsNetworkIdentityField</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <briefdescription>
+<para>Is the field a <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> or GameObject </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>syncVar</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="528" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="528" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ae274028123f450285e2d6133d5d3308c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.ValidateFunction</definition>
+        <argsstring>(MethodReference md)</argsstring>
+        <name>ValidateFunction</name>
+        <param>
+          <type>MethodReference</type>
+          <declname>md</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="891" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="891" bodyend="909"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1abc3c48c6dee3b9a8b6bf7cfcf7204e10" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.ValidateParameters</definition>
+        <argsstring>(MethodReference method, RemoteCallType callType)</argsstring>
+        <name>ValidateParameters</name>
+        <param>
+          <type>MethodReference</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="912" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="912" bodyend="923"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a44035ef68806efa21d151914628f256e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.NetworkBehaviourProcessor.ValidateParameter</definition>
+        <argsstring>(MethodReference method, ParameterDefinition param, RemoteCallType callType, bool firstParam)</argsstring>
+        <name>ValidateParameter</name>
+        <param>
+          <type>MethodReference</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>ParameterDefinition</type>
+          <declname>param</declname>
+        </param>
+        <param>
+          <type>RemoteCallType</type>
+          <declname>callType</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>firstParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="926" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="926" bodyend="960"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>processes SyncVars, Cmds, Rpcs, etc. of NetworkBehaviours </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="19" column="5" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="20" bodyend="1110"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a610ba3462bd7b07fbbd985460cc8f18f" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>AddInvokeParameters</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af999aaba4196a493a152e9e5bbe33d96" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>clientRpcInvocationFuncs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a465ae46377a34feb2b562cfcc5a26258" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>clientRpcs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a2b06427a12f895d75b0747d43180a311" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>commandInvocationFuncs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aebd03aa684423b2c9c019366daa346ed" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>commands</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a8ade98f7a2df44efa8edc9b12df479e9" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>DeserializeField</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a44ec1ce3b3e04cd775c79c6ec649b9fc" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>DeserializeNetworkIdentityField</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a84dabe6c1f38c5b609f0ce972ffe608b" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>DeserializeNormalField</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a6b261b02fafdd43c2a91cf6ab3c599e1" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>eventRpcInvocationFuncs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a1598ece8e8e0dc0015f311076ac21a09" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>eventRpcs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ab8b85f91f7c660c3d40d4d3675421ddc" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>GenerateConstants</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a1a0f16008908c02367d6525b56247bbe" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>GenerateDeSerialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4be9663f1ebf091595f41dbd2a7be7a4" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>GenerateRegisterCommandDelegate</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ae7781063f2ea11de8a1cf0d6d43807ea" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>GenerateRegisterRemoteDelegate</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a635047a05314d2f4107fc7c9acebe87b" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>GenerateSerialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af3c53726b0ff441edc20b2d802ac47be" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>IsNetworkIdentityField</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aa4a1660b19d2ab32850cfc8a42a78e1a" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>IsSenderConnection</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1acd704a7e196663da7145f5b8876c994a" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>MarkAsProcessed</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a3d905d8fc4be1d66f63f6519d9eda116" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>netBehaviourSubclass</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a9981e8b5409f95e1a224821a22993a6b" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>NetworkBehaviourProcessor</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a13a3ea4c5ad3d2a585a856c3fe4d4789" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>Process</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ab192355e4075c9b6be632a96ebc894d1" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ProcessClientRpc</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a037c408a47aa0a97045efc3b93d9a28f" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ProcessCommand</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4da42650c2d3c3885f7487286affbb56" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ProcessedFunctionName</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aff0a41f38ab1b1c720cfd7047a35c219" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ProcessMethods</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1aa815b8d6de1890dda30343603025c5c3" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ProcessTargetRpc</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a9bf8d8bc4c6bcb48bd252afcb703ed58" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ReadArguments</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a6b23551a2d1600ebfaf6b1d3cbf6c502" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>syncObjects</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a71f8685b27b72276e2666b7ad06c175f" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>syncVarNetIds</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a598609706b9cf68647e0066d319dc7be" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>syncVars</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a49ab15097f7e08f7a05a6e9457c136ac" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>targetRpcInvocationFuncs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a365d63b75f70a2c50a386ad3fc80575c" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>targetRpcs</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ae274028123f450285e2d6133d5d3308c" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ValidateFunction</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a44035ef68806efa21d151914628f256e" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ValidateParameter</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1abc3c48c6dee3b9a8b6bf7cfcf7204e10" prot="private" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ValidateParameters</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a161a8940ce91d68aca425cc0c5344d83" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>ValidateRemoteCallAndParameters</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a4d5adab832049528050fadff93433cf4" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WasProcessed</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a83273c99ea72f663f27b8684979b1563" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteArguments</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a45b628099ea3bab479f3d17432925513" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteClientActiveCheck</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1ac0c65a390221d82e8ad0a8f78fc3f433" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteCreateWriter</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1af4b4d071c168c2cb78353e4d8f1563b1" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteRecycleWriter</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1acd11518d37ca93efd9efc6d9e7085d29" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteServerActiveCheck</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor_1a541201dbffad7519aba170815401cbdd" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor</scope><name>WriteSetupLocals</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

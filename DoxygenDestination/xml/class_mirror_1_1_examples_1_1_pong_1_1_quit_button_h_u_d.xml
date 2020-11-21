@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_examples_1_1_pong_1_1_quit_button_h_u_d" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Examples::Pong::QuitButtonHUD</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_pong_1_1_quit_button_h_u_d_1a541f07ba2aef8b47d56feac72a6b6b7b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.Pong.QuitButtonHUD.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/QuitButtonHUD.cs" line="10" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/QuitButtonHUD.cs" bodystart="10" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simular to <ref refid="class_mirror_1_1_network_manager_h_u_d" kindref="compound">NetworkManagerHUD</ref> but just quit buttons </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.Pong.QuitButtonHUD</label>
+        <link refid="class_mirror_1_1_examples_1_1_pong_1_1_quit_button_h_u_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.Pong.QuitButtonHUD</label>
+        <link refid="class_mirror_1_1_examples_1_1_pong_1_1_quit_button_h_u_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/QuitButtonHUD.cs" line="8" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts/QuitButtonHUD.cs" bodystart="9" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_examples_1_1_pong_1_1_quit_button_h_u_d_1a541f07ba2aef8b47d56feac72a6b6b7b" prot="private" virt="non-virtual"><scope>Mirror::Examples::Pong::QuitButtonHUD</scope><name>OnGUI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

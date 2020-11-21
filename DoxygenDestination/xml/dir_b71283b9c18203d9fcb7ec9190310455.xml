@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_b71283b9c18203d9fcb7ec9190310455" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy</compoundname>
+    <innerfile refid="_telepathy_2_client_8cs">Client.cs</innerfile>
+    <innerfile refid="_common_8cs">Common.cs</innerfile>
+    <innerfile refid="_event_type_8cs">EventType.cs</innerfile>
+    <innerfile refid="_runtime_2_transport_2_telepathy_2_logger_8cs">Logger.cs</innerfile>
+    <innerfile refid="_message_8cs">Message.cs</innerfile>
+    <innerfile refid="_network_stream_extensions_8cs">NetworkStreamExtensions.cs</innerfile>
+    <innerfile refid="_safe_queue_8cs">SafeQueue.cs</innerfile>
+    <innerfile refid="_telepathy_2_server_8cs">Server.cs</innerfile>
+    <innerfile refid="_thread_extensions_8cs">ThreadExtensions.cs</innerfile>
+    <innerfile refid="_utils_8cs">Utils.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/"/>
+  </compounddef>
+</doxygen>

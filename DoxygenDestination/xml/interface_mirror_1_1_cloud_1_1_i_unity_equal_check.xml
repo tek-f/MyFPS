@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_mirror_1_1_cloud_1_1_i_unity_equal_check" kind="interface" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::IUnityEqualCheck</compoundname>
+    <derivedcompoundref refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" prot="public" virt="non-virtual">Mirror.Cloud.ICoroutineRunner</derivedcompoundref>
+    <briefdescription>
+<para>Adds Extension to check if unity object is null. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use these methods to stop MissingReferenceException</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Mirror.Cloud.ICoroutineRunner</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mirror.Cloud.ApiConnector</label>
+        <link refid="class_mirror_1_1_cloud_1_1_api_connector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.IUnityEqualCheck</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IUnityEqualCheck.cs" line="9" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IUnityEqualCheck.cs" bodystart="10" bodyend="12"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

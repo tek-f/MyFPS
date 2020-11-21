@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::Exceptions::ServerListenerSocketException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1a4bfbdcac73bd2a49c06a6b506ddb1e1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.ServerListenerSocketException.ServerListenerSocketException</definition>
+        <argsstring>()</argsstring>
+        <name>ServerListenerSocketException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" line="8" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1aea2a733cfe64c4d2f2c05de3261b612a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.ServerListenerSocketException.ServerListenerSocketException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>ServerListenerSocketException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" line="12" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1a6ad9dbaae9f6a85e52022880c6ac29cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.ServerListenerSocketException.ServerListenerSocketException</definition>
+        <argsstring>(string message, Exception inner)</argsstring>
+        <name>ServerListenerSocketException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" line="16" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.ServerListenerSocketException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.ServerListenerSocketException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/ServerListenerSocketException.cs" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1a4bfbdcac73bd2a49c06a6b506ddb1e1a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::ServerListenerSocketException</scope><name>ServerListenerSocketException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1aea2a733cfe64c4d2f2c05de3261b612a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::ServerListenerSocketException</scope><name>ServerListenerSocketException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception_1a6ad9dbaae9f6a85e52022880c6ac29cf" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::ServerListenerSocketException</scope><name>ServerListenerSocketException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

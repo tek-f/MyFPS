@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_releasenote_8txt" kind="file" language="C++">
+    <compoundname>Releasenote.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">GameAssetStudio</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">http:</highlight><highlight class="comment">//gameassetstudio.com/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/>Ver<sp/>1.16<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">1.<sp/>The<sp/>viewer<sp/>script<sp/>has<sp/>been<sp/>changed<sp/>from<sp/>javascript<sp/>to<sp/>C#.</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/>Ver<sp/>1.15<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">[Unity5]</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">1.<sp/>We<sp/>have<sp/>adjusted<sp/>the<sp/>Shader<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal"><sp/>value<sp/>according<sp/>to<sp/>DirectionalLight<sp/>intensity<sp/>1.0.</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/>===========================================</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/>Ver<sp/>1.14<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">1.<sp/>In<sp/>Unity<sp/>4.6.2<sp/>and<sp/>higher<sp/>versions<sp/>the<sp/>Cutoff<sp/>in<sp/>the<sp/>toon_cutoff<sp/>shader<sp/>wasn</highlight><highlight class="stringliteral">&apos;t<sp/>working<sp/>properly.<sp/>This<sp/>has<sp/>been<sp/>fixed.</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral">2.<sp/>Adjusted<sp/>the<sp/>light<sp/>in<sp/>viewer.</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral">3.<sp/>Adjusted<sp/>the<sp/>light<sp/>in<sp/>Twin<sp/>viewer.</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral">4.<sp/>Updated<sp/>the<sp/>settings<sp/>file<sp/>for<sp/>the<sp/>Twin<sp/>Viewer.</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral">5.<sp/>You<sp/>can<sp/>now<sp/>set<sp/>the<sp/>Alpha<sp/>cutoff<sp/>of<sp/>the<sp/>toon_cutoff<sp/>shader.<sp/>0.9<sp/>is<sp/>the<sp/>recommended<sp/>setting.</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/>Ver<sp/>1.13<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral">1.Adjusted<sp/>the<sp/>Shadow<sp/>Color<sp/>settings<sp/>of<sp/>the<sp/>shader</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral">-<sp/>m01_schoolwear_000_h</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral">-<sp/>m01_schoolwear_000_m</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral">-<sp/>m01_schoolwear_000_l</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral">-<sp/>m01_schoolwear_100_h</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">-<sp/>m01_schoolwear_100_m</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral">-<sp/>m01_schoolwear_100_l</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral">-<sp/>m01_schoolwear_200_h</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral">-<sp/>m01_schoolwear_200_m</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral">-<sp/>m01_schoolwear_200_l</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral">-<sp/>m01_schoolwear_300_h</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral">-<sp/>m01_schoolwear_300_m</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral">-<sp/>m01_schoolwear_300_l</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral">-<sp/>m01_schoolwear_400_h</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral">-<sp/>m01_schoolwear_400_m</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral">-<sp/>m01_schoolwear_400_l</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral">-<sp/>m01_schoolwear_410_h</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral">-<sp/>m01_schoolwear_410_m</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral">-<sp/>m01_schoolwear_410_l</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral">-<sp/>m01_schoolwear_420_h</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral">-<sp/>m01_schoolwear_420_m</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral">-<sp/>m01_schoolwear_420_l</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral">-<sp/>m01_casualwear_00_h</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral">-<sp/>m01_casualwear_00_m</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral">-<sp/>m01_casualwear_00_l</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral">-<sp/>m01_casualwear_01_h</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral">-<sp/>m01_casualwear_01_m</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral">-<sp/>m01_casualwear_01_l</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral">-<sp/>m01_bathtowel_00_h</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral">-<sp/>m01_bathtowel_00_m</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral">-<sp/>m01_bathtowel_00_l</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral">-<sp/>m01_apron_00_h</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral">-<sp/>m01_apron_00_m</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral">-<sp/>m01_apron_00_l</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral">-<sp/>m01_jersey_00_h</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral">-<sp/>m01_jersey_00_m</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral">-<sp/>m01_jersey_00_l</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/>Ver<sp/>1.12<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral">1.Added<sp/>3<sp/>new<sp/>models.</highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral">-<sp/>m01_schoolwear_400</highlight></codeline>
+<codeline lineno="80"><highlight class="stringliteral">-<sp/>m01_schoolwear_410</highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral">-<sp/>m01_schoolwear_420</highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/>Ver<sp/>1.02<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral">===========================================</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral">1.The<sp/>following<sp/>simplified<sp/>versions<sp/>of<sp/>the<sp/>idle<sp/>animations<sp/>have<sp/>been<sp/>added.</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral">-<sp/>m01@f01_idle_01</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral">-<sp/>m01@f01_idle_11</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral">2.Some<sp/>directory<sp/>names<sp/>have<sp/>been<sp/>changed.</highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral">3.Some<sp/>file<sp/>names<sp/>have<sp/>been<sp/>changed.</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral">4.Fixed<sp/>ImportFBX<sp/>Errors<sp/>that<sp/>had<sp/>been<sp/>occurring<sp/>with<sp/>puppet_00_h.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Releasenote.txt"/>
+  </compounddef>
+</doxygen>

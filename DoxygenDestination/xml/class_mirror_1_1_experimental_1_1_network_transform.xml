@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_experimental_1_1_network_transform" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Experimental::NetworkTransform</compoundname>
+    <basecompoundref refid="class_mirror_1_1_experimental_1_1_network_transform_base" prot="public" virt="non-virtual">Mirror.Experimental.NetworkTransformBase</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_experimental_1_1_network_transform_1a1fdc4614535e7ff673d8ba9ca867eb51" prot="protected" static="no" mutable="no">
+        <type>override Transform</type>
+        <definition>override Transform Mirror.Experimental.NetworkTransform.targetTransform</definition>
+        <argsstring></argsstring>
+        <name>targetTransform</name>
+        <initializer>=&gt; transform</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransform.cs" line="10" column="38" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransform.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.Experimental.NetworkTransform</label>
+        <link refid="class_mirror_1_1_experimental_1_1_network_transform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkTransformBase</label>
+        <link refid="class_mirror_1_1_experimental_1_1_network_transform_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.Experimental.NetworkTransform</label>
+        <link refid="class_mirror_1_1_experimental_1_1_network_transform"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkTransformBase</label>
+        <link refid="class_mirror_1_1_experimental_1_1_network_transform_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>goal</edgelabel>
+          <edgelabel>start</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IDisposable</label>
+      </node>
+      <node id="5">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="7">
+        <label>Mirror.Experimental.NetworkTransformBase.DataPoint</label>
+        <link refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransform.cs" line="8" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransform.cs" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_behaviour_1a0915f57f9b3f057d544235740e920a2f" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>ClearAllDirtyBits</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a8acb1826282ee71b817e166c4af97bf4" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>clientAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b01d534f1b7fb5ab270423a108ba277" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>ComponentIndex</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae0365575095f9988d6ae2bfef337573a" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>connectionToClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aa490124a374f6e82a780926b2d11fc23" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>connectionToServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7151d225ada4d6ffc1bbc094cc803f26" prot="package" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>DeSerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a0d125d48839a57c368c039e6476b521f" prot="package" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>DeSerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a79ce2238da87ce060a835113911f3bea" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>DeserializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abb5fb1c5753b32375a85841174ea8013" prot="package" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>DirtyObjectBits</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1ae56b248e85769aee5517c3b90527eefa" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>excludeOwnerUpdate</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab794f957ea97db9dec659cbbfe9208f4" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>GetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a48124410c758c6e85f2d5bdb0872e9a6" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>getSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46b6f2edcee89cede23050a2177098df" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>GetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1af5d050ace3d03e90e819e6429f8ed746" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>goal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abd651058bdaeaf65f691fad5bc366836" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>hasAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a3c5d9ef0f604ec39acc7f03269d80656" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>InitSyncObject</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1ad59569b7df50dbf454aedc33a46a1903" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>interpolatePosition</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a0ae243a0289b52b81ff072efb1799e0c" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>interpolateRotation</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1af4f23b78389170f37d670e1188d4b259" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>interpolateScale</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea84bcfc5a512ecb2b7a601bf1598d24" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>InvokeCommand</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a52778428d8b4058c6db0db9e87f88394" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>InvokeRPC</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a5b931086714c4cfb3dde3118dbfdc7a9" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>InvokeSyncEvent</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab30e4e9deea5ea728bbf8910ba4aa0fc" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>isClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abe78215943243c0ee91c2bd9a0057915" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>isClientOnly</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a76bf9eb3b49700f653620bbf5b7aa826" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a09f7e5bb2181018bc28fa2c29ed09e8c" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>isLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a6a65dec5ade34544074c2f997932e17a" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>isServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8ace9ae035053dab9538482ff74d62ec" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>isServerOnly</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a45662545f282bd5271c8660cb3c77848" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>lastPosition</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a509712274f00dfd5e9c24c6336ba581a" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>lastRotation</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a12b74b153f68808a9a7c50e1f21a4335" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>lastScale</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a353ad279617c03ab349433f1f38c73bd" prot="package" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>lastSyncTime</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a371f495d326fdf8f1ab5768fbcf271f8" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>localPositionSensitivity</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1ab2a83354011f1faf08db596189d57a92" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>localRotationSensitivity</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a8c028649d9f976b1c6a2df1b6a96005d" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>localScaleSensitivity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae90a46be8160b84d1256c397718f7ff8" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>netId</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2561021cd1fc5a4fe504a9822c281d11" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>netIdentity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a26853c614ebc9c116a7d4f045d723be1" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnDeserialize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea16efb5a763d21dbaa89a6ed88d2bfd" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnNetworkDestroy</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1af8b7933f4a95d31db460935cd7906c0c" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnSerialize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a1e36e4640f967426ffc113e26e649345" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStartAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a699d2fda0c0c8843d8964ffed01d016c" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8506dcb5c3cbc297a667e795cc9eafd0" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStartLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7849fd960925fc37005a1b8f2aa065b3" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1afe494cde0781a38644c80ec14e177f59" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStopAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1adabae0597e1228ad256cb35d1616c1ca" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a27dc77be5d2117b34157b3836f333690" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a08c0ff954baaab3c19ddab7bbd80d09a" prot="package" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>ResetSyncObjects</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac1568659d9c736766b14696efbb4dcb1" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SendCommandInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8896e37754d4e3a6a2ed2102aebeee9e" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SendEventInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea3fef3f468d7fdb63c3d550f238e84a" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SendRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8bab38b2cbc1df4cba42abf401635a42" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SendTargetRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ad49cab5e0ac5e4dace701541c105d371" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4ba0673f1259fbf07a169aa6ef95dd45" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ace23cde46937b5fe490499d983a7e6e3" prot="public" virt="virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SerializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1addda8533ab954db571bda550862034f7" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SetDirtyBit</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4087b2993b045a197b9b653176411f05" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SetSyncVar&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac3e14f45a522cec35780c9afc367e985" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a23b3e60e1abdf4468beb6924bace3ce4" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>setSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b4fc9f99fffd61bf67b4e7995d1d4bb" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1aa8f8e8decdb9e93f90c4144de8f055e6" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>start</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a94dbe38f0930d3bbde326d0eed7b6f83" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncInterval</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1acf0616ac2f967bdd47bf0f579cefe8a7" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncMode</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac9c5caa586acee344c189db183e95efe" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncObjects</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a36c78986d6b10391f1692d7db8d57ebf" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncPosition</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1a860d464e2491c31b0c984bf225ed96b0" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncRotation</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_base_1aa27ef95fd03864481662dd4a6f03e553" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncScale</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4bb1e7724acf59e001659f0fe0b90c8f" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>syncVarDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46c40d5ff8bc8bea02e3c0b3886e768a" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SyncVarEqual&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7a4e336c889c531a69ec0f51900d0657" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SyncVarGameObjectEqual</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abdba57d6c8ff0ac89767ca07acd4ffa9" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>SyncVarNetworkIdentityEqual</name></member>
+      <member refid="class_mirror_1_1_experimental_1_1_network_transform_1a1fdc4614535e7ff673d8ba9ca867eb51" prot="protected" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransform</scope><name>targetTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

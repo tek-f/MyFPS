@@ -1,0 +1,747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_sync_set" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::SyncSet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ISet&lt; T &gt;</basecompoundref>
+    <basecompoundref refid="interface_mirror_1_1_sync_object" prot="public" virt="non-virtual">Mirror.SyncObject</basecompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_sync_hash_set" prot="public" virt="non-virtual">Mirror.SyncHashSet&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_sync_sorted_set" prot="public" virt="non-virtual">Mirror.SyncSortedSet&lt; T &gt;</derivedcompoundref>
+    <innerclass refid="struct_mirror_1_1_sync_set_1_1_change" prot="private">Mirror::SyncSet::Change</innerclass>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_set_1a2244f575435f82d71dbca6cf38db3033" prot="protected" static="no" mutable="no">
+        <type>readonly ISet&lt; T &gt;</type>
+        <definition>readonly ISet&lt;T&gt; Mirror.SyncSet&lt; T &gt;.objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="13" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_set_1ad080c6fc130616b4e059949dbdcd9c32" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncSet&lt; T &gt;.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <initializer>=&gt; objects.Count</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="15" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_set_1a6ed52f0a6912d1e1d76ff17448c1b463" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsDirty</name>
+        <initializer>=&gt; changes.Count &gt; 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="55" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_sync_set_1a0f7d98a30b58def0dc3ee60887b1e622" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsReadOnly</definition>
+        <argsstring></argsstring>
+        <name>IsReadOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="16" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_mirror_1_1_sync_set_1adef73f5d1fe1aaab9a59a04ece3567a9" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>SyncSetChanged</type>
+        <definition>SyncSetChanged Mirror.SyncSet&lt; T &gt;.Callback</definition>
+        <argsstring></argsstring>
+        <name>Callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="17" column="37" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_set_1ac874613851878aafdbf434d9264dbfad" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; Change &gt;</type>
+        <definition>readonly List&lt;Change&gt; Mirror.SyncSet&lt; T &gt;.changes</definition>
+        <argsstring></argsstring>
+        <name>changes</name>
+        <initializer>= new List&lt;Change&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="32" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_set_1adf643a8251f23f7bd60a31d891711ce8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncSet&lt; T &gt;.changesAhead</definition>
+        <argsstring></argsstring>
+        <name>changesAhead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="37" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a7b57519e175a9e9ef496a98b22d0748b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Mirror.SyncSet&lt; T &gt;.SyncSetChanged</definition>
+        <argsstring>(Operation op, T item)</argsstring>
+        <name>SyncSetChanged</name>
+        <param>
+          <type>Operation</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="11" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a0595d18c27ffbe88bed0d926bfc0ec9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a803cfba7f394ac8520d148c398fa438a">Reset</reimplements>
+        <briefdescription>
+<para>Resets the <ref refid="interface_mirror_1_1_sync_object" kindref="compound">SyncObject</ref> so that it can be re-used </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="44" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a7fdaea588a80a031ad92775d503e9aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a3a13f043e733d312152a7fadd1bdf4b2">Flush</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="59" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a2f13a9423a6edb8878f20f991f273133" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.OnSerializeAll</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeAll</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1a15c37f16b38c44c23294a8359ea4e2d0">OnSerializeAll</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="81" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="81" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a7d9c57b5a9d7cf67488ff38932b85c16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.OnSerializeDelta</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeDelta</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1aebaaef8ba60bb926015c7359508bccb3">OnSerializeDelta</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="98" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="98" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a075867f37b810f8d210fdc83ae9ea7cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.OnDeserializeAll</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeAll</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1ac33f9af9e2caab20e00fee5dc9b74165">OnDeserializeAll</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="124" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="124" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1af584f6682c42d099b76a7c9d6fe3a230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.OnDeserializeDelta</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeDelta</name>
+        <reimplements refid="interface_mirror_1_1_sync_object_1aa6d44e3d7d2a631bd402504c95143a12">OnDeserializeDelta</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="147" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="147" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1aeecd3184bfa8d28b77156a0c588dfb8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.Add</definition>
+        <argsstring>(T item)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="201" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="201" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1aa80f69d37b552f9d6d951634b643c64b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="219" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="219" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a1651b7901fd6bb7b1f4a21dfd58dd348" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.Contains</definition>
+        <argsstring>(T item)</argsstring>
+        <name>Contains</name>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="225" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a35a25970c015ff5781da04636c7066f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.CopyTo</definition>
+        <argsstring>(T[] array, int index)</argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type>T[]</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="227" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a3118c5bc63bcf829640c83e531f7ff0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.Remove</definition>
+        <argsstring>(T item)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="229" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="229" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a800df5db36fc96f8c5c11a1a31eeeb17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerator&lt; T &gt;</type>
+        <definition>IEnumerator&lt;T&gt; Mirror.SyncSet&lt; T &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="239" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a4ffb4a8da5eddf923e140a1cd349c2e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.ExceptWith</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>ExceptWith</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="243" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="243" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1ae70e4bad8375d246b5be091f3e564edd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.IntersectWith</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>IntersectWith</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="258" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="258" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1ad06599a50382a5136734375f6c7aff89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsProperSubsetOf</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>IsProperSubsetOf</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="284" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1af378078419b326ec5e7c80fb099550a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsProperSupersetOf</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>IsProperSupersetOf</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="286" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a7f7677b599c155ed97725ef272c75cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsSubsetOf</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>IsSubsetOf</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="288" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a4cca387686587839cf0a2028c3b07864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.IsSupersetOf</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>IsSupersetOf</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="290" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a1f41ff129c7c1cefcf9b2415e6012b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.Overlaps</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>Overlaps</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="292" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a2a24871d64fc3c5052e592341fa706a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncSet&lt; T &gt;.SetEquals</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>SetEquals</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="294" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a0c72162bf85de6f8ea84be23d2e62712" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.SymmetricExceptWith</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>SymmetricExceptWith</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="296" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="296" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a60007e72ae2d378aafc334a12ba67daf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.UnionWith</definition>
+        <argsstring>(IEnumerable&lt; T &gt; other)</argsstring>
+        <name>UnionWith</name>
+        <param>
+          <type>IEnumerable&lt; T &gt;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="314" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="314" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a62900cd2938cce5148c09f86848092bb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.SyncSet&lt; T &gt;.SyncSet</definition>
+        <argsstring>(ISet&lt; T &gt; objects)</argsstring>
+        <name>SyncSet</name>
+        <param>
+          <type>ISet&lt; T &gt;</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="39" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1ab91d10a9975528adec18fcb656476c71" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.SyncSet&lt; T &gt;.SerializeItem</definition>
+        <argsstring>(NetworkWriter writer, T item)</argsstring>
+        <name>SerializeItem</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="52" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1ac24c585267d8db926eaa865cea42ec2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>T</type>
+        <definition>virtual T Mirror.SyncSet&lt; T &gt;.DeserializeItem</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>DeserializeItem</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="53" column="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a8b17e7386a1404c070adf84ab6f4b3a0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.AddOperation</definition>
+        <argsstring>(Operation op, T item)</argsstring>
+        <name>AddOperation</name>
+        <param>
+          <type>Operation</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="61" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="61" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a5f9d0a78dca9503a11d5b729066452ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.AddOperation</definition>
+        <argsstring>(Operation op)</argsstring>
+        <name>AddOperation</name>
+        <param>
+          <type>Operation</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1ad5398b5c0f4a2f69775c72e2f8f1ca0e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void ICollection&lt; T &gt;.</type>
+        <definition>void ICollection&lt;T&gt;. Mirror.SyncSet&lt; T &gt;.Add</definition>
+        <argsstring>(T item)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>T</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="211" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="211" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1a932cd5c440419c97aea2ec0c14ed4b48" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerator IEnumerable.</type>
+        <definition>IEnumerator IEnumerable. Mirror.SyncSet&lt; T &gt;.GetEnumerator</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnumerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="241" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_set_1aca89ad003571aceba49ece52f94f3301" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncSet&lt; T &gt;.IntersectWithSet</definition>
+        <argsstring>(ISet&lt; T &gt; otherSet)</argsstring>
+        <name>IntersectWithSet</name>
+        <param>
+          <type>ISet&lt; T &gt;</type>
+          <declname>otherSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="271" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="271" bodyend="282"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Mirror::SyncSortedSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_sorted_set"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.SyncSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="4">
+        <label>Mirror::SyncHashSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_hash_set"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ISet&lt; T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.SyncSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_set"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="2">
+        <label>ISet&lt; T &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" line="9" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncSet.cs" bodystart="10" bodyend="324"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_sync_set_1aeecd3184bfa8d28b77156a0c588dfb8f" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Add</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ad5398b5c0f4a2f69775c72e2f8f1ca0e" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Add</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a8b17e7386a1404c070adf84ab6f4b3a0" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>AddOperation</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a5f9d0a78dca9503a11d5b729066452ad" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>AddOperation</name></member>
+      <member refid="class_mirror_1_1_sync_set_1adef73f5d1fe1aaab9a59a04ece3567a9" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Callback</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ac874613851878aafdbf434d9264dbfad" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>changes</name></member>
+      <member refid="class_mirror_1_1_sync_set_1adf643a8251f23f7bd60a31d891711ce8" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>changesAhead</name></member>
+      <member refid="class_mirror_1_1_sync_set_1aa80f69d37b552f9d6d951634b643c64b" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Clear</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a1651b7901fd6bb7b1f4a21dfd58dd348" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Contains</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a35a25970c015ff5781da04636c7066f0" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>CopyTo</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ad080c6fc130616b4e059949dbdcd9c32" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Count</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ac24c585267d8db926eaa865cea42ec2f" prot="protected" virt="virtual"><scope>Mirror::SyncSet</scope><name>DeserializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a4ffb4a8da5eddf923e140a1cd349c2e9" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>ExceptWith</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7fdaea588a80a031ad92775d503e9aad" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Flush</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a800df5db36fc96f8c5c11a1a31eeeb17" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>GetEnumerator</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a932cd5c440419c97aea2ec0c14ed4b48" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>GetEnumerator</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ae70e4bad8375d246b5be091f3e564edd" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IntersectWith</name></member>
+      <member refid="class_mirror_1_1_sync_set_1aca89ad003571aceba49ece52f94f3301" prot="private" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IntersectWithSet</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a6ed52f0a6912d1e1d76ff17448c1b463" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ad06599a50382a5136734375f6c7aff89" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsProperSubsetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1af378078419b326ec5e7c80fb099550a8" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsProperSupersetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0f7d98a30b58def0dc3ee60887b1e622" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsReadOnly</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7f7677b599c155ed97725ef272c75cd4" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsSubsetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a4cca387686587839cf0a2028c3b07864" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>IsSupersetOf</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2244f575435f82d71dbca6cf38db3033" prot="protected" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>objects</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a075867f37b810f8d210fdc83ae9ea7cb" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>OnDeserializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_set_1af584f6682c42d099b76a7c9d6fe3a230" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>OnDeserializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2f13a9423a6edb8878f20f991f273133" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>OnSerializeAll</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7d9c57b5a9d7cf67488ff38932b85c16" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>OnSerializeDelta</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a1f41ff129c7c1cefcf9b2415e6012b30" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Overlaps</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a3118c5bc63bcf829640c83e531f7ff0f" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Remove</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0595d18c27ffbe88bed0d926bfc0ec9c" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_sync_set_1ab91d10a9975528adec18fcb656476c71" prot="protected" virt="virtual"><scope>Mirror::SyncSet</scope><name>SerializeItem</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a2a24871d64fc3c5052e592341fa706a8" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>SetEquals</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a0c72162bf85de6f8ea84be23d2e62712" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>SymmetricExceptWith</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a62900cd2938cce5148c09f86848092bb" prot="protected" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>SyncSet</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a7b57519e175a9e9ef496a98b22d0748b" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>SyncSetChanged</name></member>
+      <member refid="class_mirror_1_1_sync_set_1a60007e72ae2d378aafc334a12ba67daf" prot="public" virt="non-virtual"><scope>Mirror::SyncSet</scope><name>UnionWith</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

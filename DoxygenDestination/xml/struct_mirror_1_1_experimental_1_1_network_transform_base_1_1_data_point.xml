@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::Experimental::NetworkTransformBase::DataPoint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1aed8c3d7071989d5fec024031c687bfc8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Experimental.NetworkTransformBase.DataPoint.timeStamp</definition>
+        <argsstring></argsstring>
+        <name>timeStamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="95" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1a2e7381c28507ae6f74b80b46583f5bcd" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Mirror.Experimental.NetworkTransformBase.DataPoint.localPosition</definition>
+        <argsstring></argsstring>
+        <name>localPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="96" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1affb8253748cf6870cbab53176bba9681" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion Mirror.Experimental.NetworkTransformBase.DataPoint.localRotation</definition>
+        <argsstring></argsstring>
+        <name>localRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="97" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1a08a9e13efb59c3bc2de4124c37c751ad" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Mirror.Experimental.NetworkTransformBase.DataPoint.localScale</definition>
+        <argsstring></argsstring>
+        <name>localScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="98" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1abab4166699f61f7f7134a62cbe571346" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Experimental.NetworkTransformBase.DataPoint.movementSpeed</definition>
+        <argsstring></argsstring>
+        <name>movementSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="99" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1ab529c3424bf63e7bcd1b3d1dc4a1dda2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Experimental.NetworkTransformBase.DataPoint.isValid</definition>
+        <argsstring></argsstring>
+        <name>isValid</name>
+        <initializer>=&gt; timeStamp != 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="101" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" line="93" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/NetworkTransformBase.cs" bodystart="94" bodyend="102"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1ab529c3424bf63e7bcd1b3d1dc4a1dda2" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>isValid</name></member>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1a2e7381c28507ae6f74b80b46583f5bcd" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>localPosition</name></member>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1affb8253748cf6870cbab53176bba9681" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>localRotation</name></member>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1a08a9e13efb59c3bc2de4124c37c751ad" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>localScale</name></member>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1abab4166699f61f7f7134a62cbe571346" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>movementSpeed</name></member>
+      <member refid="struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point_1aed8c3d7071989d5fec024031c687bfc8" prot="public" virt="non-virtual"><scope>Mirror::Experimental::NetworkTransformBase::DataPoint</scope><name>timeStamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

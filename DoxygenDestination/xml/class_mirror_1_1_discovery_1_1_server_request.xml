@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_discovery_1_1_server_request" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Discovery::ServerRequest</compoundname>
+    <basecompoundref refid="class_mirror_1_1_message_base" prot="public" virt="non-virtual">Mirror.MessageBase</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Discovery.ServerRequest</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Discovery.ServerRequest</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/ServerRequest.cs" line="3" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/ServerRequest.cs" bodystart="3" bodyend="3"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_message_base_1acb075a573b4fee69f864a08e80c3cd60" prot="public" virt="virtual"><scope>Mirror::Discovery::ServerRequest</scope><name>Deserialize</name></member>
+      <member refid="class_mirror_1_1_message_base_1aec929d08cb81a15f6bdaaf8a0cc4449a" prot="public" virt="virtual"><scope>Mirror::Discovery::ServerRequest</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

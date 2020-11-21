@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_mirror_1_1_cloud_1_1_i_request_creator" kind="interface" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::IRequestCreator</compoundname>
+    <derivedcompoundref refid="class_mirror_1_1_cloud_1_1_request_creator" prot="public" virt="non-virtual">Mirror.Cloud.RequestCreator</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a27c2d65d29133251b85d655cc84086a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnityWebRequest</type>
+        <definition>UnityWebRequest Mirror.Cloud.IRequestCreator.Delete</definition>
+        <argsstring>(string page)</argsstring>
+        <name>Delete</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1a284b57522c2d7cbccb9aee995889f172">Delete</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="20" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a5810f8dc75cf3b7f7be07604b3b0bc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnityWebRequest</type>
+        <definition>UnityWebRequest Mirror.Cloud.IRequestCreator.Get</definition>
+        <argsstring>(string page)</argsstring>
+        <name>Get</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1a3da1719c412ae66375e82d319cc252ba">Get</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="21" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a30323c06839c876c8f3d228ee8a5bb65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnityWebRequest</type>
+        <definition>UnityWebRequest Mirror.Cloud.IRequestCreator.Patch&lt; T &gt;</definition>
+        <argsstring>(string page, T json)</argsstring>
+        <name>Patch&lt; T &gt;</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1ad5f6c1ab27bc7249637f36da73a01580">Patch&lt; T &gt;</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="22" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a8248f8aae3510e7d48c19889efea828c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UnityWebRequest</type>
+        <definition>UnityWebRequest Mirror.Cloud.IRequestCreator.Post&lt; T &gt;</definition>
+        <argsstring>(string page, T json)</argsstring>
+        <name>Post&lt; T &gt;</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1a2d3fcdd16f3cfca887754dbfb3a5b5a6">Post&lt; T &gt;</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>json</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a318dbbc2aa3e89b795c361ac99bc4ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.IRequestCreator.SendRequest</definition>
+        <argsstring>(UnityWebRequest request, RequestSuccess onSuccess=null, RequestFail onFail=null)</argsstring>
+        <name>SendRequest</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1a66b89ec56ade2421c703c1183e2887d4">SendRequest</reimplementedby>
+        <param>
+          <type>UnityWebRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>RequestSuccess</type>
+          <declname>onSuccess</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>RequestFail</type>
+          <declname>onFail</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends Request to api and invokes callback when finished </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts Coroutine of SendRequestEnumerator</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onFail</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_request_creator_1a85338324fec7f0f3b8944cee1e12b436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Mirror.Cloud.IRequestCreator.SendRequestEnumerator</definition>
+        <argsstring>(UnityWebRequest request, RequestSuccess onSuccess=null, RequestFail onFail=null)</argsstring>
+        <name>SendRequestEnumerator</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_request_creator_1a59dda47bd5b026accac61f0a2a921254">SendRequestEnumerator</reimplementedby>
+        <param>
+          <type>UnityWebRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>RequestSuccess</type>
+          <declname>onSuccess</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>RequestFail</type>
+          <declname>onFail</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Sends Request to api and invokes callback when finished </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onSuccess</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onFail</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="40" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Methods to create and send UnityWebRequest </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Mirror.Cloud.RequestCreator</label>
+        <link refid="class_mirror_1_1_cloud_1_1_request_creator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.IRequestCreator</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_request_creator"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="18" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" bodystart="19" bodyend="41"/>
+    <listofallmembers>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a27c2d65d29133251b85d655cc84086a4" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>Delete</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a5810f8dc75cf3b7f7be07604b3b0bc54" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>Get</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a30323c06839c876c8f3d228ee8a5bb65" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>Patch&lt; T &gt;</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a8248f8aae3510e7d48c19889efea828c" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>Post&lt; T &gt;</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a318dbbc2aa3e89b795c361ac99bc4ed4" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>SendRequest</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_request_creator_1a85338324fec7f0f3b8944cee1e12b436" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IRequestCreator</scope><name>SendRequestEnumerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+\hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options}{}\doxysection{Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options Class Reference}
+\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options}\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+
+
+Client Web\+Socket init options  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a8d0620f63ac11194acaf3925bbd4f46b}{Web\+Socket\+Client\+Options}} ()
+\begin{DoxyCompactList}\small\item\em Initialises a new instance of the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options}{Web\+Socket\+Client\+Options}} class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Time\+Span \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ad1753951496462f11a44d79ed8841775}{Keep\+Alive\+Interval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How often to send ping requests to the Server This is done to prevent proxy servers from closing your connection The default is Time\+Span.\+Zero meaning that it is disabled. Web\+Socket servers usually send ping messages so it is not normally necessary for the client to send them (hence the Time\+Span.\+Zero default) You can manually control ping pong messages using the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}{Ping\+Pong\+Manager}} class. If you do that it is advisible to set this Keep\+Alive\+Interval to zero for the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_factory}{Web\+Socket\+Client\+Factory}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_aeeb07384c4f1f60a8c7e308a883361e4}{No\+Delay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to true to send a message immediately with the least amount of latency (typical usage for chat) This will disable Nagle\textquotesingle{}s algorithm which can cause high tcp latency for small packets sent infrequently However, if you are streaming large packets or sending large numbers of small packets frequently it is advisable to set No\+Delay to false This way data will be bundled into larger packets for better throughput \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ac1d7a0d2871aa7433e0600d3a5d714dc}{Additional\+Http\+Headers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Add any additional http headers to this dictionary \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a71719da13cf5c87d5760ee68c64fd468}{Include\+Exception\+In\+Close\+Response}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Include the full exception (with stack trace) in the close response when an exception is encountered and the Web\+Socket connection is closed The default is false \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a367bf468fd220b45f7ba6b0cdd5d3834}{Sec\+Web\+Socket\+Extensions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Web\+Socket Extensions as an H\+T\+TP header value \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a7d2dfa28698e841bee3e6af8368368f9}{Sec\+Web\+Socket\+Protocol}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A comma separated list of sub protocols in preference order (first one being the most preferred) The server will return the first supported sub protocol (or none if none are supported) Can be null \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Client Web\+Socket init options 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a8d0620f63ac11194acaf3925bbd4f46b}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a8d0620f63ac11194acaf3925bbd4f46b}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!WebSocketClientOptions@{WebSocketClientOptions}}
+\index{WebSocketClientOptions@{WebSocketClientOptions}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{WebSocketClientOptions()}{WebSocketClientOptions()}}
+{\footnotesize\ttfamily Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Web\+Socket\+Client\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialises a new instance of the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_options}{Web\+Socket\+Client\+Options}} class 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ac1d7a0d2871aa7433e0600d3a5d714dc}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ac1d7a0d2871aa7433e0600d3a5d714dc}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!AdditionalHttpHeaders@{AdditionalHttpHeaders}}
+\index{AdditionalHttpHeaders@{AdditionalHttpHeaders}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{AdditionalHttpHeaders}{AdditionalHttpHeaders}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Additional\+Http\+Headers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Add any additional http headers to this dictionary 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a71719da13cf5c87d5760ee68c64fd468}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a71719da13cf5c87d5760ee68c64fd468}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!IncludeExceptionInCloseResponse@{IncludeExceptionInCloseResponse}}
+\index{IncludeExceptionInCloseResponse@{IncludeExceptionInCloseResponse}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{IncludeExceptionInCloseResponse}{IncludeExceptionInCloseResponse}}
+{\footnotesize\ttfamily bool Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Include\+Exception\+In\+Close\+Response\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Include the full exception (with stack trace) in the close response when an exception is encountered and the Web\+Socket connection is closed The default is false 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ad1753951496462f11a44d79ed8841775}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_ad1753951496462f11a44d79ed8841775}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!KeepAliveInterval@{KeepAliveInterval}}
+\index{KeepAliveInterval@{KeepAliveInterval}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{KeepAliveInterval}{KeepAliveInterval}}
+{\footnotesize\ttfamily Time\+Span Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Keep\+Alive\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+How often to send ping requests to the Server This is done to prevent proxy servers from closing your connection The default is Time\+Span.\+Zero meaning that it is disabled. Web\+Socket servers usually send ping messages so it is not normally necessary for the client to send them (hence the Time\+Span.\+Zero default) You can manually control ping pong messages using the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}{Ping\+Pong\+Manager}} class. If you do that it is advisible to set this Keep\+Alive\+Interval to zero for the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_client_factory}{Web\+Socket\+Client\+Factory}} 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_aeeb07384c4f1f60a8c7e308a883361e4}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_aeeb07384c4f1f60a8c7e308a883361e4}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!NoDelay@{NoDelay}}
+\index{NoDelay@{NoDelay}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{NoDelay}{NoDelay}}
+{\footnotesize\ttfamily bool Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+No\+Delay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to true to send a message immediately with the least amount of latency (typical usage for chat) This will disable Nagle\textquotesingle{}s algorithm which can cause high tcp latency for small packets sent infrequently However, if you are streaming large packets or sending large numbers of small packets frequently it is advisable to set No\+Delay to false This way data will be bundled into larger packets for better throughput 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a367bf468fd220b45f7ba6b0cdd5d3834}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a367bf468fd220b45f7ba6b0cdd5d3834}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!SecWebSocketExtensions@{SecWebSocketExtensions}}
+\index{SecWebSocketExtensions@{SecWebSocketExtensions}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{SecWebSocketExtensions}{SecWebSocketExtensions}}
+{\footnotesize\ttfamily string Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Sec\+Web\+Socket\+Extensions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Web\+Socket Extensions as an H\+T\+TP header value 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a7d2dfa28698e841bee3e6af8368368f9}\label{class_ninja_1_1_web_sockets_1_1_web_socket_client_options_a7d2dfa28698e841bee3e6af8368368f9}} 
+\index{Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}!SecWebSocketProtocol@{SecWebSocketProtocol}}
+\index{SecWebSocketProtocol@{SecWebSocketProtocol}!Ninja.WebSockets.WebSocketClientOptions@{Ninja.WebSockets.WebSocketClientOptions}}
+\doxysubsubsection{\texorpdfstring{SecWebSocketProtocol}{SecWebSocketProtocol}}
+{\footnotesize\ttfamily string Ninja.\+Web\+Sockets.\+Web\+Socket\+Client\+Options.\+Sec\+Web\+Socket\+Protocol\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A comma separated list of sub protocols in preference order (first one being the most preferred) The server will return the first supported sub protocol (or none if none are supported) Can be null 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/\+Websocket/\+Ninja.\+Web\+Sockets/Web\+Socket\+Client\+Options.\+cs\end{DoxyCompactItemize}

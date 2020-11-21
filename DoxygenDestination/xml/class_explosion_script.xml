@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_explosion_script" kind="class" language="C#" prot="public">
+    <compoundname>ExplosionScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_explosion_script_1ad117e499ff3a8d2dbf254ad802d62c87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ExplosionScript.despawnTime</definition>
+        <argsstring></argsstring>
+        <name>despawnTime</name>
+        <initializer>= 10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="9" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_explosion_script_1ab090371ff4b70e7b0ce091b850ac8780" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ExplosionScript.lightDuration</definition>
+        <argsstring></argsstring>
+        <name>lightDuration</name>
+        <initializer>= 0.02f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="11" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_explosion_script_1addb8754d2156c9e65a98cec22e3e0376" prot="public" static="no" mutable="no">
+        <type>Light</type>
+        <definition>Light ExplosionScript.lightFlash</definition>
+        <argsstring></argsstring>
+        <name>lightFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="13" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_explosion_script_1a392c4b8b704f1f1b2ce5eae9b858f2c2" prot="public" static="no" mutable="no">
+        <type>AudioClip[]</type>
+        <definition>AudioClip [] ExplosionScript.explosionSounds</definition>
+        <argsstring></argsstring>
+        <name>explosionSounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="16" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_explosion_script_1aa0511329cb3d5132ab3a9ee17eaafd3a" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource ExplosionScript.audioSource</definition>
+        <argsstring></argsstring>
+        <name>audioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="17" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_explosion_script_1ac39d64cc493bf9f0d5e5f771261b8b9b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ExplosionScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="19" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_explosion_script_1a168b1bbbcdec70098156506e1b03a523" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ExplosionScript.LightFlash</definition>
+        <argsstring>()</argsstring>
+        <name>LightFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="31" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="31" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_explosion_script_1a6972076f175a1d10b46a074f94e1d734" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ExplosionScript.DestroyTimer</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="40" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ExplosionScript</label>
+        <link refid="class_explosion_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ExplosionScript</label>
+        <link refid="class_explosion_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" line="5" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ExplosionScript.cs" bodystart="5" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_explosion_script_1aa0511329cb3d5132ab3a9ee17eaafd3a" prot="public" virt="non-virtual"><scope>ExplosionScript</scope><name>audioSource</name></member>
+      <member refid="class_explosion_script_1ad117e499ff3a8d2dbf254ad802d62c87" prot="public" virt="non-virtual"><scope>ExplosionScript</scope><name>despawnTime</name></member>
+      <member refid="class_explosion_script_1a6972076f175a1d10b46a074f94e1d734" prot="private" virt="non-virtual"><scope>ExplosionScript</scope><name>DestroyTimer</name></member>
+      <member refid="class_explosion_script_1a392c4b8b704f1f1b2ce5eae9b858f2c2" prot="public" virt="non-virtual"><scope>ExplosionScript</scope><name>explosionSounds</name></member>
+      <member refid="class_explosion_script_1ab090371ff4b70e7b0ce091b850ac8780" prot="public" virt="non-virtual"><scope>ExplosionScript</scope><name>lightDuration</name></member>
+      <member refid="class_explosion_script_1addb8754d2156c9e65a98cec22e3e0376" prot="public" virt="non-virtual"><scope>ExplosionScript</scope><name>lightFlash</name></member>
+      <member refid="class_explosion_script_1a168b1bbbcdec70098156506e1b03a523" prot="private" virt="non-virtual"><scope>ExplosionScript</scope><name>LightFlash</name></member>
+      <member refid="class_explosion_script_1ac39d64cc493bf9f0d5e5f771261b8b9b" prot="private" virt="non-virtual"><scope>ExplosionScript</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

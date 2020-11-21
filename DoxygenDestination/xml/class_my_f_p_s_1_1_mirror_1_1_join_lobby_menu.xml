@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Mirror::JoinLobbyMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1ae539de0e0ff5b5e91b1cd347fcb7b6e7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby" kindref="compound">NetworkManagerLobby</ref></type>
+        <definition>NetworkManagerLobby MyFPS.Mirror.JoinLobbyMenu.networkManager</definition>
+        <argsstring></argsstring>
+        <name>networkManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="11" column="38" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a5db60a07aa4750790aed2becb935139f" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MyFPS.Mirror.JoinLobbyMenu.landingPagePanel</definition>
+        <argsstring></argsstring>
+        <name>landingPagePanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="14" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aa58ed25c2e625e0ddbb38add142451ea" prot="private" static="no" mutable="no">
+        <type>TMP_InputField</type>
+        <definition>TMP_InputField MyFPS.Mirror.JoinLobbyMenu.ipAddressInputField</definition>
+        <argsstring></argsstring>
+        <name>ipAddressInputField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="15" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a5a43f585206365e62b0516f8010db49a" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MyFPS.Mirror.JoinLobbyMenu.joinButton</definition>
+        <argsstring></argsstring>
+        <name>joinButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="16" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a09b94e6537c28dca512f146242af37b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.JoinLobbyMenu.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="18" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1ae670aa797cf232c86c8472a4c5b6d360" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.JoinLobbyMenu.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="23" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aabc79f236cf407003c93461b7d65e5d0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.JoinLobbyMenu.HandleClientConnected</definition>
+        <argsstring>()</argsstring>
+        <name>HandleClientConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="36" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aeb61d5367b5b91ac54d0111aedadbbbf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.JoinLobbyMenu.HandleClientDisconnected</definition>
+        <argsstring>()</argsstring>
+        <name>HandleClientDisconnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="43" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a417c2bf442a0247d66265e68a36349c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.JoinLobbyMenu.JoinLobby</definition>
+        <argsstring>()</argsstring>
+        <name>JoinLobby</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="29" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="29" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyFPS.Mirror.JoinLobbyMenu</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyFPS.Mirror.JoinLobbyMenu</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/JoinLobbyMenu.cs" bodystart="10" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aabc79f236cf407003c93461b7d65e5d0" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>HandleClientConnected</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aeb61d5367b5b91ac54d0111aedadbbbf" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>HandleClientDisconnected</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1aa58ed25c2e625e0ddbb38add142451ea" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>ipAddressInputField</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a5a43f585206365e62b0516f8010db49a" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>joinButton</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a417c2bf442a0247d66265e68a36349c8" prot="public" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>JoinLobby</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a5db60a07aa4750790aed2becb935139f" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>landingPagePanel</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1ae539de0e0ff5b5e91b1cd347fcb7b6e7" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>networkManager</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1ae670aa797cf232c86c8472a4c5b6d360" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>OnDisable</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_join_lobby_menu_1a09b94e6537c28dca512f146242af37b2" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::JoinLobbyMenu</scope><name>OnEnable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_pooled_network_writer" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::PooledNetworkWriter</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_writer" prot="public" virt="non-virtual">Mirror.NetworkWriter</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_pooled_network_writer_1a30e87a900eeaa02d034f6a4fe0211fd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.PooledNetworkWriter.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriterPool.cs" line="11" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriterPool.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref> to be used with <ref refid="" kindref="compound">NetworkWriterPool</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="2">
+        <label>NetworkWriter</label>
+        <link refid="class_mirror_1_1_network_writer"/>
+      </node>
+      <node id="1">
+        <label>Mirror.PooledNetworkWriter</label>
+        <link refid="class_mirror_1_1_pooled_network_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IDisposable</label>
+      </node>
+      <node id="2">
+        <label>NetworkWriter</label>
+        <link refid="class_mirror_1_1_network_writer"/>
+      </node>
+      <node id="1">
+        <label>Mirror.PooledNetworkWriter</label>
+        <link refid="class_mirror_1_1_pooled_network_writer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriterPool.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriterPool.cs" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_pooled_network_writer_1a30e87a900eeaa02d034f6a4fe0211fd5" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>Dispose</name></member>
+      <member refid="class_mirror_1_1_network_writer_1ae626b96f2627794d178f8ee201f0cd59" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>Length</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a70031a067afd678a16fe13bf7e3a2c5c" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>MaxStringLength</name></member>
+      <member refid="class_mirror_1_1_network_writer_1ac70038113ba5ddc857ea0c187b5eac16" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>Position</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a245c2e89decd8bc2bfc88c0108776070" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a2d6b7bac40b5bf91776c97271a8ef94e" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>SetLength</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a195fa823d6c7033abcd55be2809669dc" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>ToArray</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a6cc49e6b84747d6cb37010a86dc34ddd" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>ToArraySegment</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a00e287aac3cb416b2c24d02b4d673020" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteByte</name></member>
+      <member refid="class_mirror_1_1_network_writer_1ab2d293dbd66eb4e65b0b3c062f714777" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteBytes</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a9f4d2fbb4135140df3858794b49e6d38" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteInt32</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a6fff8ad57c0e229d28b8c0467cfd015e" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteInt64</name></member>
+      <member refid="class_mirror_1_1_network_writer_1af76fc83cdc9037f283aafd728974ff7b" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteUInt32</name></member>
+      <member refid="class_mirror_1_1_network_writer_1a44e960ea6eb3b6535d465d47e83e9539" prot="public" virt="non-virtual"><scope>Mirror::PooledNetworkWriter</scope><name>WriteUInt64</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

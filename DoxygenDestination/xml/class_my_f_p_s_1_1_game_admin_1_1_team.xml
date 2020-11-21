@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_game_admin_1_1_team" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::GameAdmin::Team</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_game_admin_1_1_team_1a594c23ceb306272bffa8e017b56da5ae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.GameAdmin.Team.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+<para>Represents the teams score. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" line="90" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_game_admin_1_1_team_1a624c6e24392c6f200d6b9cc6e6213889" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.GameAdmin.Team.teamID</definition>
+        <argsstring></argsstring>
+        <name>teamID</name>
+        <briefdescription>
+<para>ID of the team, starting from 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" line="94" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_team_1a2868008a4ec5ce19e77883328c8b5379" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyFPS.GameAdmin.Team.Team</definition>
+        <argsstring>(int teamID)</argsstring>
+        <name>Team</name>
+        <param>
+          <type>int</type>
+          <declname>teamID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" line="95" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" bodystart="95" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" line="85" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameMode.cs" bodystart="86" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_team_1a594c23ceb306272bffa8e017b56da5ae" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::Team</scope><name>score</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_team_1a2868008a4ec5ce19e77883328c8b5379" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::Team</scope><name>Team</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_team_1a624c6e24392c6f200d6b9cc6e6213889" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::Team</scope><name>teamID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

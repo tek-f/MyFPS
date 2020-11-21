@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_4db151b83a7efedcc32b954c1d535e55" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/TwinViewer/Scripts</compoundname>
+    <innerfile refid="_twin2nd_scene_script_8cs">Twin2ndSceneScript.cs</innerfile>
+    <innerfile refid="_twin_scene_script_8cs">TwinSceneScript.cs</innerfile>
+    <innerfile refid="_twin_view_script_8cs">TwinViewScript.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/TwinViewer/Scripts/"/>
+  </compounddef>
+</doxygen>

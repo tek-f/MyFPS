@@ -1,0 +1,78 @@
+\hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor}{}\doxysection{Mirror.\+Weaver.\+Network\+Behaviour\+Processor Class Reference}
+\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor}\index{Mirror.Weaver.NetworkBehaviourProcessor@{Mirror.Weaver.NetworkBehaviourProcessor}}
+
+
+processes Sync\+Vars, Cmds, Rpcs, etc. of Network\+Behaviours  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result}{Client\+Rpc\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result}{Cmd\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a9981e8b5409f95e1a224821a22993a6b}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a9981e8b5409f95e1a224821a22993a6b}} 
+{\bfseries Network\+Behaviour\+Processor} (Type\+Definition td)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a13a3ea4c5ad3d2a585a856c3fe4d4789}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a13a3ea4c5ad3d2a585a856c3fe4d4789}} 
+bool {\bfseries Process} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a45b628099ea3bab479f3d17432925513}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a45b628099ea3bab479f3d17432925513}} 
+static void {\bfseries Write\+Client\+Active\+Check} (I\+L\+Processor worker, string md\+Name, Instruction label, string err\+String)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_acd11518d37ca93efd9efc6d9e7085d29}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_acd11518d37ca93efd9efc6d9e7085d29}} 
+static void {\bfseries Write\+Server\+Active\+Check} (I\+L\+Processor worker, string md\+Name, Instruction label, string err\+String)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a541201dbffad7519aba170815401cbdd}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a541201dbffad7519aba170815401cbdd}} 
+static void {\bfseries Write\+Setup\+Locals} (I\+L\+Processor worker)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_ac0c65a390221d82e8ad0a8f78fc3f433}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_ac0c65a390221d82e8ad0a8f78fc3f433}} 
+static void {\bfseries Write\+Create\+Writer} (I\+L\+Processor worker)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_af4b4d071c168c2cb78353e4d8f1563b1}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_af4b4d071c168c2cb78353e4d8f1563b1}} 
+static void {\bfseries Write\+Recycle\+Writer} (I\+L\+Processor worker)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a83273c99ea72f663f27b8684979b1563}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a83273c99ea72f663f27b8684979b1563}} 
+static bool {\bfseries Write\+Arguments} (I\+L\+Processor worker, Method\+Definition method, Remote\+Call\+Type call\+Type)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a4d5adab832049528050fadff93433cf4}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a4d5adab832049528050fadff93433cf4}} 
+static bool {\bfseries Was\+Processed} (Type\+Definition td)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_acd704a7e196663da7145f5b8876c994a}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_acd704a7e196663da7145f5b8876c994a}} 
+static void {\bfseries Mark\+As\+Processed} (Type\+Definition td)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a9bf8d8bc4c6bcb48bd252afcb703ed58}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a9bf8d8bc4c6bcb48bd252afcb703ed58}} 
+static bool {\bfseries Read\+Arguments} (Method\+Definition method, I\+L\+Processor worker, Remote\+Call\+Type call\+Type)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a610ba3462bd7b07fbbd985460cc8f18f}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a610ba3462bd7b07fbbd985460cc8f18f}} 
+static void {\bfseries Add\+Invoke\+Parameters} (I\+Collection$<$ Parameter\+Definition $>$ collection)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a161a8940ce91d68aca425cc0c5344d83}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a161a8940ce91d68aca425cc0c5344d83}} 
+static bool {\bfseries Validate\+Remote\+Call\+And\+Parameters} (Method\+Definition method, Remote\+Call\+Type call\+Type)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_aa4a1660b19d2ab32850cfc8a42a78e1a}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_aa4a1660b19d2ab32850cfc8a42a78e1a}} 
+static bool {\bfseries Is\+Sender\+Connection} (Parameter\+Definition param, Remote\+Call\+Type call\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a4da42650c2d3c3885f7487286affbb56}\label{class_mirror_1_1_weaver_1_1_network_behaviour_processor_a4da42650c2d3c3885f7487286affbb56}} 
+const string {\bfseries Processed\+Function\+Name} = \char`\"{}Mirror\+Processed\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+processes Sync\+Vars, Cmds, Rpcs, etc. of Network\+Behaviours 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Editor/\+Weaver/\+Processors/Network\+Behaviour\+Processor.\+cs\end{DoxyCompactItemize}

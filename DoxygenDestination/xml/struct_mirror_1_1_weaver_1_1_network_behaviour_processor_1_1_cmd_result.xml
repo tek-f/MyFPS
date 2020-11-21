@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::NetworkBehaviourProcessor::CmdResult</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result_1a7853132971604ac70db1dec8225c4c28" prot="public" static="no" mutable="no">
+        <type>MethodDefinition</type>
+        <definition>MethodDefinition Mirror.Weaver.NetworkBehaviourProcessor.CmdResult.method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="38" column="37" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result_1a6872d61972cb874d61aace99b84bbeb8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Weaver.NetworkBehaviourProcessor.CmdResult.ignoreAuthority</definition>
+        <argsstring></argsstring>
+        <name>ignoreAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="39" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="36" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="37" bodyend="40"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result_1a6872d61972cb874d61aace99b84bbeb8" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor::CmdResult</scope><name>ignoreAuthority</name></member>
+      <member refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_cmd_result_1a7853132971604ac70db1dec8225c4c28" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor::CmdResult</scope><name>method</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

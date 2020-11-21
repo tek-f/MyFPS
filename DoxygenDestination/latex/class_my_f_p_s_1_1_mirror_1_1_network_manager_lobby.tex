@@ -1,0 +1,263 @@
+\hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby}{}\doxysection{My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby Class Reference}
+\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby}\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+Inheritance diagram for My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a19e73a519f732af86ae5b19924aaa262}{On\+Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked when a server is started -\/ including when a host is started. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a7e89d335f92efcb2b7810b8b244dc604}{On\+Start\+Client}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked when the client is started. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1a9893a5f28922fbf0b63ef9dc0ef595}{On\+Client\+Disconnect}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} network\+Connection)
+\begin{DoxyCompactList}\small\item\em Called on clients when disconnected from a server. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1e683aea987b1ac3d2d632249d35524e}{On\+Server\+Connect}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} network\+Connection)
+\begin{DoxyCompactList}\small\item\em Called on the server when a new client connects. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a51258422ecd1821ea96b527e064a833c}{On\+Server\+Disconnect}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on the server when a client disconnects. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a56da7db1d6f57f1479c8d7070dd29af4}{On\+Server\+Add\+Player}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} network\+Connection)
+\begin{DoxyCompactList}\small\item\em Called on the server when a client adds a new player with Client\+Scene.\+Add\+Player. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ac5d18e8b73291935e2b872790e38a1ee}{On\+Stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is called when a server is stopped -\/ including when a host is stopped. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a2ef6ea869943e29ed8152122c98f8805}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a2ef6ea869943e29ed8152122c98f8805}} 
+void {\bfseries Notify\+Players\+Of\+Ready\+State} ()
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aad56503fc473856f80b0d491be0732fc}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aad56503fc473856f80b0d491be0732fc}} 
+bool {\bfseries Is\+Ready\+To\+Start} ()
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aaa09a9a3b2f98ef83b2c126e4eb66f5e}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aaa09a9a3b2f98ef83b2c126e4eb66f5e}} 
+void {\bfseries Start\+Game} ()
+\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_add233f075faf3cd78f092fa125d482a7}{Server\+Change\+Scene}} (string new\+Scene\+Name)
+\begin{DoxyCompactList}\small\item\em This causes the server to switch scenes and sets the network\+Scene\+Name. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ae0b73c400accc70db21e585526508150}{On\+Server\+Scene\+Changed}} (string scene\+Name)
+\begin{DoxyCompactList}\small\item\em Called on the server when a scene is completed loaded, when the scene load was initiated by the server with \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_add233f075faf3cd78f092fa125d482a7}{Server\+Change\+Scene()}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a747d19a77203d22eeeccb266ace6959f}{On\+Server\+Ready}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on the server when a client is ready. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a6421b7c3402624398dbab2a34d43fb1c}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a6421b7c3402624398dbab2a34d43fb1c}} 
+string {\bfseries level\+Scene} = string.\+Empty
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aec064d49a9cb94a544f6f71deb8d396a}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aec064d49a9cb94a544f6f71deb8d396a}} 
+List$<$ \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_room_player_lobby}{Network\+Room\+Player\+Lobby}} $>$ {\bfseries room\+Players} = new List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_room_player_lobby}{Network\+Room\+Player\+Lobby}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_af66664358fbaeaaef09b5d72fefd571d}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_af66664358fbaeaaef09b5d72fefd571d}} 
+List$<$ \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_game_player_lobby}{Network\+Game\+Player\+Lobby}} $>$ {\bfseries game\+Players} = new List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_game_player_lobby}{Network\+Game\+Player\+Lobby}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1811356a5f04be213c8b75f5131ececb}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1811356a5f04be213c8b75f5131ececb}} 
+static Action {\bfseries On\+Client\+Connected}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a98017e984104852801fe508d4224baba}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a98017e984104852801fe508d4224baba}} 
+static Action {\bfseries On\+Client\+Disconnected}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aa819f21b07ce91835ba69fc6e867a04b}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_aa819f21b07ce91835ba69fc6e867a04b}} 
+static Action$<$ \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$ {\bfseries On\+Server\+Readied}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1a9893a5f28922fbf0b63ef9dc0ef595}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1a9893a5f28922fbf0b63ef9dc0ef595}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnClientDisconnect@{OnClientDisconnect}}
+\index{OnClientDisconnect@{OnClientDisconnect}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnClientDisconnect()}{OnClientDisconnect()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Client\+Disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on clients when disconnected from a server. 
+
+This is called on the client when it disconnects from the server. Override this function to decide what happens when the client disconnects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection to the server.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_acc265c9e54edc5ed66db64a7abcd3a61}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a56da7db1d6f57f1479c8d7070dd29af4}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a56da7db1d6f57f1479c8d7070dd29af4}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnServerAddPlayer@{OnServerAddPlayer}}
+\index{OnServerAddPlayer@{OnServerAddPlayer}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerAddPlayer()}{OnServerAddPlayer()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Server\+Add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a client adds a new player with Client\+Scene.\+Add\+Player. 
+
+The default implementation for this function creates a new player object from the player\+Prefab.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a05f963336a3309b53ad415ed55333f75}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1e683aea987b1ac3d2d632249d35524e}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a1e683aea987b1ac3d2d632249d35524e}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnServerConnect@{OnServerConnect}}
+\index{OnServerConnect@{OnServerConnect}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerConnect()}{OnServerConnect()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Server\+Connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a new client connects. 
+
+Unity calls this on the Server when a Client connects to the Server. Use an override to tell the Network\+Manager what to do when a client connects to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_aefdbb69d64b19bbf4c78aaed41e08fe4}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a51258422ecd1821ea96b527e064a833c}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a51258422ecd1821ea96b527e064a833c}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnServerDisconnect@{OnServerDisconnect}}
+\index{OnServerDisconnect@{OnServerDisconnect}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerDisconnect()}{OnServerDisconnect()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Server\+Disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a client disconnects. 
+
+This is called on the Server when a Client disconnects from the Server. Use an override to decide what should happen when a disconnection is detected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a54d039ac0bb7d8504b3424a73e53b328}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a747d19a77203d22eeeccb266ace6959f}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a747d19a77203d22eeeccb266ace6959f}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnServerReady@{OnServerReady}}
+\index{OnServerReady@{OnServerReady}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerReady()}{OnServerReady()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Server\+Ready (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a client is ready. 
+
+The default implementation of this function calls Network\+Server.\+Set\+Client\+Ready() to continue the network setup process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a7ebf77a6a7d8ef3d92bf06a51fe1583b}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ae0b73c400accc70db21e585526508150}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ae0b73c400accc70db21e585526508150}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnServerSceneChanged@{OnServerSceneChanged}}
+\index{OnServerSceneChanged@{OnServerSceneChanged}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerSceneChanged()}{OnServerSceneChanged()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Server\+Scene\+Changed (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a scene is completed loaded, when the scene load was initiated by the server with \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_add233f075faf3cd78f092fa125d482a7}{Server\+Change\+Scene()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the new scene.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a93ae8a9ca02afa60598d464779e1bca5}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a7e89d335f92efcb2b7810b8b244dc604}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a7e89d335f92efcb2b7810b8b244dc604}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked when the client is started. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a989b4a0365dd627ac963656a786ae69d}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a19e73a519f732af86ae5b19924aaa262}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_a19e73a519f732af86ae5b19924aaa262}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked when a server is started -\/ including when a host is started. 
+
+Start\+Server has multiple signatures, but they all cause this hook to be called.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a0226295e867fd77ad9aef32d32d6ca88}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ac5d18e8b73291935e2b872790e38a1ee}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_ac5d18e8b73291935e2b872790e38a1ee}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!OnStopServer@{OnStopServer}}
+\index{OnStopServer@{OnStopServer}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called when a server is stopped -\/ including when a host is stopped. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a60970702dbcd39e7c1e64a1417cc73af}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_add233f075faf3cd78f092fa125d482a7}\label{class_my_f_p_s_1_1_mirror_1_1_network_manager_lobby_add233f075faf3cd78f092fa125d482a7}} 
+\index{MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}!ServerChangeScene@{ServerChangeScene}}
+\index{ServerChangeScene@{ServerChangeScene}!MyFPS.Mirror.NetworkManagerLobby@{MyFPS.Mirror.NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{ServerChangeScene()}{ServerChangeScene()}}
+{\footnotesize\ttfamily override void My\+F\+P\+S.\+Mirror.\+Network\+Manager\+Lobby.\+Server\+Change\+Scene (\begin{DoxyParamCaption}\item[{string}]{new\+Scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This causes the server to switch scenes and sets the network\+Scene\+Name. 
+
+Clients that connect to this server will automatically switch to this scene. This is called autmatically if online\+Scene or offline\+Scene are set, but it can be called from user code to switch scenes again while the game is in progress. This automatically sets clients to be not-\/ready. The clients must call Network\+Client.\+Ready() again to participate in the new scene.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Scene\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_ae428a9f79881585ef5fef880f6c923ad}{Mirror.\+Network\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Scripts/\+Mirror/Network\+Manager\+Lobby.\+cs\end{DoxyCompactItemize}

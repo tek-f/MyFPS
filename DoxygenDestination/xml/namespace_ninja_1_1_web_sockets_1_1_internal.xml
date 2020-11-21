@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_ninja_1_1_web_sockets_1_1_internal" kind="namespace" language="C#">
+    <compoundname>Ninja::WebSockets::Internal</compoundname>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer" prot="package">Ninja::WebSockets::Internal::BinaryReaderWriter</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_events" prot="package">Ninja::WebSockets::Internal::Events</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_frame" prot="package">Ninja::WebSockets::Internal::WebSocketFrame</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_frame_common" prot="package">Ninja::WebSockets::Internal::WebSocketFrameCommon</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_frame_reader" prot="package">Ninja::WebSockets::Internal::WebSocketFrameReader</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_frame_writer" prot="package">Ninja::WebSockets::Internal::WebSocketFrameWriter</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation" prot="public">Ninja::WebSockets::Internal::WebSocketImplementation</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757" prot="package" static="no" strong="yes">
+        <type></type>
+        <name>WebSocketOpCode</name>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757af3c896fd292d5f874e1d72cab9e0e86c" prot="package">
+          <name>ContinuationFrame</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757ac883d4ce890f2b033bdb55874565279c" prot="package">
+          <name>TextFrame</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757afc06d57a68842e6a1245ee56dd298336" prot="package">
+          <name>BinaryFrame</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757a32161a38932b8d912c908a6f7b7e7280" prot="package">
+          <name>ConnectionClose</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757ab85815d04cec053ce6deb8021f2df1b8" prot="package">
+          <name>Ping</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_ninja_1_1_web_sockets_1_1_internal_1a4e7987c5435c4d178171dc1a592b8757a4d94412495a32342e1b8c78f7960f2bc" prot="package">
+          <name>Pong</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketOpCode.cs" line="3" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/WebSocketOpCode.cs" bodystart="4" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="29" column="1"/>
+  </compounddef>
+</doxygen>

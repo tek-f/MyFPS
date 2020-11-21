@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_my_f_p_s" kind="namespace" language="C#">
+    <compoundname>MyFPS</compoundname>
+    <innerclass refid="class_my_f_p_s_1_1_controls" prot="public">MyFPS::Controls</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_m_p_player_camera_controller" prot="public">MyFPS::MPPlayerCameraController</innerclass>
+    <innernamespace refid="namespace_my_f_p_s_1_1_game_admin">MyFPS::GameAdmin</innernamespace>
+    <innernamespace refid="namespace_my_f_p_s_1_1_mirror">MyFPS::Mirror</innernamespace>
+    <innernamespace refid="namespace_my_f_p_s_1_1_player">MyFPS::Player</innernamespace>
+    <innernamespace refid="namespace_my_f_p_s_1_1_test">MyFPS::Test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>

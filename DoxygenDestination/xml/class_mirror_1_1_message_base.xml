@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_message_base" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::MessageBase</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_i_message_base" prot="public" virt="non-virtual">Mirror.IMessageBase</basecompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_request_message" prot="public" virt="non-virtual">Mirror.Authenticators.BasicAuthenticator.AuthRequestMessage</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_response_message" prot="public" virt="non-virtual">Mirror.Authenticators.BasicAuthenticator.AuthResponseMessage</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_discovery_1_1_server_request" prot="public" virt="non-virtual">Mirror.Discovery.ServerRequest</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_discovery_1_1_server_response" prot="public" virt="non-virtual">Mirror.Discovery.ServerResponse</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message" prot="public" virt="non-virtual">Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_message_base_1acb075a573b4fee69f864a08e80c3cd60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.MessageBase.Deserialize</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="16" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_message_base_1aec929d08cb81a15f6bdaaf8a0cc4449a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.MessageBase.Serialize</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353">Serialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="19" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Mirror.Authenticators.BasicAuthenticator.AuthRequestMessage</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_request_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mirror.Discovery.ServerRequest</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_request"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.Authenticators.BasicAuthenticator.AuthResponseMessage</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_response_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage</label>
+        <link refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="6">
+        <label>Mirror.Discovery.ServerResponse</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_response"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="13" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="14" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_message_base_1acb075a573b4fee69f864a08e80c3cd60" prot="public" virt="virtual"><scope>Mirror::MessageBase</scope><name>Deserialize</name></member>
+      <member refid="class_mirror_1_1_message_base_1aec929d08cb81a15f6bdaaf8a0cc4449a" prot="public" virt="virtual"><scope>Mirror::MessageBase</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

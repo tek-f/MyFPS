@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_player_1_1_player_respawn" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Player::PlayerRespawn</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_respawn_1aa0ecde67dea92d4e871c9b0708c31ba0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_player_handler" kindref="compound">PlayerHandler</ref></type>
+        <definition>PlayerHandler MyFPS.Player.PlayerRespawn.playerHandler</definition>
+        <argsstring></argsstring>
+        <name>playerHandler</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_player_handler" kindref="compound">PlayerHandler</ref> class on this gameObject. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" line="14" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_respawn_1a7247724910fed06f0a5f8f964d512786" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode" kindref="compound">GameMode</ref></type>
+        <definition>GameMode MyFPS.Player.PlayerRespawn.gameMode</definition>
+        <argsstring></argsstring>
+        <name>gameMode</name>
+        <briefdescription>
+<para>Reference to this game&apos;s GameMode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" line="18" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_respawn_1a447b8e2f52c4ce4e6b5ddb4d70834634" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform MyFPS.Player.PlayerRespawn.respawnPosition</definition>
+        <argsstring></argsstring>
+        <name>respawnPosition</name>
+        <briefdescription>
+<para>Position to respawn the player to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" line="22" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_respawn_1a161f1f6053ecdd9c865afcb1a05be385" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerRespawn.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" line="23" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Player.PlayerRespawn</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_respawn"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Player.PlayerRespawn</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_respawn"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerRespawn.cs" bodystart="10" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_respawn_1a7247724910fed06f0a5f8f964d512786" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerRespawn</scope><name>gameMode</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_respawn_1aa0ecde67dea92d4e871c9b0708c31ba0" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerRespawn</scope><name>playerHandler</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_respawn_1a447b8e2f52c4ce4e6b5ddb4d70834634" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerRespawn</scope><name>respawnPosition</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_respawn_1a161f1f6053ecdd9c865afcb1a05be385" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerRespawn</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

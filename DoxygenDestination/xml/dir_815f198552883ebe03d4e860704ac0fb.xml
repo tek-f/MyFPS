@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_815f198552883ebe03d4e860704ac0fb" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror</compoundname>
+    <innerdir refid="dir_19bcc9970c651ce71a484f4fc3597520">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators</innerdir>
+    <innerdir refid="dir_bc1146bc51af3e1fae3690b2c4383488">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud</innerdir>
+    <innerdir refid="dir_9412ad93d3b6e6b2e5638509563da771">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/CompilerSymbols</innerdir>
+    <innerdir refid="dir_910c7c7bc07677952c20281fad4e70e4">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components</innerdir>
+    <innerdir refid="dir_ed6c08c6a8bfe9b518d7b9a2f0da1bfd">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor</innerdir>
+    <innerdir refid="dir_2cdc7deee0af155ecd71d90f61a1506f">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples</innerdir>
+    <innerdir refid="dir_b80b12282d8496fc7a1e92540de046a3">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins</innerdir>
+    <innerdir refid="dir_18e541dcfed1d97dfff022a0b37ba0b3">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/"/>
+  </compounddef>
+</doxygen>

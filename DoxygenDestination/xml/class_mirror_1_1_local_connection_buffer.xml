@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_local_connection_buffer" kind="class" language="C#" prot="package">
+    <compoundname>Mirror::LocalConnectionBuffer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_local_connection_buffer_1a9a829d24c012275d60674bf0621d8d9e" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+        <definition>readonly NetworkWriter Mirror.LocalConnectionBuffer.writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <initializer>= new <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="46" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_local_connection_buffer_1a6322930c9d365dd94353471c7e827ab2" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+        <definition>readonly NetworkReader Mirror.LocalConnectionBuffer.reader</definition>
+        <argsstring></argsstring>
+        <name>reader</name>
+        <initializer>= new <ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref>(default(ArraySegment&lt;byte&gt;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="47" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_local_connection_buffer_1af2d8561cba40a4ea5dd20641f3c3cef2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.LocalConnectionBuffer.packetCount</definition>
+        <argsstring></argsstring>
+        <name>packetCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="50" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_local_connection_buffer_1a3cb9f6fd28fabfde9bea1bd88518e097" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.LocalConnectionBuffer.Write</definition>
+        <argsstring>(ArraySegment&lt; byte &gt; segment)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="52" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_local_connection_buffer_1a9dcaa8fdcff4cdfee43375177a7a0c7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.LocalConnectionBuffer.HasPackets</definition>
+        <argsstring>()</argsstring>
+        <name>HasPackets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="61" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_local_connection_buffer_1a40eaac308948b5b8381064b8b6504eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArraySegment&lt; byte &gt;</type>
+        <definition>ArraySegment&lt;byte&gt; Mirror.LocalConnectionBuffer.GetNextPacket</definition>
+        <argsstring>()</argsstring>
+        <name>GetNextPacket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="65" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_local_connection_buffer_1a998374f5479021c049aed00ce458add9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.LocalConnectionBuffer.ResetBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>ResetBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="73" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="73" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" line="44" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LocalConnections.cs" bodystart="45" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a40eaac308948b5b8381064b8b6504eaf" prot="public" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>GetNextPacket</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a9dcaa8fdcff4cdfee43375177a7a0c7d" prot="public" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>HasPackets</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1af2d8561cba40a4ea5dd20641f3c3cef2" prot="private" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>packetCount</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a6322930c9d365dd94353471c7e827ab2" prot="private" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>reader</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a998374f5479021c049aed00ce458add9" prot="public" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>ResetBuffer</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a3cb9f6fd28fabfde9bea1bd88518e097" prot="public" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>Write</name></member>
+      <member refid="class_mirror_1_1_local_connection_buffer_1a9a829d24c012275d60674bf0621d8d9e" prot="private" virt="non-virtual"><scope>Mirror::LocalConnectionBuffer</scope><name>writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

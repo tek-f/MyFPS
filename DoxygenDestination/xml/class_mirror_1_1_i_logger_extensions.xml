@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_i_logger_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::ILoggerExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1acffe647402ceb2397d0512bc479c494f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.ILoggerExtensions.LogError</definition>
+        <argsstring>(this ILogger logger, object message)</argsstring>
+        <name>LogError</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="80" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1a98023c85fa6fce00a1f660f5d9c87c4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.ILoggerExtensions.Assert</definition>
+        <argsstring>(this ILogger logger, bool condition, string message)</argsstring>
+        <name>Assert</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="85" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1a15b61e86c2a18fc6585bae5c659a2d32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.ILoggerExtensions.LogWarning</definition>
+        <argsstring>(this ILogger logger, object message)</argsstring>
+        <name>LogWarning</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="91" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1a43c407c68bed6e4ff10ed212f9292c0b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.ILoggerExtensions.LogEnabled</definition>
+        <argsstring>(this ILogger logger)</argsstring>
+        <name>LogEnabled</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="96" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1ade3ee45be26ce2702794c08a45e51f69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.ILoggerExtensions.WarnEnabled</definition>
+        <argsstring>(this ILogger logger)</argsstring>
+        <name>WarnEnabled</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="97" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_i_logger_extensions_1a70d07d4e068fc0b08684bc7c6125a9c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.ILoggerExtensions.ErrorEnabled</definition>
+        <argsstring>(this ILogger logger)</argsstring>
+        <name>ErrorEnabled</name>
+        <param>
+          <type>this ILogger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="98" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" line="78" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogFactory.cs" bodystart="79" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_i_logger_extensions_1a98023c85fa6fce00a1f660f5d9c87c4f" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>Assert</name></member>
+      <member refid="class_mirror_1_1_i_logger_extensions_1a70d07d4e068fc0b08684bc7c6125a9c2" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>ErrorEnabled</name></member>
+      <member refid="class_mirror_1_1_i_logger_extensions_1a43c407c68bed6e4ff10ed212f9292c0b" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>LogEnabled</name></member>
+      <member refid="class_mirror_1_1_i_logger_extensions_1acffe647402ceb2397d0512bc479c494f" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>LogError</name></member>
+      <member refid="class_mirror_1_1_i_logger_extensions_1a15b61e86c2a18fc6585bae5c659a2d32" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>LogWarning</name></member>
+      <member refid="class_mirror_1_1_i_logger_extensions_1ade3ee45be26ce2702794c08a45e51f69" prot="public" virt="non-virtual"><scope>Mirror::ILoggerExtensions</scope><name>WarnEnabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

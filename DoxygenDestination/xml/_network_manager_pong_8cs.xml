@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_network_manager_pong_8cs" kind="file" language="C#">
+    <compoundname>NetworkManagerPong.cs</compoundname>
+    <innerclass refid="class_mirror_1_1_examples_1_1_pong_1_1_network_manager_pong" prot="public">Mirror::Examples::Pong::NetworkManagerPong</innerclass>
+    <innernamespace refid="namespace_mirror">Mirror</innernamespace>
+    <innernamespace refid="namespace_mirror_1_1_examples">Mirror::Examples</innernamespace>
+    <innernamespace refid="namespace_mirror_1_1_examples_1_1_pong">Mirror::Examples::Pong</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mirror_1_1_examples_1_1_pong" kindref="compound">Mirror.Examples.Pong</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Custom<sp/>NetworkManager<sp/>that<sp/>simply<sp/>assigns<sp/>the<sp/>correct<sp/>racket<sp/>positions<sp/>when</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spawning<sp/>players.<sp/>The<sp/>built<sp/>in<sp/>RoundRobin<sp/>spawn<sp/>method<sp/>wouldn&apos;t<sp/>work<sp/>after</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>someone<sp/>reconnects<sp/>(both<sp/>players<sp/>would<sp/>be<sp/>on<sp/>the<sp/>same<sp/>side).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>[AddComponentMenu(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9" refid="class_mirror_1_1_examples_1_1_pong_1_1_network_manager_pong" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mirror_1_1_examples_1_1_pong_1_1_network_manager_pong" kindref="compound">NetworkManagerPong</ref><sp/>:<sp/><ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Transform<sp/>leftRacketSpawn;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Transform<sp/>rightRacketSpawn;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameObject<sp/>ball;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mirror_1_1_examples_1_1_pong_1_1_network_manager_pong_1a50b0e60e4af69c4b06fd167b280858d7" kindref="member">OnServerAddPlayer</ref>(<ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref><sp/>conn)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>player<sp/>at<sp/>correct<sp/>spawn<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Transform<sp/>start<sp/>=<sp/><ref refid="class_mirror_1_1_network_manager_1ae8ea1665e8b5401a65f23e9a168b6a89" kindref="member">numPlayers</ref><sp/>==<sp/>0<sp/>?<sp/>leftRacketSpawn<sp/>:<sp/>rightRacketSpawn;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameObject<sp/>player<sp/>=<sp/>Instantiate(<ref refid="class_mirror_1_1_network_manager_1a81bcbc73d62c047faf0e9c73fb6ffd63" kindref="member">playerPrefab</ref>,<sp/>start.position,<sp/>start.rotation);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NetworkServer.AddPlayerForConnection(conn,<sp/>player);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spawn<sp/>ball<sp/>if<sp/>two<sp/>players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_mirror_1_1_network_manager_1ae8ea1665e8b5401a65f23e9a168b6a89" kindref="member">numPlayers</ref><sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ball<sp/>=<sp/>Instantiate(<ref refid="class_mirror_1_1_network_manager_1a0a8603e11759317ca078ef8afabc08e3" kindref="member">spawnPrefabs</ref>.Find(prefab<sp/>=&gt;<sp/>prefab.name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;Ball&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NetworkServer.Spawn(ball);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mirror_1_1_examples_1_1_pong_1_1_network_manager_pong_1a6c052b25078d5d5bdb09bb4842aaeb33" kindref="member">OnServerDisconnect</ref>(<ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref><sp/>conn)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>destroy<sp/>ball</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ball<sp/>!=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NetworkServer.Destroy(ball);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>base<sp/>functionality<sp/>(actually<sp/>destroys<sp/>the<sp/>player)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnServerDisconnect(conn);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Pong/Scripts/NetworkManagerPong.cs"/>
+  </compounddef>
+</doxygen>

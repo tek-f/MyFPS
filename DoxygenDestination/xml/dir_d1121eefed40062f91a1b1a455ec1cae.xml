@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_d1121eefed40062f91a1b1a455ec1cae" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game</compoundname>
+    <innerfile refid="_capture_zone_8cs">CaptureZone.cs</innerfile>
+    <innerfile refid="_flag_8cs">Flag.cs</innerfile>
+    <innerfile refid="_game_mode_8cs">GameMode.cs</innerfile>
+    <innerfile refid="_game_mode_c_t_f_8cs">GameModeCTF.cs</innerfile>
+    <innerfile refid="_game_mode_d_m_8cs">GameModeDM.cs</innerfile>
+    <innerfile refid="_ragdoll_controller_8cs">RagdollController.cs</innerfile>
+    <innerfile refid="_target_8cs">Target.cs</innerfile>
+    <innerfile refid="_teleporter_8cs">Teleporter.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/"/>
+  </compounddef>
+</doxygen>

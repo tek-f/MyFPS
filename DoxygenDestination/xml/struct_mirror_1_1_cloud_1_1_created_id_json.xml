@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_cloud_1_1_created_id_json" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::CreatedIdJson</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_cloud_1_1_i_can_be_json" prot="public" virt="non-virtual">Mirror.Cloud.ICanBeJson</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_cloud_1_1_created_id_json_1a58708a4dd9752ccf40901e942e7b792d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.CreatedIdJson.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/JsonStructs.cs" line="8" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/JsonStructs.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICanBeJson</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_can_be_json"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.CreatedIdJson</label>
+        <link refid="struct_mirror_1_1_cloud_1_1_created_id_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICanBeJson</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_can_be_json"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.CreatedIdJson</label>
+        <link refid="struct_mirror_1_1_cloud_1_1_created_id_json"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/JsonStructs.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/JsonStructs.cs" bodystart="7" bodyend="9"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_cloud_1_1_created_id_json_1a58708a4dd9752ccf40901e942e7b792d" prot="public" virt="non-virtual"><scope>Mirror::Cloud::CreatedIdJson</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

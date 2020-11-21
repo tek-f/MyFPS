@@ -1,0 +1,1755 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_identity" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkIdentity</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a4abadbb4d21adef3eb6f1238618132c0" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.NetworkIdentity.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger&lt;<ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="109" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a241abe7eebf7316dc634d8dea97b6c71" prot="private" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; ulong, <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> &gt;</type>
+        <definition>readonly Dictionary&lt;ulong, NetworkIdentity&gt; Mirror.NetworkIdentity.sceneIds</definition>
+        <argsstring></argsstring>
+        <name>sceneIds</name>
+        <initializer>= new Dictionary&lt;ulong, <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref>&gt;()</initializer>
+        <briefdescription>
+<para>Keep track of all sceneIds to detect scene duplicates </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="337" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a7806e86964285f5fe101a0451d48e4bf" prot="private" static="yes" mutable="no">
+        <type>uint</type>
+        <definition>uint Mirror.NetworkIdentity.nextNetworkId</definition>
+        <argsstring></argsstring>
+        <name>nextNetworkId</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="363" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1aa8a5aef671941679f54dffcae0d8ec7b" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+        <definition>NetworkIdentity Mirror.NetworkIdentity.previousLocalPlayer</definition>
+        <argsstring></argsstring>
+        <name>previousLocalPlayer</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="831" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a3bd3f87e9fa3dc3d292359ea2f6eb38e" prot="private" static="yes" mutable="no">
+        <type>readonly HashSet&lt; <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> &gt;</type>
+        <definition>readonly HashSet&lt;NetworkConnection&gt; Mirror.NetworkIdentity.newObservers</definition>
+        <argsstring></argsstring>
+        <name>newObservers</name>
+        <initializer>= new HashSet&lt;<ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1377" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1ab9f0d51abf1e71623b159c401867d8d5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref>[]</type>
+        <definition>NetworkBehaviour [] Mirror.NetworkIdentity.networkBehavioursCache</definition>
+        <argsstring></argsstring>
+        <name>networkBehavioursCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="111" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1aedb29258685d89a2f46b442972101443" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+        <definition>NetworkConnectionToClient Mirror.NetworkIdentity._connectionToClient</definition>
+        <argsstring></argsstring>
+        <name>_connectionToClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="202" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1ad0cda961b57fb142ace549f7d593a331" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_visibility" kindref="compound">NetworkVisibility</ref></type>
+        <definition>NetworkVisibility Mirror.NetworkIdentity.visibilityCache</definition>
+        <argsstring></argsstring>
+        <name>visibilityCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="251" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1ae0f6cce5e1c0117fccd14024bb34558f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.NetworkIdentity.m_AssetId</definition>
+        <argsstring></argsstring>
+        <name>m_AssetId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="264" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a8818c8bee442f03074e1eca1f0d1e293" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.hasSpawned</definition>
+        <argsstring></argsstring>
+        <name>hasSpawned</name>
+        <briefdescription>
+<para>hasSpawned should always be false before runtime </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="398" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a534af3920f09dc8467a31d9943ecfd70" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.clientStarted</definition>
+        <argsstring></argsstring>
+        <name>clientStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="802" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a1bac9a5d88431fbdd3167eaa1dfd1bb8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.hadAuthority</definition>
+        <argsstring></argsstring>
+        <name>hadAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="856" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a0a3bb71dd8fc37492957fe1bdbb7955e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.isClient</definition>
+        <argsstring></argsstring>
+        <name>isClient</name>
+        <briefdescription>
+<para>Returns true if running as a client and this object was spawned by a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>IMPORTANT:</bold> checking NetworkClient.active means that isClient is false in OnDestroy: </para>
+<para><computeroutput> public bool isClient =&gt; NetworkClient.active &amp;&amp; netId != 0 &amp;&amp; !serverOnly; </computeroutput> </para>
+<para>but we need it in OnDestroy, e.g. when saving skillbars on quit. this works fine if we keep the UNET way of setting isClient manually. </para>
+<para>=&gt; fixes  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="131" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a45b20df7d45211189befe124e3836f3c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.isServer</definition>
+        <argsstring></argsstring>
+        <name>isServer</name>
+        <briefdescription>
+<para>Returns true if NetworkServer.active and server is not stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><bold>IMPORTANT:</bold> checking NetworkServer.active means that isServer is false in OnDestroy: </para>
+<para><computeroutput> public bool isServer =&gt; NetworkServer.active &amp;&amp; netId != 0; </computeroutput> </para>
+<para>but we need it in OnDestroy, e.g. when saving players on quit. this works fine if we keep the UNET way of setting isServer manually. </para>
+<para>=&gt; fixes  </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="151" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a33f4f942b7637852d8b0cfa4025b744a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.hasAuthority</definition>
+        <argsstring></argsstring>
+        <name>hasAuthority</name>
+        <briefdescription>
+<para>This returns true if this object is the authoritative player object on the client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This value is determined at runtime. For most objects, authority is held by the server.</para>
+<para>For objects that had their authority set by AssignClientAuthority on the server, this will be true on the client that owns the object. NOT on other clients.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="164" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a3752b290380dc9ec029ddd86af8dc206" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>uint</type>
+        <definition>uint Mirror.NetworkIdentity.netId</definition>
+        <argsstring></argsstring>
+        <name>netId</name>
+        <briefdescription>
+<para>Unique identifier for this particular object instance, used for tracking objects between networked clients and the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a unique identifier for this particular GameObject instance. Use it to track GameObjects between networked clients and the server.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="176" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="176" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1afddec2dc92f3f98b1755937d9fd1430e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+        <definition>NetworkConnection Mirror.NetworkIdentity.connectionToServer</definition>
+        <argsstring></argsstring>
+        <name>connectionToServer</name>
+        <briefdescription>
+<para>The <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> associated with this <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref>. This is only valid for player objects on a local client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="200" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a2c3c6ec4b03d4d8212a478fe0877f638" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref>?</type>
+        <definition>NetworkConnectionToClient? Mirror.NetworkIdentity.connectionToClient</definition>
+        <argsstring></argsstring>
+        <name>connectionToClient</name>
+        <briefdescription>
+<para>The <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> associated with this <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity.</ref> This is valid for player and other owned objects in the server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use it to return details such as the connection's identity, IP address and ready status.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="208" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="209" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a66d235276ea0ce252d2dff12e51cbcc0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref>[]</type>
+        <definition>NetworkBehaviour [] Mirror.NetworkIdentity.NetworkBehaviours</definition>
+        <argsstring></argsstring>
+        <name>NetworkBehaviours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="227" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="228" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1af3e5d72395cc0dd38205addf130d9db5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_network_visibility" kindref="compound">NetworkVisibility</ref></type>
+        <definition>NetworkVisibility Mirror.NetworkIdentity.visibility</definition>
+        <argsstring></argsstring>
+        <name>visibility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="252" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="253" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1ad2383a3fcbb4cb4cb1b020f0a6638708" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid??</type>
+        <definition>Guid?? Mirror.NetworkIdentity.assetId</definition>
+        <argsstring></argsstring>
+        <name>assetId</name>
+        <briefdescription>
+<para>Unique identifier used to find the source assets when server spawns the on clients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The AssetId trick: <itemizedlist>
+<listitem>
+<para>Ideally we would have a serialized &apos;Guid m_AssetId&apos; but Unity can&apos;t serialize it because Guid&apos;s internal bytes are private  </para>
+</listitem>
+<listitem>
+<para>UNET used &apos;NetworkHash128&apos; originally, with byte0, ..., byte16 which works, but it just unnecessary extra code  </para>
+</listitem>
+<listitem>
+<para>Using just the Guid string would work, but it&apos;s 32 chars long and would then be sent over the network as 64 instead of 16 bytes  </para>
+</listitem>
+</itemizedlist>
+The solution is to serialize the string internally here and then use the real &apos;Guid&apos; type for everything else via .assetId </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="289" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="290" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_identity_1a26902bfccbd86c890cebfc37bfc77d6d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.SpawnedFromInstantiate</definition>
+        <argsstring></argsstring>
+        <name>SpawnedFromInstantiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="399" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="399" bodyend="399"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a7224507781dad1ac9cb724242cf3a653" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.isLocalPlayer</definition>
+        <argsstring></argsstring>
+        <name>isLocalPlayer</name>
+        <initializer>=&gt; ClientScene.localPlayer == this</initializer>
+        <briefdescription>
+<para>This returns true if this object is the one that represents the player on the local machine. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is set when the server has spawned an object for this particular client.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="157" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a573f662e1862d93da6a3560dc2c88e0e" prot="public" static="no" mutable="no">
+        <type>Dictionary&lt; int, <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> &gt;</type>
+        <definition>Dictionary&lt;int, NetworkConnection&gt; Mirror.NetworkIdentity.observers</definition>
+        <argsstring></argsstring>
+        <name>observers</name>
+        <briefdescription>
+<para>The set of network connections (players) that can see this object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>null until OnStartServer was called. this is necessary for SendTo* to work properly in server-only mode.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="170" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a6caca6959f052d106e135e049e5a0fe6" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong Mirror.NetworkIdentity.sceneId</definition>
+        <argsstring></argsstring>
+        <name>sceneId</name>
+        <briefdescription>
+<para>A unique identifier for <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> objects within a scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used for spawning scene objects on clients.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="184" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a2b90032cea75219737de4aab7ac8ecc6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.serverOnly</definition>
+        <argsstring></argsstring>
+        <name>serverOnly</name>
+        <briefdescription>
+<para><ref refid="class_flag" kindref="compound">Flag</ref> to make this object only exist when the game is running as a server (or host). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="190" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a685c8f9f2230d7b19fe4c6a97f10408c" prot="package" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.destroyCalled</definition>
+        <argsstring></argsstring>
+        <name>destroyCalled</name>
+        <briefdescription>
+<para>Set to try before Destroy is called so that OnDestroy doesn&apos;t try to destroy the object again </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="195" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1a4662e6bf04cd7dc767bc906437ea1c4a" prot="public" static="yes" mutable="no">
+        <type>readonly Dictionary&lt; uint, <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> &gt;</type>
+        <definition>readonly Dictionary&lt;uint, NetworkIdentity&gt; Mirror.NetworkIdentity.spawned</definition>
+        <argsstring></argsstring>
+        <name>spawned</name>
+        <initializer>= new Dictionary&lt;uint, <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref>&gt;()</initializer>
+        <briefdescription>
+<para>All spawned NetworkIdentities by netId. Available on server and client. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="225" column="43" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_identity_1aba3975b546ad171d59ed0d4e0d15c3eb" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_identity_1a4076c05b5ecb2e24b8e8005db6452e9c" kindref="member">ClientAuthorityCallback</ref></type>
+        <definition>ClientAuthorityCallback Mirror.NetworkIdentity.clientAuthorityCallback</definition>
+        <argsstring></argsstring>
+        <name>clientAuthorityCallback</name>
+        <briefdescription>
+<para>A callback that can be populated to be notified when the client-authority state of objects changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whenever an object is spawned with client authority, or the client authority status of an object is changed with AssignClientAuthority or RemoveClientAuthority, then this callback will be invoked.</para>
+<para>This callback is only invoked on the server.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="384" column="47" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a00ed353d1abf74f082bde759d48b0335" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.CreateNetworkBehavioursCache</definition>
+        <argsstring>()</argsstring>
+        <name>CreateNetworkBehavioursCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="239" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="239" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a3258a9b1106d101e0c6e4a1e39068562" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="401" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="401" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a33f58bd679a92b02b6a1de5276c4b7e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnValidate</definition>
+        <argsstring>()</argsstring>
+        <name>OnValidate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="414" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="414" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aaca77267e0b541da7d67d98f6a98b469" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+<para>Unity will Destroy all networked objects on Scene Change, so we have to handle that here silently. That means we cannot have any warning or logging in this method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="709" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="709" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ac99fac1fa3384f1343f699b8ce98a103" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.OnSerializeSafely</definition>
+        <argsstring>(NetworkBehaviour comp, NetworkWriter writer, bool initialState)</argsstring>
+        <name>OnSerializeSafely</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref></type>
+          <declname>comp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+<para>Serializes component and its lengths </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comp</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialState</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+<para>vis2k: readstring bug prevention: https://issuetracker.unity3d.com/issues/unet-networkwriter-dot-write-causing-readstring-slash-readbytes-out-of-range-errors-in-clients <itemizedlist>
+<listitem>
+<para>OnSerialize writes length,componentData,length,componentData,...  </para>
+</listitem>
+<listitem>
+<para>OnDeserialize carefully extracts each data, then deserializes each component with separate readers  </para>
+</listitem>
+<listitem>
+<para>It will be impossible to read too many or too few bytes in OnDeserialize  </para>
+</listitem>
+<listitem>
+<para>We can properly track down errors  </para>
+</listitem>
+</itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="996" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="996" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ab1aca6a2db8864e9107091749657070d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnDeserializeSafely</definition>
+        <argsstring>(NetworkBehaviour comp, NetworkReader reader, bool initialState)</argsstring>
+        <name>OnDeserializeSafely</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref></type>
+          <declname>comp</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1149" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1149" bodyend="1185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aa736350d5ad0022798ce12389a7207fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.HandleRemoteCall</definition>
+        <argsstring>(int componentIndex, int functionHash, MirrorInvokeType invokeType, NetworkReader reader, NetworkConnectionToClient senderConnection=null)</argsstring>
+        <name>HandleRemoteCall</name>
+        <param>
+          <type>int</type>
+          <declname>componentIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>functionHash</declname>
+        </param>
+        <param>
+          <type>MirrorInvokeType</type>
+          <declname>invokeType</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+          <declname>senderConnection</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Helper function to handle SyncEvent/Command/Rpc </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>functionHash</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invokeType</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>senderConnection</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1213" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1213" bodyend="1235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a75487b1f17756cb2f6ea96057e844a92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.SendUpdateVarsMessage</definition>
+        <argsstring>(ulong dirtyComponentsMask)</argsstring>
+        <name>SendUpdateVarsMessage</name>
+        <param>
+          <type>ulong</type>
+          <declname>dirtyComponentsMask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1607" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1607" bodyend="1651"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aff47ea854f5b020a51a96a087df38236" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.ResetSyncObjects</definition>
+        <argsstring>()</argsstring>
+        <name>ResetSyncObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1680" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1680" bodyend="1686"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a030154e28b95e17a15de62707f0006e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+        <definition>static NetworkIdentity Mirror.NetworkIdentity.GetSceneIdentity</definition>
+        <argsstring>(ulong id)</argsstring>
+        <name>GetSceneIdentity</name>
+        <param>
+          <type>ulong</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets the <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> from the sceneIds dictionary with the corresponding id </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> from the sceneIds dictionary</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="344" column="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1af6af44b5090bf3d6e146440262b12d0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkIdentity.ResetNextNetworkId</definition>
+        <argsstring>()</argsstring>
+        <name>ResetNextNetworkId</name>
+        <briefdescription>
+<para>Resets nextNetworkId = 1 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="369" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a10a7fb432dcf215e7fd0020ee5b8568b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.SetClientOwner</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>SetClientOwner</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>used when adding players </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="350" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="350" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a7deaaa09f1c319097aafc288e738fc38" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.RemoveObserverInternal</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>RemoveObserverInternal</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>this is used when a connection is destroyed, since the &quot;observers&quot; property is read-only </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="390" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="390" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a4641d76e42e3eb7a19d940738a25cc15" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="726" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="726" bodyend="780"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ac752dbd26da47032cccb81ea7bc4d404" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStopServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="782" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="782" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a797a9957fa11169aec7c81a788c8834f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="803" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="803" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1af821b75d1a0e937be7e5330ae0fe0e52" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStartLocalPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartLocalPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="832" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="832" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a3ea1efa16040fe03426a485e733cf711" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.NotifyAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="857" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="857" bodyend="864"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1acd048c90fd1209faf9e1b216e8681307" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStartAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="866" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="866" bodyend="884"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ac399cf7532133202421ba61e2f43bb07" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStopAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopAuthority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="886" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="886" bodyend="904"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aa7eed6cb3ce5ff7cd83f0239472dc48c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnSetHostVisibility</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>OnSetHostVisibility</name>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="906" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="906" bodyend="919"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a576df98d768b4019f5059c3cbe98a59b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.OnCheckObserver</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnCheckObserver</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>check if observer can be seen by connection. <itemizedlist>
+<listitem>
+<para>returns visibility.OnCheckObserver  </para>
+</listitem>
+<listitem>
+<para>returns true if we have no <ref refid="class_mirror_1_1_network_visibility" kindref="compound">NetworkVisibility</ref>, default objects are visible  <linebreak/>
+ </para>
+</listitem>
+</itemizedlist>
+</para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="934" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="934" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ac6343a53ced20cab2405851a7b142075" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnStopClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStopClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="950" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="950" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aa3a4ffb624c845349cadd232ddf247e4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnSerializeAllSafely</definition>
+        <argsstring>(bool initialState, ulong dirtyComponentsMask, NetworkWriter ownerWriter, out int ownerWritten, NetworkWriter observersWriter, out int observersWritten)</argsstring>
+        <name>OnSerializeAllSafely</name>
+        <param>
+          <type>bool</type>
+          <declname>initialState</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>dirtyComponentsMask</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>ownerWriter</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>ownerWritten</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>observersWriter</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>observersWritten</declname>
+        </param>
+        <briefdescription>
+<para>serialize all components using dirtyComponentsMask </para>
+        </briefdescription>
+        <detaileddescription>
+<para>check ownerWritten/observersWritten to know if anything was written</para>
+<para>We pass dirtyComponentsMask into this function so that we can check if any Components are dirty before creating writers</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initialState</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirtyComponentsMask</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ownerWriter</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ownerWritten</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observersWriter</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observersWritten</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1039" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1039" bodyend="1097"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1afd34e84fdd7e8ba024d45fcfadf5d9ba" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ulong</type>
+        <definition>ulong Mirror.NetworkIdentity.GetDirtyComponentsMask</definition>
+        <argsstring>()</argsstring>
+        <name>GetDirtyComponentsMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1099" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1099" bodyend="1114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aa207270530f41569794ed8bb340601b9" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ulong</type>
+        <definition>ulong Mirror.NetworkIdentity.GetInitialComponentsMask</definition>
+        <argsstring>()</argsstring>
+        <name>GetInitialComponentsMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1115" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1115" bodyend="1125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a7772cdcd59113450271f0535eccd1b84" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ulong</type>
+        <definition>ulong Mirror.NetworkIdentity.GetSyncModeObserversMask</definition>
+        <argsstring>()</argsstring>
+        <name>GetSyncModeObserversMask</name>
+        <briefdescription>
+<para>a mask that contains all the components with SyncMode.Observers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1132" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1132" bodyend="1147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ab1ebcf3988aa1307ebbb0a1816bf14af" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.OnDeserializeAllSafely</definition>
+        <argsstring>(NetworkReader reader, bool initialState)</argsstring>
+        <name>OnDeserializeAllSafely</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1187" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1187" bodyend="1203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1adadf58cd7688125ca2571ceeefee86e6" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.HandleSyncEvent</definition>
+        <argsstring>(int componentIndex, int eventHash, NetworkReader reader)</argsstring>
+        <name>HandleSyncEvent</name>
+        <param>
+          <type>int</type>
+          <declname>componentIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>eventHash</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>Runs on client </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eventHash</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1243" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1243" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ad135fffcb99c2518b6ff92e00837b877" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.HandleCommand</definition>
+        <argsstring>(int componentIndex, int cmdHash, NetworkReader reader, NetworkConnectionToClient senderConnection)</argsstring>
+        <name>HandleCommand</name>
+        <param>
+          <type>int</type>
+          <declname>componentIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmdHash</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+          <declname>senderConnection</declname>
+        </param>
+        <briefdescription>
+<para>Runs on server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmdHash</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>senderConnection</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1255" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1255" bodyend="1258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1abf40f141c8c7293038950bb62b7dd1f0" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_mirror_1_1_remote_calls_1_1_command_info" kindref="compound">CommandInfo</ref></type>
+        <definition>CommandInfo Mirror.NetworkIdentity.GetCommandInfo</definition>
+        <argsstring>(int componentIndex, int cmdHash)</argsstring>
+        <name>GetCommandInfo</name>
+        <param>
+          <type>int</type>
+          <declname>componentIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmdHash</declname>
+        </param>
+        <briefdescription>
+<para>Runs on server </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmdHash</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1266" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1266" bodyend="1286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aec92dd54b9fb29d6bf5404e8fbfc4009" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.HandleRPC</definition>
+        <argsstring>(int componentIndex, int rpcHash, NetworkReader reader)</argsstring>
+        <name>HandleRPC</name>
+        <param>
+          <type>int</type>
+          <declname>componentIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rpcHash</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>Runs on client </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>componentIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rpcHash</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reader</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1294" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1294" bodyend="1297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1afa6931377024143578b035974924be18" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.ClearObservers</definition>
+        <argsstring>()</argsstring>
+        <name>ClearObservers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1299" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1299" bodyend="1309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ac0260af314af3797697d092e1003c2ed" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.AddObserver</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>AddObserver</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1311" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1311" bodyend="1330"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a4dca7d437f727c9a80b24b800dcf5bc1" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.GetNewObservers</definition>
+        <argsstring>(HashSet&lt; NetworkConnection &gt; observersSet, bool initialize)</argsstring>
+        <name>GetNewObservers</name>
+        <param>
+          <type>HashSet&lt; <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> &gt;</type>
+          <declname>observersSet</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>initialize</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to call OnRebuildObservers in all components </para>
+        </briefdescription>
+        <detaileddescription>
+<para>HashSet is passed in so we can cache it!</para>
+<para>Returns true if we have a <ref refid="class_mirror_1_1_network_visibility" kindref="compound">NetworkVisibility</ref>, false otherwise</para>
+<para>Initialize is true on first rebuild, false on consecutive rebuilds</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observersSet</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>initialize</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1341" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1341" bodyend="1354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a019b3006f6014c86d515e62d46c0400e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.AddAllReadyServerConnectionsToObservers</definition>
+        <argsstring>()</argsstring>
+        <name>AddAllReadyServerConnectionsToObservers</name>
+        <briefdescription>
+<para>Helper function to add all server connections as observers. This is used if none of the components provides their own OnRebuildObservers function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1361" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1361" bodyend="1375"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a5a9f0c1d7b86198f02c1d34efc20fb4c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Marks the identity for future reset, this is because we cant reset the identity during destroy as people might want to be able to read the members inside OnDestroy(), and we have no way of invoking reset after OnDestroy is called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1566" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1566" bodyend="1582"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a72e5cdeafaeb183fc03f0f2110be5c26" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.ServerUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>ServerUpdate</name>
+        <briefdescription>
+<para>Invoked by NetworkServer.Update during LateUpdate </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1587" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1587" bodyend="1605"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a024a8221d537d0115f7c8102285192da" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.ClearAllComponentsDirtyBits</definition>
+        <argsstring>()</argsstring>
+        <name>ClearAllComponentsDirtyBits</name>
+        <briefdescription>
+<para>clear all component&apos;s dirty bits no matter what </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1657" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1657" bodyend="1663"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a8e4a130b4c4058d352dd91b3bf8788e6" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.ClearDirtyComponentsDirtyBits</definition>
+        <argsstring>()</argsstring>
+        <name>ClearDirtyComponentsDirtyBits</name>
+        <briefdescription>
+<para>Clear only dirty component&apos;s dirty bits. ignores components which may be dirty but not ready to be synced yet (because of syncInterval) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1669" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1669" bodyend="1678"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1aca5273ba3b990a724a183d6153ce5e6e" prot="package" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>static uint Mirror.NetworkIdentity.GetNextNetworkId</definition>
+        <argsstring>()</argsstring>
+        <name>GetNextNetworkId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="364" column="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a4076c05b5ecb2e24b8e8005db6452e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Mirror.NetworkIdentity.ClientAuthorityCallback</definition>
+        <argsstring>(NetworkConnection conn, NetworkIdentity identity, bool authorityState)</argsstring>
+        <name>ClientAuthorityCallback</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>authorityState</declname>
+        </param>
+        <briefdescription>
+<para>The delegate type for the clientAuthorityCallback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The network connection that is gaining or losing authority.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>identity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object whose client authority status is being changed.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>authorityState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of client authority of the object for the connection.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="377" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a32e5d17a0b3ae29c7e5cbf39399b4e0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.RebuildObservers</definition>
+        <argsstring>(bool initialize)</argsstring>
+        <name>RebuildObservers</name>
+        <param>
+          <type>bool</type>
+          <declname>initialize</declname>
+        </param>
+        <briefdescription>
+<para>This causes the set of players that can see this object to be rebuild. The OnRebuildObservers callback function will be invoked on each <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initialize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if this is the first time.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1384" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1384" bodyend="1483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1a2bf39f8adcbc4aa9b5e105d741ff4aa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkIdentity.AssignClientAuthority</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>AssignClientAuthority</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Assign control of an object to a client via the client&apos;s <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection.</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This causes hasAuthority to be set on the client that owns the object, and <ref refid="class_mirror_1_1_network_behaviour_1a1e36e4640f967426ffc113e26e649345" kindref="member">NetworkBehaviour.OnStartAuthority</ref> will be called on that client. This object then will be in the <ref refid="class_mirror_1_1_network_connection_1a0523c3a787f8e1689300b21bad102e57" kindref="member">NetworkConnection.clientOwnedObjects</ref> list for the connection.</para>
+<para>Authority can be removed with RemoveClientAuthority. Only one client can own an object at any time. This does not need to be called for player objects, as their authority is setup automatically.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection of the client to assign authority to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if authority was assigned.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1492" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1492" bodyend="1521"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_identity_1ab1c34c695ff0a05c3e81d2c530da822f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkIdentity.RemoveClientAuthority</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveClientAuthority</name>
+        <briefdescription>
+<para>Removes ownership for an object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This applies to objects that had authority set by AssignClientAuthority, or <ref refid="" kindref="compound">NetworkServer.Spawn</ref> with a <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref> parameter included.</para>
+<para>Authority cannot be removed for player objects.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="1528" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="1528" bodyend="1558"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> identifies objects across the network, between server and clients. Its primary data is a NetworkInstanceId which is allocated by the server and then set on clients. This is used in network communications to be able to lookup game objects on different machines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> is used to synchronize information in the object with the network. Only the server should create instances of objects which have <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> as otherwise they will not be properly connected to the system. </para>
+<para>For complex objects with a hierarchy of subcomponents, the <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> must be on the root of the hierarchy. It is not supported to have multiple <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> components on subcomponents of a hierarchy. </para>
+<para><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> scripts require a <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> on the game object to be able to function. </para>
+<para>The <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> manages the dirty state of the NetworkBehaviours of the object. When it discovers that NetworkBehaviours are dirty, it causes an update packet to be created and sent to clients. </para>
+<para>The flow for serialization updates managed by the <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> is: <itemizedlist>
+<listitem>
+<para>Each <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> has a dirty mask. This mask is available inside OnSerialize as syncVarDirtyBits  </para>
+</listitem>
+<listitem>
+<para>Each SyncVar in a <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> script is assigned a bit in the dirty mask.  </para>
+</listitem>
+<listitem>
+<para>Changing the value of SyncVars causes the bit for that SyncVar to be set in the dirty mask  </para>
+</listitem>
+<listitem>
+<para>Alternatively, calling SetDirtyBit() writes directly to the dirty mask  </para>
+</listitem>
+<listitem>
+<para><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> objects are checked on the server as part of it's update loop  </para>
+</listitem>
+<listitem>
+<para>If any NetworkBehaviours on a <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> are dirty, then an UpdateVars packet is created for that object  </para>
+</listitem>
+<listitem>
+<para>The UpdateVars packet is populated by calling OnSerialize on each <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> on the object  </para>
+</listitem>
+<listitem>
+<para>NetworkBehaviours that are NOT dirty write a zero to the packet for their dirty bits  </para>
+</listitem>
+<listitem>
+<para>NetworkBehaviours that are dirty write their dirty mask, then the values for the SyncVars that have changed  </para>
+</listitem>
+<listitem>
+<para>If OnSerialize returns true for a <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref>, the dirty mask is reset for that <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref>, so it will not send again until its value changes.  </para>
+</listitem>
+<listitem>
+<para>The UpdateVars packet is sent to ready clients that are observing the object  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>On the client: <itemizedlist>
+<listitem>
+<para>an UpdateVars packet is received for an object  </para>
+</listitem>
+<listitem>
+<para>The OnDeserialize function is called for each <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> script on the object  </para>
+</listitem>
+<listitem>
+<para>Each <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> script on the object reads a dirty mask.  </para>
+</listitem>
+<listitem>
+<para>If the dirty mask for a <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> is zero, the OnDeserialize functions returns without reading any more  </para>
+</listitem>
+<listitem>
+<para>If the dirty mask is non-zero value, then the OnDeserialize function reads the values for the SyncVars that correspond to the dirty bits that are set  </para>
+</listitem>
+<listitem>
+<para>If there are SyncVar hook functions, those are invoked with the value read from the stream.  </para>
+</listitem>
+</itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.NetworkIdentity</label>
+        <link refid="class_mirror_1_1_network_identity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.NetworkIdentity</label>
+        <link refid="class_mirror_1_1_network_identity"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" line="107" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkIdentity.cs" bodystart="108" bodyend="1687"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_identity_1aedb29258685d89a2f46b442972101443" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>_connectionToClient</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a019b3006f6014c86d515e62d46c0400e" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>AddAllReadyServerConnectionsToObservers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ac0260af314af3797697d092e1003c2ed" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>AddObserver</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ad2383a3fcbb4cb4cb1b020f0a6638708" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>assetId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a2bf39f8adcbc4aa9b5e105d741ff4aa6" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>AssignClientAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a3258a9b1106d101e0c6e4a1e39068562" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a024a8221d537d0115f7c8102285192da" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ClearAllComponentsDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a8e4a130b4c4058d352dd91b3bf8788e6" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ClearDirtyComponentsDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_identity_1afa6931377024143578b035974924be18" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ClearObservers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a4076c05b5ecb2e24b8e8005db6452e9c" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ClientAuthorityCallback</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aba3975b546ad171d59ed0d4e0d15c3eb" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>clientAuthorityCallback</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a534af3920f09dc8467a31d9943ecfd70" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>clientStarted</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a2c3c6ec4b03d4d8212a478fe0877f638" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>connectionToClient</name></member>
+      <member refid="class_mirror_1_1_network_identity_1afddec2dc92f3f98b1755937d9fd1430e" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>connectionToServer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a00ed353d1abf74f082bde759d48b0335" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>CreateNetworkBehavioursCache</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a685c8f9f2230d7b19fe4c6a97f10408c" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>destroyCalled</name></member>
+      <member refid="class_mirror_1_1_network_identity_1abf40f141c8c7293038950bb62b7dd1f0" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetCommandInfo</name></member>
+      <member refid="class_mirror_1_1_network_identity_1afd34e84fdd7e8ba024d45fcfadf5d9ba" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetDirtyComponentsMask</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aa207270530f41569794ed8bb340601b9" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetInitialComponentsMask</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a4dca7d437f727c9a80b24b800dcf5bc1" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetNewObservers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aca5273ba3b990a724a183d6153ce5e6e" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetNextNetworkId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a030154e28b95e17a15de62707f0006e3" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetSceneIdentity</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a7772cdcd59113450271f0535eccd1b84" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>GetSyncModeObserversMask</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a1bac9a5d88431fbdd3167eaa1dfd1bb8" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>hadAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ad135fffcb99c2518b6ff92e00837b877" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>HandleCommand</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aa736350d5ad0022798ce12389a7207fa" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>HandleRemoteCall</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aec92dd54b9fb29d6bf5404e8fbfc4009" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>HandleRPC</name></member>
+      <member refid="class_mirror_1_1_network_identity_1adadf58cd7688125ca2571ceeefee86e6" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>HandleSyncEvent</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a33f4f942b7637852d8b0cfa4025b744a" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>hasAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a8818c8bee442f03074e1eca1f0d1e293" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>hasSpawned</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a0a3bb71dd8fc37492957fe1bdbb7955e" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>isClient</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a7224507781dad1ac9cb724242cf3a653" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>isLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a45b20df7d45211189befe124e3836f3c" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>isServer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a4abadbb4d21adef3eb6f1238618132c0" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ae0f6cce5e1c0117fccd14024bb34558f" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>m_AssetId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a3752b290380dc9ec029ddd86af8dc206" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>netId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a66d235276ea0ce252d2dff12e51cbcc0" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>NetworkBehaviours</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ab9f0d51abf1e71623b159c401867d8d5" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>networkBehavioursCache</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a3bd3f87e9fa3dc3d292359ea2f6eb38e" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>newObservers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a7806e86964285f5fe101a0451d48e4bf" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>nextNetworkId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a3ea1efa16040fe03426a485e733cf711" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>NotifyAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a573f662e1862d93da6a3560dc2c88e0e" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>observers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a576df98d768b4019f5059c3cbe98a59b" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnCheckObserver</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ab1ebcf3988aa1307ebbb0a1816bf14af" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnDeserializeAllSafely</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ab1aca6a2db8864e9107091749657070d" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnDeserializeSafely</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aaca77267e0b541da7d67d98f6a98b469" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnDestroy</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aa3a4ffb624c845349cadd232ddf247e4" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnSerializeAllSafely</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ac99fac1fa3384f1343f699b8ce98a103" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnSerializeSafely</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aa7eed6cb3ce5ff7cd83f0239472dc48c" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnSetHostVisibility</name></member>
+      <member refid="class_mirror_1_1_network_identity_1acd048c90fd1209faf9e1b216e8681307" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStartAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a797a9957fa11169aec7c81a788c8834f" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_network_identity_1af821b75d1a0e937be7e5330ae0fe0e52" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStartLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a4641d76e42e3eb7a19d940738a25cc15" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ac399cf7532133202421ba61e2f43bb07" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStopAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ac6343a53ced20cab2405851a7b142075" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ac752dbd26da47032cccb81ea7bc4d404" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a33f58bd679a92b02b6a1de5276c4b7e8" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>OnValidate</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aa8a5aef671941679f54dffcae0d8ec7b" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>previousLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a32e5d17a0b3ae29c7e5cbf39399b4e0b" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>RebuildObservers</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ab1c34c695ff0a05c3e81d2c530da822f" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>RemoveClientAuthority</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a7deaaa09f1c319097aafc288e738fc38" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>RemoveObserverInternal</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a5a9f0c1d7b86198f02c1d34efc20fb4c" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_network_identity_1af6af44b5090bf3d6e146440262b12d0f" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ResetNextNetworkId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1aff47ea854f5b020a51a96a087df38236" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ResetSyncObjects</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a6caca6959f052d106e135e049e5a0fe6" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>sceneId</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a241abe7eebf7316dc634d8dea97b6c71" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>sceneIds</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a75487b1f17756cb2f6ea96057e844a92" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>SendUpdateVarsMessage</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a2b90032cea75219737de4aab7ac8ecc6" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>serverOnly</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a72e5cdeafaeb183fc03f0f2110be5c26" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>ServerUpdate</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a10a7fb432dcf215e7fd0020ee5b8568b" prot="package" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>SetClientOwner</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a4662e6bf04cd7dc767bc906437ea1c4a" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>spawned</name></member>
+      <member refid="class_mirror_1_1_network_identity_1a26902bfccbd86c890cebfc37bfc77d6d" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>SpawnedFromInstantiate</name></member>
+      <member refid="class_mirror_1_1_network_identity_1af3e5d72395cc0dd38205addf130d9db5" prot="public" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>visibility</name></member>
+      <member refid="class_mirror_1_1_network_identity_1ad0cda961b57fb142ace549f7d593a331" prot="private" virt="non-virtual"><scope>Mirror::NetworkIdentity</scope><name>visibilityCache</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

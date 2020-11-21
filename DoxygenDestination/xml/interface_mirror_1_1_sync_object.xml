@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_mirror_1_1_sync_object" kind="interface" language="C#" prot="public">
+    <compoundname>Mirror::SyncObject</compoundname>
+    <derivedcompoundref refid="class_mirror_1_1_sync_i_dictionary" prot="public" virt="non-virtual">Mirror.SyncIDictionary&lt; TKey, TValue &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_sync_list" prot="public" virt="non-virtual">Mirror.SyncList&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_sync_set" prot="public" virt="non-virtual">Mirror.SyncSet&lt; T &gt;</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_mirror_1_1_sync_object_1a3a49fc42159d03b5a2bca08ff1d578cd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SyncObject.IsDirty</definition>
+        <argsstring></argsstring>
+        <name>IsDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="8" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1a3a13f043e733d312152a7fadd1bdf4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1ab44322d59fbb0ff48ebf72fb4b3d72a6">Flush</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1a6e9aff2f2effc0d0324f5284647d0d9a">Flush</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1a7fdaea588a80a031ad92775d503e9aad">Flush</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1a15c37f16b38c44c23294a8359ea4e2d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.OnSerializeAll</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeAll</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1a7b253cf53377679bbf697ffe780a0c84">OnSerializeAll</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1a1597912d6216ce70ad8de7a735c6245e">OnSerializeAll</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1a2f13a9423a6edb8878f20f991f273133">OnSerializeAll</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1aebaaef8ba60bb926015c7359508bccb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.OnSerializeDelta</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>OnSerializeDelta</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1a0d9028a2f8a8f8396393d8324b502767">OnSerializeDelta</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1ad6a414e2e46c752c336ee2ad8de97849">OnSerializeDelta</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1a7d9c57b5a9d7cf67488ff38932b85c16">OnSerializeDelta</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1ac33f9af9e2caab20e00fee5dc9b74165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.OnDeserializeAll</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeAll</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1a654be7ac6a05695814cf6e69f173b77e">OnDeserializeAll</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1ae3e8f3a8e21ccd13c3bf7d772148fcd3">OnDeserializeAll</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1a075867f37b810f8d210fdc83ae9ea7cb">OnDeserializeAll</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1aa6d44e3d7d2a631bd402504c95143a12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.OnDeserializeDelta</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>OnDeserializeDelta</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1a57eb8969858f530f111aa45dbd216272">OnDeserializeDelta</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1af289c71d2a6caf93a4801eb08be70888">OnDeserializeDelta</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1af584f6682c42d099b76a7c9d6fe3a230">OnDeserializeDelta</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_sync_object_1a803cfba7f394ac8520d148c398fa438a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncObject.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="class_mirror_1_1_sync_i_dictionary_1ac5973a20bdb2c4ecd41e07b84cea1be2">Reset</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_list_1a848dd69bdf2bb54dd96382b14c79f81f">Reset</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_sync_set_1a0595d18c27ffbe88bed0d926bfc0ec9c">Reset</reimplementedby>
+        <briefdescription>
+<para>Resets the <ref refid="interface_mirror_1_1_sync_object" kindref="compound">SyncObject</ref> so that it can be re-used </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="29" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Mirror.SyncList&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_list"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Mirror::SyncSortedSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_sorted_set"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mirror.SyncSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_set"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.SyncObject</label>
+        <link refid="interface_mirror_1_1_sync_object"/>
+      </node>
+      <node id="3">
+        <label>Mirror::SyncDictionary&lt; TKey, TValue &gt;</label>
+        <link refid="class_mirror_1_1_sync_dictionary"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mirror.SyncIDictionary&lt; TKey, TValue &gt;</label>
+        <link refid="class_mirror_1_1_sync_i_dictionary"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Mirror::SyncHashSet&lt; T &gt;</label>
+        <link refid="class_mirror_1_1_sync_hash_set"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" line="5" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncObject.cs" bodystart="6" bodyend="30"/>
+    <listofallmembers>
+      <member refid="interface_mirror_1_1_sync_object_1a3a13f043e733d312152a7fadd1bdf4b2" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>Flush</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1a3a49fc42159d03b5a2bca08ff1d578cd" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>IsDirty</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1ac33f9af9e2caab20e00fee5dc9b74165" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>OnDeserializeAll</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1aa6d44e3d7d2a631bd402504c95143a12" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>OnDeserializeDelta</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1a15c37f16b38c44c23294a8359ea4e2d0" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>OnSerializeAll</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1aebaaef8ba60bb926015c7359508bccb3" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>OnSerializeDelta</name></member>
+      <member refid="interface_mirror_1_1_sync_object_1a803cfba7f394ac8520d148c398fa438a" prot="public" virt="non-virtual"><scope>Mirror::SyncObject</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

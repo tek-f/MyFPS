@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_channels" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Channels</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_channels_1aa715e35f060d85b4ad2585f087c6f5e2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Mirror.Channels.DefaultReliable</definition>
+        <argsstring></argsstring>
+        <name>DefaultReliable</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" line="33" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_channels_1a4a42ef6cfdb18c33d1f0e1b4a0652662" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Mirror.Channels.DefaultUnreliable</definition>
+        <argsstring></argsstring>
+        <name>DefaultUnreliable</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" line="34" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" line="31" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/UNetwork.cs" bodystart="32" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_channels_1aa715e35f060d85b4ad2585f087c6f5e2" prot="public" virt="non-virtual"><scope>Mirror::Channels</scope><name>DefaultReliable</name></member>
+      <member refid="class_mirror_1_1_channels_1a4a42ef6cfdb18c33d1f0e1b4a0652662" prot="public" virt="non-virtual"><scope>Mirror::Channels</scope><name>DefaultUnreliable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

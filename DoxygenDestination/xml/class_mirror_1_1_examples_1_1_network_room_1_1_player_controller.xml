@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Examples::NetworkRoom::PlayerController</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_behaviour" prot="public" virt="non-virtual">Mirror.NetworkBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ae84e9c7fa3bbe745d506b88a3bcfc701" prot="public" static="no" mutable="no">
+        <type>CharacterController</type>
+        <definition>CharacterController Mirror.Examples.NetworkRoom.PlayerController.characterController</definition>
+        <argsstring></argsstring>
+        <name>characterController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="11" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab7b6f11dbfc188924d89f99ff84020ea" prot="public" static="no" mutable="no">
+        <type>CapsuleCollider</type>
+        <definition>CapsuleCollider Mirror.Examples.NetworkRoom.PlayerController.capsuleCollider</definition>
+        <argsstring></argsstring>
+        <name>capsuleCollider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="12" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a5e38ab06e5359f85034d61288b8d6eec" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.moveSpeed</definition>
+        <argsstring></argsstring>
+        <name>moveSpeed</name>
+        <initializer>= 8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="49" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab9925dd01d618a35ab1e4ac0c9207940" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.turnSensitivity</definition>
+        <argsstring></argsstring>
+        <name>turnSensitivity</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="50" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a37f4fd49568d98fa9131a46649c1ee67" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.maxTurnSpeed</definition>
+        <argsstring></argsstring>
+        <name>maxTurnSpeed</name>
+        <initializer>= 150f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="51" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1acbae28f6f18aa6e73d57ce1cef919cd0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.horizontal</definition>
+        <argsstring></argsstring>
+        <name>horizontal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="54" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a18a402437807cd4181beb6d2fed10497" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.vertical</definition>
+        <argsstring></argsstring>
+        <name>vertical</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="55" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a975a6e81df5490a684912f3ada9f9b86" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.turn</definition>
+        <argsstring></argsstring>
+        <name>turn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="56" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1aaaa9365075af21b0fa4a7a157cfa680a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Examples.NetworkRoom.PlayerController.jumpSpeed</definition>
+        <argsstring></argsstring>
+        <name>jumpSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="57" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab2f4fb6a06b89cd07071fcc329d4ec31" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Examples.NetworkRoom.PlayerController.isGrounded</definition>
+        <argsstring></argsstring>
+        <name>isGrounded</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="58" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a594b0e46e5d021ff77f5b6e739c6373e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Examples.NetworkRoom.PlayerController.isFalling</definition>
+        <argsstring></argsstring>
+        <name>isFalling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="59" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a285c43d028024994f94184c03303b6da" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Mirror.Examples.NetworkRoom.PlayerController.velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="60" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a4850cd73d2530b1dd1148ebbc0ac2dd9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.PlayerController.OnValidate</definition>
+        <argsstring>()</argsstring>
+        <name>OnValidate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="14" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1aedf3447ce463f7e1f5ed1f832b997065" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.PlayerController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="22" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a32ca048a640864804ecf502af02a6028" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.PlayerController.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="37" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a536759b888338e1783a75536532c7f1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.PlayerController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="62" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="62" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a5ac51b17f6bd424fc14760f820eb9a62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Examples.NetworkRoom.PlayerController.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="94" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="94" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a9d87306c89fcc445ac5014a1f5b8383d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.PlayerController.OnStartLocalPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartLocalPlayer</name>
+        <reimplements refid="class_mirror_1_1_network_behaviour_1a8506dcb5c3cbc297a667e795cc9eafd0">OnStartLocalPlayer</reimplements>
+        <briefdescription>
+<para>Called when the local player object has been set up. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This happens after <ref refid="class_mirror_1_1_network_behaviour_1a699d2fda0c0c8843d8964ffed01d016c" kindref="member">OnStartClient()</ref>, as it is triggered by an ownership message from the server. This is an appropriate place to activate components or functionality that should only be active for the local player, such as cameras and input.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="27" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="27" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.PlayerController</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IDisposable</label>
+      </node>
+      <node id="4">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.PlayerController</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" bodystart="10" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab7b6f11dbfc188924d89f99ff84020ea" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>capsuleCollider</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ae84e9c7fa3bbe745d506b88a3bcfc701" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>characterController</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a0915f57f9b3f057d544235740e920a2f" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>ClearAllDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b01d534f1b7fb5ab270423a108ba277" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>ComponentIndex</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae0365575095f9988d6ae2bfef337573a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>connectionToClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aa490124a374f6e82a780926b2d11fc23" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>connectionToServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7151d225ada4d6ffc1bbc094cc803f26" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>DeSerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a0d125d48839a57c368c039e6476b521f" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>DeSerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a79ce2238da87ce060a835113911f3bea" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>DeserializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abb5fb1c5753b32375a85841174ea8013" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>DirtyObjectBits</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a5ac51b17f6bd424fc14760f820eb9a62" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>FixedUpdate</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab794f957ea97db9dec659cbbfe9208f4" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>GetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a48124410c758c6e85f2d5bdb0872e9a6" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>getSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46b6f2edcee89cede23050a2177098df" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>GetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abd651058bdaeaf65f691fad5bc366836" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>hasAuthority</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1acbae28f6f18aa6e73d57ce1cef919cd0" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>horizontal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a3c5d9ef0f604ec39acc7f03269d80656" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>InitSyncObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea84bcfc5a512ecb2b7a601bf1598d24" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>InvokeCommand</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a52778428d8b4058c6db0db9e87f88394" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>InvokeRPC</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a5b931086714c4cfb3dde3118dbfdc7a9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>InvokeSyncEvent</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ab30e4e9deea5ea728bbf8910ba4aa0fc" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abe78215943243c0ee91c2bd9a0057915" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isClientOnly</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a76bf9eb3b49700f653620bbf5b7aa826" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>IsDirty</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a594b0e46e5d021ff77f5b6e739c6373e" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isFalling</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab2f4fb6a06b89cd07071fcc329d4ec31" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isGrounded</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a09f7e5bb2181018bc28fa2c29ed09e8c" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a6a65dec5ade34544074c2f997932e17a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8ace9ae035053dab9538482ff74d62ec" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>isServerOnly</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1aaaa9365075af21b0fa4a7a157cfa680a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>jumpSpeed</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a353ad279617c03ab349433f1f38c73bd" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>lastSyncTime</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a37f4fd49568d98fa9131a46649c1ee67" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>maxTurnSpeed</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a5e38ab06e5359f85034d61288b8d6eec" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>moveSpeed</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ae90a46be8160b84d1256c397718f7ff8" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>netId</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2561021cd1fc5a4fe504a9822c281d11" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>netIdentity</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a26853c614ebc9c116a7d4f045d723be1" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnDeserialize</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a32ca048a640864804ecf502af02a6028" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnDisable</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea16efb5a763d21dbaa89a6ed88d2bfd" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnNetworkDestroy</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1af8b7933f4a95d31db460935cd7906c0c" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnSerialize</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a1e36e4640f967426ffc113e26e649345" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStartAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a699d2fda0c0c8843d8964ffed01d016c" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a9d87306c89fcc445ac5014a1f5b8383d" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStartLocalPlayer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7849fd960925fc37005a1b8f2aa065b3" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1afe494cde0781a38644c80ec14e177f59" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStopAuthority</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1adabae0597e1228ad256cb35d1616c1ca" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a27dc77be5d2117b34157b3836f333690" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a4850cd73d2530b1dd1148ebbc0ac2dd9" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>OnValidate</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a08c0ff954baaab3c19ddab7bbd80d09a" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>ResetSyncObjects</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac1568659d9c736766b14696efbb4dcb1" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SendCommandInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8896e37754d4e3a6a2ed2102aebeee9e" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SendEventInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1aea3fef3f468d7fdb63c3d550f238e84a" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SendRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a8bab38b2cbc1df4cba42abf401635a42" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SendTargetRPCInternal</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ad49cab5e0ac5e4dace701541c105d371" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SerializeObjectsAll</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4ba0673f1259fbf07a169aa6ef95dd45" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SerializeObjectsDelta</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ace23cde46937b5fe490499d983a7e6e3" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SerializeSyncVars</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1addda8533ab954db571bda550862034f7" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SetDirtyBit</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4087b2993b045a197b9b653176411f05" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SetSyncVar&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac3e14f45a522cec35780c9afc367e985" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SetSyncVarGameObject</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a23b3e60e1abdf4468beb6924bace3ce4" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>setSyncVarHookGuard</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a2b4fc9f99fffd61bf67b4e7995d1d4bb" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SetSyncVarNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1aedf3447ce463f7e1f5ed1f832b997065" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>Start</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a94dbe38f0930d3bbde326d0eed7b6f83" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>syncInterval</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1acf0616ac2f967bdd47bf0f579cefe8a7" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>syncMode</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1ac9c5caa586acee344c189db183e95efe" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>syncObjects</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a4bb1e7724acf59e001659f0fe0b90c8f" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>syncVarDirtyBits</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a46c40d5ff8bc8bea02e3c0b3886e768a" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SyncVarEqual&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1a7a4e336c889c531a69ec0f51900d0657" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SyncVarGameObjectEqual</name></member>
+      <member refid="class_mirror_1_1_network_behaviour_1abdba57d6c8ff0ac89767ca07acd4ffa9" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>SyncVarNetworkIdentityEqual</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a975a6e81df5490a684912f3ada9f9b86" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>turn</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1ab9925dd01d618a35ab1e4ac0c9207940" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>turnSensitivity</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a536759b888338e1783a75536532c7f1a" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>Update</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a285c43d028024994f94184c03303b6da" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>velocity</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_1a18a402437807cd4181beb6d2fed10497" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::PlayerController</scope><name>vertical</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

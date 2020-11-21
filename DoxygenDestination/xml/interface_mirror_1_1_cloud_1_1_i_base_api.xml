@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_mirror_1_1_cloud_1_1_i_base_api" kind="interface" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::IBaseApi</compoundname>
+    <derivedcompoundref refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api" prot="public" virt="non-virtual">Mirror.Cloud.ListServerService.IListServerClientApi</derivedcompoundref>
+    <derivedcompoundref refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_server_api" prot="public" virt="non-virtual">Mirror.Cloud.ListServerService.IListServerServerApi</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mirror_1_1_cloud_1_1_i_base_api_1a266c21cfe77caef08d56d1a1b6566cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.IBaseApi.Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1ad06a0ed161913459a3494425f6f642e5">Shutdown</reimplementedby>
+        <reimplementedby refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_server_api_1a795e2f868090284469c9af52493b2675">Shutdown</reimplementedby>
+        <briefdescription>
+<para>Cleans up any data created by the instance </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For <ref refid="namespace_mirror_1_1_cloud_1_1_example" kindref="compound">Example</ref>: removing server from list</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="11" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Mirror.Cloud.ListServerService.ListServerServerApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_server_api"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.Cloud.ListServerService.IListServerServerApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_server_api"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.IBaseApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_base_api"/>
+      </node>
+      <node id="2">
+        <label>Mirror.Cloud.ListServerService.IListServerClientApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mirror.Cloud.ListServerService.ListServerClientApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="5" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" bodystart="6" bodyend="12"/>
+    <listofallmembers>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_base_api_1a266c21cfe77caef08d56d1a1b6566cbe" prot="public" virt="non-virtual"><scope>Mirror::Cloud::IBaseApi</scope><name>Shutdown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

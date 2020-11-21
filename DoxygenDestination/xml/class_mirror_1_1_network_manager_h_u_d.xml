@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_manager_h_u_d" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkManagerHUD</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_manager_h_u_d_1a1fd4b553e6f2e04b21d1502fcdd3363b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref></type>
+        <definition>NetworkManager Mirror.NetworkManagerHUD.manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="19" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_manager_h_u_d_1a4da36c445f6d059956d4bcaa66561512" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkManagerHUD.showGUI</definition>
+        <argsstring></argsstring>
+        <name>showGUI</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether to show the default control HUD at runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="24" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_manager_h_u_d_1a2d3f52697827fc54cd4157f43896e3af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.NetworkManagerHUD.offsetX</definition>
+        <argsstring></argsstring>
+        <name>offsetX</name>
+        <briefdescription>
+<para>The horizontal offset in pixels to draw the HUD runtime GUI at. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="29" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_manager_h_u_d_1a4e2bf5d142fb21187d3b27375c81753e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.NetworkManagerHUD.offsetY</definition>
+        <argsstring></argsstring>
+        <name>offsetY</name>
+        <briefdescription>
+<para>The vertical offset in pixels to draw the HUD runtime GUI at. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="34" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_manager_h_u_d_1a6e42c43c0a00aed57cb6a456d2a07626" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkManagerHUD.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="36" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_manager_h_u_d_1aa929eb7cfe43e12b24c66d8a79c75e09" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkManagerHUD.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="41" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="41" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_manager_h_u_d_1a84a909f9345225b420f7d22780c9ddbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkManagerHUD.StartButtons</definition>
+        <argsstring>()</argsstring>
+        <name>StartButtons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="75" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="75" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_manager_h_u_d_1a3a2349512397dba6df8ba18730caec16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkManagerHUD.StatusLabels</definition>
+        <argsstring>()</argsstring>
+        <name>StatusLabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="119" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="119" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_manager_h_u_d_1aeb35b4665134c02064f691317a3d7921" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkManagerHUD.StopButtons</definition>
+        <argsstring>()</argsstring>
+        <name>StopButtons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="132" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="132" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An extension for the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> that displays a default HUD for controlling the network state of the game. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This component also shows useful internal state for the networking system in the inspector window of the editor. It allows users to view connections, networked objects, message handlers, and packet statistics. This information can be helpful when debugging networked games.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.NetworkManagerHUD</label>
+        <link refid="class_mirror_1_1_network_manager_h_u_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.NetworkManagerHUD</label>
+        <link refid="class_mirror_1_1_network_manager_h_u_d"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" line="17" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkManagerHUD.cs" bodystart="18" bodyend="159"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a6e42c43c0a00aed57cb6a456d2a07626" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a1fd4b553e6f2e04b21d1502fcdd3363b" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>manager</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a2d3f52697827fc54cd4157f43896e3af" prot="public" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>offsetX</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a4e2bf5d142fb21187d3b27375c81753e" prot="public" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>offsetY</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1aa929eb7cfe43e12b24c66d8a79c75e09" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>OnGUI</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a4da36c445f6d059956d4bcaa66561512" prot="public" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>showGUI</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a84a909f9345225b420f7d22780c9ddbc" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>StartButtons</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1a3a2349512397dba6df8ba18730caec16" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>StatusLabels</name></member>
+      <member refid="class_mirror_1_1_network_manager_h_u_d_1aeb35b4665134c02064f691317a3d7921" prot="private" virt="non-virtual"><scope>Mirror::NetworkManagerHUD</scope><name>StopButtons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

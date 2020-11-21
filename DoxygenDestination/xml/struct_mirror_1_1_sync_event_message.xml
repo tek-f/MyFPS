@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_sync_event_message" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::SyncEventMessage</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_i_message_base" prot="public" virt="non-virtual">Mirror.IMessageBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_event_message_1ad2ca37979a2b6ddc6e5523bdda6f0949" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Mirror.SyncEventMessage.netId</definition>
+        <argsstring></argsstring>
+        <name>netId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="178" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_event_message_1a7ab9d105d9feaa17212cc713ccb258f6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncEventMessage.componentIndex</definition>
+        <argsstring></argsstring>
+        <name>componentIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="179" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_event_message_1af192d28602334121ab2371e382ae423b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncEventMessage.functionHash</definition>
+        <argsstring></argsstring>
+        <name>functionHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="180" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_event_message_1a73a78737a5eaa4a6189baed7bd05c6aa" prot="public" static="no" mutable="no">
+        <type>ArraySegment&lt; byte &gt;</type>
+        <definition>ArraySegment&lt;byte&gt; Mirror.SyncEventMessage.payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="183" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_mirror_1_1_sync_event_message_1ad725432da5ffabfa509f9183baaa3158" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncEventMessage.Deserialize</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="185" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="185" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_sync_event_message_1a1aa82659645f0ec0cd25717fe7409e01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncEventMessage.Serialize</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353">Serialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="194" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="194" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.SyncEventMessage</label>
+        <link refid="struct_mirror_1_1_sync_event_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.SyncEventMessage</label>
+        <link refid="struct_mirror_1_1_sync_event_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="176" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="177" bodyend="201"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_sync_event_message_1a7ab9d105d9feaa17212cc713ccb258f6" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>componentIndex</name></member>
+      <member refid="struct_mirror_1_1_sync_event_message_1ad725432da5ffabfa509f9183baaa3158" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>Deserialize</name></member>
+      <member refid="struct_mirror_1_1_sync_event_message_1af192d28602334121ab2371e382ae423b" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>functionHash</name></member>
+      <member refid="struct_mirror_1_1_sync_event_message_1ad2ca37979a2b6ddc6e5523bdda6f0949" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>netId</name></member>
+      <member refid="struct_mirror_1_1_sync_event_message_1a73a78737a5eaa4a6189baed7bd05c6aa" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>payload</name></member>
+      <member refid="struct_mirror_1_1_sync_event_message_1a1aa82659645f0ec0cd25717fe7409e01" prot="public" virt="non-virtual"><scope>Mirror::SyncEventMessage</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

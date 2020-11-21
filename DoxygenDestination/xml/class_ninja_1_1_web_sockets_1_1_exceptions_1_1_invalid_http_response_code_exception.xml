@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a8427acb8fca92ca95b6373c3e7fa41c5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.ResponseCode</definition>
+        <argsstring></argsstring>
+        <name>ResponseCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="8" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a9f2a05e653ab00986d71284788bb7d31" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.ResponseHeader</definition>
+        <argsstring></argsstring>
+        <name>ResponseHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="10" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1adf24c5c4327c3dbcc747509dc4dfc557" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.ResponseDetails</definition>
+        <argsstring></argsstring>
+        <name>ResponseDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="12" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a715b8be918589eb79f36a7b26358662f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.InvalidHttpResponseCodeException</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidHttpResponseCodeException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="14" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a347ec53f1cfcbb49e538875228a48710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.InvalidHttpResponseCodeException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>InvalidHttpResponseCodeException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="18" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a84228982fffdd6a9ea98b2788ba49657" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.InvalidHttpResponseCodeException</definition>
+        <argsstring>(string responseCode, string responseDetails, string responseHeader)</argsstring>
+        <name>InvalidHttpResponseCodeException</name>
+        <param>
+          <type>string</type>
+          <declname>responseCode</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>responseDetails</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>responseHeader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="22" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a9259a0ed0db58f55465455d1491c259f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException.InvalidHttpResponseCodeException</definition>
+        <argsstring>(string message, Exception inner)</argsstring>
+        <name>InvalidHttpResponseCodeException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="29" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.InvalidHttpResponseCodeException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/InvalidHttpResponseCodeException.cs" bodystart="7" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a715b8be918589eb79f36a7b26358662f" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>InvalidHttpResponseCodeException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a347ec53f1cfcbb49e538875228a48710" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>InvalidHttpResponseCodeException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a84228982fffdd6a9ea98b2788ba49657" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>InvalidHttpResponseCodeException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a9259a0ed0db58f55465455d1491c259f" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>InvalidHttpResponseCodeException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a8427acb8fca92ca95b6373c3e7fa41c5" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>ResponseCode</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1adf24c5c4327c3dbcc747509dc4dfc557" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>ResponseDetails</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception_1a9f2a05e653ab00986d71284788bb7d31" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</scope><name>ResponseHeader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,981 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_player_1_1_player_handler" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Player::PlayerHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a80344db09a38310902739ce3a80ee696" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.teamID</definition>
+        <argsstring></argsstring>
+        <name>teamID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="13" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ab0e987dbb5213ca99af9a041645414e6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.LastWeapon</definition>
+        <argsstring></argsstring>
+        <name>LastWeapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="14" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_my_f_p_s_1_1_player_1_1_player_handler_1af068db7f8ce88a7799ce4b824820a39e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool MyFPS.Player.PlayerHandler.IsHoldingFlag</definition>
+        <argsstring></argsstring>
+        <name>IsHoldingFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="21" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a2ffcc153d1b80fd140fc94cc12f4613f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Players health. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="33" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a4f2164c3e4276ce73994b801ece12c72" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> &gt;</type>
+        <definition>List&lt;Weapon&gt; MyFPS.Player.PlayerHandler.weapons</definition>
+        <argsstring></argsstring>
+        <name>weapons</name>
+        <briefdescription>
+<para>List&lt;&gt; of <ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> class that is the players loadout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="79" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a140aee4b498e515f51c1430209577a92" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 MyFPS.Player.PlayerHandler.dropOffset</definition>
+        <argsstring></argsstring>
+        <name>dropOffset</name>
+        <briefdescription>
+<para>Offset used when a weapon is dropped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="99" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1add56b73e638c3a8b7252fef0f5c33771" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 MyFPS.Player.PlayerHandler.equippedWeaponPosition</definition>
+        <argsstring></argsstring>
+        <name>equippedWeaponPosition</name>
+        <briefdescription>
+<para>Position the weapon is set to when it is equiped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="103" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a2b5ac6ec7d6861d3fc8a4aae08672085" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MyFPS.Player.PlayerHandler.endGamePanel</definition>
+        <argsstring></argsstring>
+        <name>endGamePanel</name>
+        <briefdescription>
+<para>Reference to the end game display panel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="124" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aecd3a98c7013a72ff79fa7705b9d03fc" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform MyFPS.Player.PlayerHandler.respawnPosition</definition>
+        <argsstring></argsstring>
+        <name>respawnPosition</name>
+        <briefdescription>
+<para>Position for the player to respaw to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="130" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1adb0654b4fa4f478755b968f60a6260c1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_first_person_controller" kindref="compound">FirstPersonController</ref></type>
+        <definition>FirstPersonController MyFPS.Player.PlayerHandler.fpsController</definition>
+        <argsstring></argsstring>
+        <name>fpsController</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_first_person_controller" kindref="compound">FirstPersonController</ref> class on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="37" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1afa536ba308714e49cd57de9a6ab74bac" prot="private" static="no" mutable="no">
+        <type>CharacterController</type>
+        <definition>CharacterController MyFPS.Player.PlayerHandler.charConrtol</definition>
+        <argsstring></argsstring>
+        <name>charConrtol</name>
+        <briefdescription>
+<para>Reference to the CharacterController component on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="41" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a58cc015d36fc9278a53555c2669fcf0f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode" kindref="compound">GameMode</ref></type>
+        <definition>GameMode MyFPS.Player.PlayerHandler.gameModeManager</definition>
+        <argsstring></argsstring>
+        <name>gameModeManager</name>
+        <briefdescription>
+<para>Reference to this games GameMode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="47" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a6fde4f540215886f46e505bf7767c50b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.playersTeamID</definition>
+        <argsstring></argsstring>
+        <name>playersTeamID</name>
+        <briefdescription>
+<para>This players team id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="51" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a31effa47e5ce12fe9249a16e766971e5" prot="private" static="no" mutable="no">
+        <type>PlayerInput</type>
+        <definition>PlayerInput MyFPS.Player.PlayerHandler.playerInput</definition>
+        <argsstring></argsstring>
+        <name>playerInput</name>
+        <briefdescription>
+<para>Reference to the PlayerInput component on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="57" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a67ed8ae65155add41f4b5dd0f1466920" prot="private" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Player.PlayerHandler.reloadAction</definition>
+        <argsstring></argsstring>
+        <name>reloadAction</name>
+        <briefdescription>
+<para>Reload action on the player input map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="61" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ae2bac0845b4093802d405fefb567289b" prot="private" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Player.PlayerHandler.fireAction</definition>
+        <argsstring></argsstring>
+        <name>fireAction</name>
+        <briefdescription>
+<para>Fire action on the player input map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="65" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ab930f59b96ad9271bef2546684867052" prot="private" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Player.PlayerHandler.swapWeaponAction</definition>
+        <argsstring></argsstring>
+        <name>swapWeaponAction</name>
+        <briefdescription>
+<para>Swap action on the player input map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="69" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1afe3658d87c05728aa1a1f39985126468" prot="private" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Player.PlayerHandler.escapeAction</definition>
+        <argsstring></argsstring>
+        <name>escapeAction</name>
+        <briefdescription>
+<para>Escape action on the player input map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="73" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aa1d71c2600c1b43b3c1646a1c35a9fe0" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MyFPS.Player.PlayerHandler.flagObject</definition>
+        <argsstring></argsstring>
+        <name>flagObject</name>
+        <briefdescription>
+<para>This players local flag object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="83" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a7e9ebb42bc991ec5225d368744d5644e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.currentWeapon</definition>
+        <argsstring></argsstring>
+        <name>currentWeapon</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Index to weapons&lt;&gt; of the current weapon the player has equiped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="87" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aba9aa6a5e33b32c89f24e8e98fcbf3e7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.lastWeapon</definition>
+        <argsstring></argsstring>
+        <name>lastWeapon</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Index to weapons&lt;&gt; of the previous weapon the player had equiped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="91" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ab0a27a4fce1a20da9cd76ed11a3ac655" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_gun" kindref="compound">Gun</ref></type>
+        <definition>Gun MyFPS.Player.PlayerHandler.currentGun</definition>
+        <argsstring></argsstring>
+        <name>currentGun</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_gun" kindref="compound">Gun</ref> class on the equiped weapon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="95" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1af5d7af20927a519f44aefe425a7d8768" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text MyFPS.Player.PlayerHandler.team1ScoreText</definition>
+        <argsstring></argsstring>
+        <name>team1ScoreText</name>
+        <briefdescription>
+<para>Reference to the Text that displays team 1&apos;s score. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="108" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a2bb5af55115a2b881f410ef396555928" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text MyFPS.Player.PlayerHandler.team2ScoreText</definition>
+        <argsstring></argsstring>
+        <name>team2ScoreText</name>
+        <briefdescription>
+<para>Reference to the Text that displays team 1&apos;s score. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="112" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aa36e92d02538b67c99017879d67d1003" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MyFPS.Player.PlayerHandler.pausePanel</definition>
+        <argsstring></argsstring>
+        <name>pausePanel</name>
+        <briefdescription>
+<para>Reference to the players Pause Menu panel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="116" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ac9c5e58df1f6e0ad58118531dbe40806" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyFPS.Player.PlayerHandler.paused</definition>
+        <argsstring></argsstring>
+        <name>paused</name>
+        <briefdescription>
+<para>Tracks if player has paused the game. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="120" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a8e4c5224c4ff070df858757ee38fae43" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_player_1_1_player_death" kindref="compound">PlayerDeath</ref></type>
+        <definition>PlayerDeath MyFPS.Player.PlayerHandler.playerDeath</definition>
+        <argsstring></argsstring>
+        <name>playerDeath</name>
+        <briefdescription>
+<para>Reference to the <ref refid="class_my_f_p_s_1_1_player_1_1_player_death" kindref="compound">PlayerDeath</ref> class on this game object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="134" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a775dd8a824f4af58be0c4101654a5929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.SwitchWeapon</definition>
+        <argsstring>(int _weaponID, bool _overrideLock=false)</argsstring>
+        <name>SwitchWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>_weaponID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_overrideLock</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Swaps the players equpied weapon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_weaponID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> ID of the weapon to be equpied.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_overrideLock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines if the weapon is able to be swapped. Default = false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="141" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="141" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aa10542d4b794ac1f4854f44f13a15441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.PickUpWeapon</definition>
+        <argsstring>(GameObject _weaponToPickUpObject, Vector3 _originalLocation, int _teamID, int _weaponID, bool _overrideLock=false)</argsstring>
+        <name>PickUpWeapon</name>
+        <param>
+          <type>GameObject</type>
+          <declname>_weaponToPickUpObject</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>_originalLocation</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_teamID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_weaponID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_overrideLock</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Picks up a weapon from a world space weapon object and adds it to this players weapons&lt;&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_weaponToPickUpObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object of the weapon to be picked up.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_originalLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original locaiton of the weapon to be picked up.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_teamID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Team ID of the weapon to be picked up.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_weaponID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> ID of the weapon to be picked up.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_overrideLock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determines if the weapon is able to be swapped. Default = false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="166" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="166" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a7303504cf5ba21eacbdd1bd053b1ef84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.DropWeapon</definition>
+        <argsstring>(int _weaponID)</argsstring>
+        <name>DropWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>_weaponID</declname>
+        </param>
+        <briefdescription>
+<para>Drops weapon and removes it from this players weapons&lt;&gt;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_weaponID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> ID of the weapon to be dropped.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="188" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="188" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ab5b303e4f1e1bd6148818ecf6d3a6c63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.ReturnWeapon</definition>
+        <argsstring>(int _weaponID)</argsstring>
+        <name>ReturnWeapon</name>
+        <param>
+          <type>int</type>
+          <declname>_weaponID</declname>
+        </param>
+        <briefdescription>
+<para>Returns weapon to it&apos;s original locaiton. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_weaponID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> ID of the weapon to be returned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="208" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="208" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ae309f02c74c333f0ab9ee8c0fb06fabe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.ReturnFlag</definition>
+        <argsstring>()</argsstring>
+        <name>ReturnFlag</name>
+        <briefdescription>
+<para>Returns flag to ir&apos;s original location. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="221" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a768e4ef93e4ec1b9a9ef6d6d758038f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.PickUpFlag</definition>
+        <argsstring>()</argsstring>
+        <name>PickUpFlag</name>
+        <briefdescription>
+<para>Picks up flag. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="229" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="229" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1adf82bd29701ac79d188eb0b2d356d476" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int MyFPS.Player.PlayerHandler.GetWeaponTeamID</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeaponTeamID</name>
+        <briefdescription>
+<para>Returns the team ID of the current weapon equiped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Integer.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="241" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1ab400c25545aae6e7442c54890c2b9070" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MyFPS.Player.PlayerHandler.IsHolding</definition>
+        <argsstring>(int _weaponID)</argsstring>
+        <name>IsHolding</name>
+        <param>
+          <type>int</type>
+          <declname>_weaponID</declname>
+        </param>
+        <briefdescription>
+<para>Reterns true if the player is holding weapon that has specific weapon ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_weaponID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_my_f_p_s_1_1_player_1_1_weapon" kindref="compound">Weapon</ref> ID to check against.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bool.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="250" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="250" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a8bf9da1996752a390388674a89058a1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.TakeDamage</definition>
+        <argsstring>(int _damage)</argsstring>
+        <name>TakeDamage</name>
+        <param>
+          <type>int</type>
+          <declname>_damage</declname>
+        </param>
+        <briefdescription>
+<para>Reduces players health by value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_damage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="273" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="273" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a02e4da9476db250b79667af38531f7ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.Death</definition>
+        <argsstring>()</argsstring>
+        <name>Death</name>
+        <briefdescription>
+<para>Called when players health reaches 0. Enables playerDeath. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="284" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="284" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aa32a5df5d370d10584b2eab71a622dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.Pause</definition>
+        <argsstring>()</argsstring>
+        <name>Pause</name>
+        <briefdescription>
+<para>Toggles game pause. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="306" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="306" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aa5618b68fbde4e4a90eb604940688d8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.UpdateTeamScores</definition>
+        <argsstring>(int _team1Score, int _team2Score)</argsstring>
+        <name>UpdateTeamScores</name>
+        <param>
+          <type>int</type>
+          <declname>_team1Score</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_team2Score</declname>
+        </param>
+        <briefdescription>
+<para>Updates UI display of the teams scores. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_team1Score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Score of team 1.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_team2Score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Score of team 2.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="332" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="332" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a9bbe7a652180fd0790654514db8c1ea6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.Teleport</definition>
+        <argsstring>(Vector3 _position)</argsstring>
+        <name>Teleport</name>
+        <param>
+          <type>Vector3</type>
+          <declname>_position</declname>
+        </param>
+        <briefdescription>
+<para>Teleports the player to position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position player is teleported to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="265" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a16bda5c5c49a1fe16772bfac53234640" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.OnFirePerformed</definition>
+        <argsstring>(InputAction.CallbackContext _context)</argsstring>
+        <name>OnFirePerformed</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>_context</declname>
+        </param>
+        <briefdescription>
+<para>Action to be performed when fireAction is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context of Input Action.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="341" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="341" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a52e89b10d31d8790650c2a5248281131" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.OnReloadPerformed</definition>
+        <argsstring>(InputAction.CallbackContext _context)</argsstring>
+        <name>OnReloadPerformed</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>_context</declname>
+        </param>
+        <briefdescription>
+<para>Action to be performed when reloadAction is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context of Input Action.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="349" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a0ff4c95b40020ae5f1875439a25c361b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.OnSwapWeaponPerformed</definition>
+        <argsstring>(InputAction.CallbackContext _context)</argsstring>
+        <name>OnSwapWeaponPerformed</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>_context</declname>
+        </param>
+        <briefdescription>
+<para>Action to be performed when swapWeaponAction is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context of Input Action.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="357" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="357" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a3f6c40c3110cdbf68ddd431fa9d5dfd1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.OnEscapePerformed</definition>
+        <argsstring>(InputAction.CallbackContext _context)</argsstring>
+        <name>OnEscapePerformed</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>_context</declname>
+        </param>
+        <briefdescription>
+<para>Action to be performed when escapeAction is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context of Input Action.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="365" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1a214d5a3cda0441fc72d78e6a326ed067" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="370" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="370" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_player_1_1_player_handler_1aeb58989988a3706f79b0f5ec599281d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Player.PlayerHandler.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="417" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="417" bodyend="471"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Player.PlayerHandler</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Player.PlayerHandler</label>
+        <link refid="class_my_f_p_s_1_1_player_1_1_player_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" line="10" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/PlayerHandler.cs" bodystart="11" bodyend="473"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1afa536ba308714e49cd57de9a6ab74bac" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>charConrtol</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ab0a27a4fce1a20da9cd76ed11a3ac655" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>currentGun</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a7e9ebb42bc991ec5225d368744d5644e" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>currentWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a02e4da9476db250b79667af38531f7ec" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>Death</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a140aee4b498e515f51c1430209577a92" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>dropOffset</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a7303504cf5ba21eacbdd1bd053b1ef84" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>DropWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a2b5ac6ec7d6861d3fc8a4aae08672085" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>endGamePanel</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1add56b73e638c3a8b7252fef0f5c33771" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>equippedWeaponPosition</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1afe3658d87c05728aa1a1f39985126468" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>escapeAction</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ae2bac0845b4093802d405fefb567289b" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>fireAction</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aa1d71c2600c1b43b3c1646a1c35a9fe0" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>flagObject</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1adb0654b4fa4f478755b968f60a6260c1" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>fpsController</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a58cc015d36fc9278a53555c2669fcf0f" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>gameModeManager</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1adf82bd29701ac79d188eb0b2d356d476" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>GetWeaponTeamID</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a2ffcc153d1b80fd140fc94cc12f4613f" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>health</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ab400c25545aae6e7442c54890c2b9070" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>IsHolding</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1af068db7f8ce88a7799ce4b824820a39e" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>IsHoldingFlag</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ab0e987dbb5213ca99af9a041645414e6" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>LastWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aba9aa6a5e33b32c89f24e8e98fcbf3e7" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>lastWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a3f6c40c3110cdbf68ddd431fa9d5dfd1" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>OnEscapePerformed</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a16bda5c5c49a1fe16772bfac53234640" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>OnFirePerformed</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a52e89b10d31d8790650c2a5248281131" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>OnReloadPerformed</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a0ff4c95b40020ae5f1875439a25c361b" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>OnSwapWeaponPerformed</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aa32a5df5d370d10584b2eab71a622dd0" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>Pause</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ac9c5e58df1f6e0ad58118531dbe40806" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>paused</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aa36e92d02538b67c99017879d67d1003" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>pausePanel</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a768e4ef93e4ec1b9a9ef6d6d758038f4" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>PickUpFlag</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aa10542d4b794ac1f4854f44f13a15441" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>PickUpWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a8e4c5224c4ff070df858757ee38fae43" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>playerDeath</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a31effa47e5ce12fe9249a16e766971e5" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>playerInput</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a6fde4f540215886f46e505bf7767c50b" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>playersTeamID</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a67ed8ae65155add41f4b5dd0f1466920" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>reloadAction</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aecd3a98c7013a72ff79fa7705b9d03fc" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>respawnPosition</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ae309f02c74c333f0ab9ee8c0fb06fabe" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>ReturnFlag</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ab5b303e4f1e1bd6148818ecf6d3a6c63" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>ReturnWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a214d5a3cda0441fc72d78e6a326ed067" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>Start</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1ab930f59b96ad9271bef2546684867052" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>swapWeaponAction</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a775dd8a824f4af58be0c4101654a5929" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>SwitchWeapon</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a8bf9da1996752a390388674a89058a1c" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>TakeDamage</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1af5d7af20927a519f44aefe425a7d8768" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>team1ScoreText</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a2bb5af55115a2b881f410ef396555928" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>team2ScoreText</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a80344db09a38310902739ce3a80ee696" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>teamID</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a9bbe7a652180fd0790654514db8c1ea6" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>Teleport</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aeb58989988a3706f79b0f5ec599281d9" prot="private" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>Update</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1aa5618b68fbde4e4a90eb604940688d8f" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>UpdateTeamScores</name></member>
+      <member refid="class_my_f_p_s_1_1_player_1_1_player_handler_1a4f2164c3e4276ce73994b801ece12c72" prot="public" virt="non-virtual"><scope>MyFPS::Player::PlayerHandler</scope><name>weapons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

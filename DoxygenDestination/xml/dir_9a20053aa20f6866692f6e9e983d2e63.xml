@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_9a20053aa20f6866692f6e9e983d2e63" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings</compoundname>
+    <innerfile refid="_menu_handler_8cs">MenuHandler.cs</innerfile>
+    <innerfile refid="_settings_manager_8cs">SettingsManager.cs</innerfile>
+    <innerfile refid="_volume_slider_8cs">VolumeSlider.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Menu and Settings/"/>
+  </compounddef>
+</doxygen>

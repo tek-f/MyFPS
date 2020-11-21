@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_runtime_2_assembly_info_8cs" kind="file" language="C#">
+    <compoundname>AssemblyInfo.cs</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.CompilerServices;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests.Common&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests.Generated&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests.Runtime&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests.Performance.Editor&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Tests.Performance.Runtime&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">[assembly:<sp/>InternalsVisibleTo(</highlight><highlight class="stringliteral">&quot;Mirror.Editor&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/AssemblyInfo.cs"/>
+  </compounddef>
+</doxygen>

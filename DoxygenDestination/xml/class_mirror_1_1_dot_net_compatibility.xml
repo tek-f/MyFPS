@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_dot_net_compatibility" kind="class" language="C#" prot="package">
+    <compoundname>Mirror::DotNetCompatibility</compoundname>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_dot_net_compatibility_1a053548b6ec8adf3d3d90d1d3a90ee737" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mirror.DotNetCompatibility.GetMethodName</definition>
+        <argsstring>(this Delegate func)</argsstring>
+        <name>GetMethodName</name>
+        <param>
+          <type>this Delegate</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/DotNetCompatibility.cs" line="7" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/DotNetCompatibility.cs" bodystart="7" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/DotNetCompatibility.cs" line="5" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/DotNetCompatibility.cs" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_dot_net_compatibility_1a053548b6ec8adf3d3d90d1d3a90ee737" prot="package" virt="non-virtual"><scope>Mirror::DotNetCompatibility</scope><name>GetMethodName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

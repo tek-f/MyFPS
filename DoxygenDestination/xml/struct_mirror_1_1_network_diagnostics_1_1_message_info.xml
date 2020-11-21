@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_network_diagnostics_1_1_message_info" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::NetworkDiagnostics::MessageInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ad2f63f7e004cd1b12e7d9adc3fb789a6" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mirror_1_1_i_message_base" kindref="compound">IMessageBase</ref></type>
+        <definition>readonly IMessageBase Mirror.NetworkDiagnostics.MessageInfo.message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+<para>The message being sent </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="20" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_network_diagnostics_1_1_message_info_1a0484314a8cf68efe4c4c27f67e65f8b7" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mirror.NetworkDiagnostics.MessageInfo.channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>channel through which the message was sent </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="24" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_network_diagnostics_1_1_message_info_1a6502bda92f15959592cb0caca1616882" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mirror.NetworkDiagnostics.MessageInfo.bytes</definition>
+        <argsstring></argsstring>
+        <name>bytes</name>
+        <briefdescription>
+<para>how big was the message (does not include transport headers) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="28" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ad9fbdbaf142b48bcb27686b2114f632b" prot="public" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mirror.NetworkDiagnostics.MessageInfo.count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+<para>How many connections was the message sent to If an object has a lot of observers this count could be high </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="33" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ae4695400e689545fba07cc6cbb3e1ae0" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.NetworkDiagnostics.MessageInfo.MessageInfo</definition>
+        <argsstring>(IMessageBase message, int channel, int bytes, int count)</argsstring>
+        <name>MessageInfo</name>
+        <param>
+          <type><ref refid="interface_mirror_1_1_i_message_base" kindref="compound">IMessageBase</ref></type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="35" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Describes an outgoing message </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.NetworkDiagnostics.MessageInfo</label>
+        <link refid="struct_mirror_1_1_network_diagnostics_1_1_message_info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>message</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mirror.IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" line="15" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkDiagnostics.cs" bodystart="16" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_network_diagnostics_1_1_message_info_1a6502bda92f15959592cb0caca1616882" prot="public" virt="non-virtual"><scope>Mirror::NetworkDiagnostics::MessageInfo</scope><name>bytes</name></member>
+      <member refid="struct_mirror_1_1_network_diagnostics_1_1_message_info_1a0484314a8cf68efe4c4c27f67e65f8b7" prot="public" virt="non-virtual"><scope>Mirror::NetworkDiagnostics::MessageInfo</scope><name>channel</name></member>
+      <member refid="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ad9fbdbaf142b48bcb27686b2114f632b" prot="public" virt="non-virtual"><scope>Mirror::NetworkDiagnostics::MessageInfo</scope><name>count</name></member>
+      <member refid="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ad2f63f7e004cd1b12e7d9adc3fb789a6" prot="public" virt="non-virtual"><scope>Mirror::NetworkDiagnostics::MessageInfo</scope><name>message</name></member>
+      <member refid="struct_mirror_1_1_network_diagnostics_1_1_message_info_1ae4695400e689545fba07cc6cbb3e1ae0" prot="package" virt="non-virtual"><scope>Mirror::NetworkDiagnostics::MessageInfo</scope><name>MessageInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_client_callback_attribute" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::ClientCallbackAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+    <briefdescription>
+<para>Prevents the server from running this method. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>No warning is printed.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Mirror.ClientCallbackAttribute</label>
+        <link refid="class_mirror_1_1_client_callback_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Mirror.ClientCallbackAttribute</label>
+        <link refid="class_mirror_1_1_client_callback_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" line="86" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" bodystart="86" bodyend="86"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

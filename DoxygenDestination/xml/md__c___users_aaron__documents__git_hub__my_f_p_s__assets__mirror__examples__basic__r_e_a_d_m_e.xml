@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__examples__basic__r_e_a_d_m_e" kind="page">
+    <compoundname>md_C__Users_aaron_Documents_GitHub_MyFPS_Assets_Mirror_Examples_Basic_README</compoundname>
+    <title>Basic Example</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is a bare bones example of a running game with Network Manager and UI prefab players:</para>
+<para><orderedlist>
+<listitem><para>Remove all scenes from Build Settings, then add the Example scene alone.</para>
+</listitem><listitem><para>Open the Example scene and build the project.</para>
+</listitem><listitem><para>In the editor, click Play, and Server + Client or Server Only...it will be listening on port 7777. <linebreak/>
+<itemizedlist>
+<listitem><para>If you clicked Host (Server + Client), the host player will appear as Player 00.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Run one or more instances (up to 16 total players) of the built application.</para>
+</listitem><listitem><para>Click Client on each instance.</para>
+</listitem><listitem><para>Now you will see all players in the editor and the clients, all with data being updated and synchronized. </para>
+</listitem></orderedlist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

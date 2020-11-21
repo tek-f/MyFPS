@@ -1,0 +1,274 @@
+\hypertarget{class_mirror_1_1_network_connection}{}\doxysection{Mirror.\+Network\+Connection Class Reference}
+\label{class_mirror_1_1_network_connection}\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+
+
+A High level network connection. This is used for connections from client-\/to-\/server and for connection from server-\/to-\/client.  
+
+
+Inheritance diagram for Mirror.\+Network\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_mirror_1_1_network_connection}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_connection_a3d4805ab08b2af8d6a39b6a873d8256c}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Disposes of this connection, releasing channel buffers that it holds. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_mirror_1_1_network_connection_a2d3402195c717ebf2c45874b4f3c17bf}{Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects this connection. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_connection_abd5a3b4206ef5158e23232be1a09f26e}{Send$<$ T $>$}} (T msg, int channel\+Id=Channels.\+Default\+Reliable)
+\begin{DoxyCompactList}\small\item\em This sends a network message with a message ID on the connection. This message is sent on channel zero, which by default is the reliable channel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_ab62357e826e041bf33eea9237511bd56}\label{class_mirror_1_1_network_connection_ab62357e826e041bf33eea9237511bd56}} 
+override string {\bfseries To\+String} ()
+\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_connection_a2883951cc3bc4b4fd796beb454800a1b}{Invoke\+Handler$<$ T $>$}} (T msg, int channel\+Id)
+\begin{DoxyCompactList}\small\item\em This function invokes the registered handler function for a message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_mirror_1_1_network_connection_a1247800fa37e4af183ca3c58e687ecf4}{connection\+Id}}
+\begin{DoxyCompactList}\small\item\em Unique identifier for this connection that is assigned by the transport layer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_connection_a482f5e49c373a96c29df1c9cbc4a6757}{is\+Authenticated}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flag}{Flag}} that indicates the client has been authenticated. \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{class_mirror_1_1_network_connection_a571373632c93c7f18f3e601b8ee0b04f}{authentication\+Data}}
+\begin{DoxyCompactList}\small\item\em General purpose object to hold authentication data, character selection, tokens, etc. associated with the connection for reference after Authentication completes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_connection_a94362bc21882fa2d34df1235d706b1f7}{is\+Ready}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flag}{Flag}} that tells if the connection has been marked as \char`\"{}ready\char`\"{} by a client calling Client\+Scene.\+Ready(). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mirror_1_1_network_connection_abfcc29816ddb4bd117dd26a31728a4d8}{last\+Message\+Time}}
+\begin{DoxyCompactList}\small\item\em The last time that a message was received on this connection. \end{DoxyCompactList}\item 
+readonly Hash\+Set$<$ \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} $>$ \mbox{\hyperlink{class_mirror_1_1_network_connection_a0523c3a787f8e1689300b21bad102e57}{client\+Owned\+Objects}} = new Hash\+Set$<$\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$()
+\begin{DoxyCompactList}\small\item\em A list of the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} objects owned by this connection. This list is read-\/only. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_connection_a7ca2603dbf2d32b799a9633a60e269d0}{log\+Network\+Messages}}
+\begin{DoxyCompactList}\small\item\em Setting this to true will log the contents of network message to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a96ab2276c0acb1a3ce270a00804db9e1}\label{class_mirror_1_1_network_connection_a96ab2276c0acb1a3ce270a00804db9e1}} 
+const int {\bfseries Local\+Connection\+Id} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a8e92049dba7a22350a018c62d8d1d08f}\label{class_mirror_1_1_network_connection_a8e92049dba7a22350a018c62d8d1d08f}} 
+virtual void {\bfseries Dispose} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+abstract string \mbox{\hyperlink{class_mirror_1_1_network_connection_a23cbe763dddbb12ba43ef129c456db37}{address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The IP address / U\+RL / F\+Q\+DN associated with the connection. Can be useful for a game master to do IP Bans etc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} \mbox{\hyperlink{class_mirror_1_1_network_connection_a1d2489f176006bf19fd9bb9850967c76}{identity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} for this connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A High level network connection. This is used for connections from client-\/to-\/server and for connection from server-\/to-\/client. 
+
+A \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} corresponds to a specific connection for a host in the transport layer. It has a connection\+Id that is assigned by the transport layer and passed to the Initialize function.
+
+A Network\+Client has one \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}. A Network\+Server\+Simple manages multiple Network\+Connections. The Network\+Server has multiple \char`\"{}remote\char`\"{} connections and a \char`\"{}local\char`\"{} connection for the local client.
+
+The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} class provides message sending and handling facilities. For sending data over a network, there are methods to send message objects, byte arrays, and \mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} objects. To handle data arriving from the network, handler functions can be registered for message Ids, byte arrays can be processed by Handle\+Bytes(), and \mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} object can be processed by Handle\+Reader().
+
+\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} objects also act as observers for networked objects. When a connection is an observer of a networked object with a \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}, then the object will be visible to corresponding client for the connection, and incremental state changes will be sent to the client.
+
+There are many virtual functions on \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} that allow its behaviour to be customized. Network\+Client and Network\+Server can both be made to instantiate custom classes derived from \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} by setting their network\+Connection\+Class member variable.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a2d3402195c717ebf2c45874b4f3c17bf}\label{class_mirror_1_1_network_connection_a2d3402195c717ebf2c45874b4f3c17bf}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{Disconnect()}{Disconnect()}}
+{\footnotesize\ttfamily abstract void Mirror.\+Network\+Connection.\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Disconnects this connection. 
+
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_network_connection_to_server_afa1f2d6f6515a8c345df425b8c04ed8d}{Mirror.\+Network\+Connection\+To\+Server}}, \mbox{\hyperlink{class_mirror_1_1_network_connection_to_client_a578cd702f7b9a289d9f0b04c2e4978e2}{Mirror.\+Network\+Connection\+To\+Client}}, and \mbox{\hyperlink{class_mirror_1_1_u_local_connection_to_client_af3413c485f73747e687bdbf0f2f286d3}{Mirror.\+U\+Local\+Connection\+To\+Client}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a3d4805ab08b2af8d6a39b6a873d8256c}\label{class_mirror_1_1_network_connection_a3d4805ab08b2af8d6a39b6a873d8256c}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Connection.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disposes of this connection, releasing channel buffers that it holds. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a2883951cc3bc4b4fd796beb454800a1b}\label{class_mirror_1_1_network_connection_a2883951cc3bc4b4fd796beb454800a1b}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!InvokeHandler$<$ T $>$@{InvokeHandler$<$ T $>$}}
+\index{InvokeHandler$<$ T $>$@{InvokeHandler$<$ T $>$}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{InvokeHandler$<$ T $>$()}{InvokeHandler< T >()}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Connection.\+Invoke\+Handler$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{msg,  }\item[{int}]{channel\+Id }\end{DoxyParamCaption})}
+
+
+
+This function invokes the registered handler function for a message. 
+
+Network connections used by the Network\+Client and Network\+Server use this function for handling network messages.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The message type to unregister.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message object to process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the handler was successfully invoked
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Message\+Base}]\end{description}
+\end{Desc}
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_abd5a3b4206ef5158e23232be1a09f26e}\label{class_mirror_1_1_network_connection_abd5a3b4206ef5158e23232be1a09f26e}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!Send$<$ T $>$@{Send$<$ T $>$}}
+\index{Send$<$ T $>$@{Send$<$ T $>$}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{Send$<$ T $>$()}{Send< T >()}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Connection.\+Send$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{msg,  }\item[{int}]{channel\+Id = {\ttfamily Channels.DefaultReliable} }\end{DoxyParamCaption})}
+
+
+
+This sends a network message with a message ID on the connection. This message is sent on channel zero, which by default is the reliable channel. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The message type to unregister.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to send.\\
+\hline
+{\em channel\+Id} & The transport layer channel to send on.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em I\+Message\+Base}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a571373632c93c7f18f3e601b8ee0b04f}\label{class_mirror_1_1_network_connection_a571373632c93c7f18f3e601b8ee0b04f}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!authenticationData@{authenticationData}}
+\index{authenticationData@{authenticationData}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{authenticationData}{authenticationData}}
+{\footnotesize\ttfamily object Mirror.\+Network\+Connection.\+authentication\+Data}
+
+
+
+General purpose object to hold authentication data, character selection, tokens, etc. associated with the connection for reference after Authentication completes. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a0523c3a787f8e1689300b21bad102e57}\label{class_mirror_1_1_network_connection_a0523c3a787f8e1689300b21bad102e57}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!clientOwnedObjects@{clientOwnedObjects}}
+\index{clientOwnedObjects@{clientOwnedObjects}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{clientOwnedObjects}{clientOwnedObjects}}
+{\footnotesize\ttfamily readonly Hash\+Set$<$\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$ Mirror.\+Network\+Connection.\+client\+Owned\+Objects = new Hash\+Set$<$\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$()}
+
+
+
+A list of the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} objects owned by this connection. This list is read-\/only. 
+
+This includes the player object for the connection -\/ if it has local\+Player\+Autority set, and any objects spawned with local authority or set with Assign\+Local\+Authority.
+
+This list can be used to validate messages from clients, to ensure that clients are only trying to control objects that they own.\mbox{\Hypertarget{class_mirror_1_1_network_connection_a1247800fa37e4af183ca3c58e687ecf4}\label{class_mirror_1_1_network_connection_a1247800fa37e4af183ca3c58e687ecf4}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!connectionId@{connectionId}}
+\index{connectionId@{connectionId}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{connectionId}{connectionId}}
+{\footnotesize\ttfamily readonly int Mirror.\+Network\+Connection.\+connection\+Id}
+
+
+
+Unique identifier for this connection that is assigned by the transport layer. 
+
+On a server, this Id is unique for every connection on the server. On a client this Id is local to the client, it is not the same as the Id on the server for this connection.
+
+\mbox{\hyperlink{class_mirror_1_1_transport}{Transport}} layers connections begin at one. So on a client with a single connection to a server, the connection\+Id of that connection will be one. In Network\+Server, the connection\+Id of the local connection is zero.
+
+Clients do not know their connection\+Id on the server, and do not know the connection\+Id of other clients on the server.\mbox{\Hypertarget{class_mirror_1_1_network_connection_a482f5e49c373a96c29df1c9cbc4a6757}\label{class_mirror_1_1_network_connection_a482f5e49c373a96c29df1c9cbc4a6757}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!isAuthenticated@{isAuthenticated}}
+\index{isAuthenticated@{isAuthenticated}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{isAuthenticated}{isAuthenticated}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Connection.\+is\+Authenticated}
+
+
+
+\mbox{\hyperlink{class_flag}{Flag}} that indicates the client has been authenticated. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a94362bc21882fa2d34df1235d706b1f7}\label{class_mirror_1_1_network_connection_a94362bc21882fa2d34df1235d706b1f7}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!isReady@{isReady}}
+\index{isReady@{isReady}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{isReady}{isReady}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Connection.\+is\+Ready}
+
+
+
+\mbox{\hyperlink{class_flag}{Flag}} that tells if the connection has been marked as \char`\"{}ready\char`\"{} by a client calling Client\+Scene.\+Ready(). 
+
+This property is read-\/only. It is set by the system on the client when Client\+Scene.\+Ready() is called, and set by the system on the server when a ready message is received from a client.
+
+A client that is ready is sent spawned objects by the server and updates to the state of spawned objects. A client that is not ready is not sent spawned objects.\mbox{\Hypertarget{class_mirror_1_1_network_connection_abfcc29816ddb4bd117dd26a31728a4d8}\label{class_mirror_1_1_network_connection_abfcc29816ddb4bd117dd26a31728a4d8}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!lastMessageTime@{lastMessageTime}}
+\index{lastMessageTime@{lastMessageTime}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{lastMessageTime}{lastMessageTime}}
+{\footnotesize\ttfamily float Mirror.\+Network\+Connection.\+last\+Message\+Time}
+
+
+
+The last time that a message was received on this connection. 
+
+This includes internal system messages (such as Commands and Client\+Rpc calls) and user messages.\mbox{\Hypertarget{class_mirror_1_1_network_connection_a7ca2603dbf2d32b799a9633a60e269d0}\label{class_mirror_1_1_network_connection_a7ca2603dbf2d32b799a9633a60e269d0}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!logNetworkMessages@{logNetworkMessages}}
+\index{logNetworkMessages@{logNetworkMessages}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{logNetworkMessages}{logNetworkMessages}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Connection.\+log\+Network\+Messages}
+
+
+
+Setting this to true will log the contents of network message to the console. 
+
+Warning\+: this can be a lot of data and can be very slow. Both incoming and outgoing messages are logged. The format of the logs is\+:
+
+Connection\+Send con\+:1 bytes\+:11 msg\+Id\+:5 F\+B59\+D743\+F\+D120000000000 Connection\+Recv con\+:1 bytes\+:27 msg\+Id\+:8 14F21000000000016800\+A\+C3\+F\+E090\+C240437846403\+C\+D\+D\+C0\+B\+D3\+B0000
+
+Note that these are application-\/level network messages, not protocol-\/level packets. There will typically be multiple network messages combined in a single protocol packet.
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a23cbe763dddbb12ba43ef129c456db37}\label{class_mirror_1_1_network_connection_a23cbe763dddbb12ba43ef129c456db37}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!address@{address}}
+\index{address@{address}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily abstract string Mirror.\+Network\+Connection.\+address\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The IP address / U\+RL / F\+Q\+DN associated with the connection. Can be useful for a game master to do IP Bans etc. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_connection_a1d2489f176006bf19fd9bb9850967c76}\label{class_mirror_1_1_network_connection_a1d2489f176006bf19fd9bb9850967c76}} 
+\index{Mirror.NetworkConnection@{Mirror.NetworkConnection}!identity@{identity}}
+\index{identity@{identity}!Mirror.NetworkConnection@{Mirror.NetworkConnection}}
+\doxysubsubsection{\texorpdfstring{identity}{identity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} Mirror.\+Network\+Connection.\+identity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} for this connection. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Connection.\+cs\end{DoxyCompactItemize}

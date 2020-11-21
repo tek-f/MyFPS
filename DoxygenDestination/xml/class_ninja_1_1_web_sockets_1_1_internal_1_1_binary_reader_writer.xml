@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer" kind="class" language="C#" prot="package">
+    <compoundname>Ninja::WebSockets::Internal::BinaryReaderWriter</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a8b3bf832f3f19b23acbec85abb705535" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>static async Task Ninja.WebSockets.Internal.BinaryReaderWriter.ReadExactly</definition>
+        <argsstring>(int length, Stream stream, ArraySegment&lt; byte &gt; buffer, CancellationToken cancellationToken)</argsstring>
+        <name>ReadExactly</name>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="33" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="33" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a1b5bf31fa0081b681296494721f106d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ushort &gt;</type>
+        <definition>static async Task&lt;ushort&gt; Ninja.WebSockets.Internal.BinaryReaderWriter.ReadUShortExactly</definition>
+        <argsstring>(Stream stream, bool isLittleEndian, ArraySegment&lt; byte &gt; buffer, CancellationToken cancellationToken)</argsstring>
+        <name>ReadUShortExactly</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="69" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1ace4121a338d61e457381fd6697ff67c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ulong &gt;</type>
+        <definition>static async Task&lt;ulong&gt; Ninja.WebSockets.Internal.BinaryReaderWriter.ReadULongExactly</definition>
+        <argsstring>(Stream stream, bool isLittleEndian, ArraySegment&lt; byte &gt; buffer, CancellationToken cancellationToken)</argsstring>
+        <name>ReadULongExactly</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="82" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="82" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a1855cfbbf62ee211775dfb39fe05e92a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; long &gt;</type>
+        <definition>static async Task&lt;long&gt; Ninja.WebSockets.Internal.BinaryReaderWriter.ReadLongExactly</definition>
+        <argsstring>(Stream stream, bool isLittleEndian, ArraySegment&lt; byte &gt; buffer, CancellationToken cancellationToken)</argsstring>
+        <name>ReadLongExactly</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="95" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="95" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a685c8f965911f3eea51ba71e4f2904a5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ninja.WebSockets.Internal.BinaryReaderWriter.WriteInt</definition>
+        <argsstring>(int value, Stream stream, bool isLittleEndian)</argsstring>
+        <name>WriteInt</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="108" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="108" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a399b591db14896ff51194a51ffe3a1b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ninja.WebSockets.Internal.BinaryReaderWriter.WriteULong</definition>
+        <argsstring>(ulong value, Stream stream, bool isLittleEndian)</argsstring>
+        <name>WriteULong</name>
+        <param>
+          <type>ulong</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="119" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="119" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a967e803a94947544c49fbaae61006130" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ninja.WebSockets.Internal.BinaryReaderWriter.WriteLong</definition>
+        <argsstring>(long value, Stream stream, bool isLittleEndian)</argsstring>
+        <name>WriteLong</name>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="130" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="130" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1ac5f490e305005d97a5e2c024d4a38795" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Ninja.WebSockets.Internal.BinaryReaderWriter.WriteUShort</definition>
+        <argsstring>(ushort value, Stream stream, bool isLittleEndian)</argsstring>
+        <name>WriteUShort</name>
+        <param>
+          <type>ushort</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isLittleEndian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="141" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="141" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" line="31" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/BinaryReaderWriter.cs" bodystart="32" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a8b3bf832f3f19b23acbec85abb705535" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>ReadExactly</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a1855cfbbf62ee211775dfb39fe05e92a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>ReadLongExactly</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1ace4121a338d61e457381fd6697ff67c7" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>ReadULongExactly</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a1b5bf31fa0081b681296494721f106d9" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>ReadUShortExactly</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a685c8f965911f3eea51ba71e4f2904a5" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>WriteInt</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a967e803a94947544c49fbaae61006130" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>WriteLong</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1a399b591db14896ff51194a51ffe3a1b1" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>WriteULong</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_binary_reader_writer_1ac5f490e305005d97a5e2c024d4a38795" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Internal::BinaryReaderWriter</scope><name>WriteUShort</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

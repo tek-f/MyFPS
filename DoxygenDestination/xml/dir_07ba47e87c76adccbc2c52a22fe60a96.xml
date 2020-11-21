@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_07ba47e87c76adccbc2c52a22fe60a96" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror</compoundname>
+    <innerfile refid="_join_lobby_menu_8cs">JoinLobbyMenu.cs</innerfile>
+    <innerfile refid="_main_menu_8cs">MainMenu.cs</innerfile>
+    <innerfile refid="_mirror_player_handler_8cs">MirrorPlayerHandler.cs</innerfile>
+    <innerfile refid="_m_p_player_camera_controller_8cs">MPPlayerCameraController.cs</innerfile>
+    <innerfile refid="_m_p_player_movement_controller_8cs">MPPlayerMovementController.cs</innerfile>
+    <innerfile refid="_network_game_player_lobby_8cs">NetworkGamePlayerLobby.cs</innerfile>
+    <innerfile refid="_network_manager_lobby_8cs">NetworkManagerLobby.cs</innerfile>
+    <innerfile refid="_network_room_player_lobby_8cs">NetworkRoomPlayerLobby.cs</innerfile>
+    <innerfile refid="_player_name_input_8cs">PlayerNameInput.cs</innerfile>
+    <innerfile refid="_player_spawn_point_8cs">PlayerSpawnPoint.cs</innerfile>
+    <innerfile refid="_player_spawn_system_8cs">PlayerSpawnSystem.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_impact_script" kind="class" language="C#" prot="public">
+    <compoundname>ImpactScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_impact_script_1a7720f623a5bffd6fc393161bb34b80c2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ImpactScript.despawnTimer</definition>
+        <argsstring></argsstring>
+        <name>despawnTimer</name>
+        <initializer>= 10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="9" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_impact_script_1aa87e914f3780b803d43a35ede3eb9248" prot="public" static="no" mutable="no">
+        <type>AudioClip[]</type>
+        <definition>AudioClip [] ImpactScript.impactSounds</definition>
+        <argsstring></argsstring>
+        <name>impactSounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="12" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_impact_script_1a03a35b012b25cfbebdbcb2a8a4323a11" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource ImpactScript.audioSource</definition>
+        <argsstring></argsstring>
+        <name>audioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="13" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_impact_script_1a60937acb20e6de21ddea8977736efc8a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImpactScript.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="15" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="15" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_impact_script_1ac80c64d61c5d9fe418220bd6a60d77a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ImpactScript.DespawnTimer</definition>
+        <argsstring>()</argsstring>
+        <name>DespawnTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="26" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ImpactScript</label>
+        <link refid="class_impact_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ImpactScript</label>
+        <link refid="class_impact_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" line="5" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts/ImpactScript.cs" bodystart="5" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_impact_script_1a03a35b012b25cfbebdbcb2a8a4323a11" prot="public" virt="non-virtual"><scope>ImpactScript</scope><name>audioSource</name></member>
+      <member refid="class_impact_script_1a7720f623a5bffd6fc393161bb34b80c2" prot="public" virt="non-virtual"><scope>ImpactScript</scope><name>despawnTimer</name></member>
+      <member refid="class_impact_script_1ac80c64d61c5d9fe418220bd6a60d77a2" prot="private" virt="non-virtual"><scope>ImpactScript</scope><name>DespawnTimer</name></member>
+      <member refid="class_impact_script_1aa87e914f3780b803d43a35ede3eb9248" prot="public" virt="non-virtual"><scope>ImpactScript</scope><name>impactSounds</name></member>
+      <member refid="class_impact_script_1a60937acb20e6de21ddea8977736efc8a" prot="private" virt="non-virtual"><scope>ImpactScript</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

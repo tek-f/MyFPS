@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream" kind="class" language="C#" prot="protected">
+    <compoundname>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MemoryStream</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a4a22e8d868716b8b10092cdbe0d11262" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_ninja_1_1_web_sockets_1_1_buffer_pool" kindref="compound">BufferPool</ref></type>
+        <definition>readonly BufferPool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream._bufferPoolInternal</definition>
+        <argsstring></argsstring>
+        <name>_bufferPoolInternal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="37" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a201e2d24d8245a8d59504796cabd8e46" prot="private" static="no" mutable="no">
+        <type>byte[]</type>
+        <definition>byte [] Ninja.WebSockets.BufferPool.PublicBufferMemoryStream._buffer</definition>
+        <argsstring></argsstring>
+        <name>_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="38" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aca6d0e81509588321e53b8becd0d0d98" prot="private" static="no" mutable="no">
+        <type>MemoryStream</type>
+        <definition>MemoryStream Ninja.WebSockets.BufferPool.PublicBufferMemoryStream._ms</definition>
+        <argsstring></argsstring>
+        <name>_ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="39" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a9a9fe32791adbd5e08147c8da3f3ab6f" prot="public" static="no" mutable="no">
+        <type>override long</type>
+        <definition>override long Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <initializer>=&gt; base.Length</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="48" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a0fd63c0b13643539a1b4c3276dffd595" prot="public" static="no" mutable="no">
+        <type>override bool</type>
+        <definition>override bool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.CanRead</definition>
+        <argsstring></argsstring>
+        <name>CanRead</name>
+        <initializer>=&gt; _ms.CanRead</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="60" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a9a06d57b4fa03ae7f3e6944d5eb75e63" prot="public" static="no" mutable="no">
+        <type>override bool</type>
+        <definition>override bool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.CanSeek</definition>
+        <argsstring></argsstring>
+        <name>CanSeek</name>
+        <initializer>=&gt; _ms.CanSeek</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="61" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a73773f29861a2583c2261317879b3b5c" prot="public" static="no" mutable="no">
+        <type>override bool</type>
+        <definition>override bool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.CanTimeout</definition>
+        <argsstring></argsstring>
+        <name>CanTimeout</name>
+        <initializer>=&gt; _ms.CanTimeout</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="62" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aaa4773869ea670e12c4ec8014129f69c" prot="public" static="no" mutable="no">
+        <type>override bool</type>
+        <definition>override bool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.CanWrite</definition>
+        <argsstring></argsstring>
+        <name>CanWrite</name>
+        <initializer>=&gt; _ms.CanWrite</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="63" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a886e6efeaae1f91693d29f8810ede041" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Capacity</definition>
+        <argsstring></argsstring>
+        <name>Capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="64" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a0fd289977054b6ec02df412b05338647" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override long</type>
+        <definition>override long Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="111" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a001ce408c94c9cd7c0bed2931dbe8ab0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.ReadTimeout</definition>
+        <argsstring></argsstring>
+        <name>ReadTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="184" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="185" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac60ad1930849948815d787f6ea12cff8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.WriteTimeout</definition>
+        <argsstring></argsstring>
+        <name>WriteTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="209" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="210" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aa17fd1779fb85995dab0c34381a7e2a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.PublicBufferMemoryStream</definition>
+        <argsstring>(byte[] buffer, BufferPool bufferPool)</argsstring>
+        <name>PublicBufferMemoryStream</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ninja_1_1_web_sockets_1_1_buffer_pool" kindref="compound">BufferPool</ref></type>
+          <declname>bufferPool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="41" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a87b17ad004b172925d793f79f33bd7d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override IAsyncResult</type>
+        <definition>override IAsyncResult Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.BeginRead</definition>
+        <argsstring>(byte[] buffer, int offset, int count, AsyncCallback callback, object state)</argsstring>
+        <name>BeginRead</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>AsyncCallback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="50" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ad9d84fcf28b81247098dd547d4f6842b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override IAsyncResult</type>
+        <definition>override IAsyncResult Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.BeginWrite</definition>
+        <argsstring>(byte[] buffer, int offset, int count, AsyncCallback callback, object state)</argsstring>
+        <name>BeginWrite</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>AsyncCallback</type>
+          <declname>callback</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="55" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a83d62f8be7c12c3fc865753ebb6c912b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="70" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="70" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1af2e15bbb546c158916e3bb4c7906497c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override Task</type>
+        <definition>override Task Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.CopyToAsync</definition>
+        <argsstring>(Stream destination, int bufferSize, CancellationToken cancellationToken)</argsstring>
+        <name>CopyToAsync</name>
+        <param>
+          <type>Stream</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="81" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a86f4b16438110a0fc1db4757f2815ed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.EndRead</definition>
+        <argsstring>(IAsyncResult asyncResult)</argsstring>
+        <name>EndRead</name>
+        <param>
+          <type>IAsyncResult</type>
+          <declname>asyncResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="86" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a1a648982320ae2e04431ce8d9cecfe18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.EndWrite</definition>
+        <argsstring>(IAsyncResult asyncResult)</argsstring>
+        <name>EndWrite</name>
+        <param>
+          <type>IAsyncResult</type>
+          <declname>asyncResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="91" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ab26ce7763cd90af0d96eda1de4df3fa6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="96" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a5e1328bcc5ec78bbbe744ed5dbf9ba94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override Task</type>
+        <definition>override Task Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.FlushAsync</definition>
+        <argsstring>(CancellationToken cancellationToken)</argsstring>
+        <name>FlushAsync</name>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="101" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ae06ed50ba36bf2a91179f8cd1d02c028" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override byte[]</type>
+        <definition>override byte [] Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.GetBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="106" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a32b4f59afdbdd2ec3542b5dd70768f22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Read</definition>
+        <argsstring>(byte[] buffer, int offset, int count)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="117" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a462b643fd777af46480734656e31bcb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.WriteByte</definition>
+        <argsstring>(byte value)</argsstring>
+        <name>WriteByte</name>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="151" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a3c51376a36a2e07e18bd8b2df94f6c18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Write</definition>
+        <argsstring>(byte[] buffer, int offset, int count)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="157" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="157" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a902a4d230b8fb1e5384ae645a3fc630a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override Task</type>
+        <definition>override Task Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.WriteAsync</definition>
+        <argsstring>(byte[] buffer, int offset, int count, CancellationToken cancellationToken)</argsstring>
+        <name>WriteAsync</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="163" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="163" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ab6e8a4b3ad2fb78877f5128f85481419" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override object</type>
+        <definition>override object Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.InitializeLifetimeService</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeLifetimeService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="169" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ad446289e850b0b51aaaa12be6ee22252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override Task&lt; int &gt;</type>
+        <definition>override Task&lt;int&gt; Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.ReadAsync</definition>
+        <argsstring>(byte[] buffer, int offset, int count, CancellationToken cancellationToken)</argsstring>
+        <name>ReadAsync</name>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="174" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a757b8281d46f4a85ee7fd38e131b444e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.ReadByte</definition>
+        <argsstring>()</argsstring>
+        <name>ReadByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="179" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac4567cac51e2eb70078afb8efbdacf6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override long</type>
+        <definition>override long Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.Seek</definition>
+        <argsstring>(long offset, SeekOrigin loc)</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>long</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>SeekOrigin</type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="190" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a581951286947292d2cc18adf34e03688" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.SetLength</definition>
+        <argsstring>(long value)</argsstring>
+        <name>SetLength</name>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Note: This will not make the MemoryStream any smaller, only larger </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="198" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a823a6612c940985f33a438cef000ad52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override byte[]</type>
+        <definition>override byte [] Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.ToArray</definition>
+        <argsstring>()</argsstring>
+        <name>ToArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="203" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac120e875984bfb5bb85ae5fada32cae0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.TryGetBuffer</definition>
+        <argsstring>(out ArraySegment&lt; byte &gt; buffer)</argsstring>
+        <name>TryGetBuffer</name>
+        <param>
+          <type>out ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="216" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a588e0891a7c2e9a2d2b8e1a3eddaf243" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.WriteTo</definition>
+        <argsstring>(Stream stream)</argsstring>
+        <name>WriteTo</name>
+        <param>
+          <type>Stream</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="223" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="223" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a062ada1152824d9eb0b0a33ced5c62a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ninja.WebSockets.BufferPool.PublicBufferMemoryStream.EnlargeBufferIfRequired</definition>
+        <argsstring>(int count)</argsstring>
+        <name>EnlargeBufferIfRequired</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="122" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="122" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This memory stream is not instance thread safe (not to be confused with the <ref refid="class_ninja_1_1_web_sockets_1_1_buffer_pool" kindref="compound">BufferPool</ref> which is instance thread safe) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MemoryStream</label>
+      </node>
+      <node id="1">
+        <label>Ninja.WebSockets.BufferPool.PublicBufferMemoryStream</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MemoryStream</label>
+      </node>
+      <node id="1">
+        <label>Ninja.WebSockets.BufferPool.PublicBufferMemoryStream</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Length</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>long</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" line="35" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/BufferPool.cs" bodystart="36" bodyend="227"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a201e2d24d8245a8d59504796cabd8e46" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>_buffer</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a4a22e8d868716b8b10092cdbe0d11262" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>_bufferPoolInternal</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aca6d0e81509588321e53b8becd0d0d98" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>_ms</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a87b17ad004b172925d793f79f33bd7d9" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>BeginRead</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ad9d84fcf28b81247098dd547d4f6842b" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>BeginWrite</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a0fd63c0b13643539a1b4c3276dffd595" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>CanRead</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a9a06d57b4fa03ae7f3e6944d5eb75e63" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>CanSeek</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a73773f29861a2583c2261317879b3b5c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>CanTimeout</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aaa4773869ea670e12c4ec8014129f69c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>CanWrite</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a886e6efeaae1f91693d29f8810ede041" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Capacity</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a83d62f8be7c12c3fc865753ebb6c912b" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Close</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1af2e15bbb546c158916e3bb4c7906497c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>CopyToAsync</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a86f4b16438110a0fc1db4757f2815ed3" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>EndRead</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a1a648982320ae2e04431ce8d9cecfe18" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>EndWrite</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a062ada1152824d9eb0b0a33ced5c62a5" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>EnlargeBufferIfRequired</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ab26ce7763cd90af0d96eda1de4df3fa6" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Flush</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a5e1328bcc5ec78bbbe744ed5dbf9ba94" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>FlushAsync</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ae06ed50ba36bf2a91179f8cd1d02c028" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>GetBuffer</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ab6e8a4b3ad2fb78877f5128f85481419" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>InitializeLifetimeService</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a9a9fe32791adbd5e08147c8da3f3ab6f" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Length</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a0fd289977054b6ec02df412b05338647" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Position</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1aa17fd1779fb85995dab0c34381a7e2a9" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>PublicBufferMemoryStream</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a32b4f59afdbdd2ec3542b5dd70768f22" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Read</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ad446289e850b0b51aaaa12be6ee22252" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>ReadAsync</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a757b8281d46f4a85ee7fd38e131b444e" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>ReadByte</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a001ce408c94c9cd7c0bed2931dbe8ab0" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>ReadTimeout</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac4567cac51e2eb70078afb8efbdacf6f" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Seek</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a581951286947292d2cc18adf34e03688" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>SetLength</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a823a6612c940985f33a438cef000ad52" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>ToArray</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac120e875984bfb5bb85ae5fada32cae0" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>TryGetBuffer</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a3c51376a36a2e07e18bd8b2df94f6c18" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>Write</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a902a4d230b8fb1e5384ae645a3fc630a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>WriteAsync</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a462b643fd777af46480734656e31bcb2" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>WriteByte</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1ac60ad1930849948815d787f6ea12cff8" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>WriteTimeout</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1_1_public_buffer_memory_stream_1a588e0891a7c2e9a2d2b8e1a3eddaf243" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::BufferPool::PublicBufferMemoryStream</scope><name>WriteTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

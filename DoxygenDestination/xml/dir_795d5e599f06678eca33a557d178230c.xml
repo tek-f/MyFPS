@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_795d5e599f06678eca33a557d178230c" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/AdditiveScenes/Scripts</compoundname>
+    <innerfile refid="_additive_network_manager_8cs">AdditiveNetworkManager.cs</innerfile>
+    <innerfile refid="_additive_scenes_2_scripts_2_player_controller_8cs">PlayerController.cs</innerfile>
+    <innerfile refid="_additive_scenes_2_scripts_2_random_color_8cs">RandomColor.cs</innerfile>
+    <innerfile refid="_shooting_tank_behaviour_8cs">ShootingTankBehaviour.cs</innerfile>
+    <innerfile refid="_zone_handler_8cs">ZoneHandler.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/AdditiveScenes/Scripts/"/>
+  </compounddef>
+</doxygen>

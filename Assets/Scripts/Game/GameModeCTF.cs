@@ -7,6 +7,10 @@ namespace MyFPS.GameAdmin
 {
     public class GameModeCTF : GameMode
     {
-
+        protected override void Start()
+        {
+            base.Start();
+            gameType = "CTF";
+        }
     }
 }

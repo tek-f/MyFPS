@@ -7,10 +7,26 @@ namespace MyFPS.GameAdmin
 {
     public class CaptureZone : MonoBehaviour
     {
+        /// <summary>
+        /// Team ID of the capture zone.
+        /// </summary>
         [SerializeField] int teamID;
-
+        /// <summary>
+        /// Reference to the Game Manager.
+        /// </summary>
         GameModeCTF gameModeCTF;
+        /// <summary>
+        /// Reference to this capture zones game object that is in the world for players to pick up.
+        /// </summary>
         [SerializeField] GameObject worldSpaceFlag;
+        /// <summary>
+        /// Sets worldSpaceFlag position to it's originalPosition.
+        /// </summary>
+        private void ResetFlag()
+        {
+            worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
+            worldSpaceFlag.SetActive(true);
+        }
 
         private void Start()
         {
@@ -20,11 +36,6 @@ namespace MyFPS.GameAdmin
             {
                 Debug.LogError("Could not fund GameModeCTF");
             }
-        }
-        private void ResetFlag()
-        {
-            worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
-            worldSpaceFlag.SetActive(true);
         }
         private void OnTriggerEnter(Collider other)
         {

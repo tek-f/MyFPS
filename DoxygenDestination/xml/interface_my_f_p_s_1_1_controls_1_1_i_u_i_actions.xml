@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions" kind="interface" language="C#" prot="public">
+    <compoundname>MyFPS::Controls::IUIActions</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a58e070753c00680cfe32dec7991b0f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnNavigate</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnNavigate</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1270" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1aa1489f625066990b0791b8af3c09f168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnSubmit</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnSubmit</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1271" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a1f7a431379df3ca2351ed9f31a36bee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnCancel</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnCancel</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1272" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a8bf5d2997e55f5b6629aa26225c2883e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnPoint</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnPoint</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1273" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1ac67d904527048b57c429dadffd908144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnClick</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnClick</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1274" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a5f61576c21813f74b0c0e5795429070b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnScrollWheel</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnScrollWheel</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1275" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a292c7a07242941c4c17a74abbd656d82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnMiddleClick</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnMiddleClick</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1276" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1af9c1d0db68a5e305d2b69a84f825c54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnRightClick</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnRightClick</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1277" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1adedd6a4d0c10df8ef703840663ece680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnTrackedDevicePosition</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnTrackedDevicePosition</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1278" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1ae7feb24b93611463065dcf368674858b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.IUIActions.OnTrackedDeviceOrientation</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>OnTrackedDeviceOrientation</name>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1279" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1268" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1269" bodyend="1280"/>
+    <listofallmembers>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a1f7a431379df3ca2351ed9f31a36bee4" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnCancel</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1ac67d904527048b57c429dadffd908144" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnClick</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a292c7a07242941c4c17a74abbd656d82" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnMiddleClick</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a58e070753c00680cfe32dec7991b0f38" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnNavigate</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a8bf5d2997e55f5b6629aa26225c2883e" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnPoint</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1af9c1d0db68a5e305d2b69a84f825c54d" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnRightClick</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1a5f61576c21813f74b0c0e5795429070b" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnScrollWheel</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1aa1489f625066990b0791b8af3c09f168" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnSubmit</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1ae7feb24b93611463065dcf368674858b" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnTrackedDeviceOrientation</name></member>
+      <member refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions_1adedd6a4d0c10df8ef703840663ece680" prot="public" virt="non-virtual"><scope>MyFPS::Controls::IUIActions</scope><name>OnTrackedDevicePosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

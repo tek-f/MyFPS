@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_b80b12282d8496fc7a1e92540de046a3" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins</compoundname>
+    <innerdir refid="dir_74cc6ed2404218a34f4d356fbe1bf886">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+\hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server}{}\doxysection{Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server Class Reference}
+\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server}\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+
+
+Network Manager with events that are used by the list server  
+
+
+Inheritance diagram for Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ae348dcaedcc752a287d40acceb949313}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ae348dcaedcc752a287d40acceb949313}} 
+delegate void {\bfseries On\+Player\+List\+Changed} (int player\+Count)
+\item 
+override void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afe3768c44cfc065defc1a55464d727f0}{On\+Server\+Connect}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on the server when a new client connects. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a8c90c5e17755e72e1452515c90430160}{On\+Server\+Disconnect}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on the server when a client disconnects. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a77d0f2f7b3c68dc51cf563b2467c0965}{On\+Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked when a server is started -\/ including when a host is started. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad53b09e7fa44a34d7d27411a7e0474b3}{On\+Stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is called when a server is stopped -\/ including when a host is stopped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad214d597e7f264a2b025770e93d042f8}{on\+Server\+Started}}
+\begin{DoxyCompactList}\small\item\em Called when Server Starts \end{DoxyCompactList}\item 
+Action \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afa769a03f7a17493166dfc1eecfd7457}{on\+Server\+Stopped}}
+\begin{DoxyCompactList}\small\item\em Called when Server Stops \end{DoxyCompactList}\item 
+On\+Player\+List\+Changed \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_af86be996fc7208b75fb947a609673692}{on\+Player\+List\+Changed}}
+\begin{DoxyCompactList}\small\item\em Called when players leaves or joins the room \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Network Manager with events that are used by the list server 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afe3768c44cfc065defc1a55464d727f0}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afe3768c44cfc065defc1a55464d727f0}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!OnServerConnect@{OnServerConnect}}
+\index{OnServerConnect@{OnServerConnect}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{OnServerConnect()}{OnServerConnect()}}
+{\footnotesize\ttfamily override void Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+On\+Server\+Connect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a new client connects. 
+
+Unity calls this on the Server when a Client connects to the Server. Use an override to tell the \mbox{\hyperlink{class_mirror_1_1_network_manager}{Network\+Manager}} what to do when a client connects to the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_aefdbb69d64b19bbf4c78aaed41e08fe4}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a8c90c5e17755e72e1452515c90430160}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a8c90c5e17755e72e1452515c90430160}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!OnServerDisconnect@{OnServerDisconnect}}
+\index{OnServerDisconnect@{OnServerDisconnect}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{OnServerDisconnect()}{OnServerDisconnect()}}
+{\footnotesize\ttfamily override void Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+On\+Server\+Disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on the server when a client disconnects. 
+
+This is called on the Server when a Client disconnects from the Server. Use an override to decide what should happen when a disconnection is detected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection from client.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a54d039ac0bb7d8504b3424a73e53b328}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a77d0f2f7b3c68dc51cf563b2467c0965}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_a77d0f2f7b3c68dc51cf563b2467c0965}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily override void Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked when a server is started -\/ including when a host is started. 
+
+Start\+Server has multiple signatures, but they all cause this hook to be called.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a0226295e867fd77ad9aef32d32d6ca88}{Mirror.\+Network\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad53b09e7fa44a34d7d27411a7e0474b3}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad53b09e7fa44a34d7d27411a7e0474b3}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!OnStopServer@{OnStopServer}}
+\index{OnStopServer@{OnStopServer}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
+{\footnotesize\ttfamily override void Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called when a server is stopped -\/ including when a host is stopped. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_manager_a60970702dbcd39e7c1e64a1417cc73af}{Mirror.\+Network\+Manager}}.
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_af86be996fc7208b75fb947a609673692}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_af86be996fc7208b75fb947a609673692}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!onPlayerListChanged@{onPlayerListChanged}}
+\index{onPlayerListChanged@{onPlayerListChanged}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{onPlayerListChanged}{onPlayerListChanged}}
+{\footnotesize\ttfamily On\+Player\+List\+Changed Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+on\+Player\+List\+Changed}
+
+
+
+Called when players leaves or joins the room 
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad214d597e7f264a2b025770e93d042f8}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_ad214d597e7f264a2b025770e93d042f8}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!onServerStarted@{onServerStarted}}
+\index{onServerStarted@{onServerStarted}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{onServerStarted}{onServerStarted}}
+{\footnotesize\ttfamily Action Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+on\+Server\+Started}
+
+
+
+Called when Server Starts 
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afa769a03f7a17493166dfc1eecfd7457}\label{class_mirror_1_1_cloud_1_1_example_1_1_network_manager_list_server_afa769a03f7a17493166dfc1eecfd7457}} 
+\index{Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}!onServerStopped@{onServerStopped}}
+\index{onServerStopped@{onServerStopped}!Mirror.Cloud.Example.NetworkManagerListServer@{Mirror.Cloud.Example.NetworkManagerListServer}}
+\doxysubsubsection{\texorpdfstring{onServerStopped}{onServerStopped}}
+{\footnotesize\ttfamily Action Mirror.\+Cloud.\+Example.\+Network\+Manager\+List\+Server.\+on\+Server\+Stopped}
+
+
+
+Called when Server Stops 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Examples/\+Cloud/\+G\+U\+I/\+Scripts/Network\+Manager\+List\+Server.\+cs\end{DoxyCompactItemize}

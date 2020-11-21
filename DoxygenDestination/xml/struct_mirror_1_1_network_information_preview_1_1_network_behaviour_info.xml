@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_network_information_preview_1_1_network_behaviour_info" kind="struct" language="C#" prot="private">
+    <compoundname>Mirror::NetworkInformationPreview::NetworkBehaviourInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_network_information_preview_1_1_network_behaviour_info_1aa3453e622e54e586ceb1624c3b355515" prot="public" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref></type>
+        <definition>NetworkBehaviour Mirror.NetworkInformationPreview.NetworkBehaviourInfo.behaviour</definition>
+        <argsstring></argsstring>
+        <name>behaviour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="19" column="37" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_network_information_preview_1_1_network_behaviour_info_1a8a2b02e6205bd8f70bcdd9d702043103" prot="public" static="no" mutable="no">
+        <type>GUIContent</type>
+        <definition>GUIContent Mirror.NetworkInformationPreview.NetworkBehaviourInfo.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="20" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>IDisposable</label>
+      </node>
+      <node id="4">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>Mirror.NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.NetworkInformationPreview.NetworkBehaviourInfo</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>behaviour</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="16" column="9" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="17" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_network_information_preview_1_1_network_behaviour_info_1aa3453e622e54e586ceb1624c3b355515" prot="public" virt="non-virtual"><scope>Mirror::NetworkInformationPreview::NetworkBehaviourInfo</scope><name>behaviour</name></member>
+      <member refid="struct_mirror_1_1_network_information_preview_1_1_network_behaviour_info_1a8a2b02e6205bd8f70bcdd9d702043103" prot="public" virt="non-virtual"><scope>Mirror::NetworkInformationPreview::NetworkBehaviourInfo</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

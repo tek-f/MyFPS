@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::EditorScripts::ScriptableObjectUtility</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a6d82046816d6819e9e4d0299868c5783" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T Mirror.EditorScripts.ScriptableObjectUtility.CreateAsset&lt; T &gt;</definition>
+        <argsstring>(string defaultName)</argsstring>
+        <name>CreateAsset&lt; T &gt;</name>
+        <param>
+          <type>string</type>
+          <declname>defaultName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" line="11" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" bodystart="11" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a338ba4e55380ccf2643486c0a88ef43f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mirror.EditorScripts.ScriptableObjectUtility.SavePanel</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SavePanel</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" line="24" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" bodystart="24" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a7f91b9189a85fa43a9b4188fd0a6ba1a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.EditorScripts.ScriptableObjectUtility.SaveAsset</definition>
+        <argsstring>(string path, ScriptableObject asset)</argsstring>
+        <name>SaveAsset</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>ScriptableObject</type>
+          <declname>asset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" line="44" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" bodystart="44" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" line="6" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/ScriptableObjectUtility.cs" bodystart="7" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a6d82046816d6819e9e4d0299868c5783" prot="public" virt="non-virtual"><scope>Mirror::EditorScripts::ScriptableObjectUtility</scope><name>CreateAsset&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a7f91b9189a85fa43a9b4188fd0a6ba1a" prot="private" virt="non-virtual"><scope>Mirror::EditorScripts::ScriptableObjectUtility</scope><name>SaveAsset</name></member>
+      <member refid="class_mirror_1_1_editor_scripts_1_1_scriptable_object_utility_1a338ba4e55380ccf2643486c0a88ef43f" prot="private" virt="non-virtual"><scope>Mirror::EditorScripts::ScriptableObjectUtility</scope><name>SavePanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

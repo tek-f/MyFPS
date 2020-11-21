@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_68ad4d173911a79f78f4002f7d84f674" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal</compoundname>
+    <innerfile refid="_binary_reader_writer_8cs">BinaryReaderWriter.cs</innerfile>
+    <innerfile refid="_runtime_2_transport_2_websocket_2_ninja_8_web_sockets_2_internal_2_events_8cs">Events.cs</innerfile>
+    <innerfile refid="_web_socket_frame_8cs">WebSocketFrame.cs</innerfile>
+    <innerfile refid="_web_socket_frame_common_8cs">WebSocketFrameCommon.cs</innerfile>
+    <innerfile refid="_web_socket_frame_reader_8cs">WebSocketFrameReader.cs</innerfile>
+    <innerfile refid="_web_socket_frame_writer_8cs">WebSocketFrameWriter.cs</innerfile>
+    <innerfile refid="_web_socket_implementation_8cs">WebSocketImplementation.cs</innerfile>
+    <innerfile refid="_web_socket_op_code_8cs">WebSocketOpCode.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal/"/>
+  </compounddef>
+</doxygen>

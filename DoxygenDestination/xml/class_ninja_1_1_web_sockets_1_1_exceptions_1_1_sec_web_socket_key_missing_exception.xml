@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::Exceptions::SecWebSocketKeyMissingException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a615814cfef162e7c3ec8c64a1ec6dd98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.SecWebSocketKeyMissingException.SecWebSocketKeyMissingException</definition>
+        <argsstring>()</argsstring>
+        <name>SecWebSocketKeyMissingException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" line="8" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a4049d8c28939b5e48de82cc9514acd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.SecWebSocketKeyMissingException.SecWebSocketKeyMissingException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>SecWebSocketKeyMissingException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" line="13" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a74ed7369a233663dbb5a7bf21dc6354b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.SecWebSocketKeyMissingException.SecWebSocketKeyMissingException</definition>
+        <argsstring>(string message, Exception inner)</argsstring>
+        <name>SecWebSocketKeyMissingException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" line="18" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.SecWebSocketKeyMissingException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.SecWebSocketKeyMissingException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/SecWebSocketKeyMissingException.cs" bodystart="7" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a615814cfef162e7c3ec8c64a1ec6dd98" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::SecWebSocketKeyMissingException</scope><name>SecWebSocketKeyMissingException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a4049d8c28939b5e48de82cc9514acd4b" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::SecWebSocketKeyMissingException</scope><name>SecWebSocketKeyMissingException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception_1a74ed7369a233663dbb5a7bf21dc6354b" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::SecWebSocketKeyMissingException</scope><name>SecWebSocketKeyMissingException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

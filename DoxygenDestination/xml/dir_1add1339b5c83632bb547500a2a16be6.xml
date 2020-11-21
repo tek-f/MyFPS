@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_1add1339b5c83632bb547500a2a16be6" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets</compoundname>
+    <innerdir refid="dir_defd0cd19e1a7f8a47be92df1ccd68b6">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions</innerdir>
+    <innerdir refid="dir_68ad4d173911a79f78f4002f7d84f674">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Internal</innerdir>
+    <innerfile refid="_buffer_pool_8cs">BufferPool.cs</innerfile>
+    <innerfile refid="_http_helper_8cs">HttpHelper.cs</innerfile>
+    <innerfile refid="_i_buffer_pool_8cs">IBufferPool.cs</innerfile>
+    <innerfile refid="_i_ping_pong_manager_8cs">IPingPongManager.cs</innerfile>
+    <innerfile refid="_i_web_socket_client_factory_8cs">IWebSocketClientFactory.cs</innerfile>
+    <innerfile refid="_i_web_socket_server_factory_8cs">IWebSocketServerFactory.cs</innerfile>
+    <innerfile refid="_ping_pong_manager_8cs">PingPongManager.cs</innerfile>
+    <innerfile refid="_pong_event_args_8cs">PongEventArgs.cs</innerfile>
+    <innerfile refid="_web_socket_client_factory_8cs">WebSocketClientFactory.cs</innerfile>
+    <innerfile refid="_web_socket_client_options_8cs">WebSocketClientOptions.cs</innerfile>
+    <innerfile refid="_web_socket_http_context_8cs">WebSocketHttpContext.cs</innerfile>
+    <innerfile refid="_web_socket_server_factory_8cs">WebSocketServerFactory.cs</innerfile>
+    <innerfile refid="_web_socket_server_options_8cs">WebSocketServerOptions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/"/>
+  </compounddef>
+</doxygen>

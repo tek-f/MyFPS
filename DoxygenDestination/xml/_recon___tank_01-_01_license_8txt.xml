@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_recon___tank_01-_01_license_8txt" kind="file" language="C++">
+    <compoundname>Recon_Tank - License.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_recon___tank_01-_01_license_8txt_1a5fe569393478257c48a71c6bf16863b2" prot="public" static="no" mutable="no">
+        <type>Recon by Mophs</type>
+        <definition>Recon by Mophs https</definition>
+        <argsstring></argsstring>
+        <name>https</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" line="2" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_recon___tank_01-_01_license_8txt_1a39d0d10cbe0e674c9b5a56a3dad17905" prot="public" static="no" mutable="no">
+        <type>Recon by Mophs Recon</type>
+        <definition>Recon by Mophs Recon Tank</definition>
+        <argsstring></argsstring>
+        <name>Tank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" line="4" column="8" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_recon___tank_01-_01_license_8txt_1a6c1f204d5af00cd4da788d79ba5f03c3" prot="public" static="no" mutable="no">
+        <type>Recon by Mophs Recon By MNDV</type>
+        <definition>Recon by Mophs Recon By MNDV ecb</definition>
+        <argsstring></argsstring>
+        <name>ecb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" line="4" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_recon___tank_01-_01_license_8txt_1a69b71fe5e2d5c74e4d845c11ee7ed437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Recon</type>
+        <definition>Recon Tank</definition>
+        <argsstring>(update)</argsstring>
+        <name>Tank</name>
+        <param>
+          <type>update</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt" line="1" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Recon<sp/>Tank<sp/>(update),<sp/>by<sp/>Mophs</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">https:</highlight><highlight class="comment">//opengameart.org/users/mophs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">Based<sp/>on<sp/>original<sp/>work,<sp/>Recon<sp/>Tank,<sp/>By<sp/>MNDV.ecb,<sp/>2018<sp/>Eric<sp/>Buisson</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">https:</highlight><highlight class="comment">//opengameart.org/content/recon-tank</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">CC-BY<sp/>4.0</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models/(Public Domain) Recon_Tank/Recon_Tank - License.txt"/>
+  </compounddef>
+</doxygen>

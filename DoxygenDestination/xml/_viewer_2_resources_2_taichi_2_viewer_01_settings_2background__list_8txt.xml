@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_viewer_2_resources_2_taichi_2_viewer_01_settings_2background__list_8txt" kind="file" language="C++">
+    <compoundname>background_list.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg0</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg0</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg1</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg2</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg3</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg4</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg5</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg6</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg7</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg8</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg9</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg10</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg11</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg12</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg13</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg14</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg15</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg16</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg17</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">Taichi/Viewer<sp/>BackGrounds/bg18</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Viewer/Resources/Taichi/Viewer Settings/background_list.txt"/>
+  </compounddef>
+</doxygen>

@@ -6,20 +6,49 @@ namespace MyFPS.Player
 {
     public class Weapon : MonoBehaviour
     {
+        /// <summary>
+        /// Team ID of the weapon.
+        /// </summary>
         public int teamID;
+        /// <summary>
+        /// Determines if the weapon allows the player to change weapons while it is equiped. Used for the flag.
+        /// </summary>
         public bool isWeaponLocked = false;
+        /// <summary>
+        /// Determines if the weapon is dropable.
+        /// </summary>
         public bool isWeaponDropable = false;
+        /// <summary>
+        /// World space object of the weapon
+        /// </summary>
         public GameObject worldWeaponGameObject;
-        public Vector3 originalLocation, equipedByPlayerPosition;
-        public void SetUp(int teamID, GameObject worldGameObject, Vector3 originalLocation)
+        /// <summary>
+        /// Weapons original locaiton.
+        /// </summary>
+        public Vector3 originalLocation;
+        /// <summary>
+        /// Location the weapon was first equiped by the player.
+        /// </summary>
+        public Vector3 equipedByPlayerPosition;
+        /// <summary>
+        /// Set Up function for the weapon.
+        /// </summary>
+        /// <param name="_teamID">Value that teamID is set to.</param>
+        /// <param name="_worldGameObject">Value that worldWeaponGameObject is set to.</param>
+        /// <param name="_originalLocation">Value that originalLocation is set to.</param>
+        public void SetUp(int _teamID, GameObject _worldGameObject, Vector3 _originalLocation)
         {
-            this.teamID = teamID;
-            if (worldGameObject != null)
+            this.teamID = _teamID;
+            if (_worldGameObject != null)
             {
-                worldWeaponGameObject = worldGameObject;
+                worldWeaponGameObject = _worldGameObject;
             }
-            this.originalLocation = originalLocation;
+            this.originalLocation = _originalLocation;
         }
+        /// <summary>
+        /// Drops this weapon from the players loadout.
+        /// </summary>
+        /// <param name="player">Player that is dropping this weapon.</param>
         public void DropWeapon(CharacterController player)
         {
             //Get Location and Direction for drop

@@ -1,0 +1,56 @@
+\hypertarget{interface_mirror_1_1_sync_object}{}\doxysection{Mirror.\+Sync\+Object Interface Reference}
+\label{interface_mirror_1_1_sync_object}\index{Mirror.SyncObject@{Mirror.SyncObject}}
+Inheritance diagram for Mirror.\+Sync\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.666667cm]{interface_mirror_1_1_sync_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_a3a13f043e733d312152a7fadd1bdf4b2}\label{interface_mirror_1_1_sync_object_a3a13f043e733d312152a7fadd1bdf4b2}} 
+void {\bfseries Flush} ()
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_a15c37f16b38c44c23294a8359ea4e2d0}\label{interface_mirror_1_1_sync_object_a15c37f16b38c44c23294a8359ea4e2d0}} 
+void {\bfseries On\+Serialize\+All} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer)
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_aebaaef8ba60bb926015c7359508bccb3}\label{interface_mirror_1_1_sync_object_aebaaef8ba60bb926015c7359508bccb3}} 
+void {\bfseries On\+Serialize\+Delta} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer)
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_ac33f9af9e2caab20e00fee5dc9b74165}\label{interface_mirror_1_1_sync_object_ac33f9af9e2caab20e00fee5dc9b74165}} 
+void {\bfseries On\+Deserialize\+All} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_aa6d44e3d7d2a631bd402504c95143a12}\label{interface_mirror_1_1_sync_object_aa6d44e3d7d2a631bd402504c95143a12}} 
+void {\bfseries On\+Deserialize\+Delta} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\item 
+void \mbox{\hyperlink{interface_mirror_1_1_sync_object_a803cfba7f394ac8520d148c398fa438a}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the \mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}} so that it can be re-\/used \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_a3a49fc42159d03b5a2bca08ff1d578cd}\label{interface_mirror_1_1_sync_object_a3a49fc42159d03b5a2bca08ff1d578cd}} 
+bool {\bfseries Is\+Dirty}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_mirror_1_1_sync_object_a803cfba7f394ac8520d148c398fa438a}\label{interface_mirror_1_1_sync_object_a803cfba7f394ac8520d148c398fa438a}} 
+\index{Mirror.SyncObject@{Mirror.SyncObject}!Reset@{Reset}}
+\index{Reset@{Reset}!Mirror.SyncObject@{Mirror.SyncObject}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Mirror.\+Sync\+Object.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the \mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}} so that it can be re-\/used 
+
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_sync_set_a0595d18c27ffbe88bed0d926bfc0ec9c}{Mirror.\+Sync\+Set$<$ T $>$}}, \mbox{\hyperlink{class_mirror_1_1_sync_list_a848dd69bdf2bb54dd96382b14c79f81f}{Mirror.\+Sync\+List$<$ T $>$}}, and \mbox{\hyperlink{class_mirror_1_1_sync_i_dictionary_ac5973a20bdb2c4ecd41e07b84cea1be2}{Mirror.\+Sync\+I\+Dictionary$<$ T\+Key, T\+Value $>$}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Sync\+Object.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext}{}\doxysection{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext Class Reference}
+\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext}\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+Inheritance diagram for Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a6299c83225d06117921d726c890117b4}{On\+Room\+Server\+Scene\+Loaded\+For\+Player}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn, Game\+Object room\+Player, Game\+Object game\+Player)
+\begin{DoxyCompactList}\small\item\em Called just after Game\+Player object is instantiated and just before it replaces Room\+Player object. This is the ideal point to pass any data like player name, credentials, tokens, colors, etc. into the Game\+Player object as it is about to enter the Online scene. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a943597dfd89428eff8a8be8066b3ece8}{On\+Room\+Stop\+Client}} ()
+\begin{DoxyCompactList}\small\item\em This is called on the client when the client stops. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_af40b09b7f90545c03d27cbb0b32a9bca}{On\+Room\+Stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is called on the server when the server is started -\/ including when a host is stopped. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_ace29e4fa8bd84ccf3164ca332ac1e164}{On\+Room\+Server\+Players\+Ready}} ()
+\begin{DoxyCompactList}\small\item\em This is called on the server when all the players in the room are ready. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a111802b6654f169cc85effbece4a3d06}{On\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em virtual so inheriting classes can roll their own \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a111802b6654f169cc85effbece4a3d06}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a111802b6654f169cc85effbece4a3d06}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext.\+On\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual so inheriting classes can roll their own 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_manager_a65d2182230bc132ee94771a562837594}{Mirror.\+Network\+Room\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_ace29e4fa8bd84ccf3164ca332ac1e164}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_ace29e4fa8bd84ccf3164ca332ac1e164}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}!OnRoomServerPlayersReady@{OnRoomServerPlayersReady}}
+\index{OnRoomServerPlayersReady@{OnRoomServerPlayersReady}!Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+\doxysubsubsection{\texorpdfstring{OnRoomServerPlayersReady()}{OnRoomServerPlayersReady()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext.\+On\+Room\+Server\+Players\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called on the server when all the players in the room are ready. 
+
+The default implementation of this function uses \mbox{\hyperlink{class_mirror_1_1_network_room_manager_a22595929baf7384d2c68ef95d6519458}{Server\+Change\+Scene()}} to switch to the game player scene. By implementing this callback you can customize what happens when all the players in the room are ready, such as adding a countdown or a confirmation for a group leader.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_manager_a8cbdb3c6b66958d3dc5c42f9f87020b2}{Mirror.\+Network\+Room\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a6299c83225d06117921d726c890117b4}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a6299c83225d06117921d726c890117b4}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}!OnRoomServerSceneLoadedForPlayer@{OnRoomServerSceneLoadedForPlayer}}
+\index{OnRoomServerSceneLoadedForPlayer@{OnRoomServerSceneLoadedForPlayer}!Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+\doxysubsubsection{\texorpdfstring{OnRoomServerSceneLoadedForPlayer()}{OnRoomServerSceneLoadedForPlayer()}}
+{\footnotesize\ttfamily override bool Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext.\+On\+Room\+Server\+Scene\+Loaded\+For\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn,  }\item[{Game\+Object}]{room\+Player,  }\item[{Game\+Object}]{game\+Player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called just after Game\+Player object is instantiated and just before it replaces Room\+Player object. This is the ideal point to pass any data like player name, credentials, tokens, colors, etc. into the Game\+Player object as it is about to enter the Online scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Player} & \\
+\hline
+{\em game\+Player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true unless some code in here decides it needs to abort the replacement
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_manager_acd402645c827a453462013ae93c6f38e}{Mirror.\+Network\+Room\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a943597dfd89428eff8a8be8066b3ece8}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_a943597dfd89428eff8a8be8066b3ece8}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}!OnRoomStopClient@{OnRoomStopClient}}
+\index{OnRoomStopClient@{OnRoomStopClient}!Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+\doxysubsubsection{\texorpdfstring{OnRoomStopClient()}{OnRoomStopClient()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext.\+On\+Room\+Stop\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called on the client when the client stops. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_manager_add05a9e1926f170933148adc6c336302}{Mirror.\+Network\+Room\+Manager}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_af40b09b7f90545c03d27cbb0b32a9bca}\label{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_af40b09b7f90545c03d27cbb0b32a9bca}} 
+\index{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}!OnRoomStopServer@{OnRoomStopServer}}
+\index{OnRoomStopServer@{OnRoomStopServer}!Mirror.Examples.NetworkRoom.NetworkRoomManagerExt@{Mirror.Examples.NetworkRoom.NetworkRoomManagerExt}}
+\doxysubsubsection{\texorpdfstring{OnRoomStopServer()}{OnRoomStopServer()}}
+{\footnotesize\ttfamily override void Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Manager\+Ext.\+On\+Room\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is called on the server when the server is started -\/ including when a host is stopped. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_room_manager_a4d4d44ac47608fdd42f3c5a6fbdd6c31}{Mirror.\+Network\+Room\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Examples/\+Room/\+Scripts/Network\+Room\+Manager\+Ext.\+cs\end{DoxyCompactItemize}

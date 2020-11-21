@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_cloud_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Mirror<sp/>Cloud<sp/>Services</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Mirror<sp/>List<sp/>Server</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>has<sp/>API<sp/>key<sp/>that<sp/>can<sp/>be<sp/>used<sp/>for<sp/>as<sp/>a<sp/>demo.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>get<sp/>an<sp/>API<sp/>key<sp/>to<sp/>use<sp/>within<sp/>your<sp/>game<sp/>you<sp/>can<sp/>subscribe<sp/>on<sp/>the<sp/>[Mirror<sp/>Networking<sp/>Website](https://mirror-networking.com/list-server/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Key<sp/>features</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>The<sp/>Cloud<sp/>Service<sp/>works<sp/>via<sp/>https<sp/>so<sp/>is<sp/>secure<sp/>and<sp/>can<sp/>be<sp/>used<sp/>from<sp/>any<sp/>platform.<sp/></highlight></codeline>
+<codeline><highlight class="normal">-<sp/>It<sp/>runs<sp/>on<sp/>Google<sp/>Cloud<sp/>so<sp/>there<sp/>is<sp/>no<sp/>worry<sp/>about<sp/>server<sp/>down<sp/>time.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>It<sp/>scales<sp/>really<sp/>well.<sp/>Default<sp/>quota<sp/>is<sp/>1000<sp/>API<sp/>requests<sp/>per<sp/>minute.<sp/>If<sp/>you<sp/>have<sp/>high<sp/>demands,<sp/>contact<sp/>us<sp/>and<sp/>we<sp/>can<sp/>increase<sp/>that<sp/>limit.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>List<sp/>Server<sp/>Examples</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">An<sp/>example<sp/>for<sp/>this<sp/>can<sp/>be<sp/>found<sp/>in<sp/>Mirror/Examples/Cloud/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Note:<sp/>you<sp/>can<sp/>not<sp/>connect<sp/>to<sp/>your<sp/>own<sp/>public<sp/>ip<sp/>address,<sp/>you<sp/>will<sp/>need<sp/>at<sp/>least<sp/>people<sp/>to<sp/>test<sp/>this*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>How<sp/>to<sp/>use</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>`ApiConnector`<sp/>component<sp/>to<sp/>an<sp/>object<sp/>in<sp/>your<sp/>game,<sp/>It<sp/>is<sp/>probably<sp/>best<sp/>to<sp/>put<sp/>this<sp/>on<sp/>the<sp/>same<sp/>object<sp/>as<sp/>your<sp/>NetworkManager.<sp/>Once<sp/>it<sp/>has<sp/>been<sp/>added<sp/>set<sp/>the<sp/>`ApiAddress`<sp/>and<sp/>`ApiKey`<sp/>fields.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>use<sp/>`ApiConnector`<sp/>either<sp/>directly<sp/>reference<sp/>it<sp/>in<sp/>an<sp/>inspector<sp/>field<sp/>or<sp/>get<sp/>it<sp/>when<sp/>your<sp/>script<sp/>awakes</highlight></codeline>
+<codeline><highlight class="normal">```cs</highlight></codeline>
+<codeline><highlight class="normal">ApiConnector<sp/>connector;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>Awake()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>connector<sp/>=<sp/>FindObjectOfType&lt;ApiConnector&gt;();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Api<sp/>calls<sp/>are<sp/>grouped<sp/>into<sp/>objects.<sp/>`connector.ListServer.ServerApi`<sp/>has<sp/>the<sp/>Server<sp/>api<sp/>calls<sp/>like<sp/>`AddServer`.<sp/>`connector.ListServer.ClientApi`<sp/>has<sp/>the<sp/>Client<sp/>Api<sp/>calls<sp/>like<sp/>`GetServerList`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Server<sp/>Api<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>of<sp/>how<sp/>to<sp/>add<sp/>server</highlight></codeline>
+<codeline><highlight class="normal">```cs</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>AddServer(int<sp/>playerCount)</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Transport<sp/>transport<sp/>=<sp/>Transport.activeTransport;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Uri<sp/>uri<sp/>=<sp/>transport.ServerUri();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>port<sp/>=<sp/>uri.Port;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>string<sp/>protocol<sp/>=<sp/>uri.Scheme;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>connector.ListServer.ServerApi.AddServer(new<sp/>ServerJson</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>displayName<sp/>=<sp/>&quot;Fun<sp/>game!!!&quot;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>protocol<sp/>=<sp/>protocol,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>port<sp/>=<sp/>port,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxPlayerCount<sp/>=<sp/>NetworkManager.singleton.maxConnections,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerCount<sp/>=<sp/>playerCount</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Client<sp/>Api<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">Example<sp/>of<sp/>how<sp/>to<sp/>list<sp/>servers<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cs</highlight></codeline>
+<codeline><highlight class="normal">ApiConnector<sp/>connector;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>Awake()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>connector<sp/>=<sp/>FindObjectOfType&lt;ApiConnector&gt;();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>add<sp/>listener<sp/>to<sp/>event<sp/>that<sp/>will<sp/>update<sp/>UI<sp/>when<sp/>Server<sp/>list<sp/>is<sp/>refreshed</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>connector.ListServer.ClientApi.onServerListUpdated<sp/>+=<sp/>onServerListUpdated;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>add<sp/>listen<sp/>to<sp/>button<sp/>so<sp/>that<sp/>player<sp/>can<sp/>refresh<sp/>server<sp/>list</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>refreshButton.onClick.AddListener(RefreshButtonHandler);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">public<sp/>void<sp/>RefreshButtonHandler()</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>connector.ListServer.ClientApi.GetServerList();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>onServerListUpdated()<sp/></highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>Update<sp/>UI<sp/>here</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/README.md"/>
+  </compounddef>
+</doxygen>

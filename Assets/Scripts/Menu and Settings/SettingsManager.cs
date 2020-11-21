@@ -9,10 +9,21 @@ namespace MyFPS.GameAdmin
     {
         #region Variables
         [Header("Resolution")]
-        public Resolution[] resolutions;//Array of resolution options for the player
-        public Dropdown resolutionDropdown;//The UI drop down object for resoltion settings
+        /// <summary>
+        /// Array of resolution options for the player
+        /// </summary>
+        public Resolution[] resolutions;
+        /// <summary>
+        /// The UI drop down object for resoltion settings
+        /// </summary>
+        public Dropdown resolutionDropdown;
         #endregion
         #region Functions
+        /// <summary>
+        /// Converts an int to a bool where a 1 = true and 0 = false.
+        /// </summary>
+        /// <param name="integer">The value to be converted.</param>
+        /// <returns>Bool</returns>
         public bool IntToBool(int integer)
         {
             if (integer == 0)
@@ -29,6 +40,11 @@ namespace MyFPS.GameAdmin
                 return false;
             }
         }
+        /// <summary>
+        /// Converts a bool to an int where true = 1 and false = 0.
+        /// </summary>
+        /// <param name="boolean">Value to be converted</param>
+        /// <returns>Integer</returns>
         public int BoolToInt(bool boolean)
         {
             if (boolean == true)
@@ -40,21 +56,34 @@ namespace MyFPS.GameAdmin
                 return 0;
             }
         }
-        public void SetFullScreen(bool isFullScreen)//Sets fullscreen/windowed depending on toggle
+        /// <summary>
+        /// Sets fullscreen/windowed depending on toggle.
+        /// </summary>
+        /// <param name="isFullScreen">Toggel value.</param>
+        public void SetFullScreen(bool isFullScreen)
         {
             Screen.fullScreen = isFullScreen;
         }
-
-        public void SetResolution(int resolutionIndex)//Sets resolution depending on selection from dropdown
+        /// <summary>
+        /// Sets resolution depending on selection from dropdown.
+        /// </summary>
+        /// <param name="resolutionIndex">Dropdown value.</param>
+        public void SetResolution(int resolutionIndex)
         {
             Resolution res = resolutions[resolutionIndex];//res is set to equal the resolution selected from the dropdown
             Screen.SetResolution(res.width, res.height, Screen.fullScreen);//the current resolution is set to equal res
         }
-
-        public void Quality(int qualityIndex)//Sets quality depending on selection from dropdown
+        /// <summary>
+        /// Sets quality depending on selection from dropdown.
+        /// </summary>
+        /// <param name="qualityIndex">Dropdown selection value.</param>
+        public void Quality(int qualityIndex)
         {
             QualitySettings.SetQualityLevel(qualityIndex);//quality is set to option selected on the dropdown
         }
+        /// <summary>
+        /// Saves the changes made to the settings using PlayerPrefs.
+        /// </summary>
         public void SaveChanges()
         {
             PlayerPrefs.SetInt("fullScreen", BoolToInt(Screen.fullScreen));

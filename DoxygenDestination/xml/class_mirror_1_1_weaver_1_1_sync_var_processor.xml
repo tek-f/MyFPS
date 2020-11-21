@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_sync_var_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::SyncVarProcessor</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a354812634cf4e29614f667b071378f31" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Mirror.Weaver.SyncVarProcessor.SyncVarLimit</definition>
+        <argsstring></argsstring>
+        <name>SyncVarLimit</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="14" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1ad658fa3ba3433cd5b7ac981bc83bfff3" prot="public" static="yes" mutable="no">
+        <type>List&lt; FieldDefinition &gt;</type>
+        <definition>List&lt;FieldDefinition&gt; Mirror.Weaver.SyncVarProcessor.syncVars</definition>
+        <argsstring></argsstring>
+        <name>syncVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="307" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a2b99e3acd20b46f81917948288696cd0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Mirror.Weaver.SyncVarProcessor.HookParameterMessage</definition>
+        <argsstring>(string hookName, TypeReference ValueType)</argsstring>
+        <name>HookParameterMessage</name>
+        <param>
+          <type>string</type>
+          <declname>hookName</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>ValueType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="17" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1ac3ab19baf6571f66f571a027bd796395" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncVarProcessor.FindHookMethod</definition>
+        <argsstring>(TypeDefinition td, FieldDefinition syncVar, string hookFunctionName)</argsstring>
+        <name>FindHookMethod</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>hookFunctionName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="36" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="36" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1aabba34effb760cfe3ebc3f14aabc89f9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.SyncVarProcessor.MatchesParameters</definition>
+        <argsstring>(FieldDefinition syncVar, MethodDefinition method)</argsstring>
+        <name>MatchesParameters</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="66" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="66" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a82f3d929e37e6f441efc9b75a0912974" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; FieldDefinition &gt; Dictionary&lt; FieldDefinition, FieldDefinition &gt; syncVarNetIds</type>
+        <definition>static List&lt;FieldDefinition&gt; Dictionary&lt;FieldDefinition, FieldDefinition&gt; syncVarNetIds Mirror.Weaver.SyncVarProcessor.ProcessSyncVars</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>ProcessSyncVars</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="307" column="62" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="307" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a6da604c1598ffc316784af305ca3626b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncVarProcessor._WriteCallHookMethod</definition>
+        <argsstring>(ILProcessor worker, MethodDefinition hookMethod, VariableDefinition oldValue, FieldDefinition newValue)</argsstring>
+        <name>_WriteCallHookMethod</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>hookMethod</declname>
+        </param>
+        <param>
+          <type>VariableDefinition</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="378" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="378" bodyend="432"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a83524b3fa0bd95b16843a6fb50a485b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncVarProcessor.GetHookMethod</definition>
+        <argsstring>(TypeDefinition td, FieldDefinition syncVar)</argsstring>
+        <name>GetHookMethod</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>syncVar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="21" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="21" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a31359f5ed5e91ef3d41f072e704a503a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncVarProcessor.ProcessSyncVarGet</definition>
+        <argsstring>(FieldDefinition fd, string originalName, FieldDefinition netFieldId)</argsstring>
+        <name>ProcessSyncVarGet</name>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>originalName</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>netFieldId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="73" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="73" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a178df7b9b1420a6ed866fda149741955" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.SyncVarProcessor.ProcessSyncVarSet</definition>
+        <argsstring>(TypeDefinition td, FieldDefinition fd, string originalName, long dirtyBit, FieldDefinition netFieldId)</argsstring>
+        <name>ProcessSyncVarSet</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>originalName</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>dirtyBit</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>netFieldId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="125" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="125" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a612719fe76e1fd71e61be9879a318939" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncVarProcessor.ProcessSyncVar</definition>
+        <argsstring>(TypeDefinition td, FieldDefinition fd, Dictionary&lt; FieldDefinition, FieldDefinition &gt; syncVarNetIds, long dirtyBit)</argsstring>
+        <name>ProcessSyncVar</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type>Dictionary&lt; FieldDefinition, FieldDefinition &gt;</type>
+          <declname>syncVarNetIds</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>dirtyBit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="262" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="262" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1ad4aff55058af7bb6c559bf35f18cc9ae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncVarProcessor.WriteCallHookMethodUsingArgument</definition>
+        <argsstring>(ILProcessor worker, MethodDefinition hookMethod, VariableDefinition oldValue)</argsstring>
+        <name>WriteCallHookMethodUsingArgument</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>hookMethod</declname>
+        </param>
+        <param>
+          <type>VariableDefinition</type>
+          <declname>oldValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="363" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_var_processor_1a34a2e13f02cdb7e633f11aac45bf6028" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncVarProcessor.WriteCallHookMethodUsingField</definition>
+        <argsstring>(ILProcessor worker, MethodDefinition hookMethod, VariableDefinition oldValue, FieldDefinition newValue)</argsstring>
+        <name>WriteCallHookMethodUsingField</name>
+        <param>
+          <type>ILProcessor</type>
+          <declname>worker</declname>
+        </param>
+        <param>
+          <type>MethodDefinition</type>
+          <declname>hookMethod</declname>
+        </param>
+        <param>
+          <type>VariableDefinition</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>FieldDefinition</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="368" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="368" bodyend="376"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Processes [SyncVar] in <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" line="11" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncVarProcessor.cs" bodystart="12" bodyend="433"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a6da604c1598ffc316784af305ca3626b" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>_WriteCallHookMethod</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1ac3ab19baf6571f66f571a027bd796395" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>FindHookMethod</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a83524b3fa0bd95b16843a6fb50a485b1" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>GetHookMethod</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a2b99e3acd20b46f81917948288696cd0" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>HookParameterMessage</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1aabba34effb760cfe3ebc3f14aabc89f9" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>MatchesParameters</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a612719fe76e1fd71e61be9879a318939" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>ProcessSyncVar</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a31359f5ed5e91ef3d41f072e704a503a" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>ProcessSyncVarGet</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a82f3d929e37e6f441efc9b75a0912974" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>ProcessSyncVars</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a178df7b9b1420a6ed866fda149741955" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>ProcessSyncVarSet</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a354812634cf4e29614f667b071378f31" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>SyncVarLimit</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1ad658fa3ba3433cd5b7ac981bc83bfff3" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>syncVars</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1ad4aff55058af7bb6c559bf35f18cc9ae" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>WriteCallHookMethodUsingArgument</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_var_processor_1a34a2e13f02cdb7e633f11aac45bf6028" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncVarProcessor</scope><name>WriteCallHookMethodUsingField</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

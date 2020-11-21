@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_game_admin_1_1_game_mode_d_m" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::GameAdmin::GameModeDM</compoundname>
+    <basecompoundref refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode" prot="public" virt="non-virtual">MyFPS.GameAdmin.GameMode</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_game_mode_d_m_1adff1f550bc9138bca1bb3f07380f8af5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void MyFPS.GameAdmin.GameModeDM.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1ac1c028e44d728e9e74bcbcad85232c19">Start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameModeDM.cs" line="9" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameModeDM.cs" bodystart="9" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>GameMode</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MyFPS.GameAdmin.GameModeDM</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_d_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>GameMode</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MyFPS.GameAdmin.GameModeDM</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_d_m"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameModeDM.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/GameModeDM.cs" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a6684119a80982173adf1f3655164282a" prot="public" virt="virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>AddScore</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1abfde6220a19cff4b4bc58da6d304817a" prot="public" virt="virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>EndGame</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a24d8ed93891da970bf37baf59dac2f72" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>gameScoreLimit</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a60fe1e4792fe3c6ccc7af18d8c2a752d" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>gameType</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a55f0590b86e1ce9e220497dcc2d1faec" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>playersList</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a784cdc8e0081d7c065896278d7b01bd5" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>SetUpGame</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_d_m_1adff1f550bc9138bca1bb3f07380f8af5" prot="protected" virt="virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>Start</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a687ee714e659bb6c180fbd6b096d90cd" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>teamAmount</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_game_mode_1a9a5f32445787b68b848df817a3a6e1bf" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::GameModeDM</scope><name>teams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

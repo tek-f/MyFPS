@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_emoji_one_01_attribution_8txt" kind="file" language="C++">
+    <compoundname>EmojiOne Attribution.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">This<sp/>sample<sp/>of<sp/>beautiful<sp/>emojis<sp/>are<sp/>provided<sp/>by<sp/>EmojiOne<sp/>https:</highlight><highlight class="comment">//www.emojione.com/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Please<sp/>visit<sp/>their<sp/>website<sp/>to<sp/>view<sp/>the<sp/>complete<sp/>set<sp/>of<sp/>their<sp/>emojis<sp/>and<sp/>review<sp/>their<sp/>licensing<sp/>terms.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt"/>
+  </compounddef>
+</doxygen>

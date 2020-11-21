@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_ed6c08c6a8bfe9b518d7b9a2f0da1bfd" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor</compoundname>
+    <innerdir refid="dir_cba1c1a04b4efee744d0c87673d27034">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Logging</innerdir>
+    <innerdir refid="dir_7118edfc67dd0d1b59eb43d018562216">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver</innerdir>
+    <innerfile refid="_enter_play_mode_settings_check_8cs">EnterPlayModeSettingsCheck.cs</innerfile>
+    <innerfile refid="_inspector_helper_8cs">InspectorHelper.cs</innerfile>
+    <innerfile refid="_log_level_window_8cs">LogLevelWindow.cs</innerfile>
+    <innerfile refid="_network_behaviour_inspector_8cs">NetworkBehaviourInspector.cs</innerfile>
+    <innerfile refid="_network_information_preview_8cs">NetworkInformationPreview.cs</innerfile>
+    <innerfile refid="_network_manager_editor_8cs">NetworkManagerEditor.cs</innerfile>
+    <innerfile refid="_network_scene_post_process_8cs">NetworkScenePostProcess.cs</innerfile>
+    <innerfile refid="_scene_drawer_8cs">SceneDrawer.cs</innerfile>
+    <innerfile refid="_scriptable_object_utility_8cs">ScriptableObjectUtility.cs</innerfile>
+    <innerfile refid="_sync_var_attribute_drawer_8cs">SyncVarAttributeDrawer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/"/>
+  </compounddef>
+</doxygen>

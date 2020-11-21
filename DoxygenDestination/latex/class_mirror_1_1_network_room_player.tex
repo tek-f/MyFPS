@@ -1,0 +1,190 @@
+\hypertarget{class_mirror_1_1_network_room_player}{}\doxysection{Mirror.\+Network\+Room\+Player Class Reference}
+\label{class_mirror_1_1_network_room_player}\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+
+
+This component works in conjunction with the \mbox{\hyperlink{class_mirror_1_1_network_room_manager}{Network\+Room\+Manager}} to make up the multiplayer room system.  
+
+
+Inheritance diagram for Mirror.\+Network\+Room\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.404255cm]{class_mirror_1_1_network_room_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_room_player_a130f6ee7aa500948d65fd8e3ab2822a2}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Do not use Start -\/ Override On\+Startr\+Host / On\+Start\+Client instead! \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_ad205439be2c339fddb1ed759c54405ba}\label{class_mirror_1_1_network_room_player_ad205439be2c339fddb1ed759c54405ba}} 
+virtual void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a3926b91ab99e9d66b677128fc72f4247}\label{class_mirror_1_1_network_room_player_a3926b91ab99e9d66b677128fc72f4247}} 
+void {\bfseries Cmd\+Change\+Ready\+State} (bool ready\+State)
+\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_aa4c4da4eef51d0d9b5df6d4d8b55df0a}{Index\+Changed}} (int old\+Index, int new\+Index)
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients when the index changes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}{Ready\+State\+Changed}} (bool \+\_\+, bool new\+Ready\+State)
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients when a Room\+Player switches between ready or not ready. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_a6f008d188be0f6d3767f2cd812ae3ba9}{On\+Client\+Enter\+Room}} ()
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients for all room player objects when entering the room. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_a0ce509d2cca6cc7f62c722775db6a130}{On\+Client\+Exit\+Room}} ()
+\begin{DoxyCompactList}\small\item\em This is a hook that is invoked on clients for all room player objects when exiting the room. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_a346d5656829b31b07086ed9579a2d750}{On\+Client\+Ready}} (bool ready\+State)
+\begin{DoxyCompactList}\small\item\em Obsolete\+: Override \mbox{\hyperlink{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}{Ready\+State\+Changed(bool, bool)}} instead. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_room_player_adac568744d44acfab69a17d52b8e499a}{On\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Render a UI for the room. Override to provide your on UI \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_room_player_a37d32915b08481945cc18b629b75771c}{show\+Room\+G\+UI}} = true
+\begin{DoxyCompactList}\small\item\em This flag controls whether the default UI is shown for the room player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_room_player_a30058f89cbfe60ef0bf61916a2d77e97}{ready\+To\+Begin}}
+\begin{DoxyCompactList}\small\item\em Diagnostic flag indicating whether this player is ready for the game to begin. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mirror_1_1_network_room_player_a9801d76577b6fda8fba4aa90b5924917}{index}}
+\begin{DoxyCompactList}\small\item\em Diagnostic index of the player, e.\+g. Player1, Player2, etc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This component works in conjunction with the \mbox{\hyperlink{class_mirror_1_1_network_room_manager}{Network\+Room\+Manager}} to make up the multiplayer room system. 
+
+The Room\+Prefab object of the \mbox{\hyperlink{class_mirror_1_1_network_room_manager}{Network\+Room\+Manager}} must have this component on it. This component holds basic room player data required for the room to function. Game specific data for room players can be put in other components on the Room\+Prefab or in scripts derived from \mbox{\hyperlink{class_mirror_1_1_network_room_player}{Network\+Room\+Player}}.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_aa4c4da4eef51d0d9b5df6d4d8b55df0a}\label{class_mirror_1_1_network_room_player_aa4c4da4eef51d0d9b5df6d4d8b55df0a}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!IndexChanged@{IndexChanged}}
+\index{IndexChanged@{IndexChanged}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{IndexChanged()}{IndexChanged()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{old\+Index,  }\item[{int}]{new\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients when the index changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old\+Index} & The old index value\\
+\hline
+{\em new\+Index} & The new index value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a6f008d188be0f6d3767f2cd812ae3ba9}\label{class_mirror_1_1_network_room_player_a6f008d188be0f6d3767f2cd812ae3ba9}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!OnClientEnterRoom@{OnClientEnterRoom}}
+\index{OnClientEnterRoom@{OnClientEnterRoom}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{OnClientEnterRoom()}{OnClientEnterRoom()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+On\+Client\+Enter\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients for all room player objects when entering the room. 
+
+Note\+: is\+Local\+Player is not guaranteed to be set until On\+Start\+Local\+Player is called.
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_afb1d001cb21958f71cef87068f2f7a76}{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a0ce509d2cca6cc7f62c722775db6a130}\label{class_mirror_1_1_network_room_player_a0ce509d2cca6cc7f62c722775db6a130}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!OnClientExitRoom@{OnClientExitRoom}}
+\index{OnClientExitRoom@{OnClientExitRoom}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{OnClientExitRoom()}{OnClientExitRoom()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+On\+Client\+Exit\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients for all room player objects when exiting the room. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_aba6c516c5d9925195454c6fa080cfd36}{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a346d5656829b31b07086ed9579a2d750}\label{class_mirror_1_1_network_room_player_a346d5656829b31b07086ed9579a2d750}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!OnClientReady@{OnClientReady}}
+\index{OnClientReady@{OnClientReady}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{OnClientReady()}{OnClientReady()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+On\+Client\+Ready (\begin{DoxyParamCaption}\item[{bool}]{ready\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Obsolete\+: Override \mbox{\hyperlink{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}{Ready\+State\+Changed(bool, bool)}} instead. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_adac568744d44acfab69a17d52b8e499a}\label{class_mirror_1_1_network_room_player_adac568744d44acfab69a17d52b8e499a}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+On\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Render a UI for the room. Override to provide your on UI 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}\label{class_mirror_1_1_network_room_player_ac069b2bb52230747e5dc423159c6264d}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!ReadyStateChanged@{ReadyStateChanged}}
+\index{ReadyStateChanged@{ReadyStateChanged}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{ReadyStateChanged()}{ReadyStateChanged()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Room\+Player.\+Ready\+State\+Changed (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+,  }\item[{bool}]{new\+Ready\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is a hook that is invoked on clients when a Room\+Player switches between ready or not ready. 
+
+This function is called when the a client player calls Cmd\+Change\+Ready\+State.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ready\+State} & New Ready State\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a0b8c2d42367cafb2255b04731d375bfc}{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a130f6ee7aa500948d65fd8e3ab2822a2}\label{class_mirror_1_1_network_room_player_a130f6ee7aa500948d65fd8e3ab2822a2}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!Start@{Start}}
+\index{Start@{Start}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Room\+Player.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Do not use Start -\/ Override On\+Startr\+Host / On\+Start\+Client instead! 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a9801d76577b6fda8fba4aa90b5924917}\label{class_mirror_1_1_network_room_player_a9801d76577b6fda8fba4aa90b5924917}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!index@{index}}
+\index{index@{index}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int Mirror.\+Network\+Room\+Player.\+index}
+
+
+
+Diagnostic index of the player, e.\+g. Player1, Player2, etc. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a30058f89cbfe60ef0bf61916a2d77e97}\label{class_mirror_1_1_network_room_player_a30058f89cbfe60ef0bf61916a2d77e97}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!readyToBegin@{readyToBegin}}
+\index{readyToBegin@{readyToBegin}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{readyToBegin}{readyToBegin}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Room\+Player.\+ready\+To\+Begin}
+
+
+
+Diagnostic flag indicating whether this player is ready for the game to begin. 
+
+Invoke Cmd\+Change\+Ready\+State method on the client to set this flag.
+
+When all players are ready to begin, the game will start. This should not be set directly, Cmd\+Change\+Ready\+State should be called on the client to set it on the server.\mbox{\Hypertarget{class_mirror_1_1_network_room_player_a37d32915b08481945cc18b629b75771c}\label{class_mirror_1_1_network_room_player_a37d32915b08481945cc18b629b75771c}} 
+\index{Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}!showRoomGUI@{showRoomGUI}}
+\index{showRoomGUI@{showRoomGUI}!Mirror.NetworkRoomPlayer@{Mirror.NetworkRoomPlayer}}
+\doxysubsubsection{\texorpdfstring{showRoomGUI}{showRoomGUI}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Room\+Player.\+show\+Room\+G\+UI = true}
+
+
+
+This flag controls whether the default UI is shown for the room player. 
+
+As this UI is rendered using the old G\+UI system, it is only recommended for testing purposes.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Components/Network\+Room\+Player.\+cs\end{DoxyCompactItemize}

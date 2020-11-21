@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_sync_object_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::SyncObjectProcessor</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_object_processor_1acde1e5c900be6690172ca9b9a0f76ecd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; FieldDefinition &gt;</type>
+        <definition>static List&lt;FieldDefinition&gt; Mirror.Weaver.SyncObjectProcessor.FindSyncObjectsFields</definition>
+        <argsstring>(TypeDefinition td)</argsstring>
+        <name>FindSyncObjectsFields</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <briefdescription>
+<para>Finds SyncObjects fields in a type </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Type should be a <ref refid="class_mirror_1_1_network_behaviour" kindref="compound">NetworkBehaviour</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>td</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" line="15" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" bodystart="15" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_object_processor_1a426280069125a0e594265c19fb060cd8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.SyncObjectProcessor.GenerateSerialization</definition>
+        <argsstring>(TypeDefinition td, TypeReference itemType, TypeReference mirrorBaseType, string serializeMethod, string deserializeMethod)</argsstring>
+        <name>GenerateSerialization</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>itemType</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>mirrorBaseType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>serializeMethod</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>deserializeMethod</declname>
+        </param>
+        <briefdescription>
+<para>Generates the serialization and deserialization methods for a specified generic argument </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>td</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the class that needs serialization methods</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>generic argument to serialize</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mirrorBaseType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base <ref refid="interface_mirror_1_1_sync_object" kindref="compound">SyncObject</ref> td inherits from</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serializeMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the serialize method</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deserializeMethod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the deserialize method</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" line="51" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" bodystart="51" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_object_processor_1a18e39c7fabc1a9dc186cfe1b98096302" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.SyncObjectProcessor.GenerateSerialization</definition>
+        <argsstring>(string methodName, TypeDefinition td, TypeReference itemType, TypeReference mirrorBaseType)</argsstring>
+        <name>GenerateSerialization</name>
+        <param>
+          <type>string</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>itemType</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>mirrorBaseType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" line="68" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" bodystart="68" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_sync_object_processor_1a29b7c2a598c8a593100895e3817708a8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.Weaver.SyncObjectProcessor.GenerateDeserialization</definition>
+        <argsstring>(string methodName, TypeDefinition td, TypeReference itemType, TypeReference mirrorBaseType)</argsstring>
+        <name>GenerateDeserialization</name>
+        <param>
+          <type>string</type>
+          <declname>methodName</declname>
+        </param>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>itemType</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>mirrorBaseType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" line="112" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" bodystart="112" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" line="7" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/SyncObjectProcessor.cs" bodystart="8" bodyend="153"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_object_processor_1acde1e5c900be6690172ca9b9a0f76ecd" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncObjectProcessor</scope><name>FindSyncObjectsFields</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_object_processor_1a29b7c2a598c8a593100895e3817708a8" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncObjectProcessor</scope><name>GenerateDeserialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_object_processor_1a426280069125a0e594265c19fb060cd8" prot="public" virt="non-virtual"><scope>Mirror::Weaver::SyncObjectProcessor</scope><name>GenerateSerialization</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_sync_object_processor_1a18e39c7fabc1a9dc186cfe1b98096302" prot="private" virt="non-virtual"><scope>Mirror::Weaver::SyncObjectProcessor</scope><name>GenerateSerialization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

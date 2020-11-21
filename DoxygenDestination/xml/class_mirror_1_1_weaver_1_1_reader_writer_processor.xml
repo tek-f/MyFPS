@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_reader_writer_processor" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::ReaderWriterProcessor</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_reader_writer_processor_1abd4ee2ee9c3df567e3cd7cc2f3503857" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.ReaderWriterProcessor.Process</definition>
+        <argsstring>(AssemblyDefinition CurrentAssembly)</argsstring>
+        <name>Process</name>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>CurrentAssembly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" line="10" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" bodystart="10" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a29a4f5a48017a282e9c44f119dc00fdc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.ReaderWriterProcessor.ProcessAssemblyClasses</definition>
+        <argsstring>(AssemblyDefinition CurrentAssembly, AssemblyDefinition assembly)</argsstring>
+        <name>ProcessAssemblyClasses</name>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>CurrentAssembly</declname>
+        </param>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>assembly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" line="38" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" bodystart="38" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a5286a7bb8798017d78b486a6576bfefa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.ReaderWriterProcessor.LoadWriters</definition>
+        <argsstring>(AssemblyDefinition currentAssembly, TypeDefinition klass)</argsstring>
+        <name>LoadWriters</name>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>currentAssembly</declname>
+        </param>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>klass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" line="52" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" bodystart="52" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a8978787c701aad6fa46fc6928b4f02df" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Weaver.ReaderWriterProcessor.LoadReaders</definition>
+        <argsstring>(AssemblyDefinition currentAssembly, TypeDefinition klass)</argsstring>
+        <name>LoadReaders</name>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>currentAssembly</declname>
+        </param>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>klass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" line="74" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" bodystart="74" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" line="8" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/ReaderWriterProcessor.cs" bodystart="9" bodyend="94"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a8978787c701aad6fa46fc6928b4f02df" prot="private" virt="non-virtual"><scope>Mirror::Weaver::ReaderWriterProcessor</scope><name>LoadReaders</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a5286a7bb8798017d78b486a6576bfefa" prot="private" virt="non-virtual"><scope>Mirror::Weaver::ReaderWriterProcessor</scope><name>LoadWriters</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_reader_writer_processor_1abd4ee2ee9c3df567e3cd7cc2f3503857" prot="public" virt="non-virtual"><scope>Mirror::Weaver::ReaderWriterProcessor</scope><name>Process</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_reader_writer_processor_1a29a4f5a48017a282e9c44f119dc00fdc" prot="private" virt="non-virtual"><scope>Mirror::Weaver::ReaderWriterProcessor</scope><name>ProcessAssemblyClasses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

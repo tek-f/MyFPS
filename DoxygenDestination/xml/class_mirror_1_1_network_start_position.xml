@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_start_position" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkStartPosition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_start_position_1a0efd7d6998fa88c3b0af444058990857" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkStartPosition.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" line="14" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_start_position_1af2d6a5e2a1fe41c0c1028b487a2471fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.NetworkStartPosition.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" line="19" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This component is used to make a gameObject a starting position for spawning player objects in multiplayer games. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This object&apos;s transform will be automatically registered and unregistered with the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> as a starting position.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.NetworkStartPosition</label>
+        <link refid="class_mirror_1_1_network_start_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.NetworkStartPosition</label>
+        <link refid="class_mirror_1_1_network_start_position"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" line="12" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkStartPosition.cs" bodystart="13" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_start_position_1a0efd7d6998fa88c3b0af444058990857" prot="public" virt="non-virtual"><scope>Mirror::NetworkStartPosition</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_network_start_position_1af2d6a5e2a1fe41c0c1028b487a2471fb" prot="public" virt="non-virtual"><scope>Mirror::NetworkStartPosition</scope><name>OnDestroy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

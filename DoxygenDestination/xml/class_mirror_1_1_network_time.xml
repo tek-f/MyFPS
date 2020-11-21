@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_time" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkTime</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1abfac27db29234c37eb8b5b4f9ea9731e" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.NetworkTime.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger(typeof(NetworkTime))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="12" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a3a5a3525a694be120fab725f30cd3cc2" prot="private" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.lastPingTime</definition>
+        <argsstring></argsstring>
+        <name>lastPingTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="25" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a65d6620d97b61954b2e2ef23cf77751b" prot="private" static="yes" mutable="no">
+        <type>readonly Stopwatch</type>
+        <definition>readonly Stopwatch Mirror.NetworkTime.stopwatch</definition>
+        <argsstring></argsstring>
+        <name>stopwatch</name>
+        <initializer>= new Stopwatch()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="28" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a9d4d9cd130548aaa16fd421e41bfd247" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_mirror_1_1_exponential_moving_average" kindref="compound">ExponentialMovingAverage</ref></type>
+        <definition>ExponentialMovingAverage Mirror.NetworkTime._rtt</definition>
+        <argsstring></argsstring>
+        <name>_rtt</name>
+        <initializer>= new <ref refid="class_mirror_1_1_exponential_moving_average" kindref="compound">ExponentialMovingAverage</ref>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="35" column="41" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1ac6e66ac106a3cd16d2c003df9eae41b7" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_mirror_1_1_exponential_moving_average" kindref="compound">ExponentialMovingAverage</ref></type>
+        <definition>ExponentialMovingAverage Mirror.NetworkTime._offset</definition>
+        <argsstring></argsstring>
+        <name>_offset</name>
+        <initializer>= new <ref refid="class_mirror_1_1_exponential_moving_average" kindref="compound">ExponentialMovingAverage</ref>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="36" column="41" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a177e5a1546b2f743580860848bae1e63" prot="private" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.offsetMin</definition>
+        <argsstring></argsstring>
+        <name>offsetMin</name>
+        <initializer>= double.MinValue</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="39" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1abaabdbdd672090d85c5409a8f4618a49" prot="private" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.offsetMax</definition>
+        <argsstring></argsstring>
+        <name>offsetMax</name>
+        <initializer>= double.MaxValue</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="40" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1af057b06731cecdb9dd155dc6097d3dda" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.NetworkTime.PingFrequency</definition>
+        <argsstring></argsstring>
+        <name>PingFrequency</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+<para>how often are we sending ping messages used to calculate network time and RTT </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="18" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a97638099f64be4fdc172743b1bba1004" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.NetworkTime.PingWindowSize</definition>
+        <argsstring></argsstring>
+        <name>PingWindowSize</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>average out the last few results from Ping </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="23" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1ad2284a9c7748043fd95850a409a236d3" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <initializer>=&gt; LocalTime() - _offset.Value</initializer>
+        <briefdescription>
+<para>The time in seconds since the server started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note this value works in the client and the server the value is synchronized accross the network with high accuracy</para>
+<para>You should not cast this down to a float because the it loses too much accuracy when the server is up for a while</para>
+<para>I measured the accuracy of float and I got this:</para>
+<para><itemizedlist>
+<listitem>
+<para>for the same day, accuracy is better than 1 ms  </para>
+</listitem>
+<listitem>
+<para>after 1 day, accuracy goes down to 7 ms  </para>
+</listitem>
+<listitem>
+<para>after 10 days, accuracy is 61 ms  </para>
+</listitem>
+<listitem>
+<para>after 30 days , accuracy is 238 ms  </para>
+</listitem>
+<listitem>
+<para>after 60 days, accuracy is 454 ms  </para>
+</listitem>
+</itemizedlist>
+</para>
+<para>in other words, if the server is running for 2 months, and you cast down to float, then the time will jump in 0.4s intervals.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="145" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a217d902b0773b397ac0ba2915568f3e4" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.timeVar</definition>
+        <argsstring></argsstring>
+        <name>timeVar</name>
+        <initializer>=&gt; _offset.Var</initializer>
+        <briefdescription>
+<para>Measurement of the variance of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The higher the variance, the less accurate the time is</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="151" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a32881341fa952bb8b8f36b29bc97f286" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.timeSd</definition>
+        <argsstring></argsstring>
+        <name>timeSd</name>
+        <initializer>=&gt; Math.Sqrt(timeVar)</initializer>
+        <briefdescription>
+<para>standard deviation of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The higher the variance, the less accurate the time is</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="157" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a3a186c594073086fa19e71d1f995264f" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <initializer>=&gt; _offset.Value</initializer>
+        <briefdescription>
+<para>Clock difference in seconds between the client and the server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note this value is always 0 at the server </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="165" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a424266844a207e3d7a7bc594c0e5bdcc" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.rtt</definition>
+        <argsstring></argsstring>
+        <name>rtt</name>
+        <initializer>=&gt; _rtt.Value</initializer>
+        <briefdescription>
+<para>how long in seconds does it take for a message to go to the server and come back </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="171" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1abd6605a555873e505a7c3f41f6ab27d9" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.rttVar</definition>
+        <argsstring></argsstring>
+        <name>rttVar</name>
+        <initializer>=&gt; _rtt.Var</initializer>
+        <briefdescription>
+<para>measure variance of rtt the higher the number, the less accurate rtt is </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="177" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_time_1a555dfdcaa815967f84b754eb078e6cd6" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double Mirror.NetworkTime.rttSd</definition>
+        <argsstring></argsstring>
+        <name>rttSd</name>
+        <initializer>=&gt; Math.Sqrt(rttVar)</initializer>
+        <briefdescription>
+<para>Measure the standard deviation of rtt the higher the number, the less accurate rtt is </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="183" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1ac5c57b434ee649f9775cfa603e9c3492" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>static</type>
+        <definition>static Mirror.NetworkTime.NetworkTime</definition>
+        <argsstring>()</argsstring>
+        <name>NetworkTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="30" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1a2900194d7a4d63c26b1ed388cac024bf" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double Mirror.NetworkTime.LocalTime</definition>
+        <argsstring>()</argsstring>
+        <name>LocalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="43" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1a320b722b234b8049fe20774e40020b59" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkTime.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="48" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="48" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1af64ab7a99fb95e04e83de46f710ff564" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkTime.UpdateClient</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="56" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1a2990b15de4e28589bf5dddae3a0bc096" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkTime.OnServerPing</definition>
+        <argsstring>(NetworkConnection conn, NetworkPingMessage msg)</argsstring>
+        <name>OnServerPing</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_mirror_1_1_network_ping_message" kindref="compound">NetworkPingMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="69" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_time_1a6256d7bb0aa418d7a96605fdb57236d2" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkTime.OnClientPong</definition>
+        <argsstring>(NetworkPongMessage msg)</argsstring>
+        <name>OnClientPong</name>
+        <param>
+          <type><ref refid="struct_mirror_1_1_network_pong_message" kindref="compound">NetworkPongMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="85" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="85" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Synchronize time between the server and the clients </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" line="10" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkTime.cs" bodystart="11" bodyend="184"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_time_1ac6e66ac106a3cd16d2c003df9eae41b7" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>_offset</name></member>
+      <member refid="class_mirror_1_1_network_time_1a9d4d9cd130548aaa16fd421e41bfd247" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>_rtt</name></member>
+      <member refid="class_mirror_1_1_network_time_1a3a5a3525a694be120fab725f30cd3cc2" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>lastPingTime</name></member>
+      <member refid="class_mirror_1_1_network_time_1a2900194d7a4d63c26b1ed388cac024bf" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>LocalTime</name></member>
+      <member refid="class_mirror_1_1_network_time_1abfac27db29234c37eb8b5b4f9ea9731e" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_network_time_1ac5c57b434ee649f9775cfa603e9c3492" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>NetworkTime</name></member>
+      <member refid="class_mirror_1_1_network_time_1a3a186c594073086fa19e71d1f995264f" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>offset</name></member>
+      <member refid="class_mirror_1_1_network_time_1abaabdbdd672090d85c5409a8f4618a49" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>offsetMax</name></member>
+      <member refid="class_mirror_1_1_network_time_1a177e5a1546b2f743580860848bae1e63" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>offsetMin</name></member>
+      <member refid="class_mirror_1_1_network_time_1a6256d7bb0aa418d7a96605fdb57236d2" prot="package" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>OnClientPong</name></member>
+      <member refid="class_mirror_1_1_network_time_1a2990b15de4e28589bf5dddae3a0bc096" prot="package" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>OnServerPing</name></member>
+      <member refid="class_mirror_1_1_network_time_1af057b06731cecdb9dd155dc6097d3dda" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>PingFrequency</name></member>
+      <member refid="class_mirror_1_1_network_time_1a97638099f64be4fdc172743b1bba1004" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>PingWindowSize</name></member>
+      <member refid="class_mirror_1_1_network_time_1a320b722b234b8049fe20774e40020b59" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_network_time_1a424266844a207e3d7a7bc594c0e5bdcc" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>rtt</name></member>
+      <member refid="class_mirror_1_1_network_time_1a555dfdcaa815967f84b754eb078e6cd6" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>rttSd</name></member>
+      <member refid="class_mirror_1_1_network_time_1abd6605a555873e505a7c3f41f6ab27d9" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>rttVar</name></member>
+      <member refid="class_mirror_1_1_network_time_1a65d6620d97b61954b2e2ef23cf77751b" prot="private" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>stopwatch</name></member>
+      <member refid="class_mirror_1_1_network_time_1ad2284a9c7748043fd95850a409a236d3" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>time</name></member>
+      <member refid="class_mirror_1_1_network_time_1a32881341fa952bb8b8f36b29bc97f286" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>timeSd</name></member>
+      <member refid="class_mirror_1_1_network_time_1a217d902b0773b397ac0ba2915568f3e4" prot="public" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>timeVar</name></member>
+      <member refid="class_mirror_1_1_network_time_1af64ab7a99fb95e04e83de46f710ff564" prot="package" virt="non-virtual"><scope>Mirror::NetworkTime</scope><name>UpdateClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

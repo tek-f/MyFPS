@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_632edf0077b3ba3d7484655b25c4b5f7" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI</compoundname>
+    <innerdir refid="dir_0419a874790114f200b5faf9be185c47">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI/"/>
+  </compounddef>
+</doxygen>

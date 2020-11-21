@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::Exceptions::WebSocketBufferOverflowException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1a66efe318172086d3ed5e53681eea980b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.WebSocketBufferOverflowException.WebSocketBufferOverflowException</definition>
+        <argsstring>()</argsstring>
+        <name>WebSocketBufferOverflowException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" line="8" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1a2d41fcc7c9f1d28b0f50993821184673" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.WebSocketBufferOverflowException.WebSocketBufferOverflowException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>WebSocketBufferOverflowException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" line="12" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1acacc3c679d7c5137f73a6e1bd7da345c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.Exceptions.WebSocketBufferOverflowException.WebSocketBufferOverflowException</definition>
+        <argsstring>(string message, Exception inner)</argsstring>
+        <name>WebSocketBufferOverflowException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>inner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" line="16" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.WebSocketBufferOverflowException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ninja.WebSockets.Exceptions.WebSocketBufferOverflowException</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/WebSocketBufferOverflowException.cs" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1a66efe318172086d3ed5e53681eea980b" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::WebSocketBufferOverflowException</scope><name>WebSocketBufferOverflowException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1a2d41fcc7c9f1d28b0f50993821184673" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::WebSocketBufferOverflowException</scope><name>WebSocketBufferOverflowException</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception_1acacc3c679d7c5137f73a6e1bd7da345c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::Exceptions::WebSocketBufferOverflowException</scope><name>WebSocketBufferOverflowException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

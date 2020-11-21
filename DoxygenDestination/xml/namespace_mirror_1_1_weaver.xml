@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_mirror_1_1_weaver" kind="namespace" language="C#">
+    <compoundname>Mirror::Weaver</compoundname>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_command_processor" prot="public">Mirror::Weaver::CommandProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_compilation_finished_hook" prot="public">Mirror::Weaver::CompilationFinishedHook</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_extensions" prot="public">Mirror::Weaver::Extensions</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver" prot="public">Mirror::Weaver::GenericArgumentResolver</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_helpers" prot="public">Mirror::Weaver::Helpers</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_log" prot="public">Mirror::Weaver::Log</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_message_class_processor" prot="public">Mirror::Weaver::MessageClassProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_method_processor" prot="public">Mirror::Weaver::MethodProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_mono_behaviour_processor" prot="public">Mirror::Weaver::MonoBehaviourProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_network_behaviour_processor" prot="public">Mirror::Weaver::NetworkBehaviourProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_property_site_processor" prot="public">Mirror::Weaver::PropertySiteProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_readers" prot="public">Mirror::Weaver::Readers</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_reader_writer_processor" prot="public">Mirror::Weaver::ReaderWriterProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_resolvers" prot="public">Mirror::Weaver::Resolvers</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_rpc_processor" prot="public">Mirror::Weaver::RpcProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_server_client_attribute_processor" prot="public">Mirror::Weaver::ServerClientAttributeProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_dictionary_processor" prot="public">Mirror::Weaver::SyncDictionaryProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_event_processor" prot="public">Mirror::Weaver::SyncEventProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_list_processor" prot="public">Mirror::Weaver::SyncListProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_object_initializer" prot="public">Mirror::Weaver::SyncObjectInitializer</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_object_processor" prot="public">Mirror::Weaver::SyncObjectProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_sync_var_processor" prot="public">Mirror::Weaver::SyncVarProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_target_rpc_processor" prot="public">Mirror::Weaver::TargetRpcProcessor</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_weaver" prot="package">Mirror::Weaver::Weaver</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_weaver_lists" prot="public">Mirror::Weaver::WeaverLists</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_weaver_types" prot="public">Mirror::Weaver::WeaverTypes</innerclass>
+    <innerclass refid="class_mirror_1_1_weaver_1_1_writers" prot="public">Mirror::Weaver::Writers</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_mirror_1_1_weaver_1a39eb2c76a965cc4ceab0b108ad2e1c99" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RemoteCallType</name>
+        <enumvalue id="namespace_mirror_1_1_weaver_1a39eb2c76a965cc4ceab0b108ad2e1c99aee97be03cb04119af45014d815621ce1" prot="public">
+          <name>Command</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_mirror_1_1_weaver_1a39eb2c76a965cc4ceab0b108ad2e1c99a9e5f77e3b815016923048c210dde705f" prot="public">
+          <name>ClientRpc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_mirror_1_1_weaver_1a39eb2c76a965cc4ceab0b108ad2e1c99a8e975e1390c4b91b2fe2a396533f5211" prot="public">
+          <name>TargetRpc</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_mirror_1_1_weaver_1a39eb2c76a965cc4ceab0b108ad2e1c99a0e432355181f7f1d41262201b29bf744" prot="public">
+          <name>SyncEvent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="8" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_a886c3ec29efc64c2d42435d6640a8d7" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud</compoundname>
+    <innerdir refid="dir_632edf0077b3ba3d7484655b25c4b5f7">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/GUI</innerdir>
+    <innerdir refid="dir_682c6a042df96af0c6fcc73803ea2f31">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/PongWithListServer</innerdir>
+    <innerdir refid="dir_9f1bcd281e8236372365545ee470f228">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/TanksWithListServer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/"/>
+  </compounddef>
+</doxygen>

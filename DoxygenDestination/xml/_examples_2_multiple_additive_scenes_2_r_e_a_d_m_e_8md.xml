@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_examples_2_multiple_additive_scenes_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Multiple<sp/>Additive<sp/>Scenes<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>Build<sp/>Settings,<sp/>remove<sp/>all<sp/>scenes<sp/>and<sp/>add<sp/>both<sp/>of<sp/>the<sp/>scenes<sp/>from<sp/>the<sp/>Scenes<sp/>folder<sp/>in<sp/>the<sp/>following<sp/>order:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Main</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Game</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Open<sp/>the<sp/>Main<sp/>scene<sp/>in<sp/>the<sp/>Editor<sp/>and<sp/>make<sp/>sure<sp/>the<sp/>Game<sp/>Scene<sp/>field<sp/>in<sp/>the<sp/>MultiScene<sp/>Network<sp/>Manager<sp/>on<sp/>the<sp/>Network<sp/>scene<sp/>object<sp/>contains<sp/>the<sp/>Game<sp/>scene.<sp/>This<sp/>is<sp/>already<sp/>setup<sp/>by<sp/>default,<sp/>but<sp/>if<sp/>the<sp/>Main<sp/>scene<sp/>was<sp/>opened<sp/>and<sp/>saved<sp/>before<sp/>putting<sp/>the<sp/>scenes<sp/>in<sp/>the<sp/>Build<sp/>Settings<sp/>list,<sp/>the<sp/>Game<sp/>Scene<sp/>field<sp/>may<sp/>be<sp/>cleared<sp/>accidentally.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>MultiScene<sp/>Network<sp/>Manager</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>MultiScene<sp/>Network<sp/>Manager<sp/>is<sp/>derived<sp/>from<sp/>the<sp/>base<sp/>Network<sp/>Manager<sp/>and<sp/>is<sp/>responsible<sp/>for<sp/>additively<sp/>loading<sp/>the<sp/>subscene<sp/>instances<sp/>and<sp/>placing<sp/>the<sp/>players<sp/>in<sp/>their<sp/>respective<sp/>subscene<sp/>instances<sp/>and<sp/>initializing<sp/>player<sp/>SyncVars.<sp/>It<sp/>has<sp/>a<sp/>Game<sp/>Scene<sp/>field<sp/>where<sp/>the<sp/>Game<sp/>subscene<sp/>is<sp/>assigned,<sp/>and<sp/>an<sp/>Instances<sp/>field<sp/>to<sp/>set<sp/>how<sp/>many<sp/>instances<sp/>are<sp/>loaded<sp/>on<sp/>the<sp/>server.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>this<sp/>example,<sp/>the<sp/>subscene<sp/>instances<sp/>are<sp/>additively<sp/>loaded<sp/>on<sp/>the<sp/>server<sp/>with<sp/>`localPhysicsMode<sp/>=<sp/>LocalPhysicsMode.Physics3D`.<sp/>Physics<sp/>subscenes<sp/>do<sp/>not<sp/>auto-simulate,<sp/>so<sp/>each<sp/>scene<sp/>has<sp/>a<sp/>game<sp/>object<sp/>with<sp/>a<sp/>generic<sp/>`PhysicsSimulator`<sp/>script<sp/>on<sp/>it.<sp/>This<sp/>script<sp/>does<sp/>nothing<sp/>on<sp/>the<sp/>client,<sp/>only<sp/>on<sp/>the<sp/>server.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Clients<sp/>only<sp/>ever<sp/>have<sp/>one<sp/>instance<sp/>of<sp/>the<sp/>subscene<sp/>additively<sp/>loaded<sp/>(without<sp/>`localPhysicsMode`),<sp/>while<sp/>server<sp/>has<sp/>them<sp/>all.<sp/>All<sp/>networked<sp/>objects<sp/>have<sp/>a<sp/>`NetworkSceneChecker`<sp/>component<sp/>which<sp/>is<sp/>what<sp/>isolates<sp/>them<sp/>to<sp/>their<sp/>specific<sp/>subscene.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Playing<sp/>in<sp/>the<sp/>Instances</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">File<sp/>-\&gt;<sp/>Build<sp/>and<sp/>Run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Start<sp/>at<sp/>least<sp/>3<sp/>built<sp/>instances:<sp/>These<sp/>will<sp/>all<sp/>be<sp/>client<sp/>players.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Press<sp/>Play<sp/>in<sp/>the<sp/>Editor<sp/>and<sp/>click<sp/>Host<sp/>(Server<sp/>+<sp/>Client)<sp/>in<sp/>the<sp/>HUD<sp/>-<sp/>This<sp/>will<sp/>be<sp/>the<sp/>host<sp/>and<sp/>the<sp/>1st<sp/>player.<sp/>You<sp/>can<sp/>also<sp/>use<sp/>Server<sp/>Only<sp/>if<sp/>you<sp/>prefer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Click<sp/>Client<sp/>in<sp/>the<sp/>built<sp/>instances.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/><sp/><sp/>WASDQE<sp/>keys<sp/>to<sp/>move<sp/>&amp;<sp/>turn<sp/>your<sp/>player<sp/>capsule,<sp/>Space<sp/>to<sp/>jump.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/><sp/><sp/>Colliding<sp/>with<sp/>the<sp/>small<sp/>colored<sp/>spheres<sp/>scores<sp/>points<sp/>base<sp/>on<sp/>their<sp/>color.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/><sp/><sp/>Colliding<sp/>with<sp/>the<sp/>larger<sp/>tumblers<sp/>sends<sp/>them<sp/>rolling<sp/>around...they&apos;re<sp/>server-side<sp/>non-kinematic<sp/>rigidbodies.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/><sp/><sp/>Only<sp/>scores<sp/>for<sp/>the<sp/>players<sp/>in<sp/>the<sp/>same<sp/>subscene<sp/>are<sp/>shown<sp/>at<sp/>the<sp/>top<sp/>of<sp/>the<sp/>game<sp/>window.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/MultipleAdditiveScenes/README.md"/>
+  </compounddef>
+</doxygen>

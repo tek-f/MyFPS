@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_room_manager" prot="public" virt="non-virtual">Mirror.NetworkRoomManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1ab70eb1c538e7f657176805746c51d1d4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.showStartButton</definition>
+        <argsstring></argsstring>
+        <name>showStartButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="53" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a6299c83225d06117921d726c890117b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.OnRoomServerSceneLoadedForPlayer</definition>
+        <argsstring>(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)</argsstring>
+        <name>OnRoomServerSceneLoadedForPlayer</name>
+        <reimplements refid="class_mirror_1_1_network_room_manager_1acd402645c827a453462013ae93c6f38e">OnRoomServerSceneLoadedForPlayer</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>roomPlayer</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>gamePlayer</declname>
+        </param>
+        <briefdescription>
+<para>Called just after GamePlayer object is instantiated and just before it replaces RoomPlayer object. This is the ideal point to pass any data like player name, credentials, tokens, colors, etc. into the GamePlayer object as it is about to enter the Online scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>roomPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamePlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true unless some code in here decides it needs to abort the replacement</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="17" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a943597dfd89428eff8a8be8066b3ece8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.OnRoomStopClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStopClient</name>
+        <reimplements refid="class_mirror_1_1_network_room_manager_1add05a9e1926f170933148adc6c336302">OnRoomStopClient</reimplements>
+        <briefdescription>
+<para>This is called on the client when the client stops. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="24" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1af40b09b7f90545c03d27cbb0b32a9bca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.OnRoomStopServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomStopServer</name>
+        <reimplements refid="class_mirror_1_1_network_room_manager_1a4d4d44ac47608fdd42f3c5a6fbdd6c31">OnRoomStopServer</reimplements>
+        <briefdescription>
+<para>This is called on the server when the server is started - including when a host is stopped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="34" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="34" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1ace29e4fa8bd84ccf3164ca332ac1e164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.OnRoomServerPlayersReady</definition>
+        <argsstring>()</argsstring>
+        <name>OnRoomServerPlayersReady</name>
+        <reimplements refid="class_mirror_1_1_network_room_manager_1a8cbdb3c6b66958d3dc5c42f9f87020b2">OnRoomServerPlayersReady</reimplements>
+        <briefdescription>
+<para>This is called on the server when all the players in the room are ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation of this function uses <ref refid="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" kindref="member">ServerChangeScene()</ref> to switch to the game player scene. By implementing this callback you can customize what happens when all the players in the room are ready, such as adding a countdown or a confirmation for a group leader.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="55" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="55" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a111802b6654f169cc85effbece4a3d06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Examples.NetworkRoom.NetworkRoomManagerExt.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <reimplements refid="class_mirror_1_1_network_room_manager_1a65d2182230bc132ee94771a562837594">OnGUI</reimplements>
+        <briefdescription>
+<para>virtual so inheriting classes can roll their own </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="65" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="65" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkRoomManager</label>
+        <link refid="class_mirror_1_1_network_room_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.NetworkRoomManagerExt</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NetworkManager</label>
+        <link refid="class_mirror_1_1_network_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>Mirror.UnityEventException</label>
+        <link refid="class_mirror_1_1_unity_event_exception"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkRoomManager</label>
+        <link refid="class_mirror_1_1_network_room_manager"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>roomPlayerPrefab</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>UnityEvent&lt; Exception &gt;</label>
+      </node>
+      <node id="14">
+        <label>Mirror.UnityEventIntException</label>
+        <link refid="class_mirror_1_1_unity_event_int_exception"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>NetworkBehaviour</label>
+        <link refid="class_mirror_1_1_network_behaviour"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>connectionToClient</edgelabel>
+          <edgelabel>connectionToServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityEngine</label>
+      </node>
+      <node id="7">
+        <label>Mirror.UnityEventNetworkConnection</label>
+        <link refid="class_mirror_1_1_unity_event_network_connection"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>UnityEvent&lt; NetworkConnection &gt;</label>
+      </node>
+      <node id="17">
+        <label>UnityEvent&lt; ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="16">
+        <label>Mirror.ClientDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_client_data_received_event"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Mirror.Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>OnServerConnected</edgelabel>
+          <edgelabel>OnServerDisconnected</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>OnClientError</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>activeTransport</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>OnServerError</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>OnClientDataReceived</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>OnServerDataReceived</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>IDisposable</label>
+      </node>
+      <node id="20">
+        <label>Mirror.NetworkRoomPlayer</label>
+        <link refid="class_mirror_1_1_network_room_player"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Mirror.NetworkConnection</label>
+        <link refid="class_mirror_1_1_network_connection"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Mirror.UnityEventInt</label>
+        <link refid="class_mirror_1_1_unity_event_int"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>UnityEvent&lt; int, Exception &gt;</label>
+      </node>
+      <node id="4">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="6">
+        <label>Mirror.NetworkAuthenticator</label>
+        <link refid="class_mirror_1_1_network_authenticator"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OnClientAuthenticated</edgelabel>
+          <edgelabel>OnServerAuthenticated</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Mirror.ServerDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_server_data_received_event"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>UnityEvent&lt; int &gt;</label>
+      </node>
+      <node id="19">
+        <label>UnityEvent&lt; int, ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Examples.NetworkRoom.NetworkRoomManagerExt</label>
+        <link refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>NetworkManager</label>
+        <link refid="class_mirror_1_1_network_manager"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>loadingSceneAsync</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>authenticator</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Room/Scripts/NetworkRoomManagerExt.cs" bodystart="8" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_room_manager_1a054be9655e1cea08e6b9855790deb438" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>allPlayersReady</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac994cd3aa4b4d7a5265db22225b813f2" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>authenticator</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5feedb04fce427328f8b0b2fdc4aaecf" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>autoCreatePlayer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6c3233bb576b12f916bb1c3644141ddc" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>autoStartServerBuild</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6ae0ef1c6575b8658ea975a7fc60ef72" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1acd332fe95a745c984ab7fc318a5dddda" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>CallOnClientEnterRoom</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ab7ddebde53720b24f17414c7daeed974" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>CheckReadyToBegin</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a4c3003608fcfc49eab71d0fa6f8c5bff" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>ClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a7079cb91ab3aca157345929081f7bd63" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>clientLoadedScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a17e8fba92cdcaa144e0f5eecc46d7bf4" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>ConfigureServerFrameRate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6a3e05a7d69da725d5096c259e8588d9" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>disconnectInactiveConnections</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a20aa81bd18677e958645bfd2af78455e" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>disconnectInactiveTimeout</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9a27bfac207d46188c6940155800c4ba" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>dontDestroyOnLoad</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ab00e3791c555a1b06121a7b2abcabbd4" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>GameplayScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a555e63cea31781669d25d5c361ec0320" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>GetStartPosition</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a58c2713041aa184aac87410126f5822b" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>isHeadless</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a1f569b676d7a9cc3b05e3e1d37039ff1" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>isNetworkActive</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a39f446bff0bd085d3514a0b98cf19693" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>IsSceneActive</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9afe15bd60cdc9e1a1bd266ccbfe1fe9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>LateUpdate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1afff2d0e81fa2f64655a8ca63102980e2" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>loadingSceneAsync</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a647cb7a86c0cd91fea090a047b914793" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>maxConnections</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a167cb83b483535a3084d161a33f16576" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>minPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0dc0e754c367029d89e54af0f6af5c15" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>mode</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5bf39246bf796ae839815eb799431e0a" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>networkAddress</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a901aa08efc421a658176d407147272ab" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>networkSceneName</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae8ea1665e8b5401a65f23e9a168b6a89" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>numPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1afbf241fc215908b6705f9e9792bde2d4" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>offlineScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1abf44b9cdc538229e5a900060673ac281" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnApplicationQuit</name></member>
+      <member refid="class_mirror_1_1_network_manager_1aa259420c00cfdeb49f52303fd48f885e" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a114a2174636b05f12f69de6499fcce89" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a004e492b30cb7f0df4d3b715ae4762d9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a04fa37943cfca9d8c7ab33f84df95ace" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a2017b8846ba9e3603bcbac03dcde953d" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientError</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a8d130eb3ea78f6789ff4bbf8dfcea5cf" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientNotReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1abe8e1e5a63516fc778b71eb2c4974fda" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnClientSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a8358ad89e84ccb31cc96598b4e03d709" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnDestroy</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a111802b6654f169cc85effbece4a3d06" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnGUI</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a94a71162ac38d4c83fc528c27bbd934f" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>onlineScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1adea31789982d2b907f801589cc038992" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientAddPlayerFailed</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a2d38724de6ee346c10c831cb569efea5" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1af85a1bb47be6ef68b1e41f7831fd9bc3" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a38b9e2344efd6bed58c955c1494cfaf7" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientEnter</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a8047156d4c69e2a42f7a133d91c55602" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientExit</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a3b74e07af1612e249e87f97f3e61f9f9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomClientSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a5b384f6ef970ddd5f2b917fcf39236b4" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerAddPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ac606c79e065fe50465af96cdcd5f24db" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4ddb7ae5de6236831fd4edfef044f186" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerCreateGamePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a3ef35eb2bca5e74a9109cbbc765a61e8" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerCreateGamePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae4d11892e9cceaf010dfa89eff5d2595" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerCreateRoomPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1afeb16eb3d1abec0c4406a7da0045f035" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad64c2a7ace0f1dc7dd0d3129369e5212" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerPlayersNotReady</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1ace29e4fa8bd84ccf3164ca332ac1e164" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerPlayersReady</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ac613690151e613cc4320e7540170d45f" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerSceneChanged</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a6299c83225d06117921d726c890117b4" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerSceneLoadedForPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4416752fc4c3eb2f7877dfbba1f96139" prot="public" virt="virtual" ambiguityscope="Mirror::NetworkRoomManager."><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomServerSceneLoadedForPlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad6a55679140c31dd9e804728895471ee" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStartClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae0d123d7a31272d635f87bdc34cb44b0" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStartHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a4b8dffe1ecfb25dffd8f4050511cd504" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStartServer</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1a943597dfd89428eff8a8be8066b3ece8" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStopClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a27078ad09d307f8d4de5e7b5387c5115" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStopHost</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1af40b09b7f90545c03d27cbb0b32a9bca" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnRoomStopServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1aefcd26095dffd6e2578b3f8dfd589394" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerAddPlayer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a328c8da98050688b524106c828bafdb8" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a45f94c08d8367c6e3e049b0ae5bce469" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerConnect</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae3fad7bd0843a316d97d48ed21c4430b" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerDisconnect</name></member>
+      <member refid="class_mirror_1_1_network_manager_1adfa3d8999a4f7072b22c90d2b3eb00f9" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerError</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a7992ca07c4a74b3dd3600a66fdb0ca2f" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerReady</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a98e7f41697393f11f91886ee0a871b49" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerRemovePlayer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a02b0bdcb470188c5f18e2c79d9c8c74f" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnServerSceneChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad6c9e38e891d0f763acd8a83a2a63845" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ad39cc34ac81a645d2b3f17c0a04751dd" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStartHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1ae5b33ca30e66bece6c5cf5958da83e69" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a5fb9dc1ba0842c6dc2582ffeefa55a66" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStopClient</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a07272238268faa6282562ec2b9f14235" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStopHost</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a0d2259beb5014a9a1199464b9bb9b89e" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnStopServer</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a8b2b92daab28eec6294680f58612a807" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>OnValidate</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a205ba6fde1487cb142d5ce5d35c848e0" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>pendingPlayers</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a81bcbc73d62c047faf0e9c73fb6ffd63" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>playerPrefab</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae6167e3960b1a34e09ea97868d1cc60e" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>playerSpawnMethod</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a344e20558fb36d322c2a91af172ee91f" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>ReadyStatusChanged</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a850dd37438790d1417f23795d915014d" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>RecalculateRoomPlayerIndices</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a44753113feef2e4f0bec30dde393f966" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>RegisterStartPosition</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1aab2d2a94c1b317a1a8a87ab89eca1e20" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>roomPlayerPrefab</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a998f09664331ad69ba3095b3e8fe6988" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>RoomScene</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a28a644a2350cb014129a58bd6d320084" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>roomSlots</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac3bbfc101e99f8a857f6dfa584f6156f" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>runInBackground</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a22595929baf7384d2c68ef95d6519458" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>ServerChangeScene</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ae58faa1c85fe26e7be872021692a59ad" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>serverTickRate</name></member>
+      <member refid="class_mirror_1_1_network_manager_1acfc3b37834c4145dcbe6d0c1069ce221" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>showDebugMessages</name></member>
+      <member refid="class_mirror_1_1_network_room_manager_1a7873eab63d6430d30a1e3533778a4674" prot="package" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>showRoomGUI</name></member>
+      <member refid="class_mirror_1_1_examples_1_1_network_room_1_1_network_room_manager_ext_1ab70eb1c538e7f657176805746c51d1d4" prot="private" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>showStartButton</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ab775ddc1bc057d9eeb6135fc1c3038bc" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0fda8121f67f6c13e153c7391bbad2bd" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>singleton</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a0a8603e11759317ca078ef8afabc08e3" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>spawnPrefabs</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a5823aa0ee6c9711f8000ab4988a19a19" prot="public" virt="virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>Start</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a21755bebf114e5fb026b1834de6b4c73" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StartClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ada9f6a63e9816755bb437b29c4bbfa1d" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StartClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a41ab4aece51e9c6b905a5f72b3a7eb3c" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StartHost</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a372fff70fabcc2ede9d4d2fb012be324" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>startOnHeadless</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a1a28ec0b06891f2b0907958df67ee42b" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>startPositionIndex</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a9ea7ee41ec27cfb8a8ec06938b0ef63c" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>startPositions</name></member>
+      <member refid="class_mirror_1_1_network_manager_1acf951becaaa4d612814d92676eb241a8" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StartServer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a6e127fabdafd35b09e9e58698a27b244" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StopClient</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a38cf1737bb408c021c0c2dcb56c837ba" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StopHost</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a3a40b9ca73b07e223bdd57e1e89a3e82" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>StopServer</name></member>
+      <member refid="class_mirror_1_1_network_manager_1a7007bd753d6da4fd8b9ad945b8ab6c86" prot="protected" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>transport</name></member>
+      <member refid="class_mirror_1_1_network_manager_1ac2295dcd5454f7dd2f30c9648abd5abe" prot="public" virt="non-virtual"><scope>Mirror::Examples::NetworkRoom::NetworkRoomManagerExt</scope><name>UnRegisterStartPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

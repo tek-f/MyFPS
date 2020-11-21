@@ -1,0 +1,70 @@
+\hypertarget{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager}{}\doxysection{Ninja.\+Web\+Sockets.\+I\+Ping\+Pong\+Manager Interface Reference}
+\label{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager}\index{Ninja.WebSockets.IPingPongManager@{Ninja.WebSockets.IPingPongManager}}
+
+
+Ping Pong Manager used to facilitate ping pong Web\+Socket messages  
+
+
+Inheritance diagram for Ninja.\+Web\+Sockets.\+I\+Ping\+Pong\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_aa9f55f2c558a9c1e39ba5680f6c1148a}{Send\+Ping}} (Array\+Segment$<$ byte $>$ payload, Cancellation\+Token cancellation)
+\begin{DoxyCompactList}\small\item\em Sends a ping frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}} $>$ \mbox{\hyperlink{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_a5cd27979f29fe4f9d520975d06d5f468}{Pong}}
+\begin{DoxyCompactList}\small\item\em Raised when a Pong frame is received \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ping Pong Manager used to facilitate ping pong Web\+Socket messages 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_aa9f55f2c558a9c1e39ba5680f6c1148a}\label{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_aa9f55f2c558a9c1e39ba5680f6c1148a}} 
+\index{Ninja.WebSockets.IPingPongManager@{Ninja.WebSockets.IPingPongManager}!SendPing@{SendPing}}
+\index{SendPing@{SendPing}!Ninja.WebSockets.IPingPongManager@{Ninja.WebSockets.IPingPongManager}}
+\doxysubsubsection{\texorpdfstring{SendPing()}{SendPing()}}
+{\footnotesize\ttfamily Task Ninja.\+Web\+Sockets.\+I\+Ping\+Pong\+Manager.\+Send\+Ping (\begin{DoxyParamCaption}\item[{Array\+Segment$<$ byte $>$}]{payload,  }\item[{Cancellation\+Token}]{cancellation }\end{DoxyParamCaption})}
+
+
+
+Sends a ping frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & The payload (must be 125 bytes of less)\\
+\hline
+{\em cancellation} & The cancellation token\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a947b5cb1adbf6713078d910384bc3f12}{Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager}}.
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_a5cd27979f29fe4f9d520975d06d5f468}\label{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_a5cd27979f29fe4f9d520975d06d5f468}} 
+\index{Ninja.WebSockets.IPingPongManager@{Ninja.WebSockets.IPingPongManager}!Pong@{Pong}}
+\index{Pong@{Pong}!Ninja.WebSockets.IPingPongManager@{Ninja.WebSockets.IPingPongManager}}
+\doxysubsubsection{\texorpdfstring{Pong}{Pong}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}}$>$ Ninja.\+Web\+Sockets.\+I\+Ping\+Pong\+Manager.\+Pong}
+
+
+
+Raised when a Pong frame is received 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/\+Websocket/\+Ninja.\+Web\+Sockets/I\+Ping\+Pong\+Manager.\+cs\end{DoxyCompactItemize}

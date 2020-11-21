@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PausePanel
   - Teleporter
+  - GameManager
   layers:
   - Default
   - TransparentFX

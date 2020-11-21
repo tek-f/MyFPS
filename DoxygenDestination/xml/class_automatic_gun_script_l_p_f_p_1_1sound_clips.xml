@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_automatic_gun_script_l_p_f_p_1_1sound_clips" kind="class" language="C#" prot="public">
+    <compoundname>AutomaticGunScriptLPFP::soundClips</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aa5c3b1907d0ff3c51b30394542d48930" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.shootSound</definition>
+        <argsstring></argsstring>
+        <name>shootSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="150" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1a68944b81146259428fcbe0de9bf4ad2c" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.takeOutSound</definition>
+        <argsstring></argsstring>
+        <name>takeOutSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="151" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aca302775730a597aab6f713316c9bfe5" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.holsterSound</definition>
+        <argsstring></argsstring>
+        <name>holsterSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="152" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aad31cd7a21034be016955025e625eede" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.reloadSoundOutOfAmmo</definition>
+        <argsstring></argsstring>
+        <name>reloadSoundOutOfAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="153" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1ab10f1dd26a1b409b6f7b0860c95896df" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.reloadSoundAmmoLeft</definition>
+        <argsstring></argsstring>
+        <name>reloadSoundAmmoLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="154" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1af94b067048c128281aad1aafa369867f" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip AutomaticGunScriptLPFP.soundClips.aimSound</definition>
+        <argsstring></argsstring>
+        <name>aimSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="155" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="148" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="149" bodyend="156"/>
+    <listofallmembers>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1af94b067048c128281aad1aafa369867f" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>aimSound</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aca302775730a597aab6f713316c9bfe5" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>holsterSound</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1ab10f1dd26a1b409b6f7b0860c95896df" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>reloadSoundAmmoLeft</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aad31cd7a21034be016955025e625eede" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>reloadSoundOutOfAmmo</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1aa5c3b1907d0ff3c51b30394542d48930" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>shootSound</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips_1a68944b81146259428fcbe0de9bf4ad2c" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP::soundClips</scope><name>takeOutSound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

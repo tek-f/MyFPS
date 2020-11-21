@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_mirror_1_1_i_message_base" kind="interface" language="C#" prot="public">
+    <compoundname>Mirror::IMessageBase</compoundname>
+    <derivedcompoundref refid="struct_mirror_1_1_add_player_message" prot="public" virt="non-virtual">Mirror.AddPlayerMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_command_message" prot="public" virt="non-virtual">Mirror.CommandMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_connect_message" prot="public" virt="non-virtual">Mirror.ConnectMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_disconnect_message" prot="public" virt="non-virtual">Mirror.DisconnectMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_error_message" prot="public" virt="non-virtual">Mirror.ErrorMessage</derivedcompoundref>
+    <derivedcompoundref refid="class_mirror_1_1_message_base" prot="public" virt="non-virtual">Mirror.MessageBase</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_network_ping_message" prot="public" virt="non-virtual">Mirror.NetworkPingMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_network_pong_message" prot="public" virt="non-virtual">Mirror.NetworkPongMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_not_ready_message" prot="public" virt="non-virtual">Mirror.NotReadyMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_object_destroy_message" prot="public" virt="non-virtual">Mirror.ObjectDestroyMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_object_hide_message" prot="public" virt="non-virtual">Mirror.ObjectHideMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_object_spawn_finished_message" prot="public" virt="non-virtual">Mirror.ObjectSpawnFinishedMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_object_spawn_started_message" prot="public" virt="non-virtual">Mirror.ObjectSpawnStartedMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_ready_message" prot="public" virt="non-virtual">Mirror.ReadyMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_remove_player_message" prot="public" virt="non-virtual">Mirror.RemovePlayerMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_rpc_message" prot="public" virt="non-virtual">Mirror.RpcMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_scene_message" prot="public" virt="non-virtual">Mirror.SceneMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_spawn_message" prot="public" virt="non-virtual">Mirror.SpawnMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_sync_event_message" prot="public" virt="non-virtual">Mirror.SyncEventMessage</derivedcompoundref>
+    <derivedcompoundref refid="struct_mirror_1_1_update_vars_message" prot="public" virt="non-virtual">Mirror.UpdateVarsMessage</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.IMessageBase.Deserialize</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>Deserialize</name>
+        <reimplementedby refid="class_mirror_1_1_message_base_1acb075a573b4fee69f864a08e80c3cd60">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_error_message_1a93d7c9b5547a8339124b01ba611f7686">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_ready_message_1af4f4561567ff7b3398b7304ed93c42d7">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_not_ready_message_1a0676cb208f3d0f30cb6991b5b8bbf19f">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_add_player_message_1a351564deb68a77dc660fd3691a3443b4">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_remove_player_message_1a2234019bb893ff0b19bfd079723c484b">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_disconnect_message_1ae05db5d31af10859738748e31c09fba2">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_connect_message_1a96a05d9258ea309b50fdb7b3432de743">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_scene_message_1ac750ee683042f6c3d2db358ca4554e75">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_command_message_1ab1fd8073fab659a97cb012f50879b785">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_rpc_message_1a6effb91af6ac6bb1fc019016efe526e7">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_sync_event_message_1ad725432da5ffabfa509f9183baaa3158">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_spawn_message_1a4baee393f664675607fc9564ea4444a8">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_spawn_started_message_1a5f7e3ea6a39798f6f06c85b03942f2ba">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_spawn_finished_message_1ae8a63869c3cf73cbe7f06c4dced6015a">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_destroy_message_1a5c437dd285d704cb1de771bbe88caf98">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_hide_message_1a2ed8a46161827690f81f4dd64ae3dc4f">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_update_vars_message_1a9f01b5965cf4679b33379b498d530eb0">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_network_ping_message_1a2bfe35f5a90b20fd9e492d4586f174ed">Deserialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_network_pong_message_1a7a2917637bb270b5db1773af731906d0">Deserialize</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="8" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.IMessageBase.Serialize</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>Serialize</name>
+        <reimplementedby refid="class_mirror_1_1_message_base_1aec929d08cb81a15f6bdaaf8a0cc4449a">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_error_message_1a6f7156c2326bff3e8538017a23e1147a">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_ready_message_1af7754edb7ecccd13d8c3dfa63edb2a68">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_not_ready_message_1a06ccd1b433a29135590ecfc6ba1e3a43">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_add_player_message_1a86449fe0de6bebae762f161a21ff8726">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_remove_player_message_1ae1c9147fcc5272d3ee0d91b8111be108">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_disconnect_message_1af0c23e3b7ee1e189e169796fa0b87b5e">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_connect_message_1ad440266dbf9f205bf56c629c2dc9013e">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_scene_message_1a7c0d9c81814cbc0d5be221acc8501055">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_command_message_1af9df4804008545c47f5978a4bf238f13">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_rpc_message_1ae6b29e246df9f3eaa6afcdd3dac74cc3">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_sync_event_message_1a1aa82659645f0ec0cd25717fe7409e01">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_spawn_message_1a3ab4209c39354c87fe2276db8d25f998">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_spawn_started_message_1a4d924dee94a070b4009cc3a0bc7fad96">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_spawn_finished_message_1aa7089953501743d4ae9277778a8a241a">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_destroy_message_1a471160fb366131c20f404cb4e2ccb9cd">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_object_hide_message_1a27d6e503f3ae3b888878aa30e5f90025">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_update_vars_message_1a15031d9b7e2f0d8f6c8bb33b9a8a9ff9">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_network_ping_message_1ad8e4fd532a1193ff2b821c637fc6cab7">Serialize</reimplementedby>
+        <reimplementedby refid="struct_mirror_1_1_network_pong_message_1ae0c2f1acb3427a1473bd80978bae7354">Serialize</reimplementedby>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="10" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Mirror.ConnectMessage</label>
+        <link refid="struct_mirror_1_1_connect_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Mirror.Authenticators.BasicAuthenticator.AuthRequestMessage</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_request_message"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Mirror.NotReadyMessage</label>
+        <link refid="struct_mirror_1_1_not_ready_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mirror.DisconnectMessage</label>
+        <link refid="struct_mirror_1_1_disconnect_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mirror.CommandMessage</label>
+        <link refid="struct_mirror_1_1_command_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Mirror.ObjectSpawnStartedMessage</label>
+        <link refid="struct_mirror_1_1_object_spawn_started_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Mirror.Discovery.ServerRequest</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_request"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Mirror.UpdateVarsMessage</label>
+        <link refid="struct_mirror_1_1_update_vars_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Mirror.MessageBase</label>
+        <link refid="class_mirror_1_1_message_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Mirror.ObjectHideMessage</label>
+        <link refid="struct_mirror_1_1_object_hide_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Mirror.NetworkPingMessage</label>
+        <link refid="struct_mirror_1_1_network_ping_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Mirror.ObjectSpawnFinishedMessage</label>
+        <link refid="struct_mirror_1_1_object_spawn_finished_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Mirror.RpcMessage</label>
+        <link refid="struct_mirror_1_1_rpc_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Mirror.ObjectDestroyMessage</label>
+        <link refid="struct_mirror_1_1_object_destroy_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Mirror.Authenticators.BasicAuthenticator.AuthResponseMessage</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_response_message"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Mirror.Examples.Chat.ChatNetworkManager.CreatePlayerMessage</label>
+        <link refid="class_mirror_1_1_examples_1_1_chat_1_1_chat_network_manager_1_1_create_player_message"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Mirror.SyncEventMessage</label>
+        <link refid="struct_mirror_1_1_sync_event_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Mirror.Discovery.ServerResponse</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_response"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Mirror.ReadyMessage</label>
+        <link refid="struct_mirror_1_1_ready_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Mirror.NetworkPongMessage</label>
+        <link refid="struct_mirror_1_1_network_pong_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Mirror.SceneMessage</label>
+        <link refid="struct_mirror_1_1_scene_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Mirror.SpawnMessage</label>
+        <link refid="struct_mirror_1_1_spawn_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mirror.AddPlayerMessage</label>
+        <link refid="struct_mirror_1_1_add_player_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Mirror.ErrorMessage</label>
+        <link refid="struct_mirror_1_1_error_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="21">
+        <label>Mirror.RemovePlayerMessage</label>
+        <link refid="struct_mirror_1_1_remove_player_message"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="6" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd" prot="public" virt="non-virtual"><scope>Mirror::IMessageBase</scope><name>Deserialize</name></member>
+      <member refid="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353" prot="public" virt="non-virtual"><scope>Mirror::IMessageBase</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

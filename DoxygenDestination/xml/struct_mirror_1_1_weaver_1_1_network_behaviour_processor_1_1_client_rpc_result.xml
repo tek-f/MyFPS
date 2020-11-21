@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::NetworkBehaviourProcessor::ClientRpcResult</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result_1a79d995e9842bf4a4886c8174c008397a" prot="public" static="no" mutable="no">
+        <type>MethodDefinition</type>
+        <definition>MethodDefinition Mirror.Weaver.NetworkBehaviourProcessor.ClientRpcResult.method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="44" column="37" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result_1ae436ba4da6cf96a0ccc8f65ad0cf5289" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Weaver.NetworkBehaviourProcessor.ClientRpcResult.excludeOwner</definition>
+        <argsstring></argsstring>
+        <name>excludeOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="45" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" line="42" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/NetworkBehaviourProcessor.cs" bodystart="43" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result_1ae436ba4da6cf96a0ccc8f65ad0cf5289" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor::ClientRpcResult</scope><name>excludeOwner</name></member>
+      <member refid="struct_mirror_1_1_weaver_1_1_network_behaviour_processor_1_1_client_rpc_result_1a79d995e9842bf4a4886c8174c008397a" prot="public" virt="non-virtual"><scope>Mirror::Weaver::NetworkBehaviourProcessor::ClientRpcResult</scope><name>method</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

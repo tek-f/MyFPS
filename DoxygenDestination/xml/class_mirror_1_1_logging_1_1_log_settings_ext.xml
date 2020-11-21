@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_logging_1_1_log_settings_ext" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Logging::LogSettingsExt</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_logging_1_1_log_settings_ext_1a6ceb1dd6ca2eb7e8122da45c0890de0c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Logging.LogSettingsExt.SaveFromDictionary</definition>
+        <argsstring>(this LogSettings settings, SortedDictionary&lt; string, ILogger &gt; dictionary)</argsstring>
+        <name>SaveFromDictionary</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_logging_1_1_log_settings" kindref="compound">LogSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>SortedDictionary&lt; string, ILogger &gt;</type>
+          <declname>dictionary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" line="21" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" bodystart="21" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_logging_1_1_log_settings_ext_1a84fc043aa35b3dfc05d32ce2f7373d6d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.Logging.LogSettingsExt.LoadIntoDictionary</definition>
+        <argsstring>(this LogSettings settings, SortedDictionary&lt; string, ILogger &gt; dictionary)</argsstring>
+        <name>LoadIntoDictionary</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_logging_1_1_log_settings" kindref="compound">LogSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>SortedDictionary&lt; string, ILogger &gt;</type>
+          <declname>dictionary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" line="41" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" bodystart="41" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" line="19" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/LogSettings.cs" bodystart="20" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_logging_1_1_log_settings_ext_1a84fc043aa35b3dfc05d32ce2f7373d6d" prot="public" virt="non-virtual"><scope>Mirror::Logging::LogSettingsExt</scope><name>LoadIntoDictionary</name></member>
+      <member refid="class_mirror_1_1_logging_1_1_log_settings_ext_1a6ceb1dd6ca2eb7e8122da45c0890de0c" prot="public" virt="non-virtual"><scope>Mirror::Logging::LogSettingsExt</scope><name>SaveFromDictionary</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

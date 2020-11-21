@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_log_filter" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::LogFilter</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_log_filter_1af6a605c6494c68fb9348ef43e271d8b3" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.LogFilter.Debug</definition>
+        <argsstring></argsstring>
+        <name>Debug</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LogFilter.cs" line="5" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LogFilter.cs" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LogFilter.cs" line="3" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/LogFilter.cs" bodystart="4" bodyend="6"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_log_filter_1af6a605c6494c68fb9348ef43e271d8b3" prot="public" virt="non-virtual"><scope>Mirror::LogFilter</scope><name>Debug</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

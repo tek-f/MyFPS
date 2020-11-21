@@ -1,0 +1,136 @@
+\hypertarget{struct_mirror_1_1_spawn_message}{}\doxysection{Mirror.\+Spawn\+Message Struct Reference}
+\label{struct_mirror_1_1_spawn_message}\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+Inheritance diagram for Mirror.\+Spawn\+Message\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_mirror_1_1_spawn_message}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a4baee393f664675607fc9564ea4444a8}\label{struct_mirror_1_1_spawn_message_a4baee393f664675607fc9564ea4444a8}} 
+void {\bfseries Deserialize} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\item 
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a3ab4209c39354c87fe2276db8d25f998}\label{struct_mirror_1_1_spawn_message_a3ab4209c39354c87fe2276db8d25f998}} 
+void {\bfseries Serialize} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a02271aa6a2bca33f58fbd3441ff5c646}{net\+Id}}
+\begin{DoxyCompactList}\small\item\em net\+Id of new or existing object \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a4501c50ad2ee8e12410d5b510b8c8151}{is\+Local\+Player}}
+\begin{DoxyCompactList}\small\item\em Is the spawning object the local player. Sets Client\+Scene.\+local\+Player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a417d397aa2fca9fc55e0c146e836fb40}{is\+Owner}}
+\begin{DoxyCompactList}\small\item\em Sets has\+Authority on the spawned object \end{DoxyCompactList}\item 
+ulong \mbox{\hyperlink{struct_mirror_1_1_spawn_message_aaa39eaf3c51cc318283ae8b8cfd413da}{scene\+Id}}
+\begin{DoxyCompactList}\small\item\em The id of the scene object to spawn \end{DoxyCompactList}\item 
+Guid \mbox{\hyperlink{struct_mirror_1_1_spawn_message_ab46d40af897d70986faff43952dd533e}{asset\+Id}}
+\begin{DoxyCompactList}\small\item\em The id of the prefab to spawn \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a932d48be884310330c4c8039f791e0b2}{position}}
+\begin{DoxyCompactList}\small\item\em Local position \end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a340f8624a0e1ea77ca5d3e02071374ae}{rotation}}
+\begin{DoxyCompactList}\small\item\em Local rotation \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{struct_mirror_1_1_spawn_message_ac2f40db11d5d123a9c7bacc807c6457b}{scale}}
+\begin{DoxyCompactList}\small\item\em Local scale \end{DoxyCompactList}\item 
+Array\+Segment$<$ byte $>$ \mbox{\hyperlink{struct_mirror_1_1_spawn_message_a112426af5ddf335c937990c502ecbcbb}{payload}}
+\begin{DoxyCompactList}\small\item\em The serialized component data $<$remark$>$Array\+Segment to avoid unnecessary allocations$<$/remark$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_ab46d40af897d70986faff43952dd533e}\label{struct_mirror_1_1_spawn_message_ab46d40af897d70986faff43952dd533e}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!assetId@{assetId}}
+\index{assetId@{assetId}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{assetId}{assetId}}
+{\footnotesize\ttfamily Guid Mirror.\+Spawn\+Message.\+asset\+Id}
+
+
+
+The id of the prefab to spawn 
+
+If scene\+Id != 0 then it is used instead of asset\+Id\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a4501c50ad2ee8e12410d5b510b8c8151}\label{struct_mirror_1_1_spawn_message_a4501c50ad2ee8e12410d5b510b8c8151}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!isLocalPlayer@{isLocalPlayer}}
+\index{isLocalPlayer@{isLocalPlayer}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{isLocalPlayer}{isLocalPlayer}}
+{\footnotesize\ttfamily bool Mirror.\+Spawn\+Message.\+is\+Local\+Player}
+
+
+
+Is the spawning object the local player. Sets Client\+Scene.\+local\+Player 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a417d397aa2fca9fc55e0c146e836fb40}\label{struct_mirror_1_1_spawn_message_a417d397aa2fca9fc55e0c146e836fb40}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!isOwner@{isOwner}}
+\index{isOwner@{isOwner}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{isOwner}{isOwner}}
+{\footnotesize\ttfamily bool Mirror.\+Spawn\+Message.\+is\+Owner}
+
+
+
+Sets has\+Authority on the spawned object 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a02271aa6a2bca33f58fbd3441ff5c646}\label{struct_mirror_1_1_spawn_message_a02271aa6a2bca33f58fbd3441ff5c646}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!netId@{netId}}
+\index{netId@{netId}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{netId}{netId}}
+{\footnotesize\ttfamily uint Mirror.\+Spawn\+Message.\+net\+Id}
+
+
+
+net\+Id of new or existing object 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a112426af5ddf335c937990c502ecbcbb}\label{struct_mirror_1_1_spawn_message_a112426af5ddf335c937990c502ecbcbb}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!payload@{payload}}
+\index{payload@{payload}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily Array\+Segment$<$byte$>$ Mirror.\+Spawn\+Message.\+payload}
+
+
+
+The serialized component data $<$remark$>$Array\+Segment to avoid unnecessary allocations$<$/remark$>$ 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a932d48be884310330c4c8039f791e0b2}\label{struct_mirror_1_1_spawn_message_a932d48be884310330c4c8039f791e0b2}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!position@{position}}
+\index{position@{position}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Vector3 Mirror.\+Spawn\+Message.\+position}
+
+
+
+Local position 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_a340f8624a0e1ea77ca5d3e02071374ae}\label{struct_mirror_1_1_spawn_message_a340f8624a0e1ea77ca5d3e02071374ae}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!rotation@{rotation}}
+\index{rotation@{rotation}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily Quaternion Mirror.\+Spawn\+Message.\+rotation}
+
+
+
+Local rotation 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_ac2f40db11d5d123a9c7bacc807c6457b}\label{struct_mirror_1_1_spawn_message_ac2f40db11d5d123a9c7bacc807c6457b}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!scale@{scale}}
+\index{scale@{scale}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily Vector3 Mirror.\+Spawn\+Message.\+scale}
+
+
+
+Local scale 
+
+\mbox{\Hypertarget{struct_mirror_1_1_spawn_message_aaa39eaf3c51cc318283ae8b8cfd413da}\label{struct_mirror_1_1_spawn_message_aaa39eaf3c51cc318283ae8b8cfd413da}} 
+\index{Mirror.SpawnMessage@{Mirror.SpawnMessage}!sceneId@{sceneId}}
+\index{sceneId@{sceneId}!Mirror.SpawnMessage@{Mirror.SpawnMessage}}
+\doxysubsubsection{\texorpdfstring{sceneId}{sceneId}}
+{\footnotesize\ttfamily ulong Mirror.\+Spawn\+Message.\+scene\+Id}
+
+
+
+The id of the scene object to spawn 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Messages.\+cs\end{DoxyCompactItemize}

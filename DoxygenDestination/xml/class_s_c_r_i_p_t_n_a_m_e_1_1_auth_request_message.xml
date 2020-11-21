@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_s_c_r_i_p_t_n_a_m_e_1_1_auth_request_message" kind="class" language="C++" prot="private">
+    <compoundname>SCRIPTNAME::AuthRequestMessage</compoundname>
+    <basecompoundref prot="private" virt="non-virtual">MessageBase</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MessageBase</label>
+      </node>
+      <node id="1">
+        <label>SCRIPTNAME::AuthRequestMessage</label>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MessageBase</label>
+      </node>
+      <node id="1">
+        <label>SCRIPTNAME::AuthRequestMessage</label>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" line="15" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" bodystart="15" bodyend="15"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

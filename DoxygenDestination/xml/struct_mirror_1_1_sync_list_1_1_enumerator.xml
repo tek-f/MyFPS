@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_sync_list_1_1_enumerator" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::SyncList::Enumerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IEnumerator&lt; T &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_list_1_1_enumerator_1ac31a1e57aa5d7e28fd97670f271a94fa" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="class_mirror_1_1_sync_list" kindref="compound">SyncList</ref>&lt; T &gt;</type>
+        <definition>readonly SyncList&lt;T&gt; Mirror.SyncList&lt; T &gt;.Enumerator.list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="406" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a44dac69467ff8cae72b9a7adf12485b3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.SyncList&lt; T &gt;.Enumerator.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="407" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a997d9c1b4f2e926deb49dde80a42bac9" prot="public" static="no" mutable="no">
+        <type>object IEnumerator.</type>
+        <definition>object IEnumerator. Mirror.SyncList&lt; T &gt;.Enumerator.Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <initializer>=&gt; Current</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="428" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a155b8f384232247aae01931f1e266c8d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>T</type>
+        <definition>T Mirror.SyncList&lt; T &gt;.Enumerator.Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="408" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="408" bodyend="408"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a35b962dda2e463fe96408a4a88039fe7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.SyncList&lt; T &gt;.Enumerator.Enumerator</definition>
+        <argsstring>(SyncList&lt; T &gt; list)</argsstring>
+        <name>Enumerator</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_sync_list" kindref="compound">SyncList</ref>&lt; T &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="410" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="410" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a4f20d91f6928fa34f263ce94099b69a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.SyncList&lt; T &gt;.Enumerator.MoveNext</definition>
+        <argsstring>()</argsstring>
+        <name>MoveNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="417" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="417" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_sync_list_1_1_enumerator_1abbf2da7a467938e103b8c4f1128b16ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncList&lt; T &gt;.Enumerator.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="427" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_sync_list_1_1_enumerator_1a991be95f3129a99de4b407d6796250d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncList&lt; T &gt;.Enumerator.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="429" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="429" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.SyncList&lt; T &gt;.Enumerator</label>
+        <link refid="struct_mirror_1_1_sync_list_1_1_enumerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEnumerator&lt; T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.SyncList&lt; T &gt;.Enumerator</label>
+        <link refid="struct_mirror_1_1_sync_list_1_1_enumerator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IEnumerator&lt; T &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" line="404" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/SyncList.cs" bodystart="405" bodyend="430"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a155b8f384232247aae01931f1e266c8d" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>Current</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a997d9c1b4f2e926deb49dde80a42bac9" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>Current</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a991be95f3129a99de4b407d6796250d0" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>Dispose</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a35b962dda2e463fe96408a4a88039fe7" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>Enumerator</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a44dac69467ff8cae72b9a7adf12485b3" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>index</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1ac31a1e57aa5d7e28fd97670f271a94fa" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>list</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1a4f20d91f6928fa34f263ce94099b69a3" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>MoveNext</name></member>
+      <member refid="struct_mirror_1_1_sync_list_1_1_enumerator_1abbf2da7a467938e103b8c4f1128b16ba" prot="public" virt="non-virtual"><scope>Mirror::SyncList::Enumerator</scope><name>Reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

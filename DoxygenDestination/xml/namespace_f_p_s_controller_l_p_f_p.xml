@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_f_p_s_controller_l_p_f_p" kind="namespace" language="C#">
+    <compoundname>FPSControllerLPFP</compoundname>
+    <innerclass refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p" prot="public">FPSControllerLPFP::FpsControllerLPFP</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

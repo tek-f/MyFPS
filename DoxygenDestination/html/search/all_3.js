@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['damage_7',['damage',['../class_gun.html#a9633f021e96cc95b08cf914085b82a6f',1,'Gun']]],
-  ['death_8',['Death',['../class_ragdoll_controller.html#a03855fc9d2311b60096eda1663fc8050',1,'RagdollController.Death()'],['../class_player.html#a8db15703ededbdc481bbd68bd690f0ec',1,'Player.Death()']]],
-  ['dropoffset_9',['dropOffset',['../class_player.html#a91b0145aecbe3407b936549071eefe3d',1,'Player']]],
-  ['dropweapon_10',['DropWeapon',['../class_player.html#a0bf3b6faabf83cb2946b4f9b31fd033a',1,'Player.DropWeapon()'],['../class_weapon.html#a107aab534c184ba11cec984d3dc8e199',1,'Weapon.DropWeapon()']]]
+  ['damage_85',['damage',['../class_my_f_p_s_1_1_player_1_1_gun.html#a6639adef64dcb38740d8470a804cc697',1,'MyFPS::Player::Gun']]],
+  ['datapoint_86',['DataPoint',['../struct_mirror_1_1_experimental_1_1_network_transform_base_1_1_data_point.html',1,'Mirror.Experimental.NetworkTransformBase.DataPoint'],['../class_mirror_1_1_network_transform_base_1_1_data_point.html',1,'Mirror.NetworkTransformBase.DataPoint']]],
+  ['death_87',['Death',['../class_ragdoll_controller.html#a03855fc9d2311b60096eda1663fc8050',1,'RagdollController.Death()'],['../class_my_f_p_s_1_1_player_1_1_player_handler.html#a02e4da9476db250b79667af38531f7ec',1,'MyFPS.Player.PlayerHandler.Death()']]],
+  ['deathpanel_88',['deathPanel',['../class_my_f_p_s_1_1_player_1_1_player_death.html#aa8653eb0f156134560eeda62489eabbc',1,'MyFPS::Player::PlayerDeath']]],
+  ['debrisscript_89',['DebrisScript',['../class_debris_script.html',1,'']]],
+  ['delete_90',['Delete',['../class_mirror_1_1_cloud_1_1_request_creator.html#a284b57522c2d7cbccb9aee995889f172',1,'Mirror::Cloud::RequestCreator']]],
+  ['disconnect_91',['Disconnect',['../class_mirror_1_1_u_local_connection_to_client.html#af3413c485f73747e687bdbf0f2f286d3',1,'Mirror.ULocalConnectionToClient.Disconnect()'],['../class_mirror_1_1_network_connection.html#a2d3402195c717ebf2c45874b4f3c17bf',1,'Mirror.NetworkConnection.Disconnect()'],['../class_mirror_1_1_network_connection_to_client.html#a578cd702f7b9a289d9f0b04c2e4978e2',1,'Mirror.NetworkConnectionToClient.Disconnect()'],['../class_mirror_1_1_network_connection_to_server.html#afa1f2d6f6515a8c345df425b8c04ed8d',1,'Mirror.NetworkConnectionToServer.Disconnect()']]],
+  ['disconnectinactiveconnections_92',['disconnectInactiveConnections',['../class_mirror_1_1_network_manager.html#a6a3e05a7d69da725d5096c259e8588d9',1,'Mirror::NetworkManager']]],
+  ['disconnectinactivetimeout_93',['disconnectInactiveTimeout',['../class_mirror_1_1_network_manager.html#a20aa81bd18677e958645bfd2af78455e',1,'Mirror::NetworkManager']]],
+  ['disconnectmessage_94',['DisconnectMessage',['../struct_mirror_1_1_disconnect_message.html',1,'Mirror']]],
+  ['discoveryrequest_95',['DiscoveryRequest',['../class_discovery_request.html',1,'']]],
+  ['displayname_96',['displayName',['../struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_json.html#a5f44b96e913278be51e850690a980b83',1,'Mirror.Cloud.ListServerService.ServerJson.displayName()'],['../struct_mirror_1_1_cloud_1_1_list_server_service_1_1_partial_server_json.html#a64a62a03abbce8bd43123366bd5740be',1,'Mirror.Cloud.ListServerService.PartialServerJson.displayName()']]],
+  ['dispose_97',['Dispose',['../class_mirror_1_1_network_connection.html#a3d4805ab08b2af8d6a39b6a873d8256c',1,'Mirror.NetworkConnection.Dispose()'],['../class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation.html#a11a98ee22a6273671c63fd82963edab2',1,'Ninja.WebSockets.Internal.WebSocketImplementation.Dispose()']]],
+  ['dontdestroyonload_98',['dontDestroyOnLoad',['../class_mirror_1_1_network_manager.html#a9a27bfac207d46188c6940155800c4ba',1,'Mirror::NetworkManager']]],
+  ['drawdefaultsynclists_99',['DrawDefaultSyncLists',['../class_mirror_1_1_network_behaviour_inspector.html#a4f1c13029d8656c63e9a32cb7cbbc73c',1,'Mirror::NetworkBehaviourInspector']]],
+  ['drawdefaultsyncsettings_100',['DrawDefaultSyncSettings',['../class_mirror_1_1_network_behaviour_inspector.html#a0077cb088526f88cd883e7663a159317',1,'Mirror::NetworkBehaviourInspector']]],
+  ['dropoffset_101',['dropOffset',['../class_my_f_p_s_1_1_player_1_1_player_handler.html#a140aee4b498e515f51c1430209577a92',1,'MyFPS::Player::PlayerHandler']]],
+  ['dropweapon_102',['DropWeapon',['../class_my_f_p_s_1_1_player_1_1_player_handler.html#a7303504cf5ba21eacbdd1bd053b1ef84',1,'MyFPS.Player.PlayerHandler.DropWeapon()'],['../class_my_f_p_s_1_1_player_1_1_weapon.html#aa992ce6fc89e78985b33efe823ae4d38',1,'MyFPS.Player.Weapon.DropWeapon()']]],
+  ['dummyplayer_103',['DummyPlayer',['../class_my_f_p_s_1_1_test_1_1_dummy_player.html',1,'MyFPS::Test']]]
 ];

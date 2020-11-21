@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_ninja_1_1_web_sockets_1_1_exceptions" kind="namespace" language="C#">
+    <compoundname>Ninja::WebSockets::Exceptions</compoundname>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_entity_too_large_exception" prot="public">Ninja::WebSockets::Exceptions::EntityTooLargeException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_invalid_http_response_code_exception" prot="public">Ninja::WebSockets::Exceptions::InvalidHttpResponseCodeException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_sec_web_socket_key_missing_exception" prot="public">Ninja::WebSockets::Exceptions::SecWebSocketKeyMissingException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_server_listener_socket_exception" prot="public">Ninja::WebSockets::Exceptions::ServerListenerSocketException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_buffer_overflow_exception" prot="public">Ninja::WebSockets::Exceptions::WebSocketBufferOverflowException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_handshake_failed_exception" prot="public">Ninja::WebSockets::Exceptions::WebSocketHandshakeFailedException</innerclass>
+    <innerclass refid="class_ninja_1_1_web_sockets_1_1_exceptions_1_1_web_socket_version_not_supported_exception" prot="public">Ninja::WebSockets::Exceptions::WebSocketVersionNotSupportedException</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/Exceptions/EntityTooLargeException.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

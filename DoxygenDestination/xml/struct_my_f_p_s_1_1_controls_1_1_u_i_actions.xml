@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions" kind="struct" language="C#" prot="public">
+    <compoundname>MyFPS::Controls::UIActions</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ac3dec98dd0b07a86c9dbafb968aa8160" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls MyFPS.Controls.UIActions.m_Wrapper</definition>
+        <argsstring></argsstring>
+        <name>m_Wrapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1124" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1aec4c90723251b9b8bc9a04ad7b8097b2" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.Navigate</definition>
+        <argsstring></argsstring>
+        <name>Navigate</name>
+        <initializer>=&gt; m_Wrapper.m_UI_Navigate</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1126" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a43c4fdfcd64a8d82c163be779deb747e" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.Submit</definition>
+        <argsstring></argsstring>
+        <name>Submit</name>
+        <initializer>=&gt; m_Wrapper.m_UI_Submit</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1127" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1aa116d1134c871f944348933ee40d08c3" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.Cancel</definition>
+        <argsstring></argsstring>
+        <name>Cancel</name>
+        <initializer>=&gt; m_Wrapper.m_UI_Cancel</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1128" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a9e27552f88b7ddb985c9a40796144c1e" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.Point</definition>
+        <argsstring></argsstring>
+        <name>Point</name>
+        <initializer>=&gt; m_Wrapper.m_UI_Point</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1129" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ad92acb3b528b7ccdfacb77b7b528cbc7" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.Click</definition>
+        <argsstring></argsstring>
+        <name>Click</name>
+        <initializer>=&gt; m_Wrapper.m_UI_Click</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1130" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a9403e60154c8fff39b5572bb3a6cc94b" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.ScrollWheel</definition>
+        <argsstring></argsstring>
+        <name>ScrollWheel</name>
+        <initializer>=&gt; m_Wrapper.m_UI_ScrollWheel</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1131" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a09b99b6a251debb2cc523f715e1789db" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.MiddleClick</definition>
+        <argsstring></argsstring>
+        <name>MiddleClick</name>
+        <initializer>=&gt; m_Wrapper.m_UI_MiddleClick</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1132" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a76b77fdebe4313d068e9b63793c10c41" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.RightClick</definition>
+        <argsstring></argsstring>
+        <name>RightClick</name>
+        <initializer>=&gt; m_Wrapper.m_UI_RightClick</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1133" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ae13cb706f20a474a9c30dc5162155db1" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.TrackedDevicePosition</definition>
+        <argsstring></argsstring>
+        <name>TrackedDevicePosition</name>
+        <initializer>=&gt; m_Wrapper.m_UI_TrackedDevicePosition</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1134" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1af947aee794dd5bf452d021771c9787a8" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.UIActions.TrackedDeviceOrientation</definition>
+        <argsstring></argsstring>
+        <name>TrackedDeviceOrientation</name>
+        <initializer>=&gt; m_Wrapper.m_UI_TrackedDeviceOrientation</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1135" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a423dc44f4c6f3447ffd6d4c1a6e4e2c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyFPS.Controls.UIActions.enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <initializer>=&gt; Get().enabled</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1139" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a02b6c24e4a8f869a2df3db2a2a614844" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyFPS.Controls.UIActions.UIActions</definition>
+        <argsstring>(@Controls wrapper)</argsstring>
+        <name>UIActions</name>
+        <param>
+          <type>@<ref refid="class_my_f_p_s_1_1_controls" kindref="compound">Controls</ref></type>
+          <declname>wrapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1125" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1125" bodyend="1125"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a03e3c5b6de4eb89e07a39e51a6c086aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputActionMap</type>
+        <definition>InputActionMap MyFPS.Controls.UIActions.Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1136" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1136" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a65e4e4a3a2e4387596b348e0ba212b1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.UIActions.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1137" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1137" bodyend="1137"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a1de8c5d1c5f708dff9d1e4efcac20b9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.UIActions.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1138" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1138" bodyend="1138"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a4bfc8d6d750007e71afb66599feb6469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.UIActions.SetCallbacks</definition>
+        <argsstring>(IUIActions instance)</argsstring>
+        <name>SetCallbacks</name>
+        <param>
+          <type><ref refid="interface_my_f_p_s_1_1_controls_1_1_i_u_i_actions" kindref="compound">IUIActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1141" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1141" bodyend="1210"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a104117083b7be49ec1e812f29b547e84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit MyFPS.Controls.UIActions.operator InputActionMap</definition>
+        <argsstring>(UIActions set)</argsstring>
+        <name>operator InputActionMap</name>
+        <param>
+          <type><ref refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions" kindref="compound">UIActions</ref></type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1140" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1140" bodyend="1140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1122" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1123" bodyend="1211"/>
+    <listofallmembers>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1aa116d1134c871f944348933ee40d08c3" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Cancel</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ad92acb3b528b7ccdfacb77b7b528cbc7" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Click</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a1de8c5d1c5f708dff9d1e4efcac20b9e" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Disable</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a65e4e4a3a2e4387596b348e0ba212b1a" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Enable</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a423dc44f4c6f3447ffd6d4c1a6e4e2c1" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>enabled</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a03e3c5b6de4eb89e07a39e51a6c086aa" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Get</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ac3dec98dd0b07a86c9dbafb968aa8160" prot="private" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>m_Wrapper</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a09b99b6a251debb2cc523f715e1789db" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>MiddleClick</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1aec4c90723251b9b8bc9a04ad7b8097b2" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Navigate</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a104117083b7be49ec1e812f29b547e84" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>operator InputActionMap</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a9e27552f88b7ddb985c9a40796144c1e" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Point</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a76b77fdebe4313d068e9b63793c10c41" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>RightClick</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a9403e60154c8fff39b5572bb3a6cc94b" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>ScrollWheel</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a4bfc8d6d750007e71afb66599feb6469" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>SetCallbacks</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a43c4fdfcd64a8d82c163be779deb747e" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>Submit</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1af947aee794dd5bf452d021771c9787a8" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>TrackedDeviceOrientation</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1ae13cb706f20a474a9c30dc5162155db1" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>TrackedDevicePosition</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_u_i_actions_1a02b6c24e4a8f869a2df3db2a2a614844" prot="public" virt="non-virtual"><scope>MyFPS::Controls::UIActions</scope><name>UIActions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

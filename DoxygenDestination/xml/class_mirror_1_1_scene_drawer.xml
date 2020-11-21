@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_scene_drawer" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::SceneDrawer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PropertyDrawer</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_scene_drawer_1ac96e69353b1f5581a3e9631e73588db6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Mirror.SceneDrawer.OnGUI</definition>
+        <argsstring>(Rect position, SerializedProperty property, GUIContent label)</argsstring>
+        <name>OnGUI</name>
+        <param>
+          <type>Rect</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>SerializedProperty</type>
+          <declname>property</declname>
+        </param>
+        <param>
+          <type>GUIContent</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" line="9" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" bodystart="9" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_scene_drawer_1aa8c66960e2b02c3db67b31b6147a982d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SceneAsset</type>
+        <definition>SceneAsset Mirror.SceneDrawer.GetBuildSettingsSceneObject</definition>
+        <argsstring>(string sceneName)</argsstring>
+        <name>GetBuildSettingsSceneObject</name>
+        <param>
+          <type>string</type>
+          <declname>sceneName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" line="34" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" bodystart="34" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.SceneDrawer</label>
+        <link refid="class_mirror_1_1_scene_drawer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PropertyDrawer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.SceneDrawer</label>
+        <link refid="class_mirror_1_1_scene_drawer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PropertyDrawer</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/SceneDrawer.cs" bodystart="8" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_scene_drawer_1aa8c66960e2b02c3db67b31b6147a982d" prot="protected" virt="non-virtual"><scope>Mirror::SceneDrawer</scope><name>GetBuildSettingsSceneObject</name></member>
+      <member refid="class_mirror_1_1_scene_drawer_1ac96e69353b1f5581a3e9631e73588db6" prot="public" virt="non-virtual"><scope>Mirror::SceneDrawer</scope><name>OnGUI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

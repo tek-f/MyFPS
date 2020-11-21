@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_acf376630f3f2f0f29b542958eee91ee" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging</compoundname>
+    <innerfile refid="_console_color_log_handler_8cs">ConsoleColorLogHandler.cs</innerfile>
+    <innerfile refid="_editor_log_settings_loader_8cs">EditorLogSettingsLoader.cs</innerfile>
+    <innerfile refid="_logging_2_log_factory_8cs">LogFactory.cs</innerfile>
+    <innerfile refid="_log_settings_8cs">LogSettings.cs</innerfile>
+    <innerfile refid="_network_headless_logger_8cs">NetworkHeadlessLogger.cs</innerfile>
+    <innerfile refid="_network_log_settings_8cs">NetworkLogSettings.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Logging/"/>
+  </compounddef>
+</doxygen>

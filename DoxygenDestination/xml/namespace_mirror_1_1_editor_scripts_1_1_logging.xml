@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_mirror_1_1_editor_scripts_1_1_logging" kind="namespace" language="C#">
+    <compoundname>Mirror::EditorScripts::Logging</compoundname>
+    <innerclass refid="class_mirror_1_1_editor_scripts_1_1_logging_1_1_log_levels_g_u_i" prot="public">Mirror::EditorScripts::Logging::LogLevelsGUI</innerclass>
+    <innerclass refid="class_mirror_1_1_editor_scripts_1_1_logging_1_1_log_level_window" prot="public">Mirror::EditorScripts::Logging::LogLevelWindow</innerclass>
+    <innerclass refid="class_mirror_1_1_editor_scripts_1_1_logging_1_1_log_settings_editor" prot="public">Mirror::EditorScripts::Logging::LogSettingsEditor</innerclass>
+    <innerclass refid="class_mirror_1_1_editor_scripts_1_1_logging_1_1_network_log_settings_editor" prot="public">Mirror::EditorScripts::Logging::NetworkLogSettingsEditor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Logging/LogLevelsGUI.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

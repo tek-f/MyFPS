@@ -9,30 +9,8 @@ namespace MyFPS.Player
 {
     public class PlayerHandler : MonoBehaviour
     {
-        [SerializeField] GameObject pausePanel;
-        [SerializeField] FirstPersonController fpsController;
-        bool paused;
-        #region Player Metrics
-        public int health = 3;
-        public bool alive;
-        #endregion
-        #region Game Mode
-        [SerializeField] int playersTeamID;
+        #region Properties
         public int teamID { get { return playersTeamID; } }
-        CharacterController charConrtol;
-        #endregion
-        #region Input
-        [SerializeField] PlayerInput playerInput;
-        InputAction reloadAction;
-        InputAction fireAction;
-        InputAction swapWeaponAction;
-        InputAction escapeAction;
-        #endregion
-        #region Weapons
-        public List<Weapon> weapons;
-        [SerializeField] GameObject flagObject;
-        [SerializeField] int currentWeapon = 0, lastWeapon = 0;
-        #region 
         public int LastWeapon
         {
             get
@@ -40,8 +18,6 @@ namespace MyFPS.Player
                 return lastWeapon;
             }
         }
-        Gun currentGun;
-        public Vector3 dropOffset, equippedWeaponPosition;
         public bool IsHoldingFlag
         {
             get
@@ -49,21 +25,127 @@ namespace MyFPS.Player
                 return flagObject.activeSelf;
             }
         }
-
         #endregion
-        #region HUD
-        [SerializeField] GameObject infoPanel;
-        [SerializeField] Text infoPanelText;
-
+        #region Player Metrics
+        /// <summary>
+        /// Players health.
+        /// </summary>
+        public int health = 3;
+        /// <summary>
+        /// Reference to the FirstPersonController class on this game object.
+        /// </summary>
+        [SerializeField] FirstPersonController fpsController;
+        /// <summary>
+        /// Reference to the CharacterController component on this game object.
+        /// </summary>
+        CharacterController charConrtol;
         #endregion
-        public void SwitchWeapon(int weaponID, bool overrideLock = false)
+        #region Game Mode
+        /// <summary>
+        /// Reference to this games GameMode.
+        /// </summary>
+        GameMode gameModeManager;
+        /// <summary>
+        /// This players team id.
+        /// </summary>
+        [SerializeField] int playersTeamID;
+        #endregion
+        #region Input
+        /// <summary>
+        /// Reference to the PlayerInput component on this game object.
+        /// </summary>
+        [SerializeField] PlayerInput playerInput;
+        /// <summary>
+        /// Reload action on the player input map.
+        /// </summary>
+        InputAction reloadAction;
+        /// <summary>
+        /// Fire action on the player input map.
+        /// </summary>
+        InputAction fireAction;
+        /// <summary>
+        /// Swap action on the player input map.
+        /// </summary>
+        InputAction swapWeaponAction;
+        /// <summary>
+        /// Escape action on the player input map.
+        /// </summary>
+        InputAction escapeAction;
+        #endregion
+        #region Weapons
+        /// <summary>
+        /// List<> of Weapon class that is the players loadout.
+        /// </summary>
+        public List<Weapon> weapons;
+        /// <summary>
+        /// This players local flag object.
+        /// </summary>
+        [SerializeField] GameObject flagObject;
+        /// <summary>
+        /// Index to weapons<> of the current weapon the player has equiped.
+        /// </summary>
+        [SerializeField] int currentWeapon = 0;
+        /// <summary>
+        /// Index to weapons<> of the previous weapon the player had equiped.
+        /// </summary>
+        [SerializeField] int lastWeapon = 0;
+        /// <summary>
+        /// Reference to the Gun class on the equiped weapon.
+        /// </summary>
+        Gun currentGun;
+        /// <summary>
+        /// Offset used when a weapon is dropped.
+        /// </summary>
+        public Vector3 dropOffset;
+        /// <summary>
+        /// Position the weapon is set to when it is equiped.
+        /// </summary>
+        public Vector3 equippedWeaponPosition;
+        #region GUI
+        /// <summary>
+        /// Reference to the Text that displays team 1's score.
+        /// </summary>
+        [SerializeField] Text team1ScoreText;
+        /// <summary>
+        /// Reference to the Text that displays team 1's score.
+        /// </summary>
+        [SerializeField] Text team2ScoreText;
+        /// <summary>
+        /// Reference to the players Pause Menu panel.
+        /// </summary>
+        [SerializeField] GameObject pausePanel;
+        /// <summary>
+        /// Tracks if player has paused the game.
+        /// </summary>
+        bool paused;
+        /// <summary>
+        /// Reference to the end game display panel.
+        /// </summary>
+        public GameObject endGamePanel;
+        #endregion
+        #region Respawn
+        /// <summary>
+        /// Position for the player to respaw to.
+        /// </summary>
+        public Transform respawnPosition;
+        /// <summary>
+        /// Reference to the PlayerDeath class on this game object.
+        /// </summary>
+        PlayerDeath playerDeath;
+        #endregion
+        /// <summary>
+        /// Swaps the players equpied weapon.
+        /// </summary>
+        /// <param name="_weaponID">Weapon ID of the weapon to be equpied.</param>
+        /// <param name="_overrideLock">Determines if the weapon is able to be swapped. Default = false.</param>
+        public void SwitchWeapon(int _weaponID, bool _overrideLock = false)
         {
-            if (weapons[weaponID] != null && !overrideLock && weapons[currentWeapon].isWeaponLocked == true)
+            if (weapons[_weaponID] != null && !_overrideLock && weapons[currentWeapon].isWeaponLocked == true)
             {
                 return;
             }
             lastWeapon = currentWeapon;
-            currentWeapon = weaponID;
+            currentWeapon = _weaponID;
 
             if(weapons[lastWeapon] != null)
             {
@@ -73,13 +155,20 @@ namespace MyFPS.Player
             currentGun = weapons[currentWeapon].GetComponent<Gun>();
             currentGun.OnWeaponSwap();
         }
-
-        public void PickUpWeapon(GameObject weaponToPickUpObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock = false)
+        /// <summary>
+        /// Picks up a weapon from a world space weapon object and adds it to this players weapons<>.
+        /// </summary>
+        /// <param name="_weaponToPickUpObject">Object of the weapon to be picked up.</param>
+        /// <param name="_originalLocation">Original locaiton of the weapon to be picked up.</param>
+        /// <param name="_teamID">Team ID of the weapon to be picked up.</param>
+        /// <param name="_weaponID">Weapon ID of the weapon to be picked up.</param>
+        /// <param name="_overrideLock">Determines if the weapon is able to be swapped. Default = false.</param>
+        public void PickUpWeapon(GameObject _weaponToPickUpObject, Vector3 _originalLocation, int _teamID, int _weaponID, bool _overrideLock = false)
         {
             //Move Weapon That's being picked up into place
-            weaponToPickUpObject.transform.position = equippedWeaponPosition;
-            weaponToPickUpObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-            weaponToPickUpObject.transform.SetParent(Camera.main.transform);
+            _weaponToPickUpObject.transform.position = equippedWeaponPosition;
+            _weaponToPickUpObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            _weaponToPickUpObject.transform.SetParent(Camera.main.transform);
 
             if(weapons[currentWeapon] != null) //If a weapon is equiped in current slot
             {  
@@ -87,14 +176,18 @@ namespace MyFPS.Player
             }
 
             //Set current weapon to weapon that was just picked up
-            weapons[currentWeapon] = weaponToPickUpObject.GetComponent<Weapon>();
+            weapons[currentWeapon] = _weaponToPickUpObject.GetComponent<Weapon>();
 
             //Set up weapon
-            weapons[weaponID].SetUp(teamID, weaponToPickUpObject, originalLocation);
+            weapons[_weaponID].SetUp(_teamID, _weaponToPickUpObject, _originalLocation);
         }
-        public void DropWeapon(int weaponID)
+        /// <summary>
+        /// Drops weapon and removes it from this players weapons<>.
+        /// </summary>
+        /// <param name="_weaponID">Weapon ID of the weapon to be dropped.</param>
+        public void DropWeapon(int _weaponID)
         {
-            if (weapons[weaponID].isWeaponDropable)
+            if (weapons[_weaponID].isWeaponDropable)
             {
                 /* Vector3 forward = transform.forward;
                 forward *= dropOffset.x;
@@ -102,27 +195,37 @@ namespace MyFPS.Player
 
                 Vector3 dropLocation = transform.position + forward; */
 
-                weapons[weaponID].DropWeapon(charConrtol);
+                weapons[_weaponID].DropWeapon(charConrtol);
                 
                 weapons[currentWeapon] = null;
                 SwitchWeapon(lastWeapon, true);
             }
         }
-        public void ReturnWeapon(int weaponID)
+        /// <summary>
+        /// Returns weapon to it's original locaiton.
+        /// </summary>
+        /// <param name="_weaponID">Weapon ID of the weapon to be returned.</param>
+        public void ReturnWeapon(int _weaponID)
         {
-            if (weapons[weaponID].isWeaponDropable)
+            if (weapons[_weaponID].isWeaponDropable)
             {
-                Vector3 returnLocation = weapons[weaponID].originalLocation;
+                Vector3 returnLocation = weapons[_weaponID].originalLocation;
 
-                weapons[weaponID].worldWeaponGameObject.transform.position = returnLocation;
-                weapons[weaponID].worldWeaponGameObject.SetActive(true);
+                weapons[_weaponID].worldWeaponGameObject.transform.position = returnLocation;
+                weapons[_weaponID].worldWeaponGameObject.SetActive(true);
             }
         }
+        /// <summary>
+        /// Returns flag to ir's original location.
+        /// </summary>
         public void ReturnFlag()
         {
             flagObject.SetActive(false);
             weapons[currentWeapon].gameObject.SetActive(true);
         }
+        /// <summary>
+        /// Picks up flag.
+        /// </summary>
         public void PickUpFlag()
         {
             foreach(var weapon in weapons)
@@ -131,15 +234,22 @@ namespace MyFPS.Player
             }
             flagObject.SetActive(true);
         }
-
+        /// <summary>
+        /// Returns the team ID of the current weapon equiped.
+        /// </summary>
+        /// <returns>Integer.</returns>
         public int GetWeaponTeamID()
         {
             return weapons[currentWeapon].teamID;
         }
-
-        public bool IsHolding(int weaponID)
+        /// <summary>
+        /// Reterns true if the player is holding weapon that has specific weapon ID.
+        /// </summary>
+        /// <param name="_weaponID">Weapon ID to check against.</param>
+        /// <returns>Bool.</returns>
+        public bool IsHolding(int _weaponID)
         {
-            if (currentWeapon == weaponID)
+            if (currentWeapon == _weaponID)
             {
                 return true;
             }
@@ -148,25 +258,51 @@ namespace MyFPS.Player
                 return false;
             }
         }
+        /// <summary>
+        /// Teleports the player to position.
+        /// </summary>
+        /// <param name="_position">Position player is teleported to.</param>
         void Teleport(Vector3 _position)
         {
             gameObject.transform.position = _position;
         }
-        public void TakeDamage(int damage)
+        /// <summary>
+        /// Reduces players health by value.
+        /// </summary>
+        /// <param name="_damage">Value.</param>
+        public void TakeDamage(int _damage)
         {
-            health -= damage;
+            health -= _damage;
             if (health <= 0)
             {
                 Death();
             }
         }
+        /// <summary>
+        /// Called when players health reaches 0. Enables playerDeath.
+        /// </summary>
         public void Death()
         {
-            alive = false;
 
-            //To be used when rigid bodies on players has been set up. Is not usable for now. 21/09/2020
-            //gameObject.GetComponentInChildren<RagdollController>().Death();
+            //set death script active
+            playerDeath.enabled = true;
+            if(gameModeManager.gameType == "DM")
+            {
+                if(teamID == 0)
+                {
+                    gameModeManager.AddScore(1, 1);
+                }
+                else
+                {
+                    gameModeManager.AddScore(0, 1);
+                }
+            }
+
+
         }
+        /// <summary>
+        /// Toggles game pause.
+        /// </summary>
         public void Pause()
         {
             if(paused)
@@ -188,18 +324,44 @@ namespace MyFPS.Player
                 paused = true;
             }
         }
+        /// <summary>
+        /// Updates UI display of the teams scores.
+        /// </summary>
+        /// <param name="_team1Score">Score of team 1.</param>
+        /// <param name="_team2Score">Score of team 2.</param>
+        public void UpdateTeamScores(int _team1Score, int _team2Score)
+        {
+            team1ScoreText.text = _team1Score.ToString();
+            team2ScoreText.text = _team2Score.ToString();
+        }
+        /// <summary>
+        /// Action to be performed when fireAction is performed.
+        /// </summary>
+        /// <param name="_context">Context of Input Action.</param>
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
             currentGun.Shoot();
         }
+        /// <summary>
+        /// Action to be performed when reloadAction is performed.
+        /// </summary>
+        /// <param name="_context">Context of Input Action.</param>
         private void OnReloadPerformed(InputAction.CallbackContext _context)
         {
             currentGun.StartReload();
         }
+        /// <summary>
+        /// Action to be performed when swapWeaponAction is performed.
+        /// </summary>
+        /// <param name="_context">Context of Input Action.</param>
         private void OnSwapWeaponPerformed(InputAction.CallbackContext _context)
         {
             currentGun.StartWeaponSwap();
         }
+        /// <summary>
+        /// Action to be performed when escapeAction is performed.
+        /// </summary>
+        /// <param name="_context">Context of Input Action.</param>
         private void OnEscapePerformed(InputAction.CallbackContext _context)
         {
             Pause();
@@ -209,6 +371,8 @@ namespace MyFPS.Player
         {
             //Variable/Refence SetUp
             fpsController = GetComponent<FirstPersonController>();
+            playerDeath = GetComponent<PlayerDeath>();
+            gameModeManager = GameObject.FindWithTag("GameManager").GetComponent<GameMode>();
 
             //Initial Weapon Set Up
             foreach (Weapon weapon in weapons)
@@ -246,27 +410,37 @@ namespace MyFPS.Player
             escapeAction = playerInput.actions.FindAction("Escape");
             escapeAction.Enable();
             escapeAction.performed += OnEscapePerformed;
+
+            //TEMP
+            gameModeManager.playersList.Add(this);
         }
         private void Update()
         {
             if(!IsHoldingFlag)
             {
-                Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
-                RaycastHit hit;
-                Transform rayHit = null;
-                if(Physics.Raycast(ray, out hit))
+                //TESTING ONLY
+                if(Input.GetKeyDown(KeyCode.T))//if T is pressed
                 {
-                    rayHit = hit.transform;
-                    if(rayHit.GetComponent<Weapon>())
-                    {
-                        infoPanelText.text = hit.transform.name;
-                        infoPanel.SetActive(true);
-                    }
-                    else
-                    {
-                        infoPanel.SetActive(false);
-                    }
+                    Death();//player is killed
                 }
+
+                #region Old Code
+                //Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f,0.5f,0));
+                //RaycastHit hit;
+                //Transform rayHit = null;
+                //if(Physics.Raycast(ray, out hit))
+                //{
+                //    rayHit = hit.transform;
+                //    if(rayHit.GetComponent<Weapon>())
+                //    {
+                //        infoPanelText.text = hit.transform.name;
+                //        infoPanel.SetActive(true);
+                //    }
+                //    else
+                //    {
+                //        infoPanel.SetActive(false);
+                //    }
+                //}
                 //if(reloadAction.ReadValue<float>() > 0)
                 //{
                 //    currentGun.StartReload();
@@ -292,6 +466,7 @@ namespace MyFPS.Player
                 //{
 
                 //}
+                #endregion
             }
         }
         #endregion

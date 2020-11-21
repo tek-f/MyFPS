@@ -1,0 +1,44 @@
+\hypertarget{class_telepathy_1_1_server}{}\doxysection{Telepathy.\+Server Class Reference}
+\label{class_telepathy_1_1_server}\index{Telepathy.Server@{Telepathy.Server}}
+Inheritance diagram for Telepathy.\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_telepathy_1_1_server}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_a3a062f5e9cf33c5c0bdca40b5ca53865}\label{class_telepathy_1_1_server_a3a062f5e9cf33c5c0bdca40b5ca53865}} 
+int {\bfseries Next\+Connection\+Id} ()
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_a43a27ae15e6baf7da14b7794bd51e228}\label{class_telepathy_1_1_server_a43a27ae15e6baf7da14b7794bd51e228}} 
+bool {\bfseries Start} (int port)
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_ae52e0c791c61332d1ef0860eae1f6aa6}\label{class_telepathy_1_1_server_ae52e0c791c61332d1ef0860eae1f6aa6}} 
+void {\bfseries Stop} ()
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_a886193ee33315f3709a2451d0ebc9cfc}\label{class_telepathy_1_1_server_a886193ee33315f3709a2451d0ebc9cfc}} 
+bool {\bfseries Send} (int connection\+Id, byte\mbox{[}$\,$\mbox{]} data)
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_a9a3eef1deed07ea61ab280a262403c7a}\label{class_telepathy_1_1_server_a9a3eef1deed07ea61ab280a262403c7a}} 
+string {\bfseries Get\+Client\+Address} (int connection\+Id)
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_ad0af4b1e7587dc30c71f9d87623aee34}\label{class_telepathy_1_1_server_ad0af4b1e7587dc30c71f9d87623aee34}} 
+bool {\bfseries Disconnect} (int connection\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_acfbe7f02ccb833459343c7e1c6ba1806}\label{class_telepathy_1_1_server_acfbe7f02ccb833459343c7e1c6ba1806}} 
+Tcp\+Listener {\bfseries listener}
+\item 
+\mbox{\Hypertarget{class_telepathy_1_1_server_a88bb85eff5cb0158798bed088ee057c1}\label{class_telepathy_1_1_server_a88bb85eff5cb0158798bed088ee057c1}} 
+bool {\bfseries Active} =$>$ listener\+Thread != null \&\& listener\+Thread.\+Is\+Alive
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/\+Telepathy/Server.\+cs\end{DoxyCompactItemize}

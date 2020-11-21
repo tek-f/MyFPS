@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::PingPongManager</compoundname>
+    <basecompoundref refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager" prot="public" virt="non-virtual">Ninja.WebSockets.IPingPongManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a7add7657594271b5ec76a0af989a778d" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation" kindref="compound">WebSocketImplementation</ref></type>
+        <definition>readonly WebSocketImplementation Ninja.WebSockets.PingPongManager._webSocket</definition>
+        <argsstring></argsstring>
+        <name>_webSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="37" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a275bbb88af61c527ad6dff01d017c261" prot="private" static="no" mutable="no">
+        <type>readonly Guid</type>
+        <definition>readonly Guid Ninja.WebSockets.PingPongManager._guid</definition>
+        <argsstring></argsstring>
+        <name>_guid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="38" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a296c1481f0bb130144a27e94d85ecb01" prot="private" static="no" mutable="no">
+        <type>readonly TimeSpan</type>
+        <definition>readonly TimeSpan Ninja.WebSockets.PingPongManager._keepAliveInterval</definition>
+        <argsstring></argsstring>
+        <name>_keepAliveInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="39" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1aa2f4a3e32045e68a59c95788299ce502" prot="private" static="no" mutable="no">
+        <type>readonly Task</type>
+        <definition>readonly Task Ninja.WebSockets.PingPongManager._pingTask</definition>
+        <argsstring></argsstring>
+        <name>_pingTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="40" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a2d59b22ff838aa5661ce76b9ff77eb68" prot="private" static="no" mutable="no">
+        <type>readonly CancellationToken</type>
+        <definition>readonly CancellationToken Ninja.WebSockets.PingPongManager._cancellationToken</definition>
+        <argsstring></argsstring>
+        <name>_cancellationToken</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="41" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a20c1486744ed5c9298662fb533d7407f" prot="private" static="no" mutable="no">
+        <type>Stopwatch</type>
+        <definition>Stopwatch Ninja.WebSockets.PingPongManager._stopwatch</definition>
+        <argsstring></argsstring>
+        <name>_stopwatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="42" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a6e6f381ccb9727aa03028460ec1876a7" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Ninja.WebSockets.PingPongManager._pingSentTicks</definition>
+        <argsstring></argsstring>
+        <name>_pingSentTicks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="43" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1aee9f883fd7bf552c6b977b0e30f9e6a1" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>EventHandler&lt; <ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" kindref="compound">PongEventArgs</ref> &gt;</type>
+        <definition>EventHandler&lt;PongEventArgs&gt; Ninja.WebSockets.PingPongManager.Pong</definition>
+        <argsstring></argsstring>
+        <name>Pong</name>
+        <briefdescription>
+<para>Raised when a Pong frame is received </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="48" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a28bc917fcc316d4edde4df5dae7ab757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.PingPongManager.PingPongManager</definition>
+        <argsstring>(Guid guid, WebSocket webSocket, TimeSpan keepAliveInterval, CancellationToken cancellationToken)</argsstring>
+        <name>PingPongManager</name>
+        <param>
+          <type>Guid</type>
+          <declname>guid</declname>
+        </param>
+        <param>
+          <type>WebSocket</type>
+          <declname>webSocket</declname>
+        </param>
+        <param>
+          <type>TimeSpan</type>
+          <declname>keepAliveInterval</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellationToken</declname>
+        </param>
+        <briefdescription>
+<para>Initialises a new instance of the <ref refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager" kindref="compound">PingPongManager</ref> to facilitate ping pong WebSocket messages. If you are manually creating an instance of this class then it is advisable to set keepAliveInterval to TimeSpan.Zero when you create the WebSocket instance (using a factory) otherwise you may be automatically be sending duplicate Ping messages (see keepAliveInterval below) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>webSocket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The web socket used to listen to ping messages and send pong messages</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keepAliveInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time between automatically sending ping messages. Set this to TimeSpan.Zero if you with to manually control sending ping messages. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellationToken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token used to cancel a pending ping send AND the automatic sending of ping messages if keepAliveInterval is positive</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="62" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="62" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a947b5cb1adbf6713078d910384bc3f12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ninja.WebSockets.PingPongManager.SendPing</definition>
+        <argsstring>(ArraySegment&lt; byte &gt; payload, CancellationToken cancellation)</argsstring>
+        <name>SendPing</name>
+        <reimplements refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1aa9f55f2c558a9c1e39ba5680f6c1148a">SendPing</reimplements>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>payload</declname>
+        </param>
+        <param>
+          <type>CancellationToken</type>
+          <declname>cancellation</declname>
+        </param>
+        <briefdescription>
+<para>Sends a ping frame </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>payload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload (must be 125 bytes of less)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cancellation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cancellation token</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="85" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="85" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a01e186b17f60d774dc615fa4e53aa26a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Ninja.WebSockets.PingPongManager.OnPong</definition>
+        <argsstring>(PongEventArgs e)</argsstring>
+        <name>OnPong</name>
+        <param>
+          <type><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" kindref="compound">PongEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="90" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="90" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a8eac295f0113a044474064ab87fc3e9b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Ninja.WebSockets.PingPongManager.PingForever</definition>
+        <argsstring>()</argsstring>
+        <name>PingForever</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="95" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="95" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a67c453d6fade135155a52bb77c69d3d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ninja.WebSockets.PingPongManager.WebSocketImpl_Pong</definition>
+        <argsstring>(object sender, PongEventArgs e)</argsstring>
+        <name>WebSocketImpl_Pong</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ninja_1_1_web_sockets_1_1_pong_event_args" kindref="compound">PongEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="133" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="133" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ping Pong Manager used to facilitate ping pong WebSocket messages </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.PingPongManager</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPingPongManager</label>
+        <link refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ninja.WebSockets.PingPongManager</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPingPongManager</label>
+        <link refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" line="35" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/PingPongManager.cs" bodystart="36" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a2d59b22ff838aa5661ce76b9ff77eb68" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_cancellationToken</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a275bbb88af61c527ad6dff01d017c261" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_guid</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a296c1481f0bb130144a27e94d85ecb01" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_keepAliveInterval</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a6e6f381ccb9727aa03028460ec1876a7" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_pingSentTicks</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1aa2f4a3e32045e68a59c95788299ce502" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_pingTask</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a20c1486744ed5c9298662fb533d7407f" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_stopwatch</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a7add7657594271b5ec76a0af989a778d" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>_webSocket</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a01e186b17f60d774dc615fa4e53aa26a" prot="protected" virt="virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>OnPong</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a8eac295f0113a044474064ab87fc3e9b" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>PingForever</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a28bc917fcc316d4edde4df5dae7ab757" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>PingPongManager</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1aee9f883fd7bf552c6b977b0e30f9e6a1" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>Pong</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a947b5cb1adbf6713078d910384bc3f12" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>SendPing</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_ping_pong_manager_1a67c453d6fade135155a52bb77c69d3d5" prot="private" virt="non-virtual"><scope>Ninja::WebSockets::PingPongManager</scope><name>WebSocketImpl_Pong</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,235 @@
+\hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base}{}\doxysection{Mirror.\+Discovery.\+Network\+Discovery\+Base$<$ Request, Response $>$ Class Template Reference}
+\label{class_mirror_1_1_discovery_1_1_network_discovery_base}\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+
+
+Base implementation for Network \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}}. Extend this component to provide custom discovery with game specific data \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery}{Network\+Discovery}} for a sample implementation  
+
+
+Inheritance diagram for Mirror.\+Discovery.\+Network\+Discovery\+Base$<$ Request, Response $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mirror_1_1_discovery_1_1_network_discovery_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a96de23229173dd735265d4a3e0a9f863}{Start}} ()
+\begin{DoxyCompactList}\small\item\em virtual so that inheriting classes\textquotesingle{} \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a96de23229173dd735265d4a3e0a9f863}{Start()}} can call base.\+Start() too \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_ac1baccd5d47a6239a525e1601c2c2c1b}{Advertise\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Advertise this server in the local network \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_abc664584c630ec22f9386d848c0a38f6}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_abc664584c630ec22f9386d848c0a38f6}} 
+async Task {\bfseries Server\+Listen\+Async} ()
+\item 
+void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a87019724fb618f7702583f261b89822d}{Start\+Discovery}} ()
+\begin{DoxyCompactList}\small\item\em Start Active \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_aabe1e1a8c17f3d4e1a8f71858f9fa2a3}{Stop\+Discovery}} ()
+\begin{DoxyCompactList}\small\item\em Stop Active \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}} \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_ac3241aa4d7b89b5580eccebc0557cd18}{Client\+Listen\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Awaits for server response \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_ac131f8da1c5f3d9764e7c6e1186ffb28}{Broadcast\+Discovery\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Sends discovery request from client \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_afd16623602d788b4a7d7c9d6c4499e31}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_afd16623602d788b4a7d7c9d6c4499e31}} 
+static long {\bfseries Random\+Long} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a0451ebf60e6df35e1ff330321a612617}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a0451ebf60e6df35e1ff330321a612617}} 
+long {\bfseries secret\+Handshake}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_afd12e333f578fb4d3c0b615b980ca8dd}{Process\+Client\+Request}} (Request request, I\+P\+End\+Point endpoint)
+\begin{DoxyCompactList}\small\item\em Reply to the client to inform it of this server \end{DoxyCompactList}\item 
+abstract Response \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a08b153629b2e2074f10472875be470d0}{Process\+Request}} (Request request, I\+P\+End\+Point endpoint)
+\begin{DoxyCompactList}\small\item\em Process the request from a client \end{DoxyCompactList}\item 
+virtual Request \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_ad2a17bc656a6ef5ca35e6120eaefac60}{Get\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Create a message that will be broadcasted on the network to discover servers \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a681d1d1d8095ace1946b3a99bba14b44}{Process\+Response}} (Response response, I\+P\+End\+Point endpoint)
+\begin{DoxyCompactList}\small\item\em Process the answer from a server \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a73675439537ebb889cc98a0d3d1db312}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a73675439537ebb889cc98a0d3d1db312}} 
+int {\bfseries server\+Broadcast\+Listen\+Port} = 47777
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_aa7c08258307dcc9de11b19b7898aa40a}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_aa7c08258307dcc9de11b19b7898aa40a}} 
+Udp\+Client {\bfseries server\+Udp\+Client}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_aabdaeccb815700cc332a8d8628c0d3d4}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_aabdaeccb815700cc332a8d8628c0d3d4}} 
+Udp\+Client {\bfseries client\+Udp\+Client}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a0e55bc6a0792a20ed6f6263c884dd850}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a0e55bc6a0792a20ed6f6263c884dd850}} 
+static bool {\bfseries Supported\+On\+This\+Platform}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base implementation for Network \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}}. Extend this component to provide custom discovery with game specific data \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery}{Network\+Discovery}} for a sample implementation 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em Request} : {\em \mbox{\hyperlink{interface_mirror_1_1_i_message_base}{I\+Message\+Base}}}]\item[{\em Request} : {\em new()}]\item[{\em Response} : {\em \mbox{\hyperlink{interface_mirror_1_1_i_message_base}{I\+Message\+Base}}}]\item[{\em Response} : {\em new()}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_ac1baccd5d47a6239a525e1601c2c2c1b}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_ac1baccd5d47a6239a525e1601c2c2c1b}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!AdvertiseServer@{AdvertiseServer}}
+\index{AdvertiseServer@{AdvertiseServer}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{AdvertiseServer()}{AdvertiseServer()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Advertise\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Advertise this server in the local network 
+
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_ac131f8da1c5f3d9764e7c6e1186ffb28}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_ac131f8da1c5f3d9764e7c6e1186ffb28}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!BroadcastDiscoveryRequest@{BroadcastDiscoveryRequest}}
+\index{BroadcastDiscoveryRequest@{BroadcastDiscoveryRequest}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{BroadcastDiscoveryRequest()}{BroadcastDiscoveryRequest()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Broadcast\+Discovery\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends discovery request from client 
+
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_ac3241aa4d7b89b5580eccebc0557cd18}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_ac3241aa4d7b89b5580eccebc0557cd18}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!ClientListenAsync@{ClientListenAsync}}
+\index{ClientListenAsync@{ClientListenAsync}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{ClientListenAsync()}{ClientListenAsync()}}
+{\footnotesize\ttfamily async Task \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Client\+Listen\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Awaits for server response 
+
+\begin{DoxyReturn}{Returns}
+Client\+Listen\+Async Task
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_ad2a17bc656a6ef5ca35e6120eaefac60}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_ad2a17bc656a6ef5ca35e6120eaefac60}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!GetRequest@{GetRequest}}
+\index{GetRequest@{GetRequest}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{GetRequest()}{GetRequest()}}
+{\footnotesize\ttfamily virtual Request \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Get\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Create a message that will be broadcasted on the network to discover servers 
+
+Override if you wish to include additional data in the discovery message such as desired game mode, language, difficulty, etc... 
+
+\begin{DoxyReturn}{Returns}
+An instance of \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_server_request}{Server\+Request}} with data to be broadcasted
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_a837135f42c819dfc2617aac49603651d}{Mirror.\+Discovery.\+Network\+Discovery}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_afd12e333f578fb4d3c0b615b980ca8dd}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_afd12e333f578fb4d3c0b615b980ca8dd}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!ProcessClientRequest@{ProcessClientRequest}}
+\index{ProcessClientRequest@{ProcessClientRequest}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{ProcessClientRequest()}{ProcessClientRequest()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Process\+Client\+Request (\begin{DoxyParamCaption}\item[{Request}]{request,  }\item[{I\+P\+End\+Point}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reply to the client to inform it of this server 
+
+Override if you wish to ignore server requests based on custom criteria such as language, full server game mode or difficulty 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Request comming from client\\
+\hline
+{\em endpoint} & Address of the client that sent the request\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a08b153629b2e2074f10472875be470d0}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a08b153629b2e2074f10472875be470d0}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!ProcessRequest@{ProcessRequest}}
+\index{ProcessRequest@{ProcessRequest}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{ProcessRequest()}{ProcessRequest()}}
+{\footnotesize\ttfamily abstract Response \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Process\+Request (\begin{DoxyParamCaption}\item[{Request}]{request,  }\item[{I\+P\+End\+Point}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Process the request from a client 
+
+Override if you wish to provide more information to the clients such as the name of the host player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & Request comming from client\\
+\hline
+{\em endpoint} & Address of the client that sent the request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message to be sent back to the client or null
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a681d1d1d8095ace1946b3a99bba14b44}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a681d1d1d8095ace1946b3a99bba14b44}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!ProcessResponse@{ProcessResponse}}
+\index{ProcessResponse@{ProcessResponse}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{ProcessResponse()}{ProcessResponse()}}
+{\footnotesize\ttfamily abstract void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Process\+Response (\begin{DoxyParamCaption}\item[{Response}]{response,  }\item[{I\+P\+End\+Point}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Process the answer from a server 
+
+A client receives a reply from a server, this method processes the reply and raises an event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & Response that came from the server\\
+\hline
+{\em endpoint} & Address of the server that replied\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a96de23229173dd735265d4a3e0a9f863}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a96de23229173dd735265d4a3e0a9f863}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!Start@{Start}}
+\index{Start@{Start}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+virtual so that inheriting classes\textquotesingle{} \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base_a96de23229173dd735265d4a3e0a9f863}{Start()}} can call base.\+Start() too 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_a92f7da48954d365a3ae13785923ce74c}{Mirror.\+Discovery.\+Network\+Discovery}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_a87019724fb618f7702583f261b89822d}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_a87019724fb618f7702583f261b89822d}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!StartDiscovery@{StartDiscovery}}
+\index{StartDiscovery@{StartDiscovery}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{StartDiscovery()}{StartDiscovery()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Start\+Discovery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start Active \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}} 
+
+\mbox{\Hypertarget{class_mirror_1_1_discovery_1_1_network_discovery_base_aabe1e1a8c17f3d4e1a8f71858f9fa2a3}\label{class_mirror_1_1_discovery_1_1_network_discovery_base_aabe1e1a8c17f3d4e1a8f71858f9fa2a3}} 
+\index{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}!StopDiscovery@{StopDiscovery}}
+\index{StopDiscovery@{StopDiscovery}!Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$@{Mirror.Discovery.NetworkDiscoveryBase$<$ Request, Response $>$}}
+\doxysubsubsection{\texorpdfstring{StopDiscovery()}{StopDiscovery()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_mirror_1_1_discovery_1_1_network_discovery_base}{Mirror.\+Discovery.\+Network\+Discovery\+Base}}$<$ Request, Response $>$.Stop\+Discovery (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop Active \mbox{\hyperlink{namespace_mirror_1_1_discovery}{Discovery}} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Components/\+Discovery/Network\+Discovery\+Base.\+cs\end{DoxyCompactItemize}

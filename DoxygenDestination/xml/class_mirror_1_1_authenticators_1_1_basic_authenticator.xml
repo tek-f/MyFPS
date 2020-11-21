@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_authenticators_1_1_basic_authenticator" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Authenticators::BasicAuthenticator</compoundname>
+    <basecompoundref refid="class_mirror_1_1_network_authenticator" prot="public" virt="non-virtual">Mirror.NetworkAuthenticator</basecompoundref>
+    <innerclass refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_request_message" prot="public">Mirror::Authenticators::BasicAuthenticator::AuthRequestMessage</innerclass>
+    <innerclass refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_response_message" prot="public">Mirror::Authenticators::BasicAuthenticator::AuthResponseMessage</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1af6ef849d9bf8e1291aca11c9bfe84c0f" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.Authenticators.BasicAuthenticator.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger(typeof(<ref refid="class_mirror_1_1_authenticators_1_1_basic_authenticator" kindref="compound">BasicAuthenticator</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="9" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a955c89776c615aea6bc50c368551e5b1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Authenticators.BasicAuthenticator.username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="14" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a6877168ccb1f0017da5a41f62ff39584" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Authenticators.BasicAuthenticator.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="15" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a069cd7de022d2cc01132cf7627508a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Authenticators.BasicAuthenticator.OnStartServer</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartServer</name>
+        <reimplements refid="class_mirror_1_1_network_authenticator_1af84e9666b24912a841ef3621b637516b">OnStartServer</reimplements>
+        <briefdescription>
+<para>Called on server from StartServer to initialize the Authenticator </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Server message handlers should be registered in this method.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="31" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a4605f7b51826d7b2b2a655a5514ab53f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Authenticators.BasicAuthenticator.OnStartClient</definition>
+        <argsstring>()</argsstring>
+        <name>OnStartClient</name>
+        <reimplements refid="class_mirror_1_1_network_authenticator_1a70801a0c9f66f62e3273a60d4d8a9edc">OnStartClient</reimplements>
+        <briefdescription>
+<para>Called on client from StartClient to initialize the Authenticator </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Client message handlers should be registered in this method.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="37" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ae0b48ad85bc5563f95ce76ccfb6021fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Authenticators.BasicAuthenticator.OnServerAuthenticate</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnServerAuthenticate</name>
+        <reimplements refid="class_mirror_1_1_network_authenticator_1a8a8498cae07a37c0dcdf8c9e0a973562">OnServerAuthenticate</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on server from OnServerAuthenticateInternal when a client needs to authenticate </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection to client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="43" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a3f473d218a398eb798ab685f4f2d42cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Authenticators.BasicAuthenticator.OnClientAuthenticate</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnClientAuthenticate</name>
+        <reimplements refid="class_mirror_1_1_network_authenticator_1a553b775adf45b8080370196bea5fc6e7">OnClientAuthenticate</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Called on client from OnClientAuthenticateInternal when a client needs to authenticate </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection of the client.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="48" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ad7720e895a593321b5f636863fcae58b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Authenticators.BasicAuthenticator.OnAuthRequestMessage</definition>
+        <argsstring>(NetworkConnection conn, AuthRequestMessage msg)</argsstring>
+        <name>OnAuthRequestMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_request_message" kindref="compound">AuthRequestMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="59" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="59" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a3d6beeb067afe03ae12ac2541ef04767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Mirror.Authenticators.BasicAuthenticator.DelayedDisconnect</definition>
+        <argsstring>(NetworkConnection conn, float waitTime)</argsstring>
+        <name>DelayedDisconnect</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>waitTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="97" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ad3899ae85ebdcf15dd2eebef89ed9c5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Authenticators.BasicAuthenticator.OnAuthResponseMessage</definition>
+        <argsstring>(NetworkConnection conn, AuthResponseMessage msg)</argsstring>
+        <name>OnAuthResponseMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1_1_auth_response_message" kindref="compound">AuthResponseMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="103" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="103" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.Authenticators.BasicAuthenticator</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>NetworkAuthenticator</label>
+        <link refid="class_mirror_1_1_network_authenticator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>Mirror.UnityEventNetworkConnection</label>
+        <link refid="class_mirror_1_1_unity_event_network_connection"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>UnityEvent&lt; NetworkConnection &gt;</label>
+      </node>
+      <node id="1">
+        <label>Mirror.Authenticators.BasicAuthenticator</label>
+        <link refid="class_mirror_1_1_authenticators_1_1_basic_authenticator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>NetworkAuthenticator</label>
+        <link refid="class_mirror_1_1_network_authenticator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>OnClientAuthenticated</edgelabel>
+          <edgelabel>OnServerAuthenticated</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" line="7" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Authenticators/BasicAuthenticator.cs" bodystart="8" bodyend="123"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a3d6beeb067afe03ae12ac2541ef04767" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>DelayedDisconnect</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1af6ef849d9bf8e1291aca11c9bfe84c0f" prot="private" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ad7720e895a593321b5f636863fcae58b" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnAuthRequestMessage</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ad3899ae85ebdcf15dd2eebef89ed9c5a" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnAuthResponseMessage</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a3f473d218a398eb798ab685f4f2d42cd" prot="public" virt="virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnClientAuthenticate</name></member>
+      <member refid="class_mirror_1_1_network_authenticator_1ab63cd7c51320b82f998b509c0191f002" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnClientAuthenticated</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1ae0b48ad85bc5563f95ce76ccfb6021fc" prot="public" virt="virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnServerAuthenticate</name></member>
+      <member refid="class_mirror_1_1_network_authenticator_1ac2106a4b670a75135e22e9f7ce5e3583" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnServerAuthenticated</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a4605f7b51826d7b2b2a655a5514ab53f" prot="public" virt="virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnStartClient</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a069cd7de022d2cc01132cf7627508a42" prot="public" virt="virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>OnStartServer</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a6877168ccb1f0017da5a41f62ff39584" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>password</name></member>
+      <member refid="class_mirror_1_1_authenticators_1_1_basic_authenticator_1a955c89776c615aea6bc50c368551e5b1" prot="public" virt="non-virtual"><scope>Mirror::Authenticators::BasicAuthenticator</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

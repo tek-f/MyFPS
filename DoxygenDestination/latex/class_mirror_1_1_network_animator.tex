@@ -1,0 +1,178 @@
+\hypertarget{class_mirror_1_1_network_animator}{}\doxysection{Mirror.\+Network\+Animator Class Reference}
+\label{class_mirror_1_1_network_animator}\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+
+
+A component to synchronize Mecanim animation states for networked objects.  
+
+
+Inheritance diagram for Mirror.\+Network\+Animator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mirror_1_1_network_animator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_network_animator_a126c378d4196ae17f4b1661cad4faa4e}{On\+Serialize}} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, bool initial\+State)
+\begin{DoxyCompactList}\small\item\em Custom Serialization \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_network_animator_a3bfef0fd09998b38a2b59232a207954c}{On\+Deserialize}} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader, bool initial\+State)
+\begin{DoxyCompactList}\small\item\em Custom Deserialization \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_animator_aa62fe1a90c1e1df4d5d1fc7e6ba2310e}{Set\+Trigger}} (string trigger\+Name)
+\begin{DoxyCompactList}\small\item\em Causes an animation trigger to be invoked for a networked object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_animator_af0846b71bbc174ab6054e281c5e1e170}{Set\+Trigger}} (int hash)
+\begin{DoxyCompactList}\small\item\em Causes an animation trigger to be invoked for a networked object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_animator_a7b2c9b67e77adddde574c308c642724a}{Reset\+Trigger}} (string trigger\+Name)
+\begin{DoxyCompactList}\small\item\em Causes an animation trigger to be reset for a networked object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_animator_aac71f49201f88d825455f6b8790cefc9}{Reset\+Trigger}} (int hash)
+\begin{DoxyCompactList}\small\item\em Causes an animation trigger to be reset for a networked object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_a2c82bc1afe7e9587b73553f6b6a45854}\label{class_mirror_1_1_network_animator_a2c82bc1afe7e9587b73553f6b6a45854}} 
+bool {\bfseries client\+Authority}
+\item 
+Animator \mbox{\hyperlink{class_mirror_1_1_network_animator_ae320247502062c9dd9c072c91725841b}{animator}}
+\begin{DoxyCompactList}\small\item\em The animator component to synchronize. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A component to synchronize Mecanim animation states for networked objects. 
+
+The animation of game objects can be networked by this component. There are two models of authority for networked movement\+:
+
+If the object has authority on the client, then it should be animated locally on the owning client. The animation state information will be sent from the owning client to the server, then broadcast to all of the other clients. This is common for player objects.
+
+If the object has authority on the server, then it should be animated on the server and state information will be sent to all clients. This is common for objects not related to a specific client, such as an enemy unit.
+
+The \mbox{\hyperlink{class_mirror_1_1_network_animator}{Network\+Animator}} synchronizes all animation parameters of the selected Animator. It does not automatically sychronize triggers. The function Set\+Trigger can by used by an object with authority to fire an animation trigger on other clients.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_a3bfef0fd09998b38a2b59232a207954c}\label{class_mirror_1_1_network_animator_a3bfef0fd09998b38a2b59232a207954c}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!OnDeserialize@{OnDeserialize}}
+\index{OnDeserialize@{OnDeserialize}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{OnDeserialize()}{OnDeserialize()}}
+{\footnotesize\ttfamily override void Mirror.\+Network\+Animator.\+On\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}}}]{reader,  }\item[{bool}]{initial\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Custom Deserialization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & \\
+\hline
+{\em initial\+State} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}{Mirror.\+Network\+Behaviour}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_a126c378d4196ae17f4b1661cad4faa4e}\label{class_mirror_1_1_network_animator_a126c378d4196ae17f4b1661cad4faa4e}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!OnSerialize@{OnSerialize}}
+\index{OnSerialize@{OnSerialize}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{OnSerialize()}{OnSerialize()}}
+{\footnotesize\ttfamily override bool Mirror.\+Network\+Animator.\+On\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}}}]{writer,  }\item[{bool}]{initial\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Custom Serialization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & \\
+\hline
+{\em initial\+State} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}{Mirror.\+Network\+Behaviour}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_aac71f49201f88d825455f6b8790cefc9}\label{class_mirror_1_1_network_animator_aac71f49201f88d825455f6b8790cefc9}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!ResetTrigger@{ResetTrigger}}
+\index{ResetTrigger@{ResetTrigger}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{ResetTrigger()}{ResetTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Animator.\+Reset\+Trigger (\begin{DoxyParamCaption}\item[{int}]{hash }\end{DoxyParamCaption})}
+
+
+
+Causes an animation trigger to be reset for a networked object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & Hash id of trigger (from the Animator).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_a7b2c9b67e77adddde574c308c642724a}\label{class_mirror_1_1_network_animator_a7b2c9b67e77adddde574c308c642724a}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!ResetTrigger@{ResetTrigger}}
+\index{ResetTrigger@{ResetTrigger}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{ResetTrigger()}{ResetTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Animator.\+Reset\+Trigger (\begin{DoxyParamCaption}\item[{string}]{trigger\+Name }\end{DoxyParamCaption})}
+
+
+
+Causes an animation trigger to be reset for a networked object. 
+
+If local authority is set, and this is called from the client, then the trigger will be reset on the server and all clients. If not, then this is called on the server, and the trigger will be reset on all clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Name} & Name of trigger.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_af0846b71bbc174ab6054e281c5e1e170}\label{class_mirror_1_1_network_animator_af0846b71bbc174ab6054e281c5e1e170}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!SetTrigger@{SetTrigger}}
+\index{SetTrigger@{SetTrigger}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{SetTrigger()}{SetTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Animator.\+Set\+Trigger (\begin{DoxyParamCaption}\item[{int}]{hash }\end{DoxyParamCaption})}
+
+
+
+Causes an animation trigger to be invoked for a networked object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash} & Hash id of trigger (from the Animator).\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_aa62fe1a90c1e1df4d5d1fc7e6ba2310e}\label{class_mirror_1_1_network_animator_aa62fe1a90c1e1df4d5d1fc7e6ba2310e}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!SetTrigger@{SetTrigger}}
+\index{SetTrigger@{SetTrigger}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{SetTrigger()}{SetTrigger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Animator.\+Set\+Trigger (\begin{DoxyParamCaption}\item[{string}]{trigger\+Name }\end{DoxyParamCaption})}
+
+
+
+Causes an animation trigger to be invoked for a networked object. 
+
+If local authority is set, and this is called from the client, then the trigger will be invoked on the server and all clients. If not, then this is called on the server, and the trigger will be called on all clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Name} & Name of trigger.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_animator_ae320247502062c9dd9c072c91725841b}\label{class_mirror_1_1_network_animator_ae320247502062c9dd9c072c91725841b}} 
+\index{Mirror.NetworkAnimator@{Mirror.NetworkAnimator}!animator@{animator}}
+\index{animator@{animator}!Mirror.NetworkAnimator@{Mirror.NetworkAnimator}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Mirror.\+Network\+Animator.\+animator}
+
+
+
+The animator component to synchronize. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Components/Network\+Animator.\+cs\end{DoxyCompactItemize}

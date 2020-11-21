@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_sync_list_drawer" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::SyncListDrawer</compoundname>
+    <innerclass refid="class_mirror_1_1_sync_list_drawer_1_1_sync_list_field" prot="private">Mirror::SyncListDrawer::SyncListField</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_sync_list_drawer_1a484b9ba16ae01d4ac540ae9eb699d2c3" prot="private" static="no" mutable="no">
+        <type>readonly UnityEngine.Object</type>
+        <definition>readonly UnityEngine.Object Mirror.SyncListDrawer.targetObject</definition>
+        <argsstring></argsstring>
+        <name>targetObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="119" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_sync_list_drawer_1a604b78f14ed2f1d753a945cfc1a0ebd8" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; SyncListField &gt;</type>
+        <definition>readonly List&lt;SyncListField&gt; Mirror.SyncListDrawer.syncListFields</definition>
+        <argsstring></argsstring>
+        <name>syncListFields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="120" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_list_drawer_1ad24d6da9ff1dbc4167db541a0b03b655" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.SyncListDrawer.SyncListDrawer</definition>
+        <argsstring>(UnityEngine.Object targetObject)</argsstring>
+        <name>SyncListDrawer</name>
+        <param>
+          <type>UnityEngine.Object</type>
+          <declname>targetObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="122" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="122" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_sync_list_drawer_1a37a6b7e647603c23dacc569d252ee4da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncListDrawer.Draw</definition>
+        <argsstring>()</argsstring>
+        <name>Draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="135" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="135" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_sync_list_drawer_1a25b4cde12bcd1e74ccf0548d62949937" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SyncListDrawer.DrawSyncList</definition>
+        <argsstring>(SyncListField syncListField)</argsstring>
+        <name>DrawSyncList</name>
+        <param>
+          <type>SyncListField</type>
+          <declname>syncListField</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="148" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="148" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" line="117" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkBehaviourInspector.cs" bodystart="118" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_sync_list_drawer_1a37a6b7e647603c23dacc569d252ee4da" prot="public" virt="non-virtual"><scope>Mirror::SyncListDrawer</scope><name>Draw</name></member>
+      <member refid="class_mirror_1_1_sync_list_drawer_1a25b4cde12bcd1e74ccf0548d62949937" prot="private" virt="non-virtual"><scope>Mirror::SyncListDrawer</scope><name>DrawSyncList</name></member>
+      <member refid="class_mirror_1_1_sync_list_drawer_1ad24d6da9ff1dbc4167db541a0b03b655" prot="public" virt="non-virtual"><scope>Mirror::SyncListDrawer</scope><name>SyncListDrawer</name></member>
+      <member refid="class_mirror_1_1_sync_list_drawer_1a604b78f14ed2f1d753a945cfc1a0ebd8" prot="private" virt="non-virtual"><scope>Mirror::SyncListDrawer</scope><name>syncListFields</name></member>
+      <member refid="class_mirror_1_1_sync_list_drawer_1a484b9ba16ae01d4ac540ae9eb699d2c3" prot="private" virt="non-virtual"><scope>Mirror::SyncListDrawer</scope><name>targetObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

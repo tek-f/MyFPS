@@ -1,0 +1,100 @@
+\hypertarget{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}{}\doxysection{Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager Class Reference}
+\label{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}\index{Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}}
+
+
+Ping Pong Manager used to facilitate ping pong Web\+Socket messages  
+
+
+Inheritance diagram for Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a28bc917fcc316d4edde4df5dae7ab757}{Ping\+Pong\+Manager}} (Guid guid, Web\+Socket web\+Socket, Time\+Span keep\+Alive\+Interval, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Initialises a new instance of the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}{Ping\+Pong\+Manager}} to facilitate ping pong Web\+Socket messages. If you are manually creating an instance of this class then it is advisable to set keep\+Alive\+Interval to Time\+Span.\+Zero when you create the Web\+Socket instance (using a factory) otherwise you may be automatically be sending duplicate Ping messages (see keep\+Alive\+Interval below) \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a947b5cb1adbf6713078d910384bc3f12}{Send\+Ping}} (Array\+Segment$<$ byte $>$ payload, Cancellation\+Token cancellation)
+\begin{DoxyCompactList}\small\item\em Sends a ping frame \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a01e186b17f60d774dc615fa4e53aa26a}\label{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a01e186b17f60d774dc615fa4e53aa26a}} 
+virtual void {\bfseries On\+Pong} (\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}} e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}} $>$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_aee9f883fd7bf552c6b977b0e30f9e6a1}{Pong}}
+\begin{DoxyCompactList}\small\item\em Raised when a Pong frame is received \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ping Pong Manager used to facilitate ping pong Web\+Socket messages 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a28bc917fcc316d4edde4df5dae7ab757}\label{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a28bc917fcc316d4edde4df5dae7ab757}} 
+\index{Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}!PingPongManager@{PingPongManager}}
+\index{PingPongManager@{PingPongManager}!Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}}
+\doxysubsubsection{\texorpdfstring{PingPongManager()}{PingPongManager()}}
+{\footnotesize\ttfamily Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager.\+Ping\+Pong\+Manager (\begin{DoxyParamCaption}\item[{Guid}]{guid,  }\item[{Web\+Socket}]{web\+Socket,  }\item[{Time\+Span}]{keep\+Alive\+Interval,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Initialises a new instance of the \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_ping_pong_manager}{Ping\+Pong\+Manager}} to facilitate ping pong Web\+Socket messages. If you are manually creating an instance of this class then it is advisable to set keep\+Alive\+Interval to Time\+Span.\+Zero when you create the Web\+Socket instance (using a factory) otherwise you may be automatically be sending duplicate Ping messages (see keep\+Alive\+Interval below) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em web\+Socket} & The web socket used to listen to ping messages and send pong messages\\
+\hline
+{\em keep\+Alive\+Interval} & The time between automatically sending ping messages. Set this to Time\+Span.\+Zero if you with to manually control sending ping messages. \\
+\hline
+{\em cancellation\+Token} & The token used to cancel a pending ping send A\+ND the automatic sending of ping messages if keep\+Alive\+Interval is positive\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a947b5cb1adbf6713078d910384bc3f12}\label{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_a947b5cb1adbf6713078d910384bc3f12}} 
+\index{Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}!SendPing@{SendPing}}
+\index{SendPing@{SendPing}!Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}}
+\doxysubsubsection{\texorpdfstring{SendPing()}{SendPing()}}
+{\footnotesize\ttfamily async Task Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager.\+Send\+Ping (\begin{DoxyParamCaption}\item[{Array\+Segment$<$ byte $>$}]{payload,  }\item[{Cancellation\+Token}]{cancellation }\end{DoxyParamCaption})}
+
+
+
+Sends a ping frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & The payload (must be 125 bytes of less)\\
+\hline
+{\em cancellation} & The cancellation token\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_aa9f55f2c558a9c1e39ba5680f6c1148a}{Ninja.\+Web\+Sockets.\+I\+Ping\+Pong\+Manager}}.
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_aee9f883fd7bf552c6b977b0e30f9e6a1}\label{class_ninja_1_1_web_sockets_1_1_ping_pong_manager_aee9f883fd7bf552c6b977b0e30f9e6a1}} 
+\index{Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}!Pong@{Pong}}
+\index{Pong@{Pong}!Ninja.WebSockets.PingPongManager@{Ninja.WebSockets.PingPongManager}}
+\doxysubsubsection{\texorpdfstring{Pong}{Pong}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}}$>$ Ninja.\+Web\+Sockets.\+Ping\+Pong\+Manager.\+Pong}
+
+
+
+Raised when a Pong frame is received 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/\+Websocket/\+Ninja.\+Web\+Sockets/Ping\+Pong\+Manager.\+cs\end{DoxyCompactItemize}

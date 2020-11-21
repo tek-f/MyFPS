@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_telepathy" kind="namespace" language="C#">
+    <compoundname>Telepathy</compoundname>
+    <innerclass refid="class_telepathy_1_1_client" prot="public">Telepathy::Client</innerclass>
+    <innerclass refid="class_telepathy_1_1_common" prot="public">Telepathy::Common</innerclass>
+    <innerclass refid="class_telepathy_1_1_logger" prot="public">Telepathy::Logger</innerclass>
+    <innerclass refid="struct_telepathy_1_1_message" prot="public">Telepathy::Message</innerclass>
+    <innerclass refid="class_telepathy_1_1_network_stream_extensions" prot="public">Telepathy::NetworkStreamExtensions</innerclass>
+    <innerclass refid="class_telepathy_1_1_safe_queue" prot="public">Telepathy::SafeQueue</innerclass>
+    <innerclass refid="class_telepathy_1_1_server" prot="public">Telepathy::Server</innerclass>
+    <innerclass refid="class_telepathy_1_1_thread_extensions" prot="public">Telepathy::ThreadExtensions</innerclass>
+    <innerclass refid="class_telepathy_1_1_utils" prot="public">Telepathy::Utils</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_telepathy_1acad533972cf6a864283d0352963495e0" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EventType</name>
+        <enumvalue id="namespace_telepathy_1acad533972cf6a864283d0352963495e0a2ec0d16e4ca169baedb9b2d50ec5c6d7" prot="public">
+          <name>Connected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_telepathy_1acad533972cf6a864283d0352963495e0af6068daa29dbb05a7ead1e3b5a48bbee" prot="public">
+          <name>Data</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_telepathy_1acad533972cf6a864283d0352963495e0aef70e46fd3bbc21e3e1f0b6815e750c0" prot="public">
+          <name>Disconnected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/EventType.cs" line="3" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/EventType.cs" bodystart="4" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Client.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

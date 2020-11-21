@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_a50e8e7dc4ec2c2adce1a5d5b13adb8c" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/TwinViewer/Resources</compoundname>
+    <innerdir refid="dir_d888387788f968b7fbc3c627208e0f69">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/TwinViewer/Resources/Taichi</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/TwinViewer/Resources/"/>
+  </compounddef>
+</doxygen>

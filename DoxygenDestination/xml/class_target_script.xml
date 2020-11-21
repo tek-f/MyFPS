@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_target_script" kind="class" language="C#" prot="public">
+    <compoundname>TargetScript</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_target_script_1a0ab3c21e2e864912eaaa12591ba9bc66" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TargetScript.randomTime</definition>
+        <argsstring></argsstring>
+        <name>randomTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="7" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1a9b96180937e165d1fe6f31c187fd3733" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TargetScript.routineStarted</definition>
+        <argsstring></argsstring>
+        <name>routineStarted</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="8" column="6" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_target_script_1a21d2b3f77184387875e067d5b7f3f670" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TargetScript.isHit</definition>
+        <argsstring></argsstring>
+        <name>isHit</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="11" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1a8efac542c2a8874cfd05d1ca2cd7ae4a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TargetScript.minTime</definition>
+        <argsstring></argsstring>
+        <name>minTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="15" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1a234cefab7c1226e50641a3738ed49387" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TargetScript.maxTime</definition>
+        <argsstring></argsstring>
+        <name>maxTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="17" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1a0572251f0a84159a61dd967a59706266" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip TargetScript.upSound</definition>
+        <argsstring></argsstring>
+        <name>upSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="20" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1adde5c7ca5058711992c6ef78dea9dbe1" prot="public" static="no" mutable="no">
+        <type>AudioClip</type>
+        <definition>AudioClip TargetScript.downSound</definition>
+        <argsstring></argsstring>
+        <name>downSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="21" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_target_script_1a1334787d5c4cc4e402af5d6a7ef6d604" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource TargetScript.audioSource</definition>
+        <argsstring></argsstring>
+        <name>audioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="23" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_target_script_1a04e8fab9486c38e8bd37d956a2d46e5c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TargetScript.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="25" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="25" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_target_script_1adbe0ea97b4350bc159544e4417ff27c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator TargetScript.DelayTimer</definition>
+        <argsstring>()</argsstring>
+        <name>DelayTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="50" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="50" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TargetScript</label>
+        <link refid="class_target_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TargetScript</label>
+        <link refid="class_target_script"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" line="5" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Demo_Scene_Components/Scripts/TargetScript.cs" bodystart="5" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_target_script_1a1334787d5c4cc4e402af5d6a7ef6d604" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>audioSource</name></member>
+      <member refid="class_target_script_1adbe0ea97b4350bc159544e4417ff27c2" prot="private" virt="non-virtual"><scope>TargetScript</scope><name>DelayTimer</name></member>
+      <member refid="class_target_script_1adde5c7ca5058711992c6ef78dea9dbe1" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>downSound</name></member>
+      <member refid="class_target_script_1a21d2b3f77184387875e067d5b7f3f670" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>isHit</name></member>
+      <member refid="class_target_script_1a234cefab7c1226e50641a3738ed49387" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>maxTime</name></member>
+      <member refid="class_target_script_1a8efac542c2a8874cfd05d1ca2cd7ae4a" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>minTime</name></member>
+      <member refid="class_target_script_1a0ab3c21e2e864912eaaa12591ba9bc66" prot="private" virt="non-virtual"><scope>TargetScript</scope><name>randomTime</name></member>
+      <member refid="class_target_script_1a9b96180937e165d1fe6f31c187fd3733" prot="private" virt="non-virtual"><scope>TargetScript</scope><name>routineStarted</name></member>
+      <member refid="class_target_script_1a04e8fab9486c38e8bd37d956a2d46e5c" prot="private" virt="non-virtual"><scope>TargetScript</scope><name>Update</name></member>
+      <member refid="class_target_script_1a0572251f0a84159a61dd967a59706266" prot="public" virt="non-virtual"><scope>TargetScript</scope><name>upSound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

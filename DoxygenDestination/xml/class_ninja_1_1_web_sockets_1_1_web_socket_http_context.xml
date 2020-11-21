@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context" kind="class" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::WebSocketHttpContext</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a47fe358e2323d32e938107b8e668c13a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Ninja.WebSockets.WebSocketHttpContext.IsWebSocketRequest</definition>
+        <argsstring></argsstring>
+        <name>IsWebSocketRequest</name>
+        <briefdescription>
+<para>True if this is a valid WebSocket request </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="15" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1acae6e760de5d356dd66067b372ace1dc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>IList&lt; string &gt;</type>
+        <definition>IList&lt;string&gt; Ninja.WebSockets.WebSocketHttpContext.WebSocketRequestedProtocols</definition>
+        <argsstring></argsstring>
+        <name>WebSocketRequestedProtocols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="17" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a9a65c349a5106064dad7984c8d88408c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ninja.WebSockets.WebSocketHttpContext.HttpHeader</definition>
+        <argsstring></argsstring>
+        <name>HttpHeader</name>
+        <briefdescription>
+<para>The raw http header extracted from the stream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="22" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1ac5beedff86a4ef62e8db882c48ccbd3c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string Ninja.WebSockets.WebSocketHttpContext.Path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <briefdescription>
+<para>The Path extracted from the http header </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="27" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1aa9ffe1e45d0da5be4cf38e24b1e9acaa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>Stream</type>
+        <definition>Stream Ninja.WebSockets.WebSocketHttpContext.Stream</definition>
+        <argsstring></argsstring>
+        <name>Stream</name>
+        <briefdescription>
+<para>The stream AFTER the header has already been read </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="32" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a7c82a5b256037b3b6888ecb17f395fad" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>TcpClient</type>
+        <definition>TcpClient Ninja.WebSockets.WebSocketHttpContext.Client</definition>
+        <argsstring></argsstring>
+        <name>Client</name>
+        <briefdescription>
+<para>The tcp connection we are using </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="37" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1ad1796e834dfe236cc94dbc73958d2c84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ninja.WebSockets.WebSocketHttpContext.WebSocketHttpContext</definition>
+        <argsstring>(bool isWebSocketRequest, IList&lt; string &gt; webSocketRequestedProtocols, string httpHeader, string path, TcpClient client, Stream stream)</argsstring>
+        <name>WebSocketHttpContext</name>
+        <param>
+          <type>bool</type>
+          <declname>isWebSocketRequest</declname>
+        </param>
+        <param>
+          <type>IList&lt; string &gt;</type>
+          <declname>webSocketRequestedProtocols</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>httpHeader</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>TcpClient</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1aa9ffe1e45d0da5be4cf38e24b1e9acaa" kindref="member">Stream</ref></type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Initialises a new instance of the <ref refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context" kindref="compound">WebSocketHttpContext</ref> class </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isWebSocketRequest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if this is a valid WebSocket request</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>httpHeader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The raw http header extracted from the stream</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Path extracted from the http header</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream AFTER the header has already been read</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="46" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="46" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The WebSocket HTTP Context used to initiate a WebSocket handshake </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" line="10" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/WebSocketHttpContext.cs" bodystart="11" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a7c82a5b256037b3b6888ecb17f395fad" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>Client</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a9a65c349a5106064dad7984c8d88408c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>HttpHeader</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1a47fe358e2323d32e938107b8e668c13a" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>IsWebSocketRequest</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1ac5beedff86a4ef62e8db882c48ccbd3c" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>Path</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1aa9ffe1e45d0da5be4cf38e24b1e9acaa" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>Stream</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1ad1796e834dfe236cc94dbc73958d2c84" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>WebSocketHttpContext</name></member>
+      <member refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context_1acae6e760de5d356dd66067b372ace1dc" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::WebSocketHttpContext</scope><name>WebSocketRequestedProtocols</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

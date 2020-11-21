@@ -1,0 +1,372 @@
+\hypertarget{class_mirror_1_1_network_identity}{}\doxysection{Mirror.\+Network\+Identity Class Reference}
+\label{class_mirror_1_1_network_identity}\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} identifies objects across the network, between server and clients. Its primary data is a Network\+Instance\+Id which is allocated by the server and then set on clients. This is used in network communications to be able to lookup game objects on different machines.  
+
+
+Inheritance diagram for Mirror.\+Network\+Identity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mirror_1_1_network_identity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_mirror_1_1_network_identity_a4076c05b5ecb2e24b8e8005db6452e9c}{Client\+Authority\+Callback}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn, \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} identity, bool authority\+State)
+\begin{DoxyCompactList}\small\item\em The delegate type for the client\+Authority\+Callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_identity_a32e5d17a0b3ae29c7e5cbf39399b4e0b}{Rebuild\+Observers}} (bool initialize)
+\begin{DoxyCompactList}\small\item\em This causes the set of players that can see this object to be rebuild. The On\+Rebuild\+Observers callback function will be invoked on each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a2bf39f8adcbc4aa9b5e105d741ff4aa6}{Assign\+Client\+Authority}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Assign control of an object to a client via the client\textquotesingle{}s \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection.}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_identity_ab1c34c695ff0a05c3e81d2c530da822f}{Remove\+Client\+Authority}} ()
+\begin{DoxyCompactList}\small\item\em Removes ownership for an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} \mbox{\hyperlink{class_mirror_1_1_network_identity_a030154e28b95e17a15de62707f0006e3}{Get\+Scene\+Identity}} (ulong id)
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} from the scene\+Ids dictionary with the corresponding id \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_mirror_1_1_network_identity_af6af44b5090bf3d6e146440262b12d0f}{Reset\+Next\+Network\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Resets next\+Network\+Id = 1 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a7224507781dad1ac9cb724242cf3a653}{is\+Local\+Player}} =$>$ Client\+Scene.\+local\+Player == this
+\begin{DoxyCompactList}\small\item\em This returns true if this object is the one that represents the player on the local machine. \end{DoxyCompactList}\item 
+Dictionary$<$ int, \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$ \mbox{\hyperlink{class_mirror_1_1_network_identity_a573f662e1862d93da6a3560dc2c88e0e}{observers}}
+\begin{DoxyCompactList}\small\item\em The set of network connections (players) that can see this object. \end{DoxyCompactList}\item 
+ulong \mbox{\hyperlink{class_mirror_1_1_network_identity_a6caca6959f052d106e135e049e5a0fe6}{scene\+Id}}
+\begin{DoxyCompactList}\small\item\em A unique identifier for \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} objects within a scene. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a2b90032cea75219737de4aab7ac8ecc6}{server\+Only}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flag}{Flag}} to make this object only exist when the game is running as a server (or host). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Dictionary$<$ uint, \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} $>$ \mbox{\hyperlink{class_mirror_1_1_network_identity_a4662e6bf04cd7dc767bc906437ea1c4a}{spawned}} = new Dictionary$<$uint, \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$()
+\begin{DoxyCompactList}\small\item\em All spawned Network\+Identities by net\+Id. Available on server and client. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_mirror_1_1_network_identity_a4076c05b5ecb2e24b8e8005db6452e9c}{Client\+Authority\+Callback}} \mbox{\hyperlink{class_mirror_1_1_network_identity_aba3975b546ad171d59ed0d4e0d15c3eb}{client\+Authority\+Callback}}
+\begin{DoxyCompactList}\small\item\em A callback that can be populated to be notified when the client-\/authority state of objects changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a0a3bb71dd8fc37492957fe1bdbb7955e}{is\+Client}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if running as a client and this object was spawned by a server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a45b20df7d45211189befe124e3836f3c}{is\+Server}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if Network\+Server.\+active and server is not stopped. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}{has\+Authority}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This returns true if this object is the authoritative player object on the client. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_mirror_1_1_network_identity_a3752b290380dc9ec029ddd86af8dc206}{net\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unique identifier for this particular object instance, used for tracking objects between networked clients and the server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} \mbox{\hyperlink{class_mirror_1_1_network_identity_afddec2dc92f3f98b1755937d9fd1430e}{connection\+To\+Server}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}. This is only valid for player objects on a local client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_network_connection_to_client}{Network\+Connection\+To\+Client}}? \mbox{\hyperlink{class_mirror_1_1_network_identity_a2c3c6ec4b03d4d8212a478fe0877f638}{connection\+To\+Client}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is valid for player and other owned objects in the server. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a66d235276ea0ce252d2dff12e51cbcc0}\label{class_mirror_1_1_network_identity_a66d235276ea0ce252d2dff12e51cbcc0}} 
+\mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}\mbox{[}$\,$\mbox{]} {\bfseries Network\+Behaviours}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_af3e5d72395cc0dd38205addf130d9db5}\label{class_mirror_1_1_network_identity_af3e5d72395cc0dd38205addf130d9db5}} 
+\mbox{\hyperlink{class_mirror_1_1_network_visibility}{Network\+Visibility}} {\bfseries visibility}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Guid?? \mbox{\hyperlink{class_mirror_1_1_network_identity_ad2383a3fcbb4cb4cb1b020f0a6638708}{asset\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Unique identifier used to find the source assets when server spawns the on clients. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a26902bfccbd86c890cebfc37bfc77d6d}\label{class_mirror_1_1_network_identity_a26902bfccbd86c890cebfc37bfc77d6d}} 
+bool {\bfseries Spawned\+From\+Instantiate}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} identifies objects across the network, between server and clients. Its primary data is a Network\+Instance\+Id which is allocated by the server and then set on clients. This is used in network communications to be able to lookup game objects on different machines. 
+
+The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} is used to synchronize information in the object with the network. Only the server should create instances of objects which have \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} as otherwise they will not be properly connected to the system. 
+
+For complex objects with a hierarchy of subcomponents, the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} must be on the root of the hierarchy. It is not supported to have multiple \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} components on subcomponents of a hierarchy. 
+
+\mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} scripts require a \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} on the game object to be able to function. 
+
+The \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} manages the dirty state of the Network\+Behaviours of the object. When it discovers that Network\+Behaviours are dirty, it causes an update packet to be created and sent to clients. 
+
+The flow for serialization updates managed by the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} is\+: 
+\begin{DoxyItemize}
+\item Each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} has a dirty mask. This mask is available inside On\+Serialize as sync\+Var\+Dirty\+Bits  
+\item Each Sync\+Var in a \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} script is assigned a bit in the dirty mask.  
+\item Changing the value of Sync\+Vars causes the bit for that Sync\+Var to be set in the dirty mask  
+\item Alternatively, calling Set\+Dirty\+Bit() writes directly to the dirty mask  
+\item \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} objects are checked on the server as part of it\textquotesingle{}s update loop  
+\item If any Network\+Behaviours on a \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} are dirty, then an Update\+Vars packet is created for that object  
+\item The Update\+Vars packet is populated by calling On\+Serialize on each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} on the object  
+\item Network\+Behaviours that are N\+OT dirty write a zero to the packet for their dirty bits  
+\item Network\+Behaviours that are dirty write their dirty mask, then the values for the Sync\+Vars that have changed  
+\item If On\+Serialize returns true for a \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}, the dirty mask is reset for that \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}, so it will not send again until its value changes.  
+\item The Update\+Vars packet is sent to ready clients that are observing the object  
+\end{DoxyItemize}
+
+On the client\+: 
+\begin{DoxyItemize}
+\item an Update\+Vars packet is received for an object  
+\item The On\+Deserialize function is called for each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} script on the object  
+\item Each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} script on the object reads a dirty mask.  
+\item If the dirty mask for a \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} is zero, the On\+Deserialize functions returns without reading any more  
+\item If the dirty mask is non-\/zero value, then the On\+Deserialize function reads the values for the Sync\+Vars that correspond to the dirty bits that are set  
+\item If there are Sync\+Var hook functions, those are invoked with the value read from the stream.  
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a2bf39f8adcbc4aa9b5e105d741ff4aa6}\label{class_mirror_1_1_network_identity_a2bf39f8adcbc4aa9b5e105d741ff4aa6}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!AssignClientAuthority@{AssignClientAuthority}}
+\index{AssignClientAuthority@{AssignClientAuthority}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{AssignClientAuthority()}{AssignClientAuthority()}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+Assign\+Client\+Authority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})}
+
+
+
+Assign control of an object to a client via the client\textquotesingle{}s \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection.}} 
+
+This causes has\+Authority to be set on the client that owns the object, and \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a1e36e4640f967426ffc113e26e649345}{Network\+Behaviour.\+On\+Start\+Authority}} will be called on that client. This object then will be in the \mbox{\hyperlink{class_mirror_1_1_network_connection_a0523c3a787f8e1689300b21bad102e57}{Network\+Connection.\+client\+Owned\+Objects}} list for the connection.
+
+Authority can be removed with Remove\+Client\+Authority. Only one client can own an object at any time. This does not need to be called for player objects, as their authority is setup automatically.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & The connection of the client to assign authority to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if authority was assigned.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a4076c05b5ecb2e24b8e8005db6452e9c}\label{class_mirror_1_1_network_identity_a4076c05b5ecb2e24b8e8005db6452e9c}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!ClientAuthorityCallback@{ClientAuthorityCallback}}
+\index{ClientAuthorityCallback@{ClientAuthorityCallback}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{ClientAuthorityCallback()}{ClientAuthorityCallback()}}
+{\footnotesize\ttfamily delegate void Mirror.\+Network\+Identity.\+Client\+Authority\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn,  }\item[{\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}}]{identity,  }\item[{bool}]{authority\+State }\end{DoxyParamCaption})}
+
+
+
+The delegate type for the client\+Authority\+Callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & The network connection that is gaining or losing authority.\\
+\hline
+{\em identity} & The object whose client authority status is being changed.\\
+\hline
+{\em authority\+State} & The new state of client authority of the object for the connection.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a030154e28b95e17a15de62707f0006e3}\label{class_mirror_1_1_network_identity_a030154e28b95e17a15de62707f0006e3}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!GetSceneIdentity@{GetSceneIdentity}}
+\index{GetSceneIdentity@{GetSceneIdentity}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{GetSceneIdentity()}{GetSceneIdentity()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} Mirror.\+Network\+Identity.\+Get\+Scene\+Identity (\begin{DoxyParamCaption}\item[{ulong}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} from the scene\+Ids dictionary with the corresponding id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} from the scene\+Ids dictionary
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a32e5d17a0b3ae29c7e5cbf39399b4e0b}\label{class_mirror_1_1_network_identity_a32e5d17a0b3ae29c7e5cbf39399b4e0b}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!RebuildObservers@{RebuildObservers}}
+\index{RebuildObservers@{RebuildObservers}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{RebuildObservers()}{RebuildObservers()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Identity.\+Rebuild\+Observers (\begin{DoxyParamCaption}\item[{bool}]{initialize }\end{DoxyParamCaption})}
+
+
+
+This causes the set of players that can see this object to be rebuild. The On\+Rebuild\+Observers callback function will be invoked on each \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initialize} & True if this is the first time.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_ab1c34c695ff0a05c3e81d2c530da822f}\label{class_mirror_1_1_network_identity_ab1c34c695ff0a05c3e81d2c530da822f}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!RemoveClientAuthority@{RemoveClientAuthority}}
+\index{RemoveClientAuthority@{RemoveClientAuthority}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{RemoveClientAuthority()}{RemoveClientAuthority()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Identity.\+Remove\+Client\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes ownership for an object. 
+
+This applies to objects that had authority set by Assign\+Client\+Authority, or \mbox{\hyperlink{}{Network\+Server.\+Spawn}} with a \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} parameter included.
+
+Authority cannot be removed for player objects.\mbox{\Hypertarget{class_mirror_1_1_network_identity_af6af44b5090bf3d6e146440262b12d0f}\label{class_mirror_1_1_network_identity_af6af44b5090bf3d6e146440262b12d0f}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!ResetNextNetworkId@{ResetNextNetworkId}}
+\index{ResetNextNetworkId@{ResetNextNetworkId}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{ResetNextNetworkId()}{ResetNextNetworkId()}}
+{\footnotesize\ttfamily static void Mirror.\+Network\+Identity.\+Reset\+Next\+Network\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets next\+Network\+Id = 1 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_aba3975b546ad171d59ed0d4e0d15c3eb}\label{class_mirror_1_1_network_identity_aba3975b546ad171d59ed0d4e0d15c3eb}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!clientAuthorityCallback@{clientAuthorityCallback}}
+\index{clientAuthorityCallback@{clientAuthorityCallback}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{clientAuthorityCallback}{clientAuthorityCallback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_identity_a4076c05b5ecb2e24b8e8005db6452e9c}{Client\+Authority\+Callback}} Mirror.\+Network\+Identity.\+client\+Authority\+Callback\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A callback that can be populated to be notified when the client-\/authority state of objects changes. 
+
+Whenever an object is spawned with client authority, or the client authority status of an object is changed with Assign\+Client\+Authority or Remove\+Client\+Authority, then this callback will be invoked.
+
+This callback is only invoked on the server.\mbox{\Hypertarget{class_mirror_1_1_network_identity_a7224507781dad1ac9cb724242cf3a653}\label{class_mirror_1_1_network_identity_a7224507781dad1ac9cb724242cf3a653}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!isLocalPlayer@{isLocalPlayer}}
+\index{isLocalPlayer@{isLocalPlayer}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{isLocalPlayer}{isLocalPlayer}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+is\+Local\+Player =$>$ Client\+Scene.\+local\+Player == this}
+
+
+
+This returns true if this object is the one that represents the player on the local machine. 
+
+This is set when the server has spawned an object for this particular client.\mbox{\Hypertarget{class_mirror_1_1_network_identity_a573f662e1862d93da6a3560dc2c88e0e}\label{class_mirror_1_1_network_identity_a573f662e1862d93da6a3560dc2c88e0e}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!observers@{observers}}
+\index{observers@{observers}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{observers}{observers}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}$>$ Mirror.\+Network\+Identity.\+observers}
+
+
+
+The set of network connections (players) that can see this object. 
+
+null until On\+Start\+Server was called. this is necessary for Send\+To$\ast$ to work properly in server-\/only mode.\mbox{\Hypertarget{class_mirror_1_1_network_identity_a6caca6959f052d106e135e049e5a0fe6}\label{class_mirror_1_1_network_identity_a6caca6959f052d106e135e049e5a0fe6}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!sceneId@{sceneId}}
+\index{sceneId@{sceneId}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{sceneId}{sceneId}}
+{\footnotesize\ttfamily ulong Mirror.\+Network\+Identity.\+scene\+Id}
+
+
+
+A unique identifier for \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} objects within a scene. 
+
+This is used for spawning scene objects on clients.\mbox{\Hypertarget{class_mirror_1_1_network_identity_a2b90032cea75219737de4aab7ac8ecc6}\label{class_mirror_1_1_network_identity_a2b90032cea75219737de4aab7ac8ecc6}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!serverOnly@{serverOnly}}
+\index{serverOnly@{serverOnly}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{serverOnly}{serverOnly}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+server\+Only}
+
+
+
+\mbox{\hyperlink{class_flag}{Flag}} to make this object only exist when the game is running as a server (or host). 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a4662e6bf04cd7dc767bc906437ea1c4a}\label{class_mirror_1_1_network_identity_a4662e6bf04cd7dc767bc906437ea1c4a}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!spawned@{spawned}}
+\index{spawned@{spawned}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{spawned}{spawned}}
+{\footnotesize\ttfamily readonly Dictionary$<$uint, \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$ Mirror.\+Network\+Identity.\+spawned = new Dictionary$<$uint, \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+All spawned Network\+Identities by net\+Id. Available on server and client. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_ad2383a3fcbb4cb4cb1b020f0a6638708}\label{class_mirror_1_1_network_identity_ad2383a3fcbb4cb4cb1b020f0a6638708}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!assetId@{assetId}}
+\index{assetId@{assetId}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{assetId}{assetId}}
+{\footnotesize\ttfamily Guid?? Mirror.\+Network\+Identity.\+asset\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Unique identifier used to find the source assets when server spawns the on clients. 
+
+The Asset\+Id trick\+: 
+\begin{DoxyItemize}
+\item Ideally we would have a serialized \textquotesingle{}Guid m\+\_\+\+Asset\+Id\textquotesingle{} but Unity can\textquotesingle{}t serialize it because Guid\textquotesingle{}s internal bytes are private  
+\item U\+N\+ET used \textquotesingle{}Network\+Hash128\textquotesingle{} originally, with byte0, ..., byte16 which works, but it just unnecessary extra code  
+\item Using just the Guid string would work, but it\textquotesingle{}s 32 chars long and would then be sent over the network as 64 instead of 16 bytes  
+\end{DoxyItemize}The solution is to serialize the string internally here and then use the real \textquotesingle{}Guid\textquotesingle{} type for everything else via .asset\+Id \mbox{\Hypertarget{class_mirror_1_1_network_identity_a2c3c6ec4b03d4d8212a478fe0877f638}\label{class_mirror_1_1_network_identity_a2c3c6ec4b03d4d8212a478fe0877f638}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!connectionToClient@{connectionToClient}}
+\index{connectionToClient@{connectionToClient}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{connectionToClient}{connectionToClient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_connection_to_client}{Network\+Connection\+To\+Client}}? Mirror.\+Network\+Identity.\+connection\+To\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is valid for player and other owned objects in the server. 
+
+Use it to return details such as the connection\textquotesingle{}s identity, IP address and ready status.\mbox{\Hypertarget{class_mirror_1_1_network_identity_afddec2dc92f3f98b1755937d9fd1430e}\label{class_mirror_1_1_network_identity_afddec2dc92f3f98b1755937d9fd1430e}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!connectionToServer@{connectionToServer}}
+\index{connectionToServer@{connectionToServer}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{connectionToServer}{connectionToServer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} Mirror.\+Network\+Identity.\+connection\+To\+Server\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}}. This is only valid for player objects on a local client. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}\label{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!hasAuthority@{hasAuthority}}
+\index{hasAuthority@{hasAuthority}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{hasAuthority}{hasAuthority}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+has\+Authority\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This returns true if this object is the authoritative player object on the client. 
+
+This value is determined at runtime. For most objects, authority is held by the server.
+
+For objects that had their authority set by Assign\+Client\+Authority on the server, this will be true on the client that owns the object. N\+OT on other clients.\mbox{\Hypertarget{class_mirror_1_1_network_identity_a0a3bb71dd8fc37492957fe1bdbb7955e}\label{class_mirror_1_1_network_identity_a0a3bb71dd8fc37492957fe1bdbb7955e}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!isClient@{isClient}}
+\index{isClient@{isClient}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{isClient}{isClient}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+is\+Client\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Returns true if running as a client and this object was spawned by a server. 
+
+{\bfseries{I\+M\+P\+O\+R\+T\+A\+NT\+:}} checking Network\+Client.\+active means that is\+Client is false in On\+Destroy\+: 
+
+{\ttfamily  public bool is\+Client =$>$ Network\+Client.\+active \&\& net\+Id != 0 \&\& !server\+Only; } 
+
+but we need it in On\+Destroy, e.\+g. when saving skillbars on quit. this works fine if we keep the U\+N\+ET way of setting is\+Client manually. 
+
+=$>$ fixes  \mbox{\Hypertarget{class_mirror_1_1_network_identity_a45b20df7d45211189befe124e3836f3c}\label{class_mirror_1_1_network_identity_a45b20df7d45211189befe124e3836f3c}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!isServer@{isServer}}
+\index{isServer@{isServer}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{isServer}{isServer}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Identity.\+is\+Server\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Returns true if Network\+Server.\+active and server is not stopped. 
+
+{\bfseries{I\+M\+P\+O\+R\+T\+A\+NT\+:}} checking Network\+Server.\+active means that is\+Server is false in On\+Destroy\+: 
+
+{\ttfamily  public bool is\+Server =$>$ Network\+Server.\+active \&\& net\+Id != 0; } 
+
+but we need it in On\+Destroy, e.\+g. when saving players on quit. this works fine if we keep the U\+N\+ET way of setting is\+Server manually. 
+
+=$>$ fixes  \mbox{\Hypertarget{class_mirror_1_1_network_identity_a3752b290380dc9ec029ddd86af8dc206}\label{class_mirror_1_1_network_identity_a3752b290380dc9ec029ddd86af8dc206}} 
+\index{Mirror.NetworkIdentity@{Mirror.NetworkIdentity}!netId@{netId}}
+\index{netId@{netId}!Mirror.NetworkIdentity@{Mirror.NetworkIdentity}}
+\doxysubsubsection{\texorpdfstring{netId}{netId}}
+{\footnotesize\ttfamily uint Mirror.\+Network\+Identity.\+net\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Unique identifier for this particular object instance, used for tracking objects between networked clients and the server. 
+
+This is a unique identifier for this particular Game\+Object instance. Use it to track Game\+Objects between networked clients and the server.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Identity.\+cs\end{DoxyCompactItemize}

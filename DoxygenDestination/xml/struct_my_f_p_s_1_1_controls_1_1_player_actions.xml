@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_my_f_p_s_1_1_controls_1_1_player_actions" kind="struct" language="C#" prot="public">
+    <compoundname>MyFPS::Controls::PlayerActions</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a8bc5704adff044514998433f9c225d06" prot="private" static="no" mutable="no">
+        <type><ref refid="class_my_f_p_s_1_1_controls" kindref="compound">Controls</ref></type>
+        <definition>Controls MyFPS.Controls.PlayerActions.m_Wrapper</definition>
+        <argsstring></argsstring>
+        <name>m_Wrapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1040" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a9fb1128690c4e31c30e87302c795e9da" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Move</definition>
+        <argsstring></argsstring>
+        <name>Move</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Move</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1042" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ac9b96cca932070d890e0fcfd434868ba" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Look</definition>
+        <argsstring></argsstring>
+        <name>Look</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Look</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1043" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1043" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a031740ccba775997b4734cc74728fdf2" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Fire</definition>
+        <argsstring></argsstring>
+        <name>Fire</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Fire</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1044" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a58402f12ae6962628a6c2c0d93f7d3de" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Reload</definition>
+        <argsstring></argsstring>
+        <name>Reload</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Reload</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1045" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1045" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1adefa69b7b909e7423af9b403eb9232cc" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Jump</definition>
+        <argsstring></argsstring>
+        <name>Jump</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Jump</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1046" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1046" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a050efad8aa8f5f66cf54e6db89dac0a7" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.SwapWeapon</definition>
+        <argsstring></argsstring>
+        <name>SwapWeapon</name>
+        <initializer>=&gt; m_Wrapper.m_Player_SwapWeapon</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1047" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1047" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1abf698437954add6fc68beb1af43055f4" prot="public" static="no" mutable="no">
+        <type>InputAction</type>
+        <definition>InputAction MyFPS.Controls.PlayerActions.Escape</definition>
+        <argsstring></argsstring>
+        <name>Escape</name>
+        <initializer>=&gt; m_Wrapper.m_Player_Escape</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1048" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1048" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ad957b0ab845e8b9ff87604b098dc56e2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MyFPS.Controls.PlayerActions.enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <initializer>=&gt; Get().enabled</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1052" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1052" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a76fb9e1b26011878b2f695b4e314212e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MyFPS.Controls.PlayerActions.PlayerActions</definition>
+        <argsstring>(@Controls wrapper)</argsstring>
+        <name>PlayerActions</name>
+        <param>
+          <type>@<ref refid="class_my_f_p_s_1_1_controls" kindref="compound">Controls</ref></type>
+          <declname>wrapper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1041" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1041" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ab7824ba97122dcaa4d3c9df88454aeb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputActionMap</type>
+        <definition>InputActionMap MyFPS.Controls.PlayerActions.Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1049" column="35" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1049" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a57eeea45cd6574f8d86b317f0b3aeae7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.PlayerActions.Enable</definition>
+        <argsstring>()</argsstring>
+        <name>Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1050" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1050" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a07255630401a1a26f0ef8dccf022986d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.PlayerActions.Disable</definition>
+        <argsstring>()</argsstring>
+        <name>Disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1051" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1051" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a1685cb90b2e90b405a2efcf3ac98c97b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Controls.PlayerActions.SetCallbacks</definition>
+        <argsstring>(IPlayerActions instance)</argsstring>
+        <name>SetCallbacks</name>
+        <param>
+          <type><ref refid="interface_my_f_p_s_1_1_controls_1_1_i_player_actions" kindref="compound">IPlayerActions</ref></type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1054" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1054" bodyend="1105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ad2eda3be91786010de586c739bbf49e1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>implicit</type>
+        <definition>static implicit MyFPS.Controls.PlayerActions.operator InputActionMap</definition>
+        <argsstring>(PlayerActions set)</argsstring>
+        <name>operator InputActionMap</name>
+        <param>
+          <type><ref refid="struct_my_f_p_s_1_1_controls_1_1_player_actions" kindref="compound">PlayerActions</ref></type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1053" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1053" bodyend="1053"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" line="1038" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Input/Mt FPS.cs" bodystart="1039" bodyend="1106"/>
+    <listofallmembers>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a07255630401a1a26f0ef8dccf022986d" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Disable</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a57eeea45cd6574f8d86b317f0b3aeae7" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Enable</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ad957b0ab845e8b9ff87604b098dc56e2" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>enabled</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1abf698437954add6fc68beb1af43055f4" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Escape</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a031740ccba775997b4734cc74728fdf2" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Fire</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ab7824ba97122dcaa4d3c9df88454aeb5" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Get</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1adefa69b7b909e7423af9b403eb9232cc" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Jump</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ac9b96cca932070d890e0fcfd434868ba" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Look</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a8bc5704adff044514998433f9c225d06" prot="private" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>m_Wrapper</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a9fb1128690c4e31c30e87302c795e9da" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Move</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1ad2eda3be91786010de586c739bbf49e1" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>operator InputActionMap</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a76fb9e1b26011878b2f695b4e314212e" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>PlayerActions</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a58402f12ae6962628a6c2c0d93f7d3de" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>Reload</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a1685cb90b2e90b405a2efcf3ac98c97b" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>SetCallbacks</name></member>
+      <member refid="struct_my_f_p_s_1_1_controls_1_1_player_actions_1a050efad8aa8f5f66cf54e6db89dac0a7" prot="public" virt="non-virtual"><scope>MyFPS::Controls::PlayerActions</scope><name>SwapWeapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

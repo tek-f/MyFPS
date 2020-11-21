@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_4bddc5f608a8e99d60971d9ac21e1413" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks</compoundname>
+    <innerdir refid="dir_7195126c7dfd919b35d0d1d3a4296741">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Models</innerdir>
+    <innerdir refid="dir_74c73bc1be379a802cb2101b3510ecf4">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Scripts</innerdir>
+    <innerdir refid="dir_8711e28bf500f04b87571109f40fe740">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/Textures</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Tanks/"/>
+  </compounddef>
+</doxygen>

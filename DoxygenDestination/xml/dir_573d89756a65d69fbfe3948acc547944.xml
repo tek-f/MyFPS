@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_573d89756a65d69fbfe3948acc547944" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts</compoundname>
+    <innerdir refid="dir_177f051b880b9596476f18254cf1e17d">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Bullet</innerdir>
+    <innerdir refid="dir_14e02250f370b28be3245609c1947966">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Casings_&amp;_Projectiles</innerdir>
+    <innerdir refid="dir_1ec672f1464914fb073c429dcb9a7c49">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Explosions_&amp;_Impacts</innerdir>
+    <innerdir refid="dir_7c7c7c8b2ce32bb81f16963bfbd5d300">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController</innerdir>
+    <innerdir refid="dir_3812dfa108b903a7bb27edc1ee54f4bd">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Misc</innerdir>
+    <innerdir refid="dir_2c02e74354ccf19a0636304e97bc8be6">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/"/>
+  </compounddef>
+</doxygen>

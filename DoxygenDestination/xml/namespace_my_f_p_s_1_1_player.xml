@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_my_f_p_s_1_1_player" kind="namespace" language="C#">
+    <compoundname>MyFPS::Player</compoundname>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_first_person_controller" prot="public">MyFPS::Player::FirstPersonController</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_gun" prot="public">MyFPS::Player::Gun</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_player_death" prot="public">MyFPS::Player::PlayerDeath</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_player_handler" prot="public">MyFPS::Player::PlayerHandler</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_player_respawn" prot="public">MyFPS::Player::PlayerRespawn</innerclass>
+    <innerclass refid="class_my_f_p_s_1_1_player_1_1_weapon" prot="public">MyFPS::Player::Weapon</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Player/FirstPersonController.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

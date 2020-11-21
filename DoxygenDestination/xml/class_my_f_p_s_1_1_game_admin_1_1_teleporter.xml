@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_game_admin_1_1_teleporter" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::GameAdmin::Teleporter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1a6ebfa1b8b329cda30dbd32cf1c4bbf1e" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform MyFPS.GameAdmin.Teleporter.teleportPoint</definition>
+        <argsstring></argsstring>
+        <name>teleportPoint</name>
+        <briefdescription>
+<para>Transform of an object that marks the exit point of the teleporter. Is used in Teleport. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" line="13" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1aa7ac25f6333c739cb73ac8552bc512c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.GameAdmin.Teleporter.Teleport</definition>
+        <argsstring>(Transform _player)</argsstring>
+        <name>Teleport</name>
+        <param>
+          <type>Transform</type>
+          <declname>_player</declname>
+        </param>
+        <briefdescription>
+<para>Teleports _player to the position of teleportPoint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transform of the player that is being teleported</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" line="18" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1aee41a2163210d0b34aef3573a5f776ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.GameAdmin.Teleporter.OnTriggerEnter</definition>
+        <argsstring>(Collider other)</argsstring>
+        <name>OnTriggerEnter</name>
+        <param>
+          <type>Collider</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" line="24" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MyFPS.GameAdmin.Teleporter</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_teleporter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MyFPS.GameAdmin.Teleporter</label>
+        <link refid="class_my_f_p_s_1_1_game_admin_1_1_teleporter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" line="8" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Game/Teleporter.cs" bodystart="9" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1aee41a2163210d0b34aef3573a5f776ba" prot="private" virt="non-virtual"><scope>MyFPS::GameAdmin::Teleporter</scope><name>OnTriggerEnter</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1aa7ac25f6333c739cb73ac8552bc512c5" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::Teleporter</scope><name>Teleport</name></member>
+      <member refid="class_my_f_p_s_1_1_game_admin_1_1_teleporter_1a6ebfa1b8b329cda30dbd32cf1c4bbf1e" prot="public" virt="non-virtual"><scope>MyFPS::GameAdmin::Teleporter</scope><name>teleportPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

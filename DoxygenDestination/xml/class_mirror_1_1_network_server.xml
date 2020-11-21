@@ -1,0 +1,2226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_server" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkServer</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a78b80b4c20d4bc090d79d279bba5025c" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.NetworkServer.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger(typeof(NetworkServer))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="21" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a5001481b02101522cdd791491bd44913" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkServer.initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="23" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a819198e4b8c736df3f716204fdebd0fe" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.NetworkServer.maxConnections</definition>
+        <argsstring></argsstring>
+        <name>maxConnections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="24" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a6657f4e41dfdb38fe256f5effc32eaa8" prot="private" static="yes" mutable="no">
+        <type>Dictionary&lt; int, NetworkMessageDelegate &gt;</type>
+        <definition>Dictionary&lt;int, NetworkMessageDelegate&gt; Mirror.NetworkServer.handlers</definition>
+        <argsstring></argsstring>
+        <name>handlers</name>
+        <initializer>= new Dictionary&lt;int, NetworkMessageDelegate&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dictionary of the message handlers registered with the server.</para>
+<para>The key to the dictionary is the message Id.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="46" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a1093864717dcb5a95cb8e45c3f5727c3" prot="private" static="yes" mutable="no">
+        <type>readonly List&lt; int &gt;</type>
+        <definition>readonly List&lt;int&gt; Mirror.NetworkServer.connectionIdsCache</definition>
+        <argsstring></argsstring>
+        <name>connectionIdsCache</name>
+        <initializer>= new List&lt;int&gt;()</initializer>
+        <briefdescription>
+<para>cache the Send(connectionIds) list to avoid allocating each time </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="78" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_network_server_1a7d121fcd4b2e590a89ac23c2eb8603de" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+        <definition>NetworkConnectionToClient Mirror.NetworkServer.localConnection</definition>
+        <argsstring></argsstring>
+        <name>localConnection</name>
+        <briefdescription>
+<para>The connection to the host mode client (if any). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="29" column="49" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mirror_1_1_network_server_1aac800958d6bb69475a0d079536e4376e" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkServer.active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if the server has been started.</para>
+<para>This will be true after NetworkServer.Listen() has been called.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="58" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a9a45d4c87aef825c7d5c2e2a0181cf46" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkServer.localClientActive</definition>
+        <argsstring></argsstring>
+        <name>localClientActive</name>
+        <initializer>=&gt; localConnection != null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>True is a local client is currently active on the server.</para>
+<para>This will be true for &quot;Hosts&quot; on hosted server games.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="35" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a6244da8078ee49034cea1b68a268496f" prot="public" static="yes" mutable="no">
+        <type>Dictionary&lt; int, <ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref> &gt;</type>
+        <definition>Dictionary&lt;int, NetworkConnectionToClient&gt; Mirror.NetworkServer.connections</definition>
+        <argsstring></argsstring>
+        <name>connections</name>
+        <initializer>= new Dictionary&lt;int, <ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref>&gt;()</initializer>
+        <briefdescription>
+<para>A list of local connections on the server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="40" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1add7cba271b895eec862f134c9739456d" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkServer.dontListen</definition>
+        <argsstring></argsstring>
+        <name>dontListen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If you enable this, the server will not listen for incoming connections on the regular network port.</para>
+<para>This can be used if the game is running in host mode and does not want external players to be able to connect - making it like a single-player game. Also this can be useful when using AddExternalConnection().</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="52" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a10b28ee652cd17d8fa2ef60a5129717f" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.NetworkServer.disconnectInactiveConnections</definition>
+        <argsstring></argsstring>
+        <name>disconnectInactiveConnections</name>
+        <briefdescription>
+<para>Should the server disconnect remote connections that have gone silent for more than Server Idle Timeout? </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This value is initially set from <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> in SetupServer and can be changed at runtime</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="64" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_server_1a56866c803521b4fbbd08d622cfbf7df2" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.NetworkServer.disconnectInactiveTimeout</definition>
+        <argsstring></argsstring>
+        <name>disconnectInactiveTimeout</name>
+        <initializer>= 60f</initializer>
+        <briefdescription>
+<para>Timeout in seconds since last message from a client after which server will auto-disconnect. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This value is initially set from <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> in SetupServer and can be changed at runtime</para>
+<para>By default, clients send at least a Ping message every 2 seconds.</para>
+<para>The Host client is immune from idle timeout disconnection.</para>
+<para>Default value is 60 seconds.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="73" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1aca2286e9daf8e5a54d2ecb65790e1666" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Reset the NetworkServer singleton. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated 02/23/2020</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="85" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1af1d46fe11c7e844c54409400ab5a5aa3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <briefdescription>
+<para>This shuts down the server and disconnects all clients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="93" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="93" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a8bc2ab2393b5d986623cd2a606d2b504" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Listen</definition>
+        <argsstring>(int maxConns)</argsstring>
+        <name>Listen</name>
+        <param>
+          <type>int</type>
+          <declname>maxConns</declname>
+        </param>
+        <briefdescription>
+<para>Start the server, setting the maximum number of connections. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxConns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of allowed connections</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="173" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="173" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a5df582026a35af62f2408826dea8b8d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.AddConnection</definition>
+        <argsstring>(NetworkConnectionToClient conn)</argsstring>
+        <name>AddConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This accepts a network connection and adds it to the server.</para>
+<para>This connection will use the callbacks registered with the server.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network connection to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if added.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="195" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="195" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a0aefbad1961ca39c1fb37fae6c9c543d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.RemoveConnection</definition>
+        <argsstring>(int connectionId)</argsstring>
+        <name>RemoveConnection</name>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <briefdescription>
+<para>This removes an external connection added with AddExternalConnection(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connectionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the connection to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the removal succeeded</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="214" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a7b755418608f926935fc1ba7e3b75cc3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.ActivateHostScene</definition>
+        <argsstring>()</argsstring>
+        <name>ActivateHostScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="245" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="245" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a7fea0e383a2fda1fcbeccdfcbfb92e18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.SendToAll&lt; T &gt;</definition>
+        <argsstring>(T msg, int channelId=Channels.DefaultReliable, bool sendToReadyOnly=false)</argsstring>
+        <name>SendToAll&lt; T &gt;</name>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+          <defval>Channels.DefaultReliable</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToReadyOnly</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Send a message to all connected clients, both ready and not-ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_mirror_1_1_network_connection_1a94362bc21882fa2d34df1235d706b1f7" kindref="member">NetworkConnection.isReady</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref> channel to use</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToReadyOnly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates if only ready clients should receive the message</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="314" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="314" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1ae3dd36553b726500b9395c52d2f4a97f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.SendToReady&lt; T &gt;</definition>
+        <argsstring>(T msg, int channelId=Channels.DefaultReliable)</argsstring>
+        <name>SendToReady&lt; T &gt;</name>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+          <defval>Channels.DefaultReliable</defval>
+        </param>
+        <briefdescription>
+<para>Send a message to only clients which are ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_mirror_1_1_network_connection_1a94362bc21882fa2d34df1235d706b1f7" kindref="member">NetworkConnection.isReady</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref> channel to use</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="372" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="372" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a13395776b8c6d750cafa06268de72e8d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.SendToReady&lt; T &gt;</definition>
+        <argsstring>(NetworkIdentity identity, T msg, bool includeOwner=true, int channelId=Channels.DefaultReliable)</argsstring>
+        <name>SendToReady&lt; T &gt;</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>includeOwner</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+          <defval>Channels.DefaultReliable</defval>
+        </param>
+        <briefdescription>
+<para>Send a message to only clients which are ready with option to include the owner of the object identity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_mirror_1_1_network_connection_1a94362bc21882fa2d34df1235d706b1f7" kindref="member">NetworkConnection.isReady</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identity of the owner</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>includeOwner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should the owner of the object be included</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref> channel to use</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="393" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="393" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1abcbe51b4bc5158d0b1052e846434d19b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.SendToReady&lt; T &gt;</definition>
+        <argsstring>(NetworkIdentity identity, T msg, int channelId)</argsstring>
+        <name>SendToReady&lt; T &gt;</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to only clients which are ready including the owner of the object identity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="class_mirror_1_1_network_connection_1a94362bc21882fa2d34df1235d706b1f7" kindref="member">NetworkConnection.isReady</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identity of the object</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref> channel to use</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="451" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1abc6918514ab8a111ad24d03156b1157b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.DisconnectAll</definition>
+        <argsstring>()</argsstring>
+        <name>DisconnectAll</name>
+        <briefdescription>
+<para>Disconnect all currently connected clients, including the local connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can only be called on the server. Clients will receive the Disconnect message.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="460" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="460" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a2220b62602424c657784b059f8188b7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.DisconnectAllConnections</definition>
+        <argsstring>()</argsstring>
+        <name>DisconnectAllConnections</name>
+        <briefdescription>
+<para>Disconnect all currently connected clients except the local connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can only be called on the server. Clients will receive the Disconnect message.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="472" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="472" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a8f5cc89b9769a178a46c3ab203574777" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.NoConnections</definition>
+        <argsstring>()</argsstring>
+        <name>NoConnections</name>
+        <briefdescription>
+<para>If connections is empty or if only has host </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="489" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="489" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1ac2cbaa84717e671c62ee551284e50e14" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+<para>Called from <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> in LateUpdate </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The user should never need to pump the update loop manually</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="498" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="498" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1afeae688d1ea5e3bb875da73cd2e99160" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.RegisterHandler&lt; T &gt;</definition>
+        <argsstring>(Action&lt; NetworkConnection, T &gt; handler, bool requireAuthentication=true)</argsstring>
+        <name>RegisterHandler&lt; T &gt;</name>
+        <param>
+          <type>Action&lt; <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref>, T &gt;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requireAuthentication</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Register a handler for a particular message type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>There are several system message types which you can add handlers for. You can also add your own message types.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler which will be invoked when this message type is received.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requireAuthentication</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the message requires an authenticated connection</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="628" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="628" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a6129613842917e6db340b167815f0aff" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.RegisterHandler&lt; T &gt;</definition>
+        <argsstring>(Action&lt; T &gt; handler, bool requireAuthentication=true)</argsstring>
+        <name>RegisterHandler&lt; T &gt;</name>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requireAuthentication</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Register a handler for a particular message type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>There are several system message types which you can add handlers for. You can also add your own message types.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler which will be invoked when this message type is received.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requireAuthentication</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the message requires an authenticated connection</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="645" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="645" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1aff47615e4f8e13b4739834c1c2b4ce72" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.ReplaceHandler&lt; T &gt;</definition>
+        <argsstring>(Action&lt; NetworkConnection, T &gt; handler, bool requireAuthentication=true)</argsstring>
+        <name>ReplaceHandler&lt; T &gt;</name>
+        <param>
+          <type>Action&lt; <ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref>, T &gt;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requireAuthentication</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Replaces a handler for a particular message type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See also <ref refid="" kindref="compound">RegisterHandler(T)(Action(NetworkConnection, T), bool)</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler which will be invoked when this message type is received.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requireAuthentication</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the message requires an authenticated connection</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="657" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="657" bodyend="661"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a76440c603ef0a27d17e91fc4787d29ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.ReplaceHandler&lt; T &gt;</definition>
+        <argsstring>(Action&lt; T &gt; handler, bool requireAuthentication=true)</argsstring>
+        <name>ReplaceHandler&lt; T &gt;</name>
+        <param>
+          <type>Action&lt; T &gt;</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>requireAuthentication</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Replaces a handler for a particular message type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See also <ref refid="" kindref="compound">RegisterHandler(T)(Action(NetworkConnection, T), bool)</ref></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler which will be invoked when this message type is received.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>requireAuthentication</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the message requires an authenticated connection</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="670" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="670" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a52d6d1f87ca3c615051c81cae8d33184" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.UnregisterHandler&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterHandler&lt; T &gt;</name>
+        <briefdescription>
+<para>Unregisters a handler for a particular message type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="679" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="679" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a93d280c76c8c52e746ab3c20a68737c2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.ClearHandlers</definition>
+        <argsstring>()</argsstring>
+        <name>ClearHandlers</name>
+        <briefdescription>
+<para>Clear all registered callback handlers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="688" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="688" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a43bbfa929a55ddf8d42b215a6d5ad4d9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SendToClientOfPlayer&lt; T &gt;</definition>
+        <argsstring>(NetworkIdentity identity, T msg, int channelId=Channels.DefaultReliable)</argsstring>
+        <name>SendToClientOfPlayer&lt; T &gt;</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+          <defval>Channels.DefaultReliable</defval>
+        </param>
+        <briefdescription>
+<para>send this message to the player only </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identity</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="699" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="699" bodyend="709"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a352021a44054bffdc7498e252b377d28" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.ReplacePlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, GameObject player, Guid assetId, bool keepAuthority=false)</argsstring>
+        <name>ReplacePlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>Guid</type>
+          <declname>assetId</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepAuthority</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>This replaces the player object for a connection with a different player object. The old player object is not destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a connection already has a player object, this can be used to replace that object with a different player object. This does NOT change the ready state of the connection, so it can safely be used while changing scenes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection which is adding the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player object spawned for the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assetId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keepAuthority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Does the previous player remain attached to this connection?</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if connection was successfully replaced for player.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="720" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="720" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a26ac998eba619aede15486d5bbab635e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.ReplacePlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, GameObject player, bool keepAuthority=false)</argsstring>
+        <name>ReplacePlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepAuthority</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>This replaces the player object for a connection with a different player object. The old player object is not destroyed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a connection already has a player object, this can be used to replace that object with a different player object. This does NOT change the ready state of the connection, so it can safely be used while changing scenes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection which is adding the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player object spawned for the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keepAuthority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Does the previous player remain attached to this connection?</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if connection was successfully replaced for player.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="737" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="737" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a74f2c1e358ab3e1f039c1acd0879fd15" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.AddPlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, GameObject player, Guid assetId)</argsstring>
+        <name>AddPlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>Guid</type>
+          <declname>assetId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When an AddPlayer message handler has received a request from a player, the server calls this to associate the player object with the connection.</para>
+<para>When a player is added for a connection, the client for that connection is made ready automatically. The player object is automatically spawned, so you do not need to call NetworkServer.Spawn for that object. This function is used for &quot;adding&quot; a player, not for &quot;replacing&quot; the player on a connection. If there is already a player on this playerControllerId for this connection, this will fail.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection which is adding the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player object spawned for the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assetId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if connection was sucessfully added for a connection.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="750" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="750" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1afe8edb57fa6d8581e452d4a8e1422201" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.AddPlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, GameObject player)</argsstring>
+        <name>AddPlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When an AddPlayer message handler has received a request from a player, the server calls this to associate the player object with the connection.</para>
+<para>When a player is added for a connection, the client for that connection is made ready automatically. The player object is automatically spawned, so you do not need to call NetworkServer.Spawn for that object. This function is used for &quot;adding&quot; a player, not for &quot;replacing&quot; the player on a connection. If there is already a player on this playerControllerId for this connection, this will fail.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Connection which is adding the player.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Player object spawned for the player.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if connection was successfully added for a connection.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="803" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="803" bodyend="840"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a96c0898b0b463bf1d3464dbf96f27ec3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SetClientReady</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>SetClientReady</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Sets the client to be ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When a client has signaled that it is ready, this method tells the server that the client is ready to receive spawned objects and state synchronization updates. This is usually called in a handler for the SYSTEM_READY message. If there is not specific action a game needs to take for this message, relying on the default ready handler function is probably fine, so this call wont be needed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection of the client to make ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="921" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="921" bodyend="931"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1af6f31f97b78581386b0087a825583464" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SetAllClientsNotReady</definition>
+        <argsstring>()</argsstring>
+        <name>SetAllClientsNotReady</name>
+        <briefdescription>
+<para>Marks all connected clients as no longer ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All clients will no longer be sent state synchronization updates. The player&apos;s clients can call ClientManager.Ready() again to re-enter the ready state. This is useful when switching scenes.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="952" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="952" bodyend="958"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a4d781060ff26a7961f76ea8b42a8cb15" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SetClientNotReady</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>SetClientNotReady</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>Sets the client of the connection to be not-ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clients that are not ready do not receive spawned objects or state synchronization updates. They client can be made ready again by calling SetClientReady().</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection of the client to make not ready.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="965" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="965" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a7fa47f1378590ce08d3e0c56b33f2c11" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.RemovePlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, bool destroyServerObject)</argsstring>
+        <name>RemovePlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>destroyServerObject</declname>
+        </param>
+        <briefdescription>
+<para>Removes the player object from the connection </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection of the client to remove from</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destroyServerObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether the server object should be destroyed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1000" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1000" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a993e37e6ee64ec648237bb63e5f136c9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.DestroyPlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>DestroyPlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>This destroys all the player objects associated with a NetworkConnections on a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used when a client disconnects, to remove the players for that client. This also destroys non-player objects that have client authority set for this connection.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connections object to clean up for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1148" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1148" bodyend="1153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a57b059c615e4f002a3004fde481659df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Spawn</definition>
+        <argsstring>(GameObject obj, NetworkConnection ownerConnection=null)</argsstring>
+        <name>Spawn</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>ownerConnection</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Spawn the given game object on all clients which are ready. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will cause a new object to be instantiated from the registered prefab, or from a custom spawn function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Game object with <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> to spawn.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ownerConnection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that has authority over the object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1161" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1161" bodyend="1167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1ab6229c7b89a5b624f773905bf459262e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Spawn</definition>
+        <argsstring>(GameObject obj, GameObject ownerPlayer)</argsstring>
+        <name>Spawn</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>ownerPlayer</declname>
+        </param>
+        <briefdescription>
+<para>This spawns an object like NetworkServer.Spawn() but also assigns Client Authority to the specified client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the same as calling <ref refid="class_mirror_1_1_network_identity_1a2bf39f8adcbc4aa9b5e105d741ff4aa6" kindref="member">NetworkIdentity.AssignClientAuthority</ref> on the spawned object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to spawn.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ownerPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player object to set Client Authority to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1175" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1175" bodyend="1191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a6312ae8d0c52d6d219ae6524bb04fce2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Spawn</definition>
+        <argsstring>(GameObject obj, Guid assetId, NetworkConnection ownerConnection=null)</argsstring>
+        <name>Spawn</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Guid</type>
+          <declname>assetId</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>ownerConnection</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>This spawns an object like NetworkServer.Spawn() but also assigns Client Authority to the specified client. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the same as calling <ref refid="class_mirror_1_1_network_identity_1a2bf39f8adcbc4aa9b5e105d741ff4aa6" kindref="member">NetworkIdentity.AssignClientAuthority</ref> on the spawned object.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to spawn.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>assetId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The assetId of the object to spawn. Used for custom spawn handlers.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ownerConnection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The connection that has authority over the object</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1200" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1200" bodyend="1210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1ad4684e25cc60e23da63603423831c3f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Destroy</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Destroy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Destroys this object and corresponding objects on all clients. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In some cases it is useful to remove an object but not delete it on the server. For that, use NetworkServer.UnSpawn() instead of NetworkServer.Destroy().</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Game object to destroy.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1278" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1278" bodyend="1290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a7eee64bb7db217d4966b3bb961292538" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.UnSpawn</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>UnSpawn</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>This takes an object that has been spawned and un-spawns it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The object will be removed from clients that it was spawned on, or the custom spawn handler function on the client will be called for the object.</para>
+<para>Unlike when calling NetworkServer.Destroy(), on the server the object will NOT be destroyed. This allows the server to re-use the object, even spawn it again later.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spawned object to be unspawned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1298" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1298" bodyend="1310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a41f9634ca0d88af252aa5fc26a7326aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.SpawnObjects</definition>
+        <argsstring>()</argsstring>
+        <name>SpawnObjects</name>
+        <briefdescription>
+<para>This causes <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> objects in a scene to be spawned on a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref> objects in a scene are disabled by default. Calling SpawnObjects() causes these scene objects to be enabled and spawned. It is like calling NetworkServer.Spawn() for each of them.</para>
+<para><simplesect kind="return"><para>Success if objects where spawned.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1332" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1332" bodyend="1354"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a7060ca365933f32f17fddb6d535546fa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.CleanupNetworkIdentities</definition>
+        <argsstring>()</argsstring>
+        <name>CleanupNetworkIdentities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="123" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="123" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a155c1a5921f5b8241b520f59aae31cb1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="144" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="144" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a352b515d47c3e140d697f9ff9b421be5" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SendToObservers&lt; T &gt;</definition>
+        <argsstring>(NetworkIdentity identity, T msg, int channelId=Channels.DefaultReliable)</argsstring>
+        <name>SendToObservers&lt; T &gt;</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+          <defval>Channels.DefaultReliable</defval>
+        </param>
+        <briefdescription>
+<para>this is like SendToReady - but it doesn&apos;t check the ready flag on the connection. this is used for ObjectDestroy messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>identity</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelId</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="267" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="267" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a97515cceced6c4ff33c6145d23bdf55b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnConnected</definition>
+        <argsstring>(int connectionId)</argsstring>
+        <name>OnConnected</name>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="535" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="535" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a3e61ce18bb599532d1ef8381c0cd6b32" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnDisconnected</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>OnDisconnected</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="597" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="597" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a4a91b2e756f046edf9d0d0c8003f9320" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnDataReceived</definition>
+        <argsstring>(int connectionId, ArraySegment&lt; byte &gt; data, int channelId)</argsstring>
+        <name>OnDataReceived</name>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="603" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="603" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1af13721d51f3cbfa71a1abb2d219bf485" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnError</definition>
+        <argsstring>(int connectionId, Exception exception)</argsstring>
+        <name>OnError</name>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>exception</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="615" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="615" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1aac45e5d2d625dc8bc2262ea8528d2678" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SpawnObserversForConnection</definition>
+        <argsstring>(NetworkConnection conn)</argsstring>
+        <name>SpawnObserversForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="759" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="759" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a5937b4667b0f5c8e84b8d43a86e1a316" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.Respawn</definition>
+        <argsstring>(NetworkIdentity identity)</argsstring>
+        <name>Respawn</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="842" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="842" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a3d43ebf0bb6f42079a2a42c9113788b3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnClientReadyMessage</definition>
+        <argsstring>(NetworkConnection conn, ReadyMessage msg)</argsstring>
+        <name>OnClientReadyMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_mirror_1_1_ready_message" kindref="compound">ReadyMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>default ready handler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="982" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="982" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a64db1d8c664aab9b2fd5e70a27adeb1e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnRemovePlayerMessage</definition>
+        <argsstring>(NetworkConnection conn, RemovePlayerMessage msg)</argsstring>
+        <name>OnRemovePlayerMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_mirror_1_1_remove_player_message" kindref="compound">RemovePlayerMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Obsolete: Removed as a security risk. Use <ref refid="" kindref="compound">NetworkServer.RemovePlayerForConnection</ref> instead. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deprecated 5/2/2020</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="993" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="993" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a463b759662b62d89b1d00aa23047e0bc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnCommandMessage</definition>
+        <argsstring>(NetworkConnection conn, CommandMessage msg)</argsstring>
+        <name>OnCommandMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_mirror_1_1_command_message" kindref="compound">CommandMessage</ref></type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Handle command from specific player, this could be one of multiple players on a single client </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1022" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1022" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a0955410bb10be9ed29d4a2bc1193bf79" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArraySegment&lt; byte &gt;</type>
+        <definition>static ArraySegment&lt;byte&gt; Mirror.NetworkServer.CreateSpawnMessagePayload</definition>
+        <argsstring>(bool isOwner, NetworkIdentity identity, PooledNetworkWriter ownerWriter, PooledNetworkWriter observersWriter)</argsstring>
+        <name>CreateSpawnMessagePayload</name>
+        <param>
+          <type>bool</type>
+          <declname>isOwner</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_pooled_network_writer" kindref="compound">PooledNetworkWriter</ref></type>
+          <declname>ownerWriter</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_pooled_network_writer" kindref="compound">PooledNetworkWriter</ref></type>
+          <declname>observersWriter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1118" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1118" bodyend="1141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1aee08336af0501414198b52cb4158dd90" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.CheckForPrefab</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>CheckForPrefab</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1212" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1212" bodyend="1225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a13d3b4da670b1fd4105f8bb2b7062f88" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.VerifyCanSpawn</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>VerifyCanSpawn</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1227" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1227" bodyend="1236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1aeef7510228d232bc5ffdfe3de46a1620" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.DestroyObject</definition>
+        <argsstring>(NetworkIdentity identity, bool destroyServerObject)</argsstring>
+        <name>DestroyObject</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>destroyServerObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1238" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1238" bodyend="1271"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1ae35d1b0225ab80623bb9f1d1c05eb6e9" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.RegisterMessageHandlers</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterMessageHandlers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="162" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a4cdc43f6f87980254813f37be5a0d9f9" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SetLocalConnection</definition>
+        <argsstring>(ULocalConnectionToClient conn)</argsstring>
+        <name>SetLocalConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_u_local_connection_to_client" kindref="compound">ULocalConnectionToClient</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+<para>called by LocalClient to add itself. dont call directly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>conn</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="223" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="223" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a35988bf599046de9c16ff12498ce044e" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.RemoveLocalConnection</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveLocalConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="234" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="234" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a9b2bcd0691ae30b265ee4dabb0da3f04" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnConnected</definition>
+        <argsstring>(NetworkConnectionToClient conn)</argsstring>
+        <name>OnConnected</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection_to_client" kindref="compound">NetworkConnectionToClient</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="574" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="574" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a5f133b7fcb9e2e1b52f1d23233d1d18f" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.OnDisconnected</definition>
+        <argsstring>(int connectionId)</argsstring>
+        <name>OnDisconnected</name>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="583" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="583" bodyend="595"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a967efbebfc9f59535c3f5ed8f88898a0" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.InternalReplacePlayerForConnection</definition>
+        <argsstring>(NetworkConnection conn, GameObject player, bool keepAuthority)</argsstring>
+        <name>InternalReplacePlayerForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>keepAuthority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="856" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="856" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a69b36aa2734e2cdadd54f8393c77ed8d" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.GetNetworkIdentity</definition>
+        <argsstring>(GameObject go, out NetworkIdentity identity)</argsstring>
+        <name>GetNetworkIdentity</name>
+        <param>
+          <type>GameObject</type>
+          <declname>go</declname>
+        </param>
+        <param>
+          <type>out <ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="905" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="905" bodyend="914"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a84d2715b11994fcd450beb760962c883" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.ShowForConnection</definition>
+        <argsstring>(NetworkIdentity identity, NetworkConnection conn)</argsstring>
+        <name>ShowForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="933" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="933" bodyend="937"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a61dffd582dc35af64226e3585279f0bf" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.HideForConnection</definition>
+        <argsstring>(NetworkIdentity identity, NetworkConnection conn)</argsstring>
+        <name>HideForConnection</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="939" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="939" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a9694d795ce4ec51ad2f0f831eb04823c" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SpawnObject</definition>
+        <argsstring>(GameObject obj, NetworkConnection ownerConnection)</argsstring>
+        <name>SpawnObject</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>ownerConnection</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1048" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1048" bodyend="1082"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a3f8ecf0d98be53dd5a0f2344f9864863" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkServer.SendSpawnMessage</definition>
+        <argsstring>(NetworkIdentity identity, NetworkConnection conn)</argsstring>
+        <name>SendSpawnMessage</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_connection" kindref="compound">NetworkConnection</ref></type>
+          <declname>conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1084" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1084" bodyend="1116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_server_1a0cc7a643654f4be26b3d7c5c0c4cbb6d" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Mirror.NetworkServer.ValidateSceneObject</definition>
+        <argsstring>(NetworkIdentity identity)</argsstring>
+        <name>ValidateSceneObject</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="1312" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="1312" bodyend="1325"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The NetworkServer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>NetworkServer handles remote connections from remote clients via a NetworkServerSimple instance, and also has a local connection for a local client.</para>
+<para>The NetworkServer is a singleton. It has static convenience functions such as NetworkServer.SendToAll() and NetworkServer.Spawn() which automatically use the singleton instance.</para>
+<para>The <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref> uses the NetworkServer, but it can be used without the <ref refid="class_mirror_1_1_network_manager" kindref="compound">NetworkManager</ref>.</para>
+<para>The set of networked objects that have been spawned is managed by NetworkServer. Objects are spawned with NetworkServer.Spawn() which adds them to this set, and makes them be created on clients. Spawned objects are removed automatically when they are destroyed, or than they can be removed from the spawned set by calling NetworkServer.UnSpawn() - this does not destroy the object.</para>
+<para>There are a number of internal messages used by NetworkServer, these are setup when NetworkServer.Listen() is called.</para>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" line="19" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkServer.cs" bodystart="20" bodyend="1355"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_server_1a7b755418608f926935fc1ba7e3b75cc3" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ActivateHostScene</name></member>
+      <member refid="class_mirror_1_1_network_server_1aac800958d6bb69475a0d079536e4376e" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>active</name></member>
+      <member refid="class_mirror_1_1_network_server_1a5df582026a35af62f2408826dea8b8d5" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>AddConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a74f2c1e358ab3e1f039c1acd0879fd15" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>AddPlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1afe8edb57fa6d8581e452d4a8e1422201" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>AddPlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1aee08336af0501414198b52cb4158dd90" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>CheckForPrefab</name></member>
+      <member refid="class_mirror_1_1_network_server_1a7060ca365933f32f17fddb6d535546fa" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>CleanupNetworkIdentities</name></member>
+      <member refid="class_mirror_1_1_network_server_1a93d280c76c8c52e746ab3c20a68737c2" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ClearHandlers</name></member>
+      <member refid="class_mirror_1_1_network_server_1a1093864717dcb5a95cb8e45c3f5727c3" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>connectionIdsCache</name></member>
+      <member refid="class_mirror_1_1_network_server_1a6244da8078ee49034cea1b68a268496f" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>connections</name></member>
+      <member refid="class_mirror_1_1_network_server_1a0955410bb10be9ed29d4a2bc1193bf79" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>CreateSpawnMessagePayload</name></member>
+      <member refid="class_mirror_1_1_network_server_1ad4684e25cc60e23da63603423831c3f7" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Destroy</name></member>
+      <member refid="class_mirror_1_1_network_server_1aeef7510228d232bc5ffdfe3de46a1620" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>DestroyObject</name></member>
+      <member refid="class_mirror_1_1_network_server_1a993e37e6ee64ec648237bb63e5f136c9" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>DestroyPlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1abc6918514ab8a111ad24d03156b1157b" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>DisconnectAll</name></member>
+      <member refid="class_mirror_1_1_network_server_1a2220b62602424c657784b059f8188b7b" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>DisconnectAllConnections</name></member>
+      <member refid="class_mirror_1_1_network_server_1a10b28ee652cd17d8fa2ef60a5129717f" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>disconnectInactiveConnections</name></member>
+      <member refid="class_mirror_1_1_network_server_1a56866c803521b4fbbd08d622cfbf7df2" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>disconnectInactiveTimeout</name></member>
+      <member refid="class_mirror_1_1_network_server_1add7cba271b895eec862f134c9739456d" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>dontListen</name></member>
+      <member refid="class_mirror_1_1_network_server_1a69b36aa2734e2cdadd54f8393c77ed8d" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>GetNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_network_server_1a6657f4e41dfdb38fe256f5effc32eaa8" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>handlers</name></member>
+      <member refid="class_mirror_1_1_network_server_1a61dffd582dc35af64226e3585279f0bf" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>HideForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a155c1a5921f5b8241b520f59aae31cb1" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Initialize</name></member>
+      <member refid="class_mirror_1_1_network_server_1a5001481b02101522cdd791491bd44913" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>initialized</name></member>
+      <member refid="class_mirror_1_1_network_server_1a967efbebfc9f59535c3f5ed8f88898a0" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>InternalReplacePlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a8bc2ab2393b5d986623cd2a606d2b504" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Listen</name></member>
+      <member refid="class_mirror_1_1_network_server_1a9a45d4c87aef825c7d5c2e2a0181cf46" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>localClientActive</name></member>
+      <member refid="class_mirror_1_1_network_server_1a7d121fcd4b2e590a89ac23c2eb8603de" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>localConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a78b80b4c20d4bc090d79d279bba5025c" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_network_server_1a819198e4b8c736df3f716204fdebd0fe" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>maxConnections</name></member>
+      <member refid="class_mirror_1_1_network_server_1a8f5cc89b9769a178a46c3ab203574777" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>NoConnections</name></member>
+      <member refid="class_mirror_1_1_network_server_1a3d43ebf0bb6f42079a2a42c9113788b3" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnClientReadyMessage</name></member>
+      <member refid="class_mirror_1_1_network_server_1a463b759662b62d89b1d00aa23047e0bc" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnCommandMessage</name></member>
+      <member refid="class_mirror_1_1_network_server_1a97515cceced6c4ff33c6145d23bdf55b" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnConnected</name></member>
+      <member refid="class_mirror_1_1_network_server_1a9b2bcd0691ae30b265ee4dabb0da3f04" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnConnected</name></member>
+      <member refid="class_mirror_1_1_network_server_1a4a91b2e756f046edf9d0d0c8003f9320" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnDataReceived</name></member>
+      <member refid="class_mirror_1_1_network_server_1a5f133b7fcb9e2e1b52f1d23233d1d18f" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnDisconnected</name></member>
+      <member refid="class_mirror_1_1_network_server_1a3e61ce18bb599532d1ef8381c0cd6b32" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnDisconnected</name></member>
+      <member refid="class_mirror_1_1_network_server_1af13721d51f3cbfa71a1abb2d219bf485" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnError</name></member>
+      <member refid="class_mirror_1_1_network_server_1a64db1d8c664aab9b2fd5e70a27adeb1e" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>OnRemovePlayerMessage</name></member>
+      <member refid="class_mirror_1_1_network_server_1afeae688d1ea5e3bb875da73cd2e99160" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RegisterHandler&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a6129613842917e6db340b167815f0aff" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RegisterHandler&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1ae35d1b0225ab80623bb9f1d1c05eb6e9" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RegisterMessageHandlers</name></member>
+      <member refid="class_mirror_1_1_network_server_1a0aefbad1961ca39c1fb37fae6c9c543d" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RemoveConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a35988bf599046de9c16ff12498ce044e" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RemoveLocalConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a7fa47f1378590ce08d3e0c56b33f2c11" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>RemovePlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1aff47615e4f8e13b4739834c1c2b4ce72" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ReplaceHandler&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a76440c603ef0a27d17e91fc4787d29ce" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ReplaceHandler&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a352021a44054bffdc7498e252b377d28" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ReplacePlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a26ac998eba619aede15486d5bbab635e" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ReplacePlayerForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1aca2286e9daf8e5a54d2ecb65790e1666" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Reset</name></member>
+      <member refid="class_mirror_1_1_network_server_1a5937b4667b0f5c8e84b8d43a86e1a316" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Respawn</name></member>
+      <member refid="class_mirror_1_1_network_server_1a3f8ecf0d98be53dd5a0f2344f9864863" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendSpawnMessage</name></member>
+      <member refid="class_mirror_1_1_network_server_1a7fea0e383a2fda1fcbeccdfcbfb92e18" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToAll&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a43bbfa929a55ddf8d42b215a6d5ad4d9" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToClientOfPlayer&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a352b515d47c3e140d697f9ff9b421be5" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToObservers&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1ae3dd36553b726500b9395c52d2f4a97f" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToReady&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a13395776b8c6d750cafa06268de72e8d" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToReady&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1abcbe51b4bc5158d0b1052e846434d19b" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SendToReady&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1af6f31f97b78581386b0087a825583464" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SetAllClientsNotReady</name></member>
+      <member refid="class_mirror_1_1_network_server_1a4d781060ff26a7961f76ea8b42a8cb15" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SetClientNotReady</name></member>
+      <member refid="class_mirror_1_1_network_server_1a96c0898b0b463bf1d3464dbf96f27ec3" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SetClientReady</name></member>
+      <member refid="class_mirror_1_1_network_server_1a4cdc43f6f87980254813f37be5a0d9f9" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SetLocalConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a84d2715b11994fcd450beb760962c883" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ShowForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1af1d46fe11c7e844c54409400ab5a5aa3" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_network_server_1a57b059c615e4f002a3004fde481659df" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Spawn</name></member>
+      <member refid="class_mirror_1_1_network_server_1ab6229c7b89a5b624f773905bf459262e" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Spawn</name></member>
+      <member refid="class_mirror_1_1_network_server_1a6312ae8d0c52d6d219ae6524bb04fce2" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Spawn</name></member>
+      <member refid="class_mirror_1_1_network_server_1a9694d795ce4ec51ad2f0f831eb04823c" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SpawnObject</name></member>
+      <member refid="class_mirror_1_1_network_server_1a41f9634ca0d88af252aa5fc26a7326aa" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SpawnObjects</name></member>
+      <member refid="class_mirror_1_1_network_server_1aac45e5d2d625dc8bc2262ea8528d2678" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>SpawnObserversForConnection</name></member>
+      <member refid="class_mirror_1_1_network_server_1a52d6d1f87ca3c615051c81cae8d33184" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>UnregisterHandler&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_server_1a7eee64bb7db217d4966b3bb961292538" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>UnSpawn</name></member>
+      <member refid="class_mirror_1_1_network_server_1ac2cbaa84717e671c62ee551284e50e14" prot="public" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>Update</name></member>
+      <member refid="class_mirror_1_1_network_server_1a0cc7a643654f4be26b3d7c5c0c4cbb6d" prot="package" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>ValidateSceneObject</name></member>
+      <member refid="class_mirror_1_1_network_server_1a13d3b4da670b1fd4105f8bb2b7062f88" prot="private" virt="non-virtual"><scope>Mirror::NetworkServer</scope><name>VerifyCanSpawn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

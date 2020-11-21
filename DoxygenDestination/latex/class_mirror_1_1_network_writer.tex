@@ -1,0 +1,102 @@
+\hypertarget{class_mirror_1_1_network_writer}{}\doxysection{Mirror.\+Network\+Writer Class Reference}
+\label{class_mirror_1_1_network_writer}\index{Mirror.NetworkWriter@{Mirror.NetworkWriter}}
+
+
+Binary stream Writer. Supports simple types, buffers, arrays, structs, and nested types  
+
+
+Inheritance diagram for Mirror.\+Network\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mirror_1_1_network_writer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_writer_a245c2e89decd8bc2bfc88c0108776070}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset both the position and length of the stream \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_writer_a2d6b7bac40b5bf91776c97271a8ef94e}{Set\+Length}} (int new\+Length)
+\begin{DoxyCompactList}\small\item\em Sets length, moves position if it is greater than new length \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a195fa823d6c7033abcd55be2809669dc}\label{class_mirror_1_1_network_writer_a195fa823d6c7033abcd55be2809669dc}} 
+byte\mbox{[}$\,$\mbox{]} {\bfseries To\+Array} ()
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a6cc49e6b84747d6cb37010a86dc34ddd}\label{class_mirror_1_1_network_writer_a6cc49e6b84747d6cb37010a86dc34ddd}} 
+Array\+Segment$<$ byte $>$ {\bfseries To\+Array\+Segment} ()
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a00e287aac3cb416b2c24d02b4d673020}\label{class_mirror_1_1_network_writer_a00e287aac3cb416b2c24d02b4d673020}} 
+void {\bfseries Write\+Byte} (byte value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_ab2d293dbd66eb4e65b0b3c062f714777}\label{class_mirror_1_1_network_writer_ab2d293dbd66eb4e65b0b3c062f714777}} 
+void {\bfseries Write\+Bytes} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_af76fc83cdc9037f283aafd728974ff7b}\label{class_mirror_1_1_network_writer_af76fc83cdc9037f283aafd728974ff7b}} 
+void {\bfseries Write\+U\+Int32} (uint value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a9f4d2fbb4135140df3858794b49e6d38}\label{class_mirror_1_1_network_writer_a9f4d2fbb4135140df3858794b49e6d38}} 
+void {\bfseries Write\+Int32} (int value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a44e960ea6eb3b6535d465d47e83e9539}\label{class_mirror_1_1_network_writer_a44e960ea6eb3b6535d465d47e83e9539}} 
+void {\bfseries Write\+U\+Int64} (ulong value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a6fff8ad57c0e229d28b8c0467cfd015e}\label{class_mirror_1_1_network_writer_a6fff8ad57c0e229d28b8c0467cfd015e}} 
+void {\bfseries Write\+Int64} (long value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_ae626b96f2627794d178f8ee201f0cd59}\label{class_mirror_1_1_network_writer_ae626b96f2627794d178f8ee201f0cd59}} 
+int {\bfseries Length} =$>$ length
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a70031a067afd678a16fe13bf7e3a2c5c}\label{class_mirror_1_1_network_writer_a70031a067afd678a16fe13bf7e3a2c5c}} 
+const int {\bfseries Max\+String\+Length} = 1024 $\ast$ 32
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_ac70038113ba5ddc857ea0c187b5eac16}\label{class_mirror_1_1_network_writer_ac70038113ba5ddc857ea0c187b5eac16}} 
+int {\bfseries Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Binary stream Writer. Supports simple types, buffers, arrays, structs, and nested types 
+
+Use \mbox{\hyperlink{}{Network\+Writer.\+Get\+Writer}} to reduce memory allocation
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_writer_a245c2e89decd8bc2bfc88c0108776070}\label{class_mirror_1_1_network_writer_a245c2e89decd8bc2bfc88c0108776070}} 
+\index{Mirror.NetworkWriter@{Mirror.NetworkWriter}!Reset@{Reset}}
+\index{Reset@{Reset}!Mirror.NetworkWriter@{Mirror.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Writer.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset both the position and length of the stream 
+
+Leaves the capacity the same so that we can reuse this writer without extra allocations \mbox{\Hypertarget{class_mirror_1_1_network_writer_a2d6b7bac40b5bf91776c97271a8ef94e}\label{class_mirror_1_1_network_writer_a2d6b7bac40b5bf91776c97271a8ef94e}} 
+\index{Mirror.NetworkWriter@{Mirror.NetworkWriter}!SetLength@{SetLength}}
+\index{SetLength@{SetLength}!Mirror.NetworkWriter@{Mirror.NetworkWriter}}
+\doxysubsubsection{\texorpdfstring{SetLength()}{SetLength()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Writer.\+Set\+Length (\begin{DoxyParamCaption}\item[{int}]{new\+Length }\end{DoxyParamCaption})}
+
+
+
+Sets length, moves position if it is greater than new length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Length} & \\
+\hline
+\end{DoxyParams}
+
+
+Zeros out any extra length created by setlength 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Writer.\+cs\end{DoxyCompactItemize}

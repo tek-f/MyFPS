@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::ListServerService::ListServerClientApi</compoundname>
+    <basecompoundref refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api" prot="public" virt="non-virtual">Mirror.Cloud.ListServerService.ListServerBaseApi</basecompoundref>
+    <basecompoundref refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api" prot="public" virt="non-virtual">Mirror.Cloud.ListServerService.IListServerClientApi</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a199fc1391b1bb87d24440f47b5f68f31" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mirror_1_1_cloud_1_1_server_list_event" kindref="compound">ServerListEvent</ref></type>
+        <definition>readonly ServerListEvent Mirror.Cloud.ListServerService.ListServerClientApi._onServerListUpdated</definition>
+        <argsstring></argsstring>
+        <name>_onServerListUpdated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="10" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a6cb1553dd1b6c1b57a245242e90c6966" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine Mirror.Cloud.ListServerService.ListServerClientApi.getServerListRepeatCoroutine</definition>
+        <argsstring></argsstring>
+        <name>getServerListRepeatCoroutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="12" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a86a161421e78920ddbafe234060407e6" prot="public" static="no" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>UnityAction&lt; <ref refid="struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_collection_json" kindref="compound">ServerCollectionJson</ref> &gt;</type>
+        <definition>UnityAction&lt;ServerCollectionJson&gt; Mirror.Cloud.ListServerService.ListServerClientApi.onServerListUpdated</definition>
+        <argsstring></argsstring>
+        <name>onServerListUpdated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="14" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a5d610c82290f2d4942a459f13636801b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.Cloud.ListServerService.ListServerClientApi.ListServerClientApi</definition>
+        <argsstring>(ICoroutineRunner runner, IRequestCreator requestCreator, ServerListEvent onServerListUpdated)</argsstring>
+        <name>ListServerClientApi</name>
+        <param>
+          <type><ref refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" kindref="compound">ICoroutineRunner</ref></type>
+          <declname>runner</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mirror_1_1_cloud_1_1_i_request_creator" kindref="compound">IRequestCreator</ref></type>
+          <declname>requestCreator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_cloud_1_1_server_list_event" kindref="compound">ServerListEvent</ref></type>
+          <declname>onServerListUpdated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="20" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1ad06a0ed161913459a3494425f6f642e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ListServerService.ListServerClientApi.Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <reimplements refid="interface_mirror_1_1_cloud_1_1_i_base_api_1a266c21cfe77caef08d56d1a1b6566cbe">Shutdown</reimplements>
+        <briefdescription>
+<para>Cleans up any data created by the instance </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For <ref refid="namespace_mirror_1_1_cloud_1_1_example" kindref="compound">Example</ref>: removing server from list</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="25" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a1daae307b675836bc9bc44b44201a406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ListServerService.ListServerClientApi.GetServerList</definition>
+        <argsstring>()</argsstring>
+        <name>GetServerList</name>
+        <reimplements refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_1a24873925650d81ee7196c623ce04a2fc">GetServerList</reimplements>
+        <briefdescription>
+<para>Get the server list once </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="30" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a3ed856038a9cc45ea78f7d4b372f9089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ListServerService.ListServerClientApi.StartGetServerListRepeat</definition>
+        <argsstring>(int interval)</argsstring>
+        <name>StartGetServerListRepeat</name>
+        <reimplements refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_1a32e8715ec0bf7a6f8deb0c66e1d83c63">StartGetServerListRepeat</reimplements>
+        <param>
+          <type>int</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Start getting the server list every interval </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="35" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a31f594349b42c674c015611e6d89a94c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ListServerService.ListServerClientApi.StopGetServerListRepeat</definition>
+        <argsstring>()</argsstring>
+        <name>StopGetServerListRepeat</name>
+        <reimplements refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_1ad990a23a6baae38441163e487725d00c">StopGetServerListRepeat</reimplements>
+        <briefdescription>
+<para>Stop getting the server list </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="40" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="40" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a3384dc40eec09cdfdec9eda477c11c65" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Mirror.Cloud.ListServerService.ListServerClientApi.GetServerListRepeat</definition>
+        <argsstring>(int interval)</argsstring>
+        <name>GetServerListRepeat</name>
+        <param>
+          <type>int</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="49" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a662d3e788bdd81604d5795f2aacec32c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Mirror.Cloud.ListServerService.ListServerClientApi.getServerList</definition>
+        <argsstring>()</argsstring>
+        <name>getServerList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="58" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="58" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>IListServerClientApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_base_api"/>
+      </node>
+      <node id="2">
+        <label>ListServerBaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IBaseApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_base_api"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ListServerService.ListServerClientApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Mirror.Cloud.ICoroutineRunner</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mirror.Cloud.IRequestCreator</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_request_creator"/>
+      </node>
+      <node id="7">
+        <label>IListServerClientApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_base_api"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>requestCreator</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>runner</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>IUnityEqualCheck</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check"/>
+      </node>
+      <node id="2">
+        <label>ListServerBaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>IBaseApi</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_base_api"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ListServerService.ListServerClientApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" line="8" column="18" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/ListServerClientApi.cs" bodystart="9" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a199fc1391b1bb87d24440f47b5f68f31" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>_onServerListUpdated</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1af015f526592d3a59f98537ab249b3e2f" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>BaseApi</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a1daae307b675836bc9bc44b44201a406" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>GetServerList</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a662d3e788bdd81604d5795f2aacec32c" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>getServerList</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a3384dc40eec09cdfdec9eda477c11c65" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>GetServerListRepeat</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a6cb1553dd1b6c1b57a245242e90c6966" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>getServerListRepeatCoroutine</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api_1a6fe1c85157fd8d0bfc25ced7fe92ff85" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>ListServerBaseApi</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a5d610c82290f2d4942a459f13636801b" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>ListServerClientApi</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a86a161421e78920ddbafe234060407e6" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>onServerListUpdated</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1a10bdbb18980c655adab5fe9c692beb56" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>requestCreator</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1abed0fe09172332eaa6dc6f41870e833a" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>runner</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1ad06a0ed161913459a3494425f6f642e5" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a3ed856038a9cc45ea78f7d4b372f9089" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>StartGetServerListRepeat</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_1a31f594349b42c674c015611e6d89a94c" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ListServerService::ListServerClientApi</scope><name>StopGetServerListRepeat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

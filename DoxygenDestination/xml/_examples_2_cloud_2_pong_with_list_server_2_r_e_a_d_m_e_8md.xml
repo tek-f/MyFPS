@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_examples_2_cloud_2_pong_with_list_server_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Pong<sp/>with<sp/>Cloud<sp/>List<sp/>server</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>an<sp/>example<sp/>that<sp/>uses<sp/>the<sp/>list<sp/>server<sp/>to<sp/>find<sp/>games<sp/>of<sp/>pong</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Setup</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Add<sp/>the<sp/>following<sp/>scenes<sp/>to<sp/>build<sp/>settings</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Mirror\Examples\Cloud\PongWithListServer\Scenes\ListServerLobbyScenePong.unity</highlight></codeline>
+<codeline><highlight class="normal">Mirror\Examples\Cloud\PongWithListServer\Scenes\PongGameScene.unity</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">&gt;<sp/>Note:<sp/>you<sp/>can<sp/>not<sp/>connect<sp/>to<sp/>your<sp/>own<sp/>public<sp/>ip<sp/>address,<sp/>to<sp/>test<sp/>out<sp/>ServerOnly<sp/>you<sp/>will<sp/>need<sp/>a<sp/>2nd<sp/>person<sp/>(or<sp/>a<sp/>2nd<sp/>internet<sp/>connection)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Api<sp/>Key</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Api<sp/>key<sp/>on<sp/>the<sp/>NetworkManager<sp/>is<sp/>a<sp/>demo<sp/>key<sp/>that<sp/>should<sp/>not<sp/>be<sp/>used<sp/>in<sp/>production.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Visit<sp/>[Mirror<sp/>Networking](https://mirror-networking.com/list-server/)<sp/>to<sp/>get<sp/>an<sp/>api<sp/>key<sp/>that<sp/>you<sp/>can<sp/>use<sp/>in<sp/>your<sp/>game.</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Cloud/PongWithListServer/README.md"/>
+  </compounddef>
+</doxygen>

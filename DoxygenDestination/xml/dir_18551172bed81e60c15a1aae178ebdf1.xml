@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_18551172bed81e60c15a1aae178ebdf1" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport</compoundname>
+    <innerdir refid="dir_b71283b9c18203d9fcb7ec9190310455">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy</innerdir>
+    <innerdir refid="dir_9b548c2e38ec715baabbae9e75ff0baa">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket</innerdir>
+    <innerfile refid="_fallback_transport_8cs">FallbackTransport.cs</innerfile>
+    <innerfile refid="_l_l_a_p_i_transport_8cs">LLAPITransport.cs</innerfile>
+    <innerfile refid="_multiplex_transport_8cs">MultiplexTransport.cs</innerfile>
+    <innerfile refid="_telepathy_transport_8cs">TelepathyTransport.cs</innerfile>
+    <innerfile refid="_transport_8cs">Transport.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/"/>
+  </compounddef>
+</doxygen>

@@ -3,13 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 public class MouseDrag : MonoBehaviour
 {
+    /// <summary>
+    /// The force to be added.
+    /// </summary>
     public float forceAmount = 500;
+    /// <summary>
+    /// The selected rigidbody.
+    /// </summary>
     Rigidbody selectedRigidbody;
+    /// <summary>
+    /// The target camera.
+    /// </summary>
     Camera targetCamera;
+    /// <summary>
+    /// The original target position in Screen Space.
+    /// </summary>
     Vector3 originalScreenTargetPosition;
+    /// <summary>
+    /// selectedRigidbody's original position.
+    /// </summary>
     Vector3 originalRigidbodyPos;
+    /// <summary>
+    /// The distance that the ray will travel.
+    /// </summary>
     float selectionDistance;
-    // Start is called before the first frame update
     void Start()
     {
         targetCamera = GetComponent<Camera>();
@@ -39,6 +56,10 @@ public class MouseDrag : MonoBehaviour
         }
         GetRigidbodyFromMouseClick();
     }
+    /// <summary>
+    /// Returns a rigidbody that has been clicked on.
+    /// </summary>
+    /// <returns>Rigidbody.</returns>
     Rigidbody GetRigidbodyFromMouseClick()
     {
         RaycastHit hitInfo = new RaycastHit();

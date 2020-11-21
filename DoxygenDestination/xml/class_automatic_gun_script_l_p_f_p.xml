@@ -1,0 +1,962 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_automatic_gun_script_l_p_f_p" kind="class" language="C#" prot="public">
+    <compoundname>AutomaticGunScriptLPFP</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="class_automatic_gun_script_l_p_f_p_1_1prefabs" prot="public">AutomaticGunScriptLPFP::prefabs</innerclass>
+    <innerclass refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips" prot="public">AutomaticGunScriptLPFP::soundClips</innerclass>
+    <innerclass refid="class_automatic_gun_script_l_p_f_p_1_1spawnpoints" prot="public">AutomaticGunScriptLPFP::spawnpoints</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a97c1994e98a21cdc226ae85404422c63" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator AutomaticGunScriptLPFP.anim</definition>
+        <argsstring></argsstring>
+        <name>anim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="9" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a2cc7782e4e1352c21a81d68fc7628a8e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AutomaticGunScriptLPFP.storedWeaponName</definition>
+        <argsstring></argsstring>
+        <name>storedWeaponName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="28" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a566c0957c1ce46e7ac971a10fec04056" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 AutomaticGunScriptLPFP.initialSwayPosition</definition>
+        <argsstring></argsstring>
+        <name>initialSwayPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="39" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ae890ebf0c2c250c0541339eef7dded13" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.lastFired</definition>
+        <argsstring></argsstring>
+        <name>lastFired</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="42" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a9874683e8beda2425d5469771424a68e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.isReloading</definition>
+        <argsstring></argsstring>
+        <name>isReloading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="53" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a5b8e02b7d437bb942f157b7439171cdd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.hasBeenHolstered</definition>
+        <argsstring></argsstring>
+        <name>hasBeenHolstered</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="56" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac2a8b0c0b88c59d1a0968067f739f71d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.holstered</definition>
+        <argsstring></argsstring>
+        <name>holstered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="58" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a9f4cb35a7467987707a80162d776f741" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.isRunning</definition>
+        <argsstring></argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="60" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a6888d217134c562e7932fab461924933" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.isAiming</definition>
+        <argsstring></argsstring>
+        <name>isAiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="62" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a4daf1f2bf11fdc3bfbbb0fe2ca84a56d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.isWalking</definition>
+        <argsstring></argsstring>
+        <name>isWalking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="64" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac5a169f91975b76ddf8befaba7456799" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.isInspecting</definition>
+        <argsstring></argsstring>
+        <name>isInspecting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="66" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ae988272b730e7ed78dc02ff74eaead22" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.currentAmmo</definition>
+        <argsstring></argsstring>
+        <name>currentAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="69" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a12c4c1e91b0cf5974ce13b0ae073b65d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.outOfAmmo</definition>
+        <argsstring></argsstring>
+        <name>outOfAmmo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="74" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac8a149f8920a0b8e66974ab219d72fb2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.minRandomValue</definition>
+        <argsstring></argsstring>
+        <name>minRandomValue</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="92" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a99a4fded6fa57265be8923ed24f38624" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.randomMuzzleflashValue</definition>
+        <argsstring></argsstring>
+        <name>randomMuzzleflashValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="97" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a5d98e23d6775eb7a43a908e4a3a1434c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.soundHasPlayed</definition>
+        <argsstring></argsstring>
+        <name>soundHasPlayed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="159" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1aebb5f3e86ef6ff917e19d71bcb5d7a7a" prot="public" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera AutomaticGunScriptLPFP.gunCamera</definition>
+        <argsstring></argsstring>
+        <name>gunCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="13" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac39b641b907bd752c8f325ba9ff03d38" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.fovSpeed</definition>
+        <argsstring></argsstring>
+        <name>fovSpeed</name>
+        <initializer>= 15.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="18" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ab365cb6cd292f37e54466ea2e2b0b3ba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.defaultFov</definition>
+        <argsstring></argsstring>
+        <name>defaultFov</name>
+        <initializer>= 40.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="21" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a71a93b2f3ebcd2cf644ee23596a3e463" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.aimFov</definition>
+        <argsstring></argsstring>
+        <name>aimFov</name>
+        <initializer>= 25.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="23" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1af4224f5a3dc3dafdb6005dea3ec39f47" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string AutomaticGunScriptLPFP.weaponName</definition>
+        <argsstring></argsstring>
+        <name>weaponName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="27" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1aecb97c3a1aadfc960f5a413623d421eb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.weaponSway</definition>
+        <argsstring></argsstring>
+        <name>weaponSway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="33" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a857b9bc15fa6bc6118cb5a894e1c75f2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.swayAmount</definition>
+        <argsstring></argsstring>
+        <name>swayAmount</name>
+        <initializer>= 0.02f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="35" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ad0c5028c53a83590b77e0c1f513a41b5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.maxSwayAmount</definition>
+        <argsstring></argsstring>
+        <name>maxSwayAmount</name>
+        <initializer>= 0.06f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="36" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1af585a2b74cd5b9ca339b2f5c8c789f3f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.swaySmoothValue</definition>
+        <argsstring></argsstring>
+        <name>swaySmoothValue</name>
+        <initializer>= 4.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="37" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1aa1b42fd50184f45843ceaae577045ead" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.fireRate</definition>
+        <argsstring></argsstring>
+        <name>fireRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="46" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a66a3e2e8f4279beceb6e7d2565021629" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.autoReload</definition>
+        <argsstring></argsstring>
+        <name>autoReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="49" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a5be049342f1dff4e26fa6396d1e4afbd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.autoReloadDelay</definition>
+        <argsstring></argsstring>
+        <name>autoReloadDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="51" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a480c88bbee519d2980373f96be1c392f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.ammo</definition>
+        <argsstring></argsstring>
+        <name>ammo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="72" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1adefee0c61a7cfd09686aaf9671f36cf8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.bulletForce</definition>
+        <argsstring></argsstring>
+        <name>bulletForce</name>
+        <initializer>= 400.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="79" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac37c0f6303c1c1ced393fe4fe78fc1a3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.showBulletInMagDelay</definition>
+        <argsstring></argsstring>
+        <name>showBulletInMagDelay</name>
+        <initializer>= 0.6f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="82" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a0f5acd8fa3822a9cd25ecf43a82bdbc6" prot="public" static="no" mutable="no">
+        <type>SkinnedMeshRenderer</type>
+        <definition>SkinnedMeshRenderer AutomaticGunScriptLPFP.bulletInMagRenderer</definition>
+        <argsstring></argsstring>
+        <name>bulletInMagRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="84" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a3860443adc9d9576c140b7b717aa3c09" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.grenadeSpawnDelay</definition>
+        <argsstring></argsstring>
+        <name>grenadeSpawnDelay</name>
+        <initializer>= 0.35f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="87" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a637e10678814df0d3c6937baf952be78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.randomMuzzleflash</definition>
+        <argsstring></argsstring>
+        <name>randomMuzzleflash</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="90" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a0310c03998ed7125dda88ac16a10af41" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.maxRandomValue</definition>
+        <argsstring></argsstring>
+        <name>maxRandomValue</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="95" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a023c3e403887ae9e35f35720f894fb11" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.enableMuzzleflash</definition>
+        <argsstring></argsstring>
+        <name>enableMuzzleflash</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="99" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a6b0e4ab7d760dbd0ee484761ce39e65f" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem AutomaticGunScriptLPFP.muzzleParticles</definition>
+        <argsstring></argsstring>
+        <name>muzzleParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="100" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a4480e2336a1e73d7ab1bb98f54a9f50c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AutomaticGunScriptLPFP.enableSparks</definition>
+        <argsstring></argsstring>
+        <name>enableSparks</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="101" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a99925198efc3aee7163dfee353bbe89c" prot="public" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem AutomaticGunScriptLPFP.sparkParticles</definition>
+        <argsstring></argsstring>
+        <name>sparkParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="102" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a2f2100b5f8edf8833b64eeff907d00bf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.minSparkEmission</definition>
+        <argsstring></argsstring>
+        <name>minSparkEmission</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="103" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a3f8c9d37e6447687b67df3d965854ae2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AutomaticGunScriptLPFP.maxSparkEmission</definition>
+        <argsstring></argsstring>
+        <name>maxSparkEmission</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="104" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a129dcaa84c75e34275bc81f8156f6fa9" prot="public" static="no" mutable="no">
+        <type>Light</type>
+        <definition>Light AutomaticGunScriptLPFP.muzzleflashLight</definition>
+        <argsstring></argsstring>
+        <name>muzzleflashLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="107" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1aff83779b2662922c2e27278865b1ad30" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AutomaticGunScriptLPFP.lightDuration</definition>
+        <argsstring></argsstring>
+        <name>lightDuration</name>
+        <initializer>= 0.02f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="108" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a14bbabe3ab4a217d79ef812683d731e3" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource AutomaticGunScriptLPFP.mainAudioSource</definition>
+        <argsstring></argsstring>
+        <name>mainAudioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="112" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1abdc5837be5fa899287a7a3b7d191f3ff" prot="public" static="no" mutable="no">
+        <type>AudioSource</type>
+        <definition>AudioSource AutomaticGunScriptLPFP.shootAudioSource</definition>
+        <argsstring></argsstring>
+        <name>shootAudioSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="114" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a7d720d4d82382248f24b1ee660b79626" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text AutomaticGunScriptLPFP.timescaleText</definition>
+        <argsstring></argsstring>
+        <name>timescaleText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="117" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a62439852789dfef6b5d66cb790ea141b" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text AutomaticGunScriptLPFP.currentWeaponText</definition>
+        <argsstring></argsstring>
+        <name>currentWeaponText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="118" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac4e3eb34cf1c0c3dce94dda2f3deeabb" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text AutomaticGunScriptLPFP.currentAmmoText</definition>
+        <argsstring></argsstring>
+        <name>currentAmmoText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="119" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1ac0f54734a09268336d9671b96b31ceba" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text AutomaticGunScriptLPFP.totalAmmoText</definition>
+        <argsstring></argsstring>
+        <name>totalAmmoText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="120" column="13" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a8721b2407615d74dedf9dd38a558bff5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_automatic_gun_script_l_p_f_p_1_1prefabs" kindref="compound">prefabs</ref></type>
+        <definition>prefabs AutomaticGunScriptLPFP.Prefabs</definition>
+        <argsstring></argsstring>
+        <name>Prefabs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="130" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a367a142700d64a5e9a7e144e3d13e639" prot="public" static="no" mutable="no">
+        <type><ref refid="class_automatic_gun_script_l_p_f_p_1_1spawnpoints" kindref="compound">spawnpoints</ref></type>
+        <definition>spawnpoints AutomaticGunScriptLPFP.Spawnpoints</definition>
+        <argsstring></argsstring>
+        <name>Spawnpoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="145" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_automatic_gun_script_l_p_f_p_1a5e79fe016212a4aa6955a5924ad834a9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips" kindref="compound">soundClips</ref></type>
+        <definition>soundClips AutomaticGunScriptLPFP.SoundClips</definition>
+        <argsstring></argsstring>
+        <name>SoundClips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="157" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1ac90f874cc3c6ebcbf56c41c8af43dd34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="161" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a8baf22ab9aa5817d1d6070b30d0cc6d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="171" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="171" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a04cea89cf8653c2f16289e44421b7354" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.LateUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>LateUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="187" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="187" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1aa73041612512c1204dd3be0070218671" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="208" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="208" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a96b41babddbdfd258cbbc7dfb15ae10d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AutomaticGunScriptLPFP.GrenadeSpawnDelay</definition>
+        <argsstring>()</argsstring>
+        <name>GrenadeSpawnDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="495" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="495" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a84221e150bc0962618e6141fd0410770" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AutomaticGunScriptLPFP.AutoReload</definition>
+        <argsstring>()</argsstring>
+        <name>AutoReload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="505" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="505" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a9b7b4ecb57913fdf9c916d0a559bb2ef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.Reload</definition>
+        <argsstring>()</argsstring>
+        <name>Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="533" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="533" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a21488cdc43276154bd52d7044bcb6753" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AutomaticGunScriptLPFP.ShowBulletInMag</definition>
+        <argsstring>()</argsstring>
+        <name>ShowBulletInMag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="575" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="575" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a38c524d81ed91b8d4ef477e1685af355" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AutomaticGunScriptLPFP.MuzzleFlashLight</definition>
+        <argsstring>()</argsstring>
+        <name>MuzzleFlashLight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="583" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="583" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="class_automatic_gun_script_l_p_f_p_1a51af7017fa14644dab5490ee6ef6d6fa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AutomaticGunScriptLPFP.AnimationCheck</definition>
+        <argsstring>()</argsstring>
+        <name>AnimationCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="591" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="591" bodyend="614"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AutomaticGunScriptLPFP</label>
+        <link refid="class_automatic_gun_script_l_p_f_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AutomaticGunScriptLPFP.spawnpoints</label>
+        <link refid="class_automatic_gun_script_l_p_f_p_1_1spawnpoints"/>
+      </node>
+      <node id="4">
+        <label>AutomaticGunScriptLPFP.soundClips</label>
+        <link refid="class_automatic_gun_script_l_p_f_p_1_1sound_clips"/>
+      </node>
+      <node id="1">
+        <label>AutomaticGunScriptLPFP</label>
+        <link refid="class_automatic_gun_script_l_p_f_p"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>currentAmmoText</edgelabel>
+          <edgelabel>currentWeaponText</edgelabel>
+          <edgelabel>timescaleText</edgelabel>
+          <edgelabel>totalAmmoText</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>SoundClips</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Prefabs</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Spawnpoints</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Text</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="5">
+        <label>AutomaticGunScriptLPFP.prefabs</label>
+        <link refid="class_automatic_gun_script_l_p_f_p_1_1prefabs"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" line="6" column="7" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/Weapon_Scripts/AutomaticGunScriptLPFP.cs" bodystart="6" bodyend="615"/>
+    <listofallmembers>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a71a93b2f3ebcd2cf644ee23596a3e463" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>aimFov</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a480c88bbee519d2980373f96be1c392f" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>ammo</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a97c1994e98a21cdc226ae85404422c63" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>anim</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a51af7017fa14644dab5490ee6ef6d6fa" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>AnimationCheck</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a84221e150bc0962618e6141fd0410770" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>AutoReload</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a66a3e2e8f4279beceb6e7d2565021629" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>autoReload</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a5be049342f1dff4e26fa6396d1e4afbd" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>autoReloadDelay</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac90f874cc3c6ebcbf56c41c8af43dd34" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Awake</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1adefee0c61a7cfd09686aaf9671f36cf8" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>bulletForce</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a0f5acd8fa3822a9cd25ecf43a82bdbc6" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>bulletInMagRenderer</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ae988272b730e7ed78dc02ff74eaead22" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>currentAmmo</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac4e3eb34cf1c0c3dce94dda2f3deeabb" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>currentAmmoText</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a62439852789dfef6b5d66cb790ea141b" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>currentWeaponText</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ab365cb6cd292f37e54466ea2e2b0b3ba" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>defaultFov</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a023c3e403887ae9e35f35720f894fb11" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>enableMuzzleflash</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a4480e2336a1e73d7ab1bb98f54a9f50c" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>enableSparks</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1aa1b42fd50184f45843ceaae577045ead" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>fireRate</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac39b641b907bd752c8f325ba9ff03d38" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>fovSpeed</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a96b41babddbdfd258cbbc7dfb15ae10d" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>GrenadeSpawnDelay</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a3860443adc9d9576c140b7b717aa3c09" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>grenadeSpawnDelay</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1aebb5f3e86ef6ff917e19d71bcb5d7a7a" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>gunCamera</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a5b8e02b7d437bb942f157b7439171cdd" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>hasBeenHolstered</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac2a8b0c0b88c59d1a0968067f739f71d" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>holstered</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a566c0957c1ce46e7ac971a10fec04056" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>initialSwayPosition</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a6888d217134c562e7932fab461924933" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>isAiming</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac5a169f91975b76ddf8befaba7456799" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>isInspecting</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a9874683e8beda2425d5469771424a68e" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>isReloading</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a9f4cb35a7467987707a80162d776f741" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>isRunning</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a4daf1f2bf11fdc3bfbbb0fe2ca84a56d" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>isWalking</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ae890ebf0c2c250c0541339eef7dded13" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>lastFired</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a04cea89cf8653c2f16289e44421b7354" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>LateUpdate</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1aff83779b2662922c2e27278865b1ad30" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>lightDuration</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a14bbabe3ab4a217d79ef812683d731e3" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>mainAudioSource</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a0310c03998ed7125dda88ac16a10af41" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>maxRandomValue</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a3f8c9d37e6447687b67df3d965854ae2" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>maxSparkEmission</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ad0c5028c53a83590b77e0c1f513a41b5" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>maxSwayAmount</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac8a149f8920a0b8e66974ab219d72fb2" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>minRandomValue</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a2f2100b5f8edf8833b64eeff907d00bf" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>minSparkEmission</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a129dcaa84c75e34275bc81f8156f6fa9" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>muzzleflashLight</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a38c524d81ed91b8d4ef477e1685af355" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>MuzzleFlashLight</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a6b0e4ab7d760dbd0ee484761ce39e65f" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>muzzleParticles</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a12c4c1e91b0cf5974ce13b0ae073b65d" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>outOfAmmo</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a8721b2407615d74dedf9dd38a558bff5" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Prefabs</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a637e10678814df0d3c6937baf952be78" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>randomMuzzleflash</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a99a4fded6fa57265be8923ed24f38624" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>randomMuzzleflashValue</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a9b7b4ecb57913fdf9c916d0a559bb2ef" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Reload</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1abdc5837be5fa899287a7a3b7d191f3ff" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>shootAudioSource</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a21488cdc43276154bd52d7044bcb6753" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>ShowBulletInMag</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac37c0f6303c1c1ced393fe4fe78fc1a3" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>showBulletInMagDelay</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a5e79fe016212a4aa6955a5924ad834a9" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>SoundClips</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a5d98e23d6775eb7a43a908e4a3a1434c" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>soundHasPlayed</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a99925198efc3aee7163dfee353bbe89c" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>sparkParticles</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a367a142700d64a5e9a7e144e3d13e639" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Spawnpoints</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a8baf22ab9aa5817d1d6070b30d0cc6d3" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Start</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a2cc7782e4e1352c21a81d68fc7628a8e" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>storedWeaponName</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a857b9bc15fa6bc6118cb5a894e1c75f2" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>swayAmount</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1af585a2b74cd5b9ca339b2f5c8c789f3f" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>swaySmoothValue</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1a7d720d4d82382248f24b1ee660b79626" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>timescaleText</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1ac0f54734a09268336d9671b96b31ceba" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>totalAmmoText</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1aa73041612512c1204dd3be0070218671" prot="private" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>Update</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1af4224f5a3dc3dafdb6005dea3ec39f47" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>weaponName</name></member>
+      <member refid="class_automatic_gun_script_l_p_f_p_1aecb97c3a1aadfc960f5a413623d421eb" prot="public" virt="non-virtual"><scope>AutomaticGunScriptLPFP</scope><name>weaponSway</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

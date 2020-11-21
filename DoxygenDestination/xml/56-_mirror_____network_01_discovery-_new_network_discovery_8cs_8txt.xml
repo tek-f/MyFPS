@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt" kind="file" language="C++">
+    <compoundname>56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt</compoundname>
+    <innerclass refid="class_discovery_request" prot="public">DiscoveryRequest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt_1a695037d8bc132483bde076e05501fb4a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref></type>
+        <definition>DiscoveryRequest DiscoveryRequest</definition>
+        <argsstring></argsstring>
+        <name>DiscoveryRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" line="23" column="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt_1a8c0a47726afdac5b445f38b5faba0bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref> MessageBase</type>
+        <definition>DiscoveryRequest MessageBase ProcessClientRequest</definition>
+        <argsstring>(DiscoveryRequest request, IPEndPoint endpoint)</argsstring>
+        <name>ProcessClientRequest</name>
+        <param>
+          <type><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Reply to the client to inform it of this server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to ignore server requests based on custom criteria such as language, full server game mode or difficulty </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request comming from client</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the client that sent the request</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" line="11" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt_1a1cb19bb5cacd853f8c35b67283b4e292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>protected override DiscoveryResponse</type>
+        <definition>protected override DiscoveryResponse ProcessRequest</definition>
+        <argsstring>(DiscoveryRequest request, IPEndPoint endpoint)</argsstring>
+        <name>ProcessRequest</name>
+        <param>
+          <type><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the request from a client </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to provide more information to the clients such as the name of the host player </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request comming from client</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the client that sent the request</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A message containing information about this server</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" line="51" column="42" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt_1afec84f3308fd965f9902b1504451dd04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>protected override <ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref></type>
+        <definition>protected override DiscoveryRequest GetRequest</definition>
+        <argsstring>()</argsstring>
+        <name>GetRequest</name>
+        <briefdescription>
+<para>Create a message that will be broadcasted on the network to discover servers </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to include additional data in the discovery message such as desired game mode, language, difficulty, etc... </para>
+<para><simplesect kind="return"><para>An instance of ServerRequest with data to be broadcasted</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" line="67" column="41" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="56-_mirror_____network_01_discovery-_new_network_discovery_8cs_8txt_1addd1230958063d45345519c80b04e009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>protected override void</type>
+        <definition>protected override void ProcessResponse</definition>
+        <argsstring>(DiscoveryResponse response, IPEndPoint endpoint)</argsstring>
+        <name>ProcessResponse</name>
+        <param>
+          <type>DiscoveryResponse</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the answer from a server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A client receives a reply from a server, this method processes the reply and raises an event </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Response that came from the server</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the server that replied</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" line="81" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" bodystart="81" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Net;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_mirror" kindref="compound">Mirror</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespace_mirror" kindref="compound">Mirror</ref>.<ref refid="namespace_mirror_1_1_discovery" kindref="compound">Discovery</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Discovery<sp/>Guide:<sp/>https://mirror-networking.com/docs/Guides/NetworkDiscovery.html</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>Documentation:<sp/>https://mirror-networking.com/docs/Components/NetworkDiscovery.html</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>API<sp/>Reference:<sp/>https://mirror-networking.com/docs/api/Mirror.Discovery.NetworkDiscovery.html</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_discovery_request" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref><sp/>:<sp/>MessageBase</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>properties<sp/>for<sp/>whatever<sp/>information<sp/>you<sp/>want<sp/>sent<sp/>by<sp/>clients</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>their<sp/>broadcast<sp/>messages<sp/>that<sp/>servers<sp/>will<sp/>consume.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DiscoveryResponse<sp/>:<sp/>MessageBase</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>properties<sp/>for<sp/>whatever<sp/>information<sp/>you<sp/>want<sp/>the<sp/>server<sp/>to<sp/>return<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clients<sp/>for<sp/>them<sp/>to<sp/>display<sp/>or<sp/>consume<sp/>for<sp/>establishing<sp/>a<sp/>connection.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">#<ref refid="class_s_c_r_i_p_t_n_a_m_e" kindref="compound">SCRIPTNAME</ref>#<sp/>:<sp/>NetworkDiscoveryBase&lt;DiscoveryRequest,<sp/>DiscoveryResponse&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#region<sp/>Server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ProcessClientRequest(<ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref><sp/>request,<sp/>IPEndPoint<sp/>endpoint)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.ProcessClientRequest(request,<sp/>endpoint);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>DiscoveryResponse<sp/>ProcessRequest(<ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref><sp/>request,<sp/>IPEndPoint<sp/>endpoint)<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DiscoveryResponse();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#region<sp/>Client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref><sp/>GetRequest()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_discovery_request" kindref="compound">DiscoveryRequest</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ProcessResponse(DiscoveryResponse<sp/>response,<sp/>IPEndPoint<sp/>endpoint)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt"/>
+  </compounddef>
+</doxygen>

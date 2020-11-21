@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_cloud_1_1_base_api" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::BaseApi</compoundname>
+    <derivedcompoundref refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api" prot="public" virt="non-virtual">Mirror.Cloud.ListServerService.ListServerBaseApi</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_base_api_1abed0fe09172332eaa6dc6f41870e833a" prot="protected" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" kindref="compound">ICoroutineRunner</ref></type>
+        <definition>readonly ICoroutineRunner Mirror.Cloud.BaseApi.runner</definition>
+        <argsstring></argsstring>
+        <name>runner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="16" column="45" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_base_api_1a10bdbb18980c655adab5fe9c692beb56" prot="protected" static="no" mutable="no">
+        <type>readonly <ref refid="interface_mirror_1_1_cloud_1_1_i_request_creator" kindref="compound">IRequestCreator</ref></type>
+        <definition>readonly IRequestCreator Mirror.Cloud.BaseApi.requestCreator</definition>
+        <argsstring></argsstring>
+        <name>requestCreator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="17" column="44" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_base_api_1af015f526592d3a59f98537ab249b3e2f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.Cloud.BaseApi.BaseApi</definition>
+        <argsstring>(ICoroutineRunner runner, IRequestCreator requestCreator)</argsstring>
+        <name>BaseApi</name>
+        <param>
+          <type><ref refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" kindref="compound">ICoroutineRunner</ref></type>
+          <declname>runner</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mirror_1_1_cloud_1_1_i_request_creator" kindref="compound">IRequestCreator</ref></type>
+          <declname>requestCreator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="19" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Mirror.Cloud.ListServerService.ListServerServerApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_server_api"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.BaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_base_api"/>
+      </node>
+      <node id="2">
+        <label>Mirror.Cloud.ListServerService.ListServerBaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_base_api"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mirror.Cloud.ListServerService.ListServerClientApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Mirror.Cloud.ICoroutineRunner</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mirror.Cloud.IRequestCreator</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_request_creator"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.BaseApi</label>
+        <link refid="class_mirror_1_1_cloud_1_1_base_api"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>requestCreator</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>runner</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IUnityEqualCheck</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" line="14" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/BaseApi.cs" bodystart="15" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1af015f526592d3a59f98537ab249b3e2f" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::BaseApi</scope><name>BaseApi</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1a10bdbb18980c655adab5fe9c692beb56" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::BaseApi</scope><name>requestCreator</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_base_api_1abed0fe09172332eaa6dc6f41870e833a" prot="protected" virt="non-virtual"><scope>Mirror::Cloud::BaseApi</scope><name>runner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__examples__room__r_e_a_d_m_e" kind="page">
+    <compoundname>md_C__Users_aaron_Documents_GitHub_MyFPS_Assets_Mirror_Examples_Room_README</compoundname>
+    <title>Room Example</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>In Build Settings, remove all scenes and add all of the scenes from the Examples\Room\Scenes folder in the following order:<itemizedlist>
+<listitem><para>OfflineScene</para>
+</listitem><listitem><para>RoomScene</para>
+</listitem><listitem><para>OnlineScene</para>
+</listitem></itemizedlist>
+</para>
+<para>If you opened the Offline scene before doing the above steps, you may have to reassign the scenes to the NetworkRoomManagerExt component of the RoomManager scene object.</para>
+<para>File -&gt; Build and Run</para>
+<para>Start up to 4 built instances: These will all be client players.</para>
+<para>Open the Offline scene in the Editor and press Play</para>
+<para>Click Host (Server + Client) in the HUD: This will be host and the 5th player. You can also use Server Only if you prefer.</para>
+<para>Click Client in the built instances.</para>
+<para>Click Ready in each instance, and finally in the Editor (Host).</para>
+<para>Click the Start Game button when all players are ready.</para>
+<para>You should now be in the Online scene with your players of random color.</para>
+<para>WASDQE keys to move &amp; turn your player capsule. Collide with the spheres to score points. Lighter colors score higher. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

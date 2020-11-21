@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_i_ping_pong_manager_8cs" kind="file" language="C#">
+    <compoundname>IPingPongManager.cs</compoundname>
+    <innerclass refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager" prot="public">Ninja::WebSockets::IPingPongManager</innerclass>
+    <innernamespace refid="namespace_ninja">Ninja</innernamespace>
+    <innernamespace refid="namespace_ninja_1_1_web_sockets">Ninja::WebSockets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ninja_1_1_web_sockets" kindref="compound">Ninja.WebSockets</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager" kindref="compound">IPingPongManager</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>EventHandler&lt;PongEventArgs&gt;<sp/><ref refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1a5cd27979f29fe4f9d520975d06d5f468" kindref="member">Pong</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task<sp/><ref refid="interface_ninja_1_1_web_sockets_1_1_i_ping_pong_manager_1aa9f55f2c558a9c1e39ba5680f6c1148a" kindref="member">SendPing</ref>(ArraySegment&lt;byte&gt;<sp/>payload,<sp/>CancellationToken<sp/>cancellation);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IPingPongManager.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_fe11c9fa620e95701be416e7759cfdb5" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer</compoundname>
+    <innerfile refid="_list_server_8cs">ListServer.cs</innerfile>
+    <innerfile refid="_list_server_base_api_8cs">ListServerBaseApi.cs</innerfile>
+    <innerfile refid="_list_server_client_api_8cs">ListServerClientApi.cs</innerfile>
+    <innerfile refid="_list_server_json_8cs">ListServerJson.cs</innerfile>
+    <innerfile refid="_list_server_server_api_8cs">ListServerServerApi.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ListServer/"/>
+  </compounddef>
+</doxygen>

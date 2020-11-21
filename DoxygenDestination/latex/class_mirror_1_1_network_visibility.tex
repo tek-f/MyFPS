@@ -1,0 +1,90 @@
+\hypertarget{class_mirror_1_1_network_visibility}{}\doxysection{Mirror.\+Network\+Visibility Class Reference}
+\label{class_mirror_1_1_network_visibility}\index{Mirror.NetworkVisibility@{Mirror.NetworkVisibility}}
+Inheritance diagram for Mirror.\+Network\+Visibility\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.642277cm]{class_mirror_1_1_network_visibility}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \mbox{\hyperlink{class_mirror_1_1_network_visibility_ae1e77b70f1280e0293c5365f2cd6582c}{On\+Check\+Observer}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Callback used by the visibility system to determine if an observer (player) can see this object. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_mirror_1_1_network_visibility_aad6f77cc74ce36d0aa5f21366664e076}{On\+Rebuild\+Observers}} (Hash\+Set$<$ \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$ observers, bool initialize)
+\begin{DoxyCompactList}\small\item\em Callback used by the visibility system to (re)construct the set of observers that can see this object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_visibility_aecd15510599fc65131c0955667f1119e}{On\+Set\+Host\+Visibility}} (bool visible)
+\begin{DoxyCompactList}\small\item\em Callback used by the visibility system for objects on a host. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_visibility_ae1e77b70f1280e0293c5365f2cd6582c}\label{class_mirror_1_1_network_visibility_ae1e77b70f1280e0293c5365f2cd6582c}} 
+\index{Mirror.NetworkVisibility@{Mirror.NetworkVisibility}!OnCheckObserver@{OnCheckObserver}}
+\index{OnCheckObserver@{OnCheckObserver}!Mirror.NetworkVisibility@{Mirror.NetworkVisibility}}
+\doxysubsubsection{\texorpdfstring{OnCheckObserver()}{OnCheckObserver()}}
+{\footnotesize\ttfamily abstract bool Mirror.\+Network\+Visibility.\+On\+Check\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Callback used by the visibility system to determine if an observer (player) can see this object. 
+
+If this function returns true, the network connection will be added as an observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Network connection of a player.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can see this object.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_network_scene_checker_ad5640c54a7559b162dd8a6552592c9bf}{Mirror.\+Network\+Scene\+Checker}}, \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a41d15e3e4fe5510332f3e52c09c9fff9}{Mirror.\+Network\+Proximity\+Checker}}, and \mbox{\hyperlink{class_mirror_1_1_network_match_checker_af5c7be3eff10ad6ce2fda8de5a07f118}{Mirror.\+Network\+Match\+Checker}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_visibility_aad6f77cc74ce36d0aa5f21366664e076}\label{class_mirror_1_1_network_visibility_aad6f77cc74ce36d0aa5f21366664e076}} 
+\index{Mirror.NetworkVisibility@{Mirror.NetworkVisibility}!OnRebuildObservers@{OnRebuildObservers}}
+\index{OnRebuildObservers@{OnRebuildObservers}!Mirror.NetworkVisibility@{Mirror.NetworkVisibility}}
+\doxysubsubsection{\texorpdfstring{OnRebuildObservers()}{OnRebuildObservers()}}
+{\footnotesize\ttfamily abstract void Mirror.\+Network\+Visibility.\+On\+Rebuild\+Observers (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$}]{observers,  }\item[{bool}]{initialize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Callback used by the visibility system to (re)construct the set of observers that can see this object. 
+
+Implementations of this callback should add network connections of players that can see this object to the observers set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observers} & The new set of observers for this object.\\
+\hline
+{\em initialize} & True if the set of observers is being built for the first time.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_network_scene_checker_a156d30a0dbed81562a72bd160cdb253a}{Mirror.\+Network\+Scene\+Checker}}, \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a0d3926e69564727752273402bebb1e01}{Mirror.\+Network\+Proximity\+Checker}}, and \mbox{\hyperlink{class_mirror_1_1_network_match_checker_ad9c52241e062c980095288d9cd3c5413}{Mirror.\+Network\+Match\+Checker}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_visibility_aecd15510599fc65131c0955667f1119e}\label{class_mirror_1_1_network_visibility_aecd15510599fc65131c0955667f1119e}} 
+\index{Mirror.NetworkVisibility@{Mirror.NetworkVisibility}!OnSetHostVisibility@{OnSetHostVisibility}}
+\index{OnSetHostVisibility@{OnSetHostVisibility}!Mirror.NetworkVisibility@{Mirror.NetworkVisibility}}
+\doxysubsubsection{\texorpdfstring{OnSetHostVisibility()}{OnSetHostVisibility()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Visibility.\+On\+Set\+Host\+Visibility (\begin{DoxyParamCaption}\item[{bool}]{visible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Callback used by the visibility system for objects on a host. 
+
+Objects on a host (with a local client) cannot be disabled or destroyed when they are not visible to the local client. So this function is called to allow custom code to hide these objects. A typical implementation will disable renderer components on the object. This is only called on local clients on a host.
+
+
+\begin{DoxyParams}{Parameters}
+{\em visible} & New visibility state.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Visibility.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_my_f_p_s_1_1_mirror_1_1_player_name_input" kind="class" language="C#" prot="public">
+    <compoundname>MyFPS::Mirror::PlayerNameInput</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1adba160b9a78062093d3fcb88ea6bd01e" prot="private" static="no" mutable="no">
+        <type>TMP_InputField</type>
+        <definition>TMP_InputField MyFPS.Mirror.PlayerNameInput.nameInputField</definition>
+        <argsstring></argsstring>
+        <name>nameInputField</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="12" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1ac38d619cc92c9be4d292b1ad99da8343" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button MyFPS.Mirror.PlayerNameInput.continueButton</definition>
+        <argsstring></argsstring>
+        <name>continueButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="13" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1c43e99f28d4c1ece675331393a01dce" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>string</type>
+        <definition>string MyFPS.Mirror.PlayerNameInput.DisplayName</definition>
+        <argsstring></argsstring>
+        <name>DisplayName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="14" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1aa6919070e088e1a1d32bf5e3aa0916" prot="private" static="yes" mutable="no">
+        <type>const string</type>
+        <definition>const string MyFPS.Mirror.PlayerNameInput.PlayerPrefsNameKey</definition>
+        <argsstring></argsstring>
+        <name>PlayerPrefsNameKey</name>
+        <initializer>= &quot;PlayerName&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="15" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a4ee0b02fcc5e80447db99f2d43eda7db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerNameInput.SetPlayerName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetPlayerName</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="17" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1ad9aa22bb1004bf16ffdde50238c1b03c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerNameInput.SavePlayerName</definition>
+        <argsstring>()</argsstring>
+        <name>SavePlayerName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="21" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="21" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1a318fb50d223d3317249701251aa956" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerNameInput.SetUpInputField</definition>
+        <argsstring>()</argsstring>
+        <name>SetUpInputField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="27" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1acd4651aa9dda6c5c040b6ac1562e83b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyFPS.Mirror.PlayerNameInput.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="37" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Mirror.PlayerNameInput</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>MyFPS.Mirror.PlayerNameInput</label>
+        <link refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" line="9" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Scripts/Mirror/PlayerNameInput.cs" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1ac38d619cc92c9be4d292b1ad99da8343" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>continueButton</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1c43e99f28d4c1ece675331393a01dce" prot="public" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>DisplayName</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1adba160b9a78062093d3fcb88ea6bd01e" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>nameInputField</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1aa6919070e088e1a1d32bf5e3aa0916" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>PlayerPrefsNameKey</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1ad9aa22bb1004bf16ffdde50238c1b03c" prot="public" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>SavePlayerName</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a4ee0b02fcc5e80447db99f2d43eda7db" prot="public" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>SetPlayerName</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1a1a318fb50d223d3317249701251aa956" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>SetUpInputField</name></member>
+      <member refid="class_my_f_p_s_1_1_mirror_1_1_player_name_input_1acd4651aa9dda6c5c040b6ac1562e83b2" prot="private" virt="non-virtual"><scope>MyFPS::Mirror::PlayerNameInput</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

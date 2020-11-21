@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_taichi_character_pack_2_readme_8txt" kind="file" language="C++">
+    <compoundname>Readme.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a3fa08b55a10041aafa4845a29c41497e" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio</type>
+        <definition>GameAssetStudio http</definition>
+        <argsstring></argsstring>
+        <name>http</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="5" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a726212cc111172215f5e664209e4fac5" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="20" column="47" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1ab57380ee1774ab70bfb51fd48023c29b" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the project</definition>
+        <argsstring></argsstring>
+        <name>project</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="24" column="36" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a91be96128504615b5066e1e740d0fdfb" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for use</definition>
+        <argsstring></argsstring>
+        <name>use</name>
+        <initializer>===========================================
+Taichi Character Pack Setting
+===========================================
+1. Animations with &quot;_p&quot; at the end of their file names have had their motion components removed and will remain at the origin.
+2. Animations with &quot;_a&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="24" column="60" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1ad6d25b6fe651b68eed7b0d7877491617" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for _b</definition>
+        <argsstring></argsstring>
+        <name>_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="30" column="2" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a2e47934d2d57a2721619ff96584cba9f" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into parts</definition>
+        <argsstring></argsstring>
+        <name>parts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="30" column="69" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1ab558a44033177639bfb9bb9ee4ca947f" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following animations</definition>
+        <argsstring></argsstring>
+        <name>animations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="32" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a28f69acc7949a915b10391c345969c76" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the scene</definition>
+        <argsstring></argsstring>
+        <name>scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="47" column="56" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a8177c3dc857e7d7a9097e38b33c9477b" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In addition</definition>
+        <argsstring></argsstring>
+        <name>addition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="51" column="6" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a722e1ac148366e3368bb1cc05173260f" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="55" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a8c8e077f648b40a3f2353b750492c9b6" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is high</definition>
+        <argsstring></argsstring>
+        <name>high</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="62" column="44" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a4d66227cf414a71662b5afd24b93fbb9" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is white clipping may occur This can be fixed by reducing either the shininess setting on the Shader or the intensity on the light This product also supports Mecanim To use</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is white clipping may occur This can be fixed by reducing either the shininess setting on the Shader or the intensity on the light This product also supports Mecanim To use Mecanim</definition>
+        <argsstring></argsstring>
+        <name>Mecanim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="69" column="8" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_taichi_character_pack_2_readme_8txt_1a52ab6dabb23af728af7b3e68798d2b42" prot="public" static="no" mutable="no">
+        <type>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is white clipping may occur This can be fixed by reducing either the shininess setting on the Shader or the intensity on the light This product also supports Mecanim To use please use the settings below When you select a Mecanim animation in the project</type>
+        <definition>GameAssetStudio then right click on it Choose Export Package… Export all of the assets while Include Dependencies Specify an arbitrary directory and a package then create a package file Open a project in which you wish to use the model Select Asset Import Package Custom Package Select the Package you chose the above step and import it Once the model is imported to the it is ready for or _c at the end of their file names divide the animation into respectively Some animations are intended for use with a pair of male or female characters This applies to the following please be sure to use the following settings Method When dragging a model from the project folder to the you must modify the number of bones to use per vertex for skinning Bring the model into the scene and then double click on it In the Inspector Tab look for the Quality setting and change it from Auto to Bones Now you are finished In this procedure must be followed for each model you bring into the scene Method Choose Edit Project Settings Quality In the Inspector choose Other Blend Weights and set that to Bones With this method there is no need to adjust model configurations each time they are brought into the scene Method You can now set the Alpha cutoff of the toon_cutoff shader is the recommended setting Method If your intensity setting on the light is white clipping may occur This can be fixed by reducing either the shininess setting on the Shader or the intensity on the light This product also supports Mecanim To use please use the settings below When you select a Mecanim animation in the project folder</definition>
+        <argsstring></argsstring>
+        <name>folder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" line="71" column="54" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">GameAssetStudio</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">http:</highlight><highlight class="comment">//gameassetstudio.com/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/>Ver<sp/>1.16<sp/>Update<sp/>Information</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">1.<sp/>The<sp/>viewer<sp/>script<sp/>has<sp/>been<sp/>changed<sp/>from<sp/>javascript<sp/>to<sp/>C#.</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">How<sp/>to<sp/>use<sp/>a<sp/>Model</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">1.<sp/>Select<sp/>a<sp/>model<sp/>you<sp/>wish<sp/>to<sp/>use<sp/>from<sp/>project,<sp/>then<sp/>right-click<sp/>on<sp/>it.</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">2.<sp/>Choose<sp/>Export<sp/>Package…</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">3.<sp/>Export<sp/>all<sp/>of<sp/>the<sp/>assets<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>Include<sp/>Dependencies.</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">4.<sp/>Specify<sp/>an<sp/>arbitrary<sp/>directory<sp/>and<sp/>a<sp/></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">name,<sp/>then<sp/>create<sp/>a<sp/>package<sp/>file.</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">5.<sp/>Open<sp/>a<sp/>project<sp/>in<sp/>which<sp/>you<sp/>wish<sp/>to<sp/>use<sp/>the<sp/>model.</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">6.<sp/>Select<sp/>Asset<sp/>&gt;<sp/>Import<sp/>Package<sp/>&gt;<sp/>Custom<sp/>Package...</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">7.<sp/>Select<sp/>the<sp/>Package<sp/>you<sp/>chose<sp/>the<sp/>above<sp/>step<sp/>4<sp/>and<sp/>import<sp/>it.</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">8.<sp/>Once<sp/>the<sp/>model<sp/>is<sp/>imported<sp/>to<sp/>the<sp/>project,<sp/>it<sp/>is<sp/>ready<sp/>for<sp/>use.</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">Taichi<sp/>Character<sp/>Pack<sp/>Setting</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">1.<sp/>Animations<sp/>with<sp/>&quot;_p&quot;<sp/>at<sp/>the<sp/>end<sp/>of<sp/>their<sp/>file<sp/>names<sp/>have<sp/>had<sp/>their<sp/>motion<sp/>components<sp/>removed<sp/>and<sp/>will<sp/>remain<sp/>at<sp/>the<sp/>origin.</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">2.<sp/>Animations<sp/>with<sp/>&quot;_a&quot;,<sp/>&quot;_b&quot;,<sp/>or<sp/>&quot;_c&quot;<sp/>at<sp/>the<sp/>end<sp/>of<sp/>their<sp/>file<sp/>names<sp/>divide<sp/>the<sp/>animation<sp/>into<sp/>3<sp/>parts,<sp/>respectively.</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">3.<sp/>Some<sp/>animations<sp/>are<sp/>intended<sp/>for<sp/>use<sp/>with<sp/>a<sp/>pair<sp/>of<sp/>male<sp/>or<sp/>female<sp/>characters.</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">This<sp/>applies<sp/>to<sp/>the<sp/>following<sp/>animations:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">-<sp/>m01@hugshoulder_00　/　f05@hugshoulder_00</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">-<sp/>m01@kiss_00　/　f05@kiss_00</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">-<sp/>m01@hughip_00　/　f05@hughip_00</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">-<sp/>m01@pathead_00　/　f05@pathead_00</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">-<sp/>m01@hugshouldersit_00　/　f05@hugshouldersit_00</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">Unity<sp/>Asset<sp/>Setting</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">In<sp/>order<sp/>to<sp/>use<sp/>all<sp/>of<sp/>the<sp/>character<sp/>asset<sp/>states<sp/>in<sp/>The<sp/>Succubus<sp/>Twins<sp/>Character<sp/>Pack,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">please<sp/>be<sp/>sure<sp/>to<sp/>use<sp/>the<sp/>following<sp/>settings.</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">Method<sp/>1</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">-<sp/>1.<sp/>When<sp/>dragging<sp/>a<sp/>model<sp/>from<sp/>the<sp/>project<sp/>folder<sp/>to<sp/>the<sp/>scene,<sp/>you<sp/>must<sp/>modify<sp/>the<sp/>number<sp/>of<sp/>bones<sp/>to<sp/>use<sp/>per<sp/>vertex<sp/>for<sp/>-<sp/>skinning.</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">-<sp/>2.<sp/>Bring<sp/>the<sp/>model<sp/>into<sp/>the<sp/>scene<sp/>and<sp/>then<sp/>double<sp/>click<sp/>on<sp/>it.</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">-<sp/>3.<sp/>In<sp/>the<sp/>Inspector<sp/>Tab<sp/>look<sp/>for<sp/>the<sp/>&quot;Quality&quot;<sp/>setting<sp/>and<sp/>change<sp/>it<sp/>from<sp/>&quot;Auto&quot;<sp/>to<sp/>&quot;4<sp/>Bones.&quot;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">-<sp/>4.<sp/>Now<sp/>you<sp/>are<sp/>finished.</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">-<sp/>5.<sp/>In<sp/>addition,<sp/>this<sp/>procedure<sp/>must<sp/>be<sp/>followed<sp/>for<sp/>each<sp/>model<sp/>you<sp/>bring<sp/>into<sp/>the<sp/>scene.</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">Method<sp/>2</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">-<sp/>1.<sp/>Choose<sp/>Edit<sp/>&gt;<sp/>Project<sp/>&gt;<sp/>Settings<sp/>&gt;<sp/>Quality.</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">-<sp/>2.<sp/>In<sp/>the<sp/>Inspector<sp/>tab,<sp/>choose<sp/>Other<sp/>&gt;<sp/>Blend<sp/>Weights<sp/>and<sp/>set<sp/>that<sp/>to<sp/>&quot;4<sp/>Bones.&quot;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">-<sp/>3.<sp/>With<sp/>this<sp/>method<sp/>there<sp/>is<sp/>no<sp/>need<sp/>to<sp/>adjust<sp/>model<sp/>configurations<sp/>each<sp/>time<sp/>they<sp/>are<sp/>brought<sp/>into<sp/>the<sp/>scene.</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">Method<sp/>3</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">-<sp/>1.<sp/>You<sp/>can<sp/>now<sp/>set<sp/>the<sp/>Alpha<sp/>cutoff<sp/>of<sp/>the<sp/>toon_cutoff<sp/>shader.<sp/>0.9<sp/>is<sp/>the<sp/>recommended<sp/>setting.</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">Method<sp/>4</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">-<sp/>If<sp/>your<sp/>intensity<sp/>setting<sp/>on<sp/>the<sp/>light<sp/>is<sp/>high,<sp/>white<sp/>clipping<sp/>may<sp/>occur.</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">-<sp/>This<sp/>can<sp/>be<sp/>fixed<sp/>by<sp/>reducing<sp/>either<sp/>the<sp/>shininess<sp/>setting<sp/>on<sp/>the<sp/>Shader<sp/>or<sp/>the<sp/>intensity<sp/>on<sp/>the<sp/>light.</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">-------------------------------------------</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">This<sp/>product<sp/>also<sp/>supports<sp/>Mecanim.</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">To<sp/>use<sp/>Mecanim,<sp/>please<sp/>use<sp/>the<sp/>settings<sp/>below.</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">-<sp/>1.<sp/>When<sp/>you<sp/>select<sp/>a<sp/>Mecanim<sp/>animation<sp/>in<sp/>the<sp/>project<sp/>folder,<sp/>the<sp/>animation&apos;s<sp/>details<sp/>are<sp/>displayed<sp/>in<sp/>the<sp/>Inspector<sp/>tab.</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">-<sp/>2.<sp/>Choose<sp/>the<sp/>Rig<sp/>tab.</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">-<sp/>3.<sp/>&quot;Source&quot;<sp/>is<sp/>displayed<sp/>as<sp/>&quot;m01_schoolwear_000_hAvatar&quot;.</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">Load<sp/>&quot;Avatar&quot;<sp/>of<sp/>the<sp/>costume<sp/>saved<sp/>in<sp/>Asset<sp/>&gt;<sp/>TaichiCharacterPack<sp/>&gt;<sp/>Resources<sp/>&gt;<sp/>Taichi<sp/>&gt;<sp/>Models<sp/>Mecanim.</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">*The<sp/>Mecanim<sp/>animations<sp/>in<sp/>this<sp/>product<sp/>only<sp/>correspond<sp/>to<sp/>the<sp/>Taichi<sp/>Character<sp/>Pack.</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">Changing<sp/>the<sp/>facial<sp/>expression<sp/>of<sp/>M<sp/>and<sp/>L<sp/>sized<sp/>models</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">1.<sp/>Select<sp/>Assets<sp/>&gt;<sp/>TaichiCharacterPack<sp/>&gt;<sp/>Resources<sp/>&gt;<sp/>Taichi<sp/>&gt;<sp/>Materials<sp/>and<sp/>then<sp/>m01_face_00_m<sp/>or<sp/>m01_face_00_l</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">2.<sp/>In<sp/>the<sp/>Inspector<sp/>tab<sp/>where<sp/>material<sp/>information<sp/>is<sp/>displayed,<sp/>select<sp/>Texture.<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">3.<sp/>By<sp/>selecting<sp/>&quot;m01_face_xxx&quot;<sp/>in<sp/>the<sp/>texture<sp/>overview,<sp/>the<sp/>facial<sp/>expression<sp/>can<sp/>be<sp/>changed.</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">*<sp/>For<sp/>facial<sp/>expressions,<sp/>please<sp/>refer<sp/>to<sp/>the<sp/>following<sp/>correspondence<sp/>table.</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">-<sp/>Neutral</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">m01_face_00_m.png</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">m01_face_00_l.png</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">-<sp/>Angry</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">m01_face_010_m.png</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">m01_face_010_l.png</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">-<sp/>Sad</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">m01_face_020_m.png</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">m01_face_020_l.png</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">-<sp/>Embarrassed</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">m01_face_030_m.png</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">m01_face_030_l.png</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">-<sp/>Wink</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">m01_face_040_m.png</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">m01_face_040_l.png</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">-<sp/>Kiss</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">m01_face_050_m.png</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">m01_face_050_l.png</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">-<sp/>Eyes<sp/>Closed</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">m01_face_060_m.png</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">m01_face_060_l.png</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">-<sp/>Damage</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">m01_face_070_m.png</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">m01_face_070_l.png</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">Unity<sp/>Program<sp/>Setting</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">Asset<sp/>Viewer<sp/>(<sp/>WebPlayer<sp/>)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">Asset<sp/>Twin<sp/>Viewer<sp/>(<sp/>WebPlayer<sp/>)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">Only<sp/>able<sp/>to<sp/>use<sp/>legacy<sp/>animations</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">SceneFile:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">TaichiCharacterPack<sp/>&gt;<sp/>Viewer<sp/>&gt;<sp/>taichi_viewer.unity</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">TaichiCharacterPack<sp/>&gt;<sp/>Twin<sp/>Viewer<sp/>&gt;<sp/>twin_viewer.unity</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">Recommended<sp/>Settings:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">-<sp/>PlayerSettings<sp/>&gt;<sp/>Setting<sp/>for<sp/>Web<sp/>Player<sp/>&gt;<sp/>Resolution<sp/>and<sp/>Presentation</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">-<sp/>Default<sp/>Screen<sp/>Width<sp/>960</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">-<sp/>Default<sp/>Screen<sp/>Width<sp/>600</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">About<sp/>the<sp/>TwinViewer</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">TaichiCharacterPack<sp/>&gt;<sp/>TwinViewer<sp/>&gt;<sp/>twin_viewer.scene</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">With<sp/>the<sp/>TwinViewer,<sp/>you<sp/>can<sp/>view<sp/>all<sp/>GameAssetStudio<sp/>characters<sp/>and<sp/>animations<sp/>that<sp/>have<sp/>been<sp/>imported<sp/>into<sp/>the<sp/>project.</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">You<sp/>can<sp/>change<sp/>position,<sp/>rotate,<sp/>and<sp/>play<sp/>animations<sp/>to<sp/>check<sp/>which<sp/>characters<sp/>and<sp/>animations<sp/>will<sp/>work<sp/>best<sp/>with<sp/>your<sp/>game.</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">*The<sp/>TwinViewer<sp/>supports<sp/>the<sp/>latest<sp/>version<sp/>of<sp/>each<sp/>asset.</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">*To<sp/>display<sp/>characters<sp/>other<sp/>than<sp/>Taichi<sp/>in<sp/>the<sp/>TwinViewer,<sp/>please<sp/>update<sp/>each<sp/>character.</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">How<sp/>to<sp/>use<sp/>the<sp/>TwinViewer</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">Characters<sp/>can<sp/>be<sp/>added<sp/>from<sp/>the<sp/>Asset<sp/>Store<sp/>or<sp/>previously<sp/>downloaded<sp/>packages.</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">How<sp/>to<sp/>Package<sp/>import.</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">1.<sp/>Choose<sp/>the<sp/>Root<sp/>directory<sp/>and<sp/>right<sp/>click.</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/>(Honoka<sp/>Futaba<sp/>Basic<sp/>Set)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/>HonokaFutabaBasicSet</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/>(Aoi<sp/>Character<sp/>Pack)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/>Aoi<sp/>Character<sp/>Pack</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/>(Succubus<sp/>Twins<sp/>Character<sp/>Pack)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/>Succubus<sp/>Twins<sp/>Character<sp/>Pack</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/>(Satomi<sp/>Character<sp/>Pack)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/>SatomiCharacterPack</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">2.<sp/>Choose<sp/>Export<sp/>Package…</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">3.<sp/>Export<sp/>all<sp/>of<sp/>the<sp/>assets<sp/>while<sp/>Include<sp/>Dependencies.</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">4.<sp/>Specify<sp/>an<sp/>arbitrary<sp/>directory<sp/>and<sp/>a<sp/>package<sp/>name,<sp/>then<sp/>create<sp/>a<sp/>package<sp/>file.<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">5.<sp/>Open<sp/>a<sp/>project<sp/>in<sp/>which<sp/>you<sp/>wish<sp/>to<sp/>use<sp/>the<sp/>model.<sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">6.<sp/>Select<sp/>Asset<sp/>&gt;<sp/>Import<sp/>Package<sp/>&gt;<sp/>Custom<sp/>Package...</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">7.<sp/>Select<sp/>the<sp/>Package<sp/>you<sp/>chose<sp/>the<sp/>above<sp/>step<sp/>4<sp/>and<sp/>import<sp/>it.<sp/></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">8.<sp/>Once<sp/>the<sp/>model<sp/>is<sp/>imported<sp/>to<sp/>the<sp/>project,<sp/>it<sp/>is<sp/>ready<sp/>for<sp/>use.</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">Description<sp/>of<sp/>directory</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">===========================================</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">[Taichi<sp/>Character<sp/>Pack]</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>[Resources]</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>:<sp/>The<sp/>animations<sp/>and<sp/>models<sp/>that<sp/>make<sp/>up<sp/>the<sp/>main<sp/>asset<sp/>are<sp/>stored<sp/>here.<sp/>Please<sp/>use<sp/>them<sp/>as<sp/>you<sp/>see<sp/>fit.</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>[Taichi]</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Animations<sp/>Legacy]<sp/><sp/>:<sp/>Legacy<sp/>Animation<sp/>Data</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Animations<sp/>Mecanim]<sp/>:<sp/>Mecanim<sp/>Animation<sp/>Data</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Materials]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Material<sp/>Data</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Models<sp/>Legacy]<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Legacy<sp/>Model<sp/>Data</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Models<sp/>Mecanim]<sp/><sp/><sp/><sp/><sp/>:<sp/>Mecanim<sp/>Model<sp/>Data</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Textures]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Texture<sp/>Data</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>[Shaders]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Shader<sp/>Data</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>[Viewer]</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>:<sp/>The<sp/>files<sp/>in<sp/>the<sp/>hierarchy<sp/>below<sp/>this<sp/>are<sp/>used<sp/>by<sp/>Viewer,<sp/>so<sp/>please<sp/>do<sp/>not<sp/>move<sp/>or<sp/>rename<sp/>any<sp/>of<sp/>the<sp/>files.</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>taichi_viewer.scene<sp/><sp/><sp/><sp/><sp/>:<sp/>Viewer<sp/>Scene<sp/>File</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>[GUI]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Viewer<sp/>GUI<sp/>Images</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>[Resources]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Resources<sp/>used<sp/>by<sp/>Viewer</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Taichi]</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Viewer<sp/>Settings]<sp/><sp/><sp/>:<sp/>Viewer<sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Viewer<sp/>BackGround]<sp/>:<sp/>Viewer<sp/>Background<sp/>Images</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>[Scripts]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Viewer<sp/>Scripts</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>[Twin<sp/>Viewer]</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>:<sp/>By<sp/>importing<sp/>Game<sp/>Asset<sp/>Studio<sp/>Character<sp/>Series,<sp/>you<sp/>can<sp/>view<sp/>2<sp/>characters<sp/>at<sp/>once.</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>so<sp/>please<sp/>do<sp/>not<sp/>move<sp/>or<sp/>rename<sp/>any<sp/>of<sp/>the<sp/>files.</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>[GUI]</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>[Resources]<sp/>:<sp/>Resources<sp/>used<sp/>by<sp/>Twin<sp/>Viewer</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[Taichi]</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[TwinViewer<sp/>BackGrounds]<sp/>:<sp/>Viewer<sp/>Background<sp/>Images<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[TwinViewer<sp/>Settings]<sp/><sp/><sp/><sp/>:<sp/>Twin<sp/>Viewer<sp/>Setting<sp/>File<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[F01]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Honoka<sp/>Futaba<sp/>Basic<sp/>Set<sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[F02]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Aoi<sp/>Character<sp/>Pack<sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[F03]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Succubus<sp/>Twins<sp/>Character<sp/>Pack<sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Arum]<sp/><sp/><sp/><sp/><sp/>:<sp/>Succubus<sp/>Twins<sp/>Character<sp/>Pack<sp/>Arum<sp/><sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Asphodel]<sp/>:<sp/>Succubus<sp/>Twins<sp/>Character<sp/>Pack<sp/>Asphodel<sp/><sp/>Setting<sp/>File</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[F05]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Satomi<sp/>Character<sp/>Pack<sp/>Setting<sp/>File<sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[M01]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Taichi<sp/>Character<sp/>Pack<sp/>Setting<sp/>File<sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Puppet]<sp/><sp/><sp/><sp/><sp/>:<sp/>Puppet<sp/>Setting<sp/>File<sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>[Scripts]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Twin<sp/>Viewer<sp/>Scripts</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/TaichiCharacterPack/Readme.txt"/>
+  </compounddef>
+</doxygen>

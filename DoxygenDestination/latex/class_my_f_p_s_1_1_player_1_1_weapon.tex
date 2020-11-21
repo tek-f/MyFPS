@@ -1,0 +1,135 @@
+\hypertarget{class_my_f_p_s_1_1_player_1_1_weapon}{}\doxysection{My\+F\+P\+S.\+Player.\+Weapon Class Reference}
+\label{class_my_f_p_s_1_1_player_1_1_weapon}\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+Inheritance diagram for My\+F\+P\+S.\+Player.\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_my_f_p_s_1_1_player_1_1_weapon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a5865346af6c7cf11a6993fdd7c2465a2}{Set\+Up}} (int \+\_\+team\+ID, Game\+Object \+\_\+world\+Game\+Object, Vector3 \+\_\+original\+Location)
+\begin{DoxyCompactList}\small\item\em Set Up function for the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_aa992ce6fc89e78985b33efe823ae4d38}{Drop\+Weapon}} (Character\+Controller player)
+\begin{DoxyCompactList}\small\item\em Drops this weapon from the players loadout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a145a606ad09cad883568a2fec69ba0bf}{team\+ID}}
+\begin{DoxyCompactList}\small\item\em Team ID of the weapon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_aba494e6a37aa50391f58cc02bcfb94b8}{is\+Weapon\+Locked}} = false
+\begin{DoxyCompactList}\small\item\em Determines if the weapon allows the player to change weapons while it is equiped. Used for the flag. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a639513bb4657c71250c287a549138520}{is\+Weapon\+Dropable}} = false
+\begin{DoxyCompactList}\small\item\em Determines if the weapon is dropable. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a0b4d04a58b438a90066657e0879afdc3}{world\+Weapon\+Game\+Object}}
+\begin{DoxyCompactList}\small\item\em World space object of the weapon \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a638eaf12851dc43e17deb5b209111526}{original\+Location}}
+\begin{DoxyCompactList}\small\item\em Weapons original locaiton. \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_weapon_a8d649b6d36a3daa051275faf257f2782}{equiped\+By\+Player\+Position}}
+\begin{DoxyCompactList}\small\item\em Location the weapon was first equiped by the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_aa992ce6fc89e78985b33efe823ae4d38}\label{class_my_f_p_s_1_1_player_1_1_weapon_aa992ce6fc89e78985b33efe823ae4d38}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!DropWeapon@{DropWeapon}}
+\index{DropWeapon@{DropWeapon}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{DropWeapon()}{DropWeapon()}}
+{\footnotesize\ttfamily void My\+F\+P\+S.\+Player.\+Weapon.\+Drop\+Weapon (\begin{DoxyParamCaption}\item[{Character\+Controller}]{player }\end{DoxyParamCaption})}
+
+
+
+Drops this weapon from the players loadout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \mbox{\hyperlink{namespace_my_f_p_s_1_1_player}{Player}} that is dropping this weapon.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a5865346af6c7cf11a6993fdd7c2465a2}\label{class_my_f_p_s_1_1_player_1_1_weapon_a5865346af6c7cf11a6993fdd7c2465a2}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!SetUp@{SetUp}}
+\index{SetUp@{SetUp}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{SetUp()}{SetUp()}}
+{\footnotesize\ttfamily void My\+F\+P\+S.\+Player.\+Weapon.\+Set\+Up (\begin{DoxyParamCaption}\item[{int}]{\+\_\+team\+ID,  }\item[{Game\+Object}]{\+\_\+world\+Game\+Object,  }\item[{Vector3}]{\+\_\+original\+Location }\end{DoxyParamCaption})}
+
+
+
+Set Up function for the weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+team\+ID} & Value that team\+ID is set to.\\
+\hline
+{\em \+\_\+world\+Game\+Object} & Value that world\+Weapon\+Game\+Object is set to.\\
+\hline
+{\em \+\_\+original\+Location} & Value that original\+Location is set to.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a8d649b6d36a3daa051275faf257f2782}\label{class_my_f_p_s_1_1_player_1_1_weapon_a8d649b6d36a3daa051275faf257f2782}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!equipedByPlayerPosition@{equipedByPlayerPosition}}
+\index{equipedByPlayerPosition@{equipedByPlayerPosition}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{equipedByPlayerPosition}{equipedByPlayerPosition}}
+{\footnotesize\ttfamily Vector3 My\+F\+P\+S.\+Player.\+Weapon.\+equiped\+By\+Player\+Position}
+
+
+
+Location the weapon was first equiped by the player. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a639513bb4657c71250c287a549138520}\label{class_my_f_p_s_1_1_player_1_1_weapon_a639513bb4657c71250c287a549138520}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!isWeaponDropable@{isWeaponDropable}}
+\index{isWeaponDropable@{isWeaponDropable}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{isWeaponDropable}{isWeaponDropable}}
+{\footnotesize\ttfamily bool My\+F\+P\+S.\+Player.\+Weapon.\+is\+Weapon\+Dropable = false}
+
+
+
+Determines if the weapon is dropable. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_aba494e6a37aa50391f58cc02bcfb94b8}\label{class_my_f_p_s_1_1_player_1_1_weapon_aba494e6a37aa50391f58cc02bcfb94b8}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!isWeaponLocked@{isWeaponLocked}}
+\index{isWeaponLocked@{isWeaponLocked}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{isWeaponLocked}{isWeaponLocked}}
+{\footnotesize\ttfamily bool My\+F\+P\+S.\+Player.\+Weapon.\+is\+Weapon\+Locked = false}
+
+
+
+Determines if the weapon allows the player to change weapons while it is equiped. Used for the flag. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a638eaf12851dc43e17deb5b209111526}\label{class_my_f_p_s_1_1_player_1_1_weapon_a638eaf12851dc43e17deb5b209111526}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!originalLocation@{originalLocation}}
+\index{originalLocation@{originalLocation}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{originalLocation}{originalLocation}}
+{\footnotesize\ttfamily Vector3 My\+F\+P\+S.\+Player.\+Weapon.\+original\+Location}
+
+
+
+Weapons original locaiton. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a145a606ad09cad883568a2fec69ba0bf}\label{class_my_f_p_s_1_1_player_1_1_weapon_a145a606ad09cad883568a2fec69ba0bf}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!teamID@{teamID}}
+\index{teamID@{teamID}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{teamID}{teamID}}
+{\footnotesize\ttfamily int My\+F\+P\+S.\+Player.\+Weapon.\+team\+ID}
+
+
+
+Team ID of the weapon. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_player_1_1_weapon_a0b4d04a58b438a90066657e0879afdc3}\label{class_my_f_p_s_1_1_player_1_1_weapon_a0b4d04a58b438a90066657e0879afdc3}} 
+\index{MyFPS.Player.Weapon@{MyFPS.Player.Weapon}!worldWeaponGameObject@{worldWeaponGameObject}}
+\index{worldWeaponGameObject@{worldWeaponGameObject}!MyFPS.Player.Weapon@{MyFPS.Player.Weapon}}
+\doxysubsubsection{\texorpdfstring{worldWeaponGameObject}{worldWeaponGameObject}}
+{\footnotesize\ttfamily Game\+Object My\+F\+P\+S.\+Player.\+Weapon.\+world\+Weapon\+Game\+Object}
+
+
+
+World space object of the weapon 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Scripts/\+Player/Weapon.\+cs\end{DoxyCompactItemize}

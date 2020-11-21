@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_discovery_1_1_network_discovery" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Discovery::NetworkDiscovery</compoundname>
+    <basecompoundref refid="class_mirror_1_1_discovery_1_1_network_discovery_base" prot="public" virt="non-virtual">Mirror.Discovery.NetworkDiscoveryBase&lt; ServerRequest, ServerResponse &gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_discovery_1_1_network_discovery_1a0e501e280d9428467917482399ec2fe1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>long</type>
+        <definition>long Mirror.Discovery.NetworkDiscovery.ServerId</definition>
+        <argsstring></argsstring>
+        <name>ServerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="17" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_1ae1b3d133fd7a8c4bd50fe47ab71dcb34" prot="public" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_transport" kindref="compound">Transport</ref></type>
+        <definition>Transport Mirror.Discovery.NetworkDiscovery.transport</definition>
+        <argsstring></argsstring>
+        <name>transport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="20" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_1abe20d3ca2aa371be0bd0eec9bd2a67ca" prot="public" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_discovery_1_1_server_found_unity_event" kindref="compound">ServerFoundUnityEvent</ref></type>
+        <definition>ServerFoundUnityEvent Mirror.Discovery.NetworkDiscovery.OnServerFound</definition>
+        <argsstring></argsstring>
+        <name>OnServerFound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="23" column="38" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_1a92f7da48954d365a3ae13785923ce74c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Discovery.NetworkDiscovery.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <reimplements refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a96de23229173dd735265d4a3e0a9f863">Start</reimplements>
+        <briefdescription>
+<para>virtual so that inheriting classes&apos; <ref refid="class_mirror_1_1_discovery_1_1_network_discovery_1a92f7da48954d365a3ae13785923ce74c" kindref="member">Start()</ref> can call base.Start() too </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="25" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="25" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_1a102b884161ed3cfbc83bbddd31aab504" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override <ref refid="class_mirror_1_1_discovery_1_1_server_response" kindref="compound">ServerResponse</ref></type>
+        <definition>override ServerResponse Mirror.Discovery.NetworkDiscovery.ProcessRequest</definition>
+        <argsstring>(ServerRequest request, IPEndPoint endpoint)</argsstring>
+        <name>ProcessRequest</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_discovery_1_1_server_request" kindref="compound">ServerRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the request from a client </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to provide more information to the clients such as the name of the host player </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request comming from client</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the client that sent the request</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The message to be sent back to the client or null</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="48" column="43" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="48" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_1a837135f42c819dfc2617aac49603651d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>override <ref refid="class_mirror_1_1_discovery_1_1_server_request" kindref="compound">ServerRequest</ref></type>
+        <definition>override ServerRequest Mirror.Discovery.NetworkDiscovery.GetRequest</definition>
+        <argsstring>()</argsstring>
+        <name>GetRequest</name>
+        <reimplements refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ad2a17bc656a6ef5ca35e6120eaefac60">GetRequest</reimplements>
+        <briefdescription>
+<para>Create a message that will be broadcasted on the network to discover servers </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to include additional data in the discovery message such as desired game mode, language, difficulty, etc... </para>
+<para><simplesect kind="return"><para>An instance of <ref refid="class_mirror_1_1_discovery_1_1_server_request" kindref="compound">ServerRequest</ref> with data to be broadcasted</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="83" column="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_1a015a04e33084dd1d065f897ff2322ecd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Mirror.Discovery.NetworkDiscovery.ProcessResponse</definition>
+        <argsstring>(ServerResponse response, IPEndPoint endpoint)</argsstring>
+        <name>ProcessResponse</name>
+        <param>
+          <type><ref refid="class_mirror_1_1_discovery_1_1_server_response" kindref="compound">ServerResponse</ref></type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the answer from a server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A client receives a reply from a server, this method processes the reply and raises an event </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Response that came from the server</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the server that replied</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="94" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="94" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>NetworkDiscoveryBase&lt; ServerRequest, ServerResponse &gt;</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery_base"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Discovery.NetworkDiscovery</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>Mirror.UnityEventException</label>
+        <link refid="class_mirror_1_1_unity_event_exception"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>UnityEvent&lt; Exception &gt;</label>
+      </node>
+      <node id="11">
+        <label>Mirror.UnityEventIntException</label>
+        <link refid="class_mirror_1_1_unity_event_int_exception"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>UnityEvent&lt; ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="13">
+        <label>Mirror.ClientDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_client_data_received_event"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Mirror.Transport</label>
+        <link refid="class_mirror_1_1_transport"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>OnServerConnected</edgelabel>
+          <edgelabel>OnServerDisconnected</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>OnClientError</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>activeTransport</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>OnServerError</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>OnClientDataReceived</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>OnServerDataReceived</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>UnityEvent&lt; ServerResponse &gt;</label>
+      </node>
+      <node id="7">
+        <label>Mirror.UnityEventInt</label>
+        <link refid="class_mirror_1_1_unity_event_int"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>UnityEvent&lt; int, Exception &gt;</label>
+      </node>
+      <node id="6">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="15">
+        <label>Mirror.ServerDataReceivedEvent</label>
+        <link refid="class_mirror_1_1_server_data_received_event"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>NetworkDiscoveryBase&lt; ServerRequest, ServerResponse &gt;</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery_base"/>
+      </node>
+      <node id="8">
+        <label>UnityEvent&lt; int &gt;</label>
+      </node>
+      <node id="16">
+        <label>UnityEvent&lt; int, ArraySegment&lt; byte &gt;, int &gt;</label>
+      </node>
+      <node id="3">
+        <label>Mirror.Discovery.ServerFoundUnityEvent</label>
+        <link refid="class_mirror_1_1_discovery_1_1_server_found_unity_event"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Mirror.Discovery.NetworkDiscovery</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>OnServerFound</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>transport</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" line="13" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscovery.cs" bodystart="14" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac1baccd5d47a6239a525e1601c2c2c1b" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>AdvertiseServer</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac131f8da1c5f3d9764e7c6e1186ffb28" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>BroadcastDiscoveryRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac3241aa4d7b89b5580eccebc0557cd18" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ClientListenAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabdaeccb815700cc332a8d8628c0d3d4" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>clientUdpClient</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1a837135f42c819dfc2617aac49603651d" prot="protected" virt="virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>GetRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1abe20d3ca2aa371be0bd0eec9bd2a67ca" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>OnServerFound</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd12e333f578fb4d3c0b615b980ca8dd" prot="protected" virt="virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ProcessClientRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1a102b884161ed3cfbc83bbddd31aab504" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ProcessRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a08b153629b2e2074f10472875be470d0" prot="protected" virt="pure-virtual" ambiguityscope="NetworkDiscoveryBase&lt; ServerRequest, ServerResponse &gt;."><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ProcessRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1a015a04e33084dd1d065f897ff2322ecd" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ProcessResponse</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a681d1d1d8095ace1946b3a99bba14b44" prot="protected" virt="pure-virtual" ambiguityscope="NetworkDiscoveryBase&lt; ServerRequest, ServerResponse &gt;."><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ProcessResponse</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd16623602d788b4a7d7c9d6c4499e31" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>RandomLong</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0451ebf60e6df35e1ff330321a612617" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>secretHandshake</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a73675439537ebb889cc98a0d3d1db312" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>serverBroadcastListenPort</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1a0e501e280d9428467917482399ec2fe1" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ServerId</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1abc664584c630ec22f9386d848c0a38f6" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>ServerListenAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aa7c08258307dcc9de11b19b7898aa40a" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>serverUdpClient</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1a92f7da48954d365a3ae13785923ce74c" prot="public" virt="virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>Start</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a87019724fb618f7702583f261b89822d" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>StartDiscovery</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabe1e1a8c17f3d4e1a8f71858f9fa2a3" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>StopDiscovery</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0e55bc6a0792a20ed6f6263c884dd850" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>SupportedOnThisPlatform</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_1ae1b3d133fd7a8c4bd50fe47ab71dcb34" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscovery</scope><name>transport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

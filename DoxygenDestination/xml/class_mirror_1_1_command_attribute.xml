@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_command_attribute" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::CommandAttribute</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Attribute</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_command_attribute_1ae76b7865c350acb4c6f672c4bdc5c837" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.CommandAttribute.channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <initializer>= Channels.DefaultReliable</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" line="24" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_command_attribute_1a07cab51ef13a6e01df65c9d667d9dd46" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.CommandAttribute.ignoreAuthority</definition>
+        <argsstring></argsstring>
+        <name>ignoreAuthority</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" line="25" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Call this from a client to run this function on the server. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Make sure to validate input etc. It&apos;s not possible to call this from a server.</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Mirror.CommandAttribute</label>
+        <link refid="class_mirror_1_1_command_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Attribute</label>
+      </node>
+      <node id="1">
+        <label>Mirror.CommandAttribute</label>
+        <link refid="class_mirror_1_1_command_attribute"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" line="21" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/CustomAttributes.cs" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_command_attribute_1ae76b7865c350acb4c6f672c4bdc5c837" prot="public" virt="non-virtual"><scope>Mirror::CommandAttribute</scope><name>channel</name></member>
+      <member refid="class_mirror_1_1_command_attribute_1a07cab51ef13a6e01df65c9d667d9dd46" prot="public" virt="non-virtual"><scope>Mirror::CommandAttribute</scope><name>ignoreAuthority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

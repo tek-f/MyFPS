@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_network_information_preview_1_1_network_identity_info" kind="struct" language="C#" prot="private">
+    <compoundname>Mirror::NetworkInformationPreview::NetworkIdentityInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_network_information_preview_1_1_network_identity_info_1aace7ac81a7a2000fa99b27992a1efeff" prot="public" static="no" mutable="no">
+        <type>GUIContent</type>
+        <definition>GUIContent Mirror.NetworkInformationPreview.NetworkIdentityInfo.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="12" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_network_information_preview_1_1_network_identity_info_1a9f5d953661d1086501fd58bad8c96903" prot="public" static="no" mutable="no">
+        <type>GUIContent</type>
+        <definition>GUIContent Mirror.NetworkInformationPreview.NetworkIdentityInfo.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="13" column="31" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" line="10" column="9" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/NetworkInformationPreview.cs" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_network_information_preview_1_1_network_identity_info_1aace7ac81a7a2000fa99b27992a1efeff" prot="public" virt="non-virtual"><scope>Mirror::NetworkInformationPreview::NetworkIdentityInfo</scope><name>name</name></member>
+      <member refid="struct_mirror_1_1_network_information_preview_1_1_network_identity_info_1a9f5d953661d1086501fd58bad8c96903" prot="public" virt="non-virtual"><scope>Mirror::NetworkInformationPreview::NetworkIdentityInfo</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

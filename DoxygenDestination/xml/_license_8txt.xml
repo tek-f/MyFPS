@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_license_8txt" kind="file" language="C++">
+    <compoundname>License.txt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_license_8txt_1a1069f040465d83a4ab69cbd6d7ebead7" prot="public" static="no" mutable="no">
+        <type>Inc</type>
+        <definition>Inc https</definition>
+        <argsstring></argsstring>
+        <name>https</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="4" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a8387034663edeb34302086c72fa4fa22" prot="public" static="no" mutable="no">
+        <type>Inc free of</type>
+        <definition>Inc free of charge</definition>
+        <argsstring></argsstring>
+        <name>charge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="6" column="10" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a7d27f94691d77c1344d61c416eae6fdb" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without restriction</definition>
+        <argsstring></argsstring>
+        <name>restriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="8" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1ac26f6ff2ef37f365f6fab5e0b68377cd" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to use</definition>
+        <argsstring></argsstring>
+        <name>use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="9" column="34" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a0ff031ceca6c687e330c8cba2cb49e6f" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to copy</definition>
+        <argsstring></argsstring>
+        <name>copy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="9" column="38" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a6db47b46e48b5fb6778baaae3db74d90" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to modify</definition>
+        <argsstring></argsstring>
+        <name>modify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="9" column="43" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a30fa34c2407e0bf89afd4af8d5621d7b" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to merge</definition>
+        <argsstring></argsstring>
+        <name>merge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="9" column="50" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1ad431e144fd2b26ba8411e48ddb24fa92" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to publish</definition>
+        <argsstring></argsstring>
+        <name>publish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="9" column="56" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a4316600de7f437126ce4c30a3492f080" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to distribute</definition>
+        <argsstring></argsstring>
+        <name>distribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="10" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a9f93d2f014c619e4da54b078364152c7" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to sublicense</definition>
+        <argsstring></argsstring>
+        <name>sublicense</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="10" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a27de8aeb7dd7ab5086099655e1b9b018" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the Software</definition>
+        <argsstring></argsstring>
+        <name>Software</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="10" column="48" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a94cf43fdb434d2052f52dd1cfd127566" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do so</definition>
+        <argsstring></argsstring>
+        <name>so</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="11" column="56" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a0a58d21b7f31c7fcfa746f2710def658" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following conditions</definition>
+        <argsstring></argsstring>
+        <name>conditions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="12" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a5b9f6c8598622ea3159bc656da221258" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY KIND</definition>
+        <argsstring></argsstring>
+        <name>KIND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="17" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1ac92ad2341302b25b0215bd70f8a3c8e2" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR IMPLIED</definition>
+        <argsstring></argsstring>
+        <name>IMPLIED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="18" column="12" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1ac208b887b8a09f3cf074a43bd983cd24" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY</definition>
+        <argsstring></argsstring>
+        <name>MERCHANTABILITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="19" column="1" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a8814acae6aeed2623faa5477e1ed3d0d" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM</definition>
+        <argsstring></argsstring>
+        <name>CLAIM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="21" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a988aee892e3d11388e85f4cc2b539c2b" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY</definition>
+        <argsstring></argsstring>
+        <name>LIABILITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="21" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a3fda4282caa4209936eedb2dede68f0f" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF CONTRACT</definition>
+        <argsstring></argsstring>
+        <name>CONTRACT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="22" column="4" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a323ac62f89b7067cbc2582bc1c45dfc2" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF TORT OR</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF TORT OR OTHERWISE</definition>
+        <argsstring></argsstring>
+        <name>OTHERWISE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="22" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_license_8txt_1a355f371de54431ce4b93705884562800" prot="public" static="no" mutable="no">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF TORT OR ARISING</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation to deal in the Software without including without limitation the rights to and or sell copies of the and to permit persons to whom the Software is furnished to do subject to the following WITHOUT WARRANTY OF ANY EXPRESS OR INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER WHETHER IN AN ACTION OF TORT OR ARISING FROM</definition>
+        <argsstring></argsstring>
+        <name>FROM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="22" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_license_8txt_1a2c8487cd740f9fc256bcc273e4c72969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Copyright</definition>
+        <argsstring>(c) 2008 - 2015 Jb Evain Copyright(c) 2008 - 2011 Novell</argsstring>
+        <name>Copyright</name>
+        <param>
+          <type>c</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="1" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_license_8txt_1a629485a3f19e204ea154ccfc3df0b101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Inc free of to any person obtaining a copy of this software and associated documentation</type>
+        <definition>Inc free of to any person obtaining a copy of this software and associated documentation files</definition>
+        <argsstring>(the &quot;Software&quot;)</argsstring>
+        <name>files</name>
+        <param>
+          <type>the &quot;Software&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt" line="7" column="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">Copyright<sp/>(c)<sp/>2008<sp/>-<sp/>2015<sp/>Jb<sp/>Evain</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">Copyright<sp/>(c)<sp/>2008<sp/>-<sp/>2011<sp/>Novell,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">https:</highlight><highlight class="comment">//github.com/jbevain/cecil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">a<sp/>copy<sp/>of<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;Software&quot;</highlight><highlight class="normal">),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>so,<sp/>subject<sp/>to</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/></highlight><highlight class="stringliteral">&quot;AS<sp/>IS&quot;</highlight><highlight class="normal">,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Plugins/Mono.Cecil/License.txt"/>
+  </compounddef>
+</doxygen>

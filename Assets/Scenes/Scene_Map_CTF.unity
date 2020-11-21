@@ -1222,6 +1222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Flag
       objectReference: {fileID: 0}
+    - target: {fileID: 6301561940034702347, guid: 21dd48baa647c3a41aead13d77faf61f,
+        type: 3}
+      propertyPath: teamID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6301561941837938278, guid: 21dd48baa647c3a41aead13d77faf61f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2063,7 +2068,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh49936
+  m_Name: pb_Mesh96486
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16657,7 +16662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9000d9bb10a9f4e84d05f89c8f0f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamID: 1
+  teamID: 0
   worldSpaceFlag: {fileID: 53547460}
 --- !u!4 &451748053
 Transform:
@@ -102546,7 +102551,7 @@ PrefabInstance:
     - target: {fileID: 6301561940034702347, guid: 21dd48baa647c3a41aead13d77faf61f,
         type: 3}
       propertyPath: teamID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6301561941837938278, guid: 21dd48baa647c3a41aead13d77faf61f,
         type: 3}
@@ -103294,7 +103299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9000d9bb10a9f4e84d05f89c8f0f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamID: 2
+  teamID: 1
   worldSpaceFlag: {fileID: 1160328053}
 --- !u!4 &1718432547
 Transform:
@@ -109875,6 +109880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamAmount: 2
+  gameType: 
   teams: []
   gameScoreLimit: 0
   endGamePanel: {fileID: 90846484}

@@ -5,9 +5,17 @@ using MyFPS.Player;
 
 public class Flag : MonoBehaviour
 {
+    /// <summary>
+    /// Team ID of the flag.
+    /// </summary>
     [SerializeField] int teamID;
+    /// <summary>
+    /// Location the flag resets itself to after it has been returned to it's CaptureZone. 
+    /// </summary>
     public Vector3 originalLocation;
-
+    /// <summary>
+    /// weaponID of the flag in the PlayerHandler script.
+    /// </summary>
     const int weaponID = 1;
     private void OnTriggerEnter(Collider other)
     {

@@ -1,0 +1,75 @@
+\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Mirror List Server}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md1}
+Example has A\+PI key that can be used for as a demo.
+
+To get an A\+PI key to use within your game you can subscribe on the \href{https://mirror-networking.com/list-server/}{\texttt{ Mirror Networking Website}}\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Key features}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item The Cloud Service works via https so is secure and can be used from any platform.
+\item It runs on Google Cloud so there is no worry about server down time.
+\item It scales really well. Default quota is 1000 A\+PI requests per minute. If you have high demands, contact us and we can increase that limit.
+\end{DoxyItemize}\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md3}{}\doxysection{List Server Examples}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md3}
+An example for this can be found in Mirror/\+Examples/\+Cloud/
+
+{\itshape Note\+: you can not connect to your own public ip address, you will need at least people to test this}\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md4}{}\doxysection{How to use}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md4}
+Add {\ttfamily Api\+Connector} component to an object in your game, It is probably best to put this on the same object as your Network\+Manager. Once it has been added set the {\ttfamily Api\+Address} and {\ttfamily Api\+Key} fields.
+
+To use {\ttfamily Api\+Connector} either directly reference it in an inspector field or get it when your script awakes 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ApiConnector connector;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Awake()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    connector = FindObjectOfType<ApiConnector>();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+The Api calls are grouped into objects. {\ttfamily connector.\+List\+Server.\+Server\+Api} has the Server api calls like {\ttfamily Add\+Server}. {\ttfamily connector.\+List\+Server.\+Client\+Api} has the Client Api calls like {\ttfamily Get\+Server\+List}.\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Server Api Example}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md5}
+Example of how to add server 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} AddServer(\textcolor{keywordtype}{int} playerCount)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    Transport transport = Transport.activeTransport;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    Uri uri = transport.ServerUri();}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} port = uri.Port;}
+\DoxyCodeLine{    \textcolor{keywordtype}{string} protocol = uri.Scheme;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    connector.ListServer.ServerApi.AddServer(\textcolor{keyword}{new} ServerJson}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        displayName = \textcolor{stringliteral}{"{}Fun game!!!"{}},}
+\DoxyCodeLine{        protocol = protocol,}
+\DoxyCodeLine{        port = port,}
+\DoxyCodeLine{        maxPlayerCount = NetworkManager.singleton.maxConnections,}
+\DoxyCodeLine{        playerCount = playerCount}
+\DoxyCodeLine{    \});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+\hypertarget{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{Client Api Example}\label{md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__cloud__r_e_a_d_m_e_autotoc_md6}
+Example of how to list servers
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ApiConnector connector;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} Awake()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    connector = FindObjectOfType<ApiConnector>();}
+\DoxyCodeLine{    \textcolor{comment}{// add listener to event that will update UI when Server list is refreshed}}
+\DoxyCodeLine{    connector.ListServer.ClientApi.onServerListUpdated += onServerListUpdated;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// add listen to button so that player can refresh server list}}
+\DoxyCodeLine{    refreshButton.onClick.AddListener(RefreshButtonHandler);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keywordtype}{void} RefreshButtonHandler()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    connector.ListServer.ClientApi.GetServerList();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} onServerListUpdated() }
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{// Update UI here}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 

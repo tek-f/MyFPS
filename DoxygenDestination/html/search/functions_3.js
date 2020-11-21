@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['death_109',['Death',['../class_ragdoll_controller.html#a03855fc9d2311b60096eda1663fc8050',1,'RagdollController.Death()'],['../class_player.html#a8db15703ededbdc481bbd68bd690f0ec',1,'Player.Death()']]],
-  ['dropweapon_110',['DropWeapon',['../class_player.html#a0bf3b6faabf83cb2946b4f9b31fd033a',1,'Player.DropWeapon()'],['../class_weapon.html#a107aab534c184ba11cec984d3dc8e199',1,'Weapon.DropWeapon()']]]
+  ['death_992',['Death',['../class_ragdoll_controller.html#a03855fc9d2311b60096eda1663fc8050',1,'RagdollController.Death()'],['../class_my_f_p_s_1_1_player_1_1_player_handler.html#a02e4da9476db250b79667af38531f7ec',1,'MyFPS.Player.PlayerHandler.Death()']]],
+  ['delete_993',['Delete',['../class_mirror_1_1_cloud_1_1_request_creator.html#a284b57522c2d7cbccb9aee995889f172',1,'Mirror::Cloud::RequestCreator']]],
+  ['disconnect_994',['Disconnect',['../class_mirror_1_1_u_local_connection_to_client.html#af3413c485f73747e687bdbf0f2f286d3',1,'Mirror.ULocalConnectionToClient.Disconnect()'],['../class_mirror_1_1_network_connection.html#a2d3402195c717ebf2c45874b4f3c17bf',1,'Mirror.NetworkConnection.Disconnect()'],['../class_mirror_1_1_network_connection_to_client.html#a578cd702f7b9a289d9f0b04c2e4978e2',1,'Mirror.NetworkConnectionToClient.Disconnect()'],['../class_mirror_1_1_network_connection_to_server.html#afa1f2d6f6515a8c345df425b8c04ed8d',1,'Mirror.NetworkConnectionToServer.Disconnect()']]],
+  ['dispose_995',['Dispose',['../class_mirror_1_1_network_connection.html#a3d4805ab08b2af8d6a39b6a873d8256c',1,'Mirror.NetworkConnection.Dispose()'],['../class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation.html#a11a98ee22a6273671c63fd82963edab2',1,'Ninja.WebSockets.Internal.WebSocketImplementation.Dispose()']]],
+  ['drawdefaultsynclists_996',['DrawDefaultSyncLists',['../class_mirror_1_1_network_behaviour_inspector.html#a4f1c13029d8656c63e9a32cb7cbbc73c',1,'Mirror::NetworkBehaviourInspector']]],
+  ['drawdefaultsyncsettings_997',['DrawDefaultSyncSettings',['../class_mirror_1_1_network_behaviour_inspector.html#a0077cb088526f88cd883e7663a159317',1,'Mirror::NetworkBehaviourInspector']]],
+  ['dropweapon_998',['DropWeapon',['../class_my_f_p_s_1_1_player_1_1_player_handler.html#a7303504cf5ba21eacbdd1bd053b1ef84',1,'MyFPS.Player.PlayerHandler.DropWeapon()'],['../class_my_f_p_s_1_1_player_1_1_weapon.html#aa992ce6fc89e78985b33efe823ae4d38',1,'MyFPS.Player.Weapon.DropWeapon()']]]
 ];

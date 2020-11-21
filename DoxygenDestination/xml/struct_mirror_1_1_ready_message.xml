@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_ready_message" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::ReadyMessage</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_i_message_base" prot="public" virt="non-virtual">Mirror.IMessageBase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_mirror_1_1_ready_message_1af4f4561567ff7b3398b7304ed93c42d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.ReadyMessage.Deserialize</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="45" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_ready_message_1af7754edb7ecccd13d8c3dfa63edb2a68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.ReadyMessage.Serialize</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353">Serialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="47" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="1">
+        <label>Mirror.ReadyMessage</label>
+        <link refid="struct_mirror_1_1_ready_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="1">
+        <label>Mirror.ReadyMessage</label>
+        <link refid="struct_mirror_1_1_ready_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="43" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="44" bodyend="48"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_ready_message_1af4f4561567ff7b3398b7304ed93c42d7" prot="public" virt="non-virtual"><scope>Mirror::ReadyMessage</scope><name>Deserialize</name></member>
+      <member refid="struct_mirror_1_1_ready_message_1af7754edb7ecccd13d8c3dfa63edb2a68" prot="public" virt="non-virtual"><scope>Mirror::ReadyMessage</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

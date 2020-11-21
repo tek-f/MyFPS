@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_mirror_1_1_cloud" kind="namespace" language="C#">
+    <compoundname>Mirror::Cloud</compoundname>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_api_connector" prot="public">Mirror::Cloud::ApiConnector</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_base_api" prot="public">Mirror::Cloud::BaseApi</innerclass>
+    <innerclass refid="struct_mirror_1_1_cloud_1_1_created_id_json" prot="public">Mirror::Cloud::CreatedIdJson</innerclass>
+    <innerclass refid="struct_mirror_1_1_cloud_1_1_empty_json" prot="public">Mirror::Cloud::EmptyJson</innerclass>
+    <innerclass refid="struct_mirror_1_1_cloud_1_1_error_json" prot="public">Mirror::Cloud::ErrorJson</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_extensions" prot="public">Mirror::Cloud::Extensions</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_api_connector" prot="public">Mirror::Cloud::IApiConnector</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_base_api" prot="public">Mirror::Cloud::IBaseApi</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_can_be_json" prot="public">Mirror::Cloud::ICanBeJson</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" prot="public">Mirror::Cloud::ICoroutineRunner</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_request_creator" prot="public">Mirror::Cloud::IRequestCreator</innerclass>
+    <innerclass refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check" prot="public">Mirror::Cloud::IUnityEqualCheck</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_logger" prot="public">Mirror::Cloud::Logger</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_match_found_event" prot="public">Mirror::Cloud::MatchFoundEvent</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_request_creator" prot="public">Mirror::Cloud::RequestCreator</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_server_list_event" prot="public">Mirror::Cloud::ServerListEvent</innerclass>
+    <innerclass refid="class_mirror_1_1_cloud_1_1_unity_equal_check_extension" prot="public">Mirror::Cloud::UnityEqualCheckExtension</innerclass>
+    <innernamespace refid="namespace_mirror_1_1_cloud_1_1_example">Mirror::Cloud::Example</innernamespace>
+    <innernamespace refid="namespace_mirror_1_1_cloud_1_1_examples">Mirror::Cloud::Examples</innernamespace>
+    <innernamespace refid="namespace_mirror_1_1_cloud_1_1_list_server_service">Mirror::Cloud::ListServerService</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_mirror_1_1_cloud_1ad1d85991fb1e015e22f512fe0559c989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Mirror.Cloud.RequestSuccess</definition>
+        <argsstring>(string responseBody)</argsstring>
+        <name>RequestSuccess</name>
+        <param>
+          <type>string</type>
+          <declname>responseBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="6" column="26" declfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" declline="6" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_mirror_1_1_cloud_1a63ed5f037847dc0cfec50c68a89d5028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Mirror.Cloud.RequestFail</definition>
+        <argsstring>(string responseBody)</argsstring>
+        <name>RequestFail</name>
+        <param>
+          <type>string</type>
+          <declname>responseBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" line="8" column="26" declfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/Core/IRequestCreator.cs" declline="8" declcolumn="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

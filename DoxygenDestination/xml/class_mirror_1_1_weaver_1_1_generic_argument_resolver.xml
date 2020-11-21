@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_generic_argument_resolver" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::GenericArgumentResolver</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a964ed287b00ada49a9b0e18bda5bd592" prot="private" static="no" mutable="no">
+        <type>readonly Stack&lt; TypeReference &gt;</type>
+        <definition>readonly Stack&lt;TypeReference&gt; Mirror.Weaver.GenericArgumentResolver.stack</definition>
+        <argsstring></argsstring>
+        <name>stack</name>
+        <initializer>= new Stack&lt;TypeReference&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="8" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1abfa89f5d441e0d7f951782a4602d88c9" prot="private" static="no" mutable="no">
+        <type>readonly int</type>
+        <definition>readonly int Mirror.Weaver.GenericArgumentResolver.maxGenericArgument</definition>
+        <argsstring></argsstring>
+        <name>maxGenericArgument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="9" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1ad75628b56067f3f39f2c5afc19f93cc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mirror.Weaver.GenericArgumentResolver.GenericArgumentResolver</definition>
+        <argsstring>(int maxGenericArgument)</argsstring>
+        <name>GenericArgumentResolver</name>
+        <param>
+          <type>int</type>
+          <declname>maxGenericArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="11" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a650e01be7379aa049990547bb8fa2e76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.Weaver.GenericArgumentResolver.GetGenericFromBaseClass</definition>
+        <argsstring>(TypeDefinition td, int genericArgument, TypeReference baseType, out TypeReference itemType)</argsstring>
+        <name>GetGenericFromBaseClass</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>genericArgument</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>baseType</declname>
+        </param>
+        <param>
+          <type>out TypeReference</type>
+          <declname>itemType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="16" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="16" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a8564ae7fb41a5649830788e30f89ab28" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TypeReference</type>
+        <definition>TypeReference Mirror.Weaver.GenericArgumentResolver.FindParameterInStack</definition>
+        <argsstring>(TypeDefinition td, int genericArgument)</argsstring>
+        <name>FindParameterInStack</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>genericArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="35" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="35" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a5d1eb76df3671d300bd87b5fdfa4f721" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mirror.Weaver.GenericArgumentResolver.GetGenericBaseType</definition>
+        <argsstring>(TypeDefinition td, TypeReference baseType, out GenericInstanceType found)</argsstring>
+        <name>GetGenericBaseType</name>
+        <param>
+          <type>TypeDefinition</type>
+          <declname>td</declname>
+        </param>
+        <param>
+          <type>TypeReference</type>
+          <declname>baseType</declname>
+        </param>
+        <param>
+          <type>out GenericInstanceType</type>
+          <declname>found</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="73" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="73" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" line="6" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors/GenericArgumentResolver.cs" bodystart="7" bodyend="106"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a8564ae7fb41a5649830788e30f89ab28" prot="private" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>FindParameterInStack</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1ad75628b56067f3f39f2c5afc19f93cc8" prot="public" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>GenericArgumentResolver</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a5d1eb76df3671d300bd87b5fdfa4f721" prot="private" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>GetGenericBaseType</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a650e01be7379aa049990547bb8fa2e76" prot="public" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>GetGenericFromBaseClass</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1abfa89f5d441e0d7f951782a4602d88c9" prot="private" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>maxGenericArgument</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_generic_argument_resolver_1a964ed287b00ada49a9b0e18bda5bd592" prot="private" virt="non-virtual"><scope>Mirror::Weaver::GenericArgumentResolver</scope><name>stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_944f6e74f2ccd540d32b514f1d5bcac9" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery</compoundname>
+    <innerfile refid="_network_discovery_8cs">NetworkDiscovery.cs</innerfile>
+    <innerfile refid="_network_discovery_base_8cs">NetworkDiscoveryBase.cs</innerfile>
+    <innerfile refid="_network_discovery_h_u_d_8cs">NetworkDiscoveryHUD.cs</innerfile>
+    <innerfile refid="_server_request_8cs">ServerRequest.cs</innerfile>
+    <innerfile refid="_server_response_8cs">ServerResponse.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,133 @@
+\hypertarget{class_mirror_1_1_network_authenticator}{}\doxysection{Mirror.\+Network\+Authenticator Class Reference}
+\label{class_mirror_1_1_network_authenticator}\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+
+
+Base class for implementing component-\/based authentication during the Connect phase  
+
+
+Inheritance diagram for Mirror.\+Network\+Authenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mirror_1_1_network_authenticator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_authenticator_af84e9666b24912a841ef3621b637516b}{On\+Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Called on server from Start\+Server to initialize the Authenticator \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_mirror_1_1_network_authenticator_a8a8498cae07a37c0dcdf8c9e0a973562}{On\+Server\+Authenticate}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on server from On\+Server\+Authenticate\+Internal when a client needs to authenticate \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_authenticator_a70801a0c9f66f62e3273a60d4d8a9edc}{On\+Start\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Called on client from Start\+Client to initialize the Authenticator \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_mirror_1_1_network_authenticator_a553b775adf45b8080370196bea5fc6e7}{On\+Client\+Authenticate}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Called on client from On\+Client\+Authenticate\+Internal when a client needs to authenticate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}} \mbox{\hyperlink{class_mirror_1_1_network_authenticator_ac2106a4b670a75135e22e9f7ce5e3583}{On\+Server\+Authenticated}} = new \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}}()
+\begin{DoxyCompactList}\small\item\em Notify subscribers on the server when a client is authenticated \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}} \mbox{\hyperlink{class_mirror_1_1_network_authenticator_ab63cd7c51320b82f998b509c0191f002}{On\+Client\+Authenticated}} = new \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}}()
+\begin{DoxyCompactList}\small\item\em Notify subscribers on the client when the client is authenticated \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for implementing component-\/based authentication during the Connect phase 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_a553b775adf45b8080370196bea5fc6e7}\label{class_mirror_1_1_network_authenticator_a553b775adf45b8080370196bea5fc6e7}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnClientAuthenticate@{OnClientAuthenticate}}
+\index{OnClientAuthenticate@{OnClientAuthenticate}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnClientAuthenticate()}{OnClientAuthenticate()}}
+{\footnotesize\ttfamily abstract void Mirror.\+Network\+Authenticator.\+On\+Client\+Authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called on client from On\+Client\+Authenticate\+Internal when a client needs to authenticate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection of the client.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_timeout_authenticator_a63b404e4bad75b6739949b628ade8d53}{Mirror.\+Authenticators.\+Timeout\+Authenticator}}, and \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_basic_authenticator_a3f473d218a398eb798ab685f4f2d42cd}{Mirror.\+Authenticators.\+Basic\+Authenticator}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_a8a8498cae07a37c0dcdf8c9e0a973562}\label{class_mirror_1_1_network_authenticator_a8a8498cae07a37c0dcdf8c9e0a973562}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnServerAuthenticate@{OnServerAuthenticate}}
+\index{OnServerAuthenticate@{OnServerAuthenticate}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnServerAuthenticate()}{OnServerAuthenticate()}}
+{\footnotesize\ttfamily abstract void Mirror.\+Network\+Authenticator.\+On\+Server\+Authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called on server from On\+Server\+Authenticate\+Internal when a client needs to authenticate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Connection to client.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_timeout_authenticator_ab4b5a71cf34c1cbca775663b01e5ec50}{Mirror.\+Authenticators.\+Timeout\+Authenticator}}, and \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_basic_authenticator_ae0b48ad85bc5563f95ce76ccfb6021fc}{Mirror.\+Authenticators.\+Basic\+Authenticator}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_a70801a0c9f66f62e3273a60d4d8a9edc}\label{class_mirror_1_1_network_authenticator_a70801a0c9f66f62e3273a60d4d8a9edc}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Authenticator.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on client from Start\+Client to initialize the Authenticator 
+
+Client message handlers should be registered in this method.
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_timeout_authenticator_a477856f105836b3a12c46bfd100d5c48}{Mirror.\+Authenticators.\+Timeout\+Authenticator}}, and \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_basic_authenticator_a4605f7b51826d7b2b2a655a5514ab53f}{Mirror.\+Authenticators.\+Basic\+Authenticator}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_af84e9666b24912a841ef3621b637516b}\label{class_mirror_1_1_network_authenticator_af84e9666b24912a841ef3621b637516b}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Authenticator.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on server from Start\+Server to initialize the Authenticator 
+
+Server message handlers should be registered in this method.
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_timeout_authenticator_a1d2869c1c90684ffd712e12ceb95dca2}{Mirror.\+Authenticators.\+Timeout\+Authenticator}}, and \mbox{\hyperlink{class_mirror_1_1_authenticators_1_1_basic_authenticator_a069cd7de022d2cc01132cf7627508a42}{Mirror.\+Authenticators.\+Basic\+Authenticator}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_ab63cd7c51320b82f998b509c0191f002}\label{class_mirror_1_1_network_authenticator_ab63cd7c51320b82f998b509c0191f002}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnClientAuthenticated@{OnClientAuthenticated}}
+\index{OnClientAuthenticated@{OnClientAuthenticated}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnClientAuthenticated}{OnClientAuthenticated}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}} Mirror.\+Network\+Authenticator.\+On\+Client\+Authenticated = new \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}}()}
+
+
+
+Notify subscribers on the client when the client is authenticated 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_authenticator_ac2106a4b670a75135e22e9f7ce5e3583}\label{class_mirror_1_1_network_authenticator_ac2106a4b670a75135e22e9f7ce5e3583}} 
+\index{Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}!OnServerAuthenticated@{OnServerAuthenticated}}
+\index{OnServerAuthenticated@{OnServerAuthenticated}!Mirror.NetworkAuthenticator@{Mirror.NetworkAuthenticator}}
+\doxysubsubsection{\texorpdfstring{OnServerAuthenticated}{OnServerAuthenticated}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}} Mirror.\+Network\+Authenticator.\+On\+Server\+Authenticated = new \mbox{\hyperlink{class_mirror_1_1_unity_event_network_connection}{Unity\+Event\+Network\+Connection}}()}
+
+
+
+Notify subscribers on the server when a client is authenticated 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Authenticator.\+cs\end{DoxyCompactItemize}

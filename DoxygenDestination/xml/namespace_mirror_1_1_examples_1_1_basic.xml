@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespace_mirror_1_1_examples_1_1_basic" kind="namespace" language="C#">
+    <compoundname>Mirror::Examples::Basic</compoundname>
+    <innerclass refid="class_mirror_1_1_examples_1_1_basic_1_1_player" prot="public">Mirror::Examples::Basic::Player</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/Basic/Scripts/Player.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

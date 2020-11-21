@@ -1,0 +1,134 @@
+\hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode}{}\doxysection{My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode Class Reference}
+\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode}\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+Inheritance diagram for My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_my_f_p_s_1_1_game_admin_1_1_game_mode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a784cdc8e0081d7c065896278d7b01bd5}{Set\+Up\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Set Up function for the \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode}{Game\+Mode}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}{Add\+Score}} (int \+\_\+team\+ID, int \+\_\+value)
+\begin{DoxyCompactList}\small\item\em Increases a Teams score, depending on \+\_\+team\+ID, by \+\_\+value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_abfde6220a19cff4b4bc58da6d304817a}{End\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Is called by \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}{Add\+Score()}} when game\+Score\+Limit is reached by one of the teams scores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a687ee714e659bb6c180fbd6b096d90cd}{team\+Amount}} = 2
+\begin{DoxyCompactList}\small\item\em Number of teams in the game. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a60fe1e4792fe3c6ccc7af18d8c2a752d}{game\+Type}}
+\begin{DoxyCompactList}\small\item\em Used in \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}{Add\+Score()}} checks to determine game type, i.\+e. C\+TF (Capture the flag) \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_team}{Team}} $>$ \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a9a5f32445787b68b848df817a3a6e1bf}{teams}}
+\begin{DoxyCompactList}\small\item\em List of \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_team}{Team}} classes that hold info for each time in the game \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_player_handler}{Player\+Handler}} $>$ \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a55f0590b86e1ce9e220497dcc2d1faec}{players\+List}} = new List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_player_handler}{Player\+Handler}}$>$()
+\begin{DoxyCompactList}\small\item\em List of Player\+Handlers within the game scene. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a24d8ed93891da970bf37baf59dac2f72}{game\+Score\+Limit}}
+\begin{DoxyCompactList}\small\item\em the score that a team must reach to trigger \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_abfde6220a19cff4b4bc58da6d304817a}{End\+Game()}} to run. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_ac1c028e44d728e9e74bcbcad85232c19}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_ac1c028e44d728e9e74bcbcad85232c19}} 
+virtual void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!AddScore@{AddScore}}
+\index{AddScore@{AddScore}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
+{\footnotesize\ttfamily virtual void My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+Add\+Score (\begin{DoxyParamCaption}\item[{int}]{\+\_\+team\+ID,  }\item[{int}]{\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Increases a Teams score, depending on \+\_\+team\+ID, by \+\_\+value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+team\+ID} & The team\+ID of the team that has scored.\\
+\hline
+{\em \+\_\+value} & The value that the teams score is being increased by.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_abfde6220a19cff4b4bc58da6d304817a}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_abfde6220a19cff4b4bc58da6d304817a}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!EndGame@{EndGame}}
+\index{EndGame@{EndGame}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{EndGame()}{EndGame()}}
+{\footnotesize\ttfamily virtual void My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+End\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Is called by \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}{Add\+Score()}} when game\+Score\+Limit is reached by one of the teams scores. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a784cdc8e0081d7c065896278d7b01bd5}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a784cdc8e0081d7c065896278d7b01bd5}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!SetUpGame@{SetUpGame}}
+\index{SetUpGame@{SetUpGame}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{SetUpGame()}{SetUpGame()}}
+{\footnotesize\ttfamily void My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+Set\+Up\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set Up function for the \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode}{Game\+Mode}}. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a24d8ed93891da970bf37baf59dac2f72}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a24d8ed93891da970bf37baf59dac2f72}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!gameScoreLimit@{gameScoreLimit}}
+\index{gameScoreLimit@{gameScoreLimit}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{gameScoreLimit}{gameScoreLimit}}
+{\footnotesize\ttfamily int My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+game\+Score\+Limit}
+
+
+
+the score that a team must reach to trigger \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_abfde6220a19cff4b4bc58da6d304817a}{End\+Game()}} to run. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a60fe1e4792fe3c6ccc7af18d8c2a752d}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a60fe1e4792fe3c6ccc7af18d8c2a752d}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!gameType@{gameType}}
+\index{gameType@{gameType}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{gameType}{gameType}}
+{\footnotesize\ttfamily string My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+game\+Type}
+
+
+
+Used in \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a6684119a80982173adf1f3655164282a}{Add\+Score()}} checks to determine game type, i.\+e. C\+TF (Capture the flag) 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a55f0590b86e1ce9e220497dcc2d1faec}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a55f0590b86e1ce9e220497dcc2d1faec}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!playersList@{playersList}}
+\index{playersList@{playersList}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{playersList}{playersList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_player_handler}{Player\+Handler}}$>$ My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+players\+List = new List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_player_1_1_player_handler}{Player\+Handler}}$>$()}
+
+
+
+List of Player\+Handlers within the game scene. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a687ee714e659bb6c180fbd6b096d90cd}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a687ee714e659bb6c180fbd6b096d90cd}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!teamAmount@{teamAmount}}
+\index{teamAmount@{teamAmount}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{teamAmount}{teamAmount}}
+{\footnotesize\ttfamily int My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+team\+Amount = 2}
+
+
+
+Number of teams in the game. 
+
+\mbox{\Hypertarget{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a9a5f32445787b68b848df817a3a6e1bf}\label{class_my_f_p_s_1_1_game_admin_1_1_game_mode_a9a5f32445787b68b848df817a3a6e1bf}} 
+\index{MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}!teams@{teams}}
+\index{teams@{teams}!MyFPS.GameAdmin.GameMode@{MyFPS.GameAdmin.GameMode}}
+\doxysubsubsection{\texorpdfstring{teams}{teams}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_team}{Team}}$>$ My\+F\+P\+S.\+Game\+Admin.\+Game\+Mode.\+teams}
+
+
+
+List of \mbox{\hyperlink{class_my_f_p_s_1_1_game_admin_1_1_team}{Team}} classes that hold info for each time in the game 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Scripts/\+Game/Game\+Mode.\+cs\end{DoxyCompactItemize}

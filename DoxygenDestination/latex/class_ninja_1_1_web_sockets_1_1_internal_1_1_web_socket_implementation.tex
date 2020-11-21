@@ -1,0 +1,184 @@
+\hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation}{}\doxysection{Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation Class Reference}
+\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation}\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+
+
+Main implementation of the Web\+Socket abstract class  
+
+
+Inheritance diagram for Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override async Task$<$ Web\+Socket\+Receive\+Result $>$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_aefc39bfe69f5fff5ac108345a31e8690}{Receive\+Async}} (Array\+Segment$<$ byte $>$ buffer, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Receive web socket result \end{DoxyCompactList}\item 
+override async Task \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a51860d79468b908f58c0cbc27c718241}{Send\+Async}} (Array\+Segment$<$ byte $>$ buffer, Web\+Socket\+Message\+Type message\+Type, bool end\+Of\+Message, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Send data to the web socket \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a6b887d7b5cbaa949e9112a056237b783}{Send\+Ping\+Async}} (Array\+Segment$<$ byte $>$ payload, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Call this automatically from server side each keep\+Alive\+Interval period N\+O\+TE\+: ping payload must be 125 bytes or less \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ac4bbf177e30be918280677268866e06b}{Abort}} ()
+\begin{DoxyCompactList}\small\item\em Aborts the Web\+Socket without sending a Close frame \end{DoxyCompactList}\item 
+override async Task \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ad03487aa5c2d1817ae8162266ce1889e}{Close\+Async}} (Web\+Socket\+Close\+Status close\+Status, string status\+Description, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Polite close (use the close handshake) \end{DoxyCompactList}\item 
+override async Task \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a43010d0756a3d5d43a7d3dbf07821eec}{Close\+Output\+Async}} (Web\+Socket\+Close\+Status close\+Status, string status\+Description, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Fire and forget close \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a11a98ee22a6273671c63fd82963edab2}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em Dispose will send a close frame if the connection is still open \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a1e1a8e5aff209847a0680434e2a8d103}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a1e1a8e5aff209847a0680434e2a8d103}} 
+override? Web\+Socket\+Close\+Status {\bfseries Close\+Status} =$>$ \+\_\+close\+Status
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a9f15802fafc14e221f9f15d40d24e99b}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a9f15802fafc14e221f9f15d40d24e99b}} 
+override string {\bfseries Close\+Status\+Description} =$>$ \+\_\+close\+Status\+Description
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_aba39b5c8d5dd52229d4a27d55626dc66}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_aba39b5c8d5dd52229d4a27d55626dc66}} 
+override string {\bfseries Sub\+Protocol} =$>$ \+\_\+sub\+Protocol
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a92656d8fd6015db94fc504bfaf56fd7a}{On\+Pong}} (\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}} e)
+\begin{DoxyCompactList}\small\item\em Called when a Pong frame is received \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a3c0ff949113a5ba6ec79bee4ee791e16}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a3c0ff949113a5ba6ec79bee4ee791e16}} 
+\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_web_socket_http_context}{Web\+Socket\+Http\+Context}} {\bfseries Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a29ffd7bc29ba62f772c7224cd2960627}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a29ffd7bc29ba62f772c7224cd2960627}} 
+override Web\+Socket\+State {\bfseries State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a75447bfd399e4e2389261887ea0ecf34}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a75447bfd399e4e2389261887ea0ecf34}} 
+Time\+Span {\bfseries Keep\+Alive\+Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a9325f462a15a2c4fbd267c6f5a14b045}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a9325f462a15a2c4fbd267c6f5a14b045}} 
+Event\+Handler$<$ \mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}} $>$ {\bfseries Pong}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main implementation of the Web\+Socket abstract class 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ac4bbf177e30be918280677268866e06b}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ac4bbf177e30be918280677268866e06b}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!Abort@{Abort}}
+\index{Abort@{Abort}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{Abort()}{Abort()}}
+{\footnotesize\ttfamily override void Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Abort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aborts the Web\+Socket without sending a Close frame 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ad03487aa5c2d1817ae8162266ce1889e}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_ad03487aa5c2d1817ae8162266ce1889e}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!CloseAsync@{CloseAsync}}
+\index{CloseAsync@{CloseAsync}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{CloseAsync()}{CloseAsync()}}
+{\footnotesize\ttfamily override async Task Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Close\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket\+Close\+Status}]{close\+Status,  }\item[{string}]{status\+Description,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Polite close (use the close handshake) 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a43010d0756a3d5d43a7d3dbf07821eec}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a43010d0756a3d5d43a7d3dbf07821eec}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!CloseOutputAsync@{CloseOutputAsync}}
+\index{CloseOutputAsync@{CloseOutputAsync}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{CloseOutputAsync()}{CloseOutputAsync()}}
+{\footnotesize\ttfamily override async Task Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Close\+Output\+Async (\begin{DoxyParamCaption}\item[{Web\+Socket\+Close\+Status}]{close\+Status,  }\item[{string}]{status\+Description,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Fire and forget close 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a11a98ee22a6273671c63fd82963edab2}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a11a98ee22a6273671c63fd82963edab2}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dispose will send a close frame if the connection is still open 
+
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a92656d8fd6015db94fc504bfaf56fd7a}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a92656d8fd6015db94fc504bfaf56fd7a}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!OnPong@{OnPong}}
+\index{OnPong@{OnPong}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{OnPong()}{OnPong()}}
+{\footnotesize\ttfamily virtual void Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+On\+Pong (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ninja_1_1_web_sockets_1_1_pong_event_args}{Pong\+Event\+Args}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when a Pong frame is received 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_aefc39bfe69f5fff5ac108345a31e8690}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_aefc39bfe69f5fff5ac108345a31e8690}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!ReceiveAsync@{ReceiveAsync}}
+\index{ReceiveAsync@{ReceiveAsync}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{ReceiveAsync()}{ReceiveAsync()}}
+{\footnotesize\ttfamily override async Task$<$Web\+Socket\+Receive\+Result$>$ Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Receive\+Async (\begin{DoxyParamCaption}\item[{Array\+Segment$<$ byte $>$}]{buffer,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Receive web socket result 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to copy data into\\
+\hline
+{\em cancellation\+Token} & The cancellation token\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The web socket result details
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a51860d79468b908f58c0cbc27c718241}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a51860d79468b908f58c0cbc27c718241}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!SendAsync@{SendAsync}}
+\index{SendAsync@{SendAsync}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{SendAsync()}{SendAsync()}}
+{\footnotesize\ttfamily override async Task Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Send\+Async (\begin{DoxyParamCaption}\item[{Array\+Segment$<$ byte $>$}]{buffer,  }\item[{Web\+Socket\+Message\+Type}]{message\+Type,  }\item[{bool}]{end\+Of\+Message,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Send data to the web socket 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer containing data to send\\
+\hline
+{\em message\+Type} & The message type. Can be Text or Binary\\
+\hline
+{\em end\+Of\+Message} & True if this message is a standalone message (this is the norm) If it is a multi-\/part message then false (and true for the last message)\\
+\hline
+{\em cancellation\+Token} & the cancellation token\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a6b887d7b5cbaa949e9112a056237b783}\label{class_ninja_1_1_web_sockets_1_1_internal_1_1_web_socket_implementation_a6b887d7b5cbaa949e9112a056237b783}} 
+\index{Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}!SendPingAsync@{SendPingAsync}}
+\index{SendPingAsync@{SendPingAsync}!Ninja.WebSockets.Internal.WebSocketImplementation@{Ninja.WebSockets.Internal.WebSocketImplementation}}
+\doxysubsubsection{\texorpdfstring{SendPingAsync()}{SendPingAsync()}}
+{\footnotesize\ttfamily async Task Ninja.\+Web\+Sockets.\+Internal.\+Web\+Socket\+Implementation.\+Send\+Ping\+Async (\begin{DoxyParamCaption}\item[{Array\+Segment$<$ byte $>$}]{payload,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})}
+
+
+
+Call this automatically from server side each keep\+Alive\+Interval period N\+O\+TE\+: ping payload must be 125 bytes or less 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/\+Transport/\+Websocket/\+Ninja.\+Web\+Sockets/\+Internal/Web\+Socket\+Implementation.\+cs\end{DoxyCompactItemize}

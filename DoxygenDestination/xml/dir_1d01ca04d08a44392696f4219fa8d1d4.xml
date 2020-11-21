@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_1d01ca04d08a44392696f4219fa8d1d4" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/MultipleAdditiveScenes</compoundname>
+    <innerdir refid="dir_b679b74ae4a2d0378fa4d107ee382e99">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/MultipleAdditiveScenes/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Examples/MultipleAdditiveScenes/"/>
+  </compounddef>
+</doxygen>

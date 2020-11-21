@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="interface_ninja_1_1_web_sockets_1_1_i_buffer_pool" kind="interface" language="C#" prot="public">
+    <compoundname>Ninja::WebSockets::IBufferPool</compoundname>
+    <derivedcompoundref refid="class_ninja_1_1_web_sockets_1_1_buffer_pool" prot="public" virt="non-virtual">Ninja.WebSockets.BufferPool</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_ninja_1_1_web_sockets_1_1_i_buffer_pool_1a73dc0a6e8109c88ebf71ced0d9025228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MemoryStream</type>
+        <definition>MemoryStream Ninja.WebSockets.IBufferPool.GetBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuffer</name>
+        <reimplementedby refid="class_ninja_1_1_web_sockets_1_1_buffer_pool_1a149c865037418c7e09738ae71317d653">GetBuffer</reimplementedby>
+        <briefdescription>
+<para>Gets a MemoryStream built from a buffer plucked from a thread safe pool The pool grows automatically. Closing the memory stream clears the buffer and returns it to the pool </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IBufferPool.cs" line="12" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Ninja.WebSockets.IBufferPool</label>
+        <link refid="interface_ninja_1_1_web_sockets_1_1_i_buffer_pool"/>
+      </node>
+      <node id="2">
+        <label>Ninja.WebSockets.BufferPool</label>
+        <link refid="class_ninja_1_1_web_sockets_1_1_buffer_pool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IBufferPool.cs" line="5" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IBufferPool.cs" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="interface_ninja_1_1_web_sockets_1_1_i_buffer_pool_1a73dc0a6e8109c88ebf71ced0d9025228" prot="public" virt="non-virtual"><scope>Ninja::WebSockets::IBufferPool</scope><name>GetBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

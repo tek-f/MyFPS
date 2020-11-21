@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="struct_mirror_1_1_spawn_message" kind="struct" language="C#" prot="public">
+    <compoundname>Mirror::SpawnMessage</compoundname>
+    <basecompoundref refid="interface_mirror_1_1_i_message_base" prot="public" virt="non-virtual">Mirror.IMessageBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a02271aa6a2bca33f58fbd3441ff5c646" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint Mirror.SpawnMessage.netId</definition>
+        <argsstring></argsstring>
+        <name>netId</name>
+        <briefdescription>
+<para>netId of new or existing object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="210" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a4501c50ad2ee8e12410d5b510b8c8151" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SpawnMessage.isLocalPlayer</definition>
+        <argsstring></argsstring>
+        <name>isLocalPlayer</name>
+        <briefdescription>
+<para>Is the spawning object the local player. Sets ClientScene.localPlayer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="214" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a417d397aa2fca9fc55e0c146e836fb40" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Mirror.SpawnMessage.isOwner</definition>
+        <argsstring></argsstring>
+        <name>isOwner</name>
+        <briefdescription>
+<para>Sets hasAuthority on the spawned object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="218" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1aaa39eaf3c51cc318283ae8b8cfd413da" prot="public" static="no" mutable="no">
+        <type>ulong</type>
+        <definition>ulong Mirror.SpawnMessage.sceneId</definition>
+        <argsstring></argsstring>
+        <name>sceneId</name>
+        <briefdescription>
+<para>The id of the scene object to spawn </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="222" column="22" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1ab46d40af897d70986faff43952dd533e" prot="public" static="no" mutable="no">
+        <type>Guid</type>
+        <definition>Guid Mirror.SpawnMessage.assetId</definition>
+        <argsstring></argsstring>
+        <name>assetId</name>
+        <briefdescription>
+<para>The id of the prefab to spawn </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If sceneId != 0 then it is used instead of assetId</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="227" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a932d48be884310330c4c8039f791e0b2" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Mirror.SpawnMessage.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+<para>Local position </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="231" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a340f8624a0e1ea77ca5d3e02071374ae" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion Mirror.SpawnMessage.rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+<para>Local rotation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="235" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1ac2f40db11d5d123a9c7bacc807c6457b" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Mirror.SpawnMessage.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+<para>Local scale </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="239" column="24" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_mirror_1_1_spawn_message_1a112426af5ddf335c937990c502ecbcbb" prot="public" static="no" mutable="no">
+        <type>ArraySegment&lt; byte &gt;</type>
+        <definition>ArraySegment&lt;byte&gt; Mirror.SpawnMessage.payload</definition>
+        <argsstring></argsstring>
+        <name>payload</name>
+        <briefdescription>
+<para>The serialized component data &lt;remark&gt;ArraySegment to avoid unnecessary allocations&lt;/remark&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="244" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_mirror_1_1_spawn_message_1a4baee393f664675607fc9564ea4444a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SpawnMessage.Deserialize</definition>
+        <argsstring>(NetworkReader reader)</argsstring>
+        <name>Deserialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a0644eed1f38767200a887ed642e994cd">Deserialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_reader" kindref="compound">NetworkReader</ref></type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="246" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="246" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_mirror_1_1_spawn_message_1a3ab4209c39354c87fe2276db8d25f998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.SpawnMessage.Serialize</definition>
+        <argsstring>(NetworkWriter writer)</argsstring>
+        <name>Serialize</name>
+        <reimplements refid="interface_mirror_1_1_i_message_base_1a2a8659d93aa988b2b4282943c4051353">Serialize</reimplements>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="262" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="262" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="1">
+        <label>Mirror.SpawnMessage</label>
+        <link refid="struct_mirror_1_1_spawn_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>System</label>
+      </node>
+      <node id="2">
+        <label>IMessageBase</label>
+        <link refid="interface_mirror_1_1_i_message_base"/>
+      </node>
+      <node id="1">
+        <label>Mirror.SpawnMessage</label>
+        <link refid="struct_mirror_1_1_spawn_message"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>assetId</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" line="205" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Messages.cs" bodystart="206" bodyend="277"/>
+    <listofallmembers>
+      <member refid="struct_mirror_1_1_spawn_message_1ab46d40af897d70986faff43952dd533e" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>assetId</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a4baee393f664675607fc9564ea4444a8" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>Deserialize</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a4501c50ad2ee8e12410d5b510b8c8151" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>isLocalPlayer</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a417d397aa2fca9fc55e0c146e836fb40" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>isOwner</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a02271aa6a2bca33f58fbd3441ff5c646" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>netId</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a112426af5ddf335c937990c502ecbcbb" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>payload</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a932d48be884310330c4c8039f791e0b2" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>position</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a340f8624a0e1ea77ca5d3e02071374ae" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>rotation</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1ac2f40db11d5d123a9c7bacc807c6457b" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>scale</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1aaa39eaf3c51cc318283ae8b8cfd413da" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>sceneId</name></member>
+      <member refid="struct_mirror_1_1_spawn_message_1a3ab4209c39354c87fe2276db8d25f998" prot="public" virt="non-virtual"><scope>Mirror::SpawnMessage</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_telepathy_1_1_thread_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Telepathy::ThreadExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_telepathy_1_1_thread_extensions_1a1314e97041e9673cfb405475d06d987e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Telepathy.ThreadExtensions.AbortAndJoin</definition>
+        <argsstring>(this Thread thread)</argsstring>
+        <name>AbortAndJoin</name>
+        <param>
+          <type>this Thread</type>
+          <declname>thread</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/ThreadExtensions.cs" line="8" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/ThreadExtensions.cs" bodystart="8" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/ThreadExtensions.cs" line="5" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/ThreadExtensions.cs" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_telepathy_1_1_thread_extensions_1a1314e97041e9673cfb405475d06d987e" prot="public" virt="non-virtual"><scope>Telepathy::ThreadExtensions</scope><name>AbortAndJoin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

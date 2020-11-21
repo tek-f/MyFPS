@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_discovery_1_1_network_discovery_base" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Mirror::Discovery::NetworkDiscoveryBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>Request</type>
+      </param>
+      <param>
+        <type>Response</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0e55bc6a0792a20ed6f6263c884dd850" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.SupportedOnThisPlatform</definition>
+        <argsstring></argsstring>
+        <name>SupportedOnThisPlatform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="24" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0451ebf60e6df35e1ff330321a612617" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.secretHandshake</definition>
+        <argsstring></argsstring>
+        <name>secretHandshake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="28" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a73675439537ebb889cc98a0d3d1db312" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.serverBroadcastListenPort</definition>
+        <argsstring></argsstring>
+        <name>serverBroadcastListenPort</name>
+        <initializer>= 47777</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="32" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1aa7c08258307dcc9de11b19b7898aa40a" prot="protected" static="no" mutable="no">
+        <type>UdpClient</type>
+        <definition>UdpClient Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.serverUdpClient</definition>
+        <argsstring></argsstring>
+        <name>serverUdpClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="39" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabdaeccb815700cc332a8d8628c0d3d4" prot="protected" static="no" mutable="no">
+        <type>UdpClient</type>
+        <definition>UdpClient Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.clientUdpClient</definition>
+        <argsstring></argsstring>
+        <name>clientUdpClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="40" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a68ac1aa867ebf69cd2bbdf9850299cda" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ActiveDiscoveryInterval</definition>
+        <argsstring></argsstring>
+        <name>ActiveDiscoveryInterval</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="37" column="15" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd16623602d788b4a7d7c9d6c4499e31" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>static long Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.RandomLong</definition>
+        <argsstring>()</argsstring>
+        <name>RandomLong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="53" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="53" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a96de23229173dd735265d4a3e0a9f863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <reimplementedby refid="class_mirror_1_1_discovery_1_1_network_discovery_1a92f7da48954d365a3ae13785923ce74c">Start</reimplementedby>
+        <briefdescription>
+<para>virtual so that inheriting classes&apos; <ref refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a96de23229173dd735265d4a3e0a9f863" kindref="member">Start()</ref> can call base.Start() too </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="63" column="29" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac1baccd5d47a6239a525e1601c2c2c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.AdvertiseServer</definition>
+        <argsstring>()</argsstring>
+        <name>AdvertiseServer</name>
+        <briefdescription>
+<para>Advertise this server in the local network </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="115" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="115" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1abc664584c630ec22f9386d848c0a38f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ServerListenAsync</definition>
+        <argsstring>()</argsstring>
+        <name>ServerListenAsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="133" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="133" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a87019724fb618f7702583f261b89822d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.StartDiscovery</definition>
+        <argsstring>()</argsstring>
+        <name>StartDiscovery</name>
+        <briefdescription>
+<para>Start Active <ref refid="namespace_mirror_1_1_discovery" kindref="compound">Discovery</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="230" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="230" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabe1e1a8c17f3d4e1a8f71858f9fa2a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.StopDiscovery</definition>
+        <argsstring>()</argsstring>
+        <name>StopDiscovery</name>
+        <briefdescription>
+<para>Stop Active <ref refid="namespace_mirror_1_1_discovery" kindref="compound">Discovery</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="261" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac3241aa4d7b89b5580eccebc0557cd18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ClientListenAsync</definition>
+        <argsstring>()</argsstring>
+        <name>ClientListenAsync</name>
+        <briefdescription>
+<para>Awaits for server response </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ClientListenAsync Task</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="270" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="270" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac131f8da1c5f3d9764e7c6e1186ffb28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.BroadcastDiscoveryRequest</definition>
+        <argsstring>()</argsstring>
+        <name>BroadcastDiscoveryRequest</name>
+        <briefdescription>
+<para>Sends discovery request from client </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="293" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="293" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac21a429c2fd4762c883024ff91215ca8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.OnApplicationQuit</definition>
+        <argsstring>()</argsstring>
+        <name>OnApplicationQuit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="72" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1acbc2d8ad11a4ab1c40818d2cacc8c31d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="77" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="77" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a16612ffbdde004b3fac1c9234bc9ed32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ReceiveRequestAsync</definition>
+        <argsstring>(UdpClient udpClient)</argsstring>
+        <name>ReceiveRequestAsync</name>
+        <param>
+          <type>UdpClient</type>
+          <declname>udpClient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="152" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="152" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ae4a466891c452d78e8181779d75eee1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ReceiveGameBroadcastAsync</definition>
+        <argsstring>(UdpClient udpClient)</argsstring>
+        <name>ReceiveGameBroadcastAsync</name>
+        <param>
+          <type>UdpClient</type>
+          <declname>udpClient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="330" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="330" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd12e333f578fb4d3c0b615b980ca8dd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ProcessClientRequest</definition>
+        <argsstring>(Request request, IPEndPoint endpoint)</argsstring>
+        <name>ProcessClientRequest</name>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Reply to the client to inform it of this server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to ignore server requests based on custom criteria such as language, full server game mode or difficulty </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request comming from client</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the client that sent the request</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="184" column="32" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="184" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a08b153629b2e2074f10472875be470d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract Response</type>
+        <definition>abstract Response Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ProcessRequest</definition>
+        <argsstring>(Request request, IPEndPoint endpoint)</argsstring>
+        <name>ProcessRequest</name>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the request from a client </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to provide more information to the clients such as the name of the host player </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request comming from client</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the client that sent the request</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The message to be sent back to the client or null</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="221" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1ad2a17bc656a6ef5ca35e6120eaefac60" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Request</type>
+        <definition>virtual Request Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.GetRequest</definition>
+        <argsstring>()</argsstring>
+        <name>GetRequest</name>
+        <reimplementedby refid="class_mirror_1_1_discovery_1_1_network_discovery_1a837135f42c819dfc2617aac49603651d">GetRequest</reimplementedby>
+        <briefdescription>
+<para>Create a message that will be broadcasted on the network to discover servers </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Override if you wish to include additional data in the discovery message such as desired game mode, language, difficulty, etc... </para>
+<para><simplesect kind="return"><para>An instance of <ref refid="class_mirror_1_1_discovery_1_1_server_request" kindref="compound">ServerRequest</ref> with data to be broadcasted</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="328" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_discovery_1_1_network_discovery_base_1a681d1d1d8095ace1946b3a99bba14b44" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;.ProcessResponse</definition>
+        <argsstring>(Response response, IPEndPoint endpoint)</argsstring>
+        <name>ProcessResponse</name>
+        <param>
+          <type>Response</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <type>IPEndPoint</type>
+          <declname>endpoint</declname>
+        </param>
+        <briefdescription>
+<para>Process the answer from a server </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A client receives a reply from a server, this method processes the reply and raises an event </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>response</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Response that came from the server</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of the server that replied</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="358" column="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base implementation for Network <ref refid="namespace_mirror_1_1_discovery" kindref="compound">Discovery</ref>. Extend this component to provide custom discovery with game specific data <ref refid="class_mirror_1_1_discovery_1_1_network_discovery" kindref="compound">NetworkDiscovery</ref> for a sample implementation </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mirror.Discovery.NetworkDiscoveryBase&lt; Request, Response &gt;</label>
+        <link refid="class_mirror_1_1_discovery_1_1_network_discovery_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>secretHandshake</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>long</label>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" line="20" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Discovery/NetworkDiscoveryBase.cs" bodystart="23" bodyend="361"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a68ac1aa867ebf69cd2bbdf9850299cda" prot="private" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ActiveDiscoveryInterval</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac1baccd5d47a6239a525e1601c2c2c1b" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>AdvertiseServer</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac131f8da1c5f3d9764e7c6e1186ffb28" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>BroadcastDiscoveryRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac3241aa4d7b89b5580eccebc0557cd18" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ClientListenAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabdaeccb815700cc332a8d8628c0d3d4" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>clientUdpClient</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ad2a17bc656a6ef5ca35e6120eaefac60" prot="protected" virt="virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>GetRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ac21a429c2fd4762c883024ff91215ca8" prot="private" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>OnApplicationQuit</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd12e333f578fb4d3c0b615b980ca8dd" prot="protected" virt="virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ProcessClientRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a08b153629b2e2074f10472875be470d0" prot="protected" virt="pure-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ProcessRequest</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a681d1d1d8095ace1946b3a99bba14b44" prot="protected" virt="pure-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ProcessResponse</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1afd16623602d788b4a7d7c9d6c4499e31" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>RandomLong</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1ae4a466891c452d78e8181779d75eee1c" prot="private" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ReceiveGameBroadcastAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a16612ffbdde004b3fac1c9234bc9ed32" prot="private" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ReceiveRequestAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0451ebf60e6df35e1ff330321a612617" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>secretHandshake</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a73675439537ebb889cc98a0d3d1db312" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>serverBroadcastListenPort</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1abc664584c630ec22f9386d848c0a38f6" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>ServerListenAsync</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aa7c08258307dcc9de11b19b7898aa40a" prot="protected" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>serverUdpClient</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1acbc2d8ad11a4ab1c40818d2cacc8c31d" prot="private" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>Shutdown</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a96de23229173dd735265d4a3e0a9f863" prot="public" virt="virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>Start</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a87019724fb618f7702583f261b89822d" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>StartDiscovery</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1aabe1e1a8c17f3d4e1a8f71858f9fa2a3" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>StopDiscovery</name></member>
+      <member refid="class_mirror_1_1_discovery_1_1_network_discovery_base_1a0e55bc6a0792a20ed6f6263c884dd850" prot="public" virt="non-virtual"><scope>Mirror::Discovery::NetworkDiscoveryBase</scope><name>SupportedOnThisPlatform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__examples__cloud__tanks_with_list_server__r_e_a_d_m_e" kind="page">
+    <compoundname>md_C__Users_aaron_Documents_GitHub_MyFPS_Assets_Mirror_Examples_Cloud_TanksWithListServer_README</compoundname>
+    <title>Pong with Cloud List server</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is an example that uses the list server to find games of tanks</para>
+<sect1 id="md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__examples__cloud__tanks_with_list_server__r_e_a_d_m_e_1autotoc_md15">
+<title>Setup</title>
+<para>Add the following scenes to build settings <programlisting><codeline><highlight class="normal">Assets\Mirror\Examples\Cloud\TanksWithListServer\Scenes\ListServerLobbySceneTanks.unity</highlight></codeline>
+<codeline><highlight class="normal">Assets\Mirror\Examples\Tanks\Scenes\Scene.unity</highlight></codeline>
+</programlisting></para>
+<para><blockquote><para>Note: you can not connect to your own public ip address, to test out ServerOnly you will need a 2nd person (or a 2nd internet connection) </para>
+</blockquote></para>
+</sect1>
+<sect1 id="md__c___users_aaron__documents__git_hub__my_f_p_s__assets__mirror__examples__cloud__tanks_with_list_server__r_e_a_d_m_e_1autotoc_md16">
+<title>Api Key</title>
+<para>Api key on the NetworkManager is a demo key that should not be used in production.</para>
+<para>Visit <ulink url="https://mirror-networking.com/list-server/">Mirror Networking</ulink> to get an api key that you can use in your game. </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

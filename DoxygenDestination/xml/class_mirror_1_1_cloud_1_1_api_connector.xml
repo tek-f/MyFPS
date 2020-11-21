@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_cloud_1_1_api_connector" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Cloud::ApiConnector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_mirror_1_1_cloud_1_1_i_api_connector" prot="public" virt="non-virtual">Mirror.Cloud.IApiConnector</basecompoundref>
+    <basecompoundref refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner" prot="public" virt="non-virtual">Mirror.Cloud.ICoroutineRunner</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_api_connector_1acccdadb11c715530fd75e66845a2eb77" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ApiConnector.ApiAddress</definition>
+        <argsstring></argsstring>
+        <name>ApiAddress</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="26" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_api_connector_1aa6a4c0a9b5ea5c4e5059a54d388e8bfa" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Mirror.Cloud.ApiConnector.ApiKey</definition>
+        <argsstring></argsstring>
+        <name>ApiKey</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="29" column="17" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_api_connector_1a324ca4ae495ced38accf6f427f4a61ca" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mirror_1_1_cloud_1_1_server_list_event" kindref="compound">ServerListEvent</ref></type>
+        <definition>ServerListEvent Mirror.Cloud.ApiConnector._onServerListUpdated</definition>
+        <argsstring></argsstring>
+        <name>_onServerListUpdated</name>
+        <initializer>= new <ref refid="class_mirror_1_1_cloud_1_1_server_list_event" kindref="compound">ServerListEvent</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="34" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_cloud_1_1_api_connector_1a71a1f1343bb24aaffbfff55a2f214e7e" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_mirror_1_1_cloud_1_1_i_request_creator" kindref="compound">IRequestCreator</ref></type>
+        <definition>IRequestCreator Mirror.Cloud.ApiConnector.requestCreator</definition>
+        <argsstring></argsstring>
+        <name>requestCreator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="37" column="25" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mirror_1_1_cloud_1_1_api_connector_1a7926ed18f9f1ab53da4ad0ab01451410" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server" kindref="compound">ListServer</ref></type>
+        <definition>ListServer Mirror.Cloud.ApiConnector.ListServer</definition>
+        <argsstring></argsstring>
+        <name>ListServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="39" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_api_connector_1af6ed341626dae26077e03485d6baaf53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ApiConnector.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="41" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_api_connector_1a542fbd563a5aef05941b899bb1ceb3f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ApiConnector.InitListServer</definition>
+        <argsstring>()</argsstring>
+        <name>InitListServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="48" column="14" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="48" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mirror_1_1_cloud_1_1_api_connector_1a31d33070da4eb80524a19cfeb42e1ce5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mirror.Cloud.ApiConnector.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="55" column="21" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="55" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used to requests and responses from the mirror api </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>IApiConnector</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_api_connector"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ApiConnector</label>
+        <link refid="class_mirror_1_1_cloud_1_1_api_connector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IUnityEqualCheck</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check"/>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="4">
+        <label>ICoroutineRunner</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>IApiConnector</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_api_connector"/>
+      </node>
+      <node id="1">
+        <label>Mirror.Cloud.ApiConnector</label>
+        <link refid="class_mirror_1_1_cloud_1_1_api_connector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IUnityEqualCheck</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_unity_equal_check"/>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="4">
+        <label>ICoroutineRunner</label>
+        <link refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" line="20" column="11" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Cloud/ApiConnector.cs" bodystart="21" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1a324ca4ae495ced38accf6f427f4a61ca" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>_onServerListUpdated</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1acccdadb11c715530fd75e66845a2eb77" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>ApiAddress</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1aa6a4c0a9b5ea5c4e5059a54d388e8bfa" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>ApiKey</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1af6ed341626dae26077e03485d6baaf53" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>Awake</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1a542fbd563a5aef05941b899bb1ceb3f0" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>InitListServer</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1a7926ed18f9f1ab53da4ad0ab01451410" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>ListServer</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1a31d33070da4eb80524a19cfeb42e1ce5" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>OnDestroy</name></member>
+      <member refid="class_mirror_1_1_cloud_1_1_api_connector_1a71a1f1343bb24aaffbfff55a2f214e7e" prot="private" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>requestCreator</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner_1a0d6d4fe141820a4495be57317a3b35b9" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>StartCoroutine</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner_1af1eaa4d6b937a841e2267853ff339b5c" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>StopCoroutine</name></member>
+      <member refid="interface_mirror_1_1_cloud_1_1_i_coroutine_runner_1a2dddd3619252ec1ae78271fc4d8b1536" prot="public" virt="non-virtual"><scope>Mirror::Cloud::ApiConnector</scope><name>StopCoroutine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

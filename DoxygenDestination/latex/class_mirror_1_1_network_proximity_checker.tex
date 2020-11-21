@@ -1,0 +1,157 @@
+\hypertarget{class_mirror_1_1_network_proximity_checker}{}\doxysection{Mirror.\+Network\+Proximity\+Checker Class Reference}
+\label{class_mirror_1_1_network_proximity_checker}\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+
+
+Component that controls visibility of networked objects for players.  
+
+
+Inheritance diagram for Mirror.\+Network\+Proximity\+Checker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_mirror_1_1_network_proximity_checker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a47d5100dfe87995818c6aa340d6a235b}{On\+Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked for \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} objects when they become active on the server. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a35d47e2d6e1b3ac86d1839929db4a198}{On\+Stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Invoked on the server when the object is unspawned \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a41d15e3e4fe5510332f3e52c09c9fff9}{On\+Check\+Observer}} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn)
+\begin{DoxyCompactList}\small\item\em Callback used by the visibility system to determine if an observer (player) can see this object. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a0d3926e69564727752273402bebb1e01}{On\+Rebuild\+Observers}} (Hash\+Set$<$ \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$ observers, bool initialize)
+\begin{DoxyCompactList}\small\item\em Callback used by the visibility system to (re)construct the set of observers that can see this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a40aadd1084c0193a2904848db4b8b38d}{vis\+Range}} = 10
+\begin{DoxyCompactList}\small\item\em The maximim range that objects will be visible at. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a0449438a59fcfbdac472b0b70a761d75}{vis\+Update\+Interval}} = 1
+\begin{DoxyCompactList}\small\item\em How often (in seconds) that this object should update the list of observers that can see it. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_af2bfde1bdfaf0efe1279fd971baae55e}{force\+Hidden}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_flag}{Flag}} to force this object to be hidden for players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Component that controls visibility of networked objects for players. 
+
+Any object with this component on it will not be visible to players more than a (configurable) distance away.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a41d15e3e4fe5510332f3e52c09c9fff9}\label{class_mirror_1_1_network_proximity_checker_a41d15e3e4fe5510332f3e52c09c9fff9}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!OnCheckObserver@{OnCheckObserver}}
+\index{OnCheckObserver@{OnCheckObserver}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{OnCheckObserver()}{OnCheckObserver()}}
+{\footnotesize\ttfamily override bool Mirror.\+Network\+Proximity\+Checker.\+On\+Check\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}}}]{conn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Callback used by the visibility system to determine if an observer (player) can see this object. 
+
+If this function returns true, the network connection will be added as an observer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em conn} & Network connection of a player.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player can see this object.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_network_visibility_ae1e77b70f1280e0293c5365f2cd6582c}{Mirror.\+Network\+Visibility}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a0d3926e69564727752273402bebb1e01}\label{class_mirror_1_1_network_proximity_checker_a0d3926e69564727752273402bebb1e01}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!OnRebuildObservers@{OnRebuildObservers}}
+\index{OnRebuildObservers@{OnRebuildObservers}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{OnRebuildObservers()}{OnRebuildObservers()}}
+{\footnotesize\ttfamily override void Mirror.\+Network\+Proximity\+Checker.\+On\+Rebuild\+Observers (\begin{DoxyParamCaption}\item[{Hash\+Set$<$ \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} $>$}]{observers,  }\item[{bool}]{initialize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Callback used by the visibility system to (re)construct the set of observers that can see this object. 
+
+Implementations of this callback should add network connections of players that can see this object to the observers set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observers} & The new set of observers for this object.\\
+\hline
+{\em initialize} & True if the set of observers is being built for the first time.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_mirror_1_1_network_visibility_aad6f77cc74ce36d0aa5f21366664e076}{Mirror.\+Network\+Visibility}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a47d5100dfe87995818c6aa340d6a235b}\label{class_mirror_1_1_network_proximity_checker_a47d5100dfe87995818c6aa340d6a235b}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily override void Mirror.\+Network\+Proximity\+Checker.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked for \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} objects when they become active on the server. 
+
+This could be triggered by Network\+Server.\+Listen() for objects in the scene, or by Network\+Server.\+Spawn() for objects that are dynamically created.
+
+This will be called for objects on a \char`\"{}host\char`\"{} as well as for object on a dedicated server.
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a7849fd960925fc37005a1b8f2aa065b3}{Mirror.\+Network\+Behaviour}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a35d47e2d6e1b3ac86d1839929db4a198}\label{class_mirror_1_1_network_proximity_checker_a35d47e2d6e1b3ac86d1839929db4a198}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!OnStopServer@{OnStopServer}}
+\index{OnStopServer@{OnStopServer}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
+{\footnotesize\ttfamily override void Mirror.\+Network\+Proximity\+Checker.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Invoked on the server when the object is unspawned 
+
+Useful for saving object data in persistant storage
+
+Reimplemented from \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a27dc77be5d2117b34157b3836f333690}{Mirror.\+Network\+Behaviour}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_af2bfde1bdfaf0efe1279fd971baae55e}\label{class_mirror_1_1_network_proximity_checker_af2bfde1bdfaf0efe1279fd971baae55e}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!forceHidden@{forceHidden}}
+\index{forceHidden@{forceHidden}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{forceHidden}{forceHidden}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Proximity\+Checker.\+force\+Hidden}
+
+
+
+\mbox{\hyperlink{class_flag}{Flag}} to force this object to be hidden for players. 
+
+If this object is a player object, it will not be hidden for that player.\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a40aadd1084c0193a2904848db4b8b38d}\label{class_mirror_1_1_network_proximity_checker_a40aadd1084c0193a2904848db4b8b38d}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!visRange@{visRange}}
+\index{visRange@{visRange}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{visRange}{visRange}}
+{\footnotesize\ttfamily int Mirror.\+Network\+Proximity\+Checker.\+vis\+Range = 10}
+
+
+
+The maximim range that objects will be visible at. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_proximity_checker_a0449438a59fcfbdac472b0b70a761d75}\label{class_mirror_1_1_network_proximity_checker_a0449438a59fcfbdac472b0b70a761d75}} 
+\index{Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}!visUpdateInterval@{visUpdateInterval}}
+\index{visUpdateInterval@{visUpdateInterval}!Mirror.NetworkProximityChecker@{Mirror.NetworkProximityChecker}}
+\doxysubsubsection{\texorpdfstring{visUpdateInterval}{visUpdateInterval}}
+{\footnotesize\ttfamily float Mirror.\+Network\+Proximity\+Checker.\+vis\+Update\+Interval = 1}
+
+
+
+How often (in seconds) that this object should update the list of observers that can see it. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Components/Network\+Proximity\+Checker.\+cs\end{DoxyCompactItemize}

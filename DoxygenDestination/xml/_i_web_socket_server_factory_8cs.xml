@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="_i_web_socket_server_factory_8cs" kind="file" language="C#">
+    <compoundname>IWebSocketServerFactory.cs</compoundname>
+    <innerclass refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory" prot="public">Ninja::WebSockets::IWebSocketServerFactory</innerclass>
+    <innernamespace refid="namespace_ninja">Ninja</innernamespace>
+    <innernamespace refid="namespace_ninja_1_1_web_sockets">Ninja::WebSockets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.IO;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Net.Sockets;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Net.WebSockets;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_ninja_1_1_web_sockets" kindref="compound">Ninja.WebSockets</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory" kindref="compound">IWebSocketServerFactory</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task&lt;WebSocketHttpContext&gt;<sp/><ref refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory_1ae9ebc4654570af1ef6a8957c23f786e1" kindref="member">ReadHttpHeaderFromStreamAsync</ref>(TcpClient<sp/>client,<sp/>Stream<sp/>stream,<sp/>CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">(CancellationToken));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task&lt;WebSocket&gt;<sp/><ref refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory_1a1a212f935e6d7d3af566b2a4c1983eb8" kindref="member">AcceptWebSocketAsync</ref>(<ref refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context" kindref="compound">WebSocketHttpContext</ref><sp/>context,<sp/>CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">(CancellationToken));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Task&lt;WebSocket&gt;<sp/><ref refid="interface_ninja_1_1_web_sockets_1_1_i_web_socket_server_factory_1a1a212f935e6d7d3af566b2a4c1983eb8" kindref="member">AcceptWebSocketAsync</ref>(<ref refid="class_ninja_1_1_web_sockets_1_1_web_socket_http_context" kindref="compound">WebSocketHttpContext</ref><sp/>context,<sp/><ref refid="class_ninja_1_1_web_sockets_1_1_web_socket_server_options" kindref="compound">WebSocketServerOptions</ref><sp/>options,<sp/>CancellationToken<sp/>token<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">(CancellationToken));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Websocket/Ninja.WebSockets/IWebSocketServerFactory.cs"/>
+  </compounddef>
+</doxygen>

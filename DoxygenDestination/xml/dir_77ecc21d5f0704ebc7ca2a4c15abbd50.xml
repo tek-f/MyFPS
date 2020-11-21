@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_77ecc21d5f0704ebc7ca2a4c15abbd50" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental</compoundname>
+    <innerfile refid="_network_lerp_rigidbody_8cs">NetworkLerpRigidbody.cs</innerfile>
+    <innerfile refid="_network_rigidbody_8cs">NetworkRigidbody.cs</innerfile>
+    <innerfile refid="_experimental_2_network_transform_8cs">NetworkTransform.cs</innerfile>
+    <innerfile refid="_experimental_2_network_transform_base_8cs">NetworkTransformBase.cs</innerfile>
+    <innerfile refid="_experimental_2_network_transform_child_8cs">NetworkTransformChild.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Components/Experimental/"/>
+  </compounddef>
+</doxygen>

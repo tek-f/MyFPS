@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_7118edfc67dd0d1b59eb43d018562216" kind="dir">
+    <compoundname>C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver</compoundname>
+    <innerdir refid="dir_ae675460e37b60cb2f26237d8ef63e73">C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Processors</innerdir>
+    <innerfile refid="_editor_2_weaver_2_assembly_info_8cs">AssemblyInfo.cs</innerfile>
+    <innerfile refid="_compilation_finished_hook_8cs">CompilationFinishedHook.cs</innerfile>
+    <innerfile refid="_editor_2_weaver_2_extensions_8cs">Extensions.cs</innerfile>
+    <innerfile refid="_helpers_8cs">Helpers.cs</innerfile>
+    <innerfile refid="_log_8cs">Log.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_readers_8cs">Readers.cs</innerfile>
+    <innerfile refid="_resolvers_8cs">Resolvers.cs</innerfile>
+    <innerfile refid="_weaver_8cs">Weaver.cs</innerfile>
+    <innerfile refid="_weaver_types_8cs">WeaverTypes.cs</innerfile>
+    <innerfile refid="_writers_8cs">Writers.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/"/>
+  </compounddef>
+</doxygen>

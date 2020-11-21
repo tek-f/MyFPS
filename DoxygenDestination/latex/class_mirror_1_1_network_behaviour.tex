@@ -1,0 +1,556 @@
+\hypertarget{class_mirror_1_1_network_behaviour}{}\doxysection{Mirror.\+Network\+Behaviour Class Reference}
+\label{class_mirror_1_1_network_behaviour}\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+
+
+Base class which should be inherited by scripts which contain networking functionality.  
+
+
+Inheritance diagram for Mirror.\+Network\+Behaviour\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_mirror_1_1_network_behaviour}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_aea84bcfc5a512ecb2b7a601bf1598d24}{Invoke\+Command}} (int cmd\+Hash, \mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\begin{DoxyCompactList}\small\item\em Manually invoke a Command. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a52778428d8b4058c6db0db9e87f88394}{Invoke\+R\+PC}} (int rpc\+Hash, \mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\begin{DoxyCompactList}\small\item\em Manually invoke an R\+PC function. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a5b931086714c4cfb3dde3118dbfdc7a9}{Invoke\+Sync\+Event}} (int event\+Hash, \mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader)
+\begin{DoxyCompactList}\small\item\em Manually invoke a Sync\+Event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_addda8533ab954db571bda550862034f7}{Set\+Dirty\+Bit}} (ulong dirty\+Bit)
+\begin{DoxyCompactList}\small\item\em Used to set the behaviour as dirty, so that a network update will be sent for the object. these are masks, not bit numbers, ie. 0x004 not 2 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a0915f57f9b3f057d544235740e920a2f}{Clear\+All\+Dirty\+Bits}} ()
+\begin{DoxyCompactList}\small\item\em This clears all the dirty bits that were set on this script by Set\+Dirty\+Bits(); \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a76bf9eb3b49700f653620bbf5b7aa826}\label{class_mirror_1_1_network_behaviour_a76bf9eb3b49700f653620bbf5b7aa826}} 
+bool {\bfseries Is\+Dirty} ()
+\item 
+virtual bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}{On\+Serialize}} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, bool initial\+State)
+\begin{DoxyCompactList}\small\item\em Virtual function to override to send custom serialization data. The corresponding function to send serialization data is \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}{On\+Deserialize()}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}{On\+Deserialize}} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader, bool initial\+State)
+\begin{DoxyCompactList}\small\item\em Virtual function to override to receive custom serialization data. The corresponding function to send serialization data is \mbox{\hyperlink{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}{On\+Serialize()}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ace23cde46937b5fe490499d983a7e6e3}\label{class_mirror_1_1_network_behaviour_ace23cde46937b5fe490499d983a7e6e3}} 
+virtual bool {\bfseries Serialize\+Sync\+Vars} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, bool initial\+State)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a79ce2238da87ce060a835113911f3bea}\label{class_mirror_1_1_network_behaviour_a79ce2238da87ce060a835113911f3bea}} 
+virtual void {\bfseries Deserialize\+Sync\+Vars} (\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}} reader, bool initial\+State)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ad49cab5e0ac5e4dace701541c105d371}\label{class_mirror_1_1_network_behaviour_ad49cab5e0ac5e4dace701541c105d371}} 
+bool {\bfseries Serialize\+Objects\+All} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a4ba0673f1259fbf07a169aa6ef95dd45}\label{class_mirror_1_1_network_behaviour_a4ba0673f1259fbf07a169aa6ef95dd45}} 
+bool {\bfseries Serialize\+Objects\+Delta} (\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer)
+\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_aea16efb5a763d21dbaa89a6ed88d2bfd}{On\+Network\+Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Obsolete\+: Use \mbox{\hyperlink{class_mirror_1_1_network_behaviour_adabae0597e1228ad256cb35d1616c1ca}{On\+Stop\+Client()}} instead \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_adabae0597e1228ad256cb35d1616c1ca}{On\+Stop\+Client}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked on clients when the server has caused this object to be destroyed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a7849fd960925fc37005a1b8f2aa065b3}{On\+Start\+Server}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked for \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} objects when they become active on the server. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a27dc77be5d2117b34157b3836f333690}{On\+Stop\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Invoked on the server when the object is unspawned \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}{On\+Start\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Called on every \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} when it is activated on a client. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a8506dcb5c3cbc297a667e795cc9eafd0}{On\+Start\+Local\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Called when the local player object has been set up. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a1e36e4640f967426ffc113e26e649345}{On\+Start\+Authority}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked on behaviours that have authority, based on context and \mbox{\hyperlink{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}{Network\+Identity.\+has\+Authority}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_mirror_1_1_network_behaviour_afe494cde0781a38644c80ec14e177f59}{On\+Stop\+Authority}} ()
+\begin{DoxyCompactList}\small\item\em This is invoked on behaviours when authority is removed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_mirror_ac9acfe9461893a0d1ebc0eef63d1a6ff}{Sync\+Mode}} \mbox{\hyperlink{class_mirror_1_1_network_behaviour_acf0616ac2f967bdd47bf0f579cefe8a7}{sync\+Mode}} = Sync\+Mode.\+Observers
+\begin{DoxyCompactList}\small\item\em sync mode for On\+Serialize \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a94dbe38f0930d3bbde326d0eed7b6f83}{sync\+Interval}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em sync interval for On\+Serialize (in seconds) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}{is\+Server}} =$>$ net\+Identity.\+is\+Server
+\begin{DoxyCompactList}\small\item\em Returns true if this object is active on an active server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}{is\+Client}} =$>$ net\+Identity.\+is\+Client
+\begin{DoxyCompactList}\small\item\em Returns true if running as a client and this object was spawned by a server. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a09f7e5bb2181018bc28fa2c29ed09e8c}{is\+Local\+Player}} =$>$ net\+Identity.\+is\+Local\+Player
+\begin{DoxyCompactList}\small\item\em This returns true if this object is the one that represents the player on the local machine. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a8ace9ae035053dab9538482ff74d62ec}{is\+Server\+Only}} =$>$ \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}{is\+Server}} \&\& !\mbox{\hyperlink{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}{is\+Client}}
+\begin{DoxyCompactList}\small\item\em True if this object only exists on the server \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_abe78215943243c0ee91c2bd9a0057915}{is\+Client\+Only}} =$>$ \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}{is\+Client}} \&\& !\mbox{\hyperlink{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}{is\+Server}}
+\begin{DoxyCompactList}\small\item\em True if this object exists on a client that is not also acting as a server \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mirror_1_1_network_behaviour_abd651058bdaeaf65f691fad5bc366836}{has\+Authority}} =$>$ net\+Identity.\+has\+Authority
+\begin{DoxyCompactList}\small\item\em This returns true if this object is the authoritative version of the object in the distributed network application. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ae90a46be8160b84d1256c397718f7ff8}{net\+Id}} =$>$ net\+Identity.\+net\+Id
+\begin{DoxyCompactList}\small\item\em The unique network Id of this object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} \mbox{\hyperlink{class_mirror_1_1_network_behaviour_aa490124a374f6e82a780926b2d11fc23}{connection\+To\+Server}} =$>$ net\+Identity.\+connection\+To\+Server
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is only valid for player objects on the client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ae0365575095f9988d6ae2bfef337573a}{connection\+To\+Client}} =$>$ net\+Identity.\+connection\+To\+Client
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is only valid for player objects on the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a48124410c758c6e85f2d5bdb0872e9a6}\label{class_mirror_1_1_network_behaviour_a48124410c758c6e85f2d5bdb0872e9a6}} 
+bool {\bfseries get\+Sync\+Var\+Hook\+Guard} (ulong dirty\+Bit)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a23b3e60e1abdf4468beb6924bace3ce4}\label{class_mirror_1_1_network_behaviour_a23b3e60e1abdf4468beb6924bace3ce4}} 
+void {\bfseries set\+Sync\+Var\+Hook\+Guard} (ulong dirty\+Bit, bool value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a3c5d9ef0f604ec39acc7f03269d80656}\label{class_mirror_1_1_network_behaviour_a3c5d9ef0f604ec39acc7f03269d80656}} 
+void {\bfseries Init\+Sync\+Object} (\mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}} sync\+Object)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ac1568659d9c736766b14696efbb4dcb1}\label{class_mirror_1_1_network_behaviour_ac1568659d9c736766b14696efbb4dcb1}} 
+void {\bfseries Send\+Command\+Internal} (Type invoke\+Class, string cmd\+Name, \mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, int channel\+Id, bool ignore\+Authority=false)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_aea3fef3f468d7fdb63c3d550f238e84a}\label{class_mirror_1_1_network_behaviour_aea3fef3f468d7fdb63c3d550f238e84a}} 
+void {\bfseries Send\+R\+P\+C\+Internal} (Type invoke\+Class, string rpc\+Name, \mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, int channel\+Id, bool exclude\+Owner)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a8bab38b2cbc1df4cba42abf401635a42}\label{class_mirror_1_1_network_behaviour_a8bab38b2cbc1df4cba42abf401635a42}} 
+void {\bfseries Send\+Target\+R\+P\+C\+Internal} (\mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} conn, Type invoke\+Class, string rpc\+Name, \mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, int channel\+Id)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a8896e37754d4e3a6a2ed2102aebeee9e}\label{class_mirror_1_1_network_behaviour_a8896e37754d4e3a6a2ed2102aebeee9e}} 
+void {\bfseries Send\+Event\+Internal} (Type invoke\+Class, string event\+Name, \mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}} writer, int channel\+Id)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a7a4e336c889c531a69ec0f51900d0657}\label{class_mirror_1_1_network_behaviour_a7a4e336c889c531a69ec0f51900d0657}} 
+bool {\bfseries Sync\+Var\+Game\+Object\+Equal} (Game\+Object new\+Game\+Object, uint net\+Id\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ac3e14f45a522cec35780c9afc367e985}\label{class_mirror_1_1_network_behaviour_ac3e14f45a522cec35780c9afc367e985}} 
+void {\bfseries Set\+Sync\+Var\+Game\+Object} (Game\+Object new\+Game\+Object, ref Game\+Object game\+Object\+Field, ulong dirty\+Bit, ref uint net\+Id\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ab794f957ea97db9dec659cbbfe9208f4}\label{class_mirror_1_1_network_behaviour_ab794f957ea97db9dec659cbbfe9208f4}} 
+Game\+Object {\bfseries Get\+Sync\+Var\+Game\+Object} (uint \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ae90a46be8160b84d1256c397718f7ff8}{net\+Id}}, ref Game\+Object game\+Object\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_abdba57d6c8ff0ac89767ca07acd4ffa9}\label{class_mirror_1_1_network_behaviour_abdba57d6c8ff0ac89767ca07acd4ffa9}} 
+bool {\bfseries Sync\+Var\+Network\+Identity\+Equal} (\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} new\+Identity, uint net\+Id\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a2b4fc9f99fffd61bf67b4e7995d1d4bb}\label{class_mirror_1_1_network_behaviour_a2b4fc9f99fffd61bf67b4e7995d1d4bb}} 
+void {\bfseries Set\+Sync\+Var\+Network\+Identity} (\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} new\+Identity, ref \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} identity\+Field, ulong dirty\+Bit, ref uint net\+Id\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a46b6f2edcee89cede23050a2177098df}\label{class_mirror_1_1_network_behaviour_a46b6f2edcee89cede23050a2177098df}} 
+\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} {\bfseries Get\+Sync\+Var\+Network\+Identity} (uint \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ae90a46be8160b84d1256c397718f7ff8}{net\+Id}}, ref \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} identity\+Field)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a46c40d5ff8bc8bea02e3c0b3886e768a}\label{class_mirror_1_1_network_behaviour_a46c40d5ff8bc8bea02e3c0b3886e768a}} 
+bool {\bfseries Sync\+Var\+Equal$<$ T $>$} (T value, ref T field\+Value)
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a4087b2993b045a197b9b653176411f05}\label{class_mirror_1_1_network_behaviour_a4087b2993b045a197b9b653176411f05}} 
+void {\bfseries Set\+Sync\+Var$<$ T $>$} (T value, ref T field\+Value, ulong dirty\+Bit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}} $>$ \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ac9c5caa586acee344c189db183e95efe}{sync\+Objects}} = new List$<$\mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}}$>$()
+\begin{DoxyCompactList}\small\item\em objects that can synchronize themselves, such as synclists \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a4bb1e7724acf59e001659f0fe0b90c8f}\label{class_mirror_1_1_network_behaviour_a4bb1e7724acf59e001659f0fe0b90c8f}} 
+ulong {\bfseries sync\+Var\+Dirty\+Bits}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a2561021cd1fc5a4fe504a9822c281d11}{net\+Identity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} of this object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a2b01d534f1b7fb5ab270423a108ba277}{Component\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the index of the component on this object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class which should be inherited by scripts which contain networking functionality. 
+
+This is a Mono\+Behaviour class so scripts which need to use the networking feature should inherit this class instead of Mono\+Behaviour. It allows you to invoke networked actions, receive various callbacks, and automatically synchronize state from server-\/to-\/client.
+
+The \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} component requires a \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} on the game object. There can be multiple Network\+Behaviours on a single game object. For an object with sub-\/components in a hierarchy, the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} must be on the root object, and \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} scripts must also be on the root object.
+
+Some of the built-\/in components of the networking system are derived from \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}}, including Network\+Transport, \mbox{\hyperlink{class_mirror_1_1_network_animator}{Network\+Animator}} and \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker}{Network\+Proximity\+Checker}}.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a0915f57f9b3f057d544235740e920a2f}\label{class_mirror_1_1_network_behaviour_a0915f57f9b3f057d544235740e920a2f}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!ClearAllDirtyBits@{ClearAllDirtyBits}}
+\index{ClearAllDirtyBits@{ClearAllDirtyBits}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{ClearAllDirtyBits()}{ClearAllDirtyBits()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Behaviour.\+Clear\+All\+Dirty\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This clears all the dirty bits that were set on this script by Set\+Dirty\+Bits(); 
+
+This is automatically invoked when an update is sent for this object, but can be called manually as well.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_aea84bcfc5a512ecb2b7a601bf1598d24}\label{class_mirror_1_1_network_behaviour_aea84bcfc5a512ecb2b7a601bf1598d24}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!InvokeCommand@{InvokeCommand}}
+\index{InvokeCommand@{InvokeCommand}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{InvokeCommand()}{InvokeCommand()}}
+{\footnotesize\ttfamily virtual bool Mirror.\+Network\+Behaviour.\+Invoke\+Command (\begin{DoxyParamCaption}\item[{int}]{cmd\+Hash,  }\item[{\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}}}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Manually invoke a Command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Hash} & Hash of the Command name.\\
+\hline
+{\em reader} & Parameters to pass to the command.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a52778428d8b4058c6db0db9e87f88394}\label{class_mirror_1_1_network_behaviour_a52778428d8b4058c6db0db9e87f88394}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!InvokeRPC@{InvokeRPC}}
+\index{InvokeRPC@{InvokeRPC}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{InvokeRPC()}{InvokeRPC()}}
+{\footnotesize\ttfamily virtual bool Mirror.\+Network\+Behaviour.\+Invoke\+R\+PC (\begin{DoxyParamCaption}\item[{int}]{rpc\+Hash,  }\item[{\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}}}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Manually invoke an R\+PC function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpc\+Hash} & Hash of the R\+PC name.\\
+\hline
+{\em reader} & Parameters to pass to the R\+PC function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a5b931086714c4cfb3dde3118dbfdc7a9}\label{class_mirror_1_1_network_behaviour_a5b931086714c4cfb3dde3118dbfdc7a9}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!InvokeSyncEvent@{InvokeSyncEvent}}
+\index{InvokeSyncEvent@{InvokeSyncEvent}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{InvokeSyncEvent()}{InvokeSyncEvent()}}
+{\footnotesize\ttfamily virtual bool Mirror.\+Network\+Behaviour.\+Invoke\+Sync\+Event (\begin{DoxyParamCaption}\item[{int}]{event\+Hash,  }\item[{\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}}}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Manually invoke a Sync\+Event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Hash} & Hash of the Sync\+Event name.\\
+\hline
+{\em reader} & Parameters to pass to the Sync\+Event.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if successful.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}\label{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnDeserialize@{OnDeserialize}}
+\index{OnDeserialize@{OnDeserialize}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnDeserialize()}{OnDeserialize()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Deserialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_reader}{Network\+Reader}}}]{reader,  }\item[{bool}]{initial\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual function to override to receive custom serialization data. The corresponding function to send serialization data is \mbox{\hyperlink{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}{On\+Serialize()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & Reader to read from the stream.\\
+\hline
+{\em initial\+State} & True if being sent initial state.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_network_transform_base_a98908233dd4f50efa5293edca2974a26}{Mirror.\+Network\+Transform\+Base}}, and \mbox{\hyperlink{class_mirror_1_1_network_animator_a3bfef0fd09998b38a2b59232a207954c}{Mirror.\+Network\+Animator}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_aea16efb5a763d21dbaa89a6ed88d2bfd}\label{class_mirror_1_1_network_behaviour_aea16efb5a763d21dbaa89a6ed88d2bfd}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnNetworkDestroy@{OnNetworkDestroy}}
+\index{OnNetworkDestroy@{OnNetworkDestroy}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnNetworkDestroy()}{OnNetworkDestroy()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Network\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Obsolete\+: Use \mbox{\hyperlink{class_mirror_1_1_network_behaviour_adabae0597e1228ad256cb35d1616c1ca}{On\+Stop\+Client()}} instead 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}\label{class_mirror_1_1_network_behaviour_af8b7933f4a95d31db460935cd7906c0c}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnSerialize@{OnSerialize}}
+\index{OnSerialize@{OnSerialize}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnSerialize()}{OnSerialize()}}
+{\footnotesize\ttfamily virtual bool Mirror.\+Network\+Behaviour.\+On\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mirror_1_1_network_writer}{Network\+Writer}}}]{writer,  }\item[{bool}]{initial\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual function to override to send custom serialization data. The corresponding function to send serialization data is \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}{On\+Deserialize()}}. 
+
+The initial\+State flag is useful to differentiate between the first time an object is serialized and when incremental updates can be sent. The first time an object is sent to a client, it must include a full state snapshot, but subsequent updates can save on bandwidth by including only incremental changes. Note that Sync\+Var hook functions are not called when initial\+State is true, only for incremental updates.
+
+If a class has Sync\+Vars, then an implementation of this function and \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a26853c614ebc9c116a7d4f045d723be1}{On\+Deserialize()}} are added automatically to the class. So a class that has Sync\+Vars cannot also have custom serialization functions.
+
+The On\+Serialize function should return true to indicate that an update should be sent. If it returns true, then the dirty bits for that script are set to zero, if it returns false then the dirty bits are not changed. This allows multiple changes to a script to be accumulated over time and sent when the system is ready, instead of every frame.
+
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & Writer to use to write to the stream.\\
+\hline
+{\em initial\+State} & If this is being called to send initial state.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if data was written.
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_network_transform_base_a7eaa6f676e85d233513767ded9e0c418}{Mirror.\+Network\+Transform\+Base}}, and \mbox{\hyperlink{class_mirror_1_1_network_animator_a126c378d4196ae17f4b1661cad4faa4e}{Mirror.\+Network\+Animator}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a1e36e4640f967426ffc113e26e649345}\label{class_mirror_1_1_network_behaviour_a1e36e4640f967426ffc113e26e649345}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStartAuthority@{OnStartAuthority}}
+\index{OnStartAuthority@{OnStartAuthority}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStartAuthority()}{OnStartAuthority()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Start\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked on behaviours that have authority, based on context and \mbox{\hyperlink{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}{Network\+Identity.\+has\+Authority}}. 
+
+This is called after \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a7849fd960925fc37005a1b8f2aa065b3}{On\+Start\+Server}} and before \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}{On\+Start\+Client.}}
+
+When \mbox{\hyperlink{class_mirror_1_1_network_identity_a2bf39f8adcbc4aa9b5e105d741ff4aa6}{Assign\+Client\+Authority}} is called on the server, this will be called on the client that owns the object. When an object is spawned with \mbox{\hyperlink{}{Network\+Server.\+Spawn}} with a \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} parameter included, this will be called on the client that owns the object.
+
+Reimplemented in \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_room_player_lobby_af373b3e24825c3fe6741da812b1a11f8}{My\+F\+P\+S.\+Mirror.\+Network\+Room\+Player\+Lobby}}, \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_m_p_player_movement_controller_aeba49ccc97051a31f8da728e2da8f30f}{My\+F\+P\+S.\+Mirror.\+M\+P\+Player\+Movement\+Controller}}, and \mbox{\hyperlink{class_my_f_p_s_1_1_m_p_player_camera_controller_aed4dddf58063ece4580d67b1ae2e63b9}{My\+F\+P\+S.\+M\+P\+Player\+Camera\+Controller}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}\label{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called on every \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} when it is activated on a client. 
+
+Objects on the host have this function called, as there is a local client on the host. The values of Sync\+Vars on object are guaranteed to be initialized correctly with the latest state from the server when this function is called on the client.
+
+Reimplemented in \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_room_player_lobby_ac6ae1ca1402f24cd46c7e0a9087d9b83}{My\+F\+P\+S.\+Mirror.\+Network\+Room\+Player\+Lobby}}, \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_game_player_lobby_a0dacd55bc9ba224a51cdc091440f8839}{My\+F\+P\+S.\+Mirror.\+Network\+Game\+Player\+Lobby}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_network_room_player_ext_a6d12a7649e3fc4afbcdb47f55836799f}{Mirror.\+Examples.\+Network\+Room.\+Network\+Room\+Player\+Ext}}, and \mbox{\hyperlink{class_mirror_1_1_examples_1_1_basic_1_1_player_a3a32ec29ed604ac83eaf6e6d4abb2b19}{Mirror.\+Examples.\+Basic.\+Player}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a8506dcb5c3cbc297a667e795cc9eafd0}\label{class_mirror_1_1_network_behaviour_a8506dcb5c3cbc297a667e795cc9eafd0}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStartLocalPlayer@{OnStartLocalPlayer}}
+\index{OnStartLocalPlayer@{OnStartLocalPlayer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStartLocalPlayer()}{OnStartLocalPlayer()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Start\+Local\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called when the local player object has been set up. 
+
+This happens after \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a699d2fda0c0c8843d8964ffed01d016c}{On\+Start\+Client()}}, as it is triggered by an ownership message from the server. This is an appropriate place to activate components or functionality that should only be active for the local player, such as cameras and input.
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_player_controller_a9d87306c89fcc445ac5014a1f5b8383d}{Mirror.\+Examples.\+Network\+Room.\+Player\+Controller}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_multiple_additive_scenes_1_1_player_controller_a287259b857ae4ba7b25b337b44436853}{Mirror.\+Examples.\+Multiple\+Additive\+Scenes.\+Player\+Controller}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_basic_1_1_player_aa1c251dcc0a76068fdde108ca9bc2691}{Mirror.\+Examples.\+Basic.\+Player}}, and \mbox{\hyperlink{class_mirror_1_1_examples_1_1_additive_1_1_player_controller_a3e762b756320326dea923556db942802}{Mirror.\+Examples.\+Additive.\+Player\+Controller}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a7849fd960925fc37005a1b8f2aa065b3}\label{class_mirror_1_1_network_behaviour_a7849fd960925fc37005a1b8f2aa065b3}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked for \mbox{\hyperlink{class_mirror_1_1_network_behaviour}{Network\+Behaviour}} objects when they become active on the server. 
+
+This could be triggered by Network\+Server.\+Listen() for objects in the scene, or by Network\+Server.\+Spawn() for objects that are dynamically created.
+
+This will be called for objects on a \char`\"{}host\char`\"{} as well as for object on a dedicated server.
+
+Reimplemented in \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_player_spawn_system_a2c6457a76c067970125a267bcfef3248}{My\+F\+P\+S.\+Mirror.\+Player\+Spawn\+System}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_tanks_1_1_projectile_af50741b3ace021b7156bbaca8b191593}{Mirror.\+Examples.\+Tanks.\+Projectile}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_spawner_ac0c94adbf0f75eb315affc6b1cc2f645}{Mirror.\+Examples.\+Network\+Room.\+Spawner}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_random_color_a91ecbb5c73d1f0876f002a2f848bd82b}{Mirror.\+Examples.\+Network\+Room.\+Random\+Color}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_network_room_1_1_player_score_ae284aa27a4b84ff237759ee4c1e61f2b}{Mirror.\+Examples.\+Network\+Room.\+Player\+Score}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_pong_1_1_ball_a3be0965ff33ec34ff4b4c6ac5081b5fc}{Mirror.\+Examples.\+Pong.\+Ball}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_multiple_additive_scenes_1_1_spawner_a086f318348c0027670cd599467d9b5d7}{Mirror.\+Examples.\+Multiple\+Additive\+Scenes.\+Spawner}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_multiple_additive_scenes_1_1_random_color_ab71cdd2df63d39eebab4adc028391db9}{Mirror.\+Examples.\+Multiple\+Additive\+Scenes.\+Random\+Color}}, \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_examples_1_1_pong_1_1_ball_manager_a57f13b3d70cc053435bbb4f7d0d00774}{Mirror.\+Cloud.\+Examples.\+Pong.\+Ball\+Manager}}, \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_examples_1_1_pong_1_1_ball_a6a2290778efbc26cdc8f8b791f9450b1}{Mirror.\+Cloud.\+Examples.\+Pong.\+Ball}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_one_k_1_1_monster_movement_a92fd322b0a71ca65940390d9b39f4e10}{Mirror.\+Examples.\+One\+K.\+Monster\+Movement}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_basic_1_1_player_adaaf43858cfa131f4fa88b71932f1112}{Mirror.\+Examples.\+Basic.\+Player}}, \mbox{\hyperlink{class_mirror_1_1_examples_1_1_additive_1_1_random_color_ae2702b98fd96062f928d43a95b993710}{Mirror.\+Examples.\+Additive.\+Random\+Color}}, \mbox{\hyperlink{class_mirror_1_1_network_scene_checker_af51ebf8edc6db7b6013a7c6fef9391b7}{Mirror.\+Network\+Scene\+Checker}}, \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a47d5100dfe87995818c6aa340d6a235b}{Mirror.\+Network\+Proximity\+Checker}}, and \mbox{\hyperlink{class_mirror_1_1_network_match_checker_a5d3be00b811564a494364df1b1e657b8}{Mirror.\+Network\+Match\+Checker}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_afe494cde0781a38644c80ec14e177f59}\label{class_mirror_1_1_network_behaviour_afe494cde0781a38644c80ec14e177f59}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStopAuthority@{OnStopAuthority}}
+\index{OnStopAuthority@{OnStopAuthority}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStopAuthority()}{OnStopAuthority()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Stop\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked on behaviours when authority is removed. 
+
+When \mbox{\hyperlink{class_mirror_1_1_network_identity_ab1c34c695ff0a05c3e81d2c530da822f}{Network\+Identity.\+Remove\+Client\+Authority}} is called on the server, this will be called on the client that owns the object.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_adabae0597e1228ad256cb35d1616c1ca}\label{class_mirror_1_1_network_behaviour_adabae0597e1228ad256cb35d1616c1ca}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStopClient@{OnStopClient}}
+\index{OnStopClient@{OnStopClient}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStopClient()}{OnStopClient()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Stop\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This is invoked on clients when the server has caused this object to be destroyed. 
+
+This can be used as a hook to invoke effects or do client specific cleanup.
+
+Reimplemented in \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_room_player_lobby_a96fe05fb5d9079852422f84f214eaac8}{My\+F\+P\+S.\+Mirror.\+Network\+Room\+Player\+Lobby}}, and \mbox{\hyperlink{class_my_f_p_s_1_1_mirror_1_1_network_game_player_lobby_a89de39087daa207a3c4b31d7c3d47594}{My\+F\+P\+S.\+Mirror.\+Network\+Game\+Player\+Lobby}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a27dc77be5d2117b34157b3836f333690}\label{class_mirror_1_1_network_behaviour_a27dc77be5d2117b34157b3836f333690}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!OnStopServer@{OnStopServer}}
+\index{OnStopServer@{OnStopServer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
+{\footnotesize\ttfamily virtual void Mirror.\+Network\+Behaviour.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Invoked on the server when the object is unspawned 
+
+Useful for saving object data in persistant storage
+
+Reimplemented in \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_examples_1_1_pong_1_1_ball_manager_ac6a3fee59c6beae30aa9620f2abbba72}{Mirror.\+Cloud.\+Examples.\+Pong.\+Ball\+Manager}}, and \mbox{\hyperlink{class_mirror_1_1_network_proximity_checker_a35d47e2d6e1b3ac86d1839929db4a198}{Mirror.\+Network\+Proximity\+Checker}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_addda8533ab954db571bda550862034f7}\label{class_mirror_1_1_network_behaviour_addda8533ab954db571bda550862034f7}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!SetDirtyBit@{SetDirtyBit}}
+\index{SetDirtyBit@{SetDirtyBit}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{SetDirtyBit()}{SetDirtyBit()}}
+{\footnotesize\ttfamily void Mirror.\+Network\+Behaviour.\+Set\+Dirty\+Bit (\begin{DoxyParamCaption}\item[{ulong}]{dirty\+Bit }\end{DoxyParamCaption})}
+
+
+
+Used to set the behaviour as dirty, so that a network update will be sent for the object. these are masks, not bit numbers, ie. 0x004 not 2 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dirty\+Bit} & Bit mask to set.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ae0365575095f9988d6ae2bfef337573a}\label{class_mirror_1_1_network_behaviour_ae0365575095f9988d6ae2bfef337573a}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!connectionToClient@{connectionToClient}}
+\index{connectionToClient@{connectionToClient}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{connectionToClient}{connectionToClient}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} Mirror.\+Network\+Behaviour.\+connection\+To\+Client =$>$ net\+Identity.\+connection\+To\+Client}
+
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is only valid for player objects on the server. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_aa490124a374f6e82a780926b2d11fc23}\label{class_mirror_1_1_network_behaviour_aa490124a374f6e82a780926b2d11fc23}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!connectionToServer@{connectionToServer}}
+\index{connectionToServer@{connectionToServer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{connectionToServer}{connectionToServer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} Mirror.\+Network\+Behaviour.\+connection\+To\+Server =$>$ net\+Identity.\+connection\+To\+Server}
+
+
+
+The \mbox{\hyperlink{class_mirror_1_1_network_connection}{Network\+Connection}} associated with this \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity.}} This is only valid for player objects on the client. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_abd651058bdaeaf65f691fad5bc366836}\label{class_mirror_1_1_network_behaviour_abd651058bdaeaf65f691fad5bc366836}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!hasAuthority@{hasAuthority}}
+\index{hasAuthority@{hasAuthority}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{hasAuthority}{hasAuthority}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+has\+Authority =$>$ net\+Identity.\+has\+Authority}
+
+
+
+This returns true if this object is the authoritative version of the object in the distributed network application. 
+
+The \mbox{\hyperlink{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}{Network\+Identity.\+has\+Authority}} value on the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} determines how authority is determined. For most objects, authority is held by the server. For objects with \mbox{\hyperlink{class_mirror_1_1_network_identity_a33f4f942b7637852d8b0cfa4025b744a}{Network\+Identity.\+has\+Authority}} set, authority is held by the client of that player.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}\label{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!isClient@{isClient}}
+\index{isClient@{isClient}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{isClient}{isClient}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+is\+Client =$>$ net\+Identity.\+is\+Client}
+
+
+
+Returns true if running as a client and this object was spawned by a server. 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_abe78215943243c0ee91c2bd9a0057915}\label{class_mirror_1_1_network_behaviour_abe78215943243c0ee91c2bd9a0057915}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!isClientOnly@{isClientOnly}}
+\index{isClientOnly@{isClientOnly}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{isClientOnly}{isClientOnly}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+is\+Client\+Only =$>$ \mbox{\hyperlink{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}{is\+Client}} \&\& !\mbox{\hyperlink{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}{is\+Server}}}
+
+
+
+True if this object exists on a client that is not also acting as a server 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a09f7e5bb2181018bc28fa2c29ed09e8c}\label{class_mirror_1_1_network_behaviour_a09f7e5bb2181018bc28fa2c29ed09e8c}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!isLocalPlayer@{isLocalPlayer}}
+\index{isLocalPlayer@{isLocalPlayer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{isLocalPlayer}{isLocalPlayer}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+is\+Local\+Player =$>$ net\+Identity.\+is\+Local\+Player}
+
+
+
+This returns true if this object is the one that represents the player on the local machine. 
+
+In multiplayer games, there are multiple instances of the Player object. The client needs to know which one is for \char`\"{}themselves\char`\"{} so that only that player processes input and potentially has a camera attached. The Is\+Local\+Player function will return true only for the player instance that belongs to the player on the local machine, so it can be used to filter out input for non-\/local players.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}\label{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!isServer@{isServer}}
+\index{isServer@{isServer}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{isServer}{isServer}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+is\+Server =$>$ net\+Identity.\+is\+Server}
+
+
+
+Returns true if this object is active on an active server. 
+
+This is only true if the object has been spawned. This is different from Network\+Server.\+active, which is true if the server itself is active rather than this object being active.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a8ace9ae035053dab9538482ff74d62ec}\label{class_mirror_1_1_network_behaviour_a8ace9ae035053dab9538482ff74d62ec}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!isServerOnly@{isServerOnly}}
+\index{isServerOnly@{isServerOnly}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{isServerOnly}{isServerOnly}}
+{\footnotesize\ttfamily bool Mirror.\+Network\+Behaviour.\+is\+Server\+Only =$>$ \mbox{\hyperlink{class_mirror_1_1_network_behaviour_a6a65dec5ade34544074c2f997932e17a}{is\+Server}} \&\& !\mbox{\hyperlink{class_mirror_1_1_network_behaviour_ab30e4e9deea5ea728bbf8910ba4aa0fc}{is\+Client}}}
+
+
+
+True if this object only exists on the server 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ae90a46be8160b84d1256c397718f7ff8}\label{class_mirror_1_1_network_behaviour_ae90a46be8160b84d1256c397718f7ff8}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!netId@{netId}}
+\index{netId@{netId}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{netId}{netId}}
+{\footnotesize\ttfamily uint Mirror.\+Network\+Behaviour.\+net\+Id =$>$ net\+Identity.\+net\+Id}
+
+
+
+The unique network Id of this object. 
+
+This is assigned at runtime by the network server and will be unique for all objects for that network session.\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a94dbe38f0930d3bbde326d0eed7b6f83}\label{class_mirror_1_1_network_behaviour_a94dbe38f0930d3bbde326d0eed7b6f83}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!syncInterval@{syncInterval}}
+\index{syncInterval@{syncInterval}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{syncInterval}{syncInterval}}
+{\footnotesize\ttfamily float Mirror.\+Network\+Behaviour.\+sync\+Interval = 0.\+1f}
+
+
+
+sync interval for On\+Serialize (in seconds) 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_acf0616ac2f967bdd47bf0f579cefe8a7}\label{class_mirror_1_1_network_behaviour_acf0616ac2f967bdd47bf0f579cefe8a7}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!syncMode@{syncMode}}
+\index{syncMode@{syncMode}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{syncMode}{syncMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_mirror_ac9acfe9461893a0d1ebc0eef63d1a6ff}{Sync\+Mode}} Mirror.\+Network\+Behaviour.\+sync\+Mode = Sync\+Mode.\+Observers}
+
+
+
+sync mode for On\+Serialize 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_ac9c5caa586acee344c189db183e95efe}\label{class_mirror_1_1_network_behaviour_ac9c5caa586acee344c189db183e95efe}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!syncObjects@{syncObjects}}
+\index{syncObjects@{syncObjects}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{syncObjects}{syncObjects}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}}$>$ Mirror.\+Network\+Behaviour.\+sync\+Objects = new List$<$\mbox{\hyperlink{interface_mirror_1_1_sync_object}{Sync\+Object}}$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+objects that can synchronize themselves, such as synclists 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a2b01d534f1b7fb5ab270423a108ba277}\label{class_mirror_1_1_network_behaviour_a2b01d534f1b7fb5ab270423a108ba277}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!ComponentIndex@{ComponentIndex}}
+\index{ComponentIndex@{ComponentIndex}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{ComponentIndex}{ComponentIndex}}
+{\footnotesize\ttfamily int Mirror.\+Network\+Behaviour.\+Component\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the index of the component on this object 
+
+\mbox{\Hypertarget{class_mirror_1_1_network_behaviour_a2561021cd1fc5a4fe504a9822c281d11}\label{class_mirror_1_1_network_behaviour_a2561021cd1fc5a4fe504a9822c281d11}} 
+\index{Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}!netIdentity@{netIdentity}}
+\index{netIdentity@{netIdentity}!Mirror.NetworkBehaviour@{Mirror.NetworkBehaviour}}
+\doxysubsubsection{\texorpdfstring{netIdentity}{netIdentity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} Mirror.\+Network\+Behaviour.\+net\+Identity\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the \mbox{\hyperlink{class_mirror_1_1_network_identity}{Network\+Identity}} of this object 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Runtime/Network\+Behaviour.\+cs\end{DoxyCompactItemize}

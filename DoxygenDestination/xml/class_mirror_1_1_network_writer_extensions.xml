@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_network_writer_extensions" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::NetworkWriterExtensions</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mirror_1_1_network_writer_extensions_1a8e3eb5fdbdac68ff5af4c759cafa3681" prot="private" static="yes" mutable="no">
+        <type>readonly ILogger</type>
+        <definition>readonly ILogger Mirror.NetworkWriterExtensions.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= LogFactory.GetLogger(typeof(NetworkWriterExtensions))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="164" column="33" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_writer_extensions_1a14d2cbe54f5cc6943d62c3e7b2933eda" prot="private" static="yes" mutable="no">
+        <type>readonly UTF8Encoding</type>
+        <definition>readonly UTF8Encoding Mirror.NetworkWriterExtensions.encoding</definition>
+        <argsstring></argsstring>
+        <name>encoding</name>
+        <initializer>= new UTF8Encoding(false, true)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="169" column="38" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mirror_1_1_network_writer_extensions_1af525c34822276ff2074310d5864b5da6" prot="private" static="yes" mutable="no">
+        <type>readonly byte[]</type>
+        <definition>readonly byte [] Mirror.NetworkWriterExtensions.stringBuffer</definition>
+        <argsstring></argsstring>
+        <name>stringBuffer</name>
+        <initializer>= new byte[NetworkWriter.MaxStringLength]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="170" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a5a8b63d12060b1aa79d2499c753d2339" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteByte</definition>
+        <argsstring>(this NetworkWriter writer, byte value)</argsstring>
+        <name>WriteByte</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="172" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a7514a4b13d40b99fdd6259cff0c4253e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteSByte</definition>
+        <argsstring>(this NetworkWriter writer, sbyte value)</argsstring>
+        <name>WriteSByte</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>sbyte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="174" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ae174767072c2d61cad93641c410a0423" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteChar</definition>
+        <argsstring>(this NetworkWriter writer, char value)</argsstring>
+        <name>WriteChar</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="176" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a161a4612e0ec2361023b4e88811d1745" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteBoolean</definition>
+        <argsstring>(this NetworkWriter writer, bool value)</argsstring>
+        <name>WriteBoolean</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="178" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ad2b648281ac0e395e902ab6f9a1eb5d6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteUInt16</definition>
+        <argsstring>(this NetworkWriter writer, ushort value)</argsstring>
+        <name>WriteUInt16</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="180" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a8dc7461c5902ca531f288a5dd90d1187" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteInt16</definition>
+        <argsstring>(this NetworkWriter writer, short value)</argsstring>
+        <name>WriteInt16</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="186" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a39ee8a129041562b27943b433d915591" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteSingle</definition>
+        <argsstring>(this NetworkWriter writer, float value)</argsstring>
+        <name>WriteSingle</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="188" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="188" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1af1e197a6ae3859f6352c44e9f3cee66c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteDouble</definition>
+        <argsstring>(this NetworkWriter writer, double value)</argsstring>
+        <name>WriteDouble</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="197" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="197" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a24177f4408d71eb72a838f9237aea627" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteDecimal</definition>
+        <argsstring>(this NetworkWriter writer, decimal value)</argsstring>
+        <name>WriteDecimal</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>decimal</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="206" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="206" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ae0e087164dcd328c599d351b9afc26b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteString</definition>
+        <argsstring>(this NetworkWriter writer, string value)</argsstring>
+        <name>WriteString</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="219" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="219" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a4beb96f45531897c1383e083ad4e4307" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteBytesAndSize</definition>
+        <argsstring>(this NetworkWriter writer, byte[] buffer, int offset, int count)</argsstring>
+        <name>WriteBytesAndSize</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="248" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="248" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1af607d723aa17ce37e0bbf9f49ddc83dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteBytesAndSize</definition>
+        <argsstring>(this NetworkWriter writer, byte[] buffer)</argsstring>
+        <name>WriteBytesAndSize</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>byte[]</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="264" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="264" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1aaf0a97080c8995434b5f3cbaf26479db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteBytesAndSizeSegment</definition>
+        <argsstring>(this NetworkWriter writer, ArraySegment&lt; byte &gt; buffer)</argsstring>
+        <name>WriteBytesAndSizeSegment</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>ArraySegment&lt; byte &gt;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="270" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="270" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1af6018be2f07e28d82613ef81fc4107a4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WritePackedInt32</definition>
+        <argsstring>(this NetworkWriter writer, int i)</argsstring>
+        <name>WritePackedInt32</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="276" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ac454c0df3f9e5e95888e74e9831229e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WritePackedUInt32</definition>
+        <argsstring>(this NetworkWriter writer, uint value)</argsstring>
+        <name>WritePackedUInt32</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="283" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="283" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a64649393241b9e9f2a58354b27a0a9b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WritePackedInt64</definition>
+        <argsstring>(this NetworkWriter writer, long i)</argsstring>
+        <name>WritePackedInt64</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="291" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="291" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a2f3376390f39741b57c3a205aedabb84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WritePackedUInt64</definition>
+        <argsstring>(this NetworkWriter writer, ulong value)</argsstring>
+        <name>WritePackedUInt64</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>ulong</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="297" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="297" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a63ddeb9f073b3b8fa711c51ff008b13f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteVector2</definition>
+        <argsstring>(this NetworkWriter writer, Vector2 value)</argsstring>
+        <name>WriteVector2</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="382" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="382" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a524f691e3e2c94b022cfead63f69d9b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteVector3</definition>
+        <argsstring>(this NetworkWriter writer, Vector3 value)</argsstring>
+        <name>WriteVector3</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="388" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="388" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ad1273753704efc2ea8c261237b6be5e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteVector4</definition>
+        <argsstring>(this NetworkWriter writer, Vector4 value)</argsstring>
+        <name>WriteVector4</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Vector4</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="395" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="395" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a99c965039c9fcf69c9841312159e2821" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteVector2Int</definition>
+        <argsstring>(this NetworkWriter writer, Vector2Int value)</argsstring>
+        <name>WriteVector2Int</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Vector2Int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="403" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="403" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a10523eaa32edbc18efb75bb7e895147a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteVector3Int</definition>
+        <argsstring>(this NetworkWriter writer, Vector3Int value)</argsstring>
+        <name>WriteVector3Int</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="409" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="409" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a777ae10a01a888870a95a618628cbe00" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteColor</definition>
+        <argsstring>(this NetworkWriter writer, Color value)</argsstring>
+        <name>WriteColor</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="416" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="416" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ab04311d713f655775f90034861b8bc7b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteColor32</definition>
+        <argsstring>(this NetworkWriter writer, Color32 value)</argsstring>
+        <name>WriteColor32</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Color32</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="424" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="424" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a63a618806839f88c69a83d2b266a97c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteQuaternion</definition>
+        <argsstring>(this NetworkWriter writer, Quaternion value)</argsstring>
+        <name>WriteQuaternion</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Quaternion</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="432" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="432" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a2f5df1ec3f456ebc61a01d93cedc5c96" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteRect</definition>
+        <argsstring>(this NetworkWriter writer, Rect value)</argsstring>
+        <name>WriteRect</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Rect</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="440" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="440" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1ae146073f74c2c468fe771b6b35a51459" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WritePlane</definition>
+        <argsstring>(this NetworkWriter writer, Plane value)</argsstring>
+        <name>WritePlane</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Plane</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="448" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="448" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a6c3bd77b9d7acb4a27e1b9bda3edda6a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteRay</definition>
+        <argsstring>(this NetworkWriter writer, Ray value)</argsstring>
+        <name>WriteRay</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Ray</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="454" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="454" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1af9e2043df1bfcd7a33427309ea808a13" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteMatrix4x4</definition>
+        <argsstring>(this NetworkWriter writer, Matrix4x4 value)</argsstring>
+        <name>WriteMatrix4x4</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Matrix4x4</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="460" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="460" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a2e584485379cea0dbf3f512af7ba233f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteGuid</definition>
+        <argsstring>(this NetworkWriter writer, Guid value)</argsstring>
+        <name>WriteGuid</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Guid</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="480" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="480" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1abd5fb83159f6d57d550639e894009551" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteNetworkIdentity</definition>
+        <argsstring>(this NetworkWriter writer, NetworkIdentity value)</argsstring>
+        <name>WriteNetworkIdentity</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mirror_1_1_network_identity" kindref="compound">NetworkIdentity</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="486" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="486" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a6e7c140835ed63765df57e396d4047da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteTransform</definition>
+        <argsstring>(this NetworkWriter writer, Transform value)</argsstring>
+        <name>WriteTransform</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Transform</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="496" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="496" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a610f1302fe41fbc9c75f632b0b84277a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteGameObject</definition>
+        <argsstring>(this NetworkWriter writer, GameObject value)</argsstring>
+        <name>WriteGameObject</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="515" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="515" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a81b39280523a639829ad921cc5995248" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteUri</definition>
+        <argsstring>(this NetworkWriter writer, Uri uri)</argsstring>
+        <name>WriteUri</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>Uri</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="534" column="28" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="534" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_network_writer_extensions_1a8b11d42273806a00104de2c2658ee4e4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Mirror.NetworkWriterExtensions.WriteMessage&lt; T &gt;</definition>
+        <argsstring>(this NetworkWriter writer, T msg)</argsstring>
+        <name>WriteMessage&lt; T &gt;</name>
+        <param>
+          <type>this <ref refid="class_mirror_1_1_network_writer" kindref="compound">NetworkWriter</ref></type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="539" column="23" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="539" bodyend="542"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" line="162" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/NetworkWriter.cs" bodystart="163" bodyend="543"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a14d2cbe54f5cc6943d62c3e7b2933eda" prot="private" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>encoding</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a8e3eb5fdbdac68ff5af4c759cafa3681" prot="private" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>logger</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1af525c34822276ff2074310d5864b5da6" prot="private" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>stringBuffer</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a161a4612e0ec2361023b4e88811d1745" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteBoolean</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a5a8b63d12060b1aa79d2499c753d2339" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteByte</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a4beb96f45531897c1383e083ad4e4307" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteBytesAndSize</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1af607d723aa17ce37e0bbf9f49ddc83dc" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteBytesAndSize</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1aaf0a97080c8995434b5f3cbaf26479db" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteBytesAndSizeSegment</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ae174767072c2d61cad93641c410a0423" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteChar</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a777ae10a01a888870a95a618628cbe00" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteColor</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ab04311d713f655775f90034861b8bc7b" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteColor32</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a24177f4408d71eb72a838f9237aea627" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteDecimal</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1af1e197a6ae3859f6352c44e9f3cee66c" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteDouble</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a610f1302fe41fbc9c75f632b0b84277a" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteGameObject</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a2e584485379cea0dbf3f512af7ba233f" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteGuid</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a8dc7461c5902ca531f288a5dd90d1187" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteInt16</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1af9e2043df1bfcd7a33427309ea808a13" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteMatrix4x4</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a8b11d42273806a00104de2c2658ee4e4" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteMessage&lt; T &gt;</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1abd5fb83159f6d57d550639e894009551" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteNetworkIdentity</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1af6018be2f07e28d82613ef81fc4107a4" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WritePackedInt32</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a64649393241b9e9f2a58354b27a0a9b7" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WritePackedInt64</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ac454c0df3f9e5e95888e74e9831229e5" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WritePackedUInt32</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a2f3376390f39741b57c3a205aedabb84" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WritePackedUInt64</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ae146073f74c2c468fe771b6b35a51459" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WritePlane</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a63a618806839f88c69a83d2b266a97c7" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteQuaternion</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a6c3bd77b9d7acb4a27e1b9bda3edda6a" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteRay</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a2f5df1ec3f456ebc61a01d93cedc5c96" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteRect</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a7514a4b13d40b99fdd6259cff0c4253e" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteSByte</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a39ee8a129041562b27943b433d915591" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteSingle</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ae0e087164dcd328c599d351b9afc26b7" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteString</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a6e7c140835ed63765df57e396d4047da" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteTransform</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ad2b648281ac0e395e902ab6f9a1eb5d6" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteUInt16</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a81b39280523a639829ad921cc5995248" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteUri</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a63ddeb9f073b3b8fa711c51ff008b13f" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteVector2</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a99c965039c9fcf69c9841312159e2821" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteVector2Int</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a524f691e3e2c94b022cfead63f69d9b4" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteVector3</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1a10523eaa32edbc18efb75bb7e895147a" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteVector3Int</name></member>
+      <member refid="class_mirror_1_1_network_writer_extensions_1ad1273753704efc2ea8c261237b6be5e6" prot="public" virt="non-virtual"><scope>Mirror::NetworkWriterExtensions</scope><name>WriteVector4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

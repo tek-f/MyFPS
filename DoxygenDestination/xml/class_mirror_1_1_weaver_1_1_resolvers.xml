@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_mirror_1_1_weaver_1_1_resolvers" kind="class" language="C#" prot="public">
+    <compoundname>Mirror::Weaver::Resolvers</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_resolvers_1af4faf7a386d1153e539a04fd18f0a5a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodReference</type>
+        <definition>static MethodReference Mirror.Weaver.Resolvers.ResolveMethod</definition>
+        <argsstring>(TypeReference tr, AssemblyDefinition scriptDef, string name)</argsstring>
+        <name>ResolveMethod</name>
+        <param>
+          <type>TypeReference</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>scriptDef</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="13" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="13" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_resolvers_1a1d8d1dfb196af8a863615da6f71cfefb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodReference</type>
+        <definition>static MethodReference Mirror.Weaver.Resolvers.ResolveMethod</definition>
+        <argsstring>(TypeReference t, AssemblyDefinition scriptDef, System.Func&lt; MethodDefinition, bool &gt; predicate)</argsstring>
+        <name>ResolveMethod</name>
+        <param>
+          <type>TypeReference</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>scriptDef</declname>
+        </param>
+        <param>
+          <type>System.Func&lt; MethodDefinition, bool &gt;</type>
+          <declname>predicate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="28" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="28" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_resolvers_1a8d23cf236b60a5e5ebcf1a2a4d6b3f20" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodReference</type>
+        <definition>static MethodReference Mirror.Weaver.Resolvers.TryResolveMethodInParents</definition>
+        <argsstring>(TypeReference tr, AssemblyDefinition scriptDef, string name)</argsstring>
+        <name>TryResolveMethodInParents</name>
+        <param>
+          <type>TypeReference</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>scriptDef</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="42" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="42" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_resolvers_1a8d87f059b8ba6e32b83f91d063d0b326" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodDefinition</type>
+        <definition>static MethodDefinition Mirror.Weaver.Resolvers.ResolveDefaultPublicCtor</definition>
+        <argsstring>(TypeReference variable)</argsstring>
+        <name>ResolveDefaultPublicCtor</name>
+        <param>
+          <type>TypeReference</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="60" column="40" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="60" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mirror_1_1_weaver_1_1_resolvers_1a5321703d0e651be97910fc2cff55ae21" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MethodReference</type>
+        <definition>static MethodReference Mirror.Weaver.Resolvers.ResolveProperty</definition>
+        <argsstring>(TypeReference tr, AssemblyDefinition scriptDef, string name)</argsstring>
+        <name>ResolveProperty</name>
+        <param>
+          <type>TypeReference</type>
+          <declname>tr</declname>
+        </param>
+        <param>
+          <type>AssemblyDefinition</type>
+          <declname>scriptDef</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="74" column="39" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="74" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" line="11" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Editor/Weaver/Resolvers.cs" bodystart="12" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_mirror_1_1_weaver_1_1_resolvers_1a8d87f059b8ba6e32b83f91d063d0b326" prot="public" virt="non-virtual"><scope>Mirror::Weaver::Resolvers</scope><name>ResolveDefaultPublicCtor</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_resolvers_1af4faf7a386d1153e539a04fd18f0a5a7" prot="public" virt="non-virtual"><scope>Mirror::Weaver::Resolvers</scope><name>ResolveMethod</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_resolvers_1a1d8d1dfb196af8a863615da6f71cfefb" prot="public" virt="non-virtual"><scope>Mirror::Weaver::Resolvers</scope><name>ResolveMethod</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_resolvers_1a5321703d0e651be97910fc2cff55ae21" prot="public" virt="non-virtual"><scope>Mirror::Weaver::Resolvers</scope><name>ResolveProperty</name></member>
+      <member refid="class_mirror_1_1_weaver_1_1_resolvers_1a8d23cf236b60a5e5ebcf1a2a4d6b3f20" prot="public" virt="non-virtual"><scope>Mirror::Weaver::Resolvers</scope><name>TryResolveMethodInParents</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

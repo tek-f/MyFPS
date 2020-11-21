@@ -1,0 +1,98 @@
+\hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api}{}\doxysection{Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api Class Reference}
+\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api}\index{Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}}
+Inheritance diagram for Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.666667cm]{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a5d610c82290f2d4942a459f13636801b}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a5d610c82290f2d4942a459f13636801b}} 
+{\bfseries List\+Server\+Client\+Api} (\mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_i_coroutine_runner}{I\+Coroutine\+Runner}} runner, \mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_i_request_creator}{I\+Request\+Creator}} request\+Creator, \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_server_list_event}{Server\+List\+Event}} on\+Server\+List\+Updated)
+\item 
+void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_ad06a0ed161913459a3494425f6f642e5}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Cleans up any data created by the instance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a1daae307b675836bc9bc44b44201a406}{Get\+Server\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get the server list once \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a3ed856038a9cc45ea78f7d4b372f9089}{Start\+Get\+Server\+List\+Repeat}} (int interval)
+\begin{DoxyCompactList}\small\item\em Start getting the server list every interval \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a31f594349b42c674c015611e6d89a94c}{Stop\+Get\+Server\+List\+Repeat}} ()
+\begin{DoxyCompactList}\small\item\em Stop getting the server list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a86a161421e78920ddbafe234060407e6}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a86a161421e78920ddbafe234060407e6}} 
+Unity\+Action$<$ \mbox{\hyperlink{struct_mirror_1_1_cloud_1_1_list_server_service_1_1_server_collection_json}{Server\+Collection\+Json}} $>$ {\bfseries on\+Server\+List\+Updated}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a1daae307b675836bc9bc44b44201a406}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a1daae307b675836bc9bc44b44201a406}} 
+\index{Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}!GetServerList@{GetServerList}}
+\index{GetServerList@{GetServerList}!Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}}
+\doxysubsubsection{\texorpdfstring{GetServerList()}{GetServerList()}}
+{\footnotesize\ttfamily void Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api.\+Get\+Server\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the server list once 
+
+
+
+Implements \mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_a24873925650d81ee7196c623ce04a2fc}{Mirror.\+Cloud.\+List\+Server\+Service.\+I\+List\+Server\+Client\+Api}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_ad06a0ed161913459a3494425f6f642e5}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_ad06a0ed161913459a3494425f6f642e5}} 
+\index{Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api.\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans up any data created by the instance 
+
+For \mbox{\hyperlink{namespace_mirror_1_1_cloud_1_1_example}{Example}}\+: removing server from list
+
+Implements \mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_i_base_api_a266c21cfe77caef08d56d1a1b6566cbe}{Mirror.\+Cloud.\+I\+Base\+Api}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a3ed856038a9cc45ea78f7d4b372f9089}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a3ed856038a9cc45ea78f7d4b372f9089}} 
+\index{Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}!StartGetServerListRepeat@{StartGetServerListRepeat}}
+\index{StartGetServerListRepeat@{StartGetServerListRepeat}!Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}}
+\doxysubsubsection{\texorpdfstring{StartGetServerListRepeat()}{StartGetServerListRepeat()}}
+{\footnotesize\ttfamily void Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api.\+Start\+Get\+Server\+List\+Repeat (\begin{DoxyParamCaption}\item[{int}]{interval }\end{DoxyParamCaption})}
+
+
+
+Start getting the server list every interval 
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_a32e8715ec0bf7a6f8deb0c66e1d83c63}{Mirror.\+Cloud.\+List\+Server\+Service.\+I\+List\+Server\+Client\+Api}}.
+
+\mbox{\Hypertarget{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a31f594349b42c674c015611e6d89a94c}\label{class_mirror_1_1_cloud_1_1_list_server_service_1_1_list_server_client_api_a31f594349b42c674c015611e6d89a94c}} 
+\index{Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}!StopGetServerListRepeat@{StopGetServerListRepeat}}
+\index{StopGetServerListRepeat@{StopGetServerListRepeat}!Mirror.Cloud.ListServerService.ListServerClientApi@{Mirror.Cloud.ListServerService.ListServerClientApi}}
+\doxysubsubsection{\texorpdfstring{StopGetServerListRepeat()}{StopGetServerListRepeat()}}
+{\footnotesize\ttfamily void Mirror.\+Cloud.\+List\+Server\+Service.\+List\+Server\+Client\+Api.\+Stop\+Get\+Server\+List\+Repeat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop getting the server list 
+
+
+
+Implements \mbox{\hyperlink{interface_mirror_1_1_cloud_1_1_list_server_service_1_1_i_list_server_client_api_ad990a23a6baae38441163e487725d00c}{Mirror.\+Cloud.\+List\+Server\+Service.\+I\+List\+Server\+Client\+Api}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/aaron/\+Documents/\+Git\+Hub/\+My\+F\+P\+S/\+Assets/\+Mirror/\+Cloud/\+List\+Server/List\+Server\+Client\+Api.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_telepathy_1_1_logger" kind="class" language="C#" prot="public">
+    <compoundname>Telepathy::Logger</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_telepathy_1_1_logger_1a45d9b11a2fb899962c755dd127699fbc" prot="public" static="yes" mutable="no">
+        <type>Action&lt; string &gt;</type>
+        <definition>Action&lt;string&gt; Telepathy.Logger.Log</definition>
+        <argsstring></argsstring>
+        <name>Log</name>
+        <initializer>= Console.WriteLine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" line="11" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_telepathy_1_1_logger_1aae4388fe192bac4aecb9a91403e74165" prot="public" static="yes" mutable="no">
+        <type>Action&lt; string &gt;</type>
+        <definition>Action&lt;string&gt; Telepathy.Logger.LogWarning</definition>
+        <argsstring></argsstring>
+        <name>LogWarning</name>
+        <initializer>= Console.WriteLine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" line="12" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_telepathy_1_1_logger_1a260dae8ae2393cb82237521f54d5b8d9" prot="public" static="yes" mutable="no">
+        <type>Action&lt; string &gt;</type>
+        <definition>Action&lt;string&gt; Telepathy.Logger.LogError</definition>
+        <argsstring></argsstring>
+        <name>LogError</name>
+        <initializer>= Console.Error.WriteLine</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" line="13" column="30" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" line="9" column="19" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Mirror/Runtime/Transport/Telepathy/Logger.cs" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_telepathy_1_1_logger_1a45d9b11a2fb899962c755dd127699fbc" prot="public" virt="non-virtual"><scope>Telepathy::Logger</scope><name>Log</name></member>
+      <member refid="class_telepathy_1_1_logger_1a260dae8ae2393cb82237521f54d5b8d9" prot="public" virt="non-virtual"><scope>Telepathy::Logger</scope><name>LogError</name></member>
+      <member refid="class_telepathy_1_1_logger_1aae4388fe192bac4aecb9a91403e74165" prot="public" virt="non-virtual"><scope>Telepathy::Logger</scope><name>LogWarning</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

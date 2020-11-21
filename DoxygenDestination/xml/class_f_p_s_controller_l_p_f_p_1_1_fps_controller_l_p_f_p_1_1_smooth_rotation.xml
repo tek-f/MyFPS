@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation" kind="class" language="C#" prot="private">
+    <compoundname>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1ad9adf4a4e24418f296e9303ead8667b2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FPSControllerLPFP.FpsControllerLPFP.SmoothRotation._current</definition>
+        <argsstring></argsstring>
+        <name>_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="277" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1aaf2da2d9356ad1e6c30015bc0149f141" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FPSControllerLPFP.FpsControllerLPFP.SmoothRotation._currentVelocity</definition>
+        <argsstring></argsstring>
+        <name>_currentVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="278" column="27" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1a7b46e869b64d3be98f0126a647b41d35" prot="public" static="no" readable="no" writable="no" gettable="no" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float FPSControllerLPFP.FpsControllerLPFP.SmoothRotation.Current</definition>
+        <argsstring></argsstring>
+        <name>Current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="291" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="292" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1af9f3778ae7cd8bf957491766299aa282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FPSControllerLPFP.FpsControllerLPFP.SmoothRotation.SmoothRotation</definition>
+        <argsstring>(float startAngle)</argsstring>
+        <name>SmoothRotation</name>
+        <param>
+          <type>float</type>
+          <declname>startAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="280" column="20" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1a45a1214c311ba6c2a9820363eafa056b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float FPSControllerLPFP.FpsControllerLPFP.SmoothRotation.Update</definition>
+        <argsstring>(float target, float smoothTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>smoothTime</declname>
+        </param>
+        <briefdescription>
+<para>Returns the smoothed rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="286" column="26" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="286" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A helper for assistance with smoothing the camera rotation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" line="275" column="16" bodyfile="C:/Users/aaron/Documents/GitHub/MyFPS/Assets/Low Poly FPS Pack - Free (Sample)/Components/Scripts/FPSController/FpsControllerLPFP.cs" bodystart="276" bodyend="295"/>
+    <listofallmembers>
+      <member refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1ad9adf4a4e24418f296e9303ead8667b2" prot="private" virt="non-virtual"><scope>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</scope><name>_current</name></member>
+      <member refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1aaf2da2d9356ad1e6c30015bc0149f141" prot="private" virt="non-virtual"><scope>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</scope><name>_currentVelocity</name></member>
+      <member refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1a7b46e869b64d3be98f0126a647b41d35" prot="public" virt="non-virtual"><scope>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</scope><name>Current</name></member>
+      <member refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1af9f3778ae7cd8bf957491766299aa282" prot="public" virt="non-virtual"><scope>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</scope><name>SmoothRotation</name></member>
+      <member refid="class_f_p_s_controller_l_p_f_p_1_1_fps_controller_l_p_f_p_1_1_smooth_rotation_1a45a1214c311ba6c2a9820363eafa056b" prot="public" virt="non-virtual"><scope>FPSControllerLPFP::FpsControllerLPFP::SmoothRotation</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
