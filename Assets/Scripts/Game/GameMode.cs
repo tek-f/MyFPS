@@ -27,15 +27,7 @@ namespace MyFPS.GameAdmin
         /// <summary>
         /// the score that a team must reach to trigger EndGame() to run.
         /// </summary>
-        public int gameScoreLimit;
-        /// <summary>
-        /// Reference to a UI Text that displays team 1's score.
-        /// </summary>
-        [SerializeField] Text team1ScoreText;
-        /// <summary>
-        /// Reference to a UI Text that displays team 2's score.
-        /// </summary>
-        [SerializeField] Text team2ScoreText;
+        public int gameScoreLimit = 5;
         /// <summary>
         /// Set Up function for the GameMode.
         /// </summary>

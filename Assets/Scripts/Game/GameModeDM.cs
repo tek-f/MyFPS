@@ -10,6 +10,7 @@ namespace MyFPS.GameAdmin
         {
             base.Start();
             gameType = "DM";
+            gameScoreLimit = 11;
         }
     }
 }

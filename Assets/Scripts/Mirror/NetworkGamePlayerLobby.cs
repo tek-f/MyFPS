@@ -18,7 +18,8 @@ namespace MyFPS.Mirror
                 {
                     return room;
                 }
-                return room = NetworkManager.singleton as NetworkManagerLobby;
+                room = GameObject.FindWithTag("NetworkManager").GetComponent<NetworkManagerLobby>();
+                return room;
             }
         }
 

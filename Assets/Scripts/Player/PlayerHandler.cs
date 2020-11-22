@@ -10,7 +10,7 @@ namespace MyFPS.Player
     public class PlayerHandler : MonoBehaviour
     {
         #region Properties
-        public int teamID { get { return playersTeamID; } }
+        public int teamID;
         public int LastWeapon
         {
             get
@@ -115,6 +115,10 @@ namespace MyFPS.Player
         /// </summary>
         [SerializeField] GameObject pausePanel;
         /// <summary>
+        /// Reference to the players Loadout panel.
+        /// </summary>
+        [SerializeField] GameObject loadoutPanel;
+        /// <summary>
         /// Tracks if player has paused the game.
         /// </summary>
         bool paused;
@@ -122,6 +126,10 @@ namespace MyFPS.Player
         /// Reference to the end game display panel.
         /// </summary>
         public GameObject endGamePanel;
+        /// <summary>
+        /// Reference to the image that is the players crosshair.
+        /// </summary>
+        public Image crosshair;
         #endregion
         #region Respawn
         /// <summary>
@@ -356,7 +364,21 @@ namespace MyFPS.Player
         /// <param name="_context">Context of Input Action.</param>
         private void OnSwapWeaponPerformed(InputAction.CallbackContext _context)
         {
-            currentGun.StartWeaponSwap();
+            //currentGun.StartWeaponSwap();
+            loadoutPanel.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        /// <summary>
+        /// Action to be performed when swapWeaponAction is canceled/released.
+        /// </summary>
+        /// <param name="_context">Context of the Input Action.</param>
+        private void OnSwapWeaponCanceled(InputAction.CallbackContext _context)
+        {
+            //currentGun.StartWeaponSwap();
+            loadoutPanel.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
         /// <summary>
         /// Action to be performed when escapeAction is performed.
@@ -406,6 +428,7 @@ namespace MyFPS.Player
             swapWeaponAction = playerInput.actions.FindAction("SwapWeapon");
             swapWeaponAction.Enable();
             swapWeaponAction.performed += OnSwapWeaponPerformed;
+            swapWeaponAction.canceled += OnSwapWeaponCanceled;
 
             escapeAction = playerInput.actions.FindAction("Escape");
             escapeAction.Enable();

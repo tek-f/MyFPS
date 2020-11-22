@@ -16,7 +16,6 @@ namespace MyFPS.Mirror
         [SerializeField] private TMP_Text[] playerNameTexts = new TMP_Text[4];
         [SerializeField] private TMP_Text[] playerReadyTexts = new TMP_Text[4];
         [SerializeField] private Button startGameButton;
-        [SerializeField] private Button levelSelectButton;
 
         [SyncVar(hook = nameof(HandleDisplayNameChange))]
         public string displayName = "Loading...";
@@ -30,7 +29,6 @@ namespace MyFPS.Mirror
             {
                 isLeader = value;
                 startGameButton.gameObject.SetActive(value);
-                levelSelectButton.gameObject.SetActive(value);
             }
         }
 
@@ -50,12 +48,13 @@ namespace MyFPS.Mirror
 
         public override void OnStartAuthority()
         {
-            Debug.Log("is it running?");
+            room = GameObject.FindWithTag("NetworkManager").GetComponent<NetworkManagerLobby>();
             CMDSetDisplayName(PlayerNameInput.DisplayName);
             lobbyUI.SetActive(true);
         }
         public override void OnStartClient()
         {
+            room = GameObject.FindWithTag("NetworkManager").GetComponent<NetworkManagerLobby>();
             Room.roomPlayers.Add(this);
             UpdateDisplay();
         }

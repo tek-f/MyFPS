@@ -14,6 +14,8 @@ namespace MyFPS.Mirror
 
         private int nextIndex = 0;
 
+        int teamTracker = 0;
+
         public static void AddSpawnPoint(Transform transform)
         {
             spawnPoints.Add(transform);
@@ -39,12 +41,21 @@ namespace MyFPS.Mirror
             }
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+            playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().teamID = teamTracker;
             NetworkServer.Spawn(playerInstance, conn);
 
             nextIndex++;
             if(nextIndex >= spawnPoints.Count)
             {
                 nextIndex = 0;
+            }
+            if(teamTracker == 0)
+            {
+                teamTracker = 1;
+            }
+            else
+            {
+                teamTracker = 0;
             }
         }
     }
