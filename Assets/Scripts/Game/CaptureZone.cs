@@ -29,9 +29,9 @@ namespace MyFPS.GameAdmin
             worldSpaceFlag.SetActive(true);
         }
         [Command]
-        void CmdAddScore()
+        void CmdAddScore(int _teamIndex)
         {
-
+            gameModeCTF.RpcUnpdateScoreNetwork(_teamIndex);
         }
 
         private void Start()
@@ -56,7 +56,7 @@ namespace MyFPS.GameAdmin
 
                 if (player.IsHoldingFlag)
                 {
-                    gameModeCTF.CmdUpdateScoreNetwork(player.teamID);
+                    CmdAddScore(teamID);
                     player.ReturnFlag();
                     ResetFlag();
                 }

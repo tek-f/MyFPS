@@ -297,11 +297,11 @@ namespace MyFPS.Player
             if(gameModeManager.gameType == "DM")
             {
                 print(hasAuthority);
-                UpdateTeamScores(teamID);
+                CmdUpdateTeamScores(teamID);
             }
         }
         [Command]
-        void UpdateTeamScores(int _teamID)
+        void CmdUpdateTeamScores(int _teamID)
         {
             print("player command");
             gameModeManager.RpcUnpdateScoreNetwork(_teamID);
@@ -315,6 +315,23 @@ namespace MyFPS.Player
         public void CmdDeath()
         {
             RpcDeath();
+        }
+        /// <summary>
+        /// Updates UI display of the teams scores.
+        /// </summary>
+        /// <param name="_team1Score">Score of team 1.</param>
+        /// <param name="_team2Score">Score of team 2.</param>
+        public void UpdateTeamScores(int _team1Score, int _team2Score)
+        {
+            team1ScoreText.text = _team1Score.ToString();
+            team2ScoreText.text = _team2Score.ToString();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        public void AddScore()
+        {
+            gameModeManager.UpdateScores(teamID);
         }
         /// <summary>
         /// Toggles game pause.
@@ -337,21 +354,6 @@ namespace MyFPS.Player
                 fpsController.enabled = false;
                 paused = true;
             }
-        }
-        /// <summary>
-        /// Updates UI display of the teams scores.
-        /// </summary>
-        /// <param name="_team1Score">Score of team 1.</param>
-        /// <param name="_team2Score">Score of team 2.</param>
-        public void UpdateTeamScores(int _team1Score, int _team2Score)
-        {
-            team1ScoreText.text = _team1Score.ToString();
-            team2ScoreText.text = _team2Score.ToString();
-        }
-
-        public void AddScore()
-        {
-            gameModeManager.UpdateScores(teamID);
         }
         /// <summary>
         /// Action to be performed when fireAction is performed.
@@ -405,8 +407,7 @@ namespace MyFPS.Player
         private void Start()
         {
             //Variable/Refence SetUp
-            fpsController = gameObject.AddComponent<FirstPersonController>();
-            fpsController.enabled = true;
+            fpsController = GetComponent<FirstPersonController>();
             playerDeath = GetComponent<PlayerDeath>();
             gameModeManager = GameObject.FindWithTag("GameManager").GetComponent<GameMode>();
 

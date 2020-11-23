@@ -127,12 +127,8 @@ namespace MyFPS.Player
                 velocity.y += jumpSpeed;
             }
         }
-        //private void OnEnable() => playerInput.enabled = true;
-        //private void OnDisable() => playerInput.enabled = false;
         private void Awake()
         {
-            enabled = true;
-
             Cursor.lockState = CursorLockMode.Locked;
             cameraTransform = gameObject.GetComponentInChildren<Camera>().transform;
             cameraTransform.gameObject.SetActive(true);

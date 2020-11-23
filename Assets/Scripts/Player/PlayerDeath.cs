@@ -51,10 +51,7 @@ namespace MyFPS.Player
         }
         private void OnEnable()
         {
-            if(fpsController == null)
-            {
-                fpsController = gameObject.GetComponent<FirstPersonController>();
-            }
+            fpsController = gameObject.GetComponent<FirstPersonController>();
             playerHandler.enabled = false;
             fpsController.enabled = false;
             deathPanel.SetActive(true);
@@ -65,10 +62,11 @@ namespace MyFPS.Player
         }
         private void Update()
         {
-            float timeRemaining = respawnDelay;
-            timeRemaining -= (Time.time - deathTimeStamp);
-            respawnCounterText.text = timeRemaining.ToString();
-            if (timeRemaining <= 0)
+            //float timeRemaining = respawnDelay;
+            //timeRemaining -= (Time.time - deathTimeStamp);
+            float remaining = Mathf.Clamp(respawnDelay - (Time.time - deathTimeStamp), 0, respawnDelay);
+            respawnCounterText.text = remaining.ToString();
+            if (remaining <= 0)
             {
                 Respawn();
             }

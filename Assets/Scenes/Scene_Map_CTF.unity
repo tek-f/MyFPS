@@ -16658,6 +16658,7 @@ GameObject:
   - component: {fileID: 451748053}
   - component: {fileID: 451748052}
   - component: {fileID: 451748051}
+  - component: {fileID: 451748054}
   m_Layer: 0
   m_Name: Blue CaptureZone
   m_TagString: Untagged
@@ -16690,6 +16691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9000d9bb10a9f4e84d05f89c8f0f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   teamID: 0
   gameModeCTF: {fileID: 2034214326}
   worldSpaceFlag: {fileID: 53547460}
@@ -16708,6 +16711,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451748054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451748050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1697450913
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &477358721
 GameObject:
   m_ObjectHideFlags: 0
@@ -102829,6 +102848,7 @@ GameObject:
   - component: {fileID: 1718432547}
   - component: {fileID: 1718432546}
   - component: {fileID: 1718432545}
+  - component: {fileID: 1718432548}
   m_Layer: 0
   m_Name: Red CaptureZone
   m_TagString: Untagged
@@ -102861,6 +102881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9000d9bb10a9f4e84d05f89c8f0f50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   teamID: 1
   gameModeCTF: {fileID: 2034214326}
   worldSpaceFlag: {fileID: 1160328053}
@@ -102879,6 +102901,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718432548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718432544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3446385997
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!144 &1722514415
 CharacterJoint:
   m_ObjectHideFlags: 0

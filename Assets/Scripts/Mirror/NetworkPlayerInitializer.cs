@@ -22,6 +22,8 @@ namespace MyFPS.Mirror
             playerHandler.enabled = true;
             playerInput = GetComponent<PlayerInput>();
             playerInput.enabled = true;
+            fpsController = GetComponent<FirstPersonController>();
+            fpsController.enabled = true;
             playerCamera = gameObject.GetComponentInChildren<Camera>();
             playerCamera.enabled = true;
             playerCanvas = gameObject.GetComponentInChildren<Canvas>();

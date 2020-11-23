@@ -58,18 +58,7 @@ namespace MyFPS.GameAdmin
         [ClientRpc]
         public void RpcUnpdateScoreNetwork(int _teamIndex)
         {
-            print("TESATT2");
             AddScore(_teamIndex);
-        }
-        [Command]
-        public void CmdUpdateScoreNetwork(int _teamIndex)
-        {
-            print("TESATT");
-            RpcUnpdateScoreNetwork(_teamIndex);
-        }
-        public void CommandAccessUpdateScoreNetwork(int _teamID)
-        {
-            CmdUpdateScoreNetwork(_teamID);
         }
         public void UpdateScores(int _teamIndex)
         {
