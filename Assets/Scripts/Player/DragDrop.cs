@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace MyFPS.Player
 {
-    public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler,IDragHandler
+    public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         /// <summary>
         /// Referencce to the canvas the dragable UI element is on.

@@ -8,6 +8,7 @@ TagManager:
   - Teleporter
   - GameManager
   - NetworkManager
+  - Canvas
   layers:
   - Default
   - TransparentFX

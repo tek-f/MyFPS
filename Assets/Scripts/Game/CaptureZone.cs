@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MyFPS.Player;
+using Mirror;
 
 namespace MyFPS.GameAdmin
 {
-    public class CaptureZone : MonoBehaviour
+    public class CaptureZone : NetworkBehaviour
     {
         /// <summary>
         /// Team ID of the capture zone.
@@ -14,7 +15,7 @@ namespace MyFPS.GameAdmin
         /// <summary>
         /// Reference to the Game Manager.
         /// </summary>
-        GameModeCTF gameModeCTF;
+        [SerializeField] GameModeCTF gameModeCTF;
         /// <summary>
         /// Reference to this capture zones game object that is in the world for players to pick up.
         /// </summary>
@@ -27,10 +28,15 @@ namespace MyFPS.GameAdmin
             worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
             worldSpaceFlag.SetActive(true);
         }
+        [Command]
+        void CmdAddScore()
+        {
+
+        }
 
         private void Start()
         {
-            gameModeCTF = FindObjectOfType<GameModeCTF>();
+            //gameModeCTF = GameObject.FindWithTag("GameManager").GetComponent<GameModeCTF>();
 
             if (gameModeCTF == null)
             {
@@ -50,7 +56,7 @@ namespace MyFPS.GameAdmin
 
                 if (player.IsHoldingFlag)
                 {
-                    gameModeCTF.AddScore(player.teamID, 1);
+                    gameModeCTF.CmdUpdateScoreNetwork(player.teamID);
                     player.ReturnFlag();
                     ResetFlag();
                 }

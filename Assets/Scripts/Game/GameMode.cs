@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using MyFPS.Player;
+using Mirror;
 
 namespace MyFPS.GameAdmin
 {
-    public class GameMode : MonoBehaviour
+    public class GameMode : NetworkBehaviour
     {
         /// <summary>
         /// Number of teams in the game.
@@ -24,6 +25,8 @@ namespace MyFPS.GameAdmin
         /// List of PlayerHandlers within the game scene.
         /// </summary>
         public List<PlayerHandler> playersList = new List<PlayerHandler>();
+
+        public PlayerHandler localPlayer;
         /// <summary>
         /// the score that a team must reach to trigger EndGame() to run.
         /// </summary>
@@ -43,14 +46,35 @@ namespace MyFPS.GameAdmin
         /// </summary>
         /// <param name="_teamID">The teamID of the team that has scored.</param>
         /// <param name="_value">The value that the teams score is being increased by.</param>
-        public virtual void AddScore(int _teamID, int _value)
+        public virtual void AddScore(int _teamID)
         {
-            teams[_teamID].score += _value;
-            foreach (PlayerHandler player in playersList)
-            {
-                player.UpdateTeamScores(teams[0].score, teams[1].score);
-            }
+            teams[_teamID].score ++;
+            localPlayer.UpdateTeamScores(teams[0].score, teams[1].score);
             if (teams[_teamID].score >= gameScoreLimit)
+            {
+                EndGame();
+            }
+        }
+        [ClientRpc]
+        public void RpcUnpdateScoreNetwork(int _teamIndex)
+        {
+            print("TESATT2");
+            AddScore(_teamIndex);
+        }
+        [Command]
+        public void CmdUpdateScoreNetwork(int _teamIndex)
+        {
+            print("TESATT");
+            RpcUnpdateScoreNetwork(_teamIndex);
+        }
+        public void CommandAccessUpdateScoreNetwork(int _teamID)
+        {
+            CmdUpdateScoreNetwork(_teamID);
+        }
+        public void UpdateScores(int _teamIndex)
+        {
+            teams[_teamIndex].score++;
+            if (teams[_teamIndex].score >= gameScoreLimit)
             {
                 EndGame();
             }
@@ -76,7 +100,6 @@ namespace MyFPS.GameAdmin
             SetUpGame();
         }
     }
-
     [System.Serializable]
     public class Team
     {

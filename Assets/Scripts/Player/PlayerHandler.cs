@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using MyFPS.GameAdmin;
+using Mirror;
 
 namespace MyFPS.Player
 {
-    public class PlayerHandler : MonoBehaviour
+    public class PlayerHandler : NetworkBehaviour
     {
         #region Properties
         public int teamID;
@@ -291,22 +292,29 @@ namespace MyFPS.Player
         /// </summary>
         public void Death()
         {
-
             //set death script active
             playerDeath.enabled = true;
             if(gameModeManager.gameType == "DM")
             {
-                if(teamID == 0)
-                {
-                    gameModeManager.AddScore(1, 1);
-                }
-                else
-                {
-                    gameModeManager.AddScore(0, 1);
-                }
+                print(hasAuthority);
+                UpdateTeamScores(teamID);
             }
-
-
+        }
+        [Command]
+        void UpdateTeamScores(int _teamID)
+        {
+            print("player command");
+            gameModeManager.RpcUnpdateScoreNetwork(_teamID);
+        }
+        [ClientRpc]
+        public void RpcDeath()
+        {
+            Death();
+        }
+        [Command]
+        public void CmdDeath()
+        {
+            RpcDeath();
         }
         /// <summary>
         /// Toggles game pause.
@@ -315,7 +323,6 @@ namespace MyFPS.Player
         {
             if(paused)
             {
-                Time.timeScale = 1;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 pausePanel.SetActive(false);
@@ -324,7 +331,6 @@ namespace MyFPS.Player
             }
             else
             {
-                Time.timeScale = 0;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 pausePanel.SetActive(true);
@@ -341,6 +347,11 @@ namespace MyFPS.Player
         {
             team1ScoreText.text = _team1Score.ToString();
             team2ScoreText.text = _team2Score.ToString();
+        }
+
+        public void AddScore()
+        {
+            gameModeManager.UpdateScores(teamID);
         }
         /// <summary>
         /// Action to be performed when fireAction is performed.
@@ -365,6 +376,7 @@ namespace MyFPS.Player
         private void OnSwapWeaponPerformed(InputAction.CallbackContext _context)
         {
             //currentGun.StartWeaponSwap();
+            fpsController.enabled = false;
             loadoutPanel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -376,6 +388,7 @@ namespace MyFPS.Player
         private void OnSwapWeaponCanceled(InputAction.CallbackContext _context)
         {
             //currentGun.StartWeaponSwap();
+            fpsController.enabled = true;
             loadoutPanel.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
@@ -392,7 +405,8 @@ namespace MyFPS.Player
         private void Start()
         {
             //Variable/Refence SetUp
-            fpsController = GetComponent<FirstPersonController>();
+            fpsController = gameObject.AddComponent<FirstPersonController>();
+            fpsController.enabled = true;
             playerDeath = GetComponent<PlayerDeath>();
             gameModeManager = GameObject.FindWithTag("GameManager").GetComponent<GameMode>();
 

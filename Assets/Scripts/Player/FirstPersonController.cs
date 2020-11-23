@@ -17,7 +17,7 @@ namespace MyFPS.Player
         /// <summary>
         /// The players speed.
         /// </summary>
-        public float speed = 2f;
+        public float speed = 10f;
         /// <summary>
         /// The gravity applied to players.
         /// </summary>
@@ -25,7 +25,7 @@ namespace MyFPS.Player
         /// <summary>
         /// The speed of the players jump.
         /// </summary>
-        public float jumpSpeed = 10f;
+        public float jumpSpeed = 5f;
         /// <summary>
         /// Tracks if the player is touching the ground.
         /// </summary>
@@ -53,7 +53,7 @@ namespace MyFPS.Player
         /// <summary>
         /// Reference to the Ground layer.
         /// </summary>
-        public LayerMask groundLayerMask;
+        public LayerMask groundLayerMask = 8;
         /// <summary>
         /// Reference to the PlayerInput component on this game object.
         /// </summary>
@@ -94,7 +94,7 @@ namespace MyFPS.Player
         /// <param name="_inputVector">The input of moveAction buttons as a Vector2.</param>
         void PlayerMovement(Vector2 _inputVector)
         {
-            grounded = Physics.Raycast(gameObject.transform.position, Vector3.down, groundedOffset, groundLayerMask);
+            grounded = Physics.Raycast(gameObject.transform.position, Vector3.down, groundedOffset/*, groundLayerMask*/);
             if (grounded && velocity.y < -2)
             {
                 velocity.y = 0f;
@@ -123,17 +123,18 @@ namespace MyFPS.Player
 
             if (jumpAction.ReadValue<float>() > 0 && grounded)
             {
+                print("jump");
                 velocity.y += jumpSpeed;
             }
         }
-        private void OnEnable() => playerInput.enabled = true;
-        private void OnDisable() => playerInput.enabled = false;
+        //private void OnEnable() => playerInput.enabled = true;
+        //private void OnDisable() => playerInput.enabled = false;
         private void Awake()
         {
             enabled = true;
 
             Cursor.lockState = CursorLockMode.Locked;
-            //cameraTransform = gameObject.GetComponentInChildren<Camera>().transform;
+            cameraTransform = gameObject.GetComponentInChildren<Camera>().transform;
             cameraTransform.gameObject.SetActive(true);
             charControl = gameObject.GetComponent<CharacterController>();
 

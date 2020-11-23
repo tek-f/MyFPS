@@ -35,7 +35,7 @@ namespace MyFPS.Test
         {
             deathTimeStamp = Time.time;
             renderer.enabled = false;
-            gameManager.AddScore(0, 1);
+            //gameManager.AddScore(0, 1);
             dead = true;
         }
         /// <summary>

@@ -51,6 +51,10 @@ namespace MyFPS.Player
         }
         private void OnEnable()
         {
+            if(fpsController == null)
+            {
+                fpsController = gameObject.GetComponent<FirstPersonController>();
+            }
             playerHandler.enabled = false;
             fpsController.enabled = false;
             deathPanel.SetActive(true);
