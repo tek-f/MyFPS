@@ -9,6 +9,8 @@ namespace MyFPS.GameAdmin
 {
     public class GameMode : NetworkBehaviour
     {
+        public static GameMode instance = null;
+
         /// <summary>
         /// Number of teams in the game.
         /// </summary>
@@ -25,6 +27,7 @@ namespace MyFPS.GameAdmin
         /// List of PlayerHandlers within the game scene.
         /// </summary>
         public List<PlayerHandler> playersList = new List<PlayerHandler>();
+        public List<Transform> spawnPoints = new List<Transform>();
 
         public PlayerHandler localPlayer;
         /// <summary>
@@ -40,6 +43,7 @@ namespace MyFPS.GameAdmin
             {
                 teams.Add(new Team(teamID));
             }
+
         }
         /// <summary>
         /// Increases a Teams score, depending on _teamID, by _value.
@@ -48,7 +52,9 @@ namespace MyFPS.GameAdmin
         /// <param name="_value">The value that the teams score is being increased by.</param>
         public virtual void AddScore(int _teamID)
         {
-            teams[_teamID].score ++;
+            Debug.Log(teams[_teamID]);
+            teams[_teamID].score++;
+            Debug.Log(localPlayer);
             localPlayer.UpdateTeamScores(teams[0].score, teams[1].score);
             if (teams[_teamID].score >= gameScoreLimit)
             {
@@ -68,6 +74,7 @@ namespace MyFPS.GameAdmin
                 EndGame();
             }
         }
+
         /// <summary>
         /// Is called by AddScore() when gameScoreLimit is reached by one of the teams scores.
         /// </summary>
@@ -76,11 +83,21 @@ namespace MyFPS.GameAdmin
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            foreach (PlayerHandler player in playersList)
-            {
-                player.GetComponent<FirstPersonController>().enabled = false;
-                player.GetComponent<PlayerHandler>().endGamePanel.SetActive(true);
 
+            localPlayer.GetComponent<FirstPersonController>().enabled = false;
+            localPlayer.GetComponent<PlayerHandler>().endGamePanel.SetActive(true);
+            localPlayer.enabled = false;
+        }
+        public virtual void Awake()
+        {
+            if(instance == null)
+            {
+                instance = this;
+            }
+            else if(instance != this)
+            {
+                Destroy(gameObject);
+                return;
             }
         }
         protected virtual void Start()

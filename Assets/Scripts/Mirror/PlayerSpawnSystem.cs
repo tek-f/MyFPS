@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 using System.Linq;
+using MyFPS.Player;
 
 namespace MyFPS.Mirror
 {
@@ -12,14 +13,13 @@ namespace MyFPS.Mirror
 
         private static List<Transform> spawnPoints = new List<Transform>();
 
-        private int nextIndex = 0;
+        [SyncVar] int index = 0;
 
         int teamTracker = 0;
 
         public static void AddSpawnPoint(Transform transform)
         {
             spawnPoints.Add(transform);
-
             spawnPoints.OrderBy(x => x.GetSiblingIndex()).ToList();
         }
 
@@ -27,12 +27,18 @@ namespace MyFPS.Mirror
 
         public override void OnStartServer() => NetworkManagerLobby.OnServerReadied += SpawnPlayer;
 
+        [Command]
+        public void CmdSetPlayerRespawnPos(GameObject _player, Transform _respawnPos)
+        {
+            _player.GetComponent<PlayerHandler>().RpcSetRespawnPos(_respawnPos);
+        }
+
         [ServerCallback]
         private void OnDestroy() => NetworkManagerLobby.OnServerReadied -= SpawnPlayer;
         [Server]
         public void SpawnPlayer(NetworkConnection conn)
         {
-            Transform spawnPoint = spawnPoints.ElementAtOrDefault(nextIndex);
+            Transform spawnPoint = spawnPoints[index];
 
             if (spawnPoint == null)
             {
@@ -41,24 +47,15 @@ namespace MyFPS.Mirror
             }
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-            playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().teamID = teamTracker;
-            playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().respawnPosition = spawnPoint;
+            Debug.Log(index);
+            CmdSetPlayerRespawnPos(playerInstance, spawnPoint);
+            playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().teamID = index;
             NetworkServer.Spawn(playerInstance, conn);
 
-           // NetworkServer.AddPlayerForConnection(conn, playerInstance);
-
-            nextIndex++;
-            if(nextIndex >= spawnPoints.Count)
+            index++;
+            if(index == 2)
             {
-                nextIndex = 0;
-            }
-            if(teamTracker == 0)
-            {
-                teamTracker = 1;
-            }
-            else
-            {
-                teamTracker = 0;
+                index = 0;
             }
         }
     }

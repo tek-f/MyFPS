@@ -29,7 +29,7 @@ namespace MyFPS.Mirror
             playerCanvas = gameObject.GetComponentInChildren<Canvas>();
             playerCanvas.enabled = true;
 
-            GameMode gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameMode>();
+            GameMode gameManager = GameMode.instance;
             gameManager.playersList.Add(playerHandler);
             gameManager.localPlayer = playerHandler;
         }

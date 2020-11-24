@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace MyFPS.Player
 {
@@ -15,6 +16,10 @@ namespace MyFPS.Player
         /// Reference to the FirstPersonController class on this game object.
         /// </summary>
         FirstPersonController fpsController;
+        /// <summary>
+        /// Reference to the PlayerInput on this game object.
+        /// </summary>
+        PlayerInput playerInput;
         /// <summary>
         /// Reference to the UI panel displayed on the players death.
         /// </summary>
@@ -37,7 +42,8 @@ namespace MyFPS.Player
         void Respawn()
         {
             transform.position = playerHandler.respawnPosition.position;
-
+            
+            playerInput.enabled = true;
             playerHandler.enabled = true;
             fpsController.enabled = true;
             deathPanel.SetActive(false);
@@ -48,12 +54,14 @@ namespace MyFPS.Player
         {
             playerHandler = gameObject.GetComponent<PlayerHandler>();
             fpsController = gameObject.GetComponent<FirstPersonController>();
+            playerInput = gameObject.GetComponent<PlayerInput>();
         }
         private void OnEnable()
         {
             fpsController = gameObject.GetComponent<FirstPersonController>();
             playerHandler.enabled = false;
             fpsController.enabled = false;
+            playerInput.enabled = false;
             deathPanel.SetActive(true);
 
             deathTimeStamp = Time.time;
@@ -62,8 +70,6 @@ namespace MyFPS.Player
         }
         private void Update()
         {
-            //float timeRemaining = respawnDelay;
-            //timeRemaining -= (Time.time - deathTimeStamp);
             float remaining = Mathf.Clamp(respawnDelay - (Time.time - deathTimeStamp), 0, respawnDelay);
             respawnCounterText.text = remaining.ToString();
             if (remaining <= 0)

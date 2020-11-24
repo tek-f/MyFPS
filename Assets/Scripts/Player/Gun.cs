@@ -102,7 +102,7 @@ namespace MyFPS.Player
                 RaycastHit hit;
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, range))
                 {
-                    if (hit.transform.GetComponent<PlayerHandler>())
+                    if (hit.transform.CompareTag("Player"))
                     {
                         PlayerHandler hitPlayer = hit.transform.GetComponent<PlayerHandler>();
                         hitPlayer.TakeDamage(damage);

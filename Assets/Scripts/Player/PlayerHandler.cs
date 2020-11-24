@@ -11,7 +11,7 @@ namespace MyFPS.Player
     public class PlayerHandler : NetworkBehaviour
     {
         #region Properties
-        public int teamID;
+        [SyncVar] public int teamID;
         public int LastWeapon
         {
             get
@@ -136,12 +136,19 @@ namespace MyFPS.Player
         /// <summary>
         /// Position for the player to respaw to.
         /// </summary>
-        public Transform respawnPosition;
+        [SyncVar] public Transform respawnPosition;
         /// <summary>
         /// Reference to the PlayerDeath class on this game object.
         /// </summary>
         PlayerDeath playerDeath;
         #endregion
+        #endregion
+
+        [ClientRpc]
+        public void RpcSetRespawnPos(Transform _respawnTransform)
+        {
+            respawnPosition = _respawnTransform;
+        }
         /// <summary>
         /// Swaps the players equpied weapon.
         /// </summary>
@@ -287,6 +294,12 @@ namespace MyFPS.Player
                 Death();
             }
         }
+
+        [ClientRpc]
+        public void RpcSetTeamID(int _teamID)
+        {
+            teamID = _teamID;
+        }
         /// <summary>
         /// Called when players health reaches 0. Enables playerDeath.
         /// </summary>
@@ -296,7 +309,6 @@ namespace MyFPS.Player
             playerDeath.enabled = true;
             if(gameModeManager.gameType == "DM")
             {
-                print(hasAuthority);
                 CmdUpdateTeamScores(teamID);
             }
         }
@@ -304,7 +316,7 @@ namespace MyFPS.Player
         void CmdUpdateTeamScores(int _teamID)
         {
             print("player command");
-            gameModeManager.RpcUnpdateScoreNetwork(_teamID);
+            GameMode.instance.RpcUnpdateScoreNetwork(_teamID);
         }
         [ClientRpc]
         public void RpcDeath()
@@ -403,13 +415,15 @@ namespace MyFPS.Player
         {
             Pause();
         }
-
         private void Start()
         {
             //Variable/Refence SetUp
             fpsController = GetComponent<FirstPersonController>();
             playerDeath = GetComponent<PlayerDeath>();
-            gameModeManager = GameObject.FindWithTag("GameManager").GetComponent<GameMode>();
+            gameModeManager = GameMode.instance;
+
+            //Add player to gameModeManager list of players
+            gameModeManager.playersList.Add(this);
 
             //Initial Weapon Set Up
             foreach (Weapon weapon in weapons)
@@ -420,8 +434,6 @@ namespace MyFPS.Player
             weapons[0].gameObject.SetActive(true);
             currentGun = weapons[0].GetComponent<Gun>();
             lastWeapon = 1;
-
-            //Temp Gun Setup
 
             //Cursor Set Up
             Cursor.lockState = CursorLockMode.Locked;
@@ -448,9 +460,6 @@ namespace MyFPS.Player
             escapeAction = playerInput.actions.FindAction("Escape");
             escapeAction.Enable();
             escapeAction.performed += OnEscapePerformed;
-
-            //TEMP
-            gameModeManager.playersList.Add(this);
         }
         private void Update()
         {
@@ -507,6 +516,5 @@ namespace MyFPS.Player
                 #endregion
             }
         }
-        #endregion
     }
 }
