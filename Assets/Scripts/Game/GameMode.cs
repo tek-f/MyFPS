@@ -64,6 +64,7 @@ namespace MyFPS.GameAdmin
         [ClientRpc]
         public void RpcUnpdateScoreNetwork(int _teamIndex)
         {
+            Debug.Log("Rpc Unpdate Score Network");
             AddScore(_teamIndex);
         }
         public void UpdateScores(int _teamIndex)

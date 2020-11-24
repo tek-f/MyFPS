@@ -136,16 +136,16 @@ namespace MyFPS.Player
         /// <summary>
         /// Position for the player to respaw to.
         /// </summary>
-        [SyncVar] public Transform respawnPosition;
+        [SyncVar] public Vector3 respawnPosition;
         /// <summary>
         /// Reference to the PlayerDeath class on this game object.
         /// </summary>
-        PlayerDeath playerDeath;
+        [SerializeField] PlayerDeath playerDeath;
         #endregion
         #endregion
 
         [ClientRpc]
-        public void RpcSetRespawnPos(Transform _respawnTransform)
+        public void RpcSetRespawnPos(Vector3 _respawnTransform)
         {
             respawnPosition = _respawnTransform;
         }
@@ -288,7 +288,9 @@ namespace MyFPS.Player
         /// <param name="_damage">Value.</param>
         public void TakeDamage(int _damage)
         {
+            print("Damage taken, " + _damage);
             health -= _damage;
+            print("health remaining: " + health);
             if (health <= 0)
             {
                 Death();
@@ -307,7 +309,8 @@ namespace MyFPS.Player
         {
             //set death script active
             playerDeath.enabled = true;
-            if(gameModeManager.gameType == "DM")
+            print("Player death method");
+            if (gameModeManager.gameType == "DM")
             {
                 CmdUpdateTeamScores(teamID);
             }
@@ -315,17 +318,19 @@ namespace MyFPS.Player
         [Command]
         void CmdUpdateTeamScores(int _teamID)
         {
-            print("player command");
+            Debug.Log("player update team scores command");
             GameMode.instance.RpcUnpdateScoreNetwork(_teamID);
         }
         [ClientRpc]
         public void RpcDeath()
         {
+            Debug.Log("Rpc Player Death");
             Death();
         }
         [Command]
         public void CmdDeath()
         {
+            Debug.Log("Player death command");
             RpcDeath();
         }
         /// <summary>
@@ -373,6 +378,16 @@ namespace MyFPS.Player
         /// <param name="_context">Context of Input Action.</param>
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
+            CmdShoot();
+        }
+        [Command]
+        void CmdShoot()
+        {
+            RpcShoot();
+        }
+        [ClientRpc]
+        void RpcShoot()
+        {
             currentGun.Shoot();
         }
         /// <summary>
@@ -415,12 +430,17 @@ namespace MyFPS.Player
         {
             Pause();
         }
+        private void Awake()
+        {
+            gameModeManager = GameMode.instance;
+        }
         private void Start()
         {
             //Variable/Refence SetUp
-            fpsController = GetComponent<FirstPersonController>();
-            playerDeath = GetComponent<PlayerDeath>();
-            gameModeManager = GameMode.instance;
+            //fpsController = GetComponent<FirstPersonController>();
+            //playerDeath = GetComponent<PlayerDeath>();
+
+            respawnPosition = transform.position;
 
             //Add player to gameModeManager list of players
             gameModeManager.playersList.Add(this);

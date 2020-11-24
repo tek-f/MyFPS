@@ -30,7 +30,7 @@ namespace MyFPS.Mirror
         [Command]
         public void CmdSetPlayerRespawnPos(GameObject _player, Transform _respawnPos)
         {
-            _player.GetComponent<PlayerHandler>().RpcSetRespawnPos(_respawnPos);
+            //_player.GetComponent<PlayerHandler>().RpcSetRespawnPos(_respawnPos);
         }
 
         [ServerCallback]
@@ -48,7 +48,7 @@ namespace MyFPS.Mirror
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
             Debug.Log(index);
-            CmdSetPlayerRespawnPos(playerInstance, spawnPoint);
+            //CmdSetPlayerRespawnPos(playerInstance, spawnPoint);
             playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().teamID = index;
             NetworkServer.Spawn(playerInstance, conn);
 

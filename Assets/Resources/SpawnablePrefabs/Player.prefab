@@ -7152,7 +7152,7 @@ MonoBehaviour:
   syncInterval: 0.1
   teamID: 0
   health: 3
-  fpsController: {fileID: 0}
+  fpsController: {fileID: -484443477514902916}
   playersTeamID: 0
   playerInput: {fileID: 3554005156069980621}
   weapons:
@@ -7169,7 +7169,8 @@ MonoBehaviour:
   loadoutPanel: {fileID: 1650210223890659222}
   endGamePanel: {fileID: 5019929663184093484}
   crosshair: {fileID: 4503474890310082715}
-  respawnPosition: {fileID: 0}
+  respawnPosition: {x: 0, y: 0, z: 0}
+  playerDeath: {fileID: 3147325757882613668}
 --- !u!114 &3554005156069980621
 MonoBehaviour:
   m_ObjectHideFlags: 0

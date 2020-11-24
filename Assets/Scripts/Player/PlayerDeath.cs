@@ -41,7 +41,7 @@ namespace MyFPS.Player
         /// </summary>
         void Respawn()
         {
-            transform.position = playerHandler.respawnPosition.position;
+            transform.position = playerHandler.respawnPosition;
             
             playerInput.enabled = true;
             playerHandler.enabled = true;

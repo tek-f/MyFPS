@@ -104,7 +104,9 @@ namespace MyFPS.Player
                 {
                     if (hit.transform.CompareTag("Player"))
                     {
+                        print("player object hit");
                         PlayerHandler hitPlayer = hit.transform.GetComponent<PlayerHandler>();
+                        print(hitPlayer);
                         hitPlayer.TakeDamage(damage);
 
                         /*Has been replaced by Takedamage() and Death() functions in Player class
