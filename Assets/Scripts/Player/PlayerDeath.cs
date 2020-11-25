@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using Mirror;
 
 namespace MyFPS.Player
 {
-    public class PlayerDeath : MonoBehaviour
+    public class PlayerDeath : NetworkBehaviour
     {
         /// <summary>
         /// Reference to the PlayerHandler class on this game object.
@@ -41,6 +42,7 @@ namespace MyFPS.Player
         /// </summary>
         void Respawn()
         {
+            playerHandler.health = playerHandler.maxHealth;
             transform.position = playerHandler.respawnPosition;
             
             playerInput.enabled = true;
@@ -49,6 +51,16 @@ namespace MyFPS.Player
             deathPanel.SetActive(false);
 
             this.enabled = false;
+        }
+        [ClientRpc]
+        public void RpcRespawn()
+        {
+            Respawn();
+        }
+        [Command]
+        public void CmdRespawn()
+        {
+            RpcRespawn();
         }
         private void Awake()
         {
@@ -74,7 +86,7 @@ namespace MyFPS.Player
             respawnCounterText.text = remaining.ToString();
             if (remaining <= 0)
             {
-                Respawn();
+                CmdRespawn();
             }
         }
     }

@@ -31,7 +31,11 @@ namespace MyFPS.Player
         /// <summary>
         /// Players health.
         /// </summary>
-        public int health = 3;
+        public int health = 15;
+        /// <summary>
+        /// The players max health.
+        /// </summary>
+        public int maxHealth = 15;
         /// <summary>
         /// Reference to the FirstPersonController class on this game object.
         /// </summary>
@@ -315,12 +319,6 @@ namespace MyFPS.Player
                 CmdUpdateTeamScores(teamID);
             }
         }
-        [Command]
-        void CmdUpdateTeamScores(int _teamID)
-        {
-            Debug.Log("player update team scores command");
-            GameMode.instance.RpcUnpdateScoreNetwork(_teamID);
-        }
         [ClientRpc]
         public void RpcDeath()
         {
@@ -332,6 +330,12 @@ namespace MyFPS.Player
         {
             Debug.Log("Player death command");
             RpcDeath();
+        }
+        [Command]
+        void CmdUpdateTeamScores(int _teamID)
+        {
+            Debug.Log("player update team scores command");
+            GameMode.instance.RpcUnpdateScoreNetwork(_teamID);
         }
         /// <summary>
         /// Updates UI display of the teams scores.
@@ -433,9 +437,6 @@ namespace MyFPS.Player
         private void Awake()
         {
             gameModeManager = GameMode.instance;
-        }
-        private void Start()
-        {
             //Variable/Refence SetUp
             //fpsController = GetComponent<FirstPersonController>();
             //playerDeath = GetComponent<PlayerDeath>();
@@ -455,6 +456,9 @@ namespace MyFPS.Player
             currentGun = weapons[0].GetComponent<Gun>();
             lastWeapon = 1;
 
+        }
+        private void Start()
+        {
             //Cursor Set Up
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
@@ -482,13 +486,14 @@ namespace MyFPS.Player
             escapeAction.performed += OnEscapePerformed;
         }
         private void Update()
-        {
+        { 
+        
             if(!IsHoldingFlag)
             {
                 //TESTING ONLY
                 if(Input.GetKeyDown(KeyCode.T))//if T is pressed
                 {
-                    Death();//player is killed
+                    TakeDamage(5);//player is killed
                 }
 
                 #region Old Code
