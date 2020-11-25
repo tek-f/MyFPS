@@ -313,6 +313,11 @@ namespace MyFPS.Player
         {
             //set death script active
             playerDeath.enabled = true;
+            foreach (Weapon weapon in weapons)
+            {
+                weapon.GetComponent<Gun>().SetUp();
+            }
+            currentGun.UpdateAmmoUI();
             print("Player death method");
             if (gameModeManager.gameType == "DM")
             {
@@ -382,6 +387,7 @@ namespace MyFPS.Player
         /// <param name="_context">Context of Input Action.</param>
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
+            Debug.Log("OnFirePerformed");
             CmdShoot();
         }
         [Command]
@@ -410,6 +416,7 @@ namespace MyFPS.Player
         {
             //currentGun.StartWeaponSwap();
             fpsController.enabled = false;
+            fireAction.Disable();
             loadoutPanel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -423,6 +430,7 @@ namespace MyFPS.Player
             //currentGun.StartWeaponSwap();
             fpsController.enabled = true;
             loadoutPanel.SetActive(false);
+            fireAction.Enable();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }

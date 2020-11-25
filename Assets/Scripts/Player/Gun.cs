@@ -83,6 +83,10 @@ namespace MyFPS.Player
             //player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHandler>();
             remainingAmmo = maxAmmo;
             totalAmmo = maxAmmo * 3;
+        }
+
+        public void UpdateAmmoUI()
+        {
             ammoText.text = remainingAmmo.ToString() + " / " + maxAmmo.ToString();
             clipText.text = totalAmmo.ToString();
         }
@@ -223,6 +227,7 @@ namespace MyFPS.Player
         private void Start()
         {
             SetUp();
+            UpdateAmmoUI();
         }
     }
 }

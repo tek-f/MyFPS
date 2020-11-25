@@ -43,7 +43,6 @@ namespace MyFPS.Player
         void Respawn()
         {
             playerHandler.health = playerHandler.maxHealth;
-            transform.position = playerHandler.respawnPosition;
             
             playerInput.enabled = true;
             playerHandler.enabled = true;
@@ -76,6 +75,8 @@ namespace MyFPS.Player
             playerInput.enabled = false;
             deathPanel.SetActive(true);
 
+            transform.position = playerHandler.respawnPosition;
+
             deathTimeStamp = Time.time;
 
             respawnCounterText.text = respawnDelay.ToString();
@@ -86,7 +87,7 @@ namespace MyFPS.Player
             respawnCounterText.text = remaining.ToString();
             if (remaining <= 0)
             {
-                CmdRespawn();
+                Respawn();
             }
         }
     }

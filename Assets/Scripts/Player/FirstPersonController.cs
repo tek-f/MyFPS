@@ -80,6 +80,8 @@ namespace MyFPS.Player
         /// <param name="_inputVector">The movement of the mouse as a Vector2.</param>
         void MouseLook(Vector2 _inputVector)
         {
+            Debug.Log("Mouse Look");
+
             float mouseX = _inputVector.x;
             float mouseY = _inputVector.y;
 
@@ -94,6 +96,7 @@ namespace MyFPS.Player
         /// <param name="_inputVector">The input of moveAction buttons as a Vector2.</param>
         void PlayerMovement(Vector2 _inputVector)
         {
+            Debug.Log("Player Movement");
             grounded = Physics.Raycast(gameObject.transform.position, Vector3.down, groundedOffset/*, groundLayerMask*/);
             if (grounded && velocity.y < -2)
             {
