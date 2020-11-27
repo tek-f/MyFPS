@@ -311,17 +311,20 @@ namespace MyFPS.Player
         /// </summary>
         public void Death()
         {
-            //set death script active
-            playerDeath.enabled = true;
-            foreach (Weapon weapon in weapons)
+            if (hasAuthority)
             {
-                weapon.GetComponent<Gun>().SetUp();
-            }
-            currentGun.UpdateAmmoUI();
-            print("Player death method");
-            if (gameModeManager.gameType == "DM")
-            {
-                CmdUpdateTeamScores(teamID);
+                //set death script active
+                playerDeath.enabled = true;
+                foreach (Weapon weapon in weapons)
+                {
+                    weapon.GetComponent<Gun>().SetUp();
+                }
+                currentGun.UpdateAmmoUI();
+                print("Player death method");
+                if (gameModeManager.gameType == "DM")
+                {
+                    CmdUpdateTeamScores(teamID);
+                }
             }
         }
         [ClientRpc]

@@ -7,7 +7,7 @@ using Mirror;
 
 namespace MyFPS.Player
 {
-    public class PlayerDeath : NetworkBehaviour
+    public class PlayerDeath : MonoBehaviour
     {
         /// <summary>
         /// Reference to the PlayerHandler class on this game object.
@@ -49,17 +49,7 @@ namespace MyFPS.Player
             fpsController.enabled = true;
             deathPanel.SetActive(false);
 
-            this.enabled = false;
-        }
-        [ClientRpc]
-        public void RpcRespawn()
-        {
-            Respawn();
-        }
-        [Command]
-        public void CmdRespawn()
-        {
-            RpcRespawn();
+            enabled = false;
         }
         private void Awake()
         {
@@ -69,7 +59,6 @@ namespace MyFPS.Player
         }
         private void OnEnable()
         {
-            fpsController = gameObject.GetComponent<FirstPersonController>();
             playerHandler.enabled = false;
             fpsController.enabled = false;
             playerInput.enabled = false;
