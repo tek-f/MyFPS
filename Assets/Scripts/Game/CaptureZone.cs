@@ -13,10 +13,6 @@ namespace MyFPS.GameAdmin
         /// </summary>
         [SerializeField] int teamID;
         /// <summary>
-        /// Reference to the Game Manager.
-        /// </summary>
-        [SerializeField] GameModeCTF gameModeCTF;
-        /// <summary>
         /// Reference to this capture zones game object that is in the world for players to pick up.
         /// </summary>
         [SerializeField] GameObject worldSpaceFlag;
@@ -28,26 +24,25 @@ namespace MyFPS.GameAdmin
             worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
             worldSpaceFlag.SetActive(true);
         }
-        [Command]
-        void CmdAddScore(int _teamIndex)
+        void AddScore(int _teamIndex)
         {
-            gameModeCTF.RpcUnpdateScoreNetwork(_teamIndex);
+            GameModeCTF.instance.RpcUnpdateScoreNetwork(_teamIndex);
         }
 
-        private void Start()
-        {
-            //gameModeCTF = GameObject.FindWithTag("GameManager").GetComponent<GameModeCTF>();
+        //private void Start()
+        //{
+        //    //gameModeCTF = GameObject.FindWithTag("GameManager").GetComponent<GameModeCTF>();
 
-            if (gameModeCTF == null)
-            {
-                Debug.LogError("Could not fund GameModeCTF");
-            }
-        }
+        //    if (gameModeCTF == null)
+        //    {
+        //        Debug.LogError("Could not fund GameModeCTF");
+        //    }
+        //}
         private void OnTriggerEnter(Collider other)
         {
             PlayerHandler player = other.GetComponent<PlayerHandler>();
 
-            if (player != null && gameModeCTF != null)
+            if (player != null)
             {
                 if (player.GetWeaponTeamID() != teamID)
                 {
@@ -56,7 +51,7 @@ namespace MyFPS.GameAdmin
 
                 if (player.IsHoldingFlag)
                 {
-                    CmdAddScore(teamID);
+                    AddScore(teamID);
                     player.ReturnFlag();
                     ResetFlag();
                 }

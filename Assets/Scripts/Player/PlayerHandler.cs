@@ -241,6 +241,7 @@ namespace MyFPS.Player
         public void ReturnFlag()
         {
             flagObject.SetActive(false);
+            weapons[currentWeapon].enabled = true;
             weapons[currentWeapon].gameObject.SetActive(true);
         }
         /// <summary>
@@ -252,6 +253,7 @@ namespace MyFPS.Player
             {
                 weapon.gameObject.SetActive(false);
             }
+            weapons[currentWeapon].enabled = false;
             flagObject.SetActive(true);
         }
         /// <summary>
@@ -373,6 +375,7 @@ namespace MyFPS.Player
                 Cursor.visible = false;
                 pausePanel.SetActive(false);
                 fpsController.enabled = true;
+                fireAction.Enable();
                 paused = false;
             }
             else
@@ -381,6 +384,7 @@ namespace MyFPS.Player
                 Cursor.visible = true;
                 pausePanel.SetActive(true);
                 fpsController.enabled = false;
+                fireAction.Disable();
                 paused = true;
             }
         }
