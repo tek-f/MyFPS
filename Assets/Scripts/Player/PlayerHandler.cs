@@ -241,6 +241,7 @@ namespace MyFPS.Player
         public void ReturnFlag()
         {
             flagObject.SetActive(false);
+            fireAction.Enable();
             weapons[currentWeapon].enabled = true;
             weapons[currentWeapon].gameObject.SetActive(true);
         }
@@ -249,7 +250,8 @@ namespace MyFPS.Player
         /// </summary>
         public void PickUpFlag()
         {
-            foreach(var weapon in weapons)
+            fireAction.Disable();
+            foreach (var weapon in weapons)
             {
                 weapon.gameObject.SetActive(false);
             }
@@ -329,18 +331,18 @@ namespace MyFPS.Player
                 }
             }
         }
-        [ClientRpc]
-        public void RpcDeath()
-        {
-            Debug.Log("Rpc Player Death");
-            Death();
-        }
-        [Command]
-        public void CmdDeath()
-        {
-            Debug.Log("Player death command");
-            RpcDeath();
-        }
+        //[ClientRpc]
+        //public void RpcDeath()
+        //{
+        //    Debug.Log("Rpc Player Death");
+        //    Death();
+        //}
+        //[Command]
+        //public void CmdDeath()
+        //{
+        //    Debug.Log("Player death command");
+        //    RpcDeath();
+        //}
         [Command]
         void CmdUpdateTeamScores(int _teamID)
         {

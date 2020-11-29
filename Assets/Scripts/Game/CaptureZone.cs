@@ -24,7 +24,8 @@ namespace MyFPS.GameAdmin
             worldSpaceFlag.transform.position = worldSpaceFlag.GetComponent<Flag>().originalLocation;
             worldSpaceFlag.SetActive(true);
         }
-        void AddScore(int _teamIndex)
+        [Command]
+        void CmdAddScore(int _teamIndex)
         {
             GameModeCTF.instance.RpcUnpdateScoreNetwork(_teamIndex);
         }
@@ -44,14 +45,13 @@ namespace MyFPS.GameAdmin
 
             if (player != null)
             {
-                if (player.GetWeaponTeamID() != teamID)
+                //if (player.GetWeaponTeamID() != teamID)
+                //{
+                //    return;
+                //}
+                if (player.IsHoldingFlag && player.teamID == teamID)
                 {
-                    return;
-                }
-
-                if (player.IsHoldingFlag)
-                {
-                    AddScore(teamID);
+                    CmdAddScore(teamID);
                     player.ReturnFlag();
                     ResetFlag();
                 }

@@ -16659,6 +16659,7 @@ GameObject:
   - component: {fileID: 451748052}
   - component: {fileID: 451748051}
   - component: {fileID: 451748054}
+  - component: {fileID: 451748055}
   m_Layer: 0
   m_Name: Blue CaptureZone
   m_TagString: Untagged
@@ -16726,6 +16727,24 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
+--- !u!114 &451748055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451748050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
 --- !u!1 &477358721
 GameObject:
   m_ObjectHideFlags: 0
@@ -102941,6 +102960,7 @@ GameObject:
   - component: {fileID: 1718432546}
   - component: {fileID: 1718432545}
   - component: {fileID: 1718432548}
+  - component: {fileID: 1718432549}
   m_Layer: 0
   m_Name: Red CaptureZone
   m_TagString: Untagged
@@ -103008,6 +103028,24 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
+--- !u!114 &1718432549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718432544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
 --- !u!144 &1722514415
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -109147,7 +109185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh301538
+  m_Name: pb_Mesh295950
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
