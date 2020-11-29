@@ -124,7 +124,6 @@ namespace MyFPS.Player
 
             if (jumpAction.ReadValue<float>() > 0 && grounded)
             {
-                print("jump");
                 velocity.y += jumpSpeed;
             }
         }

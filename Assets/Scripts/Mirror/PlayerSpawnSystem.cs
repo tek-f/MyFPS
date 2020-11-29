@@ -47,9 +47,8 @@ namespace MyFPS.Mirror
             }
 
             GameObject playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-            Debug.Log(index);
             //CmdSetPlayerRespawnPos(playerInstance, spawnPoint);
-            playerInstance.GetComponent<MyFPS.Player.PlayerHandler>().teamID = index;
+            playerInstance.GetComponent<PlayerHandler>().teamID = index;
             NetworkServer.Spawn(playerInstance, conn);
 
             index++;

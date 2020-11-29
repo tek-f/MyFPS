@@ -28,8 +28,6 @@ public class Flag : MonoBehaviour
                 return;
             }
 
-            Debug.Log("Flag captured");
-
             player.PickUpFlag();
 
             gameObject.SetActive(false);

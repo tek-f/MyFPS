@@ -344,9 +344,8 @@ namespace MyFPS.Player
         //    RpcDeath();
         //}
         [Command]
-        void CmdUpdateTeamScores(int _teamID)
+        public void CmdUpdateTeamScores(int _teamID)
         {
-            Debug.Log("player update team scores command");
             GameMode.instance.RpcUnpdateScoreNetwork(_teamID);
         }
         /// <summary>
@@ -396,7 +395,6 @@ namespace MyFPS.Player
         /// <param name="_context">Context of Input Action.</param>
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
-            Debug.Log("OnFirePerformed");
             CmdShoot();
         }
         [Command]

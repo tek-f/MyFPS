@@ -63,7 +63,6 @@ namespace MyFPS
             {
                 if(hit.collider.CompareTag("Player"))
                 {
-                    Debug.Log("player hit: " + hit.collider.GetComponent<NetworkIdentity>().netId);
                     RpcPlayerFiredEntity(GetComponent<NetworkIdentity>().netId, hit.collider.GetComponent<NetworkIdentity>().netId, hit.point, hit.normal);
                 }
             }

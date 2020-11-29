@@ -52,7 +52,6 @@ public class RagdollController : MonoBehaviour
         if(health <= 0)
         {
             Death();
-            print("ded");
         }
     }
     private void Start()

@@ -72,7 +72,6 @@ namespace MyFPS.Player
             Renderer rend = worldWeaponGameObject.GetComponentInChildren<Renderer>();
             if (rend != null)
             {
-                Debug.Log("Dropping using renderer: " + rend.name);
 
                 Vector3 topPoint = rend.bounds.center;
                 topPoint.y += rend.bounds.extents.y;

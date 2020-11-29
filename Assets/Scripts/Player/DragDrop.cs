@@ -29,29 +29,27 @@ namespace MyFPS.Player
         public GameObject currentItemSlot;
         public void OnBeginDrag(PointerEventData eventData)
         {
-            Debug.Log("on begin drag.");
             canvasGroup.blocksRaycasts = false;
             canvasGroup.alpha = 0.65f;
         }
         public void OnDrag(PointerEventData eventData)
         {
-            Debug.Log("on drag.");
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         }
         public void OnEndDrag(PointerEventData eventData)
         {
-            Debug.Log("on end drag.");
             canvasGroup.blocksRaycasts = true;
             canvasGroup.alpha = 1f;
         }
         public void OnPointerDown(PointerEventData eventData)
         {
-            Debug.Log("on pointer click down.");
+            return;
         }
         private void Awake()
         {
             rectTransform = GetComponent<RectTransform>();
             canvasGroup = GetComponent<CanvasGroup>();
         }
+
     }
 }

@@ -52,9 +52,7 @@ namespace MyFPS.GameAdmin
         /// <param name="_value">The value that the teams score is being increased by.</param>
         public virtual void AddScore(int _teamID)
         {
-            Debug.Log(teams[_teamID]);
             teams[_teamID].score++;
-            Debug.Log(localPlayer);
             localPlayer.UpdateTeamScores(teams[0].score, teams[1].score);
             if (teams[_teamID].score >= gameScoreLimit)
             {
@@ -64,7 +62,6 @@ namespace MyFPS.GameAdmin
         [ClientRpc]
         public void RpcUnpdateScoreNetwork(int _teamIndex)
         {
-            Debug.Log("Rpc Unpdate Score Network");
             AddScore(_teamIndex);
         }
         public void UpdateScores(int _teamIndex)

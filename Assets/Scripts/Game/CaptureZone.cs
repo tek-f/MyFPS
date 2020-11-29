@@ -48,10 +48,10 @@ namespace MyFPS.GameAdmin
                 //if (player.GetWeaponTeamID() != teamID)
                 //{
                 //    return;
-                //}
+                //} 
                 if (player.IsHoldingFlag && player.teamID == teamID)
                 {
-                    CmdAddScore(teamID);
+                    player.CmdUpdateTeamScores(teamID);
                     player.ReturnFlag();
                     ResetFlag();
                 }
