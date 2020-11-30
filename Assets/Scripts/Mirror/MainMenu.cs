@@ -6,13 +6,12 @@ namespace MyFPS.Mirror
 {
     public class MainMenu : MonoBehaviour
     {
-        [SerializeField] private NetworkManagerLobby networkManager;
 
         [Header("UI")]
         [SerializeField] private GameObject landingPagePanel;
         public void HostLobby()
         {
-            networkManager.StartHost();
+            NetworkManagerLobby.instance.StartHost();
             landingPagePanel.SetActive(false);
         }
     }

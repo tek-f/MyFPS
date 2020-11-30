@@ -15,8 +15,6 @@ namespace MyFPS.Mirror
 
         [SyncVar] int index = 0;
 
-        int teamTracker = 0;
-
         public static void AddSpawnPoint(Transform transform)
         {
             spawnPoints.Add(transform);
@@ -38,6 +36,11 @@ namespace MyFPS.Mirror
         [Server]
         public void SpawnPlayer(NetworkConnection conn)
         {
+            if (index >= 2)
+            {
+                index = 0;
+            }
+
             Transform spawnPoint = spawnPoints[index];
 
             if (spawnPoint == null)
@@ -52,10 +55,6 @@ namespace MyFPS.Mirror
             NetworkServer.Spawn(playerInstance, conn);
 
             index++;
-            if(index == 2)
-            {
-                index = 0;
-            }
         }
     }
 }

@@ -6,6 +6,7 @@ namespace MyFPS.Mirror
 {
     public class PlayerSpawnPoint : MonoBehaviour
     {
+        public int teamID;
         private void Awake()
         {
             PlayerSpawnSystem.AddSpawnPoint(transform);

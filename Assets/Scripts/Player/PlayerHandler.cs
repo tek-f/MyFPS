@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using MyFPS.GameAdmin;
+using MyFPS.Mirror;
 using Mirror;
 
 namespace MyFPS.Player
@@ -393,6 +395,18 @@ namespace MyFPS.Player
         /// Action to be performed when fireAction is performed.
         /// </summary>
         /// <param name="_context">Context of Input Action.</param>
+        public void Exit()
+        {
+            if(NetworkManagerLobby.instance.isHost)
+            {
+                NetworkManagerLobby.instance.StopHost();
+            }
+            if (!NetworkManagerLobby.instance.isHost)
+            {
+                NetworkManagerLobby.instance.StopClient();
+            }
+            //SceneManager.LoadScene(0);
+        }
         private void OnFirePerformed(InputAction.CallbackContext _context)
         {
             CmdShoot();
@@ -451,12 +465,22 @@ namespace MyFPS.Player
         }
         private void Awake()
         {
+            //GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
+            //foreach (GameObject _spawnPoint in spawnPoints)
+            //{
+            //    PlayerSpawnPoint possibleSpawnPoint = _spawnPoint.GetComponent<PlayerSpawnPoint>();
+            //    if(possibleSpawnPoint != null && possibleSpawnPoint.teamID == teamID)
+            //    {
+            //        transform.position = _spawnPoint.transform.position;
+            //    }
+            //}
+
             gameModeManager = GameMode.instance;
+
             //Variable/Refence SetUp
             //fpsController = GetComponent<FirstPersonController>();
             //playerDeath = GetComponent<PlayerDeath>();
 
-            respawnPosition = transform.position;
 
             //Add player to gameModeManager list of players
             gameModeManager.playersList.Add(this);
@@ -474,6 +498,8 @@ namespace MyFPS.Player
         }
         private void Start()
         {
+            respawnPosition = transform.position;
+
             //Cursor Set Up
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;

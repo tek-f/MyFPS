@@ -9045,7 +9045,7 @@ GameObject:
   - component: {fileID: 715953060}
   m_Layer: 0
   m_Name: Spawn Point (1)
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9076,6 +9076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb46f8367c00c234f8418be5d4cb2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamID: 1
 --- !u!1 &801971098
 GameObject:
   m_ObjectHideFlags: 0
@@ -20422,7 +20423,7 @@ GameObject:
   - component: {fileID: 1542428675}
   m_Layer: 0
   m_Name: Spawn Point
-  m_TagString: Untagged
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20453,6 +20454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb46f8367c00c234f8418be5d4cb2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teamID: 0
 --- !u!1 &1613025483
 GameObject:
   m_ObjectHideFlags: 0

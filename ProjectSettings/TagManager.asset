@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - NetworkManager
   - Canvas
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

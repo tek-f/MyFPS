@@ -9,6 +9,11 @@ namespace MyFPS.Mirror
 {
     public class NetworkManagerLobby : NetworkManager
     {
+        public static NetworkManagerLobby instance
+        {
+            get { return NetworkManagerLobby.singleton as NetworkManagerLobby; }
+        }
+
         [SerializeField] private int minPlayers = 2;//-------------
         [Scene] [SerializeField] private string menuScene = string.Empty;
         [Scene] [SerializeField] public string levelScene = string.Empty;
@@ -26,6 +31,14 @@ namespace MyFPS.Mirror
 
         public List<NetworkRoomPlayerLobby> roomPlayers { get; } = new List<NetworkRoomPlayerLobby>();//-------------
         public List<NetworkGamePlayerLobby> gamePlayers { get; } = new List<NetworkGamePlayerLobby>();
+
+        public bool isHost = false;
+
+        public override void OnStartHost()
+        {
+            isHost = true;
+            base.OnStartHost();
+        }
 
         public override void OnStartServer()
         {
@@ -149,7 +162,6 @@ namespace MyFPS.Mirror
         {
             if(sceneName.StartsWith("Assets/Scenes/Scene_Map"))
             {
-
                 GameObject playerSpawnSystemInstance = Instantiate(playerSpawnSystem);
                 NetworkServer.Spawn(playerSpawnSystemInstance);
             }
